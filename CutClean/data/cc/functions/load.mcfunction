@@ -23,3 +23,4 @@ scoreboard objectives add cc.irond minecraft.mined:minecraft.deepslate_iron_ore
 scoreboard objectives add cc.copperb minecraft.mined:minecraft.raw_copper_block
 scoreboard objectives add cc.goldb minecraft.mined:minecraft.raw_gold_block
 scoreboard objectives add cc.ironb minecraft.mined:minecraft.raw_iron_block
+
