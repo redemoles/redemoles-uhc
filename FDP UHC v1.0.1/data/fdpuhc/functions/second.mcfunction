@@ -14,7 +14,7 @@ execute if score #Secondes fdpuhc.Info matches 60 run function fdpuhc:timer/info
 
 ## AUBE/CREPUSCULE
 
-execute if score #cycle fdpuhc.data matches 9 if score #Secondes fdpuhc.Info matches 30 run time set 120000
+execute if score #cycle fdpuhc.data matches 9 if score #Secondes fdpuhc.Info matches 30 run time set 12000
 execute if score #cycle fdpuhc.data matches 19 if score #Secondes fdpuhc.Info matches 30 run time set 0
 
 ## ALERTE AVANT ACTIVATION PVE/PVP/BORDER
