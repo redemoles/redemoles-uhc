@@ -1,5 +1,5 @@
 
-#> uhc:maplobby
+#> uhc:lobbyadd
 #
 # @within			uhc:reload
 # @executed			default context
@@ -8,6 +8,8 @@
 #
 
 ## Création lobby avec reload
+
+forceload add 0 0 -1 -1
 
 fill 14 304 14 -15 304 -15 barrier
 fill 14 305 14 -15 305 -15 minecraft:magenta_concrete_powder
@@ -155,3 +157,5 @@ setblock -8 306 2 light[level=7]
 setblock -7 306 4 light[level=7]
 setblock -8 306 -3 light[level=7]
 setblock -7 306 -5 light[level=7]
+
+forceload remove 0 0 -1 -1
