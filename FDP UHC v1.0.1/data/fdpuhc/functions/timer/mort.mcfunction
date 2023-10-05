@@ -25,7 +25,7 @@ execute if score #message fdpuhc.data matches 4 run tellraw @a [{"text":"\n","co
 tellraw @a[scores={fdpuhc.kill=11..20}] [{"text":"Vous avez ","color":"light_purple"},{"score":{"name":"@r[scores={fdpuhc.kill=11..20}]","objective":"fdpuhc.Kills"},"color":"dark_purple","bold":true},{"text":" kill(s)","color":"light_purple"}]
 execute if score #message fdpuhc.data matches 0 run tellraw @a [{"text":"Il reste ","color":"yellow"},{"score":{"name":"#Joueurs","objective":"fdpuhc.data"},"color":"gold"},{"text":" joueurs en vie","color":"yellow"},{"text":"\n","color":"light_purple"}]
 execute if score #message fdpuhc.data matches 1..4 run tellraw @a [{"text":"Il reste au maximum ","color":"yellow"},{"score":{"name":"#Joueurs","objective":"fdpuhc.Info"},"color":"gold"},{"text":" joueurs en vie","color":"yellow"},{"text":"\n","color":"light_purple"}]
-tellraw @a[scores={fdpuhc.mort=2..2}] [{"text":"Vous être mort. Merci de changer de channel ou de vous rendre muet\n","color":"aqua"}]
+tellraw @a[scores={fdpuhc.mort=2..2}] [{"text":"Vous être mort. Merci de changer de channel Mumble ou de vous rendre muet\n","color":"aqua"}]
 execute if score #message fdpuhc.data matches 0..4 run playsound minecraft:entity.lightning_bolt.thunder master @a ~ ~ ~ 0.4 1 0.4
 
 # Attribution d'effets au killer
