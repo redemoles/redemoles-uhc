@@ -19,16 +19,5 @@ playsound minecraft:entity.experience_orb.pickup master @a ~ ~ ~ 0.5 1 0.5
 scoreboard objectives setdisplay sidebar BHC.StepB
 
 # Reset des succès
-scoreboard players set @e[type=marker,tag=BHC] BHC.line 0
-scoreboard players set @e[type=marker,tag=BHC] BHC.line_1 0
-scoreboard players set @e[type=marker,tag=BHC] BHC.line_2 0
-scoreboard players set @e[type=marker,tag=BHC] BHC.line_3 0
-scoreboard players set @e[type=marker,tag=BHC] BHC.line_4 0
-scoreboard players set @e[type=marker,tag=BHC] BHC.line_5 0
+execute as @e[type=marker,tag=BHC] run function bhc:00/timer/reset_scores
 
-scoreboard players set @e[type=marker,tag=BHC] BHC.column 0
-scoreboard players set @e[type=marker,tag=BHC] BHC.column_1 0
-scoreboard players set @e[type=marker,tag=BHC] BHC.column_2 0
-scoreboard players set @e[type=marker,tag=BHC] BHC.column_3 0
-scoreboard players set @e[type=marker,tag=BHC] BHC.column_4 0
-scoreboard players set @e[type=marker,tag=BHC] BHC.column_5 0

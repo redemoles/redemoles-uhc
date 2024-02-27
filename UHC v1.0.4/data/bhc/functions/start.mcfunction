@@ -55,3 +55,4 @@ scoreboard players add #vie2 BHC.timer 1
 scoreboard players add #vie1 BHC.timer 1
 scoreboard players remove #start_stepa BHC.timer 1
 scoreboard players remove #start_stepb BHC.timer 1
+

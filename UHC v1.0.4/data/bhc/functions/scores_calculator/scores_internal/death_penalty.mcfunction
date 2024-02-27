@@ -8,10 +8,7 @@
 #
 
 # Pénalité de 5 minutes
-scoreboard players operation @e[type=marker,tag=BHC] BHC.invDeath *= #10 BHC.data
-scoreboard players operation @e[type=marker,tag=BHC] BHC.teams.deathcount *= #120001 BHC.data
-scoreboard players operation @e[type=marker,tag=BHC] BHC.invDeath -= @s BHC.teams.deathcount
+execute as @e[type=marker,tag=BHC] run function bhc:scores_calculator/scores_internal/penalty_score_1
 function bhc:scores_calculator/rank_internal/death
-scoreboard players operation @e[type=marker,tag=BHC] BHC.invDeath += @s BHC.teams.deathcount
-scoreboard players operation @e[type=marker,tag=BHC] BHC.teams.deathcount /= #120001 BHC.data
-scoreboard players operation @e[type=marker,tag=BHC] BHC.invDeath /= #10 BHC.data
+execute as @e[type=marker,tag=BHC] run function bhc:scores_calculator/scores_internal/penalty_score_2
+
