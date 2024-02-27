@@ -1,0 +1,38 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:bamboo_button"
+		},
+		"title": {
+			"text": "Bamboo Button",
+			"color": "#FFDF00"
+		},
+		"description": {
+			"text": "Obtenir un(e) Bamboo Button",
+			"color": "#F7EFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:bamboo_button"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"requirement"
+		]
+	]
+}

@@ -1,0 +1,38 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:stripped_bamboo_block"
+		},
+		"title": {
+			"text": "Stripped Bamboo Block",
+			"color": "#FFDF00"
+		},
+		"description": {
+			"text": "Obtenir un(e) Stripped Bamboo Block",
+			"color": "#F7EFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:stripped_bamboo_block"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"requirement"
+		]
+	]
+}

@@ -1,0 +1,38 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:glass_pane"
+		},
+		"title": {
+			"text": "Glass Pane",
+			"color": "#FFDF00"
+		},
+		"description": {
+			"text": "Obtenir un(e) Glass Pane",
+			"color": "#F7EFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:glass_pane"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"requirement"
+		]
+	]
+}

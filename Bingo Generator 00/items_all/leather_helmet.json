@@ -1,0 +1,38 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:leather_helmet"
+		},
+		"title": {
+			"text": "Leather Helmet",
+			"color": "#FFDF00"
+		},
+		"description": {
+			"text": "Obtenir un(e) Leather Helmet",
+			"color": "#F7EFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:leather_helmet"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"requirement"
+		]
+	]
+}

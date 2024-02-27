@@ -1,6 +1,7 @@
 {
 	"values": [
 		"uhc:tick",
-		"pregen:tick"
+		"pregen:tick",
+		"bhc:tick"
 	]
 }

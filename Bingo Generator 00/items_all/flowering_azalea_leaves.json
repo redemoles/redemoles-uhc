@@ -1,0 +1,38 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:flowering_azalea_leaves"
+		},
+		"title": {
+			"text": "Flowering Azalea Leaves",
+			"color": "#FFDF00"
+		},
+		"description": {
+			"text": "Obtenir un(e) Flowering Azalea Leaves",
+			"color": "#F7EFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:flowering_azalea_leaves"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"requirement"
+		]
+	]
+}

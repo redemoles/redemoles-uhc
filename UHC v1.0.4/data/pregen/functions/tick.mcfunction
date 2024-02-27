@@ -8,4 +8,4 @@
 #
 
 scoreboard players operation #pregen pregen.map = @r[scores={pregen.map=1..}] pregen.map
-execute if score @r[scores={pregen.map=1..}] pregen.map matches 1.. run function pregen:timer
+execute if entity @r[scores={pregen.map=1..}] run function pregen:timer

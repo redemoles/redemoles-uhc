@@ -1,0 +1,54 @@
+
+#> bhc:01/timer/hotbar_cooldown
+#
+# @within			uhc:in_game/timer/tick
+#
+#
+# @description		Configuration du timer 
+#
+
+# Si Start 30 secondes après tp
+execute if score #start uhc.data.setup matches 0 if score #sec_cooldown uhc.data.display matches 10..59 as @a run title @s actionbar [{"text":"0:","color":"#FF3F3F","bold":true}, {"score":{"name":"#sec_cooldown","objective":"uhc.data.display"},"color":"#FF3F3F","bold":true}, {"text":" avant ","color":"#FF7F7F"}, {"text":"démarrage","color":"#FF3F3F"}, {"text":" !","color":"#FF7F7F"}]
+execute if score #start uhc.data.setup matches 0 if score #sec_cooldown uhc.data.display matches ..9 as @a run title @s actionbar [{"text":"0:0","color":"#FF3F3F","bold":true}, {"score":{"name":"#sec_cooldown","objective":"uhc.data.display"},"color":"#FF3F3F","bold":true}, {"text":" avant ","color":"#FF7F7F"}, {"text":"démarrage","color":"#FF3F3F"}, {"text":" !","color":"#FF7F7F"}]
+execute if score #start uhc.data.setup matches 0 run scoreboard players remove #tick_start uhc.data.setup 1
+execute if score #start uhc.data.setup matches 0 if score #sec_cooldown uhc.data.display matches 60 run scoreboard players set #start uhc.data.setup 1
+execute if score #start uhc.data.setup matches 1 run scoreboard players set #hotbar_cooldown uhc.data.display -1
+execute if score #start uhc.data.setup matches 0 unless score #force_stepa uhc.data.setup matches 0 run function bhc:timer/start_cooldown
+
+# Annonce PvE
+execute if score #pve uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches 60 as @a run title @s actionbar [{"text":"1:00","color":"#FF3F3F","bold":true}, {"text":" avant début de la ","color":"#FF7F7F"}, {"text":"vulnérabilité","color":"#FF3F3F"}, {"text":" !","color":"#FF7F7F"}]
+execute if score #pve uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches 10..59 as @a run title @s actionbar [{"text":"0:","color":"#FF3F3F","bold":true}, {"score":{"name":"#sec_cooldown","objective":"uhc.data.display"},"color":"#FF3F3F","bold":true}, {"text":" avant début de la ","color":"#FF7F7F"}, {"text":"vulnérabilité","color":"#FF3F3F"}, {"text":" !","color":"#FF7F7F"}]
+execute if score #pve uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches ..9 as @a run title @s actionbar [{"text":"0:0","color":"#FF3F3F","bold":true}, {"score":{"name":"#sec_cooldown","objective":"uhc.data.display"},"color":"#FF3F3F","bold":true}, {"text":" avant début de la ","color":"#FF7F7F"}, {"text":"vulnérabilité","color":"#FF3F3F"}, {"text":" !","color":"#FF7F7F"}]
+execute if score #pve uhc.data.setup matches 0 as @a run title @s actionbar [{"text":"Activation des ","color":"#FFEF7F","bold":true}, {"text":"dégâts","color":"#FFE73F"}, {"text":" !","color":"#FFEF7F"}]
+
+# Annonce PvP
+execute if score #pvp uhc.data.setup matches 5 if score #sec_cooldown uhc.data.display matches 60 as @a run title @s actionbar [{"text":"5:00","color":"#FF3F3F","bold":true}, {"text":" avant l'activation du ","color":"#FF7F7F"}, {"text":"PvP","color":"#FF3F3F"}, {"text":" !","color":"#FF7F7F"}]
+execute if score #pvp uhc.data.setup matches 5 if score #sec_cooldown uhc.data.display matches 10..59 as @a run title @s actionbar [{"text":"4:","color":"#FF3F3F","bold":true}, {"score":{"name":"#sec_cooldown","objective":"uhc.data.display"},"color":"#FF3F3F","bold":true}, {"text":" avant l'activation du ","color":"#FF7F7F"}, {"text":"PvP","color":"#FF3F3F"}, {"text":" !","color":"#FF7F7F"}]
+execute if score #pvp uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches 60 as @a run title @s actionbar [{"text":"1:00","color":"#FF3F3F","bold":true}, {"text":" avant l'activation du ","color":"#FF7F7F"}, {"text":"PvP","color":"#FF3F3F"}, {"text":" !","color":"#FF7F7F"}]
+execute if score #pvp uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches 10..59 as @a run title @s actionbar [{"text":"0:","color":"#FF3F3F","bold":true}, {"score":{"name":"#sec_cooldown","objective":"uhc.data.display"},"color":"#FF3F3F","bold":true}, {"text":" avant l'activation du ","color":"#FF7F7F"}, {"text":"PvP","color":"#FF3F3F"}, {"text":" !","color":"#FF7F7F"}]
+execute if score #pvp uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches ..9 as @a run title @s actionbar [{"text":"0:0","color":"#FF3F3F","bold":true}, {"score":{"name":"#sec_cooldown","objective":"uhc.data.display"},"color":"#FF3F3F","bold":true}, {"text":" avant l'activation du ","color":"#FF7F7F"}, {"text":"PvP","color":"#FF3F3F"}, {"text":" !","color":"#FF7F7F"}]
+execute if score #pvp uhc.data.setup matches 0 as @a run title @s actionbar [{"text":"Activation du ","color":"#FFEF7F","bold":true}, {"text":"PvP","color":"#FFE73F"}, {"text":" !","color":"#FFEF7F"}]
+
+# Annonce Border
+execute if score #border uhc.data.setup matches 5 if score #sec_cooldown uhc.data.display matches 60 as @a run title @s actionbar [{"text":"5:00","color":"#FF3F3F","bold":true}, {"text":" avant réduction de la ","color":"#FF7F7F"}, {"text":"bordure","color":"#FF3F3F"}, {"text":" !","color":"#FF7F7F"}]
+execute if score #border uhc.data.setup matches 5 if score #sec_cooldown uhc.data.display matches 10..59 as @a run title @s actionbar [{"text":"4:","color":"#FF3F3F","bold":true}, {"score":{"name":"#sec_cooldown","objective":"uhc.data.display"},"color":"#FF3F3F","bold":true}, {"text":" avant réduction de la ","color":"#FF7F7F"}, {"text":"bordure","color":"#FF3F3F"}, {"text":" !","color":"#FF7F7F"}]
+execute if score #border uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches 60 as @a run title @s actionbar [{"text":"1:00","color":"#FF3F3F","bold":true}, {"text":" avant réduction de la ","color":"#FF7F7F"}, {"text":"bordure","color":"#FF3F3F"}, {"text":" !","color":"#FF7F7F"}]
+execute if score #border uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches 10..59 as @a run title @s actionbar [{"text":"0:","color":"#FF3F3F","bold":true}, {"score":{"name":"#sec_cooldown","objective":"uhc.data.display"},"color":"#FF3F3F","bold":true}, {"text":" avant réduction de la ","color":"#FF7F7F"}, {"text":"bordure","color":"#FF3F3F"}, {"text":" !","color":"#FF7F7F"}]
+execute if score #border uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches ..9 as @a run title @s actionbar [{"text":"0:0","color":"#FF3F3F","bold":true}, {"score":{"name":"#sec_cooldown","objective":"uhc.data.display"},"color":"#FF3F3F","bold":true}, {"text":" avant réduction de la ","color":"#FF7F7F"}, {"text":"bordure","color":"#FF3F3F"}, {"text":" !","color":"#FF7F7F"}]
+execute if score #border uhc.data.setup matches 0 as @a run title @s actionbar [{"text":"Réduction de la ","color":"#FFEF7F","bold":true}, {"text":"bordure","color":"#FFE73F"}, {"text":" !","color":"#FFEF7F"}]
+
+# Annonce Shrink 1
+execute if score #shrink1 uhc.data.setup matches 5 if score #sec_cooldown uhc.data.display matches 60 as @a run title @s actionbar [{"text":"5:00","color":"#FF3F3F","bold":true}, {"text":" avant réduction de la ","color":"#FF7F7F"}, {"text":"bordure","color":"#FF3F3F"}, {"text":" !","color":"#FF7F7F"}]
+execute if score #shrink1 uhc.data.setup matches 5 if score #sec_cooldown uhc.data.display matches 10..59 as @a run title @s actionbar [{"text":"4:","color":"#FF3F3F","bold":true}, {"score":{"name":"#sec_cooldown","objective":"uhc.data.display"},"color":"#FF3F3F","bold":true}, {"text":" avant réduction de la ","color":"#FF7F7F"}, {"text":"bordure","color":"#FF3F3F"}, {"text":" !","color":"#FF7F7F"}]
+execute if score #shrink1 uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches 60 as @a run title @s actionbar [{"text":"1:00","color":"#FF3F3F","bold":true}, {"text":" avant réduction de la ","color":"#FF7F7F"}, {"text":"bordure","color":"#FF3F3F"}, {"text":" !","color":"#FF7F7F"}]
+execute if score #shrink1 uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches 10..59 as @a run title @s actionbar [{"text":"0:","color":"#FF3F3F","bold":true}, {"score":{"name":"#sec_cooldown","objective":"uhc.data.display"},"color":"#FF3F3F","bold":true}, {"text":" avant réduction de la ","color":"#FF7F7F"}, {"text":"bordure","color":"#FF3F3F"}, {"text":" !","color":"#FF7F7F"}]
+execute if score #shrink1 uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches ..9 as @a run title @s actionbar [{"text":"0:0","color":"#FF3F3F","bold":true}, {"score":{"name":"#sec_cooldown","objective":"uhc.data.display"},"color":"#FF3F3F","bold":true}, {"text":" avant réduction de la ","color":"#FF7F7F"}, {"text":"bordure","color":"#FF3F3F"}, {"text":" !","color":"#FF7F7F"}]
+execute if score #shrink1 uhc.data.setup matches 0 as @a run title @s actionbar [{"text":"Réduction de la ","color":"#FFEF7F","bold":true}, {"text":"bordure","color":"#FFE73F"}, {"text":" !","color":"#FFEF7F"}]
+
+# Annonce Shrink 2
+execute if score #shrink2 uhc.data.setup matches 5 if score #sec_cooldown uhc.data.display matches 60 as @a run title @s actionbar [{"text":"5:00","color":"#FF3F3F","bold":true}, {"text":" avant réduction de la ","color":"#FF7F7F"}, {"text":"bordure","color":"#FF3F3F"}, {"text":" !","color":"#FF7F7F"}]
+execute if score #shrink2 uhc.data.setup matches 5 if score #sec_cooldown uhc.data.display matches 10..59 as @a run title @s actionbar [{"text":"4:","color":"#FF3F3F","bold":true}, {"score":{"name":"#sec_cooldown","objective":"uhc.data.display"},"color":"#FF3F3F","bold":true}, {"text":" avant réduction de la ","color":"#FF7F7F"}, {"text":"bordure","color":"#FF3F3F"}, {"text":" !","color":"#FF7F7F"}]
+execute if score #shrink2 uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches 60 as @a run title @s actionbar [{"text":"1:00","color":"#FF3F3F","bold":true}, {"text":" avant réduction de la ","color":"#FF7F7F"}, {"text":"bordure","color":"#FF3F3F"}, {"text":" !","color":"#FF7F7F"}]
+execute if score #shrink2 uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches 10..59 as @a run title @s actionbar [{"text":"0:","color":"#FF3F3F","bold":true}, {"score":{"name":"#sec_cooldown","objective":"uhc.data.display"},"color":"#FF3F3F","bold":true}, {"text":" avant réduction de la ","color":"#FF7F7F"}, {"text":"bordure","color":"#FF3F3F"}, {"text":" !","color":"#FF7F7F"}]
+execute if score #shrink2 uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches ..9 as @a run title @s actionbar [{"text":"0:0","color":"#FF3F3F","bold":true}, {"score":{"name":"#sec_cooldown","objective":"uhc.data.display"},"color":"#FF3F3F","bold":true}, {"text":" avant réduction de la ","color":"#FF7F7F"}, {"text":"bordure","color":"#FF3F3F"}, {"text":" !","color":"#FF7F7F"}]
+execute if score #shrink2 uhc.data.setup matches 0 as @a run title @s actionbar [{"text":"Réduction de la ","color":"#FFEF7F","bold":true}, {"text":"bordure","color":"#FFE73F"}, {"text":" !","color":"#FFEF7F"}]

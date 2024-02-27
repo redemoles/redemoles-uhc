@@ -1,0 +1,38 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:bamboo_mosaic_stairs"
+		},
+		"title": {
+			"text": "Bamboo Mosaic Stairs",
+			"color": "#FFDF00"
+		},
+		"description": {
+			"text": "Obtenir un(e) Bamboo Mosaic Stairs",
+			"color": "#F7EFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:bamboo_mosaic_stairs"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"requirement"
+		]
+	]
+}

@@ -25,7 +25,6 @@ give @a lava_bucket
 give @a golden_apple 8
 
 # Inventaire
-
 give @a diamond_helmet
 give @a diamond_chestplate
 give @a iron_leggings
@@ -35,3 +34,9 @@ give @a arrow 64
 give @a diamond_pickaxe
 give @a diamond_axe
 give @a diamond_shovel
+
+## Réduction Résistance
+execute if score #pve uhc.data.setup matches 1.. run scoreboard players set #pve uhc.data.setup 1
+
+## TP style meet-up
+tellraw @s [{"text":"Cliquez ici pour forcer le meet-up","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger uhc.meetup.activate set 1"}},{"text":"\n"}]

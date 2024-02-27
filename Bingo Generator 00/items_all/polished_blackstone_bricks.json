@@ -1,0 +1,38 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:polished_blackstone_bricks"
+		},
+		"title": {
+			"text": "Polished Blackstone Bricks",
+			"color": "#FFDF00"
+		},
+		"description": {
+			"text": "Obtenir un(e) Polished Blackstone Bricks",
+			"color": "#F7EFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:polished_blackstone_bricks"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"requirement"
+		]
+	]
+}
