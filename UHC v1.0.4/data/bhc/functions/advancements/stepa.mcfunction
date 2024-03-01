@@ -1,7 +1,7 @@
 
-#> bhc:00/advancements/stepa
+#> bhc:advancements/stepa
 #
-# @within			bhc:00/advancements/new_adv
+# @within			bhc:advancements/new_adv
 #
 #
 # @description		Redirection

@@ -1,7 +1,7 @@
 
-#> bhc:00/advancements/message_line
+#> bhc:advancements/message_line
 #
-# @within			bhc:00/advancements/new_adv
+# @within			bhc:advancements/new_adv
 #
 #
 # @description		Annonce dans le chat de la réalisatoin d'une ligne

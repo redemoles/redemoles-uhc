@@ -1,7 +1,7 @@
 
 #> bhc:scores_calculator/stepb/rank
 #
-# @within			bhc:00/advancements/stepb
+# @within			bhc:advancements/stepb
 #
 #
 # @description		Actualisation scores Étape B 

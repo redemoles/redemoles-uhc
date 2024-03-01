@@ -1,7 +1,7 @@
 
-#> bingo:00/advancements/new_adv
+#> bingo:advancements/new_adv
 #
-# @within			function tag "bhc/advancements/new_adv.json"
+# @within			function tag "bhc:advancements/new_adv.json"
 # @executed			as & at the player who completed the advancement
 #
 # @input macro		$(title)		"Title of the advancement"
@@ -45,8 +45,8 @@ scoreboard players operation @s BHC.column = @e[tag=bhc.new_adv] BHC.column
 
 ## Scores
 # Ajout de stepa au joueur et à l'équipe
-$execute if score #stepa_enabled BHC.data matches $(step) run function bhc:00/advancements/stepa
-$execute if score #stepb_enabled BHC.data matches $(step) run function bhc:00/advancements/stepb
+$execute if score #stepa_enabled BHC.data matches $(step) run function bhc:advancements/stepa
+$execute if score #stepb_enabled BHC.data matches $(step) run function bhc:advancements/stepb
 
 ## Resélection de l'équipe du joueur
 scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
@@ -54,8 +54,8 @@ scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
 ## Messages
 $execute if score #total_first_case BHC.data matches 1 run tellraw @a [{"selector":"@s","bold":true},{"text":" vient de réaliser ","bold":false},{"text":"[","color":"#4F1F7F","bold":false,"hoverEvent":{"action":"show_text","contents":{"text":"$(description)","color":"#FFF7BF"}}},{"text":"$(title)","color":"#FFE73F","bold":false,"hoverEvent":{"action":"show_text","contents":{"text":"$(description)","color":"#FFF7BF"}}},{"text":"]","color":"#4F1F7F","bold":false,"hoverEvent":{"action":"show_text","contents":{"text":"$(description)","color":"#FFF7BF"}}}]
 $execute if score #team_first_case BHC.data matches 1 unless score #total_first_case BHC.data matches 1 run tellraw @a [{"selector":"@s","bold":true},{"text":" vient de réaliser ","bold":false},{"text":"[","color":"#4F1F7F","bold":false,"hoverEvent":{"action":"show_text","contents":{"text":"$(description)","color":"#FFF7BF"}}},{"text":"$(title)","color":"#9F3FFF","bold":false,"hoverEvent":{"action":"show_text","contents":{"text":"$(description)","color":"#FFF7BF"}}},{"text":"]","color":"#4F1F7F","bold":false,"hoverEvent":{"action":"show_text","contents":{"text":"$(description)","color":"#FFF7BF"}}}]
-execute if score #team_first_line BHC.data matches 1 run function bhc:00/advancements/message_line
-execute if score #team_first_column BHC.data matches 1 run function bhc:00/advancements/message_column
+execute if score #team_first_line BHC.data matches 1 run function bhc:advancements/message_line
+execute if score #team_first_column BHC.data matches 1 run function bhc:advancements/message_column
 
 ## Désélection de l'équipe du joueur
 tag @e[type=marker,tag=BHC] remove bhc.new_adv
