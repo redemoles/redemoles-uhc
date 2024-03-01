@@ -17,5 +17,5 @@ execute as @e[type=marker,tag=BHC] run scoreboard players add @s BHC.invStepB 1
 # Récompenses
 execute if score #total_first_case BHC.data matches 1 run give @s minecraft:gold_ingot 4
 experience add @s 1 levels
-give @s minecraft:gold_ingot 4
+give @s minecraft:gold_ingot 3
 give @s minecraft:apple

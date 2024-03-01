@@ -9,6 +9,7 @@
 
 
 scoreboard players set #tick uhc.data.setup 0
+execute if entity @p[tag=Test] run scoreboard players set #tick uhc.data.setup 19
 scoreboard players add #Secondes uhc.data.display 1
 scoreboard players set #sec_cooldown uhc.data.display 60
 scoreboard players operation #sec_cooldown uhc.data.display -= #Secondes uhc.data.display
@@ -16,11 +17,6 @@ execute if score #Secondes uhc.data.display matches 60 run function uhc:in_game/
 
 ## Kill Phantom
 tp @e[type=minecraft:phantom] 0 -1000 0
-
-## AUBE/CREPUSCULE
-
-#execute if score #cycle uhc.data.setup matches 9 if score #Secondes uhc.data.display matches 30 run time add 6600
-#execute if score #cycle uhc.data.setup matches 19 if score #Secondes uhc.data.display matches 30 run time add 5400
 
 ## ALERTE AVANT ACTIVATION PVE/PVP/BORDER
 

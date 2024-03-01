@@ -51,4 +51,4 @@ execute if score #scenario BHC.scenario matches 9 if score #team_first_line BHC.
 execute if score #scenario BHC.scenario matches 9 if score #team_first_column BHC.data matches 1 run function bhc:09/bingo_stepb/column
 
 # Classement
-function bhc:scores_calculator/rank_internal/stepb
+function bhc:scores_calculator/stepb/rank

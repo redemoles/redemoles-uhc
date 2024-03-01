@@ -32,10 +32,10 @@ scoreboard players set @e[type=marker,tag=BHC] BHC.invDeath 0
 scoreboard players set @a[tag=Joueur] uhc.players.lives 3
 
 scoreboard players set #team uhc.id.teams 0
-function bhc:scores_calculator/detector/death
-function bhc:scores_calculator/detector/kills
-function bhc:scores_calculator/rank_internal/stepa
-function bhc:scores_calculator/rank_internal/stepb
+function bhc:scores_calculator/death/scores
+function bhc:scores_calculator/kills/detect
+function bhc:scores_calculator/stepa/rank
+function bhc:scores_calculator/stepb/rank
 
 # Config BHC
 execute if score #scenario BHC.scenario matches 0 run function bhc:00/timer/config

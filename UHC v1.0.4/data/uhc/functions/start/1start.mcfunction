@@ -20,10 +20,6 @@ effect give @a jump_boost infinite 128 true
 
 execute as @a run function uhc:in_game/tp/spawn_start
 
-execute in minecraft:overworld run function uhc:all_dimension_commands/start
-execute in minecraft:the_nether run function uhc:all_dimension_commands/start
-execute in minecraft:the_end run function uhc:all_dimension_commands/start
-
 scoreboard players set @a uhc.players.death 0
 
 ## Suppression du lobby
@@ -108,7 +104,7 @@ execute store result score #Joueurs uhc.data.setup if entity @a[tag=Joueur]
 
 ## Nombre d'équipes en jeu
 scoreboard players set #Teams uhc.data.display 0
-execute as @a[tag=Joueur] run function uhc:start/id_and_teams
+execute as @a[tag=Joueur] run function uhc:start/id_teams
 scoreboard players operation #Teams uhc.data.setup = #Teams uhc.data.display
 
 ## Spectateurs

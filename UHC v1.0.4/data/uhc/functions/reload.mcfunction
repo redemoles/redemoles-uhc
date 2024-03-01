@@ -22,8 +22,9 @@ scoreboard objectives remove uhc.id.teams
 scoreboard objectives remove uhc.id.players
 scoreboard objectives remove uhc.gamemode
 scoreboard objectives remove uhc.game.end
-scoreboard objectives remove uhc.data.setup
+scoreboard objectives remove uhc.data.arrow
 scoreboard objectives remove uhc.data.display
+scoreboard objectives remove uhc.data.setup
 scoreboard objectives remove uhc.meetup.activate
 scoreboard objectives remove uhc.players.hub
 scoreboard objectives remove uhc.players.tp
@@ -43,6 +44,7 @@ scoreboard objectives add uhc.id.teams dummy
 scoreboard objectives add uhc.id.players dummy
 scoreboard objectives add uhc.gamemode dummy
 scoreboard objectives add uhc.game.end trigger
+scoreboard objectives add uhc.data.arrow minecraft.used:minecraft.bow
 scoreboard objectives add uhc.data.display dummy
 scoreboard objectives add uhc.meetup.activate trigger
 scoreboard objectives add uhc.players.hub dummy
@@ -63,17 +65,19 @@ scoreboard objectives setdisplay list uhc.players.health
 kill @e[type=marker]
 title @a reset
 
-## Reset timer hotbar
+## Timer pre-game
 
 scoreboard players set #Minutes uhc.data.display -1
 scoreboard players set #Secondes uhc.data.display -1
 scoreboard players set #Teams uhc.data.display -1
 scoreboard players set #Joueurs uhc.data.display -1
+scoreboard players set #end uhc.game.end 0
 
 ## Reset Tags
 
 tag @a remove Joueur
 tag @a remove Spec
+tag @a remove Test
 
 ## Commandes par défaut
 

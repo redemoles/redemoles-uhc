@@ -31,9 +31,3 @@ execute if score #shrink2 uhc.data.setup matches 5 run playsound minecraft:ui.bu
 execute if score #shrink2 uhc.data.setup matches 5 run tellraw @a [{"text":"[","color":"gray","bold":true},{"text":"UHC","color":"white"},{"text":"]","color":"gray"},{"text":" 3e Réduction ","color":"gold","bold":true},{"text":"activée dans 5 minutes","color":"yellow","bold":false}]
 execute if score #shrink2 uhc.data.setup matches 0 run tellraw @a [{"text":"[","color":"gray","bold":true},{"text":"UHC","color":"white"},{"text":"]","color":"gray"},{"text":" 3e Réduction activée !\nFin de la réduction dans 5 minutes en 32/-32","color":"red","bold":true}]
 execute if score #shrink2 uhc.data.setup matches 0 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
-
-#execute if score #cycle uhc.data.setup matches 20 run time add 6600
-#execute if score #cycle uhc.data.setup matches 20 run tellraw @a [{"text":"Jour","color":"aqua","bold":true,"italic":true}]
-#execute if score #cycle uhc.data.setup matches 10 run time add 5400
-#execute if score #cycle uhc.data.setup matches 10 run tellraw @a [{"text":"Nuit","color":"blue","bold":true,"italic":true}]
-execute if score #cycle uhc.data.setup matches 20 if score #Minutes uhc.data.display matches 0..59 run scoreboard players set #cycle uhc.data.setup 0

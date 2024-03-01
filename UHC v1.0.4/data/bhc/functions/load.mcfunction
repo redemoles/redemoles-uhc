@@ -191,7 +191,7 @@ scoreboard players set #55 BHC.data 55
 scoreboard players set #60 BHC.data 60
 scoreboard players set #100 BHC.data 100
 scoreboard players set #1200 BHC.data 1200
-scoreboard players set #60001 BHC.data 60001
+scoreboard players set #penalty BHC.data 12000
 scoreboard players set #1m BHC.data 1000000
 
 # Roll Bingo 01-04

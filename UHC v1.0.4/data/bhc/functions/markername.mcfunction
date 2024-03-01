@@ -25,4 +25,3 @@ $scoreboard players operation $(name) BHC.Death /= #1200 BHC.data
 
 $scoreboard players operation $(name) BHC.Total = @s BHC.invTotal
 $scoreboard players operation $(name) BHC.ST = @s BHC.invST
-

@@ -63,6 +63,8 @@ blocks = r.content.decode("utf-8").split("\n")
 # Remove unobtainable blocks
 unobtainable_blocks = [
 	"minecraft:oak_boat",
+	"minecraft:apple",
+	"minecraft:gold_ingot",
 	"minecraft:air",
 	"minecraft:cave_air",
 	"minecraft:void_air",
@@ -74,6 +76,7 @@ unobtainable_blocks = [
 	"minecraft:structure_block",
 	"minecraft:debug_stick",
 	"minecraft:knowledge_book",
+	"minecraft:petrified_oak_slab",
 	"minecraft:experience_bottle",
 	"minecraft:totem_of_undying",
 	"minecraft:enchanted_golden_apple",
@@ -108,10 +111,8 @@ unobtainable_blocks = [
 	"minecraft:bell",
 	"minecraft:budding_amethyst",
 	"minecraft:sticky_piston",
-	"minecraft:apple",
-	"minecraft:gold_ingot",
 ]
-blocks = [block for block in blocks if block not in unobtainable_blocks and not "command_block" in block and not "spawn" in block and not "infested" in block and not "banner_pattern" in block and not "template" in block and not "chainmail" in block and not "end_stone" in block and not "purpur" in block and not "chorus" in block and not "shulker" in block and not "dragon" in block and not "netherite" in block and not "lingering" in block and not "tipped_arrow" in block and not "frog" in block and not "turtle" in block and not "head" in block and not "sherd" in block and not "red_sand" in block and not "torchflower" in block and not "pitcher" in block and not "exposed" in block and not "weathered" in block and not "oxidized" in block and not "slime" in block and not "horse" in block and not "music_disc" in block and not "mangrove" in block and not "sponge" in block and not "prismarine" in block and not "sea_lantern" in block and not "bud" in block and not "cluster" in block and not "bee_nest" in block and not "ice" in block and not "coral" in block and not "_ore" in block and not "mushroom_stem" in block and not "mushroom_block" in block and not "nylium" in block and not "sculk" in block]
+blocks = [block for block in blocks if block not in unobtainable_blocks and not "command_block" in block and not "spawn" in block and not "infested" in block and not "banner_pattern" in block and not "template" in block and not "chainmail" in block and not "end_stone" in block and not "purpur" in block and not "chorus" in block and not "shulker" in block and not "dragon" in block and not "netherite" in block and not "lingering" in block and not "tipped_arrow" in block and not "frog" in block and not "turtle" in block and not "head" in block and not "sherd" in block and not "red_sand" in block and not "torchflower" in block and not "pitcher" in block and not "exposed" in block and not "weathered" in block and not "oxidized" in block and not "slime" in block and not "horse" in block and not "music_disc" in block and not "honey" in block and not "candle" in block and not "waxed" in block and not "beehive" in block and not "sea_lantern" in block and not "bud" in block and not "cluster" in block and not "bee_nest" in block and not "ice" in block and not "coral" in block and not "_ore" in block and not "mushroom_stem" in block and not "mushroom_block" in block and not "nylium" in block and not "sculk" in block]
 
 if len(blocks) < number_of_advancements_to_generate:
 	number_of_advancements_to_generate = len(blocks)

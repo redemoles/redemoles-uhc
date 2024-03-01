@@ -21,14 +21,8 @@ execute if score #mode_de_jeu uhc.gamemode matches 0 if score #tick uhc.data.set
 execute unless score #hotbar_cooldown uhc.data.display matches 1.. run execute if score #mode_de_jeu uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. run function bhc:timer/hotbar_timer
 execute if score #hotbar_cooldown uhc.data.display matches 1.. run execute if score #mode_de_jeu uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. run function bhc:timer/hotbar_cooldown
 
-# Détection dans l'inventaire de Notch Apple ou Totem
-give @a[nbt={Inventory:[{id:"minecraft:enchanted_golden_apple"}]}] gold_block 4
-clear @a[nbt={Inventory:[{id:"minecraft:enchanted_golden_apple"}]}] enchanted_golden_apple 1
-give @a[nbt={Inventory:[{id:"minecraft:totem_of_undying"}]}] gold_block 4
-clear @a[nbt={Inventory:[{id:"minecraft:totem_of_undying"}]}] totem_of_undying 1
-
 # Réduction des dégâts des flèches
-execute as @e[type=arrow] at @s run data merge entity @s {damage:0.75,crit:0}
+execute if entity @p[scores={uhc.data.arrow=1}] as @e[type=arrow] at @s run data merge entity @s {damage:0.75,crit:0}
 
 # Effets aux joueurs
 execute if score #pve uhc.data.setup matches ..0 as @a[scores={uhc.effect.resistance=-1}] run scoreboard players set @s uhc.effect.resistance 0
@@ -54,10 +48,12 @@ execute in the_end run scoreboard players set @a[distance=0..] uhc.world.end 1
 execute as @e[type=player,x=-48,y=240,z=-48,dx=49,dy=320,dz=49,scores={uhc.world.end=1}] run function uhc:in_game/tp/end_exit
 
 # Force Meet-up
-execute if entity @a[scores={uhc.meetup.activate=1}] as @a run function uhc:in_game/tp/spawn_end
-execute if entity @a[scores={uhc.meetup.activate=1}] run worldborder set 300
+execute if entity @p[scores={uhc.meetup.activate=1}] as @a run function uhc:in_game/tp/spawn_end
+execute if entity @p[scores={uhc.meetup.activate=1}] run worldborder set 300
+execute if entity @p[scores={uhc.meetup.activate=1}] run scoreboard players set @a uhc.meetup.activate 2
 
 # Force Endgame
-execute if entity @a[scores={uhc.game.end=1}] run scoreboard players add #end uhc.game.end 1
-execute if entity @a[scores={uhc.game.end=1}] run function uhc:in_game/endgame
-execute if entity @a[scores={uhc.game.end=1}] run scoreboard players set @a uhc.game.end 0
+execute if entity @p[scores={uhc.game.end=1}] run scoreboard players add #end uhc.game.end 1
+execute if entity @p[scores={uhc.game.end=1}] as @p[tag=Joueur,tag=!Spec] run function uhc:in_game/endgame
+execute unless entity @p[tag=Joueur,tag=!Spec] as @p[scores={uhc.game.end=1}] run function uhc:in_game/endgame
+scoreboard players set @p[scores={uhc.game.end=1}] uhc.game.end 0
