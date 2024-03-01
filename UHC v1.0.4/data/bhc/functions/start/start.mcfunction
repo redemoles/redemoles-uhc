@@ -1,5 +1,5 @@
 
-#> bhc:start
+#> bhc:start/start
 #
 # @within			uhc:start/2start
 #
@@ -20,16 +20,13 @@ advancement revoke @a everything
 # Sélecteur de collections Mini-Bingos
 summon marker 1 0 1 {Tags:["Selector"]}
 
-# Intégration joueurs aux scores BHC
+# Intégration des joueurs aux scores BHC
 scoreboard players set @a[tag=Joueur] BHC.invStepA 0
 scoreboard players set @a[tag=Joueur] BHC.invStepB 0
 scoreboard players set @a[tag=Joueur] BHC.invKills 0
 scoreboard players set @a[tag=Joueur] BHC.invDeath 0
-scoreboard players set @e[type=marker,tag=BHC] BHC.invStepA 0
-scoreboard players set @e[type=marker,tag=BHC] BHC.invStepB 0
-scoreboard players set @e[type=marker,tag=BHC] BHC.invKills 0
-scoreboard players set @e[type=marker,tag=BHC] BHC.invDeath 0
 scoreboard players set @a[tag=Joueur] uhc.players.lives 3
+execute as @e[type=marker,tag=BHC] run function bhc:start/start_1 
 
 scoreboard players set #team uhc.id.teams 0
 function bhc:scores_calculator/death/scores

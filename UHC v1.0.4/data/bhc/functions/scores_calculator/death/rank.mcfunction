@@ -7,10 +7,6 @@
 # @description		Actualisation scores death 
 #
 
-## Reset Score / Classement
-scoreboard players set @e[type=marker,tag=BHC] BHC.CD -16
-scoreboard players set @e[type=marker,tag=BHC] BHC.invSD 0
-
 ## Classement inversé
 execute as @e[type=marker,tag=BHC] run function bhc:scores_calculator/death/rank_1
 

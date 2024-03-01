@@ -1,10 +1,10 @@
 
-#> bhc:timer/death
+#> bhc:death/death
 #
 # @within			uhc:in_game/timer/tick
 # 
 #
-# @description		Collectes et modifs de quelques données au démarrage
+# @description		Modifications des paramètres pour un joueur mort
 #
 
 scoreboard players remove @s uhc.players.lives 1
@@ -16,7 +16,6 @@ execute if score @s uhc.players.lives matches 1.. as @a[scores={uhc.reward.kills
 execute if score @s uhc.players.lives matches ..0 run function uhc:in_game/death/mort
 
 scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
-execute if score @s uhc.players.lives matches 1.. run scoreboard players add @e[type=marker,tag=BHC,predicate=uhc:id_teams] BHC.teams.deathcount 1
 
 execute unless score #end uhc.game.end matches 1.. run function bhc:scores_calculator/death/penalty
 

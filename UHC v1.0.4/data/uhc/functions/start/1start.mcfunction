@@ -12,13 +12,14 @@ effect clear @a
 clear @a
 gamemode adventure @a
 
-effect give @a resistance infinite 4 true
-effect give @a blindness infinite 4 true
-effect give @a slowness infinite 9 true
-effect give @a weakness infinite 9 true
-effect give @a jump_boost infinite 128 true
+effect give @a[tag=Joueur] resistance infinite 4 true
+effect give @a[tag=Joueur] blindness infinite 4 true
+effect give @a[tag=Joueur] slowness infinite 9 true
+effect give @a[tag=Joueur] weakness infinite 9 true
+effect give @a[tag=Joueur] jump_boost infinite 128 true
 
-execute as @a run function uhc:in_game/tp/spawn_start
+tp @a[tag=Spec] 0 200 0
+execute as @a[tag=Joueur] run function uhc:in_game/tp/spawn_start
 
 scoreboard players set @a uhc.players.death 0
 
@@ -63,22 +64,22 @@ team join 15 @e[type=marker,tag=15]
 team join 16 @e[type=marker,tag=16]
 
 # Id d'équipe des joueurs
-scoreboard players set @e[team=01] uhc.id.teams 1
-scoreboard players set @e[team=02] uhc.id.teams 2
-scoreboard players set @e[team=03] uhc.id.teams 3
-scoreboard players set @e[team=04] uhc.id.teams 4
-scoreboard players set @e[team=05] uhc.id.teams 5
-scoreboard players set @e[team=06] uhc.id.teams 6
-scoreboard players set @e[team=07] uhc.id.teams 7
-scoreboard players set @e[team=08] uhc.id.teams 8
-scoreboard players set @e[team=09] uhc.id.teams 9
-scoreboard players set @e[team=10] uhc.id.teams 10
-scoreboard players set @e[team=11] uhc.id.teams 11
-scoreboard players set @e[team=12] uhc.id.teams 12
-scoreboard players set @e[team=13] uhc.id.teams 13
-scoreboard players set @e[team=14] uhc.id.teams 14
-scoreboard players set @e[team=15] uhc.id.teams 15
-scoreboard players set @e[team=16] uhc.id.teams 16
+scoreboard players set @a[team=01] uhc.id.teams 1
+scoreboard players set @a[team=02] uhc.id.teams 2
+scoreboard players set @a[team=03] uhc.id.teams 3
+scoreboard players set @a[team=04] uhc.id.teams 4
+scoreboard players set @a[team=05] uhc.id.teams 5
+scoreboard players set @a[team=06] uhc.id.teams 6
+scoreboard players set @a[team=07] uhc.id.teams 7
+scoreboard players set @a[team=08] uhc.id.teams 8
+scoreboard players set @a[team=09] uhc.id.teams 9
+scoreboard players set @a[team=10] uhc.id.teams 10
+scoreboard players set @a[team=11] uhc.id.teams 11
+scoreboard players set @a[team=12] uhc.id.teams 12
+scoreboard players set @a[team=13] uhc.id.teams 13
+scoreboard players set @a[team=14] uhc.id.teams 14
+scoreboard players set @a[team=15] uhc.id.teams 15
+scoreboard players set @a[team=16] uhc.id.teams 16
 
 # Id d'équipe des markers
 scoreboard players set @e[tag=01] uhc.id.teams 1
@@ -111,4 +112,5 @@ scoreboard players operation #Teams uhc.data.setup = #Teams uhc.data.display
 execute as @a[tag=!Joueur] run function uhc:in_game/death/spec
 
 ## Nombre de vie
+scoreboard players set @a[tag=Spec] uhc.players.lives 0
 scoreboard players set @a[tag=Joueur] uhc.players.lives 1

@@ -1,7 +1,7 @@
 
 #> bhc:scores_calculator/kills/scores
 #
-# @within			bhc:timer/death
+# @within			bhc:death/death
 #
 #
 # @description		Attribution des scores 

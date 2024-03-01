@@ -34,11 +34,11 @@ execute if score #message uhc.data.setup matches 1..5 run scoreboard players add
 execute if score #message uhc.data.setup matches 6 run scoreboard players set #message uhc.data.setup 1
 
 # Respawn
-execute if score #mode_de_jeu uhc.gamemode matches 1 as @a[scores={uhc.timer.respawn=1..}] run function bhc:timer/respawn_cooldown
+execute if score #mode_de_jeu uhc.gamemode matches 1 as @a[scores={uhc.timer.respawn=1..}] run function bhc:death/respawn_cooldown
 
 # Détection d'un joueur mort
 execute if score #mode_de_jeu uhc.gamemode matches 0 as @e[type=player,scores={uhc.players.death=1}] run function uhc:in_game/death/mort
-execute if score #mode_de_jeu uhc.gamemode matches 1 as @e[type=player,scores={uhc.players.death=1}] run function bhc:timer/death
+execute if score #mode_de_jeu uhc.gamemode matches 1 as @e[type=player,scores={uhc.players.death=1}] run function bhc:death/death
 
 # Connexion d'un joueur externe
 execute as @a[tag=!Joueur,tag=!Spec] run function uhc:in_game/death/spec

@@ -10,7 +10,7 @@
 
 
 
-execute if score #chunck_pregen pregen.map matches 2001 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 2 : 2000x2000 (1/32)"}]
+execute if score #chunck_pregen pregen.map matches 2001 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 1 : 2000x2000 (1/32)"}]
 execute if score #chunck_pregen pregen.map matches 2001 run forceload add 1 1 128 128
 execute if score #chunck_pregen pregen.map matches 2002 run forceload remove 1 1 128 128
 
@@ -35,7 +35,7 @@ execute if score #chunck_pregen pregen.map matches 2008 run forceload remove 1 7
 execute if score #chunck_pregen pregen.map matches 2008 run forceload add 1 897 128 1024
 execute if score #chunck_pregen pregen.map matches 2009 run forceload remove 1 897 128 1024
 
-execute if score #chunck_pregen pregen.map matches 2009 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 2 : 2000x2000 (2/32)"}]
+execute if score #chunck_pregen pregen.map matches 2009 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 1 : 2000x2000 (2/32)"}]
 execute if score #chunck_pregen pregen.map matches 2009 run forceload add 129 1 256 128
 execute if score #chunck_pregen pregen.map matches 2010 run forceload remove 129 1 256 128
 
@@ -60,7 +60,7 @@ execute if score #chunck_pregen pregen.map matches 2016 run forceload remove 129
 execute if score #chunck_pregen pregen.map matches 2016 run forceload add 129 897 256 1024
 execute if score #chunck_pregen pregen.map matches 2017 run forceload remove 129 897 256 1024
 
-execute if score #chunck_pregen pregen.map matches 2017 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 2 : 2000x2000 (3/32)"}]
+execute if score #chunck_pregen pregen.map matches 2017 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 1 : 2000x2000 (3/32)"}]
 execute if score #chunck_pregen pregen.map matches 2017 run forceload add 257 1 384 128
 execute if score #chunck_pregen pregen.map matches 2018 run forceload remove 257 1 384 128
 
@@ -85,7 +85,7 @@ execute if score #chunck_pregen pregen.map matches 2024 run forceload remove 257
 execute if score #chunck_pregen pregen.map matches 2024 run forceload add 257 897 384 1024
 execute if score #chunck_pregen pregen.map matches 2025 run forceload remove 257 897 384 1024
 
-execute if score #chunck_pregen pregen.map matches 2025 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 2 : 2000x2000 (4/32)"}]
+execute if score #chunck_pregen pregen.map matches 2025 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 1 : 2000x2000 (4/32)"}]
 execute if score #chunck_pregen pregen.map matches 2025 run forceload add 385 1 512 128
 execute if score #chunck_pregen pregen.map matches 2026 run forceload remove 385 1 512 128
 
@@ -110,7 +110,7 @@ execute if score #chunck_pregen pregen.map matches 2032 run forceload remove 385
 execute if score #chunck_pregen pregen.map matches 2032 run forceload add 385 897 512 1024
 execute if score #chunck_pregen pregen.map matches 2033 run forceload remove 385 897 512 1024
 
-execute if score #chunck_pregen pregen.map matches 2033 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 2 : 2000x2000 (5/32)"}]
+execute if score #chunck_pregen pregen.map matches 2033 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 1 : 2000x2000 (5/32)"}]
 execute if score #chunck_pregen pregen.map matches 2033 run forceload add 513 1 640 128
 execute if score #chunck_pregen pregen.map matches 2034 run forceload remove 513 1 640 128
 
@@ -135,7 +135,7 @@ execute if score #chunck_pregen pregen.map matches 2040 run forceload remove 513
 execute if score #chunck_pregen pregen.map matches 2040 run forceload add 513 897 640 1024
 execute if score #chunck_pregen pregen.map matches 2041 run forceload remove 513 897 640 1024
 
-execute if score #chunck_pregen pregen.map matches 2041 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 2 : 2000x2000 (6/32)"}]
+execute if score #chunck_pregen pregen.map matches 2041 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 1 : 2000x2000 (6/32)"}]
 execute if score #chunck_pregen pregen.map matches 2041 run forceload add 641 1 768 128
 execute if score #chunck_pregen pregen.map matches 2042 run forceload remove 641 1 768 128
 
@@ -160,7 +160,7 @@ execute if score #chunck_pregen pregen.map matches 2048 run forceload remove 641
 execute if score #chunck_pregen pregen.map matches 2048 run forceload add 641 897 768 1024
 execute if score #chunck_pregen pregen.map matches 2049 run forceload remove 641 897 768 1024
 
-execute if score #chunck_pregen pregen.map matches 2049 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 2 : 2000x2000 (7/32)"}]
+execute if score #chunck_pregen pregen.map matches 2049 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 1 : 2000x2000 (7/32)"}]
 execute if score #chunck_pregen pregen.map matches 2049 run forceload add 769 1 896 128
 execute if score #chunck_pregen pregen.map matches 2050 run forceload remove 769 1 896 128
 
@@ -185,7 +185,7 @@ execute if score #chunck_pregen pregen.map matches 2056 run forceload remove 769
 execute if score #chunck_pregen pregen.map matches 2056 run forceload add 769 897 896 1024
 execute if score #chunck_pregen pregen.map matches 2057 run forceload remove 769 897 896 1024
 
-execute if score #chunck_pregen pregen.map matches 2057 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 2 : 2000x2000 (8/32)"}]
+execute if score #chunck_pregen pregen.map matches 2057 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 1 : 2000x2000 (8/32)"}]
 execute if score #chunck_pregen pregen.map matches 2057 run forceload add 897 1 1024 128
 execute if score #chunck_pregen pregen.map matches 2058 run forceload remove 897 1 1024 128
 
@@ -210,7 +210,7 @@ execute if score #chunck_pregen pregen.map matches 2064 run forceload remove 897
 execute if score #chunck_pregen pregen.map matches 2064 run forceload add 897 897 1024 1024
 execute if score #chunck_pregen pregen.map matches 2065 run forceload remove 897 897 1024 1024
 
-execute if score #chunck_pregen pregen.map matches 2065 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 2 : 2000x2000 (9/32)"}]
+execute if score #chunck_pregen pregen.map matches 2065 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 1 : 2000x2000 (9/32)"}]
 execute if score #chunck_pregen pregen.map matches 2065 run forceload add 0 1 -127 128
 execute if score #chunck_pregen pregen.map matches 2066 run forceload remove 0 1 -127 128
 
@@ -235,7 +235,7 @@ execute if score #chunck_pregen pregen.map matches 2072 run forceload remove 0 7
 execute if score #chunck_pregen pregen.map matches 2072 run forceload add 0 897 -127 1024
 execute if score #chunck_pregen pregen.map matches 2073 run forceload remove 0 897 -127 1024
 
-execute if score #chunck_pregen pregen.map matches 2073 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 2 : 2000x2000 (10/32)"}]
+execute if score #chunck_pregen pregen.map matches 2073 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 1 : 2000x2000 (10/32)"}]
 execute if score #chunck_pregen pregen.map matches 2073 run forceload add -128 1 -255 128
 execute if score #chunck_pregen pregen.map matches 2074 run forceload remove -128 1 -255 128
 
@@ -260,7 +260,7 @@ execute if score #chunck_pregen pregen.map matches 2080 run forceload remove -12
 execute if score #chunck_pregen pregen.map matches 2080 run forceload add -128 897 -255 1024
 execute if score #chunck_pregen pregen.map matches 2081 run forceload remove -128 897 -255 1024
 
-execute if score #chunck_pregen pregen.map matches 2081 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 2 : 2000x2000 (11/32)"}]
+execute if score #chunck_pregen pregen.map matches 2081 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 1 : 2000x2000 (11/32)"}]
 execute if score #chunck_pregen pregen.map matches 2081 run forceload add -256 1 -383 128
 execute if score #chunck_pregen pregen.map matches 2082 run forceload remove -256 1 -383 128
 
@@ -285,7 +285,7 @@ execute if score #chunck_pregen pregen.map matches 2088 run forceload remove -25
 execute if score #chunck_pregen pregen.map matches 2088 run forceload add -256 897 -383 1024
 execute if score #chunck_pregen pregen.map matches 2089 run forceload remove -256 897 -383 1024
 
-execute if score #chunck_pregen pregen.map matches 2089 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 2 : 2000x2000 (12/32)"}]
+execute if score #chunck_pregen pregen.map matches 2089 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 1 : 2000x2000 (12/32)"}]
 execute if score #chunck_pregen pregen.map matches 2089 run forceload add -384 1 -511 128
 execute if score #chunck_pregen pregen.map matches 2090 run forceload remove -384 1 -511 128
 
@@ -310,7 +310,7 @@ execute if score #chunck_pregen pregen.map matches 2096 run forceload remove -38
 execute if score #chunck_pregen pregen.map matches 2096 run forceload add -384 897 -511 1024
 execute if score #chunck_pregen pregen.map matches 2097 run forceload remove -384 897 -511 1024
 
-execute if score #chunck_pregen pregen.map matches 2097 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 2 : 2000x2000 (13/32)"}]
+execute if score #chunck_pregen pregen.map matches 2097 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 1 : 2000x2000 (13/32)"}]
 execute if score #chunck_pregen pregen.map matches 2097 run forceload add -512 1 -639 128
 execute if score #chunck_pregen pregen.map matches 2098 run forceload remove -512 1 -639 128
 
@@ -335,7 +335,7 @@ execute if score #chunck_pregen pregen.map matches 2104 run forceload remove -51
 execute if score #chunck_pregen pregen.map matches 2104 run forceload add -512 897 -639 1024
 execute if score #chunck_pregen pregen.map matches 2105 run forceload remove -512 897 -639 1024
 
-execute if score #chunck_pregen pregen.map matches 2105 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 2 : 2000x2000 (14/32)"}]
+execute if score #chunck_pregen pregen.map matches 2105 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 1 : 2000x2000 (14/32)"}]
 execute if score #chunck_pregen pregen.map matches 2105 run forceload add -640 1 -767 128
 execute if score #chunck_pregen pregen.map matches 2106 run forceload remove -640 1 -767 128
 
@@ -360,7 +360,7 @@ execute if score #chunck_pregen pregen.map matches 2112 run forceload remove -64
 execute if score #chunck_pregen pregen.map matches 2112 run forceload add -640 897 -767 1024
 execute if score #chunck_pregen pregen.map matches 2113 run forceload remove -640 897 -767 1024
 
-execute if score #chunck_pregen pregen.map matches 2113 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 2 : 2000x2000 (15/32)"}]
+execute if score #chunck_pregen pregen.map matches 2113 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 1 : 2000x2000 (15/32)"}]
 execute if score #chunck_pregen pregen.map matches 2113 run forceload add -768 1 -895 128
 execute if score #chunck_pregen pregen.map matches 2114 run forceload remove -768 1 -895 128
 
@@ -385,7 +385,7 @@ execute if score #chunck_pregen pregen.map matches 2120 run forceload remove -76
 execute if score #chunck_pregen pregen.map matches 2120 run forceload add -768 897 -895 1024
 execute if score #chunck_pregen pregen.map matches 2121 run forceload remove -768 897 -895 1024
 
-execute if score #chunck_pregen pregen.map matches 2121 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 2 : 2000x2000 (16/32)"}]
+execute if score #chunck_pregen pregen.map matches 2121 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 1 : 2000x2000 (16/32)"}]
 execute if score #chunck_pregen pregen.map matches 2121 run forceload add -896 1 -1023 128
 execute if score #chunck_pregen pregen.map matches 2122 run forceload remove -896 1 -1023 128
 
@@ -410,7 +410,7 @@ execute if score #chunck_pregen pregen.map matches 2128 run forceload remove -89
 execute if score #chunck_pregen pregen.map matches 2128 run forceload add -896 897 -1023 1024
 execute if score #chunck_pregen pregen.map matches 2129 run forceload remove -896 897 -1023 1024
 
-execute if score #chunck_pregen pregen.map matches 2129 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 2 : 2000x2000 (17/32)"}]
+execute if score #chunck_pregen pregen.map matches 2129 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 1 : 2000x2000 (17/32)"}]
 execute if score #chunck_pregen pregen.map matches 2129 run forceload add 1 0 128 -127
 execute if score #chunck_pregen pregen.map matches 2130 run forceload remove 1 0 128 -127
 
@@ -435,7 +435,7 @@ execute if score #chunck_pregen pregen.map matches 2136 run forceload remove 1 -
 execute if score #chunck_pregen pregen.map matches 2136 run forceload add 1 -896 128 -1023
 execute if score #chunck_pregen pregen.map matches 2137 run forceload remove 1 -896 128 -1023
 
-execute if score #chunck_pregen pregen.map matches 2137 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 2 : 2000x2000 (18/32)"}]
+execute if score #chunck_pregen pregen.map matches 2137 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 1 : 2000x2000 (18/32)"}]
 execute if score #chunck_pregen pregen.map matches 2137 run forceload add 129 0 256 -127
 execute if score #chunck_pregen pregen.map matches 2138 run forceload remove 129 0 256 -127
 
@@ -460,7 +460,7 @@ execute if score #chunck_pregen pregen.map matches 2144 run forceload remove 129
 execute if score #chunck_pregen pregen.map matches 2144 run forceload add 129 -896 256 -1023
 execute if score #chunck_pregen pregen.map matches 2145 run forceload remove 129 -896 256 -1023
 
-execute if score #chunck_pregen pregen.map matches 2145 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 2 : 2000x2000 (19/32)"}]
+execute if score #chunck_pregen pregen.map matches 2145 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 1 : 2000x2000 (19/32)"}]
 execute if score #chunck_pregen pregen.map matches 2145 run forceload add 257 0 384 -127
 execute if score #chunck_pregen pregen.map matches 2146 run forceload remove 257 0 384 -127
 
@@ -485,7 +485,7 @@ execute if score #chunck_pregen pregen.map matches 2152 run forceload remove 257
 execute if score #chunck_pregen pregen.map matches 2152 run forceload add 257 -896 384 -1023
 execute if score #chunck_pregen pregen.map matches 2153 run forceload remove 257 -896 384 -1023
 
-execute if score #chunck_pregen pregen.map matches 2153 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 2 : 2000x2000 (20/32)"}]
+execute if score #chunck_pregen pregen.map matches 2153 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 1 : 2000x2000 (20/32)"}]
 execute if score #chunck_pregen pregen.map matches 2153 run forceload add 385 0 512 -127
 execute if score #chunck_pregen pregen.map matches 2154 run forceload remove 385 0 512 -127
 
@@ -510,7 +510,7 @@ execute if score #chunck_pregen pregen.map matches 2160 run forceload remove 385
 execute if score #chunck_pregen pregen.map matches 2160 run forceload add 385 -896 512 -1023
 execute if score #chunck_pregen pregen.map matches 2161 run forceload remove 385 -896 512 -1023
 
-execute if score #chunck_pregen pregen.map matches 2161 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 2 : 2000x2000 (21/32)"}]
+execute if score #chunck_pregen pregen.map matches 2161 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 1 : 2000x2000 (21/32)"}]
 execute if score #chunck_pregen pregen.map matches 2161 run forceload add 513 0 640 -127
 execute if score #chunck_pregen pregen.map matches 2162 run forceload remove 513 0 640 -127
 
@@ -535,7 +535,7 @@ execute if score #chunck_pregen pregen.map matches 2168 run forceload remove 513
 execute if score #chunck_pregen pregen.map matches 2168 run forceload add 513 -896 640 -1023
 execute if score #chunck_pregen pregen.map matches 2169 run forceload remove 513 -896 640 -1023
 
-execute if score #chunck_pregen pregen.map matches 2169 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 2 : 2000x2000 (22/32)"}]
+execute if score #chunck_pregen pregen.map matches 2169 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 1 : 2000x2000 (22/32)"}]
 execute if score #chunck_pregen pregen.map matches 2169 run forceload add 641 0 768 -127
 execute if score #chunck_pregen pregen.map matches 2170 run forceload remove 641 0 768 -127
 
@@ -560,7 +560,7 @@ execute if score #chunck_pregen pregen.map matches 2176 run forceload remove 641
 execute if score #chunck_pregen pregen.map matches 2176 run forceload add 641 -896 768 -1023
 execute if score #chunck_pregen pregen.map matches 2177 run forceload remove 641 -896 768 -1023
 
-execute if score #chunck_pregen pregen.map matches 2177 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 2 : 2000x2000 (23/32)"}]
+execute if score #chunck_pregen pregen.map matches 2177 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 1 : 2000x2000 (23/32)"}]
 execute if score #chunck_pregen pregen.map matches 2177 run forceload add 769 0 896 -127
 execute if score #chunck_pregen pregen.map matches 2178 run forceload remove 769 0 896 -127
 
@@ -585,7 +585,7 @@ execute if score #chunck_pregen pregen.map matches 2184 run forceload remove 769
 execute if score #chunck_pregen pregen.map matches 2184 run forceload add 769 -896 896 -1023
 execute if score #chunck_pregen pregen.map matches 2185 run forceload remove 769 -896 896 -1023
 
-execute if score #chunck_pregen pregen.map matches 2185 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 2 : 2000x2000 (24/32)"}]
+execute if score #chunck_pregen pregen.map matches 2185 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 1 : 2000x2000 (24/32)"}]
 execute if score #chunck_pregen pregen.map matches 2185 run forceload add 897 0 1024 -127
 execute if score #chunck_pregen pregen.map matches 2186 run forceload remove 897 0 1024 -127
 
@@ -610,7 +610,7 @@ execute if score #chunck_pregen pregen.map matches 2192 run forceload remove 897
 execute if score #chunck_pregen pregen.map matches 2192 run forceload add 897 -896 1024 -1023
 execute if score #chunck_pregen pregen.map matches 2193 run forceload remove 897 -896 1024 -1023
 
-execute if score #chunck_pregen pregen.map matches 2193 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 2 : 2000x2000 (25/32)"}]
+execute if score #chunck_pregen pregen.map matches 2193 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 1 : 2000x2000 (25/32)"}]
 execute if score #chunck_pregen pregen.map matches 2193 run forceload add 0 0 -127 -127
 execute if score #chunck_pregen pregen.map matches 2194 run forceload remove 0 0 -127 -127
 
@@ -635,7 +635,7 @@ execute if score #chunck_pregen pregen.map matches 2200 run forceload remove 0 -
 execute if score #chunck_pregen pregen.map matches 2200 run forceload add 0 -896 -127 -1023
 execute if score #chunck_pregen pregen.map matches 2201 run forceload remove 0 -896 -127 -1023
 
-execute if score #chunck_pregen pregen.map matches 2201 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 2 : 2000x2000 (26/32)"}]
+execute if score #chunck_pregen pregen.map matches 2201 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 1 : 2000x2000 (26/32)"}]
 execute if score #chunck_pregen pregen.map matches 2201 run forceload add -128 0 -255 -127
 execute if score #chunck_pregen pregen.map matches 2202 run forceload remove -128 0 -255 -127
 
@@ -660,7 +660,7 @@ execute if score #chunck_pregen pregen.map matches 2208 run forceload remove -12
 execute if score #chunck_pregen pregen.map matches 2208 run forceload add -128 -896 -255 -1023
 execute if score #chunck_pregen pregen.map matches 2209 run forceload remove -128 -896 -255 -1023
 
-execute if score #chunck_pregen pregen.map matches 2209 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 2 : 2000x2000 (27/32)"}]
+execute if score #chunck_pregen pregen.map matches 2209 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 1 : 2000x2000 (27/32)"}]
 execute if score #chunck_pregen pregen.map matches 2209 run forceload add -256 0 -383 -127
 execute if score #chunck_pregen pregen.map matches 2210 run forceload remove -256 0 -383 -127
 
@@ -685,7 +685,7 @@ execute if score #chunck_pregen pregen.map matches 2216 run forceload remove -25
 execute if score #chunck_pregen pregen.map matches 2216 run forceload add -256 -896 -383 -1023
 execute if score #chunck_pregen pregen.map matches 2217 run forceload remove -256 -896 -383 -1023
 
-execute if score #chunck_pregen pregen.map matches 2217 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 2 : 2000x2000 (28/32)"}]
+execute if score #chunck_pregen pregen.map matches 2217 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 1 : 2000x2000 (28/32)"}]
 execute if score #chunck_pregen pregen.map matches 2217 run forceload add -384 0 -511 -127
 execute if score #chunck_pregen pregen.map matches 2218 run forceload remove -384 0 -511 -127
 
@@ -710,7 +710,7 @@ execute if score #chunck_pregen pregen.map matches 2224 run forceload remove -38
 execute if score #chunck_pregen pregen.map matches 2224 run forceload add -384 -896 -511 -1023
 execute if score #chunck_pregen pregen.map matches 2225 run forceload remove -384 -896 -511 -1023
 
-execute if score #chunck_pregen pregen.map matches 2225 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 2 : 2000x2000 (29/32)"}]
+execute if score #chunck_pregen pregen.map matches 2225 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 1 : 2000x2000 (29/32)"}]
 execute if score #chunck_pregen pregen.map matches 2225 run forceload add -512 0 -639 -127
 execute if score #chunck_pregen pregen.map matches 2226 run forceload remove -512 0 -639 -127
 
@@ -735,7 +735,7 @@ execute if score #chunck_pregen pregen.map matches 2232 run forceload remove -51
 execute if score #chunck_pregen pregen.map matches 2232 run forceload add -512 -896 -639 -1023
 execute if score #chunck_pregen pregen.map matches 2233 run forceload remove -512 -896 -639 -1023
 
-execute if score #chunck_pregen pregen.map matches 2233 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 2 : 2000x2000 (30/32)"}]
+execute if score #chunck_pregen pregen.map matches 2233 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 1 : 2000x2000 (30/32)"}]
 execute if score #chunck_pregen pregen.map matches 2233 run forceload add -640 0 -767 -127
 execute if score #chunck_pregen pregen.map matches 2234 run forceload remove -640 0 -767 -127
 
@@ -760,7 +760,7 @@ execute if score #chunck_pregen pregen.map matches 2240 run forceload remove -64
 execute if score #chunck_pregen pregen.map matches 2240 run forceload add -640 -896 -767 -1023
 execute if score #chunck_pregen pregen.map matches 2241 run forceload remove -640 -896 -767 -1023
 
-execute if score #chunck_pregen pregen.map matches 2241 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 2 : 2000x2000 (31/32)"}]
+execute if score #chunck_pregen pregen.map matches 2241 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 1 : 2000x2000 (31/32)"}]
 execute if score #chunck_pregen pregen.map matches 2241 run forceload add -768 0 -895 -127
 execute if score #chunck_pregen pregen.map matches 2242 run forceload remove -768 0 -895 -127
 
@@ -785,7 +785,7 @@ execute if score #chunck_pregen pregen.map matches 2248 run forceload remove -76
 execute if score #chunck_pregen pregen.map matches 2248 run forceload add -768 -896 -895 -1023
 execute if score #chunck_pregen pregen.map matches 2249 run forceload remove -768 -896 -895 -1023
 
-execute if score #chunck_pregen pregen.map matches 2249 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 2 : 2000x2000 (32/32)"}]
+execute if score #chunck_pregen pregen.map matches 2249 run tellraw @a[scores={pregen.map=1..}] [{"text":"Étape 1 : 2000x2000 (32/32)"}]
 execute if score #chunck_pregen pregen.map matches 2249 run forceload add -896 0 -1023 -127
 execute if score #chunck_pregen pregen.map matches 2250 run forceload remove -896 0 -1023 -127
 

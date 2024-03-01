@@ -1,7 +1,7 @@
 
 #> bhc:scores_calculator/kills/detect
 #
-# @within			bhc:timer/death
+# @within			bhc:death/death
 #
 #
 # @description		Détection nouveau kill 

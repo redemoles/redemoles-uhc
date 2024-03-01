@@ -7,10 +7,6 @@
 # @description		Actualisation scores Étape B 
 #
 
-## Reset Score / Classement
-scoreboard players set @e[type=marker,tag=BHC] BHC.CB -16
-scoreboard players set @e[type=marker,tag=BHC] BHC.invSB 0
-
 ## Classement inversé
 execute as @e[type=marker,tag=BHC] run function bhc:scores_calculator/stepb/rank_1
 

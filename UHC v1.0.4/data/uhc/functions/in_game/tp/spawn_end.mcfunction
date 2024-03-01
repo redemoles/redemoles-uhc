@@ -1,7 +1,7 @@
 
 #> uhc:in_game/tp/spawn_end
 #
-# @within			bhc:timer/death
+# @within			bhc:death/death
 # @within			uhc:in_game/timer/tick
 #
 # @description		Configuration du timer 

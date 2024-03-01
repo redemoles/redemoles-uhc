@@ -2,7 +2,7 @@
 #> bhc:scores_calculator/death/penalty
 #
 # @within			bhc:scores_calculator/death/scores
-# @within			bhc:timer/death
+# @within			bhc:death/death
 #
 # @description		Actualisation scores death 
 #

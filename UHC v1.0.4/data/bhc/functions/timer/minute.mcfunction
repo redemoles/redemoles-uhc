@@ -28,7 +28,5 @@ execute if score #Minutes uhc.data.display matches 0 run scoreboard players oper
 
 ## REDUCTION DE VIE FORCÉE
 
-execute if score #vie2 BHC.timer matches 0 run tellraw @a [{"text":"[","color":"#DFC300","bold":true},{"text":"Bingo","color":"#BF7FFF"},{"text":"UHC","color":"#9F3FFF"},{"text":"]","color":"#DFC300"},{"text":" Le nombre de vies maximum descend à 2 !","color":"#FF3F3F","bold":false}]
-execute if score #vie2 BHC.timer matches 0 run scoreboard players set @a[scores={uhc.players.lives=3}] uhc.players.lives 2
-execute if score #vie1 BHC.timer matches 0 run tellraw @a [{"text":"[","color":"#DFC300","bold":true},{"text":"Bingo","color":"#BF7FFF"},{"text":"UHC","color":"#9F3FFF"},{"text":"]","color":"#DFC300"},{"text":" Le nombre de vies maximum descend à 1 !","color":"#FF3F3F","bold":false}]
-execute if score #vie1 BHC.timer matches 0 run scoreboard players set @a[scores={uhc.players.lives=2}] uhc.players.lives 1
+execute if score #vie2 BHC.timer matches 0 run tellraw @a[scores={uhc.players.lives=..2}] [{"text":"[","color":"#DFC300","bold":true},{"text":"Bingo","color":"#BF7FFF"},{"text":"UHC","color":"#9F3FFF"},{"text":"]","color":"#DFC300"},{"text":" Le nombre de vies maximum descend à 2 !","color":"#FF3F3F","bold":false}]
+execute if score #vie1 BHC.timer matches 0 run tellraw @a[scores={uhc.players.lives=..1}] [{"text":"[","color":"#DFC300","bold":true},{"text":"Bingo","color":"#BF7FFF"},{"text":"UHC","color":"#9F3FFF"},{"text":"]","color":"#DFC300"},{"text":" Le nombre de vies maximum descend à 1 !","color":"#FF3F3F","bold":false}]
