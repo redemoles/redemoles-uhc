@@ -22,7 +22,7 @@ execute unless score #hotbar_cooldown uhc.data.display matches 1.. run execute i
 execute if score #hotbar_cooldown uhc.data.display matches 1.. run execute if score #mode_de_jeu uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. run function bhc:timer/hotbar_cooldown
 
 # Réduction des dégâts des flèches
-execute if entity @p[scores={uhc.data.arrow=1}] as @e[type=arrow] at @s run data merge entity @s {damage:0.75,crit:0}
+execute as @e[type=arrow] at @s run data merge entity @s {damage:0.75,crit:0}
 
 # Effets aux joueurs
 execute if score #pve uhc.data.setup matches ..0 as @a[scores={uhc.effect.resistance=-1}] run scoreboard players set @s uhc.effect.resistance 0
