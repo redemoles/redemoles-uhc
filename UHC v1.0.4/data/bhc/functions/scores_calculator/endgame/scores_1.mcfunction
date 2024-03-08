@@ -8,14 +8,14 @@
 #
 
 ## Reset Score / Classement
-scoreboard players set @s BHC.CT -16
-scoreboard players set @s BHC.invST 0
+scoreboard players set @s bhc.CT -16
+scoreboard players set @s bhc.invST 0
 
 ## Somme des scores
-scoreboard players operation @s BHC.invST += @s BHC.invSA
-scoreboard players operation @s BHC.invST += @s BHC.invSB
-scoreboard players operation @s BHC.invST += @s BHC.invSK
-scoreboard players operation @s BHC.invST += @s BHC.invSD
+scoreboard players operation @s bhc.invST += @s bhc.invSA
+scoreboard players operation @s bhc.invST += @s bhc.invSB
+scoreboard players operation @s bhc.invST += @s bhc.invSK
+scoreboard players operation @s bhc.invST += @s bhc.invSD
 # Ajout des points d'anti-égalité
-scoreboard players operation @s BHC.invST *= #100 BHC.data
-scoreboard players operation @s BHC.invST += @s BHC.CR
+scoreboard players operation @s bhc.invST *= #100 bhc.data
+scoreboard players operation @s bhc.invST += @s bhc.CR

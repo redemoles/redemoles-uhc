@@ -9,20 +9,20 @@
 
 ## Scores
 # Nombre de points en fonction du nombre d'équipe
-scoreboard players operation @s BHC.invSK += #Teams BHC.data
+scoreboard players operation @s bhc.invSK += #Teams bhc.data
 
 # 2e place
-scoreboard players remove @s[scores={BHC.CK=-15}] BHC.invSK 2
+scoreboard players remove @s[scores={bhc.CK=-15}] bhc.invSK 2
 
 # 3e-16e places
-scoreboard players remove @s[scores={BHC.CK=-14..}] BHC.invSK 4
+scoreboard players remove @s[scores={bhc.CK=-14..}] bhc.invSK 4
 
 # Les 2 dernières places
-execute if score @s BHC.invSK matches ..0 run scoreboard players set @s BHC.invSK 0
+execute if score @s bhc.invSK matches ..0 run scoreboard players set @s bhc.invSK 0
 
 # Application du % → Valeur de ce score pour le score total
-scoreboard players operation @s BHC.invSK *= #03 BHC.data
+scoreboard players operation @s bhc.invSK *= #03 bhc.data
 
 ## Classement
 # Classement Kills → Score d'équipe → Score d'affichage pour le tableau
-scoreboard players add @s BHC.CK 17
+scoreboard players add @s bhc.CK 17

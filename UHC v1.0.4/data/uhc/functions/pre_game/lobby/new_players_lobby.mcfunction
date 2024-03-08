@@ -16,6 +16,7 @@ execute if score #lobby lobby.data matches 1 run tp @s 0 293 0
 gamemode adventure @s
 effect clear @s
 clear @s
+execute as @s[tag=Host] run function uhc:pre_game/command_host/reload
 effect give @s minecraft:saturation infinite 0 true
 effect give @s minecraft:resistance infinite 4 true
 effect give @s minecraft:weakness infinite 4 true

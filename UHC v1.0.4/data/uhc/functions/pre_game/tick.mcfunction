@@ -39,4 +39,7 @@ title @a[team=15] actionbar [{"text":"Équipe Gris f.","color":"dark_gray","bold
 title @a[team=16] actionbar [{"text":"Équipe Noire","color":"black","bold":true}]
 
 # Vérification des spawns
-execute as @a[scores={uhc.spawn.check=0..}] run function uhc:check_spawns
+execute as @a[scores={uhc.spawn.check=0..}] run function uhc:pre_game/world_check/spawns
+
+# Kill item au sol
+kill @e[type=item]

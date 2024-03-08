@@ -1,11 +1,13 @@
 
-#> uhc:check_biomes
+#> uhc:pre_game/world_check/biomes
 #
 # @within			
 # @executed			default context
 #
 # @description		Vérification de la présence des biomes
 #
+
+tag @s add host.check_biomes
 
 gamerule sendCommandFeedback true
 

@@ -1,11 +1,13 @@
 
-#> uhc:check_spawn
+#> uhc:pre_game/world_check/spawn
 #
 # @within			
 # @executed			default context
 #
 # @description		Vérification des points de spawns des équipes
 #
+
+tag @s add host.check_spawns
 
 ## Démarrage Timer
 execute unless score #ticks uhc.spawn.check matches 0.. run gamemode spectator @s

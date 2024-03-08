@@ -12,7 +12,7 @@
 scoreboard players remove #Secondes uhc.data.display 60
 scoreboard players add #sec_cooldown uhc.data.display 60
 scoreboard players add #Minutes uhc.data.display 1
-execute if score #mode_de_jeu uhc.gamemode matches 0 run function uhc:in_game/timer/cooldown
+execute if score #vanilla uhc.gamemode matches 1 run function uhc:in_game/timer/cooldown
 
 ## TIMER INTERNE
 
@@ -29,7 +29,7 @@ execute if score #border uhc.data.setup matches 0 run gamerule doMobSpawning fal
 
 ## MINUTEUR DES MODES DE JEU ALTERNATIFS
 
-execute if score #mode_de_jeu uhc.gamemode matches 1 run function bhc:timer/minute
+execute if score #bhc uhc.gamemode matches 1 run function bhc:timer/minute
 
 ## ALERTES SONORES
 

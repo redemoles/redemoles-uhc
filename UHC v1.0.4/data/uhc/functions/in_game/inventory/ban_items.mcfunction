@@ -1,4 +1,12 @@
 
+#> uhc:in_game/inventory/ban_items
+#
+# @within			advancements #uhc:inventory_changed
+# @executed			default context
+#
+# @description		Function executed every tick
+#
+
 # Revoke advancement for repeating ability
 advancement revoke @s only uhc:inventory_changed
 

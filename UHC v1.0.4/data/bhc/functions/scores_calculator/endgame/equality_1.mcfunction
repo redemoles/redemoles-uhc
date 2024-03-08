@@ -7,24 +7,24 @@
 # @description		Calcul pour départager les équipes aux scores finaux égaux
 #
 
-scoreboard players remove @s BHC.CA 17
-scoreboard players remove @s BHC.CB 17
-scoreboard players remove @s BHC.CK 17
-scoreboard players remove @s BHC.CD 17
+scoreboard players remove @s bhc.CA 17
+scoreboard players remove @s bhc.CB 17
+scoreboard players remove @s bhc.CK 17
+scoreboard players remove @s bhc.CD 17
 
 ## Calcul des priorités
-scoreboard players set @s[predicate=uhc:id_team_alive] BHC.invSR 100
-scoreboard players operation @s BHC.invSR -= @s BHC.CA
-scoreboard players operation @s BHC.invSR -= @s BHC.CB
-scoreboard players operation @s BHC.invSR *= #100 BHC.data
-scoreboard players operation @s BHC.invSR += @s BHC.invStepA
-scoreboard players operation @s BHC.invSR += @s BHC.invStepB
-scoreboard players operation @s BHC.invSR *= #100 BHC.data
-scoreboard players operation @s BHC.invSR -= @s BHC.CD
+scoreboard players set @s[predicate=uhc:id_team_alive] bhc.invSR 100
+scoreboard players operation @s bhc.invSR -= @s bhc.CA
+scoreboard players operation @s bhc.invSR -= @s bhc.CB
+scoreboard players operation @s bhc.invSR *= #100 bhc.data
+scoreboard players operation @s bhc.invSR += @s bhc.invStepA
+scoreboard players operation @s bhc.invSR += @s bhc.invStepB
+scoreboard players operation @s bhc.invSR *= #100 bhc.data
+scoreboard players operation @s bhc.invSR -= @s bhc.CD
 
-scoreboard players add @s BHC.CA 17
-scoreboard players add @s BHC.CB 17
-scoreboard players add @s BHC.CK 17
-scoreboard players add @s BHC.CD 17
+scoreboard players add @s bhc.CA 17
+scoreboard players add @s bhc.CB 17
+scoreboard players add @s bhc.CK 17
+scoreboard players add @s bhc.CD 17
 
-scoreboard players set @s BHC.CR -16
+scoreboard players set @s bhc.CR -16

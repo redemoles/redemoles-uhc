@@ -9,8 +9,8 @@
 
 ## Distinction du gagnant au classement Survie
 
-scoreboard players add #tick BHC.data 2
-scoreboard players set @s BHC.teams.deathcount 0
+scoreboard players add #tick bhc.data 2
+scoreboard players set @s bhc.teams.deathcount 0
 function bhc:scores_calculator/death/scores
 function bhc:scores_calculator/death/penalty
 
@@ -18,5 +18,5 @@ function bhc:scores_calculator/death/penalty
 
 execute as @e[type=marker,tag=BHC] run function bhc:scores_calculator/endgame/equality_1
 execute as @e[type=marker,tag=BHC] run function bhc:scores_calculator/endgame/equality_2
-scoreboard objectives setdisplay sidebar BHC.Total
+scoreboard objectives setdisplay sidebar bhc.Total
 function bhc:scores_calculator/endgame/message

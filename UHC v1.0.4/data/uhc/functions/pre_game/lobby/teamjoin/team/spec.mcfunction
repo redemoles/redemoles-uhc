@@ -11,5 +11,5 @@ tag @s remove Joueur
 team leave @s
 
 # Hotbar
-execute if score #mode_de_jeu uhc.gamemode matches 0 run title @s actionbar [{"text":"Tu es ","color":"dark_aqua","bold":true}, {"text":"Spectateur","color":"aqua"}]
-execute if score #mode_de_jeu uhc.gamemode matches 1 run title @s actionbar [{"text":"Tu es ","color":"#9F3FFF","bold":true}, {"text":"Spectateur","color":"#BF7FFF"}]
+execute if score #vanilla uhc.gamemode matches 1 run title @s actionbar [{"text":"Tu es ","color":"dark_aqua","bold":true}, {"text":"Spectateur","color":"aqua"}]
+execute if score #bhc uhc.gamemode matches 1 run title @s actionbar [{"text":"Tu es ","color":"#9F3FFF","bold":true}, {"text":"Spectateur","color":"#BF7FFF"}]

@@ -7,21 +7,21 @@
 # @description		Boucle d'affichage des noms d'équipe
 #
 
-$scoreboard players operation $(name) BHC.StepA = @s BHC.invStepA
-$scoreboard players operation $(name) BHC.SA = @s BHC.invSA
-$scoreboard players operation $(name) BHC.StepA /= #1m BHC.data
+$scoreboard players operation $(name) bhc.StepA = @s bhc.invStepA
+$scoreboard players operation $(name) bhc.SA = @s bhc.invSA
+$scoreboard players operation $(name) bhc.StepA /= #1m bhc.data
 
-$scoreboard players operation $(name) BHC.StepB = @s BHC.invStepB
-$scoreboard players operation $(name) BHC.SB = @s BHC.invSB
-$scoreboard players operation $(name) BHC.StepB /= #1m BHC.data
+$scoreboard players operation $(name) bhc.StepB = @s bhc.invStepB
+$scoreboard players operation $(name) bhc.SB = @s bhc.invSB
+$scoreboard players operation $(name) bhc.StepB /= #1m bhc.data
 
-$scoreboard players operation $(name) BHC.Kills = @s BHC.invKills
-$scoreboard players operation $(name) BHC.SK = @s BHC.invSK
-$scoreboard players operation $(name) BHC.Kills /= #1m BHC.data
+$scoreboard players operation $(name) bhc.Kills = @s bhc.invKills
+$scoreboard players operation $(name) bhc.SK = @s bhc.invSK
+$scoreboard players operation $(name) bhc.Kills /= #1m bhc.data
 
-$scoreboard players operation $(name) BHC.Death = @s BHC.invDeath
-$scoreboard players operation $(name) BHC.SD = @s BHC.invSD
-$scoreboard players operation $(name) BHC.Death /= #1200 BHC.data
+$scoreboard players operation $(name) bhc.Death = @s bhc.invDeath
+$scoreboard players operation $(name) bhc.SD = @s bhc.invSD
+$scoreboard players operation $(name) bhc.Death /= #1200 bhc.data
 
-$scoreboard players operation $(name) BHC.Total = @s BHC.invTotal
-$scoreboard players operation $(name) BHC.ST = @s BHC.invST
+$scoreboard players operation $(name) bhc.Total = @s bhc.invTotal
+$scoreboard players operation $(name) bhc.ST = @s bhc.invST

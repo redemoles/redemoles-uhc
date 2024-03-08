@@ -9,5 +9,5 @@
 
 ## Somme des scores
 # Retrait des points d'anti-égalité
-scoreboard players operation @s BHC.invST -= @s BHC.CR
-scoreboard players operation @s BHC.invST /= #100 BHC.data
+scoreboard players operation @s bhc.invST -= @s bhc.CR
+scoreboard players operation @s bhc.invST /= #100 bhc.data

@@ -2,8 +2,8 @@
 
 ## AMONG US THEME
 
-execute if score #tick_start uhc.data.setup matches 4 run execute if score #mode_de_jeu uhc.gamemode matches 0 run title @a title [{"text":"UHC","color":"aqua","bold":false}]
-execute if score #tick_start uhc.data.setup matches 4 run execute if score #mode_de_jeu uhc.gamemode matches 1 run title @a title [{"text":"","color":"#9F3FFF","bold":false},{"text":"UHC","color":"#FFE73F","bold":false}]
+execute if score #tick_start uhc.data.setup matches 4 run execute if score #vanilla uhc.gamemode matches 1 run title @a title [{"text":"UHC","color":"aqua","bold":false}]
+execute if score #tick_start uhc.data.setup matches 4 run execute if score #bhc uhc.gamemode matches 1 run title @a title [{"text":"","color":"#9F3FFF","bold":false},{"text":"UHC","color":"#FFE73F","bold":false}]
 execute if score #tick_start uhc.data.setup matches 4 run title @a subtitle [{"text":" Démarrage en cours ! ","color":"white","bold":false}]
 execute if score #tick_start uhc.data.setup matches 4 run playsound minecraft:block.note_block.bass master @a ~ ~ ~ 100 0.707 1
 execute if score #tick_start uhc.data.setup matches 4 run playsound minecraft:block.note_block.harp master @a ~ ~ ~ 100 0.707 1
@@ -22,8 +22,8 @@ execute if score #tick_start uhc.data.setup matches 159 run function uhc:start/2
 
 ## WII THEME
 
-execute if score #tick_start uhc.data.setup matches 4 run execute if score #mode_de_jeu uhc.gamemode matches 0 run title @a title [{"text":"UHC","color":"aqua","bold":false}]
-execute if score #tick_start uhc.data.setup matches 4 run execute if score #mode_de_jeu uhc.gamemode matches 1 run title @a title [{"text":"","color":"#9F3FFF","bold":false},{"text":"UHC","color":"#FFE73F","bold":false}]
+execute if score #tick_start uhc.data.setup matches 4 run execute if score #vanilla uhc.gamemode matches 1 run title @a title [{"text":"UHC","color":"aqua","bold":false}]
+execute if score #tick_start uhc.data.setup matches 4 run execute if score #bhc uhc.gamemode matches 1 run title @a title [{"text":"","color":"#9F3FFF","bold":false},{"text":"UHC","color":"#FFE73F","bold":false}]
 execute if score #tick_start uhc.data.setup matches 4 run title @a subtitle [{"text":" Démarrage en cours ! ","color":"white","bold":false}]
 execute if score #tick_start uhc.data.setup matches 4 run playsound minecraft:block.note_block.harp master @a ~ ~ ~ 100 0.667 1
 execute if score #tick_start uhc.data.setup matches 4 run playsound minecraft:block.note_block.harp master @a ~ ~ ~ 100 0.794 1
@@ -50,8 +50,8 @@ execute if score #tick_start uhc.data.setup matches 159 run function uhc:start/2
 
 ## CHAPTER INTRO
 
-execute if score #tick_start uhc.data.setup matches 4 run execute if score #mode_de_jeu uhc.gamemode matches 0 run title @a title [{"text":"UHC","color":"aqua","bold":false}]
-execute if score #tick_start uhc.data.setup matches 4 run execute if score #mode_de_jeu uhc.gamemode matches 1 run title @a title [{"text":"","color":"#9F3FFF","bold":false},{"text":"UHC","color":"#FFE73F","bold":false}]
+execute if score #tick_start uhc.data.setup matches 4 run execute if score #vanilla uhc.gamemode matches 1 run title @a title [{"text":"UHC","color":"aqua","bold":false}]
+execute if score #tick_start uhc.data.setup matches 4 run execute if score #bhc uhc.gamemode matches 1 run title @a title [{"text":"","color":"#9F3FFF","bold":false},{"text":"UHC","color":"#FFE73F","bold":false}]
 execute if score #tick_start uhc.data.setup matches 4 run title @a subtitle [{"text":" Démarrage en cours ! ","color":"white","bold":false}]
 execute if score #tick_start uhc.data.setup matches 4 run playsound minecraft:ambient.basalt_deltas.loop master @a ~ ~ ~ 0.8 1 1
 execute if score #tick_start uhc.data.setup matches 4 run playsound minecraft:block.note_block.harp master @a ~ ~ ~ 100 0.707 1
@@ -90,8 +90,8 @@ playsound minecraft:ambient.underwater.loop.additions.ultra_rare master @a ~ ~ ~
 
 ## NO THEME
 
-execute if score #tick_start uhc.data.setup matches 4 run execute if score #mode_de_jeu uhc.gamemode matches 0 run title @a title [{"text":"UHC","color":"aqua","bold":false}]
-execute if score #tick_start uhc.data.setup matches 4 run execute if score #mode_de_jeu uhc.gamemode matches 1 run title @a title [{"text":"","color":"#9F3FFF","bold":false},{"text":"UHC","color":"#FFE73F","bold":false}]
+execute if score #tick_start uhc.data.setup matches 4 run execute if score #vanilla uhc.gamemode matches 1 run title @a title [{"text":"UHC","color":"aqua","bold":false}]
+execute if score #tick_start uhc.data.setup matches 4 run execute if score #bhc uhc.gamemode matches 1 run title @a title [{"text":"","color":"#9F3FFF","bold":false},{"text":"UHC","color":"#FFE73F","bold":false}]
 execute if score #tick_start uhc.data.setup matches 4 run playsound minecraft:block.note_block.chime master @a ~ ~ ~ 100 1 1
 execute if score #tick_start uhc.data.setup matches 4 run title @a subtitle [{"text":" Démarrage en cours ! ","color":"white","bold":false}]
 execute if score #tick_start uhc.data.setup matches 80 run playsound minecraft:item.trident.riptide_3 master @a ~ ~ ~ 0.8 1 1

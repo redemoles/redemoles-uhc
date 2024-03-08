@@ -32,7 +32,7 @@ function uhc:in_game/death/spec
 function uhc:in_game/death/mort_annonce
 function uhc:in_game/inventory/drop
 execute as @a[scores={uhc.reward.kills=1..}] run function uhc:in_game/death/kill
-execute if score #mode_de_jeu uhc.gamemode matches 0 run tellraw @s [{"text":"Tu es mort. Merci de changer de channel Mumble ou de te rendre muet.\n","color":"aqua"}]
+execute if score #vanilla uhc.gamemode matches 1 run tellraw @s [{"text":"Tu es mort. Merci de changer de channel Mumble ou de te rendre muet.\n","color":"aqua"}]
 
 # Détection victoire
 execute if score #Teams uhc.data.setup matches ..1 run scoreboard players add #end uhc.game.end 1

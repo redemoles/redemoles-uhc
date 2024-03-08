@@ -7,8 +7,6 @@
 # @description		Function executed when the datapack is loaded
 #
 
-## Génération de la map (en suggestion)
-
 function uhc:load
 function pregen:load
 
@@ -18,13 +16,21 @@ function uhc:pre_game/lobby/teamcreate
 
 ## Reset des scores
 
+scoreboard objectives remove uhc.gamemode
+scoreboard objectives remove bhc.scenario
+scoreboard objectives remove nzl.scenario
+
+scoreboard objectives add uhc.gamemode trigger
+scoreboard objectives add bhc.scenario trigger
+scoreboard objectives add nzl.scenario trigger
+
 scoreboard objectives remove uhc.id.teams
 scoreboard objectives remove uhc.id.players
-scoreboard objectives remove uhc.gamemode
 scoreboard objectives remove uhc.game.end
 scoreboard objectives remove uhc.data.arrow
 scoreboard objectives remove uhc.data.display
 scoreboard objectives remove uhc.data.setup
+scoreboard objectives remove uhc.host.menu
 scoreboard objectives remove uhc.meetup.activate
 scoreboard objectives remove uhc.players.hub
 scoreboard objectives remove uhc.players.tp
@@ -42,10 +48,10 @@ scoreboard objectives remove uhc.world.end
 
 scoreboard objectives add uhc.id.teams dummy
 scoreboard objectives add uhc.id.players dummy
-scoreboard objectives add uhc.gamemode dummy
 scoreboard objectives add uhc.game.end trigger
 scoreboard objectives add uhc.data.arrow minecraft.used:minecraft.bow
 scoreboard objectives add uhc.data.display dummy
+scoreboard objectives add uhc.host.menu dummy
 scoreboard objectives add uhc.meetup.activate trigger
 scoreboard objectives add uhc.players.hub dummy
 scoreboard objectives add uhc.players.tp dummy
@@ -88,7 +94,7 @@ weather clear 999999
 worldborder center 0.0 0.0
 worldborder set 302
 
-scoreboard players set #mode_de_jeu uhc.gamemode 0
+scoreboard players set #vanilla uhc.gamemode 0
 
 ## Génération du Lobby
 

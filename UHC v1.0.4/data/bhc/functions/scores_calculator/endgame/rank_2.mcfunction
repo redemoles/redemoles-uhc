@@ -13,39 +13,39 @@
 scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
 
 # Classement Étape A → Affichage pour le message de fin
-scoreboard players operation @a[predicate=uhc:id_teams] BHC.invStepA = @s BHC.invStepA
-scoreboard players operation @a[predicate=uhc:id_teams] BHC.invStepA /= #1m BHC.data
-scoreboard players operation @a[predicate=uhc:id_teams] BHC.invSA = @s BHC.invSA
-scoreboard players operation @a[predicate=uhc:id_teams] BHC.CA = @s BHC.CA
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.invStepA = @s bhc.invStepA
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.invStepA /= #1m bhc.data
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.invSA = @s bhc.invSA
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.CA = @s bhc.CA
 
 # Classement Étape B → Affichage pour le message de fin
-scoreboard players operation @a[predicate=uhc:id_teams] BHC.invStepB = @s BHC.invStepB
-scoreboard players operation @a[predicate=uhc:id_teams] BHC.invStepB /= #1m BHC.data
-scoreboard players operation @a[predicate=uhc:id_teams] BHC.invSB = @s BHC.invSB
-scoreboard players operation @a[predicate=uhc:id_teams] BHC.CB = @s BHC.CB
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.invStepB = @s bhc.invStepB
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.invStepB /= #1m bhc.data
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.invSB = @s bhc.invSB
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.CB = @s bhc.CB
 
 # Classement Kills → Affichage pour le message de fin
-scoreboard players operation @a[predicate=uhc:id_teams] BHC.invKills = @s BHC.invKills
-scoreboard players operation @a[predicate=uhc:id_teams] BHC.invKills /= #1m BHC.data
-scoreboard players operation @a[predicate=uhc:id_teams] BHC.invSK = @s BHC.invSK
-scoreboard players operation @a[predicate=uhc:id_teams] BHC.CK = @s BHC.CK
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.invKills = @s bhc.invKills
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.invKills /= #1m bhc.data
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.invSK = @s bhc.invSK
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.CK = @s bhc.CK
 
 # Classement Survie → Affichage pour le message de fin
-scoreboard players operation @a[predicate=uhc:id_teams] BHC.invDeath = @s BHC.invDeath
-scoreboard players operation @a[predicate=uhc:id_teams] BHC.invDeath /= #1200 BHC.data
-scoreboard players operation @a[predicate=uhc:id_teams] BHC.invSD = @s BHC.invSD
-scoreboard players operation @a[predicate=uhc:id_teams] BHC.CD = @s BHC.CD
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.invDeath = @s bhc.invDeath
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.invDeath /= #1200 bhc.data
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.invSD = @s bhc.invSD
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.CD = @s bhc.CD
 
 # Classement Total → Affichage pour le message de fin
-scoreboard players operation @s BHC.invTotal = @s BHC.invST
-scoreboard players operation @a[predicate=uhc:id_teams] BHC.invTotal = @s BHC.invTotal
-scoreboard players operation @a[predicate=uhc:id_teams] BHC.invST = @s BHC.invST
-scoreboard players operation @a[predicate=uhc:id_teams] BHC.CT = @s BHC.CT
+scoreboard players operation @s bhc.invTotal = @s bhc.invST
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.invTotal = @s bhc.invTotal
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.invST = @s bhc.invST
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.CT = @s bhc.CT
 
 function bhc:markername with entity @s data
 
 # Scores → Affichage pour le message de fin
-$scoreboard players operation #max BHC.StepA > $(name) BHC.StepA
-$scoreboard players operation #max BHC.StepB > $(name) BHC.StepB
-$scoreboard players operation #max BHC.Kills > $(name) BHC.Kills
-$scoreboard players operation #max BHC.Death > $(name) BHC.Death
+$scoreboard players operation #max bhc.StepA > $(name) bhc.StepA
+$scoreboard players operation #max bhc.StepB > $(name) bhc.StepB
+$scoreboard players operation #max bhc.Kills > $(name) bhc.Kills
+$scoreboard players operation #max bhc.Death > $(name) bhc.Death

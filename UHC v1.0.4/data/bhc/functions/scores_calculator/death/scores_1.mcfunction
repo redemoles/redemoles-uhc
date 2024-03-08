@@ -8,12 +8,12 @@
 #
 
 ## Minutes de jeu (équipes)
-scoreboard players operation @s BHC.invDeath = #tick BHC.data
+scoreboard players operation @s bhc.invDeath = #tick bhc.data
 
 ## Pénalité de minutes
-scoreboard players operation @s BHC.teams.deathcount *= #penalty BHC.data
-scoreboard players operation @s BHC.invDeath -= @s BHC.teams.deathcount
-scoreboard players operation @s BHC.teams.deathcount /= #penalty BHC.data
+scoreboard players operation @s bhc.teams.deathcount *= #penalty bhc.data
+scoreboard players operation @s bhc.invDeath -= @s bhc.teams.deathcount
+scoreboard players operation @s bhc.teams.deathcount /= #penalty bhc.data
 
 ## Minutes de jeu (joueurs)
-scoreboard players operation @a[scores={uhc.players.death=0},predicate=uhc:id_teams] BHC.invDeath = #tick BHC.data
+scoreboard players operation @a[scores={uhc.players.death=0},predicate=uhc:id_teams] bhc.invDeath = #tick bhc.data

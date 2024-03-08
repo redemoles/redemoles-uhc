@@ -8,11 +8,11 @@
 #
 
 # Enregistre le résulat d'équipe
-scoreboard players operation #temp BHC.data = @s BHC.invStepB
-scoreboard players add #temp BHC.data 1
+scoreboard players operation #temp bhc.data = @s bhc.invStepB
+scoreboard players add #temp bhc.data 1
 
 # Compte le nombre d'équipe avec un score supérieur à celle sélectionnée
-execute store result score #count BHC.data if entity @e[type=marker,tag=BHC,scores={BHC.CB=-14..},predicate=bhc:rank_invstepb]
+execute store result score #count bhc.data if entity @e[type=marker,tag=BHC,scores={bhc.CB=-14..},predicate=bhc:rank_invstepb]
 
 # Mise à jour du score d'équipe
-scoreboard players operation @s BHC.invSB -= #count BHC.data
+scoreboard players operation @s bhc.invSB -= #count bhc.data

@@ -8,4 +8,4 @@
 #
 
 ## Pénalité de minutes
-scoreboard players operation @s BHC.invDeath /= #10 BHC.data
+scoreboard players operation @s bhc.invDeath /= #10 bhc.data

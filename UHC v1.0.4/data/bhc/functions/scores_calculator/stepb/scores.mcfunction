@@ -9,6 +9,6 @@
 
 # Classement Étape B → Score perso → Score d'affichage pour les messages
 scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
-scoreboard players operation @a[predicate=uhc:id_teams] BHC.CB = @s BHC.CB
-scoreboard players operation @a[predicate=uhc:id_teams] BHC.invSB = @s BHC.invSB
-scoreboard players operation @a[predicate=uhc:id_teams] BHC.invST = @s BHC.invST
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.CB = @s bhc.CB
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.invSB = @s bhc.invSB
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.invST = @s bhc.invST
