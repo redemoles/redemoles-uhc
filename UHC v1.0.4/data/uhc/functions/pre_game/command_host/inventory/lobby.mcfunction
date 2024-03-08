@@ -4,7 +4,7 @@
 # @within			uhc:pre_game/command_host/menu_change
 #
 #
-# @description		tock
+# @description		Redirection
 #
 
 execute if score #lobby lobby.data matches 0 if score #lobby uhc.host.menu matches 1 unless data entity @s Inventory[{Slot:10b,tag:{display:{Name:'{"text":"Beta","color":"#3FFFFF","italic":false}'}}}] run function uhc:pre_game/command_host/menu/lobby/00

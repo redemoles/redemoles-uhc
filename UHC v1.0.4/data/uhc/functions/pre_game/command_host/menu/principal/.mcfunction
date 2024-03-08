@@ -4,7 +4,7 @@
 # @within			uhc:pre_game/command_host/menu_change
 #
 #
-# @description		tock
+# @description		Menu
 #
 
 clear @s

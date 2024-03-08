@@ -4,7 +4,7 @@
 # @within			uhc:pre_game/command_host/inventory/
 #
 #
-# @description		tock
+# @description		Activation/Désactivation Nuzlocke
 #
 
 

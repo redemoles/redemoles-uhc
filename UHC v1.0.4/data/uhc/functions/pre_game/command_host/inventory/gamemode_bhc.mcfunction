@@ -4,7 +4,7 @@
 # @within			uhc:pre_game/command_host/menu_change
 #
 #
-# @description		tock
+# @description		Redirection
 #
 
 execute if score #gamemode_bhc uhc.host.menu matches 1 unless data entity @s Inventory[{Slot:10b,tag:{display:{Name:'{"text":"BHC Beta","color":"#5F5FAF","italic":false}'}}}] run function uhc:pre_game/command_host/menu/gamemode/bhc/00

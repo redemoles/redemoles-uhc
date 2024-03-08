@@ -4,7 +4,7 @@
 # @within			uhc:pre_game/command_host/menu/gamemode_bhc/
 #
 #
-# @description		tock
+# @description		Activation BHC VIII
 #
 
 

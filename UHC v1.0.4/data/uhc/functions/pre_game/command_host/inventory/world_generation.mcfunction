@@ -4,7 +4,7 @@
 # @within			uhc:pre_game/command_host/menu_change
 #
 #
-# @description		tock
+# @description		Redirection
 #
 
 execute if score #world_generation uhc.host.menu matches 1 unless data entity @s Inventory[{Slot:10b,tag:{display:{Name:'{"text":"1000/-1000","color":"#3FFFFF","italic":false}'}}}] run function uhc:pre_game/command_host/menu/world_generation/2000

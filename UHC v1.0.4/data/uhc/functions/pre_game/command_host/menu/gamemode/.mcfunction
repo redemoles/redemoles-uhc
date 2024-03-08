@@ -4,13 +4,14 @@
 # @within			uhc:pre_game/command_host/inventory/
 #
 #
-# @description		tock
+# @description		Menu
 #
 
 clear @s
 scoreboard players set #principal uhc.host.menu 0
 scoreboard players set #gamemode uhc.host.menu 1
 scoreboard players set #gamemode_bhc uhc.host.menu 0
+
 
 
 

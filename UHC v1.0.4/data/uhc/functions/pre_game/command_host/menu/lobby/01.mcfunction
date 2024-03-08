@@ -4,7 +4,7 @@
 # @within			uhc:pre_game/command_host/inventory/
 #
 #
-# @description		tock
+# @description		Chargement du Lobby BHC I
 #
 
 scoreboard players set #lobby lobby.data 1

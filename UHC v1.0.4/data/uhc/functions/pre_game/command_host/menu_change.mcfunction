@@ -4,7 +4,7 @@
 # @within			uhc:pre_game/command_host/inventory_change
 #
 #
-# @description		tock
+# @description		Redirection
 #
 
 

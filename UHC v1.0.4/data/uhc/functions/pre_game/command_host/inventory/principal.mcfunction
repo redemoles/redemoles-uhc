@@ -4,7 +4,7 @@
 # @within			uhc:pre_game/command_host/menu_change
 #
 #
-# @description		tock
+# @description		Redirection
 #
 
 execute if score #principal uhc.host.menu matches 1 unless data entity @s Inventory[{Slot:10b,tag:{display:{Name:'{"text":"Génération du monde","color":"#3F9F3F","italic":false}'}}}] run function uhc:pre_game/command_host/menu/world_generation/

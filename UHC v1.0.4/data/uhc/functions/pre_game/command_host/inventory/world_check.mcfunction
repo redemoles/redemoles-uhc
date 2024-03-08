@@ -4,7 +4,7 @@
 # @within			uhc:pre_game/command_host/menu_change
 #
 #
-# @description		tock
+# @description		Redirection
 #
 
 execute if score #world_check uhc.host.menu matches 1 unless data entity @s Inventory[{Slot:10b,tag:{display:{Name:'{"text":"Vérification des Biomes","color":"#FFE73F","italic":false}'}}}] run function uhc:pre_game/command_host/menu/world_check/biomes
