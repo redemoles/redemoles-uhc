@@ -10,5 +10,5 @@
 tag @s remove Spec
 tag @s add Joueur
 team join 12 @s
-execute if score #vanilla uhc.gamemode matches 1 run tellraw @s [{"text":"Tu viens de rejoindre l'","color":"aqua","bold":false},{"text":"Équipe Rose","color":"light_purple","bold":false}]
+execute if score #vanilla uhc.gamemode matches 1 run tellraw @s [{"text":"Tu viens de rejoindre l'","color":"#3FFFFF","bold":false},{"text":"Équipe Rose","color":"light_purple","bold":false}]
 execute if score #bhc uhc.gamemode matches 1 run tellraw @s [{"text":"Tu viens de rejoindre l'","color":"#BF7FFF","bold":false},{"text":"Équipe Rose","color":"light_purple","bold":false}]

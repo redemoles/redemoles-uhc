@@ -17,9 +17,9 @@ execute unless data entity @s Inventory[{Slot:23b,tag:{display:{Name:'{"text":"�
 execute unless data entity @s Inventory[{Slot:25b,tag:{display:{Name:'{"text":"Équipe Orange","color":"gold","italic":false,"bold":true}'}}}] run function uhc:pre_game/inventory_menu/menu/teams/join/08
 execute unless data entity @s Inventory[{Slot:28b,tag:{display:{Name:'{"text":"Équipe Rouge c.","color":"red","italic":false,"bold":true}'}}}] run function uhc:pre_game/inventory_menu/menu/teams/join/09
 execute unless data entity @s Inventory[{Slot:30b,tag:{display:{Name:'{"text":"Équipe Rouge f.","color":"dark_red","italic":false,"bold":true}'}}}] run function uhc:pre_game/inventory_menu/menu/teams/join/10
-execute unless data entity @s Inventory[{Slot:31b,tag:{display:{Name:'{"text":"Spectateurs","color":"#BFBFBF","italic":false,"bold":true}'}}}] run function uhc:pre_game/inventory_menu/menu/teams/join/spec
 execute unless data entity @s Inventory[{Slot:32b,tag:{display:{Name:'{"text":"Équipe Violette","color":"dark_purple","italic":false,"bold":true}'}}}] run function uhc:pre_game/inventory_menu/menu/teams/join/11
 execute unless data entity @s Inventory[{Slot:34b,tag:{display:{Name:'{"text":"Équipe Rose","color":"light_purple","italic":false,"bold":true}'}}}] run function uhc:pre_game/inventory_menu/menu/teams/join/12
-function uhc:pre_game/inventory_menu/menu/teams/gamemode/bhc_beta
-
+execute unless data entity @s Inventory[{Slot:31b,tag:{display:{Name:'{"text":"Spectateurs","color":"#BFBFBF","italic":false,"bold":true}'}}}] run function uhc:pre_game/inventory_menu/menu/teams/join/spec
 execute if score #teams uhc.host.menu matches 1 unless data entity @s[tag=Host] Inventory[{Slot:22b,tag:{display:{Name:'{"text":"Configuration","color":"#3FFFFF","italic":false}'}}}] run function uhc:pre_game/inventory_menu/menu/principal/
+execute if entity @s[tag=Host] if score #teams uhc.host.menu matches 1 run function uhc:pre_game/inventory_menu/menu/teams/gamemode/bhc_beta/
+execute if entity @s[tag=!Host] run function uhc:pre_game/inventory_menu/menu/teams/gamemode/bhc_beta/

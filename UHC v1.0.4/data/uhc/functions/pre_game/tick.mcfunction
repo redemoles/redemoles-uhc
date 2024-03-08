@@ -30,7 +30,8 @@ title @a[team=13] actionbar [{"text":"Équipe Blanche","color":"white","bold":tr
 title @a[team=14] actionbar [{"text":"Équipe Gris c.","color":"gray","bold":true}]
 title @a[team=15] actionbar [{"text":"Équipe Gris f.","color":"dark_gray","bold":true}]
 title @a[team=16] actionbar [{"text":"Équipe Noire","color":"black","bold":true}]
-title @a[tag=Spec] actionbar [{"text":"Tu es ","color":"dark_aqua","bold":true}, {"text":"Spectateur","color":"aqua"}]
+execute if score #bhc uhc.gamemode matches 0 run title @a[tag=Spec] actionbar [{"text":"Tu es ","color":"#3F9FFF","bold":true}, {"text":"Spectateur","color":"#3FFFFF"}]
+execute if score #bhc uhc.gamemode matches 1 run title @a[tag=Spec] actionbar [{"text":"Tu es ","color":"#9F3FFF","bold":true}, {"text":"Spectateur","color":"#BF7FFF"}]
 
 # Vérification des spawns
 execute as @a[scores={uhc.spawn.check=0..}] run function uhc:pre_game/world_check/spawns

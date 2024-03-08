@@ -10,6 +10,7 @@
 # Ajout du tag de convention à Redemoles
 tag Redemoles add Host
 #define storage uhc:temp
+#define storage uhc:team
 
 # Affichage du message de chargement
 tellraw @a[tag=Host] {"text":"[Loaded UHC 1.20 - v1.0.4 - par Redemoles]","color":"#BF00FF"}
