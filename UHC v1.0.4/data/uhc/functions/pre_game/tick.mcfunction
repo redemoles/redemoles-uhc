@@ -13,14 +13,7 @@ execute if score #load lobby.data matches 0 run function lobby:auto/load
 # Joueur au Lobby
 execute as @a unless score @s uhc.players.hub matches 1 run function uhc:pre_game/lobby/new_players_lobby
 
-# Joueur join Team
-execute if score #lobby lobby.data matches 0 run function uhc:pre_game/lobby/teamjoin/lobby/beta
-execute if score #lobby lobby.data matches 1 run function uhc:pre_game/lobby/teamjoin/lobby/01
-
-# Spec join
-execute if score #lobby lobby.data matches 1 as @a[x=-19.8,y=292,z=0,dx=0,dy=2,dz=-1,tag=Joueur] run tag @s add Spec
-execute as @a[tag=Spec] run function uhc:pre_game/lobby/teamjoin/team/spec
-
+# Hotbar d'équipe
 title @a[team=01] actionbar [{"text":"Équipe Indigo","color":"dark_blue","bold":true}]
 title @a[team=02] actionbar [{"text":"Équipe Bleue","color":"blue","bold":true}]
 title @a[team=03] actionbar [{"text":"Équipe Azur","color":"dark_aqua","bold":true}]
@@ -37,6 +30,7 @@ title @a[team=13] actionbar [{"text":"Équipe Blanche","color":"white","bold":tr
 title @a[team=14] actionbar [{"text":"Équipe Gris c.","color":"gray","bold":true}]
 title @a[team=15] actionbar [{"text":"Équipe Gris f.","color":"dark_gray","bold":true}]
 title @a[team=16] actionbar [{"text":"Équipe Noire","color":"black","bold":true}]
+title @a[tag=Spec] actionbar [{"text":"Tu es ","color":"dark_aqua","bold":true}, {"text":"Spectateur","color":"aqua"}]
 
 # Vérification des spawns
 execute as @a[scores={uhc.spawn.check=0..}] run function uhc:pre_game/world_check/spawns
