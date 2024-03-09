@@ -9,7 +9,6 @@
 
 ## Mise au lobby des joueurs
 
-scoreboard players set @s uhc.players.hub 1
 tag @s add Spec
 execute if score #lobby lobby.data matches 0 run tp @s 0 305 0
 execute if score #lobby lobby.data matches 1 run tp @s 0 293 0
@@ -25,3 +24,4 @@ effect give @s minecraft:instant_health infinite 1 true
 advancement revoke @s everything
 experience set @s 0 levels
 experience set @s 0 points
+scoreboard players set @s uhc.players.hub 1

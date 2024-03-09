@@ -65,24 +65,6 @@ team join 14 @e[type=marker,tag=14]
 team join 15 @e[type=marker,tag=15]
 team join 16 @e[type=marker,tag=16]
 
-# Id d'équipe des joueurs
-scoreboard players set @a[team=01] uhc.id.teams 1
-scoreboard players set @a[team=02] uhc.id.teams 2
-scoreboard players set @a[team=03] uhc.id.teams 3
-scoreboard players set @a[team=04] uhc.id.teams 4
-scoreboard players set @a[team=05] uhc.id.teams 5
-scoreboard players set @a[team=06] uhc.id.teams 6
-scoreboard players set @a[team=07] uhc.id.teams 7
-scoreboard players set @a[team=08] uhc.id.teams 8
-scoreboard players set @a[team=09] uhc.id.teams 9
-scoreboard players set @a[team=10] uhc.id.teams 10
-scoreboard players set @a[team=11] uhc.id.teams 11
-scoreboard players set @a[team=12] uhc.id.teams 12
-scoreboard players set @a[team=13] uhc.id.teams 13
-scoreboard players set @a[team=14] uhc.id.teams 14
-scoreboard players set @a[team=15] uhc.id.teams 15
-scoreboard players set @a[team=16] uhc.id.teams 16
-
 # Id d'équipe des markers
 scoreboard players set @e[tag=01] uhc.id.teams 1
 scoreboard players set @e[tag=02] uhc.id.teams 2

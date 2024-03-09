@@ -21,5 +21,5 @@ execute unless data entity @s Inventory[{Slot:32b,tag:{display:{Name:'{"text":"Ã
 execute unless data entity @s Inventory[{Slot:34b,tag:{display:{Name:'{"text":"Ã‰quipe Rose","color":"light_purple","italic":false,"bold":true}'}}}] run function uhc:pre_game/inventory_menu/menu/teams/join/12
 execute unless data entity @s Inventory[{Slot:31b,tag:{display:{Name:'{"text":"Spectateurs","color":"#BFBFBF","italic":false,"bold":true}'}}}] run function uhc:pre_game/inventory_menu/menu/teams/join/spec
 execute if score #teams uhc.host.menu matches 1 unless data entity @s[tag=Host] Inventory[{Slot:22b,tag:{display:{Name:'{"text":"Configuration","color":"#3FFFFF","italic":false}'}}}] run function uhc:pre_game/inventory_menu/menu/principal/
-execute if entity @s[tag=Host] if score #teams uhc.host.menu matches 1 run function uhc:pre_game/inventory_menu/menu/teams/gamemode/vanilla/
-execute if entity @s[tag=!Host] run function uhc:pre_game/inventory_menu/menu/teams/gamemode/vanilla/
+execute as @s[tag=Host] if score #teams uhc.host.menu matches 1 run function uhc:pre_game/inventory_menu/menu/teams/gamemode/vanilla/
+execute as @s[tag=!Host] run function uhc:pre_game/inventory_menu/menu/teams/gamemode/vanilla/
