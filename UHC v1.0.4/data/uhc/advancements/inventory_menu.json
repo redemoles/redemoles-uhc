@@ -10,6 +10,6 @@
 		}
 	},
 	"rewards": {
-		"function": "uhc:pre_game/inventory_menu/inventory_change"
+		"function": "uhc:pre_game/menu/detector/"
 	}
 }

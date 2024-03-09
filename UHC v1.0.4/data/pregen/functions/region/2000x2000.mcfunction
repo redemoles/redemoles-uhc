@@ -815,4 +815,4 @@ execute if score #chunck_pregen pregen.world matches 2257 run tag @a[scores={pre
 
 execute if score #chunck_pregen pregen.world matches 2257 run execute if score @p[scores={pregen.world=1..}] pregen.world matches 4 run scoreboard players set #chunck_pregen pregen.world 3999
 execute if score #chunck_pregen pregen.world matches 2257 run execute if score @p[scores={pregen.world=1..}] pregen.world matches 2 run scoreboard players set #chunck_pregen pregen.world 4999
-execute if score #chunck_pregen pregen.world matches 2257 if score #lobby uhc.host.menu matches 1 run function uhc:pre_game/inventory_menu/menu/world_generation/
+execute if score #chunck_pregen pregen.world matches 2257 if score #lobby uhc.host.menu matches 1 run function uhc:pre_game/menu/load/world_generation/
