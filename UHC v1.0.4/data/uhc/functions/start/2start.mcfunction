@@ -19,7 +19,8 @@ scoreboard players remove #cycle uhc.data.setup 1
 scoreboard players set #start uhc.data.setup 1
 
 ## Détection si BHC activé
-execute if score #bhc uhc.gamemode matches 1 run function bhc:start/start
+execute if score #bhc uhc.gamemode matches 1 run function bhc:start/
+execute if score #nzl uhc.gamemode matches 1 run function nzl:start/
 
 ## Start direct ou Start 30 secondes après le tp
 scoreboard players set #Secondes uhc.data.display 59

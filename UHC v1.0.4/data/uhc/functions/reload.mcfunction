@@ -32,7 +32,7 @@ scoreboard objectives remove uhc.data.display
 scoreboard objectives remove uhc.data.setup
 scoreboard objectives remove uhc.host.menu
 scoreboard objectives remove uhc.meetup.activate
-scoreboard objectives remove uhc.players.hub
+scoreboard objectives remove uhc.players.online
 scoreboard objectives remove uhc.players.tp
 scoreboard objectives remove uhc.players.lives
 scoreboard objectives remove uhc.players.health
@@ -53,7 +53,7 @@ scoreboard objectives add uhc.data.arrow minecraft.used:minecraft.bow
 scoreboard objectives add uhc.data.display dummy
 scoreboard objectives add uhc.host.menu dummy
 scoreboard objectives add uhc.meetup.activate trigger
-scoreboard objectives add uhc.players.hub dummy
+scoreboard objectives add uhc.players.online dummy
 scoreboard objectives add uhc.players.tp dummy
 scoreboard objectives add uhc.players.lives dummy
 scoreboard objectives add uhc.players.health health
@@ -105,6 +105,7 @@ scoreboard players set #load lobby.data 0
 ## Autres modes
 
 function bhc:load
+function nzl:load
 
 ## Forceload
 

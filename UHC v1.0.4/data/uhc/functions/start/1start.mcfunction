@@ -25,6 +25,10 @@ advancement revoke @a everything
 
 scoreboard players set @a uhc.players.death 0
 
+scoreboard objectives remove uhc.players.online
+scoreboard objectives add uhc.players.online dummy
+scoreboard players set @a[tag=Joueur] uhc.players.online 1
+
 ## Suppression du lobby
 function lobby:auto/delete
 
@@ -93,7 +97,7 @@ execute as @a[tag=Joueur] run function uhc:start/id_teams
 scoreboard players operation #Teams uhc.data.setup = #Teams uhc.data.display
 
 ## Spectateurs
-execute as @a[tag=!Joueur] run function uhc:in_game/death/spec
+#execute as @a[tag=!Joueur] run function uhc:in_game/death/spec
 
 ## Nombre de vie
 scoreboard players set @a[tag=Spec] uhc.players.lives 0

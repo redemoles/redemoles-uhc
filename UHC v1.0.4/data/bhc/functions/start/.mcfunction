@@ -1,5 +1,5 @@
 
-#> bhc:start/start
+#> bhc:start/
 #
 # @within			uhc:start/2start
 #
@@ -23,7 +23,7 @@ scoreboard players set @a[tag=Joueur] bhc.invStepB 0
 scoreboard players set @a[tag=Joueur] bhc.invKills 0
 scoreboard players set @a[tag=Joueur] bhc.invDeath 0
 scoreboard players set @a[tag=Joueur] uhc.players.lives 3
-execute as @e[type=marker,tag=BHC] run function bhc:start/start_1 
+execute as @e[type=marker,tag=BHC] run function bhc:start/team_config 
 
 scoreboard players set #team uhc.id.teams 0
 function bhc:scores_calculator/death/scores

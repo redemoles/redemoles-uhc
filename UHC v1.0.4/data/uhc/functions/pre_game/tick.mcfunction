@@ -11,7 +11,7 @@
 execute if score #load lobby.data matches 0 run function lobby:auto/load
 
 # Joueur au Lobby
-execute as @a unless score @s uhc.players.hub matches 1 run function uhc:pre_game/lobby/new_players
+execute as @a unless score @s uhc.players.online matches 1 run function uhc:pre_game/lobby/new_players
 
 # Hotbar d'équipe
 title @a[team=01] actionbar [{"text":"Équipe Indigo","color":"dark_blue","bold":true}]

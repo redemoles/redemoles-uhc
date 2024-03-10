@@ -41,7 +41,7 @@ execute if score #vanilla uhc.gamemode matches 1 as @e[type=player,scores={uhc.p
 execute if score #bhc uhc.gamemode matches 1 as @e[type=player,scores={uhc.players.death=1}] run function bhc:death/death
 
 # Connexion d'un joueur externe
-execute as @a[tag=!Joueur,tag=!Spec] run function uhc:in_game/death/spec
+execute as @a unless score @s uhc.players.online matches 1 run function uhc:in_game/death/spec
 
 # Détection entrée/sortie de l'end et respawn d'un joueur mort
 execute in the_end run scoreboard players set @a[distance=0..] uhc.world.end 1
@@ -57,3 +57,7 @@ execute if entity @p[scores={uhc.game.end=1}] run scoreboard players add #end uh
 execute if entity @p[scores={uhc.game.end=1}] as @p[tag=Joueur,tag=!Spec] run function uhc:in_game/endgame
 execute unless entity @p[tag=Joueur,tag=!Spec] as @p[scores={uhc.game.end=1}] run function uhc:in_game/endgame
 scoreboard players set @p[scores={uhc.game.end=1}] uhc.game.end 0
+
+## Autres modes de jeu
+execute if score #bhc uhc.gamemode matches 1 unless score #end uhc.game.end matches 1.. run function bhc:timer/tick
+execute if score #nzl uhc.gamemode matches 1 unless score #end uhc.game.end matches 1.. run function nzl:timer/tick

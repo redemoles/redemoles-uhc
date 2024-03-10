@@ -24,4 +24,4 @@ effect give @s minecraft:instant_health infinite 1 true
 advancement revoke @s everything
 experience set @s 0 levels
 experience set @s 0 points
-scoreboard players set @s uhc.players.hub 1
+scoreboard players set @s uhc.players.online 1

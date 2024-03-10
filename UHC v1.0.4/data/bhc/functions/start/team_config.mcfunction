@@ -1,5 +1,5 @@
 
-#> bhc:start/start_1
+#> bhc:start/team_config
 #
 # @within			bhc:start/start
 #
