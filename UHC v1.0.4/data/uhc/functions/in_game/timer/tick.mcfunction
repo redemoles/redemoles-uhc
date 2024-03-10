@@ -18,8 +18,9 @@ execute if score #start uhc.data.setup matches 1 run function uhc:start/3start
 # Message de Hotbar
 execute if score #vanilla uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. if score #Secondes uhc.data.display matches 0..9 run title @a actionbar [{"score":{"name":"#Minutes","objective":"uhc.data.display"},"color":"aqua","bold":true}, {"text":":","color":"dark_aqua"}, {"text":"0","color":"aqua"}, {"score":{"name":"#Secondes","objective":"uhc.data.display"},"color":"aqua"}, {"text":" - ","color":"dark_aqua"}, {"score":{"name":"#Teams","objective":"uhc.data.display"},"color":"aqua"}, {"text":" équipes","color":"dark_aqua"}, {"text":" - ","color":"dark_aqua"}, {"score":{"name":"#Joueurs","objective":"uhc.data.display"},"color":"aqua"}, {"text":" joueurs","color":"dark_aqua"}]
 execute if score #vanilla uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. if score #Secondes uhc.data.display matches 10.. run title @a actionbar [{"score":{"name":"#Minutes","objective":"uhc.data.display"},"color":"aqua","bold":true}, {"text":":","color":"dark_aqua"}, {"score":{"name":"#Secondes","objective":"uhc.data.display"},"color":"aqua"}, {"text":" - ","color":"dark_aqua"}, {"score":{"name":"#Teams","objective":"uhc.data.display"},"color":"aqua"}, {"text":" équipes","color":"dark_aqua"}, {"text":" - ","color":"dark_aqua"}, {"score":{"name":"#Joueurs","objective":"uhc.data.display"},"color":"aqua"}, {"text":" joueurs","color":"dark_aqua"}]
-execute unless score #hotbar_cooldown uhc.data.display matches 1.. run execute if score #bhc uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. run function bhc:timer/hotbar_timer
-execute if score #hotbar_cooldown uhc.data.display matches 1.. run execute if score #bhc uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. run function bhc:timer/hotbar_cooldown
+execute if score #hotbar_cooldown uhc.data.display matches 1.. run function uhc:in_game/timer/hotbar_cooldown
+execute unless score #hotbar_cooldown uhc.data.display matches 1.. if score #bhc uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. run function bhc:timer/hotbar
+execute unless score #hotbar_cooldown uhc.data.display matches 1.. if score #nzl uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. run function nzl:timer/hotbar
 
 # Réduction des dégâts des flèches
 execute as @e[type=arrow] run function uhc:in_game/arrow/
@@ -37,8 +38,7 @@ execute if score #message uhc.data.setup matches 6 run scoreboard players set #m
 execute if score #bhc uhc.gamemode matches 1 as @a[scores={uhc.timer.respawn=1..}] run function bhc:death/respawn_cooldown
 
 # Détection d'un joueur mort
-execute if score #vanilla uhc.gamemode matches 1 as @e[type=player,scores={uhc.players.death=1}] run function uhc:in_game/death/mort
-execute if score #bhc uhc.gamemode matches 1 as @e[type=player,scores={uhc.players.death=1}] run function bhc:death/death
+execute as @e[type=player,scores={uhc.players.death=1}] run function uhc:in_game/death/lives
 
 # Connexion d'un joueur externe
 execute as @a unless score @s uhc.players.online matches 1 run function uhc:in_game/death/spec

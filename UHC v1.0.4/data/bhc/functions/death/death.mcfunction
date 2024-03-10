@@ -7,13 +7,11 @@
 # @description		Modifications des paramètres pour un joueur mort
 #
 
-scoreboard players remove @s uhc.players.lives 1
-
 execute unless score #end uhc.game.end matches 1.. as @a[scores={uhc.reward.kills=1..}] run function bhc:scores_calculator/kills/detect
 
-execute if score @s uhc.players.lives matches 1.. run function uhc:in_game/death/mort_annonce
+execute if score @s uhc.players.lives matches 1.. run function uhc:in_game/death/death_reveal
 execute if score @s uhc.players.lives matches 1.. as @a[scores={uhc.reward.kills=1..}] run function uhc:in_game/death/kill
-execute if score @s uhc.players.lives matches ..0 run function uhc:in_game/death/mort
+execute if score @s uhc.players.lives matches ..0 run function uhc:in_game/death/death
 
 scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
 

@@ -1,7 +1,7 @@
 
 #> uhc:in_game/endgame
 #
-# @within			uhc:in_game/death/mort
+# @within			uhc:in_game/death/death
 # @within			uhc:in_game/timer/tick
 #
 # @description		Message si partie terminée

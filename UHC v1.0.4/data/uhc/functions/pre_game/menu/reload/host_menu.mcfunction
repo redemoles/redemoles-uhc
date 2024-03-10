@@ -8,12 +8,7 @@
 #
 
 clear @s
-item replace entity @s inventory.0 with minecraft:magenta_stained_glass_pane{display:{Name:'{"text":"","color":"#3F3F3F","italic":false}'}}
-item replace entity @s inventory.8 with minecraft:magenta_stained_glass_pane{display:{Name:'{"text":"","color":"#3F3F3F","italic":false}'}}
-item replace entity @s inventory.9 with minecraft:purple_stained_glass_pane{display:{Name:'{"text":"","color":"#3F3F3F","italic":false}'}}
-item replace entity @s inventory.17 with minecraft:purple_stained_glass_pane{display:{Name:'{"text":"","color":"#3F3F3F","italic":false}'}}
-item replace entity @s inventory.18 with minecraft:magenta_stained_glass_pane{display:{Name:'{"text":"","color":"#3F3F3F","italic":false}'}}
-item replace entity @s inventory.26 with minecraft:magenta_stained_glass_pane{display:{Name:'{"text":"","color":"#3F3F3F","italic":false}'}}
+function uhc:pre_game/menu/load/background
 
 item replace entity @s inventory.1 with minecraft:grass_block{display:{Name:'{"text":"Génération du monde","color":"#3F9F3F","italic":false}'}}
 item replace entity @s inventory.2 with minecraft:ender_eye{display:{Name:'{"text":"Vérifications du monde","color":"#FFE73F","italic":false}'}}

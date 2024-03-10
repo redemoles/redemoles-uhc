@@ -1,5 +1,5 @@
 
-#> bhc:01/timer/hotbar_cooldown
+#> uhc:in_game/timer/hotbar_cooldown
 #
 # @within			uhc:in_game/timer/tick
 #

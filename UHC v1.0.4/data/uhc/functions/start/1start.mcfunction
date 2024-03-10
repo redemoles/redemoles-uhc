@@ -31,6 +31,7 @@ scoreboard players set @a[tag=Joueur] uhc.players.online 1
 
 ## Suppression du lobby
 function lobby:auto/delete
+setblock 0 239 0 air
 
 ## Markers
 # Summon markers d'équipes
@@ -95,9 +96,6 @@ execute store result score #Joueurs uhc.data.setup if entity @a[tag=Joueur]
 scoreboard players set #Teams uhc.data.display 0
 execute as @a[tag=Joueur] run function uhc:start/id_teams
 scoreboard players operation #Teams uhc.data.setup = #Teams uhc.data.display
-
-## Spectateurs
-#execute as @a[tag=!Joueur] run function uhc:in_game/death/spec
 
 ## Nombre de vie
 scoreboard players set @a[tag=Spec] uhc.players.lives 0

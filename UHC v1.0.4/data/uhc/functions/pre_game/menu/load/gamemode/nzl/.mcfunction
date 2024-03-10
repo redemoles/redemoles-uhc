@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/load/gamemode
+#> uhc:pre_game/menu/load/gamemode/nzl/
 #
-# @within			uhc:pre_game/menu/selection/
+# @within			uhc:pre_game/menu/selection/gamemode
 #
 #
 # @description		Activation/Désactivation Nuzlocke

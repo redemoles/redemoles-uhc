@@ -1,7 +1,7 @@
 
-#> uhc:in_game/death/mort
+#> uhc:in_game/death/death
 #
-# @within			uhc:in_game/timer/tick
+# @within			uhc:in_game/death/lives
 # @executed			default context
 #
 # @description		Fonction si morts ou kills à chaque ticks
@@ -19,7 +19,7 @@ scoreboard players remove @e[type=marker,predicate=uhc:id_teams] uhc.data.setup 
 
 # Dernier joueur de la team ?
 scoreboard players set #team_out uhc.id.teams 1
-execute at @s as @a[tag=Joueur,distance=0.1..,predicate=uhc:id_teams] run scoreboard players set #team_out uhc.id.teams 0
+execute as @e[tag=marker,predicate=uhc:id_teams] if score @s uhc.data.setup matches 1.. run scoreboard players set #team_out uhc.id.teams 0
 
 # -1 Team
 execute if score #team_out uhc.id.teams matches 1 if score #message uhc.data.setup matches 0..4 run scoreboard players remove #Teams uhc.data.display 1
@@ -29,7 +29,7 @@ execute if score #team_out uhc.id.teams matches 1 run scoreboard players remove 
 
 # Messages et Attribution des effets
 function uhc:in_game/death/spec
-function uhc:in_game/death/mort_annonce
+function uhc:in_game/death/death_reveal
 function uhc:in_game/inventory/drop
 execute as @a[scores={uhc.reward.kills=1..}] run function uhc:in_game/death/kill
 execute if score #vanilla uhc.gamemode matches 1 run tellraw @s [{"text":"Tu es mort. Merci de changer de channel Mumble ou de te rendre muet.\n","color":"aqua"}]

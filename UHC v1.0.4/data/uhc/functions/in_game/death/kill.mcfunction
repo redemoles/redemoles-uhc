@@ -1,7 +1,7 @@
 
 #> uhc:in_game/death/kill
 #
-# @within			uhc:in_game/death/mort
+# @within			uhc:in_game/death/death
 # @executed			default context
 #
 # @description		Fonction si morts ou kills à chaque ticks

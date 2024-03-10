@@ -16,7 +16,8 @@ execute if score #tick_start uhc.data.setup matches 4 if score #bhc uhc.gamemode
 
 # Musique → auto-config de la partie → start
 execute if score #tick_start uhc.data.setup matches 4 run execute if score #vanilla uhc.gamemode matches 1 run title @a title [{"text":"UHC","color":"aqua","bold":false}]
-execute if score #tick_start uhc.data.setup matches 4 run execute if score #bhc uhc.gamemode matches 1 run title @a title [{"text":"","color":"#9F3FFF","bold":false},{"text":"UHC","color":"#FFE73F","bold":false}]
+execute if score #tick_start uhc.data.setup matches 4 run execute if score #nzl uhc.gamemode matches 1 run title @a title [{"text":"Nuzlocke","color":"#3F9FFF","bold":false},{"text":"UHC","color":"#FFE73F","bold":false}]
+execute if score #tick_start uhc.data.setup matches 4 run execute if score #bhc uhc.gamemode matches 1 run title @a title [{"text":"Bingo","color":"#9F3FFF","bold":false},{"text":"UHC","color":"#FFE73F","bold":false}]
 execute if score #tick_start uhc.data.setup matches 4 run playsound minecraft:block.note_block.chime master @a ~ ~ ~ 100 1 1
 execute if score #tick_start uhc.data.setup matches 4 run title @a subtitle [{"text":" Démarrage en cours ! ","color":"white","bold":false}]
 execute if score #tick_start uhc.data.setup matches 81 run playsound minecraft:item.trident.riptide_3 master @a ~ ~ ~ 0.8 1 1

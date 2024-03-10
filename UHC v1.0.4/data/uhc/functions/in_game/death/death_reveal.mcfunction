@@ -1,7 +1,7 @@
 
-#> uhc:in_game/death/mort_annonce
+#> uhc:in_game/death/death_reveal
 #
-# @within			uhc:in_game/death/mort
+# @within			uhc:in_game/death/death
 # @executed			default context
 #
 # @description		Fonction si morts ou kills à chaque ticks

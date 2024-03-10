@@ -10,16 +10,17 @@
 # @description		Executed when the player completes the advancement
 #
 
-## Sélection de l'équipe du joueur
+## Sélection du joueur et son équipe
 scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
 execute as @e[type=marker,tag=BHC,predicate=uhc:id_teams] run tag @s add bhc.new_adv
+tag @s add bhc.new_adv
 
 ## Test si premier joueur de l'équipe et de la game à compléter
 # Succès
 scoreboard players set #team_first_case bhc.data 1
 scoreboard players set #total_first_case bhc.data 1
-$execute as @a[distance=0.1..,advancements={$(namespace):$(line)_$(column)=true},predicate=uhc:id_teams] run scoreboard players set #team_first_case bhc.data 0
-$execute as @a[distance=0.1..,advancements={$(namespace):$(line)_$(column)=true}] run scoreboard players set #total_first_case bhc.data 0
+$execute as @a[tag=!bhc.new_adv,advancements={$(namespace):$(line)_$(column)=true},predicate=uhc:id_teams] run scoreboard players set #team_first_case bhc.data 0
+$execute as @a[tag=!bhc.new_adv,advancements={$(namespace):$(line)_$(column)=true}] run scoreboard players set #total_first_case bhc.data 0
 # Ligne
 $execute if score #team_first_case bhc.data matches 1 run scoreboard players add @e[tag=bhc.new_adv] bhc.line_$(line) 1
 $scoreboard players operation @s bhc.line_$(line) = @e[tag=bhc.new_adv] bhc.line_$(line)
@@ -27,8 +28,8 @@ scoreboard players set #team_first_line bhc.data 0
 scoreboard players set #total_first_line bhc.data 0
 $execute if score @s bhc.line_$(line) matches 5 run scoreboard players set #team_first_line bhc.data 1
 $execute if score @s bhc.line_$(line) matches 5 run scoreboard players set #total_first_line bhc.data 1
-$execute as @a[distance=0.1..,scores={bhc.line_$(line)=5},predicate=uhc:id_teams] run scoreboard players set #team_first_line bhc.data 0
-$execute as @a[distance=0.1..,scores={bhc.line_$(line)=5}] run scoreboard players set #total_first_line bhc.data 0
+$execute as @a[tag=!bhc.new_adv,scores={bhc.line_$(line)=5},predicate=uhc:id_teams] run scoreboard players set #team_first_line bhc.data 0
+$execute as @a[tag=!bhc.new_adv,scores={bhc.line_$(line)=5}] run scoreboard players set #total_first_line bhc.data 0
 execute if score #team_first_line bhc.data matches 1 run scoreboard players add @e[tag=bhc.new_adv] bhc.line 1
 scoreboard players operation @s bhc.line = @e[tag=bhc.new_adv] bhc.line
 # Colonne
@@ -38,8 +39,8 @@ scoreboard players set #team_first_column bhc.data 0
 scoreboard players set #total_first_column bhc.data 0
 $execute if score @s bhc.column_$(column) matches 5 run scoreboard players set #team_first_column bhc.data 1
 $execute if score @s bhc.column_$(column) matches 5 run scoreboard players set #total_first_column bhc.data 1
-$execute as @a[distance=0.1..,scores={bhc.column_$(column)=5},predicate=uhc:id_teams] run scoreboard players set #team_first_column bhc.data 0
-$execute as @a[distance=0.1..,scores={bhc.column_$(column)=5}] run scoreboard players set #total_first_column bhc.data 0
+$execute as @a[tag=!bhc.new_adv,scores={bhc.column_$(column)=5},predicate=uhc:id_teams] run scoreboard players set #team_first_column bhc.data 0
+$execute as @a[tag=!bhc.new_adv,scores={bhc.column_$(column)=5}] run scoreboard players set #total_first_column bhc.data 0
 execute if score #team_first_column bhc.data matches 1 run scoreboard players add @e[tag=bhc.new_adv] bhc.column 1
 scoreboard players operation @s bhc.column = @e[tag=bhc.new_adv] bhc.column
 
@@ -57,9 +58,10 @@ $execute if score #team_first_case bhc.data matches 1 unless score #total_first_
 execute if score #team_first_line bhc.data matches 1 run function bhc:advancements/message_line
 execute if score #team_first_column bhc.data matches 1 run function bhc:advancements/message_column
 
-## Désélection de l'équipe du joueur
-tag @e[type=marker,tag=BHC] remove bhc.new_adv
-
 ## Donne l'advancements aux alliés
 # Succès
-$execute if score #team_first_case bhc.data matches 1 as @a[distance=0.1..,predicate=uhc:id_teams] run advancement grant @s only $(namespace):$(line)_$(column)
+$execute if score #team_first_case bhc.data matches 1 as @a[tag=!bhc.new_adv,predicate=uhc:id_teams] run advancement grant @s only $(namespace):$(line)_$(column)
+
+## Désélection du joueur et son équipe
+tag @e[type=marker,tag=BHC] remove bhc.new_adv
+tag @s add bhc.new_adv

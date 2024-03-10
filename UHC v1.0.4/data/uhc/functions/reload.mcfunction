@@ -105,7 +105,7 @@ scoreboard players set #load lobby.data 0
 ## Autres modes
 
 function bhc:load
-function nzl:load
+function nzl:reload/sb
 
 ## Forceload
 

@@ -1,5 +1,5 @@
 
-#> bhc:01/timer/start_cooldown
+#> bhc:timer/start_cooldown
 #
 # @within			uhc:in_game/timer/tick
 #
