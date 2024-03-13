@@ -7,7 +7,7 @@
 # @description		Fonction de configuration de la partie
 #
 
-
+execute as @p[tag=host.world_generation.2000] run scoreboard players set #chunck_pregen pregen.world 2257
 
 
 execute if score #chunck_pregen pregen.world matches 2001 run tellraw @a[scores={pregen.world=1..}] [{"text":"Étape 1 : 2000x2000 (1/32)"}]
@@ -812,7 +812,7 @@ execute if score #chunck_pregen pregen.world matches 2257 run forceload remove -
 
 execute if score #chunck_pregen pregen.world matches 2257 run tellraw @a[scores={pregen.world=1..}] [{"text":"La zone de 2000x2000 a entièrement été générée"}]
 execute if score #chunck_pregen pregen.world matches 2257 run tag @a[scores={pregen.world=1..}] add host.world_generation.2000
+execute if score #chunck_pregen pregen.world matches 2257 if score #world_generation uhc.host.menu matches 1 run function uhc:pre_game/menu/load/world_generation/
 
 execute if score #chunck_pregen pregen.world matches 2257 run execute if score @p[scores={pregen.world=1..}] pregen.world matches 4 run scoreboard players set #chunck_pregen pregen.world 3999
 execute if score #chunck_pregen pregen.world matches 2257 run execute if score @p[scores={pregen.world=1..}] pregen.world matches 2 run scoreboard players set #chunck_pregen pregen.world 4999
-execute if score #chunck_pregen pregen.world matches 2257 if score #lobby uhc.host.menu matches 1 run function uhc:pre_game/menu/load/world_generation/

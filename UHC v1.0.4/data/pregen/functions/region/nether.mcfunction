@@ -7,7 +7,7 @@
 # @description		Fonction de configuration de la partie
 #
 
-
+execute as @p[tag=host.world_generation.nether] run scoreboard players set #chunck_pregen pregen.world 5261
 
 
 execute if score #chunck_pregen pregen.world matches 5001 run tellraw @a[scores={pregen.world=1..}] [{"text":"Nether : 1000x1000 (1/32)", "color":"#FF9F3F"}]

@@ -7,7 +7,7 @@
 # @description		Fonction de configuration de la partie
 #
 
-
+execute as @p[tag=host.world_generation.4000] run scoreboard players set #chunck_pregen pregen.world 4513
 
 
 execute if score #chunck_pregen pregen.world matches 4001 run tellraw @a[scores={pregen.world=1..}] [{"text":"Étape 2 : 2000x2000 (1/64)"}]
