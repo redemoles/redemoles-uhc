@@ -64,4 +64,4 @@ $execute if score #team_first_case bhc.data matches 1 as @a[tag=!bhc.new_adv,pre
 
 ## Désélection du joueur et son équipe
 tag @e[type=marker,tag=BHC] remove bhc.new_adv
-tag @s add bhc.new_adv
+tag @s remove bhc.new_adv
