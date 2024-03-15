@@ -15,6 +15,6 @@ scoreboard players operation @e[type=marker,tag=BHC,predicate=uhc:id_teams] bhc.
 scoreboard players add @e[type=marker,tag=BHC] bhc.invStepA 1
 
 # Récompenses
-execute if score #total_first_column bhc.data matches 1 run give @s minecraft:diamond 2
-give @s minecraft:diamond 2
+execute if score #total_first_column bhc.data matches 1 run give @s minecraft:diamond 3
+give @s minecraft:diamond 3
 experience add @s 1 levels
