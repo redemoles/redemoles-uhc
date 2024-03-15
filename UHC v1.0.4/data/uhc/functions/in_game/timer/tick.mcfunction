@@ -23,7 +23,7 @@ execute unless score #hotbar_cooldown uhc.data.display matches 1.. if score #bhc
 execute unless score #hotbar_cooldown uhc.data.display matches 1.. if score #nzl uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. run function nzl:timer/hotbar
 
 # Réduction des dégâts des flèches
-execute as @e[type=arrow] run function uhc:in_game/arrow/
+execute as @e[type=arrow,tag=!uhc.checked] run function uhc:in_game/arrow/
 
 # Effets aux joueurs
 execute if score #pve uhc.data.setup matches ..0 as @a[scores={uhc.effect.resistance=-1}] run scoreboard players set @s uhc.effect.resistance 0
