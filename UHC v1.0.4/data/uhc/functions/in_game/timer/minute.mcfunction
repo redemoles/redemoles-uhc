@@ -24,7 +24,9 @@ scoreboard players remove #shrink2 uhc.data.setup 1
 scoreboard players add #cycle uhc.data.setup 1
 execute as @a[tag=Joueur] run scoreboard players operation @s uhc.players.timer = #Minutes uhc.data.display
 
-function uhc:pre_game/config/wb
+execute in minecraft:overworld run function uhc:pre_game/config/wb_shrinks
+execute in minecraft:the_nether run function uhc:pre_game/config/wb_shrinks
+execute in minecraft:the_end run function uhc:pre_game/config/wb_shrinks
 execute if score #border uhc.data.setup matches 0 run gamerule doMobSpawning false
 
 ## MINUTEUR DES MODES DE JEU ALTERNATIFS

@@ -15,9 +15,9 @@ scoreboard players set #shrink1 uhc.data.setup 110
 scoreboard players set #shrink2 uhc.data.setup 120
 
 ## Configuration de la Worldborder
-worldborder set 4002
-worldborder center 0.0 0.0
-worldborder warning time 180
+execute in minecraft:overworld run function uhc:pre_game/config/wb_start
+execute in minecraft:the_nether run function uhc:pre_game/config/wb_start
+execute in minecraft:the_end run function uhc:pre_game/config/wb_start
 
 ## Configuration des messages de mort
 # 0 : Message par défaut
