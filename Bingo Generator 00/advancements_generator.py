@@ -81,6 +81,7 @@ unobtainable_blocks = [
 	"minecraft:totem_of_undying",
 	"minecraft:enchanted_golden_apple",
 	"minecraft:name_tag",
+	"minecraft:large_fern",
 	"minecraft:phantom_membrane",
 	"minecraft:elytra",
 	"minecraft:end_crystal",
