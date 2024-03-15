@@ -25,38 +25,25 @@ execute unless score #hotbar_cooldown uhc.data.display matches 1.. if score #nzl
 # Réduction des dégâts des flèches
 execute as @e[type=arrow,tag=!uhc.checked] run function uhc:in_game/arrow/
 
-# Effets aux joueurs
-execute if score #pve uhc.data.setup matches ..0 as @a[scores={uhc.effect.resistance=-1}] run scoreboard players set @s uhc.effect.resistance 0
-execute as @a[scores={uhc.effect.resistance=-1}] run effect give @s minecraft:resistance infinite 4 true
-execute as @a[scores={uhc.effect.resistance=0}] run effect clear @s minecraft:resistance
-
 # Message de mort
 execute if score #message uhc.data.setup matches 1..5 run scoreboard players add #message uhc.data.setup 1
 execute if score #message uhc.data.setup matches 6 run scoreboard players set #message uhc.data.setup 1
 
-# Respawn
-execute if score #bhc uhc.gamemode matches 1 as @a[scores={uhc.timer.respawn=1..}] run function bhc:death/respawn_cooldown
-
 # Détection d'un joueur mort
 execute as @e[type=player,scores={uhc.players.death=1}] run function uhc:in_game/death/lives
 
-# Connexion d'un joueur externe
-execute as @a unless score @s uhc.players.online matches 1 run function uhc:in_game/death/spec
+# Connexion d'un joueur externe / Effets / Respawn
+execute as @a run function uhc:in_game/timer/players
 
 # Détection entrée/sortie de l'end et respawn d'un joueur mort
 execute in the_end run scoreboard players set @a[distance=0..] uhc.world.end 1
 execute as @e[type=player,x=-48,y=240,z=-48,dx=49,dy=320,dz=49,scores={uhc.world.end=1}] run function uhc:in_game/tp/end_exit
 
 # Force Meet-up
-execute if entity @p[scores={uhc.meetup.activate=1}] as @a run function uhc:in_game/tp/spawn_end
-execute if entity @p[scores={uhc.meetup.activate=1}] run worldborder set 300
-execute if entity @p[scores={uhc.meetup.activate=1}] run scoreboard players set @a uhc.meetup.activate 2
+execute if entity @p[scores={uhc.meetup.activate=1}] run function uhc:in_game/force/meetup
 
 # Force Endgame
-execute if entity @p[scores={uhc.game.end=1}] run scoreboard players add #end uhc.game.end 1
-execute if entity @p[scores={uhc.game.end=1}] as @p[tag=Joueur,tag=!Spec] run function uhc:in_game/endgame
-execute unless entity @p[tag=Joueur,tag=!Spec] as @p[scores={uhc.game.end=1}] run function uhc:in_game/endgame
-scoreboard players set @p[scores={uhc.game.end=1}] uhc.game.end 0
+execute if entity @p[scores={uhc.game.end=1}] run function uhc:in_game/force/end
 
 ## Autres modes de jeu
 execute if score #bhc uhc.gamemode matches 1 unless score #end uhc.game.end matches 1.. run function bhc:timer/tick
