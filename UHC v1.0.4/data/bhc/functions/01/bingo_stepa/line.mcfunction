@@ -12,7 +12,7 @@ scoreboard players add @s bhc.invStepA 1
 execute as @e[type=marker,tag=BHC] if score @s uhc.id.teams = #team uhc.id.teams run scoreboard players operation @s bhc.invStepA /= #1m bhc.data
 execute as @e[type=marker,tag=BHC] if score @s uhc.id.teams = #team uhc.id.teams run scoreboard players add @s bhc.invStepA 1
 execute as @e[type=marker,tag=BHC] if score @s uhc.id.teams = #team uhc.id.teams run scoreboard players operation @s bhc.invStepA *= #1m bhc.data
-execute as @e[type=marker,tag=BHC] run scoreboard players add @s bhc.invStepA 1
+scoreboard players add @e[type=marker,tag=BHC] bhc.invStepA 1
 
 # Récompenses
 execute if score #total_first_line bhc.data matches 1 run give @s minecraft:gold_ingot 2
