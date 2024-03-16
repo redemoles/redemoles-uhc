@@ -30,4 +30,4 @@ data modify storage uhc:temp input.x set from entity @s LastDeathLocation.pos[0]
 data modify storage uhc:temp input.y set from entity @s LastDeathLocation.pos[1]
 data modify storage uhc:temp input.z set from entity @s LastDeathLocation.pos[2]
 
-execute if score @s uhc.players.lives matches 1.. run function bhc:death/death_1 with storage uhc:temp input
+function bhc:death/death_1 with storage uhc:temp input
