@@ -8,7 +8,7 @@
 #
 
 ## Préparation Config pre-game
-scoreboard players set #pve uhc.data.setup 5
+scoreboard players set #pve uhc.data.setup 2
 scoreboard players set #pvp uhc.data.setup 40
 scoreboard players set #border uhc.data.setup 80
 scoreboard players set #shrink1 uhc.data.setup 110
