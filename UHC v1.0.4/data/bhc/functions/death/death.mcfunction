@@ -20,8 +20,14 @@ execute unless score #end uhc.game.end matches 1.. run function bhc:scores_calcu
 execute if score @s uhc.players.lives matches 1.. run scoreboard players set @s uhc.timer.respawn 31
 execute if score @s uhc.players.lives matches 1.. run scoreboard players set @s uhc.players.death 0
 
-execute if score @s uhc.players.lives matches 1.. if score #Minutes uhc.data.display matches ..59 unless score @s uhc.meetup.activate matches 2 run function uhc:in_game/tp/spawn_start 
+execute if score @s uhc.players.lives matches 1.. if score #Minutes uhc.data.display matches ..59 unless score @s uhc.meetup.activate matches 2 run function uhc:in_game/tp/spawn_start
 execute if score @s uhc.players.lives matches 1.. if score #Minutes uhc.data.display matches 60.. run function uhc:in_game/tp/spawn_end
 execute if score @s uhc.players.lives matches 1.. if score @s uhc.meetup.activate matches 2 run function uhc:in_game/tp/spawn_end
 
 scoreboard players set @s[scores={uhc.players.lives=1..}] uhc.world.end 1
+
+data modify storage uhc:temp input.x set from entity @s LastDeathLocation.pos[0]
+data modify storage uhc:temp input.y set from entity @s LastDeathLocation.pos[1]
+data modify storage uhc:temp input.z set from entity @s LastDeathLocation.pos[2]
+
+execute if score @s uhc.players.lives matches 1.. run function bhc:death/death_1 with storage uhc:temp input

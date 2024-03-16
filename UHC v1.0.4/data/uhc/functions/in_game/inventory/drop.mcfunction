@@ -1,7 +1,7 @@
 
-#> uhc:inventory/drop
+#> uhc:in_game/inventory/drop
 #
-# @within			uhc:timer/mort
+# @within			uhc:in_game/death/death
 # @executed			default context
 #
 # @description		
