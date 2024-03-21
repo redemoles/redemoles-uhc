@@ -58,10 +58,13 @@ $execute if score #team_first_case bhc.data matches 1 unless score #total_first_
 execute if score #team_first_line bhc.data matches 1 run function bhc:advancements/message_line
 execute if score #team_first_column bhc.data matches 1 run function bhc:advancements/message_column
 
-## Donne l'advancements aux alliés
-# Succès
+## Don de l'advancements aux alliés
 $execute if score #team_first_case bhc.data matches 1 as @a[tag=!bhc.new_adv,predicate=uhc:id_teams] run advancement grant @s only $(namespace):$(line)_$(column)
 
 ## Désélection du joueur et son équipe
 tag @e[type=marker,tag=BHC] remove bhc.new_adv
 tag @s remove bhc.new_adv
+
+## Si FFA → Don du dernier succès non complété d'une ligne
+$execute if score #TeamSize uhc.data.setup matches 1 if score @s bhc.line_$(line) matches 4 run function bhc:advancements/ffa_line
+$execute if score #TeamSize uhc.data.setup matches 1 if score @s bhc.column_$(column) matches 4 run function bhc:advancements/ffa_column

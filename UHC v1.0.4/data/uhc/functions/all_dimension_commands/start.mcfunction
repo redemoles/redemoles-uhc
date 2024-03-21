@@ -8,7 +8,7 @@
 #
 
 difficulty normal
-execute if entity @e[type=marker,scores={uhc.data.setup=2..}] run difficulty hard
+execute unless score #TeamSize uhc.data.setup matches 1 run difficulty hard
 gamerule doFireTick true
 gamerule doMobSpawning true
 execute if score #message uhc.data.setup matches 0 run gamerule showDeathMessages true

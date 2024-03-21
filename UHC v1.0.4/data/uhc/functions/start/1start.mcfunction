@@ -95,6 +95,8 @@ execute store result score #Joueurs uhc.data.setup if entity @a[tag=Joueur]
 ## Nombre d'équipes en jeu
 scoreboard players set #Teams uhc.data.display 0
 execute as @a[tag=Joueur] run function uhc:start/id_teams
+scoreboard players set #TeamSize uhc.data.setup 1
+execute if entity @e[type=marker,scores={uhc.data.setup=2..}] run scoreboard players set #TeamSize uhc.data.setup 2
 scoreboard players operation #Teams uhc.data.setup = #Teams uhc.data.display
 
 ## Nombre de vie
