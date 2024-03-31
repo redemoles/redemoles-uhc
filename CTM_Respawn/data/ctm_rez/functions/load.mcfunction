@@ -18,6 +18,7 @@ tellraw @a[tag=Host] {"text":"Clique ici pour donner un stuff de départ","color
 tellraw @a[tag=Host] {"text":""}
 
 scoreboard objectives add ctm_rez.start dummy
+scoreboard objectives add ctm_rez.stuff trigger
 scoreboard objectives add ctm_rez.death deathCount "Morts"
 scoreboard objectives add ctm_rez.death.temp deathCount
 scoreboard objectives setdisplay sidebar ctm_rez.death

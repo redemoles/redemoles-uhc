@@ -18,5 +18,5 @@ item replace entity @s hotbar.1 with wooden_pickaxe
 item replace entity @s hotbar.2 with cooked_beef 8
 item replace entity @s hotbar.3 with torch
 
-scoreboard players set @s ctm_rez.death.temp 0
+scoreboard players set @s ctm_rez.stuff 0
 scoreboard players set @s ctm_rez.start 1

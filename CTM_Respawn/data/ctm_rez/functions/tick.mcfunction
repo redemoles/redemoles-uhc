@@ -8,4 +8,5 @@
 #
 
 # +1 tick
-execute as @e[type=player,scores={ctm_rez.death.temp=1}] run function ctm_rez:death/stuff
+execute as @e[type=player,scores={ctm_rez.death.temp=1}] run function ctm_rez:death/message
+execute as @a[scores={ctm_rez.stuff=1}] run function ctm_rez:death/stuff
