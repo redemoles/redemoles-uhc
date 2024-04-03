@@ -21,26 +21,27 @@ execute if score #ticks uhc.spawn.check matches 30 run scoreboard players set #t
 
 ## Téléportations
 execute at @s positioned over world_surface run tp @s ~ ~ ~
+
 # Spawn 01-04
-execute if score #ticks uhc.spawn.check matches 1 if score #seconds uhc.spawn.check matches 0 run tp @s 700 300 700
-execute if score #ticks uhc.spawn.check matches 1 if score #seconds uhc.spawn.check matches 1 run tp @s 700 300 -700
-execute if score #ticks uhc.spawn.check matches 1 if score #seconds uhc.spawn.check matches 2 run tp @s -700 300 700
-execute if score #ticks uhc.spawn.check matches 1 if score #seconds uhc.spawn.check matches 3 run tp @s -700 300 -700
+execute if score #ticks uhc.spawn.check matches 1 if score #seconds uhc.spawn.check matches 0 run tp @s 720 300 720
+execute if score #ticks uhc.spawn.check matches 1 if score #seconds uhc.spawn.check matches 1 run tp @s 720 300 -720
+execute if score #ticks uhc.spawn.check matches 1 if score #seconds uhc.spawn.check matches 2 run tp @s -720 300 720
+execute if score #ticks uhc.spawn.check matches 1 if score #seconds uhc.spawn.check matches 3 run tp @s -720 300 -720
 # Spawn 05-08
-execute if score #ticks uhc.spawn.check matches 1 if score #seconds uhc.spawn.check matches 4 run tp @s 800 300 400
-execute if score #ticks uhc.spawn.check matches 1 if score #seconds uhc.spawn.check matches 5 run tp @s 800 300 -400
-execute if score #ticks uhc.spawn.check matches 1 if score #seconds uhc.spawn.check matches 6 run tp @s -800 300 400
-execute if score #ticks uhc.spawn.check matches 1 if score #seconds uhc.spawn.check matches 7 run tp @s -800 300 -400
+execute if score #ticks uhc.spawn.check matches 1 if score #seconds uhc.spawn.check matches 4 run tp @s 840 300 360
+execute if score #ticks uhc.spawn.check matches 1 if score #seconds uhc.spawn.check matches 5 run tp @s 840 300 -360
+execute if score #ticks uhc.spawn.check matches 1 if score #seconds uhc.spawn.check matches 6 run tp @s -840 300 360
+execute if score #ticks uhc.spawn.check matches 1 if score #seconds uhc.spawn.check matches 7 run tp @s -840 300 -360
 # Spawn 09-12
-execute if score #ticks uhc.spawn.check matches 1 if score #seconds uhc.spawn.check matches 8 run tp @s 400 300 800
-execute if score #ticks uhc.spawn.check matches 1 if score #seconds uhc.spawn.check matches 9 run tp @s 400 300 -800
-execute if score #ticks uhc.spawn.check matches 1 if score #seconds uhc.spawn.check matches 10 run tp @s -400 300 800
-execute if score #ticks uhc.spawn.check matches 1 if score #seconds uhc.spawn.check matches 11 run tp @s -400 300 -800
+execute if score #ticks uhc.spawn.check matches 1 if score #seconds uhc.spawn.check matches 8 run tp @s 360 300 840
+execute if score #ticks uhc.spawn.check matches 1 if score #seconds uhc.spawn.check matches 9 run tp @s 360 300 -840
+execute if score #ticks uhc.spawn.check matches 1 if score #seconds uhc.spawn.check matches 10 run tp @s -360 300 840
+execute if score #ticks uhc.spawn.check matches 1 if score #seconds uhc.spawn.check matches 11 run tp @s -360 300 -840
 # Spawn 13-16
-execute if score #ticks uhc.spawn.check matches 1 if score #seconds uhc.spawn.check matches 12 run tp @s 800 300 0
-execute if score #ticks uhc.spawn.check matches 1 if score #seconds uhc.spawn.check matches 13 run tp @s -800 300 0
-execute if score #ticks uhc.spawn.check matches 1 if score #seconds uhc.spawn.check matches 14 run tp @s 0 300 800
-execute if score #ticks uhc.spawn.check matches 1 if score #seconds uhc.spawn.check matches 15 run tp @s 0 300 -800
+execute if score #ticks uhc.spawn.check matches 1 if score #seconds uhc.spawn.check matches 12 run tp @s 960 300 0
+execute if score #ticks uhc.spawn.check matches 1 if score #seconds uhc.spawn.check matches 13 run tp @s -960 300 0
+execute if score #ticks uhc.spawn.check matches 1 if score #seconds uhc.spawn.check matches 14 run tp @s 0 300 960
+execute if score #ticks uhc.spawn.check matches 1 if score #seconds uhc.spawn.check matches 15 run tp @s 0 300 -960
 # Spawn 01-04
 execute if score #ticks uhc.spawn.check matches 1 if score #seconds uhc.spawn.check matches 16 run tp @s 72 300 72
 execute if score #ticks uhc.spawn.check matches 1 if score #seconds uhc.spawn.check matches 17 run tp @s 72 300 -72
