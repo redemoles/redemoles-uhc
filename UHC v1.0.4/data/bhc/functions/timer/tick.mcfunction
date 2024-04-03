@@ -1,7 +1,7 @@
 
 #> bhc:timer/tick
 #
-# @within			bhc:tick
+# @within			uhc:in_game/timer/tick
 #
 #
 # @description		tock

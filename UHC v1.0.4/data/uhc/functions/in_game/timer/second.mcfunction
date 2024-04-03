@@ -7,7 +7,6 @@
 # @description		Function executed every second
 #
 
-
 scoreboard players set #tick uhc.data.setup 0
 execute if entity @p[tag=Test] run scoreboard players set #tick uhc.data.setup 19
 scoreboard players add #Secondes uhc.data.display 1

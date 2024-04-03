@@ -1,4 +1,12 @@
 
+#> uhc:in_game/timer/players
+#
+# @within			uhc:in_game/timer/tick
+# @executed			default context
+#
+# @description		Function executed every second
+#
+
 # Connexion d'un joueur externe
 execute unless score @s uhc.players.online matches 1 run function uhc:in_game/death/spec
 
