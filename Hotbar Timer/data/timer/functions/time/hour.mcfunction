@@ -9,4 +9,4 @@
 
 # +1 hour
 scoreboard players add hour timer.data 1
-scoreboard players remove minute timer.data 0
+scoreboard players set minute timer.data 0
