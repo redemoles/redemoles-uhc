@@ -825,28 +825,29 @@ execute if score #chunck_pregen pregen.world matches 5260 run execute in minecra
 execute if score #chunck_pregen pregen.world matches 5261 run execute in minecraft:the_end run forceload remove -127 -127 0 0
 
 ## Forceload des spawns et du centre
-# Centre
-forceload add 100 100 -100 -100
-# Spawn 01-04
-forceload add 700 700
-forceload add 700 -700
-forceload add -700 700
-forceload add -700 -700
-# Spawn 05-08
-forceload add 800 400
-forceload add 800 -400
-forceload add -800 400
-forceload add -800 -400
-# Spawn 09-12
-forceload add 400 800
-forceload add 400 -800
-forceload add -400 800
-forceload add -400 -800
-# Spawn 13-16
-forceload add 800 0
-forceload add -800 0
-forceload add 0 800
-forceload add 0 -800
+# Middle
+forceload add 127 127 -127 -127
+# Spawns 01-04
+forceload add 720 720
+forceload add 720 -720
+forceload add -720 720
+forceload add -720 -720
+# Spawns 05-08
+forceload add 840 360
+forceload add 840 -360
+forceload add -840 360
+forceload add -840 -360
+# Spawns 09-12
+forceload add 360 840
+forceload add 360 -840
+forceload add -360 840
+forceload add -360 -840
+# Spawns 13-16
+forceload add 960 0
+forceload add -960 0
+forceload add 0 960
+forceload add 0 -960
+
 
 execute if score #chunck_pregen pregen.world matches 5261 run tellraw @a[scores={pregen.world=1..}] [{"text":"End : Une zone de 250x250 a entièrement été générée", "color":"#9F3FFF"}]
 execute if score #chunck_pregen pregen.world matches 5261 run tellraw @a [{"text":"Génération de la carte terminée"}]
