@@ -11,4 +11,5 @@ difficulty normal
 execute unless score #TeamSize uhc.data.setup matches 1 run difficulty hard
 gamerule doFireTick true
 gamerule doMobSpawning true
+gamerule spectatorsGenerateChunks false
 execute if score #message uhc.data.setup matches 0 run gamerule showDeathMessages true
