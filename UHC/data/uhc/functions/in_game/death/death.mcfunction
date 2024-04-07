@@ -13,19 +13,17 @@
 execute if score #message uhc.data.setup matches 0..4 run scoreboard players remove #Joueurs uhc.data.display 1
 scoreboard players remove #Joueurs uhc.data.setup 1
 
-# -1 Joueur dans Team
+# -1 Joueur dans l'équipe
 scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
 scoreboard players remove @e[type=marker,predicate=uhc:id_teams] uhc.data.setup 1
 
-# Dernier joueur de la team ?
+# Dernier joueur de l'équipe ?
 scoreboard players set #team_out uhc.id.teams 1
-execute as @e[tag=marker,predicate=uhc:id_teams] if score @s uhc.data.setup matches 1.. run scoreboard players set #team_out uhc.id.teams 0
+execute if score @e[type=marker,predicate=uhc:id_teams,limit=1] uhc.data.setup matches 1.. run scoreboard players set #team_out uhc.id.teams 0
 
 # -1 Team
 execute if score #team_out uhc.id.teams matches 1 if score #message uhc.data.setup matches 0..4 run scoreboard players remove #Teams uhc.data.display 1
 execute if score #team_out uhc.id.teams matches 1 run scoreboard players remove #Teams uhc.data.setup 1
-execute if score #team_out uhc.id.teams matches 1 run scoreboard players remove @e[type=marker,tag=UHC,predicate=uhc:id_teams] uhc.data.setup 1
-execute if score #team_out uhc.id.teams matches 1 run scoreboard players remove @s uhc.data.setup 1
 
 # Messages et Attribution des effets
 function uhc:in_game/death/spec
