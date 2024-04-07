@@ -12,7 +12,6 @@
 scoreboard players remove #Secondes uhc.data.display 60
 scoreboard players add #sec_cooldown uhc.data.display 60
 scoreboard players add #Minutes uhc.data.display 1
-execute if score #vanilla uhc.gamemode matches 1 run function uhc:in_game/timer/cooldown
 
 ## TIMER INTERNE
 
@@ -29,14 +28,7 @@ execute in minecraft:the_nether run function uhc:pre_game/config/wb_shrinks
 execute in minecraft:the_end run function uhc:pre_game/config/wb_shrinks
 execute if score #border uhc.data.setup matches 0 run gamerule doMobSpawning false
 
-## MINUTEUR DES MODES DE JEU ALTERNATIFS
+## MINUTEUR POUR CHAQUE MODE DE JEU
 
+execute if score #vanilla uhc.gamemode matches 1 run function uhc:in_game/timer/cooldown
 execute if score #bhc uhc.gamemode matches 1 run function bhc:timer/minute
-
-## ALERTES SONORES
-
-execute if score #pve uhc.data.setup matches 0 run playsound minecraft:entity.ender_dragon.hurt master @a ~ ~ ~ 0.5 1 0.5
-execute if score #pvp uhc.data.setup matches 0 run playsound minecraft:entity.ender_dragon.hurt master @a ~ ~ ~ 0.5 1 0.5
-execute if score #border uhc.data.setup matches 0 run playsound minecraft:entity.ender_dragon.hurt master @a ~ ~ ~ 0.5 1 0.5
-execute if score #shrink1 uhc.data.setup matches 0 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
-execute if score #shrink2 uhc.data.setup matches 0 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5

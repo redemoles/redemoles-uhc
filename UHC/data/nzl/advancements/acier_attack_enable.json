@@ -7,7 +7,7 @@
                     "items": [
                         "minecraft:warped_fungus_on_a_stick"
                     ],
-                    "nbt": "{Tags:[\"nzl.type.01\"]}"
+                    "nbt": "{Tags:\"nzl.type.01\"}"
                 }
             }
         }
