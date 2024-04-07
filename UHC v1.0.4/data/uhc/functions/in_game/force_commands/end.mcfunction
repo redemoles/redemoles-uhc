@@ -1,5 +1,5 @@
 
-#> uhc:in_game/force/end
+#> uhc:in_game/force_commands/end
 #
 # @within			uhc:in_game/timer/tick
 # @executed			default context

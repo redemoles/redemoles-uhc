@@ -1,5 +1,5 @@
 
-#> uhc:in_game/force/meetup
+#> uhc:in_game/force_commands/meetup
 #
 # @within			uhc:in_game/timer/tick
 # @executed			default context

@@ -2,7 +2,7 @@
 #> uhc:in_game/tp/spawn_end
 #
 # @within			bhc:death/death
-# @within			uhc:in_game/force/meetup
+# @within			uhc:in_game/force_commands/meetup
 #
 # @description		Configuration du timer 
 #

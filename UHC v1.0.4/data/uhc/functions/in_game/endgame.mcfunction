@@ -2,7 +2,7 @@
 #> uhc:in_game/endgame
 #
 # @within			uhc:in_game/death/death
-# @within			uhc:in_game/force/end
+# @within			uhc:in_game/force_commands/end
 #
 # @description		Message si partie terminée
 #
