@@ -42,7 +42,7 @@ scoreboard players operation @a[predicate=uhc:id_teams] bhc.invTotal = @s bhc.in
 scoreboard players operation @a[predicate=uhc:id_teams] bhc.invST = @s bhc.invST
 scoreboard players operation @a[predicate=uhc:id_teams] bhc.CT = @s bhc.CT
 
-function bhc:markername with entity @s data
+function bhc:timer/marker_tick with entity @s data
 
 # Scores → Affichage pour le message de fin
 $scoreboard players operation #max bhc.StepA > $(name) bhc.StepA
