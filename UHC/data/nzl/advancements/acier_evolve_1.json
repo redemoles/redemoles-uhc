@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:player",
+                    "nbt": "{Tags:[\"nzl.type.01\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "nzl:types/acier/move_attack_enable"
+    }
+}

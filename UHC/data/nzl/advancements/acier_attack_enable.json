@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:warped_fungus_on_a_stick"
+                    ],
+                    "nbt": "{Tags:[\"nzl.type.01\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "nzl:types/acier/move_talent"
+    }
+}
