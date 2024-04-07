@@ -1,7 +1,7 @@
 
 #> bhc:scores_calculator/death/rank
 #
-# @within			bhc:scores_calculator/death/penalty
+# @within			bhc:scores_calculator/death/bonus
 #
 #
 # @description		Actualisation scores death 

@@ -79,7 +79,7 @@ scoreboard objectives remove bhc.column_5
 
 scoreboard objectives remove bhc.data
 scoreboard objectives remove bhc.timer
-scoreboard objectives remove bhc.teams.deathcount
+scoreboard objectives remove bhc.teams.livescount
 
 scoreboard objectives add bhc.invStepA dummy
 scoreboard objectives add bhc.invStepB dummy
@@ -152,7 +152,7 @@ scoreboard objectives add bhc.column_5 dummy
 
 scoreboard objectives add bhc.data dummy
 scoreboard objectives add bhc.timer dummy
-scoreboard objectives add bhc.teams.deathcount dummy
+scoreboard objectives add bhc.teams.livescount dummy
 
 scoreboard players set #-1m bhc.data -1000000
 scoreboard players set #-1 bhc.data -1
@@ -180,7 +180,7 @@ scoreboard players set #55 bhc.data 55
 scoreboard players set #60 bhc.data 60
 scoreboard players set #100 bhc.data 100
 scoreboard players set #1200 bhc.data 1200
-scoreboard players set #penalty bhc.data 12000
+scoreboard players set #bonus bhc.data 12000
 scoreboard players set #1m bhc.data 1000000
 
 # Roll Bingo 01-04

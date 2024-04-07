@@ -1,5 +1,5 @@
 
-#> bhc:scores_calculator/death/penalty
+#> bhc:scores_calculator/death/bonus
 #
 # @within			bhc:scores_calculator/death/scores
 # @within			bhc:death/death
@@ -7,8 +7,8 @@
 # @description		Actualisation scores death 
 #
 
-## Pénalité de 10 minutes
+## Bonus vie non utilisée de 10 minutes
 execute as @e[type=marker,tag=BHC] run function bhc:scores_calculator/death/scores
-execute as @e[type=marker,tag=BHC] run function bhc:scores_calculator/death/penalty_1
+execute as @e[type=marker,tag=BHC] run function bhc:scores_calculator/death/bonus_1
 function bhc:scores_calculator/death/rank
-execute as @e[type=marker,tag=BHC] run function bhc:scores_calculator/death/penalty_2
+execute as @e[type=marker,tag=BHC] run function bhc:scores_calculator/death/bonus_2

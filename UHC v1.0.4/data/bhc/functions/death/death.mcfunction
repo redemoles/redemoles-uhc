@@ -15,7 +15,7 @@ execute if score @s uhc.players.lives matches ..0 run function uhc:in_game/death
 
 scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
 
-execute unless score #end uhc.game.end matches 1.. run function bhc:scores_calculator/death/penalty
+execute unless score #end uhc.game.end matches 1.. run function bhc:scores_calculator/death/bonus
 
 execute if score @s uhc.players.lives matches 1.. run scoreboard players set @s uhc.timer.respawn 31
 execute if score @s uhc.players.lives matches 1.. run scoreboard players set @s uhc.players.death 0

@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:player",
+                    "nbt": "{Tags:[\"uhc.ironman\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "uhc:in_game/ironman/reward"
+    }
+}

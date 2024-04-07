@@ -13,5 +13,5 @@ tellraw @a[scores={uhc.players.lives=2},predicate=uhc:id_teams] [{"text":"[","co
 give @a[scores={uhc.players.lives=2},predicate=uhc:id_teams] golden_apple 2
 
 execute store result score #count bhc.data if entity @a[scores={uhc.players.lives=2},predicate=uhc:id_teams]
-scoreboard players operation @s bhc.teams.deathcount -= #count bhc.data
+scoreboard players operation @s bhc.teams.livescount += #count bhc.data
 scoreboard players set @a[scores={uhc.players.lives=2},predicate=uhc:id_teams] uhc.players.lives 1

@@ -21,6 +21,9 @@ effect give @a[tag=Joueur] jump_boost infinite 128 true
 tp @a[tag=Spec] 0 200 0
 execute as @a[tag=Joueur] run function uhc:in_game/tp/spawn_start
 
+tag @a[tag=Joueur] add uhc.ironman
+execute store result score #ironman uhc.data.setup if entity @a[tag=Joueur]
+
 advancement revoke @a everything
 
 scoreboard players set @a uhc.players.death 0
