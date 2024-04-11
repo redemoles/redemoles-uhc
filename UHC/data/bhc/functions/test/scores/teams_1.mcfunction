@@ -25,10 +25,10 @@ execute if score #team uhc.id.teams matches 9 run data merge entity @s {Tags:["0
 execute if score #team uhc.id.teams matches 10 run data merge entity @s {Tags:["10","BHC","UHC"],CustomName:'{"text":"Équipe Rouge f."}',data:{name:"§4"}}
 execute if score #team uhc.id.teams matches 11 run data merge entity @s {Tags:["11","BHC","UHC"],CustomName:'{"text":"Équipe Violette"}',data:{name:"§5"}}
 execute if score #team uhc.id.teams matches 12 run data merge entity @s {Tags:["12","BHC","UHC"],CustomName:'{"text":"Équipe Rose"}',data:{name:"§d"}}
-execute if score #team uhc.id.teams matches 13 run data merge entity @s {Tags:["13","BHC","UHC"],CustomName:'{"text":"Équipe Blanche"}',data:{name:"§f"}}
-execute if score #team uhc.id.teams matches 14 run data merge entity @s {Tags:["14","BHC","UHC"],CustomName:'{"text":"Équipe Gris c."}',data:{name:"§7"}}
-execute if score #team uhc.id.teams matches 15 run data merge entity @s {Tags:["15","BHC","UHC"],CustomName:'{"text":"Équipe Gris f."}',data:{name:"§8"}}
-execute if score #team uhc.id.teams matches 16 run data merge entity @s {Tags:["16","BHC","UHC"],CustomName:'{"text":"Équipe Noire"}',data:{name:"§0"}}
+#execute if score #team uhc.id.teams matches 13 run data merge entity @s {Tags:["13","BHC","UHC"],CustomName:'{"text":"Équipe Blanche"}',data:{name:"§f"}}
+#execute if score #team uhc.id.teams matches 14 run data merge entity @s {Tags:["14","BHC","UHC"],CustomName:'{"text":"Équipe Gris c."}',data:{name:"§7"}}
+#execute if score #team uhc.id.teams matches 15 run data merge entity @s {Tags:["15","BHC","UHC"],CustomName:'{"text":"Équipe Gris f."}',data:{name:"§8"}}
+#execute if score #team uhc.id.teams matches 16 run data merge entity @s {Tags:["16","BHC","UHC"],CustomName:'{"text":"Équipe Noire"}',data:{name:"§0"}}
 
 # Team join des markers
 team join 01 @s[type=marker,tag=01]
@@ -65,3 +65,5 @@ scoreboard players set @s[tag=13] uhc.id.teams 13
 scoreboard players set @s[tag=14] uhc.id.teams 14
 scoreboard players set @s[tag=15] uhc.id.teams 15
 scoreboard players set @s[tag=16] uhc.id.teams 16
+
+kill @s[tag=temp]
