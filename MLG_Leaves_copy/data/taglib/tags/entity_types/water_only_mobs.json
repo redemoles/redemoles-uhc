@@ -1,0 +1,10 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:axolotl",
+        "minecraft:dolphin",
+        "minecraft:tadpole",
+        "#taglib:squids",
+        "#taglib:fish"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "replace": false,
+    "values": [
+        "#minecraft:corals",
+        "#taglib:coral_fans",
+        "#taglib:dead_coral_plant",
+        "#taglib:dead_coral_fans",
+        "#taglib:dead_coral_wall_fans"
+    ]
+}
