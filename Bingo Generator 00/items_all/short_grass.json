@@ -1,14 +1,14 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:grass"
+			"item": "minecraft:short_grass"
 		},
 		"title": {
-			"text": "Grass",
+			"text": "Short Grass",
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Grass",
+			"text": "Obtenir un(e) Short Grass",
 			"color": "#F7EFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:grass"
+							"minecraft:short_grass"
 						]
 					}
 				]
