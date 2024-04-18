@@ -18,7 +18,7 @@ scoreboard players remove #cycle uhc.data.setup 1
 
 scoreboard players set #start uhc.data.setup 1
 
-## Détection si BHC activé
+## Détection modes de jeu activés
 execute if score #bhc uhc.gamemode matches 1 run function bhc:start/
 execute if score #nzl uhc.gamemode matches 1 run function nzl:start/
 

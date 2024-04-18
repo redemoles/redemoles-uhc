@@ -17,3 +17,7 @@ effect clear @s[scores={uhc.effect.resistance=0}] minecraft:resistance
 
 # Respawn
 execute if score #bhc uhc.gamemode matches 1 as @s[scores={uhc.timer.respawn=1..}] run function bhc:death/respawn_cooldown
+
+## Scenarios
+# Best PvE tick
+execute if score #bestpve uhc.scenario matches 1 as @s[tag=uhc.scenario.bestpve] run function uhc:in_game/scenarios/bestpve/tick

@@ -21,20 +21,28 @@ effect give @a[tag=Joueur] jump_boost infinite 128 true
 tp @a[tag=Spec] 0 200 0
 execute as @a[tag=Joueur] run function uhc:in_game/tp/spawn_start
 
-tag @a[tag=Joueur] add uhc.ironman
-execute store result score #ironman uhc.data.setup if entity @a[tag=Joueur]
-
 advancement revoke @a everything
-
-scoreboard players set @a uhc.players.death 0
 
 scoreboard objectives remove uhc.players.online
 scoreboard objectives add uhc.players.online dummy
 scoreboard players set @a[tag=Joueur] uhc.players.online 1
 
+## Scenarios
+# Ironman
+tag @a[tag=Joueur] add uhc.ironman
+execute store result score #ironman uhc.data.setup if entity @a[tag=Joueur]
+
+# BestPvE
+execute if score #bestpve uhc.scenario matches 1 run function uhc:start/1start_bestpve
+
+## Nombre de vie
+scoreboard players set @a[tag=Spec] uhc.players.lives 0
+scoreboard players set @a[tag=Joueur] uhc.players.lives 1
+scoreboard players set @a uhc.players.death 0
+
 ## Suppression du lobby
-function lobby:auto/delete
 setblock 0 239 0 air
+function lobby:auto/delete
 
 ## Markers
 # Summon markers d'équipes
@@ -72,7 +80,3 @@ execute as @a[tag=Joueur] run function uhc:start/id_teams
 scoreboard players set #TeamSize uhc.data.setup 1
 execute if entity @e[type=marker,scores={uhc.data.setup=2..}] run scoreboard players set #TeamSize uhc.data.setup 2
 scoreboard players operation #Teams uhc.data.setup = #Teams uhc.data.display
-
-## Nombre de vie
-scoreboard players set @a[tag=Spec] uhc.players.lives 0
-scoreboard players set @a[tag=Joueur] uhc.players.lives 1

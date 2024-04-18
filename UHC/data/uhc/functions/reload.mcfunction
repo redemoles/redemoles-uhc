@@ -12,17 +12,27 @@ function pregen:load
 
 ## Reset des équipes
 
-function uhc:pre_game/lobby/teamcreate
+function uhc:pre_game/players_and_teams/teamcreate
 
 ## Reset des scores
 
 scoreboard objectives remove uhc.gamemode
+scoreboard objectives remove uhc.scenario
+scoreboard objectives remove uhc.scenario.bestpve.list
+scoreboard objectives remove uhc.scenario.bestpve.tick
+scoreboard objectives remove uhc.scenario.bestpve.reward
 scoreboard objectives remove bhc.scenario
 scoreboard objectives remove nzl.scenario
 
-scoreboard objectives add uhc.gamemode trigger
-scoreboard objectives add bhc.scenario trigger
-scoreboard objectives add nzl.scenario trigger
+scoreboard objectives add uhc.gamemode dummy
+scoreboard objectives add uhc.scenario dummy
+scoreboard objectives add uhc.scenario.bestpve.list dummy
+scoreboard objectives add uhc.scenario.bestpve.tick dummy
+scoreboard objectives add uhc.scenario.bestpve.reward dummy
+scoreboard objectives add bhc.scenario dummy
+scoreboard objectives add nzl.scenario dummy
+
+scoreboard objectives add bestpve.list trigger
 
 scoreboard objectives remove uhc.id.teams
 scoreboard objectives remove uhc.id.players
@@ -30,6 +40,7 @@ scoreboard objectives remove uhc.game.end
 scoreboard objectives remove uhc.data.arrow
 scoreboard objectives remove uhc.data.display
 scoreboard objectives remove uhc.data.setup
+scoreboard objectives remove uhc.data.numbers
 scoreboard objectives remove uhc.host.menu
 scoreboard objectives remove uhc.meetup.activate
 scoreboard objectives remove uhc.players.online
@@ -51,6 +62,7 @@ scoreboard objectives add uhc.id.players dummy
 scoreboard objectives add uhc.game.end trigger
 scoreboard objectives add uhc.data.arrow minecraft.used:minecraft.bow
 scoreboard objectives add uhc.data.display dummy
+scoreboard objectives add uhc.data.numbers dummy
 scoreboard objectives add uhc.host.menu dummy
 scoreboard objectives add uhc.meetup.activate trigger
 scoreboard objectives add uhc.players.online dummy
@@ -131,3 +143,33 @@ forceload add 960 0
 forceload add -960 0
 forceload add 0 960
 forceload add 0 -960
+
+#
+scoreboard players set #-1m uhc.data.numbers -1000000
+scoreboard players set #-1 uhc.data.numbers -1
+scoreboard players set #01 uhc.data.numbers 1
+scoreboard players set #02 uhc.data.numbers 2
+scoreboard players set #03 uhc.data.numbers 3
+scoreboard players set #04 uhc.data.numbers 4
+scoreboard players set #05 uhc.data.numbers 5
+scoreboard players set #06 uhc.data.numbers 6
+scoreboard players set #07 uhc.data.numbers 7
+scoreboard players set #08 uhc.data.numbers 8
+scoreboard players set #09 uhc.data.numbers 9
+scoreboard players set #10 uhc.data.numbers 10
+scoreboard players set #15 uhc.data.numbers 15
+scoreboard players set #16 uhc.data.numbers 16
+scoreboard players set #17 uhc.data.numbers 17
+scoreboard players set #20 uhc.data.numbers 20
+scoreboard players set #25 uhc.data.numbers 25
+scoreboard players set #30 uhc.data.numbers 30
+scoreboard players set #35 uhc.data.numbers 35
+scoreboard players set #40 uhc.data.numbers 40
+scoreboard players set #45 uhc.data.numbers 45
+scoreboard players set #50 uhc.data.numbers 50
+scoreboard players set #55 uhc.data.numbers 55
+scoreboard players set #60 uhc.data.numbers 60
+scoreboard players set #100 uhc.data.numbers 100
+scoreboard players set #1200 uhc.data.numbers 1200
+scoreboard players set #bonus uhc.data.numbers 12000
+scoreboard players set #1m uhc.data.numbers 1000000
