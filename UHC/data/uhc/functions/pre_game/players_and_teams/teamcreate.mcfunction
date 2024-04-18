@@ -1,5 +1,5 @@
 
-#> uhc:pre_game/lobby/teamcreate
+#> uhc:pre_game/players_and_teams/teamcreate
 #
 # @within			uhc:reload
 # @executed			default context

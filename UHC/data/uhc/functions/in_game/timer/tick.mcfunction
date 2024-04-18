@@ -7,27 +7,33 @@
 # @description		Commandes in-game en tick
 #
 
-# TP un joueur au sol après spawn/respawn
+## TP
+# TP un joueur au sol après spawn ou respawn
 execute as @a[scores={uhc.players.tp=1}] at @s positioned over world_surface run tp @s ~ ~ ~
 scoreboard players set @a uhc.players.tp 0
 
-# Start
+## Start
 execute if score #tick_start uhc.data.setup matches 0..200 run function uhc:start/0start
 execute if score #start uhc.data.setup matches 1 run function uhc:start/3start
 
-# Hotbar
+## Hotbar text
 execute if score #vanilla uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. if score #Secondes uhc.data.display matches 0..9 run title @a actionbar [{"score":{"name":"#Minutes","objective":"uhc.data.display"},"color":"aqua","bold":true}, {"text":":","color":"dark_aqua"}, {"text":"0","color":"aqua"}, {"score":{"name":"#Secondes","objective":"uhc.data.display"},"color":"aqua"}, {"text":" - ","color":"dark_aqua"}, {"score":{"name":"#Teams","objective":"uhc.data.display"},"color":"aqua"}, {"text":" équipes","color":"dark_aqua"}, {"text":" - ","color":"dark_aqua"}, {"score":{"name":"#Joueurs","objective":"uhc.data.display"},"color":"aqua"}, {"text":" joueurs","color":"dark_aqua"}]
 execute if score #vanilla uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. if score #Secondes uhc.data.display matches 10.. run title @a actionbar [{"score":{"name":"#Minutes","objective":"uhc.data.display"},"color":"aqua","bold":true}, {"text":":","color":"dark_aqua"}, {"score":{"name":"#Secondes","objective":"uhc.data.display"},"color":"aqua"}, {"text":" - ","color":"dark_aqua"}, {"score":{"name":"#Teams","objective":"uhc.data.display"},"color":"aqua"}, {"text":" équipes","color":"dark_aqua"}, {"text":" - ","color":"dark_aqua"}, {"score":{"name":"#Joueurs","objective":"uhc.data.display"},"color":"aqua"}, {"text":" joueurs","color":"dark_aqua"}]
 execute if score #hotbar_cooldown uhc.data.display matches 1.. run function uhc:in_game/timer/hotbar_cooldown
 execute unless score #hotbar_cooldown uhc.data.display matches 1.. if score #bhc uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. run function bhc:timer/hotbar
 execute unless score #hotbar_cooldown uhc.data.display matches 1.. if score #nzl uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. run function nzl:timer/hotbar
 
+## Scenarios
 # Réduction des dégâts des flèches
 execute as @e[type=arrow,tag=!uhc.checked] run function uhc:in_game/arrow/
 
-# Ironman
-execute if score #ironman uhc.data.setup matches 1 as @p[tag=uhc.ironman] run function uhc:in_game/ironman/reward
+# Ironman reward
+execute if score #ironman uhc.data.setup matches 1 as @p[tag=uhc.ironman] run function uhc:in_game/scenarios/ironman/reward
 
+# BestPvE
+execute if score #bestpve uhc.scenario matches 1 as @p[scores={bestpve.list=1}] run function uhc:in_game/scenarios/bestpve/list
+
+## Morts
 # Message de mort
 execute if score #message uhc.data.setup matches 1..5 run scoreboard players add #message uhc.data.setup 1
 execute if score #message uhc.data.setup matches 6 run scoreboard players set #message uhc.data.setup 1
@@ -35,13 +41,15 @@ execute if score #message uhc.data.setup matches 6 run scoreboard players set #m
 # Détection d'un joueur mort
 execute as @e[type=player,scores={uhc.players.death=1}] run function uhc:in_game/death/lives
 
-# Connexion d'un joueur externe / Effets / Respawn
+## @a → Effets, Respawn, Connexion d'un joueur externe, Scenarios
 execute as @a run function uhc:in_game/timer/players
 
+## End
 # Détection entrée/sortie de l'end et respawn d'un joueur mort
 execute in the_end run scoreboard players set @a[distance=0..] uhc.world.end 1
 execute as @e[type=player,x=-48,y=240,z=-48,dx=49,dy=320,dz=49,scores={uhc.world.end=1}] run function uhc:in_game/tp/end_exit
 
+## Force commands
 # Force Meet-up
 execute if entity @p[scores={uhc.meetup.activate=1}] run function uhc:in_game/force_commands/meetup
 

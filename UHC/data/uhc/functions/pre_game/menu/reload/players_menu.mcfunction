@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/load/reload/players_menu
 #
-# @within			uhc:pre_game/lobby/new_players
+# @within			uhc:pre_game/players_and_teams/new_players
 #
 #
 # @description		Paramètre post-reload

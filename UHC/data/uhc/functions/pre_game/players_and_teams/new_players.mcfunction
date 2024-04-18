@@ -1,5 +1,5 @@
 
-#> uhc:pre_game/lobby/new_players
+#> uhc:pre_game/players_and_teams/new_players
 #
 # @within			uhc:pre_game/tick
 # @executed			default context
@@ -17,6 +17,7 @@ effect clear @s
 clear @s
 execute as @s[tag=Host] run function uhc:pre_game/menu/reload/host_menu
 execute as @s[tag=!Host] run function uhc:pre_game/menu/reload/players_menu
+attribute @s minecraft:generic.max_health base set 20
 effect give @s minecraft:saturation infinite 0 true
 effect give @s minecraft:resistance infinite 4 true
 effect give @s minecraft:weakness infinite 4 true

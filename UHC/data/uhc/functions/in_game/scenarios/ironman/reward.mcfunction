@@ -1,7 +1,7 @@
 
-#> uhc:in_game/ironman/reward
+#> uhc:in_game/scenarios/ironman/reward
 #
-# @within			uhc:in_game/tick
+# @within			uhc:in_game/timer/tick
 # @executed			default context
 #
 # @description		Récompense pour le dernier Ironman

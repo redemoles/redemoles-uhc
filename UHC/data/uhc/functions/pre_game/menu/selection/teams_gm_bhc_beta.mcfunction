@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/selection/teams_gm_bhc_beta
 #
-# @within			uhc:pre_game/menu/menu_change
+# @within			uhc:pre_game/menu/
 #
 #
 # @description		Redirection
