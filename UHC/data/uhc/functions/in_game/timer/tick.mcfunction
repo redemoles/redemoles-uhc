@@ -30,8 +30,8 @@ execute as @e[type=arrow,tag=!uhc.checked] run function uhc:in_game/arrow/
 # Ironman reward
 execute if score #ironman uhc.data.setup matches 1 as @p[tag=uhc.ironman] run function uhc:in_game/scenarios/ironman/reward
 
-# BestPvE
-execute if score #bestpve uhc.scenario matches 1 as @p[scores={bestpve.list=1}] run function uhc:in_game/scenarios/bestpve/list
+# Best PvE
+execute if score #best_pve uhc.scenario matches 1 as @p[scores={best_pve.list=1}] run function uhc:in_game/scenarios/best_pve/list
 
 ## Morts
 # Message de mort

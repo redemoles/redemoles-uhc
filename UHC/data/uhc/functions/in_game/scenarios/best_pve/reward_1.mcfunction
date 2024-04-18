@@ -1,7 +1,7 @@
 
-#> uhc:in_game/scenarios/bestpve/reward_1
+#> uhc:in_game/scenarios/best_pve/reward_1
 #
-# @within			uhc:in_game/scenarios/bestpve/reward
+# @within			uhc:in_game/scenarios/best_pve/reward
 # @executed			default context
 #
 # @description		Donne 1 coeur max supplémentaire

@@ -32,8 +32,8 @@ scoreboard players set @a[tag=Joueur] uhc.players.online 1
 tag @a[tag=Joueur] add uhc.ironman
 execute store result score #ironman uhc.data.setup if entity @a[tag=Joueur]
 
-# BestPvE
-execute if score #bestpve uhc.scenario matches 1 run function uhc:start/1start_bestpve
+# Best PvE
+execute if score #best_pve uhc.scenario matches 1 run function uhc:start/1start_best_pve
 
 ## Nombre de vie
 scoreboard players set @a[tag=Spec] uhc.players.lives 0

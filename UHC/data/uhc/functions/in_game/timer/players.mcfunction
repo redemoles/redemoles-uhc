@@ -20,4 +20,4 @@ execute if score #bhc uhc.gamemode matches 1 as @s[scores={uhc.timer.respawn=1..
 
 ## Scenarios
 # Best PvE tick
-execute if score #bestpve uhc.scenario matches 1 as @s[tag=uhc.scenario.bestpve] run function uhc:in_game/scenarios/bestpve/tick
+execute if score #best_pve uhc.scenario matches 1 as @s[tag=uhc.scenario.best_pve] run function uhc:in_game/scenarios/best_pve/tick

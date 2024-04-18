@@ -4,12 +4,12 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "type": "minecraft:player"
+                    "type": "minecraft:bat"
                 }
             }
         }
     },
     "rewards": {
-        "function": "uhc:in_game/scenarios/player_kill"
+        "function": "uhc:in_game/scenarios/_advancements/player_kill_bat"
     }
 }

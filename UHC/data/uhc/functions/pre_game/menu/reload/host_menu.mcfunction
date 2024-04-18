@@ -28,10 +28,28 @@ scoreboard players set #start uhc.host.menu 0
 scoreboard players set #scenarios uhc.host.menu 0
 scoreboard players set #world_check uhc.host.menu 0
 scoreboard players set #world_generation uhc.host.menu 0
+
 scoreboard players set #vanilla uhc.gamemode 1
 scoreboard players set #bhc uhc.gamemode 0
 scoreboard players set #nzl uhc.gamemode 0
-scoreboard players set #bestpve uhc.scenario 0
-scoreboard players set #cutclean uhc.scenario 0
+
+scoreboard players set #assassins uhc.scenario 0
+scoreboard players set #bats uhc.scenario 0
+scoreboard players set #best_pve uhc.scenario 0
+scoreboard players set #blood_cycle uhc.scenario 0
+scoreboard players set #bow_swap uhc.scenario 0
+scoreboard players set #compensation uhc.scenario 0
+scoreboard players set #cut_clean uhc.scenario 0
+
+scoreboard players set #go_to_hell uhc.scenario 0
+scoreboard players set #gone_fishing uhc.scenario 0
+scoreboard players set #nine_slots uhc.scenario 0
+scoreboard players set #red_arrows uhc.scenario 0
+scoreboard players set #rewarding_longshots uhc.scenario 0
+scoreboard players set #shared_health uhc.scenario 0
+scoreboard players set #sky_high uhc.scenario 0
+
+scoreboard players set #team_health uhc.scenario 0
+scoreboard players set #time_bomb uhc.scenario 0
 
 advancement revoke @s only uhc:inventory_menu

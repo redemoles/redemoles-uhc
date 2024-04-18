@@ -1,7 +1,7 @@
 
 #> uhc:in_game/scenarios/ironman/remove
 #
-# @within			uhc:in_game/scenarios/took_damage
+# @within			uhc:in_game/scenarios/_advancements/took_damage
 # @executed			default context
 #
 # @description		Retrait de la liste Ironman

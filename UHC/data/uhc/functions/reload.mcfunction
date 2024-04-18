@@ -18,21 +18,23 @@ function uhc:pre_game/players_and_teams/teamcreate
 
 scoreboard objectives remove uhc.gamemode
 scoreboard objectives remove uhc.scenario
-scoreboard objectives remove uhc.scenario.bestpve.list
-scoreboard objectives remove uhc.scenario.bestpve.tick
-scoreboard objectives remove uhc.scenario.bestpve.reward
+scoreboard objectives remove uhc.scenario.bats
+scoreboard objectives remove uhc.scenario.best_pve.list
+scoreboard objectives remove uhc.scenario.best_pve.tick
+scoreboard objectives remove uhc.scenario.best_pve.reward
 scoreboard objectives remove bhc.scenario
 scoreboard objectives remove nzl.scenario
 
 scoreboard objectives add uhc.gamemode dummy
 scoreboard objectives add uhc.scenario dummy
-scoreboard objectives add uhc.scenario.bestpve.list dummy
-scoreboard objectives add uhc.scenario.bestpve.tick dummy
-scoreboard objectives add uhc.scenario.bestpve.reward dummy
+scoreboard objectives add uhc.scenario.bats dummy
+scoreboard objectives add uhc.scenario.best_pve.list dummy
+scoreboard objectives add uhc.scenario.best_pve.tick dummy
+scoreboard objectives add uhc.scenario.best_pve.reward dummy
 scoreboard objectives add bhc.scenario dummy
 scoreboard objectives add nzl.scenario dummy
 
-scoreboard objectives add bestpve.list trigger
+scoreboard objectives add best_pve.list trigger
 
 scoreboard objectives remove uhc.id.teams
 scoreboard objectives remove uhc.id.players

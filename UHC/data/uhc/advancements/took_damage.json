@@ -5,6 +5,6 @@
         }
     },
     "rewards": {
-        "function": "uhc:in_game/scenarios/took_damage"
+        "function": "uhc:in_game/scenarios/_advancements/took_damage"
     }
 }
