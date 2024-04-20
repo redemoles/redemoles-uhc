@@ -37,8 +37,10 @@ execute if score #best_pve uhc.scenario matches 1 run function uhc:start/1start_
 
 ## Nombre de vie
 scoreboard players set @a[tag=Spec] uhc.players.lives 0
-scoreboard players set @a[tag=Joueur] uhc.players.lives 1
+scoreboard players operation @a[tag=Joueur] uhc.players.lives = #lives uhc.players.lives
 scoreboard players set @a uhc.players.death 0
+scoreboard players operation #lives_start uhc.players.lives = #lives uhc.players.lives
+execute if score #lives uhc.players.lives matches 1 run scoreboard players set #lives uhc.players.lives 0
 
 ## Suppression du lobby
 setblock 0 239 0 air

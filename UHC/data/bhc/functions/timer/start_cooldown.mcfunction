@@ -11,11 +11,11 @@ scoreboard players add #force_stepa uhc.data.setup 0
 
 function bhc:timer/minute
 
-scoreboard players add #vie3 bhc.timer 1
-scoreboard players add #vie2 bhc.timer 1
-scoreboard players add #vie1 bhc.timer 1
+scoreboard players add #live_3 uhc.data.setup 1
+scoreboard players add #live_2 uhc.data.setup 1
+scoreboard players add #live_1 uhc.data.setup 1
 
-# Retarde le bingo step a sans faire 2x les commandes de démarrage
+# Retarde le bingo step a sans faire 2x les functions de son démarrage
 scoreboard players add #bingo_ay bhc.timer 1
 
 # Retarde le démarrage de bingo step b

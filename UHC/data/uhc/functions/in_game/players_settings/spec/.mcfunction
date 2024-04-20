@@ -1,7 +1,7 @@
 
-#> uhc:in_game/death/spec
+#> uhc:in_game/players_settings/spec/
 #
-# @within			uhc:in_game/timer/tick
+# @within			uhc:in_game/timer/players
 # @executed			default context
 #
 # @description		Donne les effets / gamemode aux specs

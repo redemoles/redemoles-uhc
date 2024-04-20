@@ -23,6 +23,8 @@ scoreboard players set @a[tag=Joueur] bhc.invStepB 0
 scoreboard players set @a[tag=Joueur] bhc.invKills 0
 scoreboard players set @a[tag=Joueur] bhc.invDeath 0
 scoreboard players set @a[tag=Joueur] uhc.players.lives 3
+scoreboard players set #lives uhc.players.lives 3
+scoreboard players set #lives_start uhc.players.lives 3
 execute as @e[type=marker,tag=BHC] run function bhc:start/team_config 
 
 scoreboard players set #team uhc.id.teams 0
@@ -44,9 +46,6 @@ execute if score #bhc bhc.scenario matches 8 run function bhc:08/timer/config
 execute if score #bhc bhc.scenario matches 9 run function bhc:09/timer/config
 
 # Annulation des effets causés par le passage de la minute -1 à 0
-scoreboard players add #vie3 bhc.timer 1
-scoreboard players add #vie2 bhc.timer 1
-scoreboard players add #vie1 bhc.timer 1
 scoreboard players remove #start_stepa bhc.timer 1
 scoreboard players remove #start_stepb bhc.timer 1
 

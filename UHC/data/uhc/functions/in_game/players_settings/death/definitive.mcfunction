@@ -1,7 +1,7 @@
 
-#> uhc:in_game/death/death
+#> uhc:in_game/players_settings/death/definitive
 #
-# @within			uhc:in_game/death/lives
+# @within			uhc:in_game/players_settings/death/
 # @executed			default context
 #
 # @description		Fonction si morts ou kills à chaque ticks
@@ -26,10 +26,10 @@ execute if score #team_out uhc.id.teams matches 1 if score #message uhc.data.set
 execute if score #team_out uhc.id.teams matches 1 run scoreboard players remove #Teams uhc.data.setup 1
 
 # Messages et Attribution des effets
-function uhc:in_game/death/spec
-function uhc:in_game/death/death_reveal
+function uhc:in_game/players_settings/spec/
+function uhc:in_game/players_settings/death/reveal
 function uhc:in_game/inventory/drop
-execute as @a[scores={uhc.reward.kills=1..}] run function uhc:in_game/death/kill
+execute as @a[scores={uhc.reward.kills=1..}] run function uhc:in_game/players_settings/kill
 execute if score #vanilla uhc.gamemode matches 1 run tellraw @s [{"text":"Tu es mort. Si Mumble, merci de changer de vocal ou de te rendre muet.\n","color":"aqua"}]
 
 # Détection victoire

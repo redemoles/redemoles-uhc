@@ -9,11 +9,6 @@
 
 ## Préparation Config pre-game
 
-# Vies
-scoreboard players set #vie3 bhc.timer 0
-scoreboard players set #vie2 bhc.timer 60
-scoreboard players set #vie1 bhc.timer 100
-
 # Étape A : Bingo
 scoreboard players set #bingo_as bhc.timer 0
 scoreboard players set #bingo_ay bhc.timer 30

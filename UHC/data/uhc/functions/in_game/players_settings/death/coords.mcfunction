@@ -1,10 +1,10 @@
 
-#> bhc:death/death_1
+#> uhc:in_game/players_settings/death/coords
 #
-# @within			bhc:death/death
+# @within			uhc:in_game/players_settings/death/
 # 
 #
-# @description		Modifications des paramètres pour un joueur mort
+# @description		Donne au joueur les coordonnées d'où il est mort
 #
 
 $tellraw @s [{"text":"Tu es mort en","color":"#FF3F3F"},{"text":" $(x)","color":"#FFE73F","bold":true},{"text":" $(y)","color":"#FFEF7F"},{"text":" $(z)","color":"#FFE73F","bold":true}]

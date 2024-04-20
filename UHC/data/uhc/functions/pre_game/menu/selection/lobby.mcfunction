@@ -1,5 +1,5 @@
 
-#> uhc:pre_game/menu/selection/gamemode
+#> uhc:pre_game/menu/selection/lobby
 #
 # @within			uhc:pre_game/menu/host_menu
 #

@@ -1,5 +1,5 @@
 
-#> uhc:pre_game/menu/selection/principal
+#> uhc:pre_game/menu/selection/start
 #
 # @within			uhc:pre_game/menu/host_menu
 #

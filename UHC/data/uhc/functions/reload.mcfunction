@@ -110,6 +110,8 @@ worldborder set 302
 
 scoreboard players set #vanilla uhc.gamemode 0
 
+scoreboard players set #lives uhc.players.lives 1
+
 ## Génération du Lobby
 
 scoreboard objectives add lobby.data dummy
@@ -146,7 +148,7 @@ forceload add -960 0
 forceload add 0 960
 forceload add 0 -960
 
-#
+# Multipliers
 scoreboard players set #-1m uhc.data.numbers -1000000
 scoreboard players set #-1 uhc.data.numbers -1
 scoreboard players set #01 uhc.data.numbers 1

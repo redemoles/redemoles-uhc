@@ -7,6 +7,8 @@
 # @description		Actualisation scores death 
 #
 
+#scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
+
 ## Bonus vie non utilisée de 10 minutes
 execute as @e[type=marker,tag=BHC] run function bhc:scores_calculator/death/scores
 execute as @e[type=marker,tag=BHC] run function bhc:scores_calculator/death/bonus_1
