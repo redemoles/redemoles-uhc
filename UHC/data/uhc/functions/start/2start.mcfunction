@@ -14,7 +14,6 @@ scoreboard players add #pvp uhc.data.setup 1
 scoreboard players add #border uhc.data.setup 1
 scoreboard players add #shrink1 uhc.data.setup 1
 scoreboard players add #shrink2 uhc.data.setup 1
-scoreboard players remove #cycle uhc.data.setup 1
 scoreboard players add #live_3 uhc.data.setup 1
 scoreboard players add #live_2 uhc.data.setup 1
 scoreboard players add #live_1 uhc.data.setup 1

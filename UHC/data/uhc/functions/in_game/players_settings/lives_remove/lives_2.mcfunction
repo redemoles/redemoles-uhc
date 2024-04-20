@@ -11,7 +11,7 @@
 scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
 
 ## Message
-execute unless score #bhc uhc.gamemode matches 1 run tellraw @a[scores={uhc.players.lives=3},predicate=uhc:id_teams] [{"text":"[","color":"white","bold":true},{"text":"UHC","color":"gray"},{"text":"]","color":"white"},{"text":" Le nombre de vies maximum descend à 2 !","color":"#FF3F3F","bold":false}]
+execute unless score #bhc uhc.gamemode matches 1 run tellraw @a[scores={uhc.players.lives=3},predicate=uhc:id_teams] [{"text":"[","color":"gray","bold":true},{"text":"UHC","color":"white"},{"text":"]","color":"gray"},{"text":" Le nombre de vies maximum descend à 2 !","color":"#FF3F3F","bold":false}]
 execute if score #bhc uhc.gamemode matches 1 run tellraw @a[scores={uhc.players.lives=3},predicate=uhc:id_teams] [{"text":"[","color":"#DFC300","bold":true},{"text":"Bingo","color":"#BF7FFF"},{"text":"UHC","color":"#9F3FFF"},{"text":"]","color":"#DFC300"},{"text":" Le nombre de vies maximum descend à 2 !","color":"#FF3F3F","bold":false}]
 
 ## Récompense

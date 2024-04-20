@@ -35,8 +35,8 @@ execute if score #ironman uhc.data.setup matches 1 as @p[tag=uhc.ironman] run fu
 execute if score #best_pve uhc.scenario matches 1 as @p[scores={best_pve.list=1}] run function uhc:in_game/scenarios/best_pve/list
 
 ## Réduction de vie automatique
-execute if score #live_2 uhc.data.setup matches ..0 if entity @p[scores={uhc.players.lives=3}] as @e[type=marker,tag=UHC] run function uhc:in_game/players_settings/lives_remove/lives_2
-execute if score #live_1 uhc.data.setup matches ..0 if entity @p[scores={uhc.players.lives=2}] as @e[type=marker,tag=UHC] run function uhc:in_game/players_settings/lives_remove/lives_1
+execute if score #live_2 uhc.data.setup matches 0 if score #lives uhc.players.lives matches 3 as @e[type=marker,tag=UHC] run function uhc:in_game/players_settings/lives_remove/lives_2
+execute if score #live_1 uhc.data.setup matches 0 if score #lives uhc.players.lives matches 2 as @e[type=marker,tag=UHC] run function uhc:in_game/players_settings/lives_remove/lives_1
 
 ## Morts
 # Message de mort
