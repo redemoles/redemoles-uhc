@@ -7,10 +7,6 @@
 # @description		Actualisation scores death 
 #
 
-## Reset Score / Classement
-scoreboard players set @s bhc.CD -16
-scoreboard players set @s bhc.invSD 0
-
 ## Enregistre le score d'équipe
 scoreboard players operation #temp bhc.data = @s bhc.invDeath
 scoreboard players add #temp bhc.data 1

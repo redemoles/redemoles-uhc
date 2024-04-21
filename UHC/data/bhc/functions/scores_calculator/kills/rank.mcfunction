@@ -7,6 +7,10 @@
 # @description		Actualisation scores kills 
 #
 
+## Reset Score / Classement
+scoreboard players set @e[type=marker,tag=BHC] bhc.CK -16
+scoreboard players set @e[type=marker,tag=BHC] bhc.invSK 0
+
 ## Classement inversé
 execute as @e[type=marker,tag=BHC] run function bhc:scores_calculator/kills/rank_1
 

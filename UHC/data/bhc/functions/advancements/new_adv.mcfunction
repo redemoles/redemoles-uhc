@@ -19,8 +19,8 @@ tag @s add bhc.new_adv
 # Succès
 scoreboard players set #team_first_case bhc.data 1
 scoreboard players set #total_first_case bhc.data 1
-$execute as @a[tag=!bhc.new_adv,advancements={$(namespace):$(line)_$(column)=true},predicate=uhc:id_teams] run scoreboard players set #team_first_case bhc.data 0
-$execute as @a[tag=!bhc.new_adv,advancements={$(namespace):$(line)_$(column)=true}] run scoreboard players set #total_first_case bhc.data 0
+$execute as @p[tag=!bhc.new_adv,advancements={$(namespace):$(line)_$(column)=true},predicate=uhc:id_teams] run scoreboard players set #team_first_case bhc.data 0
+$execute as @p[tag=!bhc.new_adv,advancements={$(namespace):$(line)_$(column)=true}] run scoreboard players set #total_first_case bhc.data 0
 # Ligne
 $execute if score #team_first_case bhc.data matches 1 run scoreboard players add @e[type=marker,predicate=uhc:id_teams] bhc.line_$(line) 1
 $scoreboard players operation @s bhc.line_$(line) = @e[type=marker,predicate=uhc:id_teams] bhc.line_$(line)
@@ -28,8 +28,8 @@ scoreboard players set #team_first_line bhc.data 0
 scoreboard players set #total_first_line bhc.data 0
 $execute if score @s bhc.line_$(line) matches 5 run scoreboard players set #team_first_line bhc.data 1
 $execute if score @s bhc.line_$(line) matches 5 run scoreboard players set #total_first_line bhc.data 1
-$execute as @a[tag=!bhc.new_adv,scores={bhc.line_$(line)=5},predicate=uhc:id_teams] run scoreboard players set #team_first_line bhc.data 0
-$execute as @a[tag=!bhc.new_adv,scores={bhc.line_$(line)=5}] run scoreboard players set #total_first_line bhc.data 0
+$execute as @p[tag=!bhc.new_adv,scores={bhc.line_$(line)=5},predicate=uhc:id_teams] run scoreboard players set #team_first_line bhc.data 0
+$execute as @p[tag=!bhc.new_adv,scores={bhc.line_$(line)=5}] run scoreboard players set #total_first_line bhc.data 0
 execute if score #team_first_line bhc.data matches 1 run scoreboard players add @e[tag=bhc.new_adv] bhc.line 1
 scoreboard players operation @s bhc.line = @e[type=marker,predicate=uhc:id_teams] bhc.line
 # Colonne
@@ -39,8 +39,8 @@ scoreboard players set #team_first_column bhc.data 0
 scoreboard players set #total_first_column bhc.data 0
 $execute if score @s bhc.column_$(column) matches 5 run scoreboard players set #team_first_column bhc.data 1
 $execute if score @s bhc.column_$(column) matches 5 run scoreboard players set #total_first_column bhc.data 1
-$execute as @a[tag=!bhc.new_adv,scores={bhc.column_$(column)=5},predicate=uhc:id_teams] run scoreboard players set #team_first_column bhc.data 0
-$execute as @a[tag=!bhc.new_adv,scores={bhc.column_$(column)=5}] run scoreboard players set #total_first_column bhc.data 0
+$execute as @p[tag=!bhc.new_adv,scores={bhc.column_$(column)=5},predicate=uhc:id_teams] run scoreboard players set #team_first_column bhc.data 0
+$execute as @p[tag=!bhc.new_adv,scores={bhc.column_$(column)=5}] run scoreboard players set #total_first_column bhc.data 0
 execute if score #team_first_column bhc.data matches 1 run scoreboard players add @e[tag=bhc.new_adv] bhc.column 1
 scoreboard players operation @s bhc.column = @e[type=marker,predicate=uhc:id_teams] bhc.column
 
