@@ -1,7 +1,7 @@
 
 #> bhc:start/
 #
-# @within			uhc:start/2start
+# @within			uhc:start/setup_uhc
 #
 #
 # @description		Collectes et modifs de quelques données au démarrage
@@ -12,17 +12,17 @@ scoreboard players operation #Teams bhc.data = #Teams uhc.data.setup
 
 # Désactivation starter food
 scoreboard players set #StarterFood uhc.data.setup 0
-give @a[tag=Joueur] oak_boat
+give @a[tag=uhc.player] oak_boat
 
 # Sélecteur de collections Mini-Bingos
 summon marker 1 0 1 {Tags:["Selector"]}
 
 # Intégration des joueurs aux scores BHC
-scoreboard players set @a[tag=Joueur] bhc.invStepA 0
-scoreboard players set @a[tag=Joueur] bhc.invStepB 0
-scoreboard players set @a[tag=Joueur] bhc.invKills 0
-scoreboard players set @a[tag=Joueur] bhc.invDeath 0
-scoreboard players set @a[tag=Joueur] uhc.players.lives 3
+scoreboard players set @a[tag=uhc.player] bhc.invStepA 0
+scoreboard players set @a[tag=uhc.player] bhc.invStepB 0
+scoreboard players set @a[tag=uhc.player] bhc.invKills 0
+scoreboard players set @a[tag=uhc.player] bhc.invDeath 0
+scoreboard players set @a[tag=uhc.player] uhc.players.lives 3
 scoreboard players set #lives uhc.players.lives 3
 scoreboard players set #lives_start uhc.players.lives 3
 execute as @e[type=marker,tag=BHC] run function bhc:start/team_config 

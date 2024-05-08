@@ -8,6 +8,6 @@
 #
 
 scoreboard players add #end uhc.game.end 1
-execute as @p[tag=Joueur,tag=!Spec] run function uhc:in_game/endgame
-execute unless entity @p[tag=Joueur,tag=!Spec] as @p[scores={uhc.game.end=1}] run function uhc:in_game/endgame
+execute as @p[tag=uhc.player,tag=!uhc.spec] run function uhc:in_game/endgame
+execute unless entity @p[tag=uhc.player,tag=!uhc.spec] as @p[scores={uhc.game.end=1}] run function uhc:in_game/endgame
 scoreboard players set @p[scores={uhc.game.end=1}] uhc.game.end 0

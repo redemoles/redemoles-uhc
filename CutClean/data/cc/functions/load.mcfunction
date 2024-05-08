@@ -8,10 +8,10 @@
 #
 
 # Ajout du tag de convention à Redemoles
-tag Redemoles add Host
+tag Redemoles add host
 
 # Affichage du message de chargement
-tellraw @a[tag=Host] {"text":"[Loaded CutClean v1.0.0]","color":"light_purple"}
+tellraw @a[tag=host] {"text":"[Loaded CutClean v1.0.0]","color":"light_purple"}
 
 # Création scoreboard pour l'xp
 scoreboard objectives add cc.coppero minecraft.mined:minecraft.copper_ore

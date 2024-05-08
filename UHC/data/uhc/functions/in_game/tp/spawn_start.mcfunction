@@ -2,7 +2,7 @@
 #> uhc:in_game/tp/spawn_start
 #
 # @within			bhc:death/death
-# @within			uhc:start/1start
+# @within			uhc:start/setup_players
 #
 # @description		Configuration du timer 
 #

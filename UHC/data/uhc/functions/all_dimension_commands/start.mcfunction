@@ -1,12 +1,13 @@
 
 #> uhc:all_dimension_commands/start
 #
-# @within			uhc:start/3start
+# @within			uhc:start/countdown_end
 # @executed			default context
 #
 # @description		Gamerule pour toutes les dimensions
 #
 
+gamerule sendCommandFeedback false
 difficulty normal
 execute unless score #TeamSize uhc.data.setup matches 1 run difficulty hard
 gamerule doFireTick true

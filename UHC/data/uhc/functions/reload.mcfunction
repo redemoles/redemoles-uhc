@@ -93,12 +93,6 @@ scoreboard players set #Teams uhc.data.display -1
 scoreboard players set #Joueurs uhc.data.display -1
 scoreboard players set #end uhc.game.end 0
 
-## Reset Tags
-
-tag @a remove Joueur
-tag @a remove Spec
-tag @a remove Test
-
 ## Commandes par défaut
 
 execute in minecraft:overworld run function uhc:all_dimension_commands/reload
@@ -110,6 +104,7 @@ worldborder set 302
 
 scoreboard players set #vanilla uhc.gamemode 0
 
+scoreboard players set #ffa uhc.data.display 0
 scoreboard players set #lives uhc.players.lives 1
 
 ## Génération du Lobby
@@ -121,6 +116,7 @@ scoreboard players set #load lobby.data 0
 ## Autres modes
 
 function bhc:load
+function fte:load
 function nzl:reload/sb
 
 ## Forceload
@@ -177,3 +173,8 @@ scoreboard players set #100 uhc.data.numbers 100
 scoreboard players set #1200 uhc.data.numbers 1200
 scoreboard players set #bonus uhc.data.numbers 12000
 scoreboard players set #1m uhc.data.numbers 1000000
+
+## Sign
+execute in uhc:sign run forceload add 0 0
+execute in uhc:sign run setblock 0 -1 0 minecraft:stone
+execute in uhc:sign run setblock 0 0 0 minecraft:oak_sign

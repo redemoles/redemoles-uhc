@@ -8,7 +8,7 @@
 #
 
 scoreboard players set #tick uhc.data.setup 0
-execute if entity @p[tag=Test] run scoreboard players set #tick uhc.data.setup 19
+execute if entity @p[tag=test] run scoreboard players set #tick uhc.data.setup 19
 scoreboard players add #Secondes uhc.data.display 1
 scoreboard players set #sec_cooldown uhc.data.display 60
 scoreboard players operation #sec_cooldown uhc.data.display -= #Secondes uhc.data.display

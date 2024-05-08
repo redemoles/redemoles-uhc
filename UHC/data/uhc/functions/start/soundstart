@@ -1,4 +1,4 @@
-## POUR uhc:start/0start
+## POUR uhc:start/countdown_start
 
 ## AMONG US THEME
 
@@ -12,12 +12,12 @@ execute if score #tick_start uhc.data.setup matches 22 run playsound minecraft:b
 execute if score #tick_start uhc.data.setup matches 30 run playsound minecraft:block.note_block.harp master @a ~ ~ ~ 100 1.89 1
 execute if score #tick_start uhc.data.setup matches 42 run playsound minecraft:block.note_block.harp master @a ~ ~ ~ 100 2 1
 execute if score #tick_start uhc.data.setup matches 80 run title @a clear
-execute if score #tick_start uhc.data.setup matches 80 run function uhc:start/1start
+execute if score #tick_start uhc.data.setup matches 80 run function uhc:start/setup_players
 execute if score #tick_start uhc.data.setup matches 80 run playsound minecraft:entity.ender_dragon.hurt master @a ~ ~ ~ 100 0.5 1
 execute if score #tick_start uhc.data.setup matches 100 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
 execute if score #tick_start uhc.data.setup matches 120 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
 execute if score #tick_start uhc.data.setup matches 140 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
-execute if score #tick_start uhc.data.setup matches 159 run function uhc:start/2start
+execute if score #tick_start uhc.data.setup matches 159 run function uhc:start/setup_uhc
 
 
 ## WII THEME
@@ -39,12 +39,12 @@ execute if score #tick_start uhc.data.setup matches 58 run playsound minecraft:b
 execute if score #tick_start uhc.data.setup matches 64 run playsound minecraft:block.note_block.harp master @a ~ ~ ~ 100 0.561 1
 execute if score #tick_start uhc.data.setup matches 64 run playsound minecraft:block.note_block.harp master @a ~ ~ ~ 100 0.794 1
 execute if score #tick_start uhc.data.setup matches 76 run title @a clear
-execute if score #tick_start uhc.data.setup matches 76 run function uhc:start/1start
+execute if score #tick_start uhc.data.setup matches 76 run function uhc:start/setup_players
 execute if score #tick_start uhc.data.setup matches 76 run playsound minecraft:item.trident.riptide_3 master @a ~ ~ ~ 0.8 1 1
 execute if score #tick_start uhc.data.setup matches 100 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
 execute if score #tick_start uhc.data.setup matches 120 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
 execute if score #tick_start uhc.data.setup matches 140 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
-execute if score #tick_start uhc.data.setup matches 159 run function uhc:start/2start
+execute if score #tick_start uhc.data.setup matches 159 run function uhc:start/setup_uhc
 
 
 
@@ -68,12 +68,12 @@ execute if score #tick_start uhc.data.setup matches 46 run playsound minecraft:b
 execute if score #tick_start uhc.data.setup matches 52 run playsound minecraft:block.note_block.chime master @a ~ ~ ~ 100 1.059 1
 execute if score #tick_start uhc.data.setup matches 110 run stopsound @a
 execute if score #tick_start uhc.data.setup matches 110 run title @a clear
-execute if score #tick_start uhc.data.setup matches 110 run function uhc:start/1start
+execute if score #tick_start uhc.data.setup matches 110 run function uhc:start/setup_players
 execute if score #tick_start uhc.data.setup matches 110 run playsound minecraft:item.trident.riptide_3 master @a ~ ~ ~ 0.8 1 1
 execute if score #tick_start uhc.data.setup matches 130 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
 execute if score #tick_start uhc.data.setup matches 150 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
 execute if score #tick_start uhc.data.setup matches 170 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
-execute if score #tick_start uhc.data.setup matches 189 run function uhc:start/2start
+execute if score #tick_start uhc.data.setup matches 189 run function uhc:start/setup_uhc
 
 
 
@@ -96,8 +96,8 @@ execute if score #tick_start uhc.data.setup matches 4 run playsound minecraft:bl
 execute if score #tick_start uhc.data.setup matches 4 run title @a subtitle [{"text":" Démarrage en cours ! ","color":"white","bold":false}]
 execute if score #tick_start uhc.data.setup matches 80 run playsound minecraft:item.trident.riptide_3 master @a ~ ~ ~ 0.8 1 1
 execute if score #tick_start uhc.data.setup matches 80 run title @a clear
-execute if score #tick_start uhc.data.setup matches 80 run function uhc:start/1start
+execute if score #tick_start uhc.data.setup matches 80 run function uhc:start/setup_players
 execute if score #tick_start uhc.data.setup matches 100 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
 execute if score #tick_start uhc.data.setup matches 120 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
 execute if score #tick_start uhc.data.setup matches 140 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
-execute if score #tick_start uhc.data.setup matches 159 run function uhc:start/2start
+execute if score #tick_start uhc.data.setup matches 159 run function uhc:start/setup_uhc

@@ -7,6 +7,5 @@
 # @description		Fonction activé pour chaque minutes
 #
 
-data merge entity @s {damage:0.75,crit:0}
+execute store result entity @s damage double 0.75 run data get entity @s damage
 tag @s add uhc.checked
-

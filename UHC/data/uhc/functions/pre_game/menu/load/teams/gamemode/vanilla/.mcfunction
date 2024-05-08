@@ -70,6 +70,6 @@ function uhc:pre_game/menu/load/teams/gamemode/vanilla/teams/12 with storage uhc
 function uhc:pre_game/menu/load/teams/gamemode/vanilla/spec/
 function uhc:pre_game/menu/load/teams/gamemode/vanilla/spec/players with storage uhc:team
 
-item replace entity @s[tag=Host] inventory.13 with minecraft:book{display:{Name:'{"text":"Configuration","color":"#3FFFFF","italic":false}'}}
+item replace entity @s[tag=host] inventory.13 with minecraft:book{display:{Name:'{"text":"Configuration","color":"#3FFFFF","italic":false}'}}
 
 tag @s remove menu.players

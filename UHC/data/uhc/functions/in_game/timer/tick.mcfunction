@@ -13,16 +13,15 @@ execute as @a[scores={uhc.players.tp=1}] at @s positioned over world_surface run
 scoreboard players set @a uhc.players.tp 0
 
 ## Start
-execute if score #tick_start uhc.data.setup matches 0..200 run function uhc:start/0start
-execute if score #start uhc.data.setup matches 1 run function uhc:start/3start
+execute if score #tick_start uhc.data.setup matches 0..200 run function uhc:start/countdown_start
+execute if score #start uhc.data.setup matches 1 run function uhc:start/countdown_end
 
 ## Hotbar text
-#execute if score #vanilla uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. if score #Secondes uhc.data.display matches 0..9 run title @a actionbar [{"score":{"name":"#Minutes","objective":"uhc.data.display"},"color":"aqua","bold":true}, {"text":":","color":"dark_aqua"}, {"text":"0","color":"aqua"}, {"score":{"name":"#Secondes","objective":"uhc.data.display"},"color":"aqua"}, {"text":" - ","color":"dark_aqua"}, {"score":{"name":"#Teams","objective":"uhc.data.display"},"color":"aqua"}, {"text":" équipes","color":"dark_aqua"}, {"text":" - ","color":"dark_aqua"}, {"score":{"name":"#Joueurs","objective":"uhc.data.display"},"color":"aqua"}, {"text":" joueurs","color":"dark_aqua"}]
-#execute if score #vanilla uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. if score #Secondes uhc.data.display matches 10.. run title @a actionbar [{"score":{"name":"#Minutes","objective":"uhc.data.display"},"color":"aqua","bold":true}, {"text":":","color":"dark_aqua"}, {"score":{"name":"#Secondes","objective":"uhc.data.display"},"color":"aqua"}, {"text":" - ","color":"dark_aqua"}, {"score":{"name":"#Teams","objective":"uhc.data.display"},"color":"aqua"}, {"text":" équipes","color":"dark_aqua"}, {"text":" - ","color":"dark_aqua"}, {"score":{"name":"#Joueurs","objective":"uhc.data.display"},"color":"aqua"}, {"text":" joueurs","color":"dark_aqua"}]
 execute if score #hotbar_cooldown uhc.data.display matches 1.. run function uhc:in_game/timer/hotbar_cooldown
 execute unless score #hotbar_cooldown uhc.data.display matches 1.. if score #vanilla uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. run function uhc:in_game/timer/hotbar
 execute unless score #hotbar_cooldown uhc.data.display matches 1.. if score #bhc uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. run function bhc:timer/hotbar
-execute unless score #hotbar_cooldown uhc.data.display matches 1.. if score #nzl uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. run function nzl:timer/hotbar
+execute unless score #hotbar_cooldown uhc.data.display matches 1.. if score #fte uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. run function fte:timer/hotbar/
+execute unless score #hotbar_cooldown uhc.data.display matches 1.. if score #nzl uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. run function nzl:timer/hotbar/
 
 ## Scenarios
 # Réduction des dégâts des flèches
@@ -63,4 +62,5 @@ execute if entity @p[scores={uhc.game.end=1}] run function uhc:in_game/force_com
 
 ## Autres modes de jeu
 execute if score #bhc uhc.gamemode matches 1 unless score #end uhc.game.end matches 1.. run function bhc:timer/tick
+execute if score #fte uhc.gamemode matches 1 run function fte:timer/tick
 execute if score #nzl uhc.gamemode matches 1 unless score #end uhc.game.end matches 1.. run function nzl:timer/tick

@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/config/timer
 #
-# @within			uhc:start
+# @within			uhc:start/
 # @executed			default context
 #
 # @description		Fonction de configuration des timers dans la partie et de la border

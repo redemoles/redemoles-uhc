@@ -1,7 +1,7 @@
 
 #> lobby:auto/delete
 #
-# @within			uhc:start/2start
+# @within			uhc:start/setup_uhc
 # @executed			default context
 #
 # @description		Destruction lobby au démarrage

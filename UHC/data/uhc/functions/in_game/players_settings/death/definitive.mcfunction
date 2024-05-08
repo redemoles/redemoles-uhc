@@ -29,9 +29,9 @@ execute if score #team_out uhc.id.teams matches 1 run scoreboard players remove 
 function uhc:in_game/players_settings/spec/
 function uhc:in_game/players_settings/death/reveal
 function uhc:in_game/inventory/drop
-execute as @a[scores={uhc.reward.kills=1..}] run function uhc:in_game/players_settings/kill
+execute as @a[scores={uhc.reward.kills=1..}] run function uhc:in_game/players_settings/kill/
 execute if score #vanilla uhc.gamemode matches 1 run tellraw @s [{"text":"Tu es mort. Si Mumble, merci de changer de vocal ou de te rendre muet.\n","color":"aqua"}]
 
 # Détection victoire
 execute if score #Teams uhc.data.setup matches ..1 run scoreboard players add #end uhc.game.end 1
-execute if score #end uhc.game.end matches 1 as @p[tag=Joueur,tag=!Spec] run function uhc:in_game/endgame
+execute if score #end uhc.game.end matches 1 as @p[tag=uhc.player,tag=!uhc.spec] run function uhc:in_game/endgame

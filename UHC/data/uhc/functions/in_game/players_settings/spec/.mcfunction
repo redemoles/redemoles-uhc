@@ -13,6 +13,6 @@ execute unless entity @s[scores={uhc.players.online=1}] run effect clear @s
 
 gamemode spectator @s
 effect give @s minecraft:invisibility infinite 1 true
-tag @s add Spec
+tag @s add uhc.spec
 scoreboard players set @s uhc.players.death 2
 scoreboard players set @s uhc.players.online 1
