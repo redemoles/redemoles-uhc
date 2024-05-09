@@ -10,6 +10,7 @@
 # Nombre d'équipes en jeu
 scoreboard players operation #Teams bhc.data = #Teams uhc.data.setup
 
+# Vies
 # Désactivation starter food
 scoreboard players set #StarterFood uhc.data.setup 0
 give @a[tag=uhc.player] oak_boat
@@ -33,7 +34,7 @@ function bhc:scores_calculator/kills/detect
 function bhc:scores_calculator/stepa/rank
 function bhc:scores_calculator/stepb/rank
 
-# Config BHC
+# Config UHC & BHC
 execute if score #bhc bhc.scenario matches 0 run function bhc:00/timer/config
 execute if score #bhc bhc.scenario matches 1 run function bhc:01/timer/config
 execute if score #bhc bhc.scenario matches 2 run function bhc:02/timer/config

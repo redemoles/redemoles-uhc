@@ -7,7 +7,7 @@
 # @description		Conditions d'invocation non remplies
 #
 
-tellraw @s[tag=!fte.summon.cancel] {"text":"Vous n'avez pas les items nécessaires.","color":"red"}
+tellraw @s[tag=!fte.summon.cancel,scores={fte.id.teams=0}] {"text":"Vous n'avez pas les items nécessaires.","color":"red"}
 tag @s remove fte.summon.cancel
 
 scoreboard players set @s ftc.sceau.points 0

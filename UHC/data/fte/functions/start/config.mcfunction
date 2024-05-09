@@ -1,15 +1,15 @@
 
-#> uhc:pre_game/config/timer
+#> fte:start/config
 #
-# @within			uhc:start/
-# @executed			default context
+# @within			fte:start/
 #
-# @description		Fonction de configuration des timers dans la partie et de la border
+#
+# @description		Fate UHC Start
 #
 
 ## Préparation Config pre-game
 scoreboard players set #pve uhc.data.setup 2
-scoreboard players set #pvp uhc.data.setup 20
+scoreboard players set #pvp uhc.data.setup 40
 scoreboard players set #border uhc.data.setup 80
 scoreboard players set #shrink1 uhc.data.setup 110
 scoreboard players set #shrink2 uhc.data.setup 120
@@ -20,9 +20,9 @@ scoreboard players set #live_2 uhc.data.setup 0
 scoreboard players set #live_1 uhc.data.setup 0
 
 ## Configuration de la Worldborder
-execute in minecraft:overworld run function uhc:pre_game/config/wb_start
-execute in minecraft:the_nether run function uhc:pre_game/config/wb_start
-execute in minecraft:the_end run function uhc:pre_game/config/wb_start
+execute in minecraft:overworld run function fte:start/wb_start
+execute in minecraft:the_nether run function fte:start/wb_start
+execute in minecraft:the_end run function fte:start/wb_start
 
 ## Configuration des messages de mort
 # 0 : Message par défaut
@@ -34,7 +34,7 @@ execute in minecraft:the_end run function uhc:pre_game/config/wb_start
 #     20% aucun message de mort
 # 7 : Uniquement mort affiché
 # 8 : Aucun message de mort
-scoreboard players set #message uhc.data.setup 0
+scoreboard players set #message uhc.data.setup 8
 
 ## Scoreboard d'affichage
 scoreboard objectives setdisplay sidebar

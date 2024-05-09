@@ -1,5 +1,5 @@
 
-#> uhc:pre_game/config/wb_shrinks
+#> bhc:start/wb_shrinks
 #
 # @within			uhc:in_game/timer/minute
 # @executed			default context

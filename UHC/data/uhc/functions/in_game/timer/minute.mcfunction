@@ -25,9 +25,15 @@ scoreboard players remove #live_2 uhc.data.setup 1
 scoreboard players remove #live_1 uhc.data.setup 1
 execute as @a[tag=uhc.player] run scoreboard players operation @s uhc.players.timer = #Minutes uhc.data.display
 
-execute in minecraft:overworld run function uhc:pre_game/config/wb_shrinks
-execute in minecraft:the_nether run function uhc:pre_game/config/wb_shrinks
-execute in minecraft:the_end run function uhc:pre_game/config/wb_shrinks
+execute if score #vanilla uhc.gamemode matches 1 in minecraft:overworld run function uhc:pre_game/config/wb_shrinks
+execute if score #vanilla uhc.gamemode matches 1 in minecraft:the_nether run function uhc:pre_game/config/wb_shrinks
+execute if score #vanilla uhc.gamemode matches 1 in minecraft:the_end run function uhc:pre_game/config/wb_shrinks
+execute if score #bhc uhc.gamemode matches 1 in minecraft:overworld run function bhc:start/wb_shrinks
+execute if score #bhc uhc.gamemode matches 1 in minecraft:the_nether run function bhc:start/wb_shrinks
+execute if score #bhc uhc.gamemode matches 1 in minecraft:the_end run function bhc:start/wb_shrinks
+execute if score #fte uhc.gamemode matches 1 in minecraft:overworld run function fte:start/wb_shrinks
+execute if score #fte uhc.gamemode matches 1 in minecraft:the_nether run function fte:start/wb_shrinks
+execute if score #fte uhc.gamemode matches 1 in minecraft:the_end run function fte:start/wb_shrinks
 execute if score #border uhc.data.setup matches 0 run gamerule doMobSpawning false
 
 ## MINUTEUR POUR CHAQUE MODE DE JEU
@@ -37,8 +43,8 @@ execute if score #bhc uhc.gamemode matches 1 run function bhc:timer/minute
 
 ## REDUCTION DE VIE FORCÉE
 
-execute unless score #bhc uhc.gamemode matches 1 if score #live_2 uhc.data.setup matches 0 run tellraw @a[scores={uhc.players.lives=..2}] [{"text":"[","color":"gray","bold":true},{"text":"UHC","color":"white"},{"text":"]","color":"gray"},{"text":" Le nombre de vies maximum descend à 2 !","color":"#FF3F3F","bold":false}]
-execute if score #bhc uhc.gamemode matches 1 if score #live_2 uhc.data.setup matches 0 run tellraw @a[scores={uhc.players.lives=..2}]  [{"text":"[","color":"#DFC300","bold":true},{"text":"Bingo","color":"#BF7FFF"},{"text":"UHC","color":"#9F3FFF"},{"text":"]","color":"#DFC300"},{"text":" Le nombre de vies maximum descend à 2 !","color":"#FF3F3F","bold":false}]
+execute unless score #bhc uhc.gamemode matches 1 if score #lives uhc.players.lives matches 1 if score #live_2 uhc.data.setup matches 0 run tellraw @a[scores={uhc.players.lives=..2}] [{"text":"[","color":"gray","bold":true},{"text":"UHC","color":"white"},{"text":"]","color":"gray"},{"text":" Le nombre de vies maximum descend à 2 !","color":"#FF3F3F","bold":false}]
+execute if score #bhc uhc.gamemode matches 1 if score #lives uhc.players.lives matches 1 if score #live_2 uhc.data.setup matches 0 run tellraw @a[scores={uhc.players.lives=..2}]  [{"text":"[","color":"#DFC300","bold":true},{"text":"Bingo","color":"#BF7FFF"},{"text":"UHC","color":"#9F3FFF"},{"text":"]","color":"#DFC300"},{"text":" Le nombre de vies maximum descend à 2 !","color":"#FF3F3F","bold":false}]
 
-execute unless score #bhc uhc.gamemode matches 1 if score #live_1 uhc.data.setup matches 0 run tellraw @a[scores={uhc.players.lives=..1}]  [{"text":"[","color":"gray","bold":true},{"text":"UHC","color":"white"},{"text":"]","color":"gray"},{"text":" Le nombre de vies maximum descend à 1 !","color":"#FF3F3F","bold":false}]
-execute if score #bhc uhc.gamemode matches 1 if score #live_1 uhc.data.setup matches 0 run tellraw @a[scores={uhc.players.lives=..1}]  [{"text":"[","color":"#DFC300","bold":true},{"text":"Bingo","color":"#BF7FFF"},{"text":"UHC","color":"#9F3FFF"},{"text":"]","color":"#DFC300"},{"text":" Le nombre de vies maximum descend à 1 !","color":"#FF3F3F","bold":false}]
+execute unless score #bhc uhc.gamemode matches 1 if score #lives uhc.players.lives matches 1 if score #live_1 uhc.data.setup matches 0 run tellraw @a[scores={uhc.players.lives=..1}]  [{"text":"[","color":"gray","bold":true},{"text":"UHC","color":"white"},{"text":"]","color":"gray"},{"text":" Le nombre de vies maximum descend à 1 !","color":"#FF3F3F","bold":false}]
+execute if score #bhc uhc.gamemode matches 1 if score #lives uhc.players.lives matches 1 if score #live_1 uhc.data.setup matches 0 run tellraw @a[scores={uhc.players.lives=..1}]  [{"text":"[","color":"#DFC300","bold":true},{"text":"Bingo","color":"#BF7FFF"},{"text":"UHC","color":"#9F3FFF"},{"text":"]","color":"#DFC300"},{"text":" Le nombre de vies maximum descend à 1 !","color":"#FF3F3F","bold":false}]
