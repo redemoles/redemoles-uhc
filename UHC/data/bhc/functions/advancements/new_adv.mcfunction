@@ -66,6 +66,6 @@ tag @s remove bhc.new_adv
 $execute if score #team_first_case bhc.data matches 1 run advancement grant @a[predicate=uhc:id_teams] only $(namespace):$(line)_$(column)
 
 ## Si FFA → Don du dernier succès non complété d'une ligne/colonne
-$execute if score #TeamSize uhc.data.setup matches 1 unless score #Teams bhc.data matches 1 if score @s bhc.line_$(line) matches 4 run function bhc:advancements/ffa_line with storage $(namespace) $(line)_$(column)
-$execute if score #TeamSize uhc.data.setup matches 1 unless score #Teams bhc.data matches 1 if score @s bhc.column_$(column) matches 4 run function bhc:advancements/ffa_column with storage $(namespace) $(line)_$(column)
+$execute if score #TeamSize uhc.data.setup matches 1 if score @s bhc.line_$(line) matches 4 run function bhc:advancements/ffa_line with storage $(namespace) $(line)_$(column)
+$execute if score #TeamSize uhc.data.setup matches 1 if score @s bhc.column_$(column) matches 4 run function bhc:advancements/ffa_column with storage $(namespace) $(line)_$(column)
  
