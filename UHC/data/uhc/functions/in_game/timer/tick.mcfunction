@@ -25,7 +25,7 @@ execute unless score #hotbar_cooldown uhc.data.display matches 1.. if score #nzl
 
 ## Scenarios
 # Réduction des dégâts des flèches
-execute as @e[type=arrow,tag=!uhc.checked] run function uhc:in_game/arrow/
+execute as @e[type=arrow,tag=!uhc.checked] run function uhc:in_game/entities/arrow/
 
 # Ironman reward
 execute if score #ironman uhc.data.setup matches 1 as @p[tag=uhc.ironman] run function uhc:in_game/scenarios/ironman/reward

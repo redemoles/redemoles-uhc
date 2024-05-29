@@ -14,6 +14,10 @@ scoreboard players set #sec_cooldown uhc.data.display 60
 scoreboard players operation #sec_cooldown uhc.data.display -= #Secondes uhc.data.display
 execute if score #Secondes uhc.data.display matches 60 run function uhc:in_game/timer/minute
 
+## Compteur avant kill items
+scoreboard players add @e[type=item] uhc.timer.entities 1
+kill @e[type=item,scores={uhc.timer.entities=150..}]
+
 ## Kill Phantom
 tp @e[type=minecraft:phantom] 0 -1000 0
 

@@ -1,10 +1,10 @@
 
-#> uhc:in_game/arrow/
+#> uhc:in_game/entities/arrow
 #
 # @within			uhc:in_game/timer/tick
 # @executed			default context
 #
-# @description		Fonction activé pour chaque minutes
+# @description		Réduction des dégâts des flèches
 #
 
 execute store result entity @s damage double 0.75 run data get entity @s damage

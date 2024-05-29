@@ -56,6 +56,7 @@ scoreboard objectives remove uhc.reward.kills
 scoreboard objectives remove uhc.effect.resistance
 scoreboard objectives remove uhc.timer.respawn
 scoreboard objectives remove uhc.timer.start
+scoreboard objectives remove uhc.timer.entities
 scoreboard objectives remove uhc.spawn.check
 scoreboard objectives remove uhc.world.end
 
@@ -78,6 +79,7 @@ scoreboard objectives add uhc.reward.kills playerKillCount
 scoreboard objectives add uhc.effect.resistance dummy
 scoreboard objectives add uhc.timer.respawn dummy
 scoreboard objectives add uhc.timer.start dummy
+scoreboard objectives add uhc.timer.entities dummy
 scoreboard objectives add uhc.spawn.check trigger
 scoreboard objectives add uhc.world.end dummy
 scoreboard objectives setdisplay sidebar
