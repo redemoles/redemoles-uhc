@@ -1,14 +1,14 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:prismarine_bricks"
+			"item": "minecraft:red_sandstone_wall"
 		},
 		"title": {
-			"text": "Prismarine Bricks",
+			"text": "Red Sandstone Wall",
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Prismarine Bricks",
+			"text": "Obtenir un(e) Red Sandstone Wall",
 			"color": "#F7EFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:prismarine_bricks"
+							"minecraft:red_sandstone_wall"
 						]
 					}
 				]

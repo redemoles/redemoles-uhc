@@ -24,6 +24,6 @@ execute if score #lobby lobby.data matches 1 run place template lobby:01/high_sw
 execute if score #lobby lobby.data matches 1 run place template lobby:01/high_se 17 288 16
 execute if score #lobby lobby.data matches 1 run time set 23500
 execute if score #lobby lobby.data matches 1 run tp @a 0 293 0
-execute if score #lobby lobby.data matches 0 run setworldspawn 0 293 0
+execute if score #lobby lobby.data matches 1 run setworldspawn 0 293 0
 
 scoreboard players set #load lobby.data 1

@@ -112,7 +112,7 @@ scoreboard players set #lives uhc.players.lives 1
 ## Génération du Lobby
 
 scoreboard objectives add lobby.data dummy
-execute unless score #lobby lobby.data matches 1.. run scoreboard players set #lobby lobby.data 0
+execute unless score #lobby lobby.data matches 1.. run scoreboard players set #lobby lobby.data 1
 scoreboard players set #load lobby.data 0
 
 ## Autres modes

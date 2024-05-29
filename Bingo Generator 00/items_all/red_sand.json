@@ -1,14 +1,14 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:dark_prismarine"
+			"item": "minecraft:red_sand"
 		},
 		"title": {
-			"text": "Dark Prismarine",
+			"text": "Red Sand",
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Dark Prismarine",
+			"text": "Obtenir un(e) Red Sand",
 			"color": "#F7EFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:dark_prismarine"
+							"minecraft:red_sand"
 						]
 					}
 				]

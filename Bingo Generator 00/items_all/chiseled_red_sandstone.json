@@ -1,14 +1,14 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:dark_prismarine_slab"
+			"item": "minecraft:chiseled_red_sandstone"
 		},
 		"title": {
-			"text": "Dark Prismarine Slab",
+			"text": "Chiseled Red Sandstone",
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Dark Prismarine Slab",
+			"text": "Obtenir un(e) Chiseled Red Sandstone",
 			"color": "#F7EFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:dark_prismarine_slab"
+							"minecraft:chiseled_red_sandstone"
 						]
 					}
 				]

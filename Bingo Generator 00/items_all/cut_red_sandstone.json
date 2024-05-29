@@ -1,14 +1,14 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:dark_prismarine_stairs"
+			"item": "minecraft:cut_red_sandstone"
 		},
 		"title": {
-			"text": "Dark Prismarine Stairs",
+			"text": "Cut Red Sandstone",
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Dark Prismarine Stairs",
+			"text": "Obtenir un(e) Cut Red Sandstone",
 			"color": "#F7EFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:dark_prismarine_stairs"
+							"minecraft:cut_red_sandstone"
 						]
 					}
 				]

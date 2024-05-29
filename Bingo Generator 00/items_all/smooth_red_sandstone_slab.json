@@ -1,14 +1,14 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:lead"
+			"item": "minecraft:smooth_red_sandstone_slab"
 		},
 		"title": {
-			"text": "Lead",
+			"text": "Smooth Red Sandstone Slab",
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Lead",
+			"text": "Obtenir un(e) Smooth Red Sandstone Slab",
 			"color": "#F7EFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:lead"
+							"minecraft:smooth_red_sandstone_slab"
 						]
 					}
 				]

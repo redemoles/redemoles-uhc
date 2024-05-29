@@ -12,7 +12,7 @@ if not os.path.exists("advancements_generator.py"):
 
 # Configuration
 generation_folder = "items_all"
-number_of_advancements_to_generate = 1000
+number_of_advancements_to_generate = 2000
 template = """{
 	"display": {
 		"icon": {
@@ -110,10 +110,10 @@ unobtainable_blocks = [
 	"minecraft:suspicious_sand",
 	"minecraft:suspicious_gravel",
 	"minecraft:bell",
+	"minecraft:grass",
 ]
 block_should_not_contains = ["command_block", "spawn", "infested", "banner_pattern", "template", "chainmail", "netherite", "frog", "turtle", "head", "sherd", "torchflower", "pitcher", "horse", "music_disc"]
-unobtainable_blocks = []
-#unobtainable_blocks += [block for block in blocks if any(x in block for x in block_should_not_contains)]
+unobtainable_blocks += [block for block in blocks if any(x in block for x in block_should_not_contains)]
 
 silk_touch_block = ["grass_block", "mushroom_stem", "mushroom_block", "beehive", "_ore", "nylium", "sculk"]
 silk_touch_block += ["bud", "cluster"]
@@ -121,24 +121,27 @@ silk_touch_block += ["coral"]
 silk_touch_block += ["sea_lantern", "prismarine_shard"]
 silk_touch_block += ["ice"]
 silk_touch = []
-#silk_touch = [block for block in blocks if any(x in block for x in silk_touch_block)]
+silk_touch = [block for block in blocks if any(x in block for x in silk_touch_block)]
 
 copper_block = ["exposed", "weathered", "oxidized"]
 copper = []
-#copper = [block for block in blocks if any(x in block for x in copper_block)]
+copper = [block for block in blocks if any(x in block for x in copper_block)]
 
 honey_block = ["honey", "candle", "waxed", "bee_nest"]
 honey = []
-#honey = [block for block in blocks if any(x in block for x in honey_block)]
+honey = [block for block in blocks if any(x in block for x in honey_block)]
 
 slime_block = ["slime", "lead", "sticky_piston"]
 slime = []
-#slime = [block for block in blocks if any(x in block for x in slime_block)]
+slime = [block for block in blocks if any(x in block for x in slime_block)]
+
+monument = []
+monument = [block for block in blocks if "prismarine" in block and not "sea_lantern" in block]
 
 the_end_block = ["end_stone", "purpur", "chorus", "shulker"]
 the_end_block += ["dragon", "lingering", "tipped_arrow"]
 the_end = []
-#the_end = [block for block in blocks if any(x in block for x in the_end_block)]
+the_end = [block for block in blocks if any(x in block for x in the_end_block)]
 
 mangrove = []
 #mangrove = [block for block in blocks if "mangrove" in block]
@@ -147,17 +150,16 @@ mesa = []
 #mesa = [block for block in blocks if "red_sand" in block]
 
 blocks = [block for block in blocks
-		  if block not in unobtainable_blocks	# If the block is not in the unobtainable list
-		  or block in silk_touch				# Or, if the block is in the silk touch list
-		  or block in copper					# Or, if the block is in the copper list
-		  or block in honey						# Or, if the block is in the honey list
-		  or block in slime						# Or, if the block is in the slime list
-		  or block in the_end					# Or, if the block is in the end list
-		  or block in mangrove					# Or, if the block is in the mangrove list
-		  or block in mesa						# Or, if the block is in the mesa list
+		  if block not in unobtainable_blocks		# If the block is not in the unobtainable list
+		  and block not in silk_touch				# And, if the block is in the silk touch list
+		  and block not in copper					# And, if the block is in the copper list
+		  and block not in honey					# And, if the block is in the honey list
+		  and block not in slime					# And, if the block is in the slime list
+		  and block not in monument					# And, if the block is in the monument list
+		  and block not in the_end					# And, if the block is in the end list
+		  and block not in mangrove					# And, if the block is in the mangrove list
+		  and block not in mesa						# And, if the block is in the mesa list
 ]
-
-print(blocks)
 
 if len(blocks) < number_of_advancements_to_generate:
 	number_of_advancements_to_generate = len(blocks)

@@ -1,14 +1,14 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:prismarine_crystals"
+			"item": "minecraft:smooth_red_sandstone_stairs"
 		},
 		"title": {
-			"text": "Prismarine Crystals",
+			"text": "Smooth Red Sandstone Stairs",
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Prismarine Crystals",
+			"text": "Obtenir un(e) Smooth Red Sandstone Stairs",
 			"color": "#F7EFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:prismarine_crystals"
+							"minecraft:smooth_red_sandstone_stairs"
 						]
 					}
 				]

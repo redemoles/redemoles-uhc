@@ -16,8 +16,8 @@ scoreboard players add @s uhc.spawn.check 1
 
 ## Timer
 scoreboard players add #ticks uhc.spawn.check 1
-execute if score #ticks uhc.spawn.check matches 30 run scoreboard players add #seconds uhc.spawn.check 1
-execute if score #ticks uhc.spawn.check matches 30 run scoreboard players set #ticks uhc.spawn.check 0
+execute if score #ticks uhc.spawn.check matches 40 run scoreboard players add #seconds uhc.spawn.check 1
+execute if score #ticks uhc.spawn.check matches 40 run scoreboard players set #ticks uhc.spawn.check 0
 
 ## Téléportations
 execute at @s positioned over world_surface run tp @s ~ ~ ~

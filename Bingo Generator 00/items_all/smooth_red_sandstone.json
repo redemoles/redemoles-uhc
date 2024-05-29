@@ -1,14 +1,14 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:short_grass"
+			"item": "minecraft:smooth_red_sandstone"
 		},
 		"title": {
-			"text": "Short Grass",
+			"text": "Smooth Red Sandstone",
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Short Grass",
+			"text": "Obtenir un(e) Smooth Red Sandstone",
 			"color": "#F7EFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:short_grass"
+							"minecraft:smooth_red_sandstone"
 						]
 					}
 				]

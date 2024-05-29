@@ -1,14 +1,14 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:prismarine_slab"
+			"item": "minecraft:red_sandstone"
 		},
 		"title": {
-			"text": "Prismarine Slab",
+			"text": "Red Sandstone",
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Prismarine Slab",
+			"text": "Obtenir un(e) Red Sandstone",
 			"color": "#F7EFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:prismarine_slab"
+							"minecraft:red_sandstone"
 						]
 					}
 				]

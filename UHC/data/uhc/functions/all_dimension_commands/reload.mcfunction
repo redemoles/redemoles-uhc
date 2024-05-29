@@ -13,6 +13,7 @@ gamerule announceAdvancements false
 gamerule doDaylightCycle false
 gamerule doMobSpawning false
 gamerule doImmediateRespawn true
+gamerule spectatorsGenerateChunks true
 gamerule naturalRegeneration false
 gamerule showDeathMessages false
 gamerule keepInventory true
