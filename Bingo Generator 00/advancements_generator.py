@@ -110,14 +110,57 @@ unobtainable_blocks = [
 	"minecraft:suspicious_sand",
 	"minecraft:suspicious_gravel",
 	"minecraft:bell",
-	"minecraft:budding_amethyst",
-	"minecraft:sticky_piston",
 ]
-blocks = [block for block in blocks if block not in unobtainable_blocks and not "command_block" in block and not "spawn" in block and not "infested" in block and not "banner_pattern" in block and not "template" in block and not "chainmail" in block and not "end_stone" in block and not "purpur" in block and not "chorus" in block and not "shulker" in block and not "dragon" in block and not "netherite" in block and not "lingering" in block and not "tipped_arrow" in block and not "frog" in block and not "turtle" in block and not "head" in block and not "sherd" in block and not "red_sand" in block and not "torchflower" in block and not "pitcher" in block and not "exposed" in block and not "weathered" in block and not "oxidized" in block and not "slime" in block and not "horse" in block and not "music_disc" in block and not "honey" in block and not "candle" in block and not "waxed" in block and not "beehive" in block and not "sea_lantern" in block and not "prismarine_shard" in block and not "bud" in block and not "cluster" in block and not "bee_nest" in block and not "ice" in block and not "coral" in block and not "_ore" in block and not "mushroom_stem" in block and not "mushroom_block" in block and not "grass_block" in block and not "nylium" in block and not "sculk" in block]
+block_should_not_contains = ["command_block", "spawn", "infested", "banner_pattern", "template", "chainmail", "netherite", "frog", "turtle", "head", "sherd", "torchflower", "pitcher", "horse", "music_disc"]
+unobtainable_blocks = []
+#unobtainable_blocks += [block for block in blocks if any(x in block for x in block_should_not_contains)]
+
+silk_touch_block = ["grass_block", "mushroom_stem", "mushroom_block", "beehive", "_ore", "nylium", "sculk"]
+silk_touch_block += ["bud", "cluster"]
+silk_touch_block += ["coral"]
+silk_touch_block += ["sea_lantern", "prismarine_shard"]
+silk_touch_block += ["ice"]
+silk_touch = []
+#silk_touch = [block for block in blocks if any(x in block for x in silk_touch_block)]
+
+copper_block = ["exposed", "weathered", "oxidized"]
+copper = []
+#copper = [block for block in blocks if any(x in block for x in copper_block)]
+
+honey_block = ["honey", "candle", "waxed", "bee_nest"]
+honey = []
+#honey = [block for block in blocks if any(x in block for x in honey_block)]
+
+slime_block = ["slime", "lead", "sticky_piston"]
+slime = []
+#slime = [block for block in blocks if any(x in block for x in slime_block)]
+
+the_end_block = ["end_stone", "purpur", "chorus", "shulker"]
+the_end_block += ["dragon", "lingering", "tipped_arrow"]
+the_end = []
+#the_end = [block for block in blocks if any(x in block for x in the_end_block)]
+
+mangrove = []
+#mangrove = [block for block in blocks if "mangrove" in block]
+
+mesa = []
+#mesa = [block for block in blocks if "red_sand" in block]
+
+blocks = [block for block in blocks
+		  if block not in unobtainable_blocks	# If the block is not in the unobtainable list
+		  or block in silk_touch				# Or, if the block is in the silk touch list
+		  or block in copper					# Or, if the block is in the copper list
+		  or block in honey						# Or, if the block is in the honey list
+		  or block in slime						# Or, if the block is in the slime list
+		  or block in the_end					# Or, if the block is in the end list
+		  or block in mangrove					# Or, if the block is in the mangrove list
+		  or block in mesa						# Or, if the block is in the mesa list
+]
+
+print(blocks)
 
 if len(blocks) < number_of_advancements_to_generate:
 	number_of_advancements_to_generate = len(blocks)
-
 
 # Create the folder "generated_advancements" if it doesn't exist
 if not os.path.exists(generation_folder):
