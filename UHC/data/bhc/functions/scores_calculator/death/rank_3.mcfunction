@@ -21,7 +21,7 @@ scoreboard players remove @s[scores={bhc.CD=-14..}] bhc.invSD 4
 execute if score @s bhc.invSD matches ..0 run scoreboard players set @s bhc.invSD 0
 
 # Application du % → Valeur de ce score pour le score total
-scoreboard players operation @s bhc.invSD *= #03 bhc.data
+scoreboard players operation @s bhc.invSD *= #04 bhc.data
 
 ## Classement
 # Classement Survie → Score d'équipe → Score d'affichage pour le tableau
