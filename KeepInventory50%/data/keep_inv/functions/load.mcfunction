@@ -8,11 +8,11 @@
 #
 
 # Ajout du tag de convention à Redemoles
-tag Redemoles add Host
+tag Redemoles add host
 #define storage keep_inv:temp
 
 # Affichage du message de chargement
-tellraw @a[tag=Host] {"text":"[Keep Inventory 50% - par Redemoles]","color":"#BF00FF"}
+tellraw @a[tag=host] {"text":"[Keep Inventory 50% - par Redemoles]","color":"#BF00FF"}
 
 scoreboard objectives add keep_inv.death deathCount
 scoreboard objectives add keep_inv.death.temp deathCount
