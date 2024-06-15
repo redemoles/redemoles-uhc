@@ -1,8 +1,0 @@
-{
-    "replace": false,
-    "values": [
-        "minecraft:egg",
-        "minecraft:turtle_egg",
-        "minecraft:dragon_egg"
-    ]
-}

@@ -1,8 +1,0 @@
-{
-    "replace": false,
-    "values": [
-        "#coral_blocks",
-        "#taglib:dead_coral_blocks",
-        "#taglib:non_block_corals"
-    ]
-}

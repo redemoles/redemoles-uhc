@@ -1,7 +1,0 @@
-{
-    "replace": false,
-    "values": [
-        "#taglib:always_on_power_source",
-        "#taglib:on_off_power_source"
-    ]
-}

@@ -1,7 +1,0 @@
-{
-    "replace": false,
-    "values": [
-        "minecraft:armor_stand",
-        "#taglib:can_wear_armor"
-    ]
-}

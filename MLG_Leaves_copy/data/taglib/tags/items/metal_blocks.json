@@ -1,9 +1,0 @@
-{
-    "replace": false,
-    "values": [
-        "minecraft:copper_block",
-        "minecraft:gold_block",
-        "minecraft:iron_block",
-        "minecraft:netherite_block"
-    ]
-}

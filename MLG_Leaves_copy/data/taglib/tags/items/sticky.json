@@ -1,8 +1,0 @@
-{
-    "replace": false,
-    "values": [
-        "minecraft:slime_block",
-        "minecraft:honey_block",
-        "minecraft:sticky_piston"
-    ]
-}

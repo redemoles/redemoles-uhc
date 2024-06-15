@@ -1,7 +1,0 @@
-{
-    "replace": false,
-    "values": [
-        "#taglib:overworld_grass",
-        "#taglib:nether_grass"
-    ]
-}

@@ -1,8 +1,0 @@
-{
-    "replace": false,
-    "values": [
-        "minecraft:chorus_fruit",
-        "#taglib:berries",
-        "#taglib:apples"
-    ]
-}
