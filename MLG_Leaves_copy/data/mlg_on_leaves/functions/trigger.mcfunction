@@ -51,3 +51,5 @@ execute store result score temp mlg_on_leaves as @e[tag=mlg_on_leaves.raycast_ta
 execute if score temp mlg_on_leaves matches 0 as @e[tag=mlg_on_leaves.raycast_target] at @s positioned ^ ^ ^0.015625 if block ~ ~ ~ #mlg_on_leaves:waterloggable run function mlg_on_leaves:remove_warterlog
 
 kill @e[tag=mlg_on_leaves.raycast_target]
+
+advancement revoke @s only mlg_on_leaves:water_bucket
