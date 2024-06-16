@@ -1,0 +1,42 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:blue_orchid"
+		},
+		"title": {
+			"text": "Blue Orchid",
+			"color": "#FFDF00"
+		},
+		"description": {
+			"text": "Obtenir un(e) Blue Orchid",
+			"color": "#F7EFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:blue_orchid"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"requirement"
+		]
+	],
+	"rewards": {
+		"function": "bingo_b1:2_4"
+	},
+	"parent": "bingo_b1:2_3"
+}

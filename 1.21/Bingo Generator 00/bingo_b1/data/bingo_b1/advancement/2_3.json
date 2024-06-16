@@ -1,0 +1,42 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:armadillo_scute"
+		},
+		"title": {
+			"text": "Armadillo Scute",
+			"color": "#FFDF00"
+		},
+		"description": {
+			"text": "Obtenir un(e) Armadillo Scute",
+			"color": "#F7EFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:armadillo_scute"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"requirement"
+		]
+	],
+	"rewards": {
+		"function": "bingo_b1:2_3"
+	},
+	"parent": "bingo_b1:2_2"
+}

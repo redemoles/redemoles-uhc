@@ -1,0 +1,42 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:tripwire_hook"
+		},
+		"title": {
+			"text": "Tripwire Hook",
+			"color": "#FFDF00"
+		},
+		"description": {
+			"text": "Obtenir un(e) Tripwire Hook",
+			"color": "#F7EFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:tripwire_hook"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"requirement"
+		]
+	],
+	"rewards": {
+		"function": "bingo_b1:2_1"
+	},
+	"parent": "bingo_b1:root"
+}

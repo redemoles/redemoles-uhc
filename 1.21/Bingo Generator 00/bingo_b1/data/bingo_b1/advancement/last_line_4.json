@@ -1,0 +1,31 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:tick",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:value_check",
+						"value": {
+							"type": "minecraft:score",
+							"target": {
+								"type": "minecraft:fixed",
+								"name": "#bingo_b1_enabled"
+							},
+							"score": "bhc.data"
+						},
+						"range": {
+							"min": 1
+						}
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"requirement"
+		]
+	],
+	"parent": "bingo_b1:4_5"
+}

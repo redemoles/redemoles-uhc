@@ -1,0 +1,15 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:player"
+                }
+			}
+		}
+	},
+	"rewards": {
+		"function": "uhc:in_game/inventory/ban_items"
+	}
+}

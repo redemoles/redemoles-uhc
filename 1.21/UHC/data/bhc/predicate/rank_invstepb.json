@@ -1,0 +1,16 @@
+{
+	"condition": "minecraft:entity_scores",
+	"entity": "this",
+	"scores": {
+		"bhc.invStepB": {
+			"min": {
+				"type": "minecraft:score",
+				"target": {
+					"type": "minecraft:fixed",
+					"name": "#temp"
+				},
+				"score": "bhc.data"
+			}
+		}
+	}
+}

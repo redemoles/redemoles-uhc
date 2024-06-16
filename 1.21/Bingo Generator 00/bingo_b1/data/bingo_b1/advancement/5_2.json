@@ -1,0 +1,42 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:copper_trapdoor"
+		},
+		"title": {
+			"text": "Copper Trapdoor",
+			"color": "#FFDF00"
+		},
+		"description": {
+			"text": "Obtenir un(e) Copper Trapdoor",
+			"color": "#F7EFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:copper_trapdoor"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"requirement"
+		]
+	],
+	"rewards": {
+		"function": "bingo_b1:5_2"
+	},
+	"parent": "bingo_b1:5_1"
+}

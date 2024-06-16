@@ -1,0 +1,48 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:paper"
+		},
+		"title": {
+			"text": "Bingo - \u00c9tape B",
+			"color": "#9F3FFF",
+			"bold": true
+		},
+		"description": {
+			"text": "",
+			"color": "green"
+		},
+		"background": "minecraft:textures/block/purple_concrete_powder.png",
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:tick",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:value_check",
+						"value": {
+							"type": "minecraft:score",
+							"target": {
+								"type": "minecraft:fixed",
+								"name": "#bingo_b1_enabled"
+							},
+							"score": "bhc.data"
+						},
+						"range": {
+							"min": 1
+						}
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"requirement"
+		]
+	]
+}
