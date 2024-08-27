@@ -1,4 +1,12 @@
 
+#> bhc:timer/marker_tick
+#
+# @within			bhc:timer/tick
+#
+#
+# @description		Boucle d'affichage des noms d'équipe
+#
+
 # Timer Survie
 execute if score @s uhc.data.setup matches 1.. run function bhc:scores_calculator/death/scores
 

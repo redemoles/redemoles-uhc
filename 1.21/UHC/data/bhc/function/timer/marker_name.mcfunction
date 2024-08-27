@@ -1,7 +1,7 @@
 
 #> bhc:timer/marker_name
 #
-# @within			bhc:tick
+# @within			bhc:timer/marker_tick
 #
 #
 # @description		Boucle d'affichage des noms d'équipe

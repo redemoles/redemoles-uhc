@@ -72,6 +72,7 @@ unobtainable_blocks = [
 	"minecraft:reinforced_deepslate",
 	"minecraft:barrier",
 	"minecraft:light",
+	"minecraft:jigsaw",
 	"minecraft:structure_void",
 	"minecraft:structure_block",
 	"minecraft:debug_stick",
@@ -111,6 +112,7 @@ unobtainable_blocks = [
 	"minecraft:suspicious_gravel",
 	"minecraft:bell",
 	"minecraft:grass",
+	"minecraft:ominous_vault",
 ]
 block_should_not_contains = ["command_block", "spawn", "infested", "banner_pattern", "template", "chainmail", "netherite", "frog", "turtle", "head", "sherd", "torchflower", "pitcher", "horse", "music_disc"]
 unobtainable_blocks += [block for block in blocks if any(x in block for x in block_should_not_contains)]
@@ -131,7 +133,7 @@ honey_block = ["honey", "candle", "waxed", "bee_nest"]
 honey = []
 honey = [block for block in blocks if any(x in block for x in honey_block)]
 
-slime_block = ["slime", "lead", "sticky_piston"]
+slime_block = ["slime", "lead", "sticky_piston", "tadpole"]
 slime = []
 slime = [block for block in blocks if any(x in block for x in slime_block)]
 
@@ -142,6 +144,10 @@ the_end_block = ["end_stone", "purpur", "chorus", "shulker"]
 the_end_block += ["dragon", "lingering", "tipped_arrow"]
 the_end = []
 the_end = [block for block in blocks if any(x in block for x in the_end_block)]
+
+trial_chamber_block = ["mace", "heavy_core", "trial", "breeze_rod", "wind_charge"]
+trial_chamber = []
+trial_chamber = [block for block in blocks if any(x in block for x in trial_chamber_block)]
 
 mangrove = []
 #mangrove = [block for block in blocks if "mangrove" in block]
@@ -157,6 +163,7 @@ blocks = [block for block in blocks
 		  and block not in slime					# And, if the block is in the slime list
 		  and block not in monument					# And, if the block is in the monument list
 		  and block not in the_end					# And, if the block is in the end list
+		  and block not in trial_chamber			# And, if the block is in the end list
 		  and block not in mangrove					# And, if the block is in the mangrove list
 		  and block not in mesa						# And, if the block is in the mesa list
 ]
