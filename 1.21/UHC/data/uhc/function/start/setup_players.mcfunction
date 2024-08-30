@@ -16,7 +16,7 @@ effect give @a[tag=uhc.player] resistance infinite 4 true
 effect give @a[tag=uhc.player] blindness infinite 4 true
 effect give @a[tag=uhc.player] slowness infinite 9 true
 effect give @a[tag=uhc.player] weakness infinite 9 true
-effect give @a[tag=uhc.player] jump_boost infinite 128 true
+execute as @a[tag=uhc.player] run attribute @s minecraft:generic.jump_strength base set 0
 
 advancement revoke @a everything
 
@@ -31,6 +31,12 @@ execute store result score #ironman uhc.data.setup if entity @a[tag=uhc.player]
 
 # Best PvE
 execute if score #best_pve uhc.scenario matches 1 run function uhc:start/scenarios/best_pve
+
+# Gone Fishing
+execute if score #gone_fishing uhc.scenario matches 1 run give @a[tag=player] minecraft:fishing_rod[enchantments={luck_of_the_sea:255,lure:7},unbreakable={}]
+
+# Team Health
+execute if score #team_health uhc.scenario matches 1 run scoreboard objectives setdisplay list uhc.scenario.team_health.team
 
 ## Nombre de vie
 scoreboard players set @a[tag=uhc.spec] uhc.players.lives 0

@@ -34,12 +34,12 @@ playsound minecraft:block.note_block.pling master @s[scores={uhc.timer.respawn=1
 effect give @s minecraft:resistance infinite 4 true
 effect give @s minecraft:slowness infinite 9 true
 effect give @s minecraft:weakness infinite 9 true
-effect give @s minecraft:jump_boost infinite 128 true
+attribute @s minecraft:generic.jump_strength base set 0
 effect give @s[scores={uhc.players.lives=1..}] absorption 10 0
 effect clear @s[scores={uhc.timer.respawn=1}] minecraft:resistance
 effect clear @s[scores={uhc.timer.respawn=1}] minecraft:slowness
 effect clear @s[scores={uhc.timer.respawn=1}] minecraft:weakness
-effect clear @s[scores={uhc.timer.respawn=1}] minecraft:jump_boost
+attribute @s[scores={uhc.timer.respawn=1}] minecraft:generic.jump_strength base set 0.42
 
 # Tick -1
 scoreboard players remove @s uhc.timer.respawn 1

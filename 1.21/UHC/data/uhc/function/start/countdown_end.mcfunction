@@ -12,6 +12,7 @@ time set 0
 gamerule doDaylightCycle true
 gamemode survival @a[tag=uhc.player]
 effect clear @a
+execute as @a[tag=uhc.player] run attribute @s minecraft:generic.jump_strength base set 0.42
 scoreboard players set @a[tag=uhc.player] uhc.effect.resistance -1
 scoreboard players set @a[tag=uhc.player] uhc.timer.respawn 0
 execute if score #StarterFood uhc.data.setup matches 1 run give @a[tag=uhc.player] minecraft:golden_carrot 64

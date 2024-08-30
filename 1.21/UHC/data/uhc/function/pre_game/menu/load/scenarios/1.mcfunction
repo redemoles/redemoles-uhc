@@ -36,8 +36,8 @@ execute if score #cut_clean uhc.scenario matches 1 run item replace entity @s in
 
 execute if score #go_to_hell uhc.scenario matches 0 run item replace entity @s inventory.10 with minecraft:black_concrete[minecraft:item_name='{"text":"Go To Hell","color":"#FF3F3F","italic":false}']
 execute if score #go_to_hell uhc.scenario matches 1 run item replace entity @s inventory.10 with minecraft:black_concrete[minecraft:item_name='{"text":"Go To Hell","color":"#FF3F3F","italic":false}']
-execute if score #gone_fishing uhc.scenario matches 0 run item replace entity @s inventory.11 with minecraft:black_concrete[minecraft:item_name='{"text":"Gone Fishing","color":"#FF3F3F","italic":false}']
-execute if score #gone_fishing uhc.scenario matches 1 run item replace entity @s inventory.11 with minecraft:black_concrete[minecraft:item_name='{"text":"Gone Fishing","color":"#FF3F3F","italic":false}']
+execute if score #gone_fishing uhc.scenario matches 0 run item replace entity @s inventory.11 with minecraft:red_concrete[minecraft:item_name='{"text":"Gone Fishing","color":"#FF3F3F","italic":false}']
+execute if score #gone_fishing uhc.scenario matches 1 run item replace entity @s inventory.11 with minecraft:light_blue_concrete[minecraft:item_name='{"text":"Gone Fishing","color":"#3FFFFF","italic":false}']
 execute if score #nine_slots uhc.scenario matches 0 run item replace entity @s inventory.12 with minecraft:black_concrete[minecraft:item_name='{"text":"Nine Slots","color":"#FF3F3F","italic":false}']
 execute if score #nine_slots uhc.scenario matches 1 run item replace entity @s inventory.12 with minecraft:black_concrete[minecraft:item_name='{"text":"Nine Slots","color":"#FF3F3F","italic":false}']
 execute if score #red_arrows uhc.scenario matches 0 run item replace entity @s inventory.13 with minecraft:black_concrete[minecraft:item_name='{"text":"Red Arrows","color":"#FF3F3F","italic":false}']

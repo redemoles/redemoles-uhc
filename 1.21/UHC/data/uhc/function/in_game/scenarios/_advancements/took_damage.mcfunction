@@ -7,6 +7,8 @@
 # @description		Le joueur a pris un dégât
 #
 
+scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
+
 # Ironman
 execute if score #pve uhc.data.setup matches ..0 as @s[tag=uhc.ironman] run function uhc:in_game/scenarios/ironman/remove
 

@@ -22,6 +22,8 @@ scoreboard objectives remove uhc.scenario.bats
 scoreboard objectives remove uhc.scenario.best_pve.list
 scoreboard objectives remove uhc.scenario.best_pve.tick
 scoreboard objectives remove uhc.scenario.best_pve.reward
+scoreboard objectives remove uhc.scenario.team_health.player
+scoreboard objectives remove uhc.scenario.team_health.team
 scoreboard objectives remove bhc.scenario
 scoreboard objectives remove nzl.scenario
 
@@ -31,6 +33,8 @@ scoreboard objectives add uhc.scenario.bats dummy
 scoreboard objectives add uhc.scenario.best_pve.list dummy
 scoreboard objectives add uhc.scenario.best_pve.tick dummy
 scoreboard objectives add uhc.scenario.best_pve.reward dummy
+scoreboard objectives add uhc.scenario.team_health.player dummy
+scoreboard objectives add uhc.scenario.team_health.team dummy
 scoreboard objectives add bhc.scenario dummy
 scoreboard objectives add nzl.scenario dummy
 
@@ -46,6 +50,7 @@ scoreboard objectives remove uhc.data.numbers
 scoreboard objectives remove uhc.host.menu
 scoreboard objectives remove uhc.meetup.activate
 scoreboard objectives remove uhc.players.online
+scoreboard objectives remove uhc.players.disconnect
 scoreboard objectives remove uhc.players.tp
 scoreboard objectives remove uhc.players.lives
 scoreboard objectives remove uhc.players.health
@@ -69,6 +74,7 @@ scoreboard objectives add uhc.data.numbers dummy
 scoreboard objectives add uhc.host.menu dummy
 scoreboard objectives add uhc.meetup.activate trigger
 scoreboard objectives add uhc.players.online dummy
+scoreboard objectives add uhc.players.disconnect minecraft.custom:minecraft.leave_game
 scoreboard objectives add uhc.players.tp dummy
 scoreboard objectives add uhc.players.lives dummy
 scoreboard objectives add uhc.players.health health
