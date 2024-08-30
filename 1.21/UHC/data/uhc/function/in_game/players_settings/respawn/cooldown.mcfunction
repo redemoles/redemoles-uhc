@@ -35,6 +35,7 @@ effect give @s minecraft:resistance infinite 4 true
 effect give @s minecraft:slowness infinite 9 true
 effect give @s minecraft:weakness infinite 9 true
 effect give @s minecraft:jump_boost infinite 128 true
+effect give @s[scores={uhc.players.lives=1..}] absorption 10 0
 effect clear @s[scores={uhc.timer.respawn=1}] minecraft:resistance
 effect clear @s[scores={uhc.timer.respawn=1}] minecraft:slowness
 effect clear @s[scores={uhc.timer.respawn=1}] minecraft:weakness
