@@ -69,6 +69,10 @@ scoreboard objectives remove bhc.line_2
 scoreboard objectives remove bhc.line_3
 scoreboard objectives remove bhc.line_4
 scoreboard objectives remove bhc.line_5
+scoreboard objectives remove bhc.line_6
+scoreboard objectives remove bhc.line_7
+scoreboard objectives remove bhc.line_8
+scoreboard objectives remove bhc.line_9
 
 scoreboard objectives remove bhc.column
 scoreboard objectives remove bhc.column_1
@@ -76,6 +80,10 @@ scoreboard objectives remove bhc.column_2
 scoreboard objectives remove bhc.column_3
 scoreboard objectives remove bhc.column_4
 scoreboard objectives remove bhc.column_5
+scoreboard objectives remove bhc.column_6
+scoreboard objectives remove bhc.column_7
+scoreboard objectives remove bhc.column_8
+scoreboard objectives remove bhc.column_9
 
 scoreboard objectives remove bhc.data
 scoreboard objectives remove bhc.timer
@@ -142,6 +150,10 @@ scoreboard objectives add bhc.line_2 dummy
 scoreboard objectives add bhc.line_3 dummy
 scoreboard objectives add bhc.line_4 dummy
 scoreboard objectives add bhc.line_5 dummy
+scoreboard objectives add bhc.line_6 dummy
+scoreboard objectives add bhc.line_7 dummy
+scoreboard objectives add bhc.line_8 dummy
+scoreboard objectives add bhc.line_9 dummy
 
 scoreboard objectives add bhc.column dummy
 scoreboard objectives add bhc.column_1 dummy
@@ -149,6 +161,10 @@ scoreboard objectives add bhc.column_2 dummy
 scoreboard objectives add bhc.column_3 dummy
 scoreboard objectives add bhc.column_4 dummy
 scoreboard objectives add bhc.column_5 dummy
+scoreboard objectives add bhc.column_6 dummy
+scoreboard objectives add bhc.column_7 dummy
+scoreboard objectives add bhc.column_8 dummy
+scoreboard objectives add bhc.column_9 dummy
 
 scoreboard objectives add bhc.data dummy
 scoreboard objectives add bhc.timer dummy

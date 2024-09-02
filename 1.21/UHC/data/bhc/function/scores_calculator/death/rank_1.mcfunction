@@ -10,7 +10,6 @@
 ## Enregistre le score d'équipe
 scoreboard players operation #temp bhc.data = @s bhc.invDeath
 scoreboard players add #temp bhc.data 1
-scoreboard players set #count bhc.data 0
 tag @s add bhc.count
 
 ## Compte le nombre d'équipe avec un score supérieur à celle sélectionnée

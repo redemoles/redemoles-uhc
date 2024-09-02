@@ -35,10 +35,9 @@ function bhc:scores_calculator/stepa/rank
 function bhc:scores_calculator/stepb/rank
 
 # Config UHC & BHC
-execute if score #bhc bhc.scenario matches 0 run function bhc:00/timer/config
 execute if score #bhc bhc.scenario matches 1 run function bhc:01/timer/config
+execute if score #bhc bhc.scenario matches 2 run function bhc:02/timer/config
 
 # Annulation des effets causés par le passage de la minute -1 à 0
 scoreboard players remove #start_stepa bhc.timer 1
 scoreboard players remove #start_stepb bhc.timer 1
-

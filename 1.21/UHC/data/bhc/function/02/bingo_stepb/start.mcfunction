@@ -1,7 +1,7 @@
 
-#> bhc:00/bingo_stepb/start
+#> bhc:02/bingo_stepb/start
 #
-# @within			bhc:00/timer/steps
+# @within			bhc:01/timer/steps
 #
 #
 # @description		Activation du Bingo, début d'Étape B
@@ -19,5 +19,7 @@ playsound minecraft:entity.experience_orb.pickup master @a ~ ~ ~ 0.5 1 0.5
 scoreboard objectives setdisplay sidebar bhc.StepB
 
 # Reset des succès
-execute as @e[type=marker,tag=BHC] run function bhc:00/timer/reset_scores
+execute as @e[type=marker,tag=BHC] run function bhc:01/timer/reset_scores
 
+# Enregistrement du nombre de lignes et colonnes
+function bingo_b1:load

@@ -140,7 +140,17 @@ execute unless score #{bingo_namespace}_enabled {configuration_objective} matche
 			
 	# Write the root advancement
 	zip_file.writestr(f"data/{bingo_namespace}/advancement/root.json", json.dumps(root_advancement, indent = "\t"))
-		
+
+	# Register the number of lines and columns
+	zip_file.writestr(f"data/{bingo_namespace}/function/load.mcfunction", f"""
+scoreboard players set #line {configuration_objective} {line}
+scoreboard players set #column {configuration_objective} {column}
+scoreboard players set #line-1 {configuration_objective} {line}
+scoreboard players set #column-1 {configuration_objective} {column}
+scoreboard players remove #line-1 {configuration_objective} 1
+scoreboard players remove #column-1 {configuration_objective} 1
+""")
+
 	# Write the pack.mcmeta file
 	zip_file.writestr("pack.mcmeta", f"""{{
 	"pack": {{

@@ -11,7 +11,6 @@
 execute if score #tick_start uhc.data.setup matches 4 if score #vanilla uhc.gamemode matches 1 run title @a title [{"text":"UHC","color":"aqua","bold":false}]
 execute if score #tick_start uhc.data.setup matches 4 if score #bhc uhc.gamemode matches 1 run title @a title [{"text":"","color":"#9F3FFF","bold":false},{"text":"UHC","color":"#FFE73F","bold":false}]
 execute if score #tick_start uhc.data.setup matches 4 if score #vanilla uhc.gamemode matches 1 run title @a subtitle [{"text":" Démarrage en cours ! ","color":"white","bold":false}]
-execute if score #tick_start uhc.data.setup matches 4 if score #bhc uhc.gamemode matches 1 if score #bhc bhc.scenario matches 0 run title @a subtitle [{"text":" Version Beta ","color":"white","bold":false}]
 execute if score #tick_start uhc.data.setup matches 4 if score #bhc uhc.gamemode matches 1 if score #bhc bhc.scenario matches 1 run title @a subtitle [{"text":" Démarrage en cours ! ","color":"white","bold":false}]
 
 # Musique → auto-config de la partie → start

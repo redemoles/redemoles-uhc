@@ -1,7 +1,7 @@
 
-#> bhc:01/bingo_stepa/case
+#> bhc:02/bingo_stepa/case
 #
-# @within			bhc:advancements/stepa
+# @within			bhc:01/advancements/stepa
 #
 #
 # @description		Ajout de points

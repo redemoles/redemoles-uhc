@@ -12,3 +12,7 @@ $advancement grant @s only $(namespace):$(line)_2
 $advancement grant @s only $(namespace):$(line)_3
 $advancement grant @s only $(namespace):$(line)_4
 $advancement grant @s only $(namespace):$(line)_5
+$advancement grant @s only $(namespace):$(line)_6
+$advancement grant @s only $(namespace):$(line)_7
+$advancement grant @s only $(namespace):$(line)_8
+$advancement grant @s only $(namespace):$(line)_9

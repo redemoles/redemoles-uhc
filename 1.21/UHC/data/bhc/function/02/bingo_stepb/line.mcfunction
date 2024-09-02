@@ -1,5 +1,5 @@
 
-#> bhc:01/bingo_stepb/column
+#> bhc:02/bingo_stepb/line
 #
 # @within			bhc:advancements/stepb
 #
@@ -15,6 +15,6 @@ scoreboard players operation @s bhc.invStepB *= #1m bhc.data
 scoreboard players add @e[type=marker,tag=BHC] bhc.invStepB 1
 
 # Récompenses
-execute if score #total_first_column bhc.data matches 1 run give @p[tag=bhc.new_adv] minecraft:diamond 3
+execute if score #total_first_line bhc.data matches 1 run give @p[tag=bhc.new_adv] minecraft:diamond 3
 give @p[tag=bhc.new_adv] minecraft:diamond 3
 experience add @p[tag=bhc.new_adv] 1 levels

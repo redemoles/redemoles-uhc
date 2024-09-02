@@ -1,5 +1,5 @@
 
-#> uhc:pre_game/menu/load/gamemode/bhc/00
+#> uhc:pre_game/menu/load/gamemode/bhc/03
 #
 # @within			uhc:pre_game/menu/load/gamemode_bhc/
 #

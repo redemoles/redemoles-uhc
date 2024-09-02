@@ -1,7 +1,7 @@
 
-#> bhc:01/bingo_stepa/selector
+#> bhc:02/bingo_stepa/selector
 #
-# @within			bhc:01/timer/steps
+# @within			bhc:02/timer/steps
 #
 #
 # @description		Sélecteur aléatoire des mini-bingos
@@ -13,18 +13,18 @@ scoreboard players set #select_roll bhc.data 0
 execute store result score #select_roll bhc.data run random value 1..12
 
 # Détection si nombre aléatoire est déjà utilisé
-execute if score #select_roll bhc.data matches 1 if score #select_B01 bhc.data matches 10 run function bhc:01/bingo_stepa/selector
-execute if score #select_roll bhc.data matches 2 if score #select_B02 bhc.data matches 10 run function bhc:01/bingo_stepa/selector
-execute if score #select_roll bhc.data matches 3 if score #select_B03 bhc.data matches 10 run function bhc:01/bingo_stepa/selector
-execute if score #select_roll bhc.data matches 4 if score #select_B04 bhc.data matches 10 run function bhc:01/bingo_stepa/selector
-execute if score #select_roll bhc.data matches 5 if score #select_B05 bhc.data matches 10 run function bhc:01/bingo_stepa/selector
-execute if score #select_roll bhc.data matches 6 if score #select_B06 bhc.data matches 10 run function bhc:01/bingo_stepa/selector
-execute if score #select_roll bhc.data matches 7 if score #select_B07 bhc.data matches 10 run function bhc:01/bingo_stepa/selector
-execute if score #select_roll bhc.data matches 8 if score #select_B08 bhc.data matches 10 run function bhc:01/bingo_stepa/selector
-execute if score #select_roll bhc.data matches 9 if score #select_B09 bhc.data matches 10 run function bhc:01/bingo_stepa/selector
-execute if score #select_roll bhc.data matches 10 if score #select_B10 bhc.data matches 10 run function bhc:01/bingo_stepa/selector
-execute if score #select_roll bhc.data matches 11 if score #select_B11 bhc.data matches 10 run function bhc:01/bingo_stepa/selector
-execute if score #select_roll bhc.data matches 12 if score #select_B12 bhc.data matches 10 run function bhc:01/bingo_stepa/selector
+execute if score #select_roll bhc.data matches 1 if score #select_B01 bhc.data matches 10 run function bhc:02/bingo_stepa/selector
+execute if score #select_roll bhc.data matches 2 if score #select_B02 bhc.data matches 10 run function bhc:02/bingo_stepa/selector
+execute if score #select_roll bhc.data matches 3 if score #select_B03 bhc.data matches 10 run function bhc:02/bingo_stepa/selector
+execute if score #select_roll bhc.data matches 4 if score #select_B04 bhc.data matches 10 run function bhc:02/bingo_stepa/selector
+execute if score #select_roll bhc.data matches 5 if score #select_B05 bhc.data matches 10 run function bhc:02/bingo_stepa/selector
+execute if score #select_roll bhc.data matches 6 if score #select_B06 bhc.data matches 10 run function bhc:02/bingo_stepa/selector
+execute if score #select_roll bhc.data matches 7 if score #select_B07 bhc.data matches 10 run function bhc:02/bingo_stepa/selector
+execute if score #select_roll bhc.data matches 8 if score #select_B08 bhc.data matches 10 run function bhc:02/bingo_stepa/selector
+execute if score #select_roll bhc.data matches 9 if score #select_B09 bhc.data matches 10 run function bhc:02/bingo_stepa/selector
+execute if score #select_roll bhc.data matches 10 if score #select_B10 bhc.data matches 10 run function bhc:02/bingo_stepa/selector
+execute if score #select_roll bhc.data matches 11 if score #select_B11 bhc.data matches 10 run function bhc:02/bingo_stepa/selector
+execute if score #select_roll bhc.data matches 12 if score #select_B12 bhc.data matches 10 run function bhc:02/bingo_stepa/selector
 
 # Ajoute le nombre aléatoire parmis les nombre déjà utilisé
 execute if score #select_roll bhc.data matches 1 if score #select_B01 bhc.data matches 0 run scoreboard players set #select_B01 bhc.data 10

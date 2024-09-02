@@ -1,5 +1,5 @@
 
-#> bhc:01/bingo_stepb/column
+#> bhc:02/bingo_stepb/column
 #
 # @within			bhc:advancements/stepb
 #
