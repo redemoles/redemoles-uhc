@@ -17,5 +17,5 @@ tag Redemoles add host
 #define storage uhc:team
 
 # Affichage du message de chargement
-tellraw @a[tag=host] {"text":"[Loaded UHC 1.21 - v1.2.4 - par Redemoles]","color":"#BF00FF"}
+tellraw @a[tag=host] {"text":"[Loaded UHC 1.21 - v1.2.6 - par Redemoles]","color":"#BF00FF"}
 tellraw @a[tag=host] {"text":"/function uhc:reload pour démarrer/réinitialiser le datapack\n/datapack disable vanilla\n→ Seulement si [data] de Redemoles installé\n","color":"#DF7FFF","clickEvent":{"action":"run_command","value":"/gamerule sendCommandFeedback true"}}

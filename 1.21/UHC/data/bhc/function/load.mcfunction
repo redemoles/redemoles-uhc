@@ -154,6 +154,9 @@ scoreboard objectives add bhc.data dummy
 scoreboard objectives add bhc.timer dummy
 scoreboard objectives add bhc.teams.livescount dummy
 
+scoreboard objectives add bhc.test.SA dummy
+scoreboard objectives add bhc.test.SB dummy
+
 scoreboard players set #-1m bhc.data -1000000
 scoreboard players set #-1 bhc.data -1
 scoreboard players set #01 bhc.data 1

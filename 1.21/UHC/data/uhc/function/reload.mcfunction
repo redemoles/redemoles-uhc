@@ -91,6 +91,14 @@ scoreboard objectives add uhc.world.end dummy
 scoreboard objectives setdisplay sidebar
 scoreboard objectives setdisplay list uhc.players.health
 kill @e[type=marker]
+kill @e[type=bat]
+kill @e[type=chicken]
+kill @e[type=cow]
+kill @e[type=donkey]
+kill @e[type=horse]
+kill @e[type=pig]
+kill @e[type=sheep]
+kill @e[type=rabbit]
 title @a reset
 
 ## Timer pre-game

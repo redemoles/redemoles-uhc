@@ -8,12 +8,13 @@
 #
 
 # Ajout de points au joueur et à l'équipe
-scoreboard players add @s bhc.invStepA 1
-execute as @e[type=marker,tag=BHC] if score @s uhc.id.teams = #team uhc.id.teams run scoreboard players operation @s bhc.invStepA /= #1m bhc.data
-execute as @e[type=marker,tag=BHC] if score @s uhc.id.teams = #team uhc.id.teams run scoreboard players add @s bhc.invStepA 1
-execute as @e[type=marker,tag=BHC] if score @s uhc.id.teams = #team uhc.id.teams run scoreboard players operation @s bhc.invStepA *= #1m bhc.data
+scoreboard players add @s bhc.invStepA 2
+scoreboard players operation @e[type=marker,tag=BHC,predicate=uhc:id_teams] bhc.invStepA /= #1m bhc.data
+scoreboard players add @e[type=marker,tag=BHC,predicate=uhc:id_teams] bhc.invStepA 2
+scoreboard players operation @e[type=marker,tag=BHC,predicate=uhc:id_teams] bhc.invStepA *= #1m bhc.data
 scoreboard players add @e[type=marker,tag=BHC] bhc.invStepA 1
 
 # Récompenses
-execute if score #total_first_line bhc.data matches 1 run give @s minecraft:gold_ingot 2
-give @s minecraft:gold_ingot 2
+execute if score #total_first_line bhc.data matches 1 run give @s minecraft:diamond 3
+give @s minecraft:diamond 3
+experience add @s 1 levels
