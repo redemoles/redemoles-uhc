@@ -63,6 +63,8 @@ scoreboard objectives remove bhc.invBA8
 scoreboard objectives remove bhc.invBA9
 scoreboard objectives remove bhc.invBB
 
+scoreboard objectives remove bhc.case
+
 scoreboard objectives remove bhc.line
 scoreboard objectives remove bhc.line_1
 scoreboard objectives remove bhc.line_2
@@ -144,6 +146,8 @@ scoreboard objectives add bhc.invBA8 dummy
 scoreboard objectives add bhc.invBA9 dummy
 scoreboard objectives add bhc.invBB dummy
 
+scoreboard objectives add bhc.case dummy
+
 scoreboard objectives add bhc.line dummy
 scoreboard objectives add bhc.line_1 dummy
 scoreboard objectives add bhc.line_2 dummy
@@ -169,9 +173,6 @@ scoreboard objectives add bhc.column_9 dummy
 scoreboard objectives add bhc.data dummy
 scoreboard objectives add bhc.timer dummy
 scoreboard objectives add bhc.teams.livescount dummy
-
-scoreboard objectives add bhc.test.SA dummy
-scoreboard objectives add bhc.test.SB dummy
 
 scoreboard players set #-1m bhc.data -1000000
 scoreboard players set #-1 bhc.data -1

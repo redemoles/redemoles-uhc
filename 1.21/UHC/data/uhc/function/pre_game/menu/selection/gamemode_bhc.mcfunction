@@ -15,6 +15,7 @@ execute if score #gamemode_bhc uhc.host.menu matches 1 unless items entity @s in
 execute if score #gamemode_bhc uhc.host.menu matches 1 unless items entity @s inventory.6 *[minecraft:item_name='{"text":"BHC VI","color":"#FFFF5F","italic":false}'] run function uhc:pre_game/menu/load/gamemode/bhc/06
 execute if score #gamemode_bhc uhc.host.menu matches 1 unless items entity @s inventory.7 *[minecraft:item_name='{"text":"BHC VII","color":"#FFAF5F","italic":false}'] run function uhc:pre_game/menu/load/gamemode/bhc/07
 execute if score #gamemode_bhc uhc.host.menu matches 1 unless items entity @s inventory.10 *[minecraft:item_name='{"text":"BHC VIII","color":"#FF5F5F","italic":false}'] run function uhc:pre_game/menu/load/gamemode/bhc/08
+execute if score #gamemode_bhc uhc.host.menu matches 1 unless items entity @s inventory.16 *[minecraft:item_name='{"text":"BHC Vanilla","color":"#FFFFFF","italic":false}'] run function uhc:pre_game/menu/load/gamemode/bhc/00
 execute if score #gamemode_bhc uhc.host.menu matches 1 unless items entity @s inventory.19 *[minecraft:item_name='{"text":"DÉSACTIVER","color":"#FF3F3F","italic":false}'] run function uhc:pre_game/menu/load/gamemode/bhc/disable
 execute if score #gamemode_bhc uhc.host.menu matches 1 unless items entity @s inventory.25 *[minecraft:item_name='{"text":"FERMER","color":"#FF3F3F","italic":false}'] run function uhc:pre_game/menu/load/gamemode/
 execute if score #gamemode_bhc uhc.host.menu matches 1 run function uhc:pre_game/menu/load/gamemode/bhc/

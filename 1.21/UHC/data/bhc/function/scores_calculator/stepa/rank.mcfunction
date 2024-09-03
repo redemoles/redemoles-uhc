@@ -1,7 +1,7 @@
 
 #> bhc:scores_calculator/stepa/rank
 #
-# @within			bhc:advancements/stepa
+# @within			bhc:scenarios/XX/advancements/stepa
 #
 #
 # @description		Actualisation scores Étape A 

@@ -137,8 +137,9 @@ slime_block = ["slime", "lead", "sticky_piston", "tadpole"]
 slime = []
 slime = [block for block in blocks if any(x in block for x in slime_block)]
 
+monument_block = ["prismarine", "sea_lantern", "sponge"]
 monument = []
-monument = [block for block in blocks if "prismarine" in block and not "sea_lantern" in block]
+monument = [block for block in blocks if any(x in block for x in monument_block)]
 
 the_end_block = ["end_stone", "purpur", "chorus", "shulker"]
 the_end_block += ["dragon", "lingering", "tipped_arrow"]
