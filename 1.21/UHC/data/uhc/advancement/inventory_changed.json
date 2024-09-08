@@ -1,12 +1,7 @@
 {
 	"criteria": {
 		"requirement": {
-			"trigger": "minecraft:inventory_changed",
-            "conditions": {
-                "entity": {
-                    "type": "minecraft:player"
-                }
-			}
+			"trigger": "minecraft:inventory_changed"
 		}
 	},
 	"rewards": {

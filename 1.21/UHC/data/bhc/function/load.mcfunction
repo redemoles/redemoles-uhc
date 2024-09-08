@@ -98,8 +98,8 @@ scoreboard objectives add bhc.invKills dummy
 scoreboard objectives add bhc.invDeath dummy
 scoreboard objectives add bhc.invTotal dummy
 
-scoreboard objectives add bhc.StepA dummy "Etape A"
-scoreboard objectives add bhc.StepB dummy "Etape B"
+scoreboard objectives add bhc.StepA dummy "Bingo Classique"
+scoreboard objectives add bhc.StepB dummy "Bingo Spécial"
 scoreboard objectives add bhc.Kills dummy "Kills"
 scoreboard objectives add bhc.Death dummy "Survie"
 scoreboard objectives add bhc.Total dummy "Total"
@@ -110,8 +110,8 @@ scoreboard objectives add bhc.invSK dummy
 scoreboard objectives add bhc.invSD dummy
 scoreboard objectives add bhc.invST dummy
 
-scoreboard objectives add bhc.SA dummy "Score Etape A"
-scoreboard objectives add bhc.SB dummy "Score Etape B"
+scoreboard objectives add bhc.SA dummy "Score Bingo C"
+scoreboard objectives add bhc.SB dummy "Score Bingo S"
 scoreboard objectives add bhc.SK dummy "Score Kills"
 scoreboard objectives add bhc.SD dummy "Score Survie"
 scoreboard objectives add bhc.ST dummy "Score Total"

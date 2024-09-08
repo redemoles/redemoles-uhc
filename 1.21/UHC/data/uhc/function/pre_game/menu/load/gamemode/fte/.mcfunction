@@ -10,7 +10,6 @@
 
 scoreboard players add #fte uhc.gamemode 1
 execute if score #fte uhc.gamemode matches 2 run scoreboard players set #fte uhc.gamemode 0
-scoreboard players set #fte nzl.scenario 0
 
 function uhc:pre_game/menu/load/gamemode/vanilla/
 function uhc:pre_game/menu/load/gamemode/

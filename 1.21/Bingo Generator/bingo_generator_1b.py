@@ -7,15 +7,15 @@ import zipfile
 import os
 
 # Stop program if not executed from the root folder
-if not os.path.exists("bingo_generator_1a.py"):
+if not os.path.exists("bingo_generator_1b.py"):
 	print("Please execute this program from its folder.")
 	exit()
 
 # Define configuration
-bingo_size = {"lines": 5, "columns": 5}
-bingo_namespace = "bingo_a1"
-bingo_name = "Bingo - Étape A"
-step_number = "1"
+bingo_size = {"lines": 9, "columns": 9}
+bingo_namespace = "bingo_b1"
+bingo_name = "Bingo Spécial"
+step_number = "2"
 advancements_folder = "items_all"
 configuration_objective = "bhc.data"
 icon_item = "minecraft:paper"
@@ -150,7 +150,7 @@ scoreboard players set #column-1 {configuration_objective} {column}
 scoreboard players remove #line-1 {configuration_objective} 1
 scoreboard players remove #column-1 {configuration_objective} 1
 """)
-
+	
 	# Write the pack.mcmeta file
 	zip_file.writestr("pack.mcmeta", f"""{{
 	"pack": {{
