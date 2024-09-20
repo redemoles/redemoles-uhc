@@ -8,7 +8,7 @@
 #
 
 # Timer Survie
-execute if score @s uhc.data.setup matches 1.. run function bhc:scores_calculator/death/scores
+execute if score @s uhc.data.setup matches 1.. unless score #end uhc.game.end matches 1.. run function bhc:scores_calculator/death/scores
 
 # Marker name
 data modify storage uhc:temp input set value {name:""}

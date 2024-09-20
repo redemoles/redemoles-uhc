@@ -57,6 +57,7 @@ scoreboard objectives remove uhc.players.health
 scoreboard objectives remove uhc.players.timer
 scoreboard objectives remove uhc.players.kills
 scoreboard objectives remove uhc.players.death
+scoreboard objectives remove uhc.players.lang
 scoreboard objectives remove uhc.reward.kills
 scoreboard objectives remove uhc.effect.resistance
 scoreboard objectives remove uhc.timer.respawn
@@ -81,6 +82,7 @@ scoreboard objectives add uhc.players.health health
 scoreboard objectives add uhc.players.timer dummy "Minutes jouées"
 scoreboard objectives add uhc.players.kills playerKillCount "Kills"
 scoreboard objectives add uhc.players.death deathCount
+scoreboard objectives add uhc.players.lang dummy
 scoreboard objectives add uhc.reward.kills playerKillCount
 scoreboard objectives add uhc.effect.resistance dummy
 scoreboard objectives add uhc.timer.respawn dummy
@@ -134,6 +136,7 @@ scoreboard players set #load lobby.data 0
 function bhc:load
 function fte:load
 function nzl:reload/sb
+function uau:load
 
 ## Forceload
 

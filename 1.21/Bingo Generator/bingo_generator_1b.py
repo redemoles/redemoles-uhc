@@ -14,11 +14,11 @@ if not os.path.exists("bingo_generator_1b.py"):
 # Define configuration
 bingo_size = {"lines": 9, "columns": 9}
 bingo_namespace = "bingo_b1"
-bingo_name = "Bingo Spécial"
+bingo_name = "Ruée vers l'or"
 step_number = "2"
 advancements_folder = "items_all"
 configuration_objective = "bhc.data"
-icon_item = "minecraft:paper"
+icon_item = "minecraft:gold_ingot"
 title_color = "#9F3FFF"
 description = ""
 description_color = "green"

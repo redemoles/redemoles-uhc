@@ -7,7 +7,7 @@
 # @description		Fonction de configuration de la partie
 #
 
-execute as @p[tag=host.world_generation.4000] run scoreboard players set #chunk_pregen pregen.world 4513
+execute as @p[tag=host.world_generation.4000] run scoreboard players set #chunk_pregen pregen.world 5029
 
 
 execute if score #chunk_pregen pregen.world matches 4001 run forceload add -2048 -2048 -1920 -1920

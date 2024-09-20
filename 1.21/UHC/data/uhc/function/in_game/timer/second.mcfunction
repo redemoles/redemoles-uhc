@@ -21,33 +21,6 @@ kill @e[type=item,scores={uhc.timer.entities=150..}]
 ## Kill Phantom
 tp @e[type=minecraft:phantom] 0 -1000 0
 
-## ALERTE AVANT ACTIVATION PVE/PVP/BORDER
-
-#execute if score #pve uhc.data.setup matches 1 if score #Secondes uhc.data.display matches 30 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
-#execute if score #pve uhc.data.setup matches 1 if score #Secondes uhc.data.display matches 50 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
-#execute if score #pve uhc.data.setup matches 1 if score #Secondes uhc.data.display matches 30 run tellraw @a [{"text":"[","color":"gray","bold":true},{"text":"UHC","color":"white"},{"text":"]","color":"gray"},{"text":" Résistance ","color":"red","bold":true},{"text":"désactivée dans 30 secondes","color":"gold","bold":false}]
-#execute if score #pve uhc.data.setup matches 1 if score #Secondes uhc.data.display matches 50 run tellraw @a [{"text":"[","color":"gray","bold":true},{"text":"UHC","color":"white"},{"text":"]","color":"gray"},{"text":" Résistance ","color":"red","bold":true},{"text":"désactivée dans 10 secondes","color":"gold","bold":false}]
-
-#execute if score #pvp uhc.data.setup matches 1 if score #Secondes uhc.data.display matches 30 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
-#execute if score #pvp uhc.data.setup matches 1 if score #Secondes uhc.data.display matches 50 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
-#execute if score #pvp uhc.data.setup matches 1 if score #Secondes uhc.data.display matches 30 run tellraw @a [{"text":"[","color":"gray","bold":true},{"text":"UHC","color":"white"},{"text":"]","color":"gray"},{"text":" PVP ","color":"red","bold":true},{"text":"activé dans 30 secondes","color":"gold","bold":false}]
-#execute if score #pvp uhc.data.setup matches 1 if score #Secondes uhc.data.display matches 50 run tellraw @a [{"text":"[","color":"gray","bold":true},{"text":"UHC","color":"white"},{"text":"]","color":"gray"},{"text":" PVP ","color":"red","bold":true},{"text":"activé dans 10 secondes","color":"gold","bold":false}]
-
-#execute if score #border uhc.data.setup matches 1 if score #Secondes uhc.data.display matches 30 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
-#execute if score #border uhc.data.setup matches 1 if score #Secondes uhc.data.display matches 50 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
-#execute if score #border uhc.data.setup matches 1 if score #Secondes uhc.data.display matches 30 run tellraw @a [{"text":"[","color":"gray","bold":true},{"text":"UHC","color":"white"},{"text":"]","color":"gray"},{"text":" Réduction ","color":"red","bold":true},{"text":"activée dans 30 secondes","color":"gold","bold":false}]
-#execute if score #border uhc.data.setup matches 1 if score #Secondes uhc.data.display matches 50 run tellraw @a [{"text":"[","color":"gray","bold":true},{"text":"UHC","color":"white"},{"text":"]","color":"gray"},{"text":" Réduction ","color":"red","bold":true},{"text":"activée dans 10 secondes","color":"gold","bold":false}]
-
-#execute if score #shrink1 uhc.data.setup matches 1 if score #Secondes uhc.data.display matches 30 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
-#execute if score #shrink1 uhc.data.setup matches 1 if score #Secondes uhc.data.display matches 50 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
-#execute if score #shrink1 uhc.data.setup matches 1 if score #Secondes uhc.data.display matches 30 run tellraw @a [{"text":"[","color":"gray","bold":true},{"text":"UHC","color":"white"},{"text":"]","color":"gray"},{"text":" 2e Réduction ","color":"red","bold":true},{"text":"activée dans 30 secondes","color":"gold","bold":false}]
-#execute if score #shrink1 uhc.data.setup matches 1 if score #Secondes uhc.data.display matches 50 run tellraw @a [{"text":"[","color":"gray","bold":true},{"text":"UHC","color":"white"},{"text":"]","color":"gray"},{"text":" 2e Réduction ","color":"red","bold":true},{"text":"activée dans 10 secondes","color":"gold","bold":false}]
-
-#execute if score #shrink2 uhc.data.setup matches 1 if score #Secondes uhc.data.display matches 30 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
-#execute if score #shrink2 uhc.data.setup matches 1 if score #Secondes uhc.data.display matches 50 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
-#execute if score #shrink2 uhc.data.setup matches 1 if score #Secondes uhc.data.display matches 30 run tellraw @a [{"text":"[","color":"gray","bold":true},{"text":"UHC","color":"white"},{"text":"]","color":"gray"},{"text":" 3e Réduction ","color":"red","bold":true},{"text":"activée dans 30 secondes","color":"gold","bold":false}]
-#execute if score #shrink2 uhc.data.setup matches 1 if score #Secondes uhc.data.display matches 50 run tellraw @a [{"text":"[","color":"gray","bold":true},{"text":"UHC","color":"white"},{"text":"]","color":"gray"},{"text":" 3e Réduction ","color":"red","bold":true},{"text":"activée dans 10 secondes","color":"gold","bold":false}]
-
 ## ALERTES SONORES
 
 execute if score #pve uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches 59 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
@@ -72,22 +45,22 @@ execute if score #pve uhc.data.setup matches 1 if score #sec_cooldown uhc.data.d
 execute if score #pve uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches 29 run scoreboard players set #hotbar_cooldown uhc.data.display 4
 execute if score #pve uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches 5 run scoreboard players set #hotbar_cooldown uhc.data.display 8
 
-execute if score #pvp uhc.data.setup matches 6 if score #sec_cooldown uhc.data.display matches 59 run scoreboard players set #hotbar_cooldown uhc.data.display 4
+execute if score #pvp uhc.data.setup matches 5 if score #sec_cooldown uhc.data.display matches 59 run scoreboard players set #hotbar_cooldown uhc.data.display 4
 execute if score #pvp uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches 59 run scoreboard players set #hotbar_cooldown uhc.data.display 4
 execute if score #pvp uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches 29 run scoreboard players set #hotbar_cooldown uhc.data.display 4
 execute if score #pvp uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches 5 run scoreboard players set #hotbar_cooldown uhc.data.display 8
 
-execute if score #border uhc.data.setup matches 6 if score #sec_cooldown uhc.data.display matches 59 run scoreboard players set #hotbar_cooldown uhc.data.display 4
+execute if score #border uhc.data.setup matches 5 if score #sec_cooldown uhc.data.display matches 59 run scoreboard players set #hotbar_cooldown uhc.data.display 4
 execute if score #border uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches 59 run scoreboard players set #hotbar_cooldown uhc.data.display 4
 execute if score #border uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches 29 run scoreboard players set #hotbar_cooldown uhc.data.display 4
 execute if score #border uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches 5 run scoreboard players set #hotbar_cooldown uhc.data.display 8
 
-execute if score #shrink1 uhc.data.setup matches 6 if score #sec_cooldown uhc.data.display matches 59 run scoreboard players set #hotbar_cooldown uhc.data.display 4
+execute if score #shrink1 uhc.data.setup matches 5 if score #sec_cooldown uhc.data.display matches 59 run scoreboard players set #hotbar_cooldown uhc.data.display 4
 execute if score #shrink1 uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches 59 run scoreboard players set #hotbar_cooldown uhc.data.display 4
 execute if score #shrink1 uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches 29 run scoreboard players set #hotbar_cooldown uhc.data.display 4
 execute if score #shrink1 uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches 5 run scoreboard players set #hotbar_cooldown uhc.data.display 8
 
-execute if score #shrink2 uhc.data.setup matches 6 if score #sec_cooldown uhc.data.display matches 59 run scoreboard players set #hotbar_cooldown uhc.data.display 4
+execute if score #shrink2 uhc.data.setup matches 5 if score #sec_cooldown uhc.data.display matches 59 run scoreboard players set #hotbar_cooldown uhc.data.display 4
 execute if score #shrink2 uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches 59 run scoreboard players set #hotbar_cooldown uhc.data.display 4
 execute if score #shrink2 uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches 30 run scoreboard players set #hotbar_cooldown uhc.data.display 4
 execute if score #shrink2 uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches 5 run scoreboard players set #hotbar_cooldown uhc.data.display 8

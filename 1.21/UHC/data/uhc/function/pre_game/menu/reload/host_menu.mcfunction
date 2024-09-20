@@ -36,6 +36,7 @@ scoreboard players set #vanilla uhc.gamemode 1
 scoreboard players set #bhc uhc.gamemode 0
 scoreboard players set #fte uhc.gamemode 0
 scoreboard players set #nzl uhc.gamemode 0
+scoreboard players set #uau uhc.gamemode 0
 
 scoreboard players set #assassins uhc.scenario 0
 scoreboard players set #bats uhc.scenario 0

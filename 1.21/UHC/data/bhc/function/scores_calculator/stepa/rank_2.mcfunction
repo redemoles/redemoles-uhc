@@ -8,7 +8,7 @@
 #
 
 ## Enregistre le résulat d'équipe
-scoreboard players operation #temp bhc.data = @s bhc.invStepA
+scoreboard players operation #temp bhc.data = @s bhc.invStageA
 scoreboard players add #temp bhc.data 1
 
 ## Compte le nombre d'équipe avec un score supérieur à celle sélectionnée

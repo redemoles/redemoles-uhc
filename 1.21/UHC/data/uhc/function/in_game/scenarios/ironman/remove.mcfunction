@@ -7,7 +7,12 @@
 # @description		Retrait de la liste Ironman
 #
 
-tellraw @s [{"text":"Tu es sorti de la liste Ironman.","color":"#FF3F3F"}]
+# Msg FRA
+tellraw @s[scores={uhc.players.lang=1}] [{"text":"Tu es sorti de la liste Ironman.","color":"#FF3F3F"}]
+
+# Msg ENG
+tellraw @s[scores={uhc.players.lang=2}] [{"text":"You left the Ironman list.","color":"#FF3F3F"}]
+
 scoreboard players remove #ironman uhc.data.setup 1
 
 tag @s remove uhc.ironman

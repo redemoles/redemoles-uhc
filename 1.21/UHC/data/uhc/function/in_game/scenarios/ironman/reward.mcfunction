@@ -7,8 +7,14 @@
 # @description		Récompense pour le dernier Ironman
 #
 
-tellraw @a[tag=!uhc.ironman] [{"selector":"@s"},{"text":" est Ironman !","color":"#FFE73F"}]
-tellraw @s [{"text":"Tu es le dernier Ironman ! Cela mérite une petite récompense !","color":"#3FFFFF"}]
+# Msg FRA
+tellraw @a[scores={uhc.players.lang=1},tag=!uhc.ironman] [{"selector":"@s"},{"text":" est Ironman !","color":"#FFE73F"}]
+tellraw @s[scores={uhc.players.lang=1}] [{"text":"Tu es le dernier Ironman ! Cela mérite une petite récompense !","color":"#3FFFFF"}]
+
+# Msg ENG
+tellraw @a[scores={uhc.players.lang=2},tag=!uhc.ironman] [{"selector":"@s"},{"text":" is Ironman !","color":"#FFE73F"}]
+tellraw @s[scores={uhc.players.lang=2}] [{"text":"You are the last Ironman! You deserve a little reward!","color":"#3FFFFF"}]
+
 give @s golden_apple 2
 
 scoreboard players operation #team uhc.id.teams = @s uhc.id.teams

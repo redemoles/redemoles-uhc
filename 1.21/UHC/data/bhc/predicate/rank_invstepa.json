@@ -2,7 +2,7 @@
 	"condition": "minecraft:entity_scores",
 	"entity": "this",
 	"scores": {
-		"bhc.invStepA": {
+		"bhc.invStageA": {
 			"min": {
 				"type": "minecraft:score",
 				"target": {

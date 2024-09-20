@@ -10,7 +10,11 @@
 scoreboard players set @s uhc.scenario.best_pve.tick 0
 scoreboard players add @s uhc.scenario.best_pve.reward 22
 
-tellraw @s [{"text":"Vous venez de récupérer un coeur !","color":"#FFE73F"}]
+# Msg FRA
+tellraw @s[scores={uhc.players.lang=1}] [{"text":"Vous venez de récupérer un coeur !","color":"#FFE73F"}]
+
+# Msg ENG
+tellraw @s[scores={uhc.players.lang=2}] [{"text":"You just gain one heart !","color":"#FFE73F"}]
 
 #data modify storage uhc:best_pve input set from entity @s {max_health:{"score":{"name":"@s","objective":"uhc.scenario.best_pve.reward"}}}
 

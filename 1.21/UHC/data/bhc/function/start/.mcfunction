@@ -19,8 +19,8 @@ give @a[tag=uhc.player] oak_boat
 summon marker 1 0 1 {Tags:["Selector"]}
 
 # Intégration des joueurs aux scores BHC
-scoreboard players set @a[tag=uhc.player] bhc.invStepA 0
-scoreboard players set @a[tag=uhc.player] bhc.invStepB 0
+scoreboard players set @a[tag=uhc.player] bhc.invStageA 0
+scoreboard players set @a[tag=uhc.player] bhc.invStageB 0
 scoreboard players set @a[tag=uhc.player] bhc.invKills 0
 scoreboard players set @a[tag=uhc.player] bhc.invDeath 0
 scoreboard players set @a[tag=uhc.player] uhc.players.lives 3

@@ -13,14 +13,14 @@
 scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
 
 # Classement Étape A → Affichage pour le message de fin
-scoreboard players operation @a[predicate=uhc:id_teams] bhc.invStepA = @s bhc.invStepA
-scoreboard players operation @a[predicate=uhc:id_teams] bhc.invStepA /= #1m bhc.data
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.invStageA = @s bhc.invStageA
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.invStageA /= #1m bhc.data
 scoreboard players operation @a[predicate=uhc:id_teams] bhc.invSA = @s bhc.invSA
 scoreboard players operation @a[predicate=uhc:id_teams] bhc.CA = @s bhc.CA
 
 # Classement Étape B → Affichage pour le message de fin
-scoreboard players operation @a[predicate=uhc:id_teams] bhc.invStepB = @s bhc.invStepB
-scoreboard players operation @a[predicate=uhc:id_teams] bhc.invStepB /= #1m bhc.data
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.invStageB = @s bhc.invStageB
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.invStageB /= #1m bhc.data
 scoreboard players operation @a[predicate=uhc:id_teams] bhc.invSB = @s bhc.invSB
 scoreboard players operation @a[predicate=uhc:id_teams] bhc.CB = @s bhc.CB
 
@@ -45,7 +45,7 @@ scoreboard players operation @a[predicate=uhc:id_teams] bhc.CT = @s bhc.CT
 function bhc:timer/marker_tick with entity @s data
 
 # Scores → Affichage pour le message de fin
-$scoreboard players operation #max bhc.StepA > $(name) bhc.StepA
-$scoreboard players operation #max bhc.StepB > $(name) bhc.StepB
+$scoreboard players operation #max bhc.StageA > $(name) bhc.StageA
+$scoreboard players operation #max bhc.StageB > $(name) bhc.StageB
 $scoreboard players operation #max bhc.Kills > $(name) bhc.Kills
 $scoreboard players operation #max bhc.Death > $(name) bhc.Death

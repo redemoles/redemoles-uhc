@@ -10,9 +10,13 @@
 ## Équipe sélectionnée
 scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
 
-## Message
-execute unless score #bhc uhc.gamemode matches 1 run tellraw @a[scores={uhc.players.lives=2},predicate=uhc:id_teams] [{"text":"[","color":"gray","bold":true},{"text":"UHC","color":"white"},{"text":"]","color":"gray"},{"text":" Le nombre de vies maximum descend à 1 !","color":"#FF3F3F","bold":false}]
-execute if score #bhc uhc.gamemode matches 1 run tellraw @a[scores={uhc.players.lives=2},predicate=uhc:id_teams] [{"text":"[","color":"#DFC300","bold":true},{"text":"Bingo","color":"#BF7FFF"},{"text":"UHC","color":"#9F3FFF"},{"text":"]","color":"#DFC300"},{"text":" Le nombre de vies maximum descend à 1 !","color":"#FF3F3F","bold":false}]
+# Msg FRA
+execute unless score #bhc uhc.gamemode matches 1 run tellraw @a[scores={uhc.players.lives=2,uhc.players.lang=1},predicate=uhc:id_teams] [{"text":"[","color":"gray","bold":true},{"text":"UHC","color":"white"},{"text":"]","color":"gray"},{"text":" Le nombre de vies maximum descend à 1 !","color":"#FF3F3F","bold":false}]
+execute if score #bhc uhc.gamemode matches 1 run tellraw @a[scores={uhc.players.lives=2,uhc.players.lang=1},predicate=uhc:id_teams] [{"text":"[","color":"#DFC300","bold":true},{"text":"Bingo","color":"#BF7FFF"},{"text":"UHC","color":"#9F3FFF"},{"text":"]","color":"#DFC300"},{"text":" Le nombre de vies maximum descend à 1 !","color":"#FF3F3F","bold":false}]
+
+# Msg ENG
+execute unless score #bhc uhc.gamemode matches 1 run tellraw @a[scores={uhc.players.lives=2,uhc.players.lang=2},predicate=uhc:id_teams] [{"text":"[","color":"gray","bold":true},{"text":"UHC","color":"white"},{"text":"]","color":"gray"},{"text":" The maximum number of lives drops to 1 !","color":"#FF3F3F","bold":false}]
+execute if score #bhc uhc.gamemode matches 1 run tellraw @a[scores={uhc.players.lives=2,uhc.players.lang=2},predicate=uhc:id_teams] [{"text":"[","color":"#DFC300","bold":true},{"text":"Bingo","color":"#BF7FFF"},{"text":"UHC","color":"#9F3FFF"},{"text":"]","color":"#DFC300"},{"text":" The maximum number of lives drops to 1 !","color":"#FF3F3F","bold":false}]
 
 ## Récompense
 # Tous les modes de jeu

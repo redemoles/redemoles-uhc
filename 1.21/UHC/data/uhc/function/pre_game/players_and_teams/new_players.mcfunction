@@ -28,3 +28,4 @@ advancement revoke @s everything
 experience set @s 0 levels
 experience set @s 0 points
 scoreboard players set @s uhc.players.online 1
+scoreboard players set @s uhc.players.lang 1
