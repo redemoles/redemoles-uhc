@@ -1,0 +1,14 @@
+{
+	"pack": {
+		"pack_format": 48,
+		"description": "Datapack UHC pour MC 1.21 - par Redemoles [v1.2.8]"
+	},
+	"filter": {
+		"block": [
+			{
+				"namespace": "minecraft",
+				"path": "advancement"
+			}
+		]
+	}
+}
