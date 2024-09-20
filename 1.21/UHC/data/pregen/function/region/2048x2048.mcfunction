@@ -1,3 +1,15 @@
+
+#> pregen:region/2048x2048
+#
+# @within			#minecraft:load
+# @executed			default context
+#
+# @description		Fonction de configuration de la partie
+#
+
+execute as @p[tag=host.world_generation.2000] run scoreboard players set #chunk_pregen pregen.world 2261
+
+
 execute if score #chunk_pregen pregen.world matches 2001 run forceload add -1024 -1024 -896 -896
 execute if score #chunk_pregen pregen.world matches 2005 run forceload remove -1024 -1024 -896 -896
 execute if score #chunk_pregen pregen.world matches 2002 run forceload add -1024 -896 -896 -768
@@ -559,3 +571,10 @@ execute if score #chunk_pregen pregen.world matches 2244 run tellraw @a[scores={
 execute if score #chunk_pregen pregen.world matches 2249 run tellraw @a[scores={pregen.world=1..}] [{"text":"Overworld : 2048x2048 (46/48, 95%)"}]
 execute if score #chunk_pregen pregen.world matches 2254 run tellraw @a[scores={pregen.world=1..}] [{"text":"Overworld : 2048x2048 (47/48, 97%)"}]
 execute if score #chunk_pregen pregen.world matches 2260 run tellraw @a[scores={pregen.world=1..}] [{"text":"Overworld : 2048x2048 (48/48, 100%)"}]
+
+execute if score #chunk_pregen pregen.world matches 2261 run tellraw @a[scores={pregen.world=1..}] [{"text":"La zone de 2048x2048 a entièrement été générée"}]
+execute if score #chunk_pregen pregen.world matches 2261 run tag @a[scores={pregen.world=1..}] add host.world_generation.2000
+execute if score #chunk_pregen pregen.world matches 2261 if score #world_generation uhc.host.menu matches 1 run function uhc:pre_game/menu/load/world_generation/
+
+execute if score #chunk_pregen pregen.world matches 2261 if score @p[scores={pregen.world=1..}] pregen.world matches 4 run scoreboard players set #chunk_pregen pregen.world 3999
+execute if score #chunk_pregen pregen.world matches 2261 if score @p[scores={pregen.world=1..}] pregen.world matches 2 run scoreboard players set #chunk_pregen pregen.world 5999

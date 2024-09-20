@@ -6,7 +6,7 @@ FORCELOAD_ZONE: int = 128
 DESTINATION: str = "output.txt"
 NB_MESSAGES: int = 48
 FORCELOAD_DELAY: int = 4
-STARTING_TICK: int = 4000
+STARTING_TICK: int = 2000
 
 # Util function
 def is_ignored(x) -> bool:
@@ -41,9 +41,10 @@ with open(DESTINATION, "w") as f:
 			f.write(f"execute if score #chunk_pregen pregen.world matches {i+FORCELOAD_DELAY} run forceload remove {x} {y} {upperX} {upperY}\n")
 	
 	# Messages
-	for i in range(1, NB_MESSAGES+1):
+	for i in range(0, NB_MESSAGES+1):
 		progress = i/NB_MESSAGES
+		size = ZONE * 2
 		tick = int(progress * total_forceloads) + FORCELOAD_DELAY + STARTING_TICK
 		percentage = int(progress * 100)
-		f.write(f'execute if score #chunk_pregen pregen.world matches {tick} run tellraw @a[scores={{pregen.world=1..}}] [{{"text":"Étape 2 : 4000x4000 ({i}/{NB_MESSAGES}, {percentage}%)"}}]\n')
+		f.write(f'execute if score #chunk_pregen pregen.world matches {tick} run tellraw @a[scores={{pregen.world=1..}}] [{{"text":"Overworld : {size}x{size} ({i}/{NB_MESSAGES}, {percentage}%)"}}]\n')
 

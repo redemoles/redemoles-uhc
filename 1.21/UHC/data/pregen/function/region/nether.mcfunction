@@ -810,7 +810,7 @@ execute if score #chunk_pregen pregen.world matches 6256 in minecraft:the_nether
 execute if score #chunk_pregen pregen.world matches 6256 in minecraft:the_nether run forceload add -448 -448 -511 -511
 execute if score #chunk_pregen pregen.world matches 6257 in minecraft:the_nether run forceload remove -448 -448 -511 -511
 
-execute if score #chunk_pregen pregen.world matches 6257 run tellraw @a[scores={pregen.world=1..}] [{"text":"Nether : Une zone de 1000x1000 a entièrement été générée", "color":"#FF9F3F"}]
+execute if score #chunk_pregen pregen.world matches 6257 run tellraw @a[scores={pregen.world=1..}] [{"text":"Nether : Une zone de 1024x1024 a entièrement été générée", "color":"#FF9F3F"}]
 
 execute if score #chunk_pregen pregen.world matches 6257 in minecraft:the_end run forceload add 1 1 128 128
 execute if score #chunk_pregen pregen.world matches 6258 in minecraft:the_end run forceload remove 1 1 128 128
@@ -849,7 +849,7 @@ forceload add 0 960
 forceload add 0 -960
 
 
-execute if score #chunk_pregen pregen.world matches 6261 run tellraw @a[scores={pregen.world=1..}] [{"text":"End : Une zone de 250x250 a entièrement été générée", "color":"#9F3FFF"}]
+execute if score #chunk_pregen pregen.world matches 6261 run tellraw @a[scores={pregen.world=1..}] [{"text":"End : Une zone de 256x256 a entièrement été générée", "color":"#9F3FFF"}]
 execute if score #chunk_pregen pregen.world matches 6261 run tellraw @a [{"text":"Génération de la carte terminée"}]
 execute if score #chunk_pregen pregen.world matches 6261 run tag @a[scores={pregen.world=1..}] add host.world_generation.nether
 
