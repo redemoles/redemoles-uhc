@@ -12,7 +12,7 @@ if not os.path.exists("bingo_generator_1b.py"):
 	exit()
 
 # Define configuration
-bingo_size = {"lines": 9, "columns": 9}
+bingo_size = {"lines": 7, "columns": 7}
 bingo_namespace = "bingo_b1"
 bingo_name = "Ruée vers l'or"
 step_number = "2"
