@@ -18,8 +18,8 @@ scoreboard players set #team_first_case bhc.data 1
 scoreboard players set #total_first_case bhc.data 1
 $execute as @p[tag=!bhc.new_adv,advancements={$(namespace):$(line)_$(column)=true},predicate=uhc:id_teams] run scoreboard players set #team_first_case bhc.data 0
 $execute as @p[tag=!bhc.new_adv,advancements={$(namespace):$(line)_$(column)=true}] run scoreboard players set #total_first_case bhc.data 0
-$execute if score #stepb_enabled bhc.data matches $(step) if score #$(namespace)_$(line)_$(column) bhc.case matches 3.. run scoreboard players set #team_first_case bhc.data 0
 $execute if score #stepb_enabled bhc.data matches $(step) if score #team_first_case bhc.data matches 1 run scoreboard players add #$(namespace)_$(line)_$(column) bhc.case 1
+$execute if score #stepb_enabled bhc.data matches $(step) if score #$(namespace)_$(line)_$(column) bhc.case matches 3.. run scoreboard players set #team_first_case bhc.data 0
 # Ligne
 $execute if score #team_first_case bhc.data matches 1 run scoreboard players add @e[type=marker,predicate=uhc:id_teams] bhc.line_$(line) 1
 $scoreboard players operation @s bhc.line_$(line) = @e[type=marker,predicate=uhc:id_teams] bhc.line_$(line)
@@ -74,7 +74,7 @@ tag @s remove bhc.new_adv
 $execute if score #team_first_case bhc.data matches 1 unless score #$(namespace)_$(line)_$(column) bhc.case matches 3.. run advancement grant @a[predicate=uhc:id_teams] only $(namespace):$(line)_$(column)
 
 ## Don de l'advancements à tous les joueurs (Ruée vers l'or)
-$execute if score #stepb_enabled bhc.data matches $(step) if score #$(namespace)_$(line)_$(column) bhc.case matches 3 run advancement grant @a only $(namespace):$(line)_$(column)
+$execute if score #stepb_enabled bhc.data matches $(step) if score #$(namespace)_$(line)_$(column) bhc.case matches 3.. run advancement grant @a only $(namespace):$(line)_$(column)
 
 ## Si FFA → Don du dernier succès non complété d'une ligne/colonne
 $execute if score #TeamSize uhc.data.setup matches 1 if score @s bhc.line_$(line) = #line-1 bhc.data run function bhc:scenarios/01/advancements/ffa_line with storage $(namespace) $(line)_$(column)

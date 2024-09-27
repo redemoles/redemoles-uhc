@@ -7,6 +7,7 @@
 # @description		Function executed every second
 #
 
+execute if score #chunk_pregen pregen.world matches ..1999 run worldborder set 4002
 execute if entity @p[scores={pregen.world=2}] if score #chunk_pregen pregen.world matches ..1999 run scoreboard players set #chunk_pregen pregen.world 2000
 execute if entity @p[scores={pregen.world=4}] if score #chunk_pregen pregen.world matches ..1999 run scoreboard players set #chunk_pregen pregen.world 4000
 
