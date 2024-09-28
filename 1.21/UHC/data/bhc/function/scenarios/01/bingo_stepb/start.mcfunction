@@ -10,6 +10,7 @@
 # Activation du Bingo
 scoreboard players set #bingo_b1_enabled bhc.data 1
 scoreboard players set #stepb_enabled bhc.data 2
+scoreboard players set #case bhc.case 3
 
 # Msg FRA
 tellraw @a[scores={uhc.players.lang=1}] [{"text":"[","color":"#DFC300","bold":true},{"text":"Bingo","color":"#BF7FFF"},{"text":"UHC","color":"#9F3FFF"},{"text":"]","color":"#DFC300"},{"text":" Début de la ","color":"#BF7FFF","bold":false},{"text":"Ruée vers l'or","color":"#9F3FFF","bold":true}]

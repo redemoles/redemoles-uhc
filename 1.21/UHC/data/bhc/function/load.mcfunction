@@ -87,6 +87,8 @@ scoreboard objectives remove bhc.column_7
 scoreboard objectives remove bhc.column_8
 scoreboard objectives remove bhc.column_9
 
+scoreboard objectives remove bhc.random
+
 scoreboard objectives remove bhc.data
 scoreboard objectives remove bhc.ironman
 scoreboard objectives remove bhc.timer
@@ -170,6 +172,8 @@ scoreboard objectives add bhc.column_6 dummy
 scoreboard objectives add bhc.column_7 dummy
 scoreboard objectives add bhc.column_8 dummy
 scoreboard objectives add bhc.column_9 dummy
+
+scoreboard objectives add bhc.random dummy
 
 scoreboard objectives add bhc.data dummy
 scoreboard objectives add bhc.ironman dummy
