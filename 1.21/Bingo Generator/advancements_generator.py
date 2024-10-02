@@ -111,7 +111,7 @@ unobtainable_blocks = [
 	"minecraft:suspicious_sand",
 	"minecraft:suspicious_gravel",
 	"minecraft:bell",
-	"minecraft:grass",
+	"minecraft:tall_grass",
 	"minecraft:ominous_vault",
 ]
 block_should_not_contains = ["command_block", "spawn", "infested", "banner_pattern", "template", "chainmail", "netherite", "frog", "turtle", "head", "sherd", "torchflower", "pitcher", "horse", "music_disc"]

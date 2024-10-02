@@ -24,6 +24,12 @@ scoreboard objectives remove uhc.players.online
 scoreboard objectives add uhc.players.online dummy
 scoreboard players set @a[tag=uhc.player] uhc.players.online 1
 
+## Starter
+execute if score #vanilla uhc.gamemode matches 1 run give @a[tag=uhc.player] minecraft:golden_carrot 64
+execute if score #vanilla uhc.gamemode matches 1 run give @a[tag=uhc.player] minecraft:book 1
+execute if score #fte uhc.gamemode matches 1 run function fte:start/give
+give @a[tag=uhc.player] minecraft:oak_boat 1
+
 ## Scenarios
 # Ironman
 tag @a[tag=uhc.player] add uhc.ironman

@@ -10,11 +10,6 @@
 # Nombre d'équipes en jeu
 scoreboard players operation #Teams bhc.data = #Teams uhc.data.setup
 
-# Vies
-# Désactivation starter food
-scoreboard players set #StarterFood uhc.data.setup 0
-give @a[tag=uhc.player] oak_boat
-
 # Sélecteur de collections Mini-Bingos
 summon marker 1 0 1 {Tags:["Selector"]}
 
