@@ -17,4 +17,5 @@ execute if score #start_stepa bhc.timer = #bingo_ay bhc.timer run function bhc:s
 # Ruée vers l'or
 scoreboard players add #start_stepb bhc.timer 1
 execute if score #start_stepb bhc.timer = #bingo_bs bhc.timer run function bhc:scenarios/01/bingo_stepb/start
+execute if score #start_stepb bhc.timer = #bingo_bk bhc.timer run function bhc:scenarios/01/bingo_stepb/exhaustion
 execute if score #start_stepb bhc.timer = #bingo_by bhc.timer run function bhc:scenarios/01/bingo_stepb/end
