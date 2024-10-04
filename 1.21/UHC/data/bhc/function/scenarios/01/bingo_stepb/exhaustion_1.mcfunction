@@ -7,8 +7,8 @@
 # @description		Epuisement des ressources
 #
 
-$execute unless score #$(namespace)_$(line)_$(column) bhc.case matches -1000.. run scoreboard players set #$(namespace)_$(line)_$(column) bhc.case 1000
 $scoreboard players operation #$(namespace)_$(line)_$(column) bhc.case -= #temp bhc.case
+
 
 
 # Msg FRA

@@ -12,10 +12,10 @@ scoreboard players operation #temp bhc.case -= #exhausted bhc.case
 scoreboard players operation #case bhc.case = #exhausted bhc.case
 
 # Msg FRA
-tellraw @a[scores={uhc.players.lang=1}] [{"text":"Les ressources commencent à ","color":"#FF5F5F","bold":false},{"text":"s'épuiser !\n","color":"#FF3F3F","bold":false}]
+tellraw @a[scores={uhc.players.lang=1}] [{"text":"Les ressources commencent à ","color":"#FF3F3F","bold":false},{"text":"s'épuiser !\n","color":"#FF3F3F","bold":false}]
 
 # Msg ENG
-tellraw @a[scores={uhc.players.lang=2}] [{"text":"Resources start to ","color":"#FF5F5F","bold":false},{"text":"run out!\n","color":"#FF3F3F","bold":false}]
+tellraw @a[scores={uhc.players.lang=2}] [{"text":"Resources start to ","color":"#FF3F3F","bold":false},{"text":"run out!\n","color":"#FF3F3F","bold":false}]
 
 # Mise à jour des advancements
 function bhc:scenarios/01/bingo_stepb/exhaustion_1 with storage bingo_b1 1_1
