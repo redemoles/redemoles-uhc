@@ -21,7 +21,7 @@ execute store result score #reward bhc.random run random value 1..4
 execute if score #total_first_case bhc.data matches 1 if score #reward bhc.random matches 1 run give @p[tag=bhc.new_adv] minecraft:iron_ingot 6
 execute if score #total_first_case bhc.data matches 1 if score #reward bhc.random matches 2 run give @p[tag=bhc.new_adv] minecraft:gold_ingot 4
 execute if score #total_first_case bhc.data matches 1 if score #reward bhc.random matches 3 run give @p[tag=bhc.new_adv] minecraft:diamond 2
-execute if score #total_first_case bhc.data matches 1 if score #reward bhc.random matches 4 run give @p[tag=bhc.new_adv] minecraft:arrow 16
+execute if score #total_first_case bhc.data matches 1 if score #reward bhc.random matches 4 run give @p[tag=bhc.new_adv] minecraft:arrow 12
 give @p[tag=bhc.new_adv] minecraft:gold_ingot 4
 give @p[tag=bhc.new_adv] minecraft:apple
 experience add @p[tag=bhc.new_adv] 1 levels
