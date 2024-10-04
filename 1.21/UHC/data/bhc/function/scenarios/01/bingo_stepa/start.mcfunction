@@ -12,6 +12,7 @@ scoreboard players set #bingo_a1_enabled bhc.data 1
 scoreboard players set #stepa_enabled bhc.data 1
 
 
+
 # Msg FRA
 tellraw @a[scores={uhc.players.lang=1}] [{"text":"[","color":"#DFC300","bold":true},{"text":"Bingo","color":"#BF7FFF"},{"text":"UHC","color":"#9F3FFF"},{"text":"]","color":"#DFC300"},{"text":" Début du Bingo ","color":"#BF7FFF","bold":false},{"text":"Classique","color":"#9F3FFF","bold":true}]
 

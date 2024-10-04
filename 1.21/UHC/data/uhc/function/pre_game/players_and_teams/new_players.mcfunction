@@ -22,7 +22,7 @@ execute as @s[tag=!host] run function uhc:pre_game/menu/reload/players_menu
 attribute @s minecraft:generic.max_health base set 20
 attribute @s minecraft:generic.jump_strength base set 0.42
 attribute @s minecraft:generic.movement_speed base set 0.10000000149011612
-attribute @s minecraft:generic.attack_damage base set 0
+attribute @s minecraft:generic.attack_damage base set 1
 attribute @s minecraft:generic.attack_speed base set 4
 attribute @s minecraft:generic.knockback_resistance base set 0
 effect give @s minecraft:saturation infinite 0 true

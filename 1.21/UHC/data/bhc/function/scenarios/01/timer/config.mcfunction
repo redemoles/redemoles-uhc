@@ -9,14 +9,16 @@
 
 ## BHC → Préparation Config pre-game
 
-# Étape A : Bingo
+# Étape A : Bingo Classique
 scoreboard players set #bingo_as bhc.timer 0
 scoreboard players set #bingo_ay bhc.timer 30
 scoreboard players operation #bingo_ay bhc.timer += #bingo_as bhc.timer
 
-# Étape B : Bingo
+# Étape B : Ruée vers l'or
 scoreboard players set #bingo_bs bhc.timer 40
+scoreboard players set #bingo_bk bhc.timer 5
 scoreboard players set #bingo_by bhc.timer 20
+scoreboard players operation #bingo_bk bhc.timer += #bingo_bs bhc.timer
 scoreboard players operation #bingo_by bhc.timer += #bingo_bs bhc.timer
 
 # Start

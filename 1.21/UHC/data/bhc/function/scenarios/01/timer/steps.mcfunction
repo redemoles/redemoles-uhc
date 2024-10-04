@@ -9,12 +9,12 @@
 
 ## Timer interne
 
-# Bingo A
+# Bingo Classique
 scoreboard players add #start_stepa bhc.timer 1
 execute if score #start_stepa bhc.timer = #bingo_as bhc.timer run function bhc:scenarios/01/bingo_stepa/start
 execute if score #start_stepa bhc.timer = #bingo_ay bhc.timer run function bhc:scenarios/01/bingo_stepa/end
 
-# Bingo B
+# Ruée vers l'or
 scoreboard players add #start_stepb bhc.timer 1
 execute if score #start_stepb bhc.timer = #bingo_bs bhc.timer run function bhc:scenarios/01/bingo_stepb/start
 execute if score #start_stepb bhc.timer = #bingo_by bhc.timer run function bhc:scenarios/01/bingo_stepb/end
