@@ -32,11 +32,11 @@ scoreboard players set #stepa_enabled bhc.data 1
 
 # Msg FRA
 execute if score #bingo_anumber bhc.data matches 1 run tellraw @a[scores={uhc.players.lang=1}] [{"text":"[","color":"#DFC300","bold":true},{"text":"Bingo","color":"#BF7FFF"},{"text":"UHC","color":"#9F3FFF"},{"text":"]","color":"#DFC300"},{"text":" Début de l'Étape ","color":"#BF7FFF","bold":false},{"text":"A","color":"#9F3FFF","bold":true}]
-execute if score #bingo_anumber bhc.data matches 1.. run tellraw @a[scores={uhc.players.lang=1}] [{"text":"[","color":"#DFC300","bold":true},{"text":"Bingo","color":"#BF7FFF"},{"text":"UHC","color":"#9F3FFF"},{"text":"]","color":"#DFC300"},{"text":" Activation du Bingo n°","color":"#BF7FFF","bold":false},{"score":{"name":"#bingo_anumber","objective":"bhc.data"},"color":"#9F3FFF","bold":true}]
+execute if score #bingo_anumber bhc.data matches 1.. run tellraw @a[scores={uhc.players.lang=1}] [{"text":"[","color":"#DFC300","bold":true},{"text":"Bingo","color":"#BF7FFF"},{"text":"UHC","color":"#9F3FFF"},{"text":"]","color":"#DFC300"},{"text":" Activation du Bingo n°","color":"#BF7FFF","bold":false},{"score":{"name":"#bingo_anumber","objective":"bhc.data"},"color":"#9F3FFF","bold":true},{"text":"\n"}]
 
 # Msg ENG
 execute if score #bingo_anumber bhc.data matches 1 run tellraw @a[scores={uhc.players.lang=2}] [{"text":"[","color":"#DFC300","bold":true},{"text":"Bingo","color":"#BF7FFF"},{"text":"UHC","color":"#9F3FFF"},{"text":"]","color":"#DFC300"},{"text":" Start of Stage ","color":"#BF7FFF","bold":false},{"text":"A","color":"#9F3FFF","bold":true}]
-execute if score #bingo_anumber bhc.data matches 1.. run tellraw @a[scores={uhc.players.lang=2}] [{"text":"[","color":"#DFC300","bold":true},{"text":"Bingo","color":"#BF7FFF"},{"text":"UHC","color":"#9F3FFF"},{"text":"]","color":"#DFC300"},{"text":" Activation of Bingo n°","color":"#BF7FFF","bold":false},{"score":{"name":"#bingo_anumber","objective":"bhc.data"},"color":"#9F3FFF","bold":true}]
+execute if score #bingo_anumber bhc.data matches 1.. run tellraw @a[scores={uhc.players.lang=2}] [{"text":"[","color":"#DFC300","bold":true},{"text":"Bingo","color":"#BF7FFF"},{"text":"UHC","color":"#9F3FFF"},{"text":"]","color":"#DFC300"},{"text":" Activation of Bingo n°","color":"#BF7FFF","bold":false},{"score":{"name":"#bingo_anumber","objective":"bhc.data"},"color":"#9F3FFF","bold":true},{"text":"\n"}]
 playsound minecraft:entity.experience_orb.pickup master @a ~ ~ ~ 0.5 1 0.5
 
 # Scoreboard d'affichage

@@ -20,7 +20,6 @@ scoreboard players set @a[tag=uhc.player] bhc.invKills 0
 scoreboard players set @a[tag=uhc.player] bhc.invDeath 0
 scoreboard players set @a[tag=uhc.player] uhc.players.lives 3
 scoreboard players set #lives uhc.players.lives 3
-scoreboard players set #lives_start uhc.players.lives 3
 execute as @e[type=marker,tag=BHC] run function bhc:start/team_config
 
 scoreboard players set #team uhc.id.teams 0

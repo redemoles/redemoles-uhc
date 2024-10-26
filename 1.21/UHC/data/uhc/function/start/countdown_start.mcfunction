@@ -9,15 +9,17 @@
 
 # Message au centre de l'écran
 execute if score #tick_start uhc.data.setup matches 4 if score #vanilla uhc.gamemode matches 1 run title @a title [{"text":"UHC","color":"aqua","bold":false}]
-execute if score #tick_start uhc.data.setup matches 4 if score #bhc uhc.gamemode matches 1 run title @a title [{"text":"Bingo","color":"#9F3FFF","bold":false},{"text":"UHC","color":"#FFE73F","bold":false}]
-execute if score #tick_start uhc.data.setup matches 4 if score #fte uhc.gamemode matches 1 run title @a title [{"text":"Fate","color":"#FFFFFF","bold":false},{"text":"UHC","color":"#E73F3F","bold":false}]
-execute if score #tick_start uhc.data.setup matches 4 if score #nzl uhc.gamemode matches 1 run title @a title [{"text":"Nuzlocke","color":"#3F9FFF","bold":false},{"text":"UHC","color":"#FFE73F","bold":false}]
-execute if score #tick_start uhc.data.setup matches 4 if score #uau uhc.gamemode matches 1 run title @a title [{"text":"Ultra Arrow","color":"#E73FFF","bold":false},{"text":"UHC","color":"#FFE73F","bold":false}]
+execute if score #tick_start uhc.data.setup matches 4 if score #bhc uhc.gamemode matches 1 run title @a title [{"text":"Bingo","color":"#9F3FFF","bold":false},{"text":" UHC","color":"#FFE73F","bold":false}]
+execute if score #tick_start uhc.data.setup matches 4 if score #fte uhc.gamemode matches 1 run title @a title [{"text":"Fate","color":"#FFFFFF","bold":false},{"text":" UHC","color":"#E73F3F","bold":false}]
+execute if score #tick_start uhc.data.setup matches 4 if score #nzl uhc.gamemode matches 1 run title @a title [{"text":"Nuzlocke","color":"#3F9FFF","bold":false},{"text":" UHC","color":"#FFE73F","bold":false}]
+execute if score #tick_start uhc.data.setup matches 4 if score #prv uhc.gamemode matches 1 run title @a title [{"text":"P","color":"#3F3FFF","bold":false},{"text":"R","color":"#FF3F3F","bold":false},{"text":"V","color":"#3FCF3F","bold":false},{"text":" UHC","color":"#FFFFFF","bold":false}]
+execute if score #tick_start uhc.data.setup matches 4 if score #uau uhc.gamemode matches 1 run title @a title [{"text":"Ultra Arrow","color":"#E73FFF","bold":false},{"text":" UHC","color":"#FFE73F","bold":false}]
 execute if score #tick_start uhc.data.setup matches 4 run title @a[scores={uhc.players.lang=1}] subtitle [{"text":" Démarrage en cours ! ","color":"white","bold":false}]
 execute if score #tick_start uhc.data.setup matches 4 run title @a[scores={uhc.players.lang=2}] subtitle [{"text":" Start in progress! ","color":"white","bold":false}]
 
 # Musique → auto-config de la partie → start
 execute if score #tick_start uhc.data.setup matches 4 run playsound minecraft:block.note_block.chime master @a ~ ~ ~ 100 1 1
+execute if score #tick_start uhc.data.setup matches 4 run function uhc:start/forceload
 execute if score #tick_start uhc.data.setup matches 81 run playsound minecraft:item.trident.riptide_3 master @a ~ ~ ~ 0.8 1 1
 execute if score #tick_start uhc.data.setup matches 80 run title @a clear
 execute if score #tick_start uhc.data.setup matches 80 run function uhc:start/setup_players

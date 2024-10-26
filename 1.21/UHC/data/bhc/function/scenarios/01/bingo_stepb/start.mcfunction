@@ -14,10 +14,10 @@ scoreboard players set #case bhc.case 1000
 scoreboard players set #exhausted bhc.case 3
 
 # Msg FRA
-tellraw @a[scores={uhc.players.lang=1}] [{"text":"[","color":"#DFC300","bold":true},{"text":"Bingo","color":"#BF7FFF"},{"text":"UHC","color":"#9F3FFF"},{"text":"]","color":"#DFC300"},{"text":" Début de la ","color":"#BF7FFF","bold":false},{"text":"Ruée vers l'or","color":"#9F3FFF","bold":true}]
+tellraw @a[scores={uhc.players.lang=1}] [{"text":"[","color":"#DFC300","bold":true},{"text":"Bingo","color":"#BF7FFF"},{"text":"UHC","color":"#9F3FFF"},{"text":"]","color":"#DFC300"},{"text":" Début de la ","color":"#BF7FFF","bold":false},{"text":"Ruée vers l'or\n","color":"#9F3FFF","bold":true}]
 
 # Msg ENG
-tellraw @a[scores={uhc.players.lang=2}] [{"text":"[","color":"#DFC300","bold":true},{"text":"Bingo","color":"#BF7FFF"},{"text":"UHC","color":"#9F3FFF"},{"text":"]","color":"#DFC300"},{"text":" Start of the ","color":"#BF7FFF","bold":false},{"text":"Gold Rush","color":"#9F3FFF","bold":true}]
+tellraw @a[scores={uhc.players.lang=2}] [{"text":"[","color":"#DFC300","bold":true},{"text":"Bingo","color":"#BF7FFF"},{"text":"UHC","color":"#9F3FFF"},{"text":"]","color":"#DFC300"},{"text":" Start of the ","color":"#BF7FFF","bold":false},{"text":"Gold Rush\n","color":"#9F3FFF","bold":true}]
 
 playsound minecraft:entity.experience_orb.pickup master @a ~ ~ ~ 0.5 1 0.5
 

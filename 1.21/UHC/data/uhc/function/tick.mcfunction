@@ -8,7 +8,7 @@
 #
 
 # +1 tick
-scoreboard players add #tick uhc.data.setup 1
+execute unless score #pause uhc.data.setup matches 1 run scoreboard players add #tick uhc.data.setup 1
 execute if score #Minutes uhc.data.display matches -1 run scoreboard players add #tick_start uhc.data.setup 1
 execute if score #tick uhc.data.setup matches 20 run function uhc:in_game/timer/second
 

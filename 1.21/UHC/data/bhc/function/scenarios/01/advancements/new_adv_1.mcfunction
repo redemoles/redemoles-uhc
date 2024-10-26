@@ -25,7 +25,7 @@ $execute if score #total_first_case bhc.data matches 1 if score #stepa_enabled b
 $execute if score #total_first_case bhc.data matches 1 if score #stepb_enabled bhc.data matches $(step) run scoreboard players operation #$(namespace)_$(line)_$(column) bhc.case = #case bhc.case
 #    Ruée vers l'or
 $execute if score #$(namespace)_$(line)_$(column) bhc.case matches ..0 run scoreboard players remove #$(namespace)_$(line)_$(column) bhc.case 1
-$scoreboard players remove #$(namespace)_$(line)_$(column) bhc.case 1
+$execute if score #team_first_case bhc.data matches 1 run scoreboard players remove #$(namespace)_$(line)_$(column) bhc.case 1
 
 # Ligne
 $execute if score #$(namespace)_$(line)_$(column) bhc.case matches 0.. if score #team_first_case bhc.data matches 1 run scoreboard players add @s bhc.line_$(line) 1
