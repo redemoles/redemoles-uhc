@@ -26,6 +26,8 @@ execute if score #vanilla uhc.gamemode matches 1 run tellraw @a[scores={uhc.play
 execute if score #bhc uhc.gamemode matches 1 run tellraw @a[scores={uhc.players.lang=2}] [{"text":"[","color":"#DFC300","bold":true},{"text":"Bingo","color":"#BF7FFF"},{"text":"UHC","color":"#9F3FFF"},{"text":"]","color":"#DFC300"},{"text":" Game starting now!","color":"#FFE73F","bold":true}]
 execute if score #best_pve uhc.scenario matches 1 run tellraw @a[scores={uhc.players.lang=2}] [{"text":"[","color":"#C30000","bold":true},{"text":"Best PvE","color":"#E73F3F"},{"text":"]","color":"#C30000"},{"text":" To see the players list :","color":"#FFEF7F","bold":false},{"text":"\n/trigger best_pve.list set 1","color":"#FFE73F","bold":false}]
 
+tellraw @a [{"text":""}]
+
 execute in minecraft:overworld run function uhc:all_dimension_commands/start
 execute in minecraft:the_nether run function uhc:all_dimension_commands/start
 execute in minecraft:the_end run function uhc:all_dimension_commands/start
