@@ -26,6 +26,7 @@ execute if score #vanilla uhc.gamemode matches 1 run tellraw @s [{"text":"• ",
 execute if score #bhc uhc.gamemode matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Bingo","color":"#9F3FFF","bold":false},{"text":" UHC","color":"#FFE73F","bold":false}]
 execute if score #fte uhc.gamemode matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Fate","color":"#FFFFFF","bold":false},{"text":" UHC","color":"#E73F3F","bold":false}]
 execute if score #nzl uhc.gamemode matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Nuzlocke","color":"#2F5FBF","bold":false},{"text":" UHC","color":"#FFE73F","bold":false}]
+execute if score #prv uhc.gamemode matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"P","color":"#3F3FFF","bold":false},{"text":"R","color":"#FF3F3F","bold":false},{"text":"V","color":"#3FCF3F","bold":false},{"text":" UHC","color":"#FFFFFF","bold":false}]
 execute if score #uau uhc.gamemode matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Ultra Arrow","color":"#E73FFF","bold":false},{"text":" UHC","color":"#FFE73F","bold":false}]
 tellraw @s [{"text":"Scenarios :","color":"#3F9FFF","bold":true}]
 execute if score #assassins uhc.scenario matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Assassins","color":"#3FFFFF","bold":false}]

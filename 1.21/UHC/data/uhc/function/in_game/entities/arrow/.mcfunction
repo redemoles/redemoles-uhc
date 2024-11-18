@@ -1,5 +1,5 @@
 
-#> uhc:in_game/entities/arrow
+#> uhc:in_game/entities/arrow/
 #
 # @within			uhc:in_game/timer/tick
 # @executed			default context
@@ -7,5 +7,5 @@
 # @description		Réduction des dégâts des flèches
 #
 
-execute store result entity @s damage double 0.75 run data get entity @s damage
-tag @s add uhc.checked
+execute as @s[tag=!uhc.checked] run function uhc:in_game/entities/arrow/basic
+execute if score #uau uhc.gamemode matches 1 run function uau:arrow/entity/

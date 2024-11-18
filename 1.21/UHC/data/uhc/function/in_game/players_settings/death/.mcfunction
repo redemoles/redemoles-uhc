@@ -16,13 +16,15 @@ execute if score #bhc uhc.gamemode matches 1 unless score #end uhc.game.end matc
 ## FATE UHC
 execute if score #fte uhc.gamemode matches 1 if score @s uhc.players.lives matches ..0 run function fte:death/
 
+## PRV UHC
+execute if score #prv uhc.gamemode matches 1 if score @s uhc.players.lives matches ..0 run function prv:death/
+
 ## Récompenses au kill, changement paramètres du joueur mort
 function uhc:in_game/players_settings/death/reveal
 execute if score @s uhc.players.lives matches 1.. as @p[scores={uhc.reward.kills=1..}] run function uhc:in_game/players_settings/kill/
 execute if score @s uhc.players.lives matches ..0 run function uhc:in_game/players_settings/death/definitive
 
 ## BHC → Attribution des points de survie (seulement si la partie n'est pas terminée)
-#scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
 execute if score #bhc uhc.gamemode matches 1 unless score #end uhc.game.end matches 1.. run function bhc:scores_calculator/death/bonus
 
 ## Settings Respawn

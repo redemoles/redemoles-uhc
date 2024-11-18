@@ -7,14 +7,13 @@
 # @description		Donne les effets / gamemode aux specs
 #
 
-execute unless entity @s[scores={uhc.players.online=1}] run team leave @s
-execute unless entity @s[scores={uhc.players.online=1}] run clear @s
-execute unless entity @s[scores={uhc.players.online=1}] run effect clear @s
-execute unless entity @s[scores={uhc.players.online=1}] run scoreboard players set @s uhc.players.lang 1
+execute unless entity @s[scores={uhc.players.online=1}] run function uhc:in_game/players_settings/spec/new_player
 
 gamemode spectator @s
 effect give @s minecraft:invisibility infinite 1 true
+
 tag @s add uhc.spec
+tag @s remove uhc.player
 tag @s remove uhc.ironman
 tag @s remove uhc.scenario.best_pve
 scoreboard players set @s uhc.players.death 2

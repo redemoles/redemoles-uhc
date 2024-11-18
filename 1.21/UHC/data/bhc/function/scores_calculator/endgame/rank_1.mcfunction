@@ -18,4 +18,4 @@ execute store result score #count bhc.data if entity @e[type=marker,tag=BHC,tag=
 ## Classement d'équipe
 scoreboard players operation @s bhc.CT += #count bhc.data
 tag @s remove bhc.count
-execute as @s run scoreboard players add @s bhc.CT 17
+scoreboard players add @s bhc.CT 17

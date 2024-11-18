@@ -10,6 +10,8 @@
 ## Préparation des joueurs
 effect clear @a
 clear @a
+experience set @a 0 levels
+experience set @a 0 points
 gamemode adventure @a
 
 effect give @a[tag=uhc.player] resistance infinite 4 true
@@ -25,9 +27,10 @@ scoreboard objectives add uhc.players.online dummy
 scoreboard players set @a[tag=uhc.player] uhc.players.online 1
 
 ## Starter
-execute if score #vanilla uhc.gamemode matches 1 run give @a[tag=uhc.player] minecraft:golden_carrot 64
-execute if score #vanilla uhc.gamemode matches 1 run give @a[tag=uhc.player] minecraft:book 1
+execute if score #vanilla uhc.gamemode matches 1 run give @a[tag=uhc.player] minecraft:golden_carrot 8
 execute if score #fte uhc.gamemode matches 1 run function fte:start/give
+execute if score #nzl uhc.gamemode matches 1 run give @a[tag=uhc.player] minecraft:golden_carrot 8
+execute if score #prv uhc.gamemode matches 1 run give @a[tag=uhc.player] minecraft:golden_carrot 8
 give @a[tag=uhc.player] minecraft:oak_boat 1
 
 ## Scenarios

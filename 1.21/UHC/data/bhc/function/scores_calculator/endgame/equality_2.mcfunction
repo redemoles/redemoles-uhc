@@ -7,13 +7,15 @@
 # @description		Calcul pour départager les équipes aux scores finaux égaux
 #
 
-# Enregistre le score d'équipe
+## Enregistre le score d'équipe
 scoreboard players operation #temp bhc.data = @s bhc.invSR
 scoreboard players add #temp bhc.data 1
+tag @s add bhc.count
 
-# Compte le nombre d'équipe avec un score supérieur à celle sélectionnée
-execute store result score #count bhc.data if entity @e[type=marker,tag=BHC,predicate=bhc:rank_invsr]
+## Compte le nombre d'équipe avec un score supérieur à celle sélectionnée
+execute store result score #count bhc.data if entity @e[type=marker,tag=BHC,tag=!bhc.count,predicate=bhc:rank_invsr]
 
-# Classement d'équipe
+## Classement d'équipe
 scoreboard players operation @s bhc.CR += #count bhc.data
 scoreboard players operation @s bhc.CR *= #-1 bhc.data
+tag @s remove bhc.count

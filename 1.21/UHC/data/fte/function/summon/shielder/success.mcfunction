@@ -9,9 +9,9 @@
 
 ## Give Team, Téléportation
 # Give Team
-tag @s add fte.team.rider
-tag @r[tag=fte.roles.servant,scores={fte.id.teams=0}] add fte.team.rider
-scoreboard players set @a[tag=fte.team.rider] fte.id.teams 9
+tag @s add fte.team.shielder
+tag @r[tag=fte.roles.servant,scores={fte.id.teams=0}] add fte.team.shielder
+scoreboard players set @a[tag=fte.team.shielder] fte.id.teams 9
 # TP + Messages + Son
 tp @p[tag=fte.roles.servant,scores={fte.id.teams=9}] @s
 tellraw @a ["",{"text":"\n"},{"text":"AAAAAAAAA","bold":true,"obfuscated":true,"color":"dark_gray"},{"text":" ","color":"dark_blue"},{"text":"SHIELDER","bold":true,"color":"gold"},{"text":" a été invoqué ","color":"gray"},{"text":"AAAAAAAAA","bold":true,"obfuscated":true,"color":"dark_gray"},{"text":"\n "}]

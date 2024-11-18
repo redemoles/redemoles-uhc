@@ -15,9 +15,9 @@ scoreboard players set #shrink1 uhc.data.setup 110
 scoreboard players set #shrink2 uhc.data.setup 120
 
 # Vies
-scoreboard players set #live_3 uhc.data.setup 0
-scoreboard players set #live_2 uhc.data.setup 0
-scoreboard players set #live_1 uhc.data.setup 0
+scoreboard players operation #live_1 uhc.data.setup = #live_1 uhc.data.display
+scoreboard players operation #live_2 uhc.data.setup = #live_2 uhc.data.display
+scoreboard players operation #live_3 uhc.data.setup = #live_3 uhc.data.display
 
 ## Configuration de la Worldborder
 execute in minecraft:overworld run function uhc:pre_game/config/wb_start

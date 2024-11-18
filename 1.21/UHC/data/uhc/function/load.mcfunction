@@ -10,6 +10,9 @@
 # Ajout du tag de convention à Redemoles
 tag Redemoles add host
 #define storage fte:temp
+#define storage nzl
+#define storage nzl:temp
+#define storage prv:temp
 #define storage uhc:best_pve
 #define storage uhc:settings
 #define storage uhc:spawn

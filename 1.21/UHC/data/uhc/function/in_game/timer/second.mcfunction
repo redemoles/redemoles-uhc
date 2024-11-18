@@ -21,6 +21,10 @@ kill @e[type=item,scores={uhc.timer.entities=150..}]
 ## Kill Phantom
 tp @e[type=minecraft:phantom] 0 -1000 0
 
+## TIMER POUR CHAQUE MODE DE JEU
+
+execute if score #Minutes uhc.data.display matches 0.. if score #nzl uhc.gamemode matches 1 run function nzl:timer/second
+
 ## ALERTES SONORES
 
 execute if score #pve uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches 59 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5

@@ -22,6 +22,8 @@ execute unless score #hotbar_cooldown uhc.data.display matches 1.. if score #van
 execute unless score #hotbar_cooldown uhc.data.display matches 1.. if score #bhc uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. run function bhc:timer/hotbar
 execute unless score #hotbar_cooldown uhc.data.display matches 1.. if score #fte uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. run function fte:timer/hotbar/
 execute unless score #hotbar_cooldown uhc.data.display matches 1.. if score #nzl uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. run function nzl:timer/hotbar/
+execute unless score #hotbar_cooldown uhc.data.display matches 1.. if score #prv uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. run function prv:timer/hotbar/
+execute unless score #hotbar_cooldown uhc.data.display matches 1.. if score #uau uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. run function uau:timer/hotbar/
 
 ## Scenarios
 # Réduction des dégâts des flèches
@@ -65,4 +67,5 @@ execute if entity @p[scores={uhc.game.end=1}] run function uhc:in_game/force_com
 execute if score #bhc uhc.gamemode matches 1 unless score #end uhc.game.end matches 1.. run function bhc:timer/tick
 execute if score #fte uhc.gamemode matches 1 run function fte:timer/tick
 execute if score #nzl uhc.gamemode matches 1 unless score #end uhc.game.end matches 1.. run function nzl:timer/tick
+execute if score #prv uhc.gamemode matches 1 run function prv:timer/tick
 execute if score #uau uhc.gamemode matches 1 run function uau:timer/tick

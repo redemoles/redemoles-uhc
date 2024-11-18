@@ -13,4 +13,4 @@ execute if score @s uhc.data.setup matches 1.. unless score #end uhc.game.end ma
 # Marker name
 data modify storage uhc:temp input set value {name:""}
 data modify storage uhc:temp input set from entity @s data
-execute as @s run function bhc:timer/marker_name with storage uhc:temp input
+function bhc:timer/marker_name with storage uhc:temp input

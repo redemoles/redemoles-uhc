@@ -1,5 +1,5 @@
 
-#> uhc:pre_game/menu/selection/settings/macro_text
+#> uhc:pre_game/menu/selection/settings/macro_text/lives
 #
 # @within			uhc:pre_game/menu/selection/settings/
 #

@@ -4,7 +4,7 @@
 # @within			advancements #uhc:inventory_changed
 # @executed			default context
 #
-# @description		Function executed every tick
+# @description		Suppression d'items interdits
 #
 
 # Exécution de la function seulement si la game n'a pas démarré
@@ -12,6 +12,12 @@ execute if score #tick_start uhc.data.setup matches 0.. run tag @s add uhc.inven
 
 # Ban Items Fate UHC
 execute if entity @s[tag=uhc.inventory_changed] if score #fte uhc.gamemode matches 1 run function fte:inventory/ban_items
+
+# Missing Items Nuzlocke UHC
+execute if entity @s[tag=uhc.inventory_changed] if score #nzl uhc.gamemode matches 1 run function nzl:inventory/missing
+
+# Ban Items PRV UHC
+execute if entity @s[tag=uhc.inventory_changed] if score #prv uhc.gamemode matches 1 run function prv:inventory/ban_items
 
 # Compensation Items
 execute if data entity @s[tag=uhc.inventory_changed] Inventory[{id:"minecraft:enchanted_golden_apple"}] run give @s gold_block 4

@@ -25,6 +25,7 @@ attribute @s minecraft:generic.movement_speed base set 0.10000000149011612
 attribute @s minecraft:generic.attack_damage base set 1
 attribute @s minecraft:generic.attack_speed base set 4
 attribute @s minecraft:generic.knockback_resistance base set 0
+attribute @s minecraft:generic.scale base set 1.0
 effect give @s minecraft:saturation infinite 0 true
 effect give @s minecraft:resistance infinite 4 true
 effect give @s minecraft:weakness infinite 4 true

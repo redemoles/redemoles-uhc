@@ -112,6 +112,9 @@ worldborder set 302
 scoreboard players set #vanilla uhc.gamemode 0
 
 scoreboard players set #ffa uhc.data.display 0
+scoreboard players set #live_1 uhc.data.display 0
+scoreboard players set #live_2 uhc.data.display 0
+scoreboard players set #live_3 uhc.data.display 0
 scoreboard players set #lives uhc.players.lives 1
 
 ## Génération du Lobby
