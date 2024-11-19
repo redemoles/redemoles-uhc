@@ -28,12 +28,6 @@ execute as @a[tag=uhc.player] run scoreboard players operation @s uhc.players.ti
 execute if score #vanilla uhc.gamemode matches 1 in minecraft:overworld run function uhc:pre_game/config/wb_shrinks
 execute if score #vanilla uhc.gamemode matches 1 in minecraft:the_nether run function uhc:pre_game/config/wb_shrinks
 execute if score #vanilla uhc.gamemode matches 1 in minecraft:the_end run function uhc:pre_game/config/wb_shrinks
-execute if score #bhc uhc.gamemode matches 1 in minecraft:overworld run function bhc:start/wb_shrinks
-execute if score #bhc uhc.gamemode matches 1 in minecraft:the_nether run function bhc:start/wb_shrinks
-execute if score #bhc uhc.gamemode matches 1 in minecraft:the_end run function bhc:start/wb_shrinks
-execute if score #fte uhc.gamemode matches 1 in minecraft:overworld run function fte:start/wb_shrinks
-execute if score #fte uhc.gamemode matches 1 in minecraft:the_nether run function fte:start/wb_shrinks
-execute if score #fte uhc.gamemode matches 1 in minecraft:the_end run function fte:start/wb_shrinks
 execute if score #border uhc.data.setup matches 0 run gamerule doMobSpawning false
 
 ## MINUTEUR POUR CHAQUE MODE DE JEU
