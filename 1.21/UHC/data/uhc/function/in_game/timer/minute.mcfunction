@@ -25,9 +25,9 @@ scoreboard players remove #live_2 uhc.data.setup 1
 scoreboard players remove #live_1 uhc.data.setup 1
 execute as @a[tag=uhc.player] run scoreboard players operation @s uhc.players.timer = #Minutes uhc.data.display
 
-execute if score #vanilla uhc.gamemode matches 1 in minecraft:overworld run function uhc:pre_game/config/wb_shrinks
-execute if score #vanilla uhc.gamemode matches 1 in minecraft:the_nether run function uhc:pre_game/config/wb_shrinks
-execute if score #vanilla uhc.gamemode matches 1 in minecraft:the_end run function uhc:pre_game/config/wb_shrinks
+execute in minecraft:overworld run function uhc:pre_game/config/wb_shrinks
+execute in minecraft:the_nether run function uhc:pre_game/config/wb_shrinks
+execute in minecraft:the_end run function uhc:pre_game/config/wb_shrinks
 execute if score #border uhc.data.setup matches 0 run gamerule doMobSpawning false
 
 ## MINUTEUR POUR CHAQUE MODE DE JEU
