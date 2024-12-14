@@ -154,7 +154,7 @@ scoreboard players remove #column-1 {configuration_objective} 1
 	# Write the pack.mcmeta file
 	zip_file.writestr("pack.mcmeta", f"""{{
 	"pack": {{
-		"pack_format": 48,
+		"pack_format": 61,
 		"description": "Generated Bingo on {datetime.date.today().strftime("%Y/%m/%d")}"
 	}}
 }}""")

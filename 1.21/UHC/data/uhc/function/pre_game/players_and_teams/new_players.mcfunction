@@ -19,13 +19,14 @@ effect clear @s
 clear @s
 execute as @s[tag=host] run function uhc:pre_game/menu/reload/host_menu
 execute as @s[tag=!host] run function uhc:pre_game/menu/reload/players_menu
-attribute @s minecraft:generic.max_health base set 20
-attribute @s minecraft:generic.jump_strength base set 0.42
-attribute @s minecraft:generic.movement_speed base set 0.10000000149011612
-attribute @s minecraft:generic.attack_damage base set 1
-attribute @s minecraft:generic.attack_speed base set 4
-attribute @s minecraft:generic.knockback_resistance base set 0
-attribute @s minecraft:generic.scale base set 1.0
+attribute @s minecraft:max_health base set 20
+attribute @s minecraft:jump_strength base set 0.42
+attribute @s minecraft:movement_speed base set 0.10000000149011612
+attribute @s minecraft:attack_damage base set 1
+attribute @s minecraft:attack_speed base set 4
+attribute @s minecraft:knockback_resistance base set 0
+attribute @s minecraft:scale base set 1.0
+attribute @s minecraft:submerged_mining_speed base set 0.2
 effect give @s minecraft:saturation infinite 0 true
 effect give @s minecraft:resistance infinite 4 true
 effect give @s minecraft:weakness infinite 4 true

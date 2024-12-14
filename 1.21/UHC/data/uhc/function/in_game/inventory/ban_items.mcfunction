@@ -14,7 +14,7 @@ execute if score #tick_start uhc.data.setup matches 0.. run tag @s add uhc.inven
 execute if entity @s[tag=uhc.inventory_changed] if score #fte uhc.gamemode matches 1 run function fte:inventory/ban_items
 
 # Missing Items Nuzlocke UHC
-execute if entity @s[tag=uhc.inventory_changed] if score #nzl uhc.gamemode matches 1 run function nzl:inventory/missing
+execute if entity @s[tag=uhc.inventory_changed] if score #nzl uhc.gamemode matches 1 at @s run function nzl:inventory/missing
 
 # Ban Items PRV UHC
 execute if entity @s[tag=uhc.inventory_changed] if score #prv uhc.gamemode matches 1 run function prv:inventory/ban_items

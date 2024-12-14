@@ -34,6 +34,7 @@ scoreboard players set #world_generation uhc.host.menu 0
 
 scoreboard players set #vanilla uhc.gamemode 1
 scoreboard players set #bhc uhc.gamemode 0
+scoreboard players set #dru uhc.gamemode 0
 scoreboard players set #fte uhc.gamemode 0
 scoreboard players set #nzl uhc.gamemode 0
 scoreboard players set #prv uhc.gamemode 0

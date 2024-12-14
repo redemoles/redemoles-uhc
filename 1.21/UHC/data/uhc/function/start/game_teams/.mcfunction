@@ -8,6 +8,9 @@
 #
 
 ## Téléportation
+execute if score #dru uhc.gamemode matches 1 run scoreboard players set @a[tag=uhc.player] uhc.id.spawns 0
+execute unless score #dru uhc.gamemode matches 1 run tag @a[tag=uhc.player] add uhc.id.spawns
+execute unless score #dru uhc.gamemode matches 1 run function uhc:in_game/tp/randomizer_0
 execute as @a[tag=uhc.player] run function uhc:in_game/tp/spawn_start
 
 ## Markers

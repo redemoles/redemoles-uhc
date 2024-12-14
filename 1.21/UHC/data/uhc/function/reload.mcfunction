@@ -40,6 +40,7 @@ scoreboard objectives add best_pve.list trigger
 
 scoreboard objectives remove uhc.id.teams
 scoreboard objectives remove uhc.id.players
+scoreboard objectives remove uhc.id.spawns
 scoreboard objectives remove uhc.game.end
 scoreboard objectives remove uhc.data.arrow
 scoreboard objectives remove uhc.data.display
@@ -66,6 +67,7 @@ scoreboard objectives remove uhc.world.end
 
 scoreboard objectives add uhc.id.teams dummy
 scoreboard objectives add uhc.id.players dummy
+scoreboard objectives add uhc.id.spawns dummy
 scoreboard objectives add uhc.game.end trigger
 scoreboard objectives add uhc.data.arrow minecraft.used:minecraft.bow
 scoreboard objectives add uhc.data.display dummy
@@ -93,6 +95,9 @@ scoreboard objectives setdisplay list uhc.players.health
 kill @e[type=marker]
 kill @e[type=falling_block]
 title @a reset
+
+scoreboard objectives add uhc.id.spawns_check trigger
+execute unless score #new uhc.id.spawns_check matches 1 run function uhc:pre_game/world_check/create_spawns_id
 
 ## Timer pre-game
 scoreboard players set #Minutes uhc.data.display -1
@@ -124,6 +129,7 @@ scoreboard players set #load lobby.data 0
 
 ## Autres modes
 function bhc:load
+function dru:load
 function fte:load
 function nzl:reload/sb
 function prv:load

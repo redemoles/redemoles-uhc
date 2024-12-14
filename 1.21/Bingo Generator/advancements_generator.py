@@ -55,7 +55,7 @@ template = """{
 
 
 # Download a list of blocks
-link = "https://raw.githubusercontent.com/PixiGeko/Minecraft-generated-data/master/1.21/releases/1.21/custom-generated/registries/item.txt"
+link = "https://raw.githubusercontent.com/PixiGeko/Minecraft-generated-data/master/1.21/releases/1.21.4/custom-generated/registries/item.txt"
 temporary_file = "all_blocks_with_drop.json"
 r = requests.get(link)
 blocks = r.content.decode("utf-8").split("\n")

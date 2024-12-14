@@ -10,6 +10,7 @@
 # Message au centre de l'écran
 execute if score #tick_start uhc.data.setup matches 4 if score #vanilla uhc.gamemode matches 1 run title @a title [{"text":"UHC","color":"aqua","bold":false}]
 execute if score #tick_start uhc.data.setup matches 4 if score #bhc uhc.gamemode matches 1 run title @a title [{"text":"Bingo","color":"#9F3FFF","bold":false},{"text":" UHC","color":"#FFE73F","bold":false}]
+execute if score #tick_start uhc.data.setup matches 4 if score #dru uhc.gamemode matches 1 run title @a title [{"text":"Dragon","color":"#5F2FBF","bold":false},{"text":" UHC","color":"#FFE73F","bold":false}]
 execute if score #tick_start uhc.data.setup matches 4 if score #fte uhc.gamemode matches 1 run title @a title [{"text":"Fate","color":"#FFFFFF","bold":false},{"text":" UHC","color":"#E73F3F","bold":false}]
 execute if score #tick_start uhc.data.setup matches 4 if score #nzl uhc.gamemode matches 1 run title @a title [{"text":"Nuzlocke","color":"#3F9FFF","bold":false},{"text":" UHC","color":"#FFE73F","bold":false}]
 execute if score #tick_start uhc.data.setup matches 4 if score #prv uhc.gamemode matches 1 run title @a title [{"text":"P","color":"#3F3FFF","bold":false},{"text":"R","color":"#FF3F3F","bold":false},{"text":"V","color":"#3FCF3F","bold":false},{"text":" UHC","color":"#FFFFFF","bold":false}]
@@ -27,6 +28,9 @@ execute if score #tick_start uhc.data.setup matches 100 run playsound minecraft:
 execute if score #tick_start uhc.data.setup matches 120 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
 execute if score #tick_start uhc.data.setup matches 140 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
 execute if score #tick_start uhc.data.setup matches 159 run function uhc:start/setup_uhc
+
+# TP sol si spawn [0;0]
+execute if score #tick_start uhc.data.setup matches 106 if score #dru uhc.gamemode matches 1 run scoreboard players set @a[tag=uhc.player] uhc.players.tp 1
 
 # Delete lobby avec calcul des ombres réduits
 execute if score #tick_start uhc.data.setup matches 81 run fill -49 238 -49 48 239 -48 air

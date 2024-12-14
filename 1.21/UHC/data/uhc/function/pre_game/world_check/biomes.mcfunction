@@ -18,6 +18,7 @@ tellraw @s [{"text":"SAVANNA","color":"#9FFF3F","clickEvent":{"action":"run_comm
 tellraw @s [{"text":"JUNGLE","color":"#3FCF3F","clickEvent":{"action":"run_command","value":"/locate biome jungle"}}]
 tellraw @s [{"text":"MANGROVE_SWAMP","color":"#3F9F3F","clickEvent":{"action":"run_command","value":"/locate biome mangrove_swamp"}}]
 tellraw @s [{"text":"DARK_FOREST","color":"#6F6F3F","clickEvent":{"action":"run_command","value":"/locate biome dark_forest"}}]
+tellraw @s [{"text":"PALE_GARDEN","color":"#9F9F9F","clickEvent":{"action":"run_command","value":"/locate biome pale_garden"}}]
 tellraw @s [{"text":"CHERRY_GROVE","color":"#FF6FFF","clickEvent":{"action":"run_command","value":"/locate biome cherry_grove"}}]
 tellraw @s [{"text":"GROVE","color":"#6FFFFF","clickEvent":{"action":"run_command","value":"/locate biome grove"}}]
 tellraw @s [{"text":"SNOWY_TAIGA","color":"#3FCF6F","clickEvent":{"action":"run_command","value":"/locate biome snowy_taiga"}}]

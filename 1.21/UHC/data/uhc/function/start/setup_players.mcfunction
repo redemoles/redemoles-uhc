@@ -18,7 +18,7 @@ effect give @a[tag=uhc.player] resistance infinite 4 true
 effect give @a[tag=uhc.player] blindness infinite 4 true
 effect give @a[tag=uhc.player] slowness infinite 9 true
 effect give @a[tag=uhc.player] weakness infinite 9 true
-execute as @a[tag=uhc.player] run attribute @s minecraft:generic.jump_strength base set 0
+execute as @a[tag=uhc.player] run attribute @s jump_strength base set 0
 
 advancement revoke @a everything
 
@@ -28,6 +28,7 @@ scoreboard players set @a[tag=uhc.player] uhc.players.online 1
 
 ## Starter
 execute if score #vanilla uhc.gamemode matches 1 run give @a[tag=uhc.player] minecraft:golden_carrot 8
+execute if score #dru uhc.gamemode matches 1 run give @a[tag=uhc.player] minecraft:golden_carrot 8
 execute if score #fte uhc.gamemode matches 1 run function fte:start/give
 execute if score #nzl uhc.gamemode matches 1 run give @a[tag=uhc.player] minecraft:golden_carrot 8
 execute if score #prv uhc.gamemode matches 1 run give @a[tag=uhc.player] minecraft:golden_carrot 8
@@ -56,7 +57,10 @@ scoreboard players set @a uhc.players.death 0
 execute store result score #Joueurs uhc.data.display if entity @a[tag=uhc.player]
 execute store result score #Joueurs uhc.data.setup if entity @a[tag=uhc.player]
 
-## Id et Markers
+## Dragon UHC
+execute if score #dru uhc.gamemode matches 1 run function dru:start/set_moles
+
+## Id, Markers, Spawns et TP
 execute if score #ffa uhc.data.display matches 0 run function uhc:start/game_teams/
 execute if score #ffa uhc.data.display matches 1.. run function uhc:start/game_ffa/
 

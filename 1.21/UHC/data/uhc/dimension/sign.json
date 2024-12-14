@@ -11,8 +11,7 @@
                     "block": "minecraft:air",
                     "height": 1
                 }
-            ],
-            "structure_overrides": "minecraft:"
+            ]
         }
     }
 }

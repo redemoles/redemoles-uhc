@@ -11,6 +11,7 @@ gamerule sendCommandFeedback true
 gamerule doFireTick false
 gamerule announceAdvancements false
 gamerule doDaylightCycle false
+gamerule doWeatherCycle false
 gamerule doMobSpawning false
 gamerule doImmediateRespawn true
 gamerule spectatorsGenerateChunks true

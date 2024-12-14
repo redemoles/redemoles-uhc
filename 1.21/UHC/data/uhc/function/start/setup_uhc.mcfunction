@@ -11,6 +11,7 @@ scoreboard players set #start uhc.data.setup 1
 
 ## Détection modes de jeu activés
 execute if score #bhc uhc.gamemode matches 1 run function bhc:start/
+execute if score #dru uhc.gamemode matches 1 run function dru:start/
 execute if score #fte uhc.gamemode matches 1 run function fte:start/
 execute if score #nzl uhc.gamemode matches 1 run function nzl:start/
 execute if score #prv uhc.gamemode matches 1 run function prv:start/

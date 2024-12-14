@@ -143,7 +143,7 @@ execute unless score #{bingo_namespace}_enabled {configuration_objective} matche
 	# Write the pack.mcmeta file
 	zip_file.writestr("pack.mcmeta", f"""{{
 	"pack": {{
-		"pack_format": 48,
+		"pack_format": 61,
 		"description": "Generated Bingo on {datetime.date.today().strftime("%Y/%m/%d")}"
 	}}
 }}""")

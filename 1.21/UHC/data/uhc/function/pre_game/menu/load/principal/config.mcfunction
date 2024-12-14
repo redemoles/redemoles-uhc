@@ -24,6 +24,7 @@ tellraw @s[tag=host.check_spawns] [{"text":"• ","color":"#3F9FFF","bold":true}
 tellraw @s [{"text":"Modes de jeu :","color":"#3F9FFF","bold":true}]
 execute if score #vanilla uhc.gamemode matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Vanilla","color":"#DFDFDF","bold":false}]
 execute if score #bhc uhc.gamemode matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Bingo","color":"#9F3FFF","bold":false},{"text":" UHC","color":"#FFE73F","bold":false}]
+execute if score #dru uhc.gamemode matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Dragon","color":"#5F2FBF","bold":false},{"text":" UHC","color":"#FFE73F","bold":false}]
 execute if score #fte uhc.gamemode matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Fate","color":"#FFFFFF","bold":false},{"text":" UHC","color":"#E73F3F","bold":false}]
 execute if score #nzl uhc.gamemode matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Nuzlocke","color":"#2F5FBF","bold":false},{"text":" UHC","color":"#FFE73F","bold":false}]
 execute if score #prv uhc.gamemode matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"P","color":"#3F3FFF","bold":false},{"text":"R","color":"#FF3F3F","bold":false},{"text":"V","color":"#3FCF3F","bold":false},{"text":" UHC","color":"#FFFFFF","bold":false}]
