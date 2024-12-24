@@ -15,7 +15,7 @@ title @s[scores={uhc.timer.respawn=11}] title [{"text":" 1 ","color":"#FF3F3F","
 title @s[scores={uhc.timer.respawn=1}] title [{"text":" GO ! ","color":"#FFE73F","bold":true}]
 title @s[scores={uhc.timer.respawn=1}] subtitle [{"text":"","color":"#FF3F3F","bold":false}]
 
-execute if score #lives uhc.players.lives matches 3 run title @s[scores={uhc.timer.respawn=31,uhc.players.lives=2}] subtitle [{"text":"❤❤","color":"#3FFFFF", "bold":false}, {"text":"❤","color":"#3F9F9F", "bold":false}]
+execute if score #lives uhc.players.lives matches 3 run title @s[scores={uhc.timer.respawn=31,uhc.players.lives=2}] subtitle [{"text":"❤❤","color":"#3FE7FF", "bold":false}, {"text":"❤","color":"#3F9F9F", "bold":false}]
 execute if score #lives uhc.players.lives matches 3 run title @s[scores={uhc.timer.respawn=21,uhc.players.lives=2}] subtitle [{"text":"❤❤","color":"#FFE73F", "bold":false}, {"text":"❤","color":"#3F3F3F", "bold":false}]
 
 execute if score #lives uhc.players.lives matches 3 run title @s[scores={uhc.timer.respawn=31,uhc.players.lives=1}] subtitle [{"text":"❤","color":"#FFE73F", "bold":false}, {"text":"❤","color":"#9F933F", "bold":false}, {"text":"❤","color":"#3F3F3F", "bold":false}]

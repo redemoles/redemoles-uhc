@@ -16,7 +16,7 @@ execute if score #r_shielder_tick fte.artefact.timer matches 1 if score #r_shiel
 data modify block 0 0 0 front_text.messages[0] set value '{"score":{"name":"#shielder","objective":"fte.artefact.timer"}}'
 data modify storage fte:temp interpreted_0 set from block 0 0 0 front_text.messages[0]
 function fte:summon/shielder/tick_1 with storage fte:temp
-execute if score #r_shielder fte.artefact.timer matches 0.. run attribute @p[scores={fte.id.teams=9},tag=fte.roles.servant] generic.max_health base set 22
+execute if score #r_shielder fte.artefact.timer matches 0.. run attribute @p[scores={fte.id.teams=9},tag=fte.roles.servant] max_health base set 22
 
 
 # Fin d'Artéfact

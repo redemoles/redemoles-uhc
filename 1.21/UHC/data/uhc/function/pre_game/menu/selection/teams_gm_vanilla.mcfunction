@@ -20,6 +20,6 @@ execute unless items entity @s inventory.21 *[minecraft:item_name='{"text":"Équ
 execute unless items entity @s inventory.23 *[minecraft:item_name='{"text":"Équipe Violette","color":"dark_purple","italic":false,"bold":true}'] run function uhc:pre_game/menu/load/teams/join/11
 execute unless items entity @s inventory.25 *[minecraft:item_name='{"text":"Équipe Rose","color":"light_purple","italic":false,"bold":true}'] run function uhc:pre_game/menu/load/teams/join/12
 execute unless items entity @s inventory.22 *[minecraft:item_name='{"text":"Spectateurs","color":"#BFBFBF","italic":false,"bold":true}'] run function uhc:pre_game/menu/load/teams/join/spec
-execute if score #teams uhc.host.menu matches 1 unless items entity @s[tag=host] inventory.13 *[minecraft:item_name='{"text":"Configuration","color":"#3FFFFF","italic":false}'] run function uhc:pre_game/menu/load/principal/
+execute if score #teams uhc.host.menu matches 1 unless items entity @s[tag=host] inventory.13 *[minecraft:item_name='{"text":"Configuration","color":"#3FE7FF","italic":false}'] run function uhc:pre_game/menu/load/principal/
 execute as @s[tag=host] if score #teams uhc.host.menu matches 1 run function uhc:pre_game/menu/load/teams/gamemode/vanilla/
 execute as @s[tag=!host] run function uhc:pre_game/menu/load/teams/gamemode/vanilla/

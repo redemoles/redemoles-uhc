@@ -18,7 +18,7 @@ function uhc:pre_game/menu/selection/settings/macro_text/live_2 with storage uhc
 
 execute if score #settings uhc.host.menu matches 3.. unless items entity @s inventory.20 *[minecraft:item_name='{"text":"-10","color":"#CF3F3F","italic":false}'] run function uhc:pre_game/menu/load/settings/1_remove_10
 execute if score #settings uhc.host.menu matches 2.. unless items entity @s inventory.21 *[minecraft:item_name='{"text":"-1","color":"#FF3F3F","italic":false}'] run function uhc:pre_game/menu/load/settings/2_remove_1
-execute if score #settings uhc.host.menu matches 2.. unless items entity @s inventory.23 *[minecraft:item_name='{"text":"+1","color":"#3FFFFF","italic":false}'] run function uhc:pre_game/menu/load/settings/3_add_1
+execute if score #settings uhc.host.menu matches 2.. unless items entity @s inventory.23 *[minecraft:item_name='{"text":"+1","color":"#3FE7FF","italic":false}'] run function uhc:pre_game/menu/load/settings/3_add_1
 execute if score #settings uhc.host.menu matches 3.. unless items entity @s inventory.24 *[minecraft:item_name='{"text":"+10","color":"#3FCFCF","italic":false}'] run function uhc:pre_game/menu/load/settings/4_add_10
 
 execute if score #settings uhc.host.menu matches 1.. unless items entity @s inventory.25 *[minecraft:item_name='{"text":"FERMER","color":"#FF3F3F","italic":false}'] run function uhc:pre_game/menu/load/principal/

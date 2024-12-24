@@ -2,7 +2,7 @@
 #> uhc:in_game/tp/spawn_start
 #
 # @within			bhc:death/death
-# @within			uhc:start/setup_players
+# @within			uhc:start/game_teams/
 #
 # @description		Configuration du timer 
 #
@@ -31,3 +31,4 @@ tp @s[scores={uhc.id.spawns=15}] 0 300 960
 tp @s[scores={uhc.id.spawns=16}] 0 300 -960
 
 scoreboard players set @s uhc.players.tp 1
+execute unless score #start uhc.data.setup matches 1 run function uhc:in_game/tp/spawn_msg

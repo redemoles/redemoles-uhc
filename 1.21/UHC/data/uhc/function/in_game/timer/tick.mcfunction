@@ -17,6 +17,10 @@ execute if score #tick_start uhc.data.setup matches 0..200 run function uhc:star
 execute if score #start uhc.data.setup matches 1 run function uhc:start/countdown_end
 
 ## Hotbar text
+execute store result score #border_size uhc.data.display run worldborder get
+scoreboard players operation #border_size uhc.data.display /= #02 uhc.data.numbers
+scoreboard players remove #border_size uhc.data.display 1
+
 execute if score #hotbar_cooldown uhc.data.display matches 1.. run function uhc:in_game/timer/hotbar_cooldown
 execute unless score #hotbar_cooldown uhc.data.display matches 1.. if score #vanilla uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. run function uhc:in_game/timer/hotbar
 execute unless score #hotbar_cooldown uhc.data.display matches 1.. if score #bhc uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. run function bhc:timer/hotbar
@@ -36,6 +40,9 @@ execute if score #ironman uhc.data.setup matches 1 as @p[tag=uhc.ironman] run fu
 # Best PvE
 execute if score #best_pve uhc.scenario matches 1 as @p[scores={best_pve.list=1}] run function uhc:in_game/scenarios/best_pve/list
 execute if score #best_pve uhc.scenario matches 1 run scoreboard players enable @a best_pve.list
+
+# Cut Clean
+execute if score #cut_clean uhc.scenario matches 1 as @e[type=item,tag=!uhc.cut_clean] run function uhc:in_game/scenarios/cut_clean/tick
 
 ## Réduction de vie automatique
 execute if score #live_2 uhc.data.setup matches 0 if score #lives uhc.players.lives matches 3 as @e[type=marker,tag=UHC] run function uhc:in_game/players_settings/lives_remove/lives_2

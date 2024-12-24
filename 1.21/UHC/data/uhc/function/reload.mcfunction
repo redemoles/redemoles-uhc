@@ -18,10 +18,18 @@ scoreboard objectives remove uhc.gamemode
 scoreboard objectives remove uhc.scenario
 scoreboard objectives remove uhc.scenario.bats
 scoreboard objectives remove uhc.scenario.best_pve.list
-scoreboard objectives remove uhc.scenario.best_pve.tick
 scoreboard objectives remove uhc.scenario.best_pve.reward
+scoreboard objectives remove uhc.scenario.best_pve.tick
+scoreboard objectives remove uhc.scenario.blood_diamond.damage
+scoreboard objectives remove uhc.scenario.blood_diamond.mined
+scoreboard objectives remove uhc.scenario.blood_diamond.temp
+scoreboard objectives remove uhc.scenario.cut_clean.random
+scoreboard objectives remove uhc.scenario.go_to_hell.damage
+scoreboard objectives remove uhc.scenario.go_to_hell.tick
 scoreboard objectives remove uhc.scenario.team_health.player
 scoreboard objectives remove uhc.scenario.team_health.team
+scoreboard objectives remove uhc.scenario.sky_high.damage
+scoreboard objectives remove uhc.scenario.sky_high.tick
 scoreboard objectives remove bhc.scenario
 scoreboard objectives remove nzl.scenario
 
@@ -29,10 +37,19 @@ scoreboard objectives add uhc.gamemode dummy
 scoreboard objectives add uhc.scenario dummy
 scoreboard objectives add uhc.scenario.bats dummy
 scoreboard objectives add uhc.scenario.best_pve.list dummy
-scoreboard objectives add uhc.scenario.best_pve.tick dummy
 scoreboard objectives add uhc.scenario.best_pve.reward dummy
+scoreboard objectives add uhc.scenario.best_pve.tick dummy
+scoreboard objectives add uhc.scenario.blood_diamond.damage dummy
+scoreboard objectives add uhc.scenario.blood_diamond.deepslate minecraft.mined:minecraft.deepslate_diamond_ore
+scoreboard objectives add uhc.scenario.blood_diamond.mined dummy
+scoreboard objectives add uhc.scenario.blood_diamond.temp minecraft.mined:minecraft.diamond_ore
+scoreboard objectives add uhc.scenario.cut_clean.random dummy
+scoreboard objectives add uhc.scenario.go_to_hell.damage dummy
+scoreboard objectives add uhc.scenario.go_to_hell.tick dummy
 scoreboard objectives add uhc.scenario.team_health.player dummy
 scoreboard objectives add uhc.scenario.team_health.team dummy
+scoreboard objectives add uhc.scenario.sky_high.damage dummy
+scoreboard objectives add uhc.scenario.sky_high.tick dummy
 scoreboard objectives add bhc.scenario dummy
 scoreboard objectives add nzl.scenario dummy
 

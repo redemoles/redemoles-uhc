@@ -17,7 +17,7 @@ execute as @p[scores={fte.id.teams=7},tag=fte.item.lancer] unless items entity @
 data modify block 0 0 0 front_text.messages[0] set value '{"score":{"name":"#lancer","objective":"fte.artefact.timer"}}'
 data modify storage fte:temp interpreted_0 set from block 0 0 0 front_text.messages[0]
 function fte:summon/lancer/tick_1 with storage fte:temp
-execute if score #r_lancer fte.artefact.timer matches 0.. run attribute @p[scores={fte.id.teams=7},tag=fte.roles.servant] generic.max_health base set 24
+execute if score #r_lancer fte.artefact.timer matches 0.. run attribute @p[scores={fte.id.teams=7},tag=fte.roles.servant] max_health base set 24
 
 # Fin d'Artéfact
 execute if score #r_lancer_tick fte.artefact.timer matches 1.. if entity @p[tag=fte.roles.servant,scores={fte.id.teams=7}] run function fte:summon/lancer/end

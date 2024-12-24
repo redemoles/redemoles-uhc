@@ -30,7 +30,7 @@ execute if score #settings_lives uhc.host.menu matches 1.. run function uhc:pre_
 
 execute if score #settings uhc.host.menu matches 3.. run item replace entity @s inventory.20 with minecraft:purple_concrete[minecraft:item_name='{"text":"-10","color":"#CF3F3F","italic":false}']
 execute if score #settings uhc.host.menu matches 2.. run item replace entity @s inventory.21 with minecraft:magenta_concrete[minecraft:item_name='{"text":"-1","color":"#FF3F3F","italic":false}']
-execute if score #settings uhc.host.menu matches 2.. run item replace entity @s inventory.23 with minecraft:light_blue_concrete[minecraft:item_name='{"text":"+1","color":"#3FFFFF","italic":false}']
+execute if score #settings uhc.host.menu matches 2.. run item replace entity @s inventory.23 with minecraft:light_blue_concrete[minecraft:item_name='{"text":"+1","color":"#3FE7FF","italic":false}']
 execute if score #settings uhc.host.menu matches 3.. run item replace entity @s inventory.24 with minecraft:cyan_concrete[minecraft:item_name='{"text":"+10","color":"#3FCFCF","italic":false}']
 
 item replace entity @s inventory.25 with minecraft:barrier[minecraft:item_name='{"text":"FERMER","color":"#FF3F3F","italic":false}']

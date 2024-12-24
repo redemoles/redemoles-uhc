@@ -16,6 +16,7 @@ attribute @s minecraft:attack_damage base set 1
 attribute @s minecraft:attack_speed base set 4
 attribute @s minecraft:knockback_resistance base set 0
 attribute @s minecraft:scale base set 1.0
+attribute @s minecraft:fall_damage_multiplier base set 1.0
 attribute @s minecraft:submerged_mining_speed base set 0.2
 
 gamemode spectator @s

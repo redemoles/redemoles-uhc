@@ -11,12 +11,6 @@ scoreboard players operation #temp bhc.case = #case bhc.case
 scoreboard players operation #temp bhc.case -= #exhausted bhc.case
 scoreboard players operation #case bhc.case = #exhausted bhc.case
 
-# Msg FRA
-tellraw @a[scores={uhc.players.lang=1}] [{"text":"Les ressources commencent à ","color":"#FF3F3F","bold":false},{"text":"s'épuiser !\n","color":"#FF3F3F","bold":false}]
-
-# Msg ENG
-tellraw @a[scores={uhc.players.lang=2}] [{"text":"Resources start to ","color":"#FF3F3F","bold":false},{"text":"run out!\n","color":"#FF3F3F","bold":false}]
-
 # Mise à jour des advancements
 function bhc:scenarios/01/bingo_stepb/exhaustion_1 with storage bingo_b1 1_1
 function bhc:scenarios/01/bingo_stepb/exhaustion_1 with storage bingo_b1 1_2
@@ -107,3 +101,9 @@ function bhc:scenarios/01/bingo_stepb/exhaustion_1 with storage bingo_b1 9_6
 function bhc:scenarios/01/bingo_stepb/exhaustion_1 with storage bingo_b1 9_7
 function bhc:scenarios/01/bingo_stepb/exhaustion_1 with storage bingo_b1 9_8
 function bhc:scenarios/01/bingo_stepb/exhaustion_1 with storage bingo_b1 9_9
+
+# Msg FRA
+tellraw @a[scores={uhc.players.lang=1}] [{"text":"\nLes ressources commencent à ","color":"#FF3F3F","bold":false},{"text":"s'épuiser !\n","color":"#FF3F3F","bold":false}]
+
+# Msg ENG
+tellraw @a[scores={uhc.players.lang=2}] [{"text":"\nResources start to ","color":"#FF3F3F","bold":false},{"text":"run out!\n","color":"#FF3F3F","bold":false}]

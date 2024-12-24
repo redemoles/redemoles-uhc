@@ -156,6 +156,10 @@ mangrove = []
 mesa = []
 #mesa = [block for block in blocks if "red_sand" in block]
 
+pale_block = ["pale", "resin", "creaking"]
+pale = []
+#pale = [block for block in blocks if any(x in block for x in pale_block)]
+
 blocks = [block for block in blocks
 		  if block not in unobtainable_blocks		# If the block is not in the unobtainable list
 		  and block not in silk_touch				# And, if the block is in the silk touch list
@@ -164,9 +168,10 @@ blocks = [block for block in blocks
 		  and block not in slime					# And, if the block is in the slime list
 		  and block not in monument					# And, if the block is in the monument list
 		  and block not in the_end					# And, if the block is in the end list
-		  and block not in trial_chamber			# And, if the block is in the end list
+		  and block not in trial_chamber			# And, if the block is in the trial chamber list
 		  and block not in mangrove					# And, if the block is in the mangrove list
 		  and block not in mesa						# And, if the block is in the mesa list
+		  and block not in pale						# And, if the block is in the pale list
 ]
 
 if len(blocks) < number_of_advancements_to_generate:
