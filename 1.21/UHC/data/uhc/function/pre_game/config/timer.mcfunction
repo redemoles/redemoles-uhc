@@ -7,22 +7,27 @@
 # @description		Fonction de configuration des timers dans la partie et de la border
 #
 
-## Préparation Config pre-game
-scoreboard players set #pve uhc.data.setup 2
-scoreboard players set #pvp uhc.data.setup 20
-scoreboard players set #border uhc.data.setup 80
-scoreboard players set #shrink1 uhc.data.setup 110
-scoreboard players set #shrink2 uhc.data.setup 120
-
 # Vies
 scoreboard players operation #live_1 uhc.data.setup = #live_1 uhc.data.display
 scoreboard players operation #live_2 uhc.data.setup = #live_2 uhc.data.display
 scoreboard players operation #live_3 uhc.data.setup = #live_3 uhc.data.display
 
 ## Configuration de la Worldborder
-execute in minecraft:overworld run function uhc:pre_game/config/wb_start
-execute in minecraft:the_nether run function uhc:pre_game/config/wb_start
-execute in minecraft:the_end run function uhc:pre_game/config/wb_start
+scoreboard players operation #border_size_start uhc.data.setup *= #02 uhc.data.numbers
+scoreboard players operation #border_size_end uhc.data.setup *= #02 uhc.data.numbers
+scoreboard players operation #shrink1_size_end uhc.data.setup *= #02 uhc.data.numbers
+scoreboard players operation #shrink2_size_end uhc.data.setup *= #02 uhc.data.numbers
+scoreboard players add #border_size_start uhc.data.setup 2
+scoreboard players add #border_size_end uhc.data.setup 2
+scoreboard players add #shrink1_size_end uhc.data.setup 2
+scoreboard players add #shrink2_size_end uhc.data.setup 2
+scoreboard players operation #border_length uhc.data.setup *= #60 uhc.data.numbers
+scoreboard players operation #shrink1_length uhc.data.setup *= #60 uhc.data.numbers
+scoreboard players operation #shrink2_length uhc.data.setup *= #60 uhc.data.numbers
+execute store result storage uhc:settings border_size int 1 run scoreboard players get #border_size_start uhc.data.setup
+execute in minecraft:overworld run function uhc:pre_game/config/wb_start with storage uhc:settings
+execute in minecraft:the_nether run function uhc:pre_game/config/wb_start with storage uhc:settings
+execute in minecraft:the_end run function uhc:pre_game/config/wb_start with storage uhc:settings
 
 ## Configuration des messages de mort
 # 0 : Message par défaut

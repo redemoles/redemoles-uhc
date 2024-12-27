@@ -8,6 +8,6 @@
 #
 
 # Worldborder
-worldborder set 3002
+$worldborder set $(border_size)
 worldborder center 0.0 0.0
 worldborder warning time 180

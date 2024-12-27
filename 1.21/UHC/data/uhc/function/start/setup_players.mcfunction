@@ -20,6 +20,7 @@ effect give @a[tag=uhc.player] slowness infinite 9 true
 effect give @a[tag=uhc.player] weakness infinite 9 true
 execute as @a[tag=uhc.player] run attribute @s jump_strength base set 0
 execute as @a[tag=uhc.player] run attribute @s minecraft:fall_damage_multiplier base set 1.0
+execute if score #pvp_mod uhc.data.setup matches 1 as @a[tag=uhc.player] run attribute @s minecraft:attack_speed base set 1024
 
 advancement revoke @a everything
 
@@ -70,5 +71,4 @@ execute if score #ffa uhc.data.display matches 1.. run function uhc:start/game_f
 tp @a[tag=uhc.spec] 0 200 0
 
 ## Suppression du lobby
-setblock 0 239 0 air
 function lobby:auto/delete

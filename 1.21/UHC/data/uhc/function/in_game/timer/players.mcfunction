@@ -15,6 +15,11 @@ execute unless score @s uhc.players.online matches 1 run function uhc:in_game/pl
 # Reconnexion d'un joueur
 execute if score @s uhc.players.disconnect matches 1.. run function uhc:in_game/players_settings/reconnect/
 
+# Bouclier
+execute if score #shield uhc.data.setup matches 1..335 if items entity @s weapon.mainhand shield[max_damage=336] run function uhc:in_game/inventory/shield
+execute if score #shield uhc.data.setup matches 1..335 if items entity @s weapon.offhand shield[max_damage=336] run function uhc:in_game/inventory/shield
+execute if score #shield uhc.data.setup matches 0 run clear @s shield
+
 # Effets aux joueurs
 execute if score #pve uhc.data.setup matches ..0 run scoreboard players set @s[scores={uhc.effect.resistance=-1}] uhc.effect.resistance 0
 effect give @s[scores={uhc.effect.resistance=-1}] minecraft:resistance infinite 4 true

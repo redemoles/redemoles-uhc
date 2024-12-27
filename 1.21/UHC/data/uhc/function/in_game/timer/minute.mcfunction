@@ -25,14 +25,22 @@ scoreboard players remove #live_2 uhc.data.setup 1
 scoreboard players remove #live_1 uhc.data.setup 1
 execute as @a[tag=uhc.player] run scoreboard players operation @s uhc.players.timer = #Minutes uhc.data.display
 
-execute in minecraft:overworld run function uhc:pre_game/config/wb_shrinks
-execute in minecraft:the_nether run function uhc:pre_game/config/wb_shrinks
-execute in minecraft:the_end run function uhc:pre_game/config/wb_shrinks
+execute if score #border uhc.data.setup matches 0 store result storage uhc:settings border_size int 1 run scoreboard players get #border_size_end uhc.data.setup
+execute if score #shrink1 uhc.data.setup matches 0 store result storage uhc:settings border_size int 1 run scoreboard players get #shrink1_size_end uhc.data.setup
+execute if score #shrink2 uhc.data.setup matches 0 store result storage uhc:settings border_size int 1 run scoreboard players get #shrink2_size_end uhc.data.setup
+
+execute if score #border uhc.data.setup matches 0 store result storage uhc:settings border_length int 1 run scoreboard players get #border_length uhc.data.setup
+execute if score #shrink1 uhc.data.setup matches 0 store result storage uhc:settings border_length int 1 run scoreboard players get #shrink1_length uhc.data.setup
+execute if score #shrink2 uhc.data.setup matches 0 store result storage uhc:settings border_length int 1 run scoreboard players get #shrink2_length uhc.data.setup
+
+execute in minecraft:overworld run function uhc:pre_game/config/wb_shrinks with storage uhc:settings
+execute in minecraft:the_nether run function uhc:pre_game/config/wb_shrinks with storage uhc:settings
+execute in minecraft:the_end run function uhc:pre_game/config/wb_shrinks with storage uhc:settings
+
 execute if score #border uhc.data.setup matches 0 run gamerule doMobSpawning false
 
-## MINUTEUR POUR CHAQUE MODE DE JEU
-
-execute if score #vanilla uhc.gamemode matches 1 run function uhc:in_game/timer/cooldown
+# Minuteur
+execute if score #vanilla uhc.gamemode matches 1 run function uhc:in_game/timer/cooldown with storage uhc:settings
 execute if score #bhc uhc.gamemode matches 1 run function bhc:timer/minute
 execute if score #nzl uhc.gamemode matches 1 run function nzl:timer/minute
 

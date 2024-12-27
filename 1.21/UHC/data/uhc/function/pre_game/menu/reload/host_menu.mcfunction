@@ -28,6 +28,9 @@ scoreboard players set #teams uhc.host.menu 0
 scoreboard players set #scenarios uhc.host.menu 0
 scoreboard players set #settings uhc.host.menu 0
 scoreboard players set #settings_lives uhc.host.menu 0
+scoreboard players set #settings_pve uhc.host.menu 0
+scoreboard players set #settings_pvp uhc.host.menu 0
+scoreboard players set #settings_border uhc.host.menu 0
 scoreboard players set #start uhc.host.menu 0
 scoreboard players set #world_check uhc.host.menu 0
 scoreboard players set #world_generation uhc.host.menu 0

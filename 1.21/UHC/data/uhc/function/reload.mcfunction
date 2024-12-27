@@ -88,6 +88,7 @@ scoreboard objectives add uhc.id.spawns dummy
 scoreboard objectives add uhc.game.end trigger
 scoreboard objectives add uhc.data.arrow minecraft.used:minecraft.bow
 scoreboard objectives add uhc.data.display dummy
+scoreboard objectives add uhc.data.setup dummy
 scoreboard objectives add uhc.data.numbers dummy
 scoreboard objectives add uhc.host.menu dummy
 scoreboard objectives add uhc.meetup.activate trigger
@@ -139,6 +140,27 @@ scoreboard players set #live_2 uhc.data.display 0
 scoreboard players set #live_3 uhc.data.display 0
 scoreboard players set #lives uhc.players.lives 1
 
+scoreboard players set #shield_percent uhc.data.setup 100
+scoreboard players set #shield uhc.data.setup 336
+scoreboard players set #pvp_mod uhc.data.setup 0
+
+scoreboard players set #pve uhc.data.setup 2
+scoreboard players set #pvp uhc.data.setup 40
+
+scoreboard players set #border_size_start uhc.data.setup 1000
+
+scoreboard players set #border uhc.data.setup 60
+scoreboard players set #border_length uhc.data.setup 20
+scoreboard players set #border_size_end uhc.data.setup 150
+
+scoreboard players set #shrink1 uhc.data.setup 80
+scoreboard players set #shrink1_length uhc.data.setup 5
+scoreboard players set #shrink1_size_end uhc.data.setup 64
+
+scoreboard players set #shrink2 uhc.data.setup 100
+scoreboard players set #shrink2_length uhc.data.setup 5
+scoreboard players set #shrink2_size_end uhc.data.setup 32
+
 ## Génération du Lobby
 scoreboard objectives add lobby.data dummy
 execute unless score #lobby lobby.data matches 1.. run scoreboard players set #lobby lobby.data 1
@@ -178,6 +200,7 @@ scoreboard players set #50 uhc.data.numbers 50
 scoreboard players set #55 uhc.data.numbers 55
 scoreboard players set #60 uhc.data.numbers 60
 scoreboard players set #100 uhc.data.numbers 100
+scoreboard players set #336 uhc.data.numbers 336
 scoreboard players set #1200 uhc.data.numbers 1200
 scoreboard players set #bonus uhc.data.numbers 12000
 scoreboard players set #1m uhc.data.numbers 1000000

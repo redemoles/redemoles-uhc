@@ -5,7 +5,6 @@ function lobby:auto/delete
 # Anti-freeze
 fill -49 238 -49 48 238 48 black_concrete
 fill -49 239 -49 48 239 48 light[level=15]
-setblock 0 239 0 oak_sign
 
 # Lobby Beta
 execute if score #lobby lobby.data matches 0 run place template lobby:beta -15 303 -15

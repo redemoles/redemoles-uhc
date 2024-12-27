@@ -1,5 +1,5 @@
 
-#> uhc:pre_game/menu/load/settings/timer_1/
+#> uhc:pre_game/menu/load/settings/lives/lives_2/
 #
 # @within			uhc:pre_game/menu/selection/
 #

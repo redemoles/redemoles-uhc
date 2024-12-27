@@ -7,6 +7,11 @@
 # @description		Commandes in-game en tick
 #
 
+# +1 tick
+execute unless score #pause uhc.data.setup matches 1 run scoreboard players add #tick uhc.data.setup 1
+execute if score #Minutes uhc.data.display matches -1 run scoreboard players add #tick_start uhc.data.setup 1
+execute if score #tick uhc.data.setup matches 20 run function uhc:in_game/timer/second
+
 ## TP
 # TP un joueur au sol après spawn ou respawn
 execute as @a[scores={uhc.players.tp=1}] at @s positioned over world_surface run tp @s ~ ~ ~

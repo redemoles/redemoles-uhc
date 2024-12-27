@@ -7,10 +7,7 @@
 # @description		Fonction de configuration de la partie
 #
 
-## Création de scoreboard
-
-scoreboard objectives add uhc.data.setup dummy
-gamerule sendCommandFeedback false
+scoreboard players set #start_game uhc.data.setup 1
 
 ## Auto-set de la partie
 execute unless score #Minutes uhc.data.display matches 0.. run scoreboard players set #tick uhc.data.setup 0

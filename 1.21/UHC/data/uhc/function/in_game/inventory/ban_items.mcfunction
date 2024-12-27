@@ -7,7 +7,7 @@
 # @description		Suppression d'items interdits
 #
 
-# Exécution de la function seulement si la game n'a pas démarré
+# Exécution de la function seulement si la game a pas démarré
 execute if score #tick_start uhc.data.setup matches 0.. run tag @s add uhc.inventory_changed
 
 # Ban Items Fate UHC
