@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "smooth_stone"
+		},
+		"title": {
+			"text": "Smooth Stone",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"smooth_stone"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:building/mossy_stone_brick_wall",
+	"rewards": {
+		"function": "aic:advancements/item/smooth_stone"
+	}
+}

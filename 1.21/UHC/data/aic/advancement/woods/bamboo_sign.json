@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "bamboo_sign"
+		},
+		"title": {
+			"text": "Bamboo Sign",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"bamboo_sign"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:woods/bamboo_button",
+	"rewards": {
+		"function": "aic:advancements/item/bamboo_sign"
+	}
+}

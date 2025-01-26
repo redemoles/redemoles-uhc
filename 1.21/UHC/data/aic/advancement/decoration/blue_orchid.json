@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "blue_orchid"
+		},
+		"title": {
+			"text": "Blue Orchid",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"blue_orchid"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:decoration/poppy",
+	"rewards": {
+		"function": "aic:advancements/item/blue_orchid"
+	}
+}

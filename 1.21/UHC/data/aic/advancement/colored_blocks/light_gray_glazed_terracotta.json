@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "light_gray_glazed_terracotta"
+		},
+		"title": {
+			"text": "Light Gray Glazed Terracotta",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"light_gray_glazed_terracotta"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:colored_blocks/white_glazed_terracotta",
+	"rewards": {
+		"function": "aic:advancements/item/light_gray_glazed_terracotta"
+	}
+}

@@ -9,7 +9,7 @@
 
 ## Sélection du joueur et son équipe
 scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
-execute as @e[type=marker,tag=BHC,predicate=uhc:id_teams] run tag @s add bhc.new_adv
+execute as @e[type=marker,tag=UHC,predicate=uhc:id_teams] run tag @s add bhc.new_adv
 tag @s add bhc.new_adv
 
 ## Test si premier joueur de l'équipe et de la game à compléter
@@ -63,7 +63,7 @@ execute if score #team_first_line bhc.data matches 1 run function bhc:scenarios/
 execute if score #team_first_column bhc.data matches 1 run function bhc:scenarios/00/advancements/message_column
 
 ## Désélection du joueur et son équipe
-tag @e[type=marker,tag=BHC] remove bhc.new_adv
+tag @e[type=marker,tag=UHC] remove bhc.new_adv
 tag @s remove bhc.new_adv
 
 ## Don de l'advancements aux alliés

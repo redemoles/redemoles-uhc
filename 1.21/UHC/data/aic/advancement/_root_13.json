@@ -1,0 +1,3012 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:oak_log"
+		},
+		"title": {
+			"text": "Bois",
+			"color": "#3FE7FF",
+			"bold": true
+		},
+		"description": {
+			"text": "",
+			"color": "green"
+		},
+		"background": "minecraft:textures/block/oak_planks.png",
+		"frame": "challenge",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"criteria": {
+		"acacia_sapling": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/acacia_sapling": true
+						}
+					}
+				}
+			}
+		},
+		"acacia_log": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/acacia_log": true
+						}
+					}
+				}
+			}
+		},
+		"acacia_wood": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/acacia_wood": true
+						}
+					}
+				}
+			}
+		},
+		"stripped_acacia_log": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/stripped_acacia_log": true
+						}
+					}
+				}
+			}
+		},
+		"stripped_acacia_wood": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/stripped_acacia_wood": true
+						}
+					}
+				}
+			}
+		},
+		"acacia_planks": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/acacia_planks": true
+						}
+					}
+				}
+			}
+		},
+		"acacia_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/acacia_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"acacia_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/acacia_slab": true
+						}
+					}
+				}
+			}
+		},
+		"acacia_fence": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/acacia_fence": true
+						}
+					}
+				}
+			}
+		},
+		"acacia_fence_gate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/acacia_fence_gate": true
+						}
+					}
+				}
+			}
+		},
+		"acacia_door": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/acacia_door": true
+						}
+					}
+				}
+			}
+		},
+		"acacia_trapdoor": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/acacia_trapdoor": true
+						}
+					}
+				}
+			}
+		},
+		"acacia_pressure_plate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/acacia_pressure_plate": true
+						}
+					}
+				}
+			}
+		},
+		"acacia_button": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/acacia_button": true
+						}
+					}
+				}
+			}
+		},
+		"acacia_sign": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/acacia_sign": true
+						}
+					}
+				}
+			}
+		},
+		"acacia_hanging_sign": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/acacia_hanging_sign": true
+						}
+					}
+				}
+			}
+		},
+		"acacia_boat": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/acacia_boat": true
+						}
+					}
+				}
+			}
+		},
+		"acacia_chest_boat": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/acacia_chest_boat": true
+						}
+					}
+				}
+			}
+		},
+		"acacia_leaves": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/acacia_leaves": true
+						}
+					}
+				}
+			}
+		},
+		"bamboo": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/bamboo": true
+						}
+					}
+				}
+			}
+		},
+		"bamboo_log": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/bamboo_block": true
+						}
+					}
+				}
+			}
+		},
+		"bamboo_wood": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/stripped_bamboo_block": true
+						}
+					}
+				}
+			}
+		},
+		"bamboo_planks": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/bamboo_planks": true
+						}
+					}
+				}
+			}
+		},
+		"bamboo_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/bamboo_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"bamboo_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/bamboo_slab": true
+						}
+					}
+				}
+			}
+		},
+		"bamboo_fence": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/bamboo_fence": true
+						}
+					}
+				}
+			}
+		},
+		"bamboo_fence_gate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/bamboo_fence_gate": true
+						}
+					}
+				}
+			}
+		},
+		"bamboo_door": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/bamboo_door": true
+						}
+					}
+				}
+			}
+		},
+		"bamboo_trapdoor": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/bamboo_trapdoor": true
+						}
+					}
+				}
+			}
+		},
+		"bamboo_pressure_plate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/bamboo_pressure_plate": true
+						}
+					}
+				}
+			}
+		},
+		"bamboo_button": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/bamboo_button": true
+						}
+					}
+				}
+			}
+		},
+		"bamboo_sign": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/bamboo_sign": true
+						}
+					}
+				}
+			}
+		},
+		"bamboo_hanging_sign": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/bamboo_hanging_sign": true
+						}
+					}
+				}
+			}
+		},
+		"bamboo_boat": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/bamboo_raft": true
+						}
+					}
+				}
+			}
+		},
+		"bamboo_chest_boat": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/bamboo_chest_raft": true
+						}
+					}
+				}
+			}
+		},
+		"bamboo_mosaic": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/bamboo_mosaic": true
+						}
+					}
+				}
+			}
+		},
+		"bamboo_mosaic_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/bamboo_mosaic_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"bamboo_mosaic_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/bamboo_mosaic_slab": true
+						}
+					}
+				}
+			}
+		},
+		"birch_sapling": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/birch_sapling": true
+						}
+					}
+				}
+			}
+		},
+		"birch_log": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/birch_log": true
+						}
+					}
+				}
+			}
+		},
+		"birch_wood": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/birch_wood": true
+						}
+					}
+				}
+			}
+		},
+		"stripped_birch_log": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/stripped_birch_log": true
+						}
+					}
+				}
+			}
+		},
+		"stripped_birch_wood": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/stripped_birch_wood": true
+						}
+					}
+				}
+			}
+		},
+		"birch_planks": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/birch_planks": true
+						}
+					}
+				}
+			}
+		},
+		"birch_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/birch_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"birch_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/birch_slab": true
+						}
+					}
+				}
+			}
+		},
+		"birch_fence": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/birch_fence": true
+						}
+					}
+				}
+			}
+		},
+		"birch_fence_gate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/birch_fence_gate": true
+						}
+					}
+				}
+			}
+		},
+		"birch_door": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/birch_door": true
+						}
+					}
+				}
+			}
+		},
+		"birch_trapdoor": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/birch_trapdoor": true
+						}
+					}
+				}
+			}
+		},
+		"birch_pressure_plate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/birch_pressure_plate": true
+						}
+					}
+				}
+			}
+		},
+		"birch_button": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/birch_button": true
+						}
+					}
+				}
+			}
+		},
+		"birch_sign": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/birch_sign": true
+						}
+					}
+				}
+			}
+		},
+		"birch_hanging_sign": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/birch_hanging_sign": true
+						}
+					}
+				}
+			}
+		},
+		"birch_boat": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/birch_boat": true
+						}
+					}
+				}
+			}
+		},
+		"birch_chest_boat": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/birch_chest_boat": true
+						}
+					}
+				}
+			}
+		},
+		"birch_leaves": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/birch_leaves": true
+						}
+					}
+				}
+			}
+		},
+		"cherry_sapling": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/cherry_sapling": true
+						}
+					}
+				}
+			}
+		},
+		"cherry_log": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/cherry_log": true
+						}
+					}
+				}
+			}
+		},
+		"cherry_wood": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/cherry_wood": true
+						}
+					}
+				}
+			}
+		},
+		"stripped_cherry_log": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/stripped_cherry_log": true
+						}
+					}
+				}
+			}
+		},
+		"stripped_cherry_wood": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/stripped_cherry_wood": true
+						}
+					}
+				}
+			}
+		},
+		"cherry_planks": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/cherry_planks": true
+						}
+					}
+				}
+			}
+		},
+		"cherry_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/cherry_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"cherry_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/cherry_slab": true
+						}
+					}
+				}
+			}
+		},
+		"cherry_fence": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/cherry_fence": true
+						}
+					}
+				}
+			}
+		},
+		"cherry_fence_gate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/cherry_fence_gate": true
+						}
+					}
+				}
+			}
+		},
+		"cherry_door": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/cherry_door": true
+						}
+					}
+				}
+			}
+		},
+		"cherry_trapdoor": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/cherry_trapdoor": true
+						}
+					}
+				}
+			}
+		},
+		"cherry_pressure_plate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/cherry_pressure_plate": true
+						}
+					}
+				}
+			}
+		},
+		"cherry_button": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/cherry_button": true
+						}
+					}
+				}
+			}
+		},
+		"cherry_sign": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/cherry_sign": true
+						}
+					}
+				}
+			}
+		},
+		"cherry_hanging_sign": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/cherry_hanging_sign": true
+						}
+					}
+				}
+			}
+		},
+		"cherry_boat": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/cherry_boat": true
+						}
+					}
+				}
+			}
+		},
+		"cherry_chest_boat": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/cherry_chest_boat": true
+						}
+					}
+				}
+			}
+		},
+		"cherry_leaves": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/cherry_leaves": true
+						}
+					}
+				}
+			}
+		},
+		"pink_petals": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/pink_petals": true
+						}
+					}
+				}
+			}
+		},
+		"crimson_fungus": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/crimson_fungus": true
+						}
+					}
+				}
+			}
+		},
+		"crimson_stem": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/crimson_stem": true
+						}
+					}
+				}
+			}
+		},
+		"crimson_hyphae": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/crimson_hyphae": true
+						}
+					}
+				}
+			}
+		},
+		"stripped_crimson_stem": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/stripped_crimson_stem": true
+						}
+					}
+				}
+			}
+		},
+		"stripped_crimson_hyphae": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/stripped_crimson_hyphae": true
+						}
+					}
+				}
+			}
+		},
+		"crimson_planks": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/crimson_planks": true
+						}
+					}
+				}
+			}
+		},
+		"crimson_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/crimson_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"crimson_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/crimson_slab": true
+						}
+					}
+				}
+			}
+		},
+		"crimson_fence": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/crimson_fence": true
+						}
+					}
+				}
+			}
+		},
+		"crimson_fence_gate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/crimson_fence_gate": true
+						}
+					}
+				}
+			}
+		},
+		"crimson_door": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/crimson_door": true
+						}
+					}
+				}
+			}
+		},
+		"crimson_trapdoor": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/crimson_trapdoor": true
+						}
+					}
+				}
+			}
+		},
+		"crimson_pressure_plate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/crimson_pressure_plate": true
+						}
+					}
+				}
+			}
+		},
+		"crimson_button": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/crimson_button": true
+						}
+					}
+				}
+			}
+		},
+		"crimson_sign": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/crimson_sign": true
+						}
+					}
+				}
+			}
+		},
+		"crimson_hanging_sign": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/crimson_hanging_sign": true
+						}
+					}
+				}
+			}
+		},
+		"nether_wart_block": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/nether_wart_block": true
+						}
+					}
+				}
+			}
+		},
+		"dark_oak_sapling": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/dark_oak_sapling": true
+						}
+					}
+				}
+			}
+		},
+		"dark_oak_log": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/dark_oak_log": true
+						}
+					}
+				}
+			}
+		},
+		"dark_oak_wood": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/dark_oak_wood": true
+						}
+					}
+				}
+			}
+		},
+		"stripped_dark_oak_log": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/stripped_dark_oak_log": true
+						}
+					}
+				}
+			}
+		},
+		"stripped_dark_oak_wood": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/stripped_dark_oak_wood": true
+						}
+					}
+				}
+			}
+		},
+		"dark_oak_planks": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/dark_oak_planks": true
+						}
+					}
+				}
+			}
+		},
+		"dark_oak_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/dark_oak_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"dark_oak_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/dark_oak_slab": true
+						}
+					}
+				}
+			}
+		},
+		"dark_oak_fence": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/dark_oak_fence": true
+						}
+					}
+				}
+			}
+		},
+		"dark_oak_fence_gate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/dark_oak_fence_gate": true
+						}
+					}
+				}
+			}
+		},
+		"dark_oak_door": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/dark_oak_door": true
+						}
+					}
+				}
+			}
+		},
+		"dark_oak_trapdoor": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/dark_oak_trapdoor": true
+						}
+					}
+				}
+			}
+		},
+		"dark_oak_pressure_plate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/dark_oak_pressure_plate": true
+						}
+					}
+				}
+			}
+		},
+		"dark_oak_button": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/dark_oak_button": true
+						}
+					}
+				}
+			}
+		},
+		"dark_oak_sign": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/dark_oak_sign": true
+						}
+					}
+				}
+			}
+		},
+		"dark_oak_hanging_sign": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/dark_oak_hanging_sign": true
+						}
+					}
+				}
+			}
+		},
+		"dark_oak_boat": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/dark_oak_boat": true
+						}
+					}
+				}
+			}
+		},
+		"dark_oak_chest_boat": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/dark_oak_chest_boat": true
+						}
+					}
+				}
+			}
+		},
+		"dark_oak_leaves": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/dark_oak_leaves": true
+						}
+					}
+				}
+			}
+		},
+		"stick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/stick": true
+						}
+					}
+				}
+			}
+		},
+		"jungle_sapling": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/jungle_sapling": true
+						}
+					}
+				}
+			}
+		},
+		"jungle_log": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/jungle_log": true
+						}
+					}
+				}
+			}
+		},
+		"jungle_wood": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/jungle_wood": true
+						}
+					}
+				}
+			}
+		},
+		"stripped_jungle_log": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/stripped_jungle_log": true
+						}
+					}
+				}
+			}
+		},
+		"stripped_jungle_wood": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/stripped_jungle_wood": true
+						}
+					}
+				}
+			}
+		},
+		"jungle_planks": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/jungle_planks": true
+						}
+					}
+				}
+			}
+		},
+		"jungle_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/jungle_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"jungle_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/jungle_slab": true
+						}
+					}
+				}
+			}
+		},
+		"jungle_fence": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/jungle_fence": true
+						}
+					}
+				}
+			}
+		},
+		"jungle_fence_gate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/jungle_fence_gate": true
+						}
+					}
+				}
+			}
+		},
+		"jungle_door": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/jungle_door": true
+						}
+					}
+				}
+			}
+		},
+		"jungle_trapdoor": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/jungle_trapdoor": true
+						}
+					}
+				}
+			}
+		},
+		"jungle_pressure_plate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/jungle_pressure_plate": true
+						}
+					}
+				}
+			}
+		},
+		"jungle_button": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/jungle_button": true
+						}
+					}
+				}
+			}
+		},
+		"jungle_sign": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/jungle_sign": true
+						}
+					}
+				}
+			}
+		},
+		"jungle_hanging_sign": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/jungle_hanging_sign": true
+						}
+					}
+				}
+			}
+		},
+		"jungle_boat": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/jungle_boat": true
+						}
+					}
+				}
+			}
+		},
+		"jungle_chest_boat": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/jungle_chest_boat": true
+						}
+					}
+				}
+			}
+		},
+		"jungle_leaves": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/jungle_leaves": true
+						}
+					}
+				}
+			}
+		},
+		"mangrove_propagule": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/mangrove_propagule": true
+						}
+					}
+				}
+			}
+		},
+		"mangrove_log": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/mangrove_log": true
+						}
+					}
+				}
+			}
+		},
+		"mangrove_wood": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/mangrove_wood": true
+						}
+					}
+				}
+			}
+		},
+		"stripped_mangrove_log": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/stripped_mangrove_log": true
+						}
+					}
+				}
+			}
+		},
+		"stripped_mangrove_wood": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/stripped_mangrove_wood": true
+						}
+					}
+				}
+			}
+		},
+		"mangrove_planks": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/mangrove_planks": true
+						}
+					}
+				}
+			}
+		},
+		"mangrove_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/mangrove_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"mangrove_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/mangrove_slab": true
+						}
+					}
+				}
+			}
+		},
+		"mangrove_fence": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/mangrove_fence": true
+						}
+					}
+				}
+			}
+		},
+		"mangrove_fence_gate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/mangrove_fence_gate": true
+						}
+					}
+				}
+			}
+		},
+		"mangrove_door": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/mangrove_door": true
+						}
+					}
+				}
+			}
+		},
+		"mangrove_trapdoor": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/mangrove_trapdoor": true
+						}
+					}
+				}
+			}
+		},
+		"mangrove_pressure_plate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/mangrove_pressure_plate": true
+						}
+					}
+				}
+			}
+		},
+		"mangrove_button": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/mangrove_button": true
+						}
+					}
+				}
+			}
+		},
+		"mangrove_sign": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/mangrove_sign": true
+						}
+					}
+				}
+			}
+		},
+		"mangrove_hanging_sign": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/mangrove_hanging_sign": true
+						}
+					}
+				}
+			}
+		},
+		"mangrove_boat": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/mangrove_boat": true
+						}
+					}
+				}
+			}
+		},
+		"mangrove_chest_boat": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/mangrove_chest_boat": true
+						}
+					}
+				}
+			}
+		},
+		"mangrove_leaves": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/mangrove_leaves": true
+						}
+					}
+				}
+			}
+		},
+		"mangrove_roots": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/mangrove_roots": true
+						}
+					}
+				}
+			}
+		},
+		"muddy_mangrove_roots": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/muddy_mangrove_roots": true
+						}
+					}
+				}
+			}
+		},
+		"oak_sapling": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/oak_sapling": true
+						}
+					}
+				}
+			}
+		},
+		"oak_log": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/oak_log": true
+						}
+					}
+				}
+			}
+		},
+		"oak_wood": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/oak_wood": true
+						}
+					}
+				}
+			}
+		},
+		"stripped_oak_log": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/stripped_oak_log": true
+						}
+					}
+				}
+			}
+		},
+		"stripped_oak_wood": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/stripped_oak_wood": true
+						}
+					}
+				}
+			}
+		},
+		"oak_planks": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/oak_planks": true
+						}
+					}
+				}
+			}
+		},
+		"oak_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/oak_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"oak_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/oak_slab": true
+						}
+					}
+				}
+			}
+		},
+		"oak_fence": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/oak_fence": true
+						}
+					}
+				}
+			}
+		},
+		"oak_fence_gate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/oak_fence_gate": true
+						}
+					}
+				}
+			}
+		},
+		"oak_door": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/oak_door": true
+						}
+					}
+				}
+			}
+		},
+		"oak_trapdoor": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/oak_trapdoor": true
+						}
+					}
+				}
+			}
+		},
+		"oak_pressure_plate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/oak_pressure_plate": true
+						}
+					}
+				}
+			}
+		},
+		"oak_button": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/oak_button": true
+						}
+					}
+				}
+			}
+		},
+		"oak_sign": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/oak_sign": true
+						}
+					}
+				}
+			}
+		},
+		"oak_hanging_sign": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/oak_hanging_sign": true
+						}
+					}
+				}
+			}
+		},
+		"oak_boat": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/oak_boat": true
+						}
+					}
+				}
+			}
+		},
+		"oak_chest_boat": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/oak_chest_boat": true
+						}
+					}
+				}
+			}
+		},
+		"oak_leaves": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/oak_leaves": true
+						}
+					}
+				}
+			}
+		},
+		"charcoal": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/charcoal": true
+						}
+					}
+				}
+			}
+		},
+		"pale_oak_sapling": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/pale_oak_sapling": true
+						}
+					}
+				}
+			}
+		},
+		"pale_oak_log": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/pale_oak_log": true
+						}
+					}
+				}
+			}
+		},
+		"pale_oak_wood": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/pale_oak_wood": true
+						}
+					}
+				}
+			}
+		},
+		"stripped_pale_oak_log": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/stripped_pale_oak_log": true
+						}
+					}
+				}
+			}
+		},
+		"stripped_pale_oak_wood": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/stripped_pale_oak_wood": true
+						}
+					}
+				}
+			}
+		},
+		"pale_oak_planks": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/pale_oak_planks": true
+						}
+					}
+				}
+			}
+		},
+		"pale_oak_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/pale_oak_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"pale_oak_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/pale_oak_slab": true
+						}
+					}
+				}
+			}
+		},
+		"pale_oak_fence": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/pale_oak_fence": true
+						}
+					}
+				}
+			}
+		},
+		"pale_oak_fence_gate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/pale_oak_fence_gate": true
+						}
+					}
+				}
+			}
+		},
+		"pale_oak_door": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/pale_oak_door": true
+						}
+					}
+				}
+			}
+		},
+		"pale_oak_trapdoor": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/pale_oak_trapdoor": true
+						}
+					}
+				}
+			}
+		},
+		"pale_oak_pressure_plate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/pale_oak_pressure_plate": true
+						}
+					}
+				}
+			}
+		},
+		"pale_oak_button": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/pale_oak_button": true
+						}
+					}
+				}
+			}
+		},
+		"pale_oak_sign": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/pale_oak_sign": true
+						}
+					}
+				}
+			}
+		},
+		"pale_oak_hanging_sign": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/pale_oak_hanging_sign": true
+						}
+					}
+				}
+			}
+		},
+		"pale_oak_boat": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/pale_oak_boat": true
+						}
+					}
+				}
+			}
+		},
+		"pale_oak_chest_boat": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/pale_oak_chest_boat": true
+						}
+					}
+				}
+			}
+		},
+		"pale_oak_leaves": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/pale_oak_leaves": true
+						}
+					}
+				}
+			}
+		},
+		"creaking_heart": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/creaking_heart": true
+						}
+					}
+				}
+			}
+		},
+		"spruce_sapling": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/spruce_sapling": true
+						}
+					}
+				}
+			}
+		},
+		"spruce_log": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/spruce_log": true
+						}
+					}
+				}
+			}
+		},
+		"spruce_wood": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/spruce_wood": true
+						}
+					}
+				}
+			}
+		},
+		"stripped_spruce_log": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/stripped_spruce_log": true
+						}
+					}
+				}
+			}
+		},
+		"stripped_spruce_wood": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/stripped_spruce_wood": true
+						}
+					}
+				}
+			}
+		},
+		"spruce_planks": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/spruce_planks": true
+						}
+					}
+				}
+			}
+		},
+		"spruce_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/spruce_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"spruce_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/spruce_slab": true
+						}
+					}
+				}
+			}
+		},
+		"spruce_fence": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/spruce_fence": true
+						}
+					}
+				}
+			}
+		},
+		"spruce_fence_gate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/spruce_fence_gate": true
+						}
+					}
+				}
+			}
+		},
+		"spruce_door": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/spruce_door": true
+						}
+					}
+				}
+			}
+		},
+		"spruce_trapdoor": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/spruce_trapdoor": true
+						}
+					}
+				}
+			}
+		},
+		"spruce_pressure_plate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/spruce_pressure_plate": true
+						}
+					}
+				}
+			}
+		},
+		"spruce_button": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/spruce_button": true
+						}
+					}
+				}
+			}
+		},
+		"spruce_sign": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/spruce_sign": true
+						}
+					}
+				}
+			}
+		},
+		"spruce_hanging_sign": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/spruce_hanging_sign": true
+						}
+					}
+				}
+			}
+		},
+		"spruce_boat": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/spruce_boat": true
+						}
+					}
+				}
+			}
+		},
+		"spruce_chest_boat": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/spruce_chest_boat": true
+						}
+					}
+				}
+			}
+		},
+		"spruce_leaves": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/spruce_leaves": true
+						}
+					}
+				}
+			}
+		},
+		"warped_fungus": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/warped_fungus": true
+						}
+					}
+				}
+			}
+		},
+		"warped_stem": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/warped_stem": true
+						}
+					}
+				}
+			}
+		},
+		"warped_hyphae": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/warped_hyphae": true
+						}
+					}
+				}
+			}
+		},
+		"stripped_warped_stem": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/stripped_warped_stem": true
+						}
+					}
+				}
+			}
+		},
+		"stripped_warped_hyphae": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/stripped_warped_hyphae": true
+						}
+					}
+				}
+			}
+		},
+		"warped_planks": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/warped_planks": true
+						}
+					}
+				}
+			}
+		},
+		"warped_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/warped_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"warped_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/warped_slab": true
+						}
+					}
+				}
+			}
+		},
+		"warped_fence": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/warped_fence": true
+						}
+					}
+				}
+			}
+		},
+		"warped_fence_gate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/warped_fence_gate": true
+						}
+					}
+				}
+			}
+		},
+		"warped_door": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/warped_door": true
+						}
+					}
+				}
+			}
+		},
+		"warped_trapdoor": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/warped_trapdoor": true
+						}
+					}
+				}
+			}
+		},
+		"warped_pressure_plate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/warped_pressure_plate": true
+						}
+					}
+				}
+			}
+		},
+		"warped_button": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/warped_button": true
+						}
+					}
+				}
+			}
+		},
+		"warped_sign": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/warped_sign": true
+						}
+					}
+				}
+			}
+		},
+		"warped_hanging_sign": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/warped_hanging_sign": true
+						}
+					}
+				}
+			}
+		},
+		"warped_wart_block": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/warped_wart_block": true
+						}
+					}
+				}
+			}
+		}
+	}
+}

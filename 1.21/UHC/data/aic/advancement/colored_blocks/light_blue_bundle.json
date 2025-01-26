@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "light_blue_bundle"
+		},
+		"title": {
+			"text": "Light Blue Bundle",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"light_blue_bundle"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:colored_blocks/cyan_bundle",
+	"rewards": {
+		"function": "aic:advancements/item/light_blue_bundle"
+	}
+}

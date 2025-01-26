@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "filled_map"
+		},
+		"title": {
+			"text": "Filled Map",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"filled_map"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:collectionable/map",
+	"rewards": {
+		"function": "aic:advancements/item/filled_map"
+	}
+}

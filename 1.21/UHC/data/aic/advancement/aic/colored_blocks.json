@@ -1,0 +1,3029 @@
+{
+	"display": {
+		"icon": {
+			"id": "white_dye"
+		},
+		"title": {
+			"text": "Blocs colorés",
+			"color": "#3FE7FF",
+			"bold": true
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "goal",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"parent": "aic:aic/building",
+	"rewards": {
+		"function": "aic:advancements/collection/colored_blocks"
+	},
+	"criteria": {
+		"blue_banner": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/blue_banner": true
+						}
+					}
+				}
+			}
+		},
+		"cyan_banner": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/cyan_banner": true
+						}
+					}
+				}
+			}
+		},
+		"light_blue_banner": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/light_blue_banner": true
+						}
+					}
+				}
+			}
+		},
+		"lime_banner": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/lime_banner": true
+						}
+					}
+				}
+			}
+		},
+		"green_banner": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/green_banner": true
+						}
+					}
+				}
+			}
+		},
+		"brown_banner": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/brown_banner": true
+						}
+					}
+				}
+			}
+		},
+		"yellow_banner": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/yellow_banner": true
+						}
+					}
+				}
+			}
+		},
+		"orange_banner": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/orange_banner": true
+						}
+					}
+				}
+			}
+		},
+		"red_banner": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/red_banner": true
+						}
+					}
+				}
+			}
+		},
+		"purple_banner": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/purple_banner": true
+						}
+					}
+				}
+			}
+		},
+		"magenta_banner": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/magenta_banner": true
+						}
+					}
+				}
+			}
+		},
+		"pink_banner": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/pink_banner": true
+						}
+					}
+				}
+			}
+		},
+		"white_banner": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/white_banner": true
+						}
+					}
+				}
+			}
+		},
+		"light_gray_banner": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/light_gray_banner": true
+						}
+					}
+				}
+			}
+		},
+		"gray_banner": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/gray_banner": true
+						}
+					}
+				}
+			}
+		},
+		"black_banner": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/black_banner": true
+						}
+					}
+				}
+			}
+		},
+		"blue_bed": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/blue_bed": true
+						}
+					}
+				}
+			}
+		},
+		"cyan_bed": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/cyan_bed": true
+						}
+					}
+				}
+			}
+		},
+		"light_blue_bed": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/light_blue_bed": true
+						}
+					}
+				}
+			}
+		},
+		"lime_bed": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/lime_bed": true
+						}
+					}
+				}
+			}
+		},
+		"green_bed": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/green_bed": true
+						}
+					}
+				}
+			}
+		},
+		"brown_bed": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/brown_bed": true
+						}
+					}
+				}
+			}
+		},
+		"yellow_bed": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/yellow_bed": true
+						}
+					}
+				}
+			}
+		},
+		"orange_bed": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/orange_bed": true
+						}
+					}
+				}
+			}
+		},
+		"red_bed": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/red_bed": true
+						}
+					}
+				}
+			}
+		},
+		"purple_bed": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/purple_bed": true
+						}
+					}
+				}
+			}
+		},
+		"magenta_bed": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/magenta_bed": true
+						}
+					}
+				}
+			}
+		},
+		"pink_bed": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/pink_bed": true
+						}
+					}
+				}
+			}
+		},
+		"white_bed": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/white_bed": true
+						}
+					}
+				}
+			}
+		},
+		"light_gray_bed": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/light_gray_bed": true
+						}
+					}
+				}
+			}
+		},
+		"gray_bed": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/gray_bed": true
+						}
+					}
+				}
+			}
+		},
+		"black_bed": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/black_bed": true
+						}
+					}
+				}
+			}
+		},
+		"blue_bundle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/blue_bundle": true
+						}
+					}
+				}
+			}
+		},
+		"cyan_bundle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/cyan_bundle": true
+						}
+					}
+				}
+			}
+		},
+		"light_blue_bundle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/light_blue_bundle": true
+						}
+					}
+				}
+			}
+		},
+		"lime_bundle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/lime_bundle": true
+						}
+					}
+				}
+			}
+		},
+		"green_bundle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/green_bundle": true
+						}
+					}
+				}
+			}
+		},
+		"brown_bundle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/brown_bundle": true
+						}
+					}
+				}
+			}
+		},
+		"yellow_bundle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/yellow_bundle": true
+						}
+					}
+				}
+			}
+		},
+		"orange_bundle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/orange_bundle": true
+						}
+					}
+				}
+			}
+		},
+		"red_bundle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/red_bundle": true
+						}
+					}
+				}
+			}
+		},
+		"purple_bundle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/purple_bundle": true
+						}
+					}
+				}
+			}
+		},
+		"magenta_bundle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/magenta_bundle": true
+						}
+					}
+				}
+			}
+		},
+		"pink_bundle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/pink_bundle": true
+						}
+					}
+				}
+			}
+		},
+		"white_bundle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/white_bundle": true
+						}
+					}
+				}
+			}
+		},
+		"light_gray_bundle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/light_gray_bundle": true
+						}
+					}
+				}
+			}
+		},
+		"gray_bundle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/gray_bundle": true
+						}
+					}
+				}
+			}
+		},
+		"black_bundle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/black_bundle": true
+						}
+					}
+				}
+			}
+		},
+		"bundle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/bundle": true
+						}
+					}
+				}
+			}
+		},
+		"blue_candle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/blue_candle": true
+						}
+					}
+				}
+			}
+		},
+		"cyan_candle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/cyan_candle": true
+						}
+					}
+				}
+			}
+		},
+		"light_blue_candle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/light_blue_candle": true
+						}
+					}
+				}
+			}
+		},
+		"lime_candle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/lime_candle": true
+						}
+					}
+				}
+			}
+		},
+		"green_candle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/green_candle": true
+						}
+					}
+				}
+			}
+		},
+		"brown_candle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/brown_candle": true
+						}
+					}
+				}
+			}
+		},
+		"yellow_candle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/yellow_candle": true
+						}
+					}
+				}
+			}
+		},
+		"orange_candle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/orange_candle": true
+						}
+					}
+				}
+			}
+		},
+		"red_candle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/red_candle": true
+						}
+					}
+				}
+			}
+		},
+		"purple_candle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/purple_candle": true
+						}
+					}
+				}
+			}
+		},
+		"magenta_candle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/magenta_candle": true
+						}
+					}
+				}
+			}
+		},
+		"pink_candle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/pink_candle": true
+						}
+					}
+				}
+			}
+		},
+		"white_candle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/white_candle": true
+						}
+					}
+				}
+			}
+		},
+		"light_gray_candle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/light_gray_candle": true
+						}
+					}
+				}
+			}
+		},
+		"gray_candle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/gray_candle": true
+						}
+					}
+				}
+			}
+		},
+		"black_candle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/black_candle": true
+						}
+					}
+				}
+			}
+		},
+		"candle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/candle": true
+						}
+					}
+				}
+			}
+		},
+		"blue_carpet": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/blue_carpet": true
+						}
+					}
+				}
+			}
+		},
+		"cyan_carpet": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/cyan_carpet": true
+						}
+					}
+				}
+			}
+		},
+		"light_blue_carpet": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/light_blue_carpet": true
+						}
+					}
+				}
+			}
+		},
+		"lime_carpet": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/lime_carpet": true
+						}
+					}
+				}
+			}
+		},
+		"green_carpet": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/green_carpet": true
+						}
+					}
+				}
+			}
+		},
+		"brown_carpet": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/brown_carpet": true
+						}
+					}
+				}
+			}
+		},
+		"yellow_carpet": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/yellow_carpet": true
+						}
+					}
+				}
+			}
+		},
+		"orange_carpet": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/orange_carpet": true
+						}
+					}
+				}
+			}
+		},
+		"red_carpet": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/red_carpet": true
+						}
+					}
+				}
+			}
+		},
+		"purple_carpet": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/purple_carpet": true
+						}
+					}
+				}
+			}
+		},
+		"magenta_carpet": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/magenta_carpet": true
+						}
+					}
+				}
+			}
+		},
+		"pink_carpet": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/pink_carpet": true
+						}
+					}
+				}
+			}
+		},
+		"white_carpet": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/white_carpet": true
+						}
+					}
+				}
+			}
+		},
+		"light_gray_carpet": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/light_gray_carpet": true
+						}
+					}
+				}
+			}
+		},
+		"gray_carpet": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/gray_carpet": true
+						}
+					}
+				}
+			}
+		},
+		"black_carpet": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/black_carpet": true
+						}
+					}
+				}
+			}
+		},
+		"blue_concrete_powder": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/blue_concrete_powder": true
+						}
+					}
+				}
+			}
+		},
+		"cyan_concrete_powder": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/cyan_concrete_powder": true
+						}
+					}
+				}
+			}
+		},
+		"light_blue_concrete_powder": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/light_blue_concrete_powder": true
+						}
+					}
+				}
+			}
+		},
+		"lime_concrete_powder": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/lime_concrete_powder": true
+						}
+					}
+				}
+			}
+		},
+		"green_concrete_powder": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/green_concrete_powder": true
+						}
+					}
+				}
+			}
+		},
+		"brown_concrete_powder": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/brown_concrete_powder": true
+						}
+					}
+				}
+			}
+		},
+		"yellow_concrete_powder": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/yellow_concrete_powder": true
+						}
+					}
+				}
+			}
+		},
+		"orange_concrete_powder": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/orange_concrete_powder": true
+						}
+					}
+				}
+			}
+		},
+		"red_concrete_powder": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/red_concrete_powder": true
+						}
+					}
+				}
+			}
+		},
+		"purple_concrete_powder": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/purple_concrete_powder": true
+						}
+					}
+				}
+			}
+		},
+		"magenta_concrete_powder": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/magenta_concrete_powder": true
+						}
+					}
+				}
+			}
+		},
+		"pink_concrete_powder": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/pink_concrete_powder": true
+						}
+					}
+				}
+			}
+		},
+		"white_concrete_powder": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/white_concrete_powder": true
+						}
+					}
+				}
+			}
+		},
+		"light_gray_concrete_powder": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/light_gray_concrete_powder": true
+						}
+					}
+				}
+			}
+		},
+		"gray_concrete_powder": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/gray_concrete_powder": true
+						}
+					}
+				}
+			}
+		},
+		"black_concrete_powder": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/black_concrete_powder": true
+						}
+					}
+				}
+			}
+		},
+		"blue_concrete": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/blue_concrete": true
+						}
+					}
+				}
+			}
+		},
+		"cyan_concrete": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/cyan_concrete": true
+						}
+					}
+				}
+			}
+		},
+		"light_blue_concrete": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/light_blue_concrete": true
+						}
+					}
+				}
+			}
+		},
+		"lime_concrete": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/lime_concrete": true
+						}
+					}
+				}
+			}
+		},
+		"green_concrete": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/green_concrete": true
+						}
+					}
+				}
+			}
+		},
+		"brown_concrete": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/brown_concrete": true
+						}
+					}
+				}
+			}
+		},
+		"yellow_concrete": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/yellow_concrete": true
+						}
+					}
+				}
+			}
+		},
+		"orange_concrete": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/orange_concrete": true
+						}
+					}
+				}
+			}
+		},
+		"red_concrete": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/red_concrete": true
+						}
+					}
+				}
+			}
+		},
+		"purple_concrete": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/purple_concrete": true
+						}
+					}
+				}
+			}
+		},
+		"magenta_concrete": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/magenta_concrete": true
+						}
+					}
+				}
+			}
+		},
+		"pink_concrete": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/pink_concrete": true
+						}
+					}
+				}
+			}
+		},
+		"white_concrete": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/white_concrete": true
+						}
+					}
+				}
+			}
+		},
+		"light_gray_concrete": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/light_gray_concrete": true
+						}
+					}
+				}
+			}
+		},
+		"gray_concrete": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/gray_concrete": true
+						}
+					}
+				}
+			}
+		},
+		"black_concrete": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/black_concrete": true
+						}
+					}
+				}
+			}
+		},
+		"blue_dye": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/blue_dye": true
+						}
+					}
+				}
+			}
+		},
+		"cyan_dye": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/cyan_dye": true
+						}
+					}
+				}
+			}
+		},
+		"light_blue_dye": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/light_blue_dye": true
+						}
+					}
+				}
+			}
+		},
+		"lime_dye": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/lime_dye": true
+						}
+					}
+				}
+			}
+		},
+		"green_dye": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/green_dye": true
+						}
+					}
+				}
+			}
+		},
+		"brown_dye": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/brown_dye": true
+						}
+					}
+				}
+			}
+		},
+		"yellow_dye": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/yellow_dye": true
+						}
+					}
+				}
+			}
+		},
+		"orange_dye": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/orange_dye": true
+						}
+					}
+				}
+			}
+		},
+		"red_dye": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/red_dye": true
+						}
+					}
+				}
+			}
+		},
+		"purple_dye": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/purple_dye": true
+						}
+					}
+				}
+			}
+		},
+		"magenta_dye": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/magenta_dye": true
+						}
+					}
+				}
+			}
+		},
+		"pink_dye": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/pink_dye": true
+						}
+					}
+				}
+			}
+		},
+		"white_dye": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/white_dye": true
+						}
+					}
+				}
+			}
+		},
+		"light_gray_dye": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/light_gray_dye": true
+						}
+					}
+				}
+			}
+		},
+		"gray_dye": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/gray_dye": true
+						}
+					}
+				}
+			}
+		},
+		"black_dye": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/black_dye": true
+						}
+					}
+				}
+			}
+		},
+		"blue_glazed_terracotta": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/blue_glazed_terracotta": true
+						}
+					}
+				}
+			}
+		},
+		"cyan_glazed_terracotta": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/cyan_glazed_terracotta": true
+						}
+					}
+				}
+			}
+		},
+		"light_blue_glazed_terracotta": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/light_blue_glazed_terracotta": true
+						}
+					}
+				}
+			}
+		},
+		"lime_glazed_terracotta": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/lime_glazed_terracotta": true
+						}
+					}
+				}
+			}
+		},
+		"green_glazed_terracotta": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/green_glazed_terracotta": true
+						}
+					}
+				}
+			}
+		},
+		"brown_glazed_terracotta": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/brown_glazed_terracotta": true
+						}
+					}
+				}
+			}
+		},
+		"yellow_glazed_terracotta": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/yellow_glazed_terracotta": true
+						}
+					}
+				}
+			}
+		},
+		"orange_glazed_terracotta": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/orange_glazed_terracotta": true
+						}
+					}
+				}
+			}
+		},
+		"red_glazed_terracotta": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/red_glazed_terracotta": true
+						}
+					}
+				}
+			}
+		},
+		"purple_glazed_terracotta": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/purple_glazed_terracotta": true
+						}
+					}
+				}
+			}
+		},
+		"magenta_glazed_terracotta": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/magenta_glazed_terracotta": true
+						}
+					}
+				}
+			}
+		},
+		"pink_glazed_terracotta": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/pink_glazed_terracotta": true
+						}
+					}
+				}
+			}
+		},
+		"white_glazed_terracotta": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/white_glazed_terracotta": true
+						}
+					}
+				}
+			}
+		},
+		"light_gray_glazed_terracotta": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/light_gray_glazed_terracotta": true
+						}
+					}
+				}
+			}
+		},
+		"gray_glazed_terracotta": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/gray_glazed_terracotta": true
+						}
+					}
+				}
+			}
+		},
+		"black_glazed_terracotta": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/black_glazed_terracotta": true
+						}
+					}
+				}
+			}
+		},
+		"blue_shulker_box": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/blue_shulker_box": true
+						}
+					}
+				}
+			}
+		},
+		"cyan_shulker_box": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/cyan_shulker_box": true
+						}
+					}
+				}
+			}
+		},
+		"light_blue_shulker_box": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/light_blue_shulker_box": true
+						}
+					}
+				}
+			}
+		},
+		"lime_shulker_box": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/lime_shulker_box": true
+						}
+					}
+				}
+			}
+		},
+		"green_shulker_box": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/green_shulker_box": true
+						}
+					}
+				}
+			}
+		},
+		"brown_shulker_box": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/brown_shulker_box": true
+						}
+					}
+				}
+			}
+		},
+		"yellow_shulker_box": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/yellow_shulker_box": true
+						}
+					}
+				}
+			}
+		},
+		"orange_shulker_box": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/orange_shulker_box": true
+						}
+					}
+				}
+			}
+		},
+		"red_shulker_box": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/red_shulker_box": true
+						}
+					}
+				}
+			}
+		},
+		"purple_shulker_box": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/purple_shulker_box": true
+						}
+					}
+				}
+			}
+		},
+		"magenta_shulker_box": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/magenta_shulker_box": true
+						}
+					}
+				}
+			}
+		},
+		"pink_shulker_box": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/pink_shulker_box": true
+						}
+					}
+				}
+			}
+		},
+		"white_shulker_box": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/white_shulker_box": true
+						}
+					}
+				}
+			}
+		},
+		"light_gray_shulker_box": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/light_gray_shulker_box": true
+						}
+					}
+				}
+			}
+		},
+		"gray_shulker_box": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/gray_shulker_box": true
+						}
+					}
+				}
+			}
+		},
+		"black_shulker_box": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/black_shulker_box": true
+						}
+					}
+				}
+			}
+		},
+		"shulker_box": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/shulker_box": true
+						}
+					}
+				}
+			}
+		},
+		"blue_stained_glass_pane": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/blue_stained_glass_pane": true
+						}
+					}
+				}
+			}
+		},
+		"cyan_stained_glass_pane": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/cyan_stained_glass_pane": true
+						}
+					}
+				}
+			}
+		},
+		"light_blue_stained_glass_pane": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/light_blue_stained_glass_pane": true
+						}
+					}
+				}
+			}
+		},
+		"lime_stained_glass_pane": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/lime_stained_glass_pane": true
+						}
+					}
+				}
+			}
+		},
+		"green_stained_glass_pane": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/green_stained_glass_pane": true
+						}
+					}
+				}
+			}
+		},
+		"brown_stained_glass_pane": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/brown_stained_glass_pane": true
+						}
+					}
+				}
+			}
+		},
+		"yellow_stained_glass_pane": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/yellow_stained_glass_pane": true
+						}
+					}
+				}
+			}
+		},
+		"orange_stained_glass_pane": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/orange_stained_glass_pane": true
+						}
+					}
+				}
+			}
+		},
+		"red_stained_glass_pane": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/red_stained_glass_pane": true
+						}
+					}
+				}
+			}
+		},
+		"purple_stained_glass_pane": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/purple_stained_glass_pane": true
+						}
+					}
+				}
+			}
+		},
+		"magenta_stained_glass_pane": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/magenta_stained_glass_pane": true
+						}
+					}
+				}
+			}
+		},
+		"pink_stained_glass_pane": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/pink_stained_glass_pane": true
+						}
+					}
+				}
+			}
+		},
+		"white_stained_glass_pane": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/white_stained_glass_pane": true
+						}
+					}
+				}
+			}
+		},
+		"light_gray_stained_glass_pane": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/light_gray_stained_glass_pane": true
+						}
+					}
+				}
+			}
+		},
+		"gray_stained_glass_pane": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/gray_stained_glass_pane": true
+						}
+					}
+				}
+			}
+		},
+		"black_stained_glass_pane": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/black_stained_glass_pane": true
+						}
+					}
+				}
+			}
+		},
+		"glass_pane": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/glass_pane": true
+						}
+					}
+				}
+			}
+		},
+		"blue_stained_glass": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/blue_stained_glass": true
+						}
+					}
+				}
+			}
+		},
+		"cyan_stained_glass": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/cyan_stained_glass": true
+						}
+					}
+				}
+			}
+		},
+		"light_blue_stained_glass": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/light_blue_stained_glass": true
+						}
+					}
+				}
+			}
+		},
+		"lime_stained_glass": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/lime_stained_glass": true
+						}
+					}
+				}
+			}
+		},
+		"green_stained_glass": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/green_stained_glass": true
+						}
+					}
+				}
+			}
+		},
+		"brown_stained_glass": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/brown_stained_glass": true
+						}
+					}
+				}
+			}
+		},
+		"yellow_stained_glass": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/yellow_stained_glass": true
+						}
+					}
+				}
+			}
+		},
+		"orange_stained_glass": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/orange_stained_glass": true
+						}
+					}
+				}
+			}
+		},
+		"red_stained_glass": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/red_stained_glass": true
+						}
+					}
+				}
+			}
+		},
+		"purple_stained_glass": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/purple_stained_glass": true
+						}
+					}
+				}
+			}
+		},
+		"magenta_stained_glass": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/magenta_stained_glass": true
+						}
+					}
+				}
+			}
+		},
+		"pink_stained_glass": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/pink_stained_glass": true
+						}
+					}
+				}
+			}
+		},
+		"white_stained_glass": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/white_stained_glass": true
+						}
+					}
+				}
+			}
+		},
+		"light_gray_stained_glass": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/light_gray_stained_glass": true
+						}
+					}
+				}
+			}
+		},
+		"gray_stained_glass": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/gray_stained_glass": true
+						}
+					}
+				}
+			}
+		},
+		"black_stained_glass": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/black_stained_glass": true
+						}
+					}
+				}
+			}
+		},
+		"glass": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/glass": true
+						}
+					}
+				}
+			}
+		},
+		"tinted_glass": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/tinted_glass": true
+						}
+					}
+				}
+			}
+		},
+		"blue_terracotta": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/blue_terracotta": true
+						}
+					}
+				}
+			}
+		},
+		"cyan_terracotta": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/cyan_terracotta": true
+						}
+					}
+				}
+			}
+		},
+		"light_blue_terracotta": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/light_blue_terracotta": true
+						}
+					}
+				}
+			}
+		},
+		"lime_terracotta": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/lime_terracotta": true
+						}
+					}
+				}
+			}
+		},
+		"green_terracotta": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/green_terracotta": true
+						}
+					}
+				}
+			}
+		},
+		"brown_terracotta": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/brown_terracotta": true
+						}
+					}
+				}
+			}
+		},
+		"yellow_terracotta": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/yellow_terracotta": true
+						}
+					}
+				}
+			}
+		},
+		"orange_terracotta": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/orange_terracotta": true
+						}
+					}
+				}
+			}
+		},
+		"red_terracotta": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/red_terracotta": true
+						}
+					}
+				}
+			}
+		},
+		"purple_terracotta": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/purple_terracotta": true
+						}
+					}
+				}
+			}
+		},
+		"magenta_terracotta": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/magenta_terracotta": true
+						}
+					}
+				}
+			}
+		},
+		"pink_terracotta": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/pink_terracotta": true
+						}
+					}
+				}
+			}
+		},
+		"white_terracotta": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/white_terracotta": true
+						}
+					}
+				}
+			}
+		},
+		"light_gray_terracotta": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/light_gray_terracotta": true
+						}
+					}
+				}
+			}
+		},
+		"gray_terracotta": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/gray_terracotta": true
+						}
+					}
+				}
+			}
+		},
+		"black_terracotta": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/black_terracotta": true
+						}
+					}
+				}
+			}
+		},
+		"terracotta": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/terracotta": true
+						}
+					}
+				}
+			}
+		},
+		"blue_wool": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/blue_wool": true
+						}
+					}
+				}
+			}
+		},
+		"cyan_wool": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/cyan_wool": true
+						}
+					}
+				}
+			}
+		},
+		"light_blue_wool": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/light_blue_wool": true
+						}
+					}
+				}
+			}
+		},
+		"lime_wool": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/lime_wool": true
+						}
+					}
+				}
+			}
+		},
+		"green_wool": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/green_wool": true
+						}
+					}
+				}
+			}
+		},
+		"brown_wool": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/brown_wool": true
+						}
+					}
+				}
+			}
+		},
+		"yellow_wool": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/yellow_wool": true
+						}
+					}
+				}
+			}
+		},
+		"orange_wool": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/orange_wool": true
+						}
+					}
+				}
+			}
+		},
+		"red_wool": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/red_wool": true
+						}
+					}
+				}
+			}
+		},
+		"purple_wool": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/purple_wool": true
+						}
+					}
+				}
+			}
+		},
+		"magenta_wool": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/magenta_wool": true
+						}
+					}
+				}
+			}
+		},
+		"pink_wool": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/pink_wool": true
+						}
+					}
+				}
+			}
+		},
+		"white_wool": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/white_wool": true
+						}
+					}
+				}
+			}
+		},
+		"light_gray_wool": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/light_gray_wool": true
+						}
+					}
+				}
+			}
+		},
+		"gray_wool": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/gray_wool": true
+						}
+					}
+				}
+			}
+		},
+		"black_wool": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:colored_blocks/black_wool": true
+						}
+					}
+				}
+			}
+		}
+	}
+}

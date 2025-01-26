@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "chipped_anvil"
+		},
+		"title": {
+			"text": "Chipped Anvil",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"chipped_anvil"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:redstone/anvil",
+	"rewards": {
+		"function": "aic:advancements/item/chipped_anvil"
+	}
+}

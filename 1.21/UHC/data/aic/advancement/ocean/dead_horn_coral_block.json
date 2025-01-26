@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "dead_horn_coral_block"
+		},
+		"title": {
+			"text": "Dead Horn Coral Block",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"dead_horn_coral_block"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:ocean/horn_coral_fan",
+	"rewards": {
+		"function": "aic:advancements/item/dead_horn_coral_block"
+	}
+}

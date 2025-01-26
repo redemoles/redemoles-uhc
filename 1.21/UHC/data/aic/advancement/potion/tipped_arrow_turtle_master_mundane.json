@@ -1,0 +1,52 @@
+{
+	"display": {
+	  "icon": {
+		"id": "minecraft:tipped_arrow",
+		"components": {
+		  "minecraft:potion_contents": {
+			"custom_color": 9142499
+		  }
+		}
+	  },
+	  "title": {
+		"text": "Arrow of the Turtle Master",
+		"color": "#FFFFFF"
+	  },
+	  "description": {
+		"text": "Long",
+		"color": "#FFFFFF"
+	  },
+	  "frame": "task",
+	  "show_toast": false,
+	  "announce_to_chat": false,
+	  "hidden": false
+	},
+	"criteria": {
+	  "requirement": {
+		"trigger": "minecraft:inventory_changed",
+		"conditions": {
+		  "items": [
+			{
+			  "items": [
+				"tipped_arrow"
+			  ],
+			  "components": {
+				"minecraft:potion_contents": {
+					"potion": "long_turtle_master"
+				}
+			  }
+			}
+		  ]
+		}
+	  }
+	},
+	"parent": "aic:potion/tipped_arrow_swiftness_mundane",
+	"requirements": [
+	  [
+		"requirement"
+	  ]
+	],
+	"rewards": {
+	  "function": "aic:advancements/item/tipped_arrow_turtle_master_mundane"
+	}
+  }

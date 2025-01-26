@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "hay_block"
+		},
+		"title": {
+			"text": "Hay Block",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"hay_block"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:foods/wheat",
+	"rewards": {
+		"function": "aic:advancements/item/hay_block"
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "cooked_porkchop"
+		},
+		"title": {
+			"text": "Cooked Porkchop",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"cooked_porkchop"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:foods/rotten_flesh",
+	"rewards": {
+		"function": "aic:advancements/item/cooked_porkchop"
+	}
+}

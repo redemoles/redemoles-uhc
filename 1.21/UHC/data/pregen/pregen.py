@@ -1,12 +1,12 @@
 
 # Constants
-ZONE: int = 2048
+ZONE: int = 10240
 IGNORED_ZONE: int = 0
 FORCELOAD_ZONE: int = 128
 DESTINATION: str = "output.txt"
-NB_MESSAGES: int = 48
+NB_MESSAGES: int = 192
 FORCELOAD_DELAY: int = 4
-STARTING_TICK: int = 4000
+STARTING_TICK: int = 1000
 
 # Util function
 def is_ignored(x) -> bool:

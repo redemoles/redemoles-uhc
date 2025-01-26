@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "totem_of_undying"
+		},
+		"title": {
+			"text": "Totem Of Undying",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"totem_of_undying"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:tools/wolf_armor",
+	"rewards": {
+		"function": "aic:advancements/item/totem_of_undying"
+	}
+}

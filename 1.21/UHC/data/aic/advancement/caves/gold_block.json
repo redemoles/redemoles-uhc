@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "gold_block"
+		},
+		"title": {
+			"text": "Gold Block",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"gold_block"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:caves/gold_ingot",
+	"rewards": {
+		"function": "aic:advancements/item/gold_block"
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"criteria": {
+	  "requirement": {
+		"trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:stored_enchantments": [
+                {
+                  "enchantments": "sweeping_edge",
+                  "levels": 2
+                }
+              ]
+			  }
+			}
+		  ]
+		}
+	  }
+	},
+	"parent": "aic:stored_enchantments/sweeping_edge_1",
+	"requirements": [
+	  [
+		"requirement"
+	  ]
+	],
+	"rewards": {
+	  "function": "aic:advancements/item/stored_enchantments/sweeping_edge_2"
+	}
+  }

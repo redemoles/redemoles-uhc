@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "shulker_shell"
+		},
+		"title": {
+			"text": "Shulker Shell",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"shulker_shell"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:nether/dragon_head",
+	"rewards": {
+		"function": "aic:advancements/item/shulker_shell"
+	}
+}

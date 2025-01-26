@@ -1,0 +1,282 @@
+{
+	"display": {
+		"icon": {
+			"id": "jukebox"
+		},
+		"title": {
+			"text": "CD",
+			"color": "#3FE7FF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "challenge",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"music_disc_blocks": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_blocks": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_chirp": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_chirp": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_far": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_far": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_mall": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_mall": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_mellohi": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_mellohi": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_stal": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_stal": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_strad": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_strad": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_wait": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_wait": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_ward": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_ward": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_11": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_11": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_13": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_13": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_cat": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_cat": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_relic": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_relic": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_creator_music_box": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_creator_music_box": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_precipice": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_precipice": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_creator": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_creator": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_pigstep": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_pigstep": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_otherside": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_otherside": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_5": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_5": true
+						}
+					}
+				}
+			}
+		},
+		"disc_fragment_5": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/disc_fragment_5": true
+						}
+					}
+				}
+			}
+		}
+	},
+	"parent": "aic:_root_01"
+}

@@ -25,8 +25,11 @@ function uhc:pre_game/menu/selection/settings/macro_text/pvp with storage uhc:se
 execute in uhc:sign run function uhc:pre_game/menu/load/settings/pvp/pvp_mod/macro_set
 function uhc:pre_game/menu/selection/settings/macro_text/pvp_1 with storage uhc:settings
 
-execute in uhc:sign run function uhc:pre_game/menu/load/settings/pvp/shield/macro_set
+execute in uhc:sign run function uhc:pre_game/menu/load/settings/pvp/knockback/macro_set
 function uhc:pre_game/menu/selection/settings/macro_text/pvp_2 with storage uhc:settings
+
+execute in uhc:sign run function uhc:pre_game/menu/load/settings/pvp/shield/macro_set
+function uhc:pre_game/menu/selection/settings/macro_text/pvp_3 with storage uhc:settings
 
 execute in uhc:sign run function uhc:pre_game/menu/load/settings/border/macro_set
 function uhc:pre_game/menu/selection/settings/macro_text/border with storage uhc:settings

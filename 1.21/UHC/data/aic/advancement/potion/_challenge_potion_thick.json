@@ -1,0 +1,412 @@
+{
+	"display": {
+		"icon": {
+			"id": "glowstone_dust"
+		},
+		"title": {
+			"text": "Potions épaisses",
+			"color": "#3FE7FF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "challenge",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"lingering_potion_empty_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/lingering_potion_empty_thick": true
+						}
+					}
+				}
+			}
+		},
+		"lingering_potion_jump_boost_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/lingering_potion_jump_boost_thick": true
+						}
+					}
+				}
+			}
+		},
+		"lingering_potion_poison_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/lingering_potion_poison_thick": true
+						}
+					}
+				}
+			}
+		},
+		"lingering_potion_regeneration_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/lingering_potion_regeneration_thick": true
+						}
+					}
+				}
+			}
+		},
+		"lingering_potion_slowness_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/lingering_potion_slowness_thick": true
+						}
+					}
+				}
+			}
+		},
+		"lingering_potion_strength_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/lingering_potion_strength_thick": true
+						}
+					}
+				}
+			}
+		},
+		"lingering_potion_swiftness_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/lingering_potion_swiftness_thick": true
+						}
+					}
+				}
+			}
+		},
+		"lingering_potion_turtle_master_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/lingering_potion_turtle_master_thick": true
+						}
+					}
+				}
+			}
+		},
+		"lingering_potion_instant_damage_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/lingering_potion_instant_damage_thick": true
+						}
+					}
+				}
+			}
+		},
+		"lingering_potion_instant_health_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/lingering_potion_instant_health_thick": true
+						}
+					}
+				}
+			}
+		},
+		"splash_potion_empty_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/splash_potion_empty_thick": true
+						}
+					}
+				}
+			}
+		},
+		"splash_potion_jump_boost_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/splash_potion_jump_boost_thick": true
+						}
+					}
+				}
+			}
+		},
+		"splash_potion_poison_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/splash_potion_poison_thick": true
+						}
+					}
+				}
+			}
+		},
+		"splash_potion_regeneration_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/splash_potion_regeneration_thick": true
+						}
+					}
+				}
+			}
+		},
+		"splash_potion_slowness_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/splash_potion_slowness_thick": true
+						}
+					}
+				}
+			}
+		},
+		"splash_potion_strength_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/splash_potion_strength_thick": true
+						}
+					}
+				}
+			}
+		},
+		"splash_potion_swiftness_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/splash_potion_swiftness_thick": true
+						}
+					}
+				}
+			}
+		},
+		"splash_potion_turtle_master_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/splash_potion_turtle_master_thick": true
+						}
+					}
+				}
+			}
+		},
+		"splash_potion_instant_damage_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/splash_potion_instant_damage_thick": true
+						}
+					}
+				}
+			}
+		},
+		"splash_potion_instant_health_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/splash_potion_instant_health_thick": true
+						}
+					}
+				}
+			}
+		},
+		"potion_empty_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/potion_empty_thick": true
+						}
+					}
+				}
+			}
+		},
+		"potion_jump_boost_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/potion_jump_boost_thick": true
+						}
+					}
+				}
+			}
+		},
+		"potion_poison_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/potion_poison_thick": true
+						}
+					}
+				}
+			}
+		},
+		"potion_regeneration_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/potion_regeneration_thick": true
+						}
+					}
+				}
+			}
+		},
+		"potion_slowness_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/potion_slowness_thick": true
+						}
+					}
+				}
+			}
+		},
+		"potion_strength_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/potion_strength_thick": true
+						}
+					}
+				}
+			}
+		},
+		"potion_swiftness_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/potion_swiftness_thick": true
+						}
+					}
+				}
+			}
+		},
+		"potion_turtle_master_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/potion_turtle_master_thick": true
+						}
+					}
+				}
+			}
+		},
+		"potion_instant_damage_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/potion_instant_damage_thick": true
+						}
+					}
+				}
+			}
+		},
+		"potion_instant_health_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/potion_instant_health_thick": true
+						}
+					}
+				}
+			}
+		}
+	},
+	"parent": "aic:potion/_challenge_potion"
+}

@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "dried_kelp_block"
+		},
+		"title": {
+			"text": "Dried Kelp Block",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"dried_kelp_block"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:foods/dried_kelp",
+	"rewards": {
+		"function": "aic:advancements/item/dried_kelp_block"
+	}
+}

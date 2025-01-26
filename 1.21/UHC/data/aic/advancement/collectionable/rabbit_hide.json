@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "rabbit_hide"
+		},
+		"title": {
+			"text": "Rabbit Hide",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"rabbit_hide"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:collectionable/leather",
+	"rewards": {
+		"function": "aic:advancements/item/rabbit_hide"
+	}
+}

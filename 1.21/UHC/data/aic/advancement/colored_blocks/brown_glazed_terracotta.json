@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "brown_glazed_terracotta"
+		},
+		"title": {
+			"text": "Brown Glazed Terracotta",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"brown_glazed_terracotta"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:colored_blocks/green_glazed_terracotta",
+	"rewards": {
+		"function": "aic:advancements/item/brown_glazed_terracotta"
+	}
+}

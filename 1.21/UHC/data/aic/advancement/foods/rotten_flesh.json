@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "rotten_flesh"
+		},
+		"title": {
+			"text": "Rotten Flesh",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"rotten_flesh"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:foods/rabbit",
+	"rewards": {
+		"function": "aic:advancements/item/rotten_flesh"
+	}
+}

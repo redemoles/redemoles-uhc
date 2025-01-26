@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "lapis_ore"
+		},
+		"title": {
+			"text": "Lapis Ore",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"lapis_ore"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:caves/deepslate_lapis_ore",
+	"rewards": {
+		"function": "aic:advancements/item/lapis_ore"
+	}
+}

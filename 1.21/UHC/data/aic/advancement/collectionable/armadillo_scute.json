@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "armadillo_scute"
+		},
+		"title": {
+			"text": "Armadillo Scute",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"armadillo_scute"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:collectionable/rabbit_foot",
+	"rewards": {
+		"function": "aic:advancements/item/armadillo_scute"
+	}
+}

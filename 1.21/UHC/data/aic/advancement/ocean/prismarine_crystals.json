@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "prismarine_crystals"
+		},
+		"title": {
+			"text": "Prismarine Crystals",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"prismarine_crystals"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:ocean/prismarine_shard",
+	"rewards": {
+		"function": "aic:advancements/item/prismarine_crystals"
+	}
+}

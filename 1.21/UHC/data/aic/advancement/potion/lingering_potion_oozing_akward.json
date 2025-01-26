@@ -1,0 +1,52 @@
+{
+	"display": {
+	  "icon": {
+		"id": "minecraft:lingering_potion",
+		"components": {
+		  "minecraft:potion_contents": {
+			"custom_color": 10092451
+		  }
+		}
+	  },
+	  "title": {
+		"text": "Lingering Potion of Oozing",
+		"color": "#FFFFFF"
+	  },
+	  "description": {
+		"text": "Normal",
+		"color": "#FFFFFF"
+	  },
+	  "frame": "task",
+	  "show_toast": false,
+	  "announce_to_chat": false,
+	  "hidden": false
+	},
+	"criteria": {
+	  "requirement": {
+		"trigger": "minecraft:inventory_changed",
+		"conditions": {
+		  "items": [
+			{
+			  "items": [
+				"lingering_potion"
+			  ],
+			  "components": {
+				"minecraft:potion_contents": {
+					"potion": "oozing"
+				}
+			  }
+			}
+		  ]
+		}
+	  }
+	},
+	"parent": "aic:potion/lingering_potion_infestation_akward",
+	"requirements": [
+	  [
+		"requirement"
+	  ]
+	],
+	"rewards": {
+	  "function": "aic:advancements/item/lingering_potion_oozing_akward"
+	}
+  }

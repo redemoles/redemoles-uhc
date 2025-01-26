@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "dark_prismarine"
+		},
+		"title": {
+			"text": "Dark Prismarine",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"dark_prismarine"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:ocean/prismarine_brick_slab",
+	"rewards": {
+		"function": "aic:advancements/item/dark_prismarine"
+	}
+}

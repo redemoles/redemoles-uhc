@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "black_candle"
+		},
+		"title": {
+			"text": "Black Candle",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"black_candle"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:colored_blocks/gray_candle",
+	"rewards": {
+		"function": "aic:advancements/item/black_candle"
+	}
+}

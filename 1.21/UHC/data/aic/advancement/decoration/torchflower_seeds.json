@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "torchflower_seeds"
+		},
+		"title": {
+			"text": "Torchflower Seeds",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"torchflower_seeds"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:decoration/pitcher_plant",
+	"rewards": {
+		"function": "aic:advancements/item/torchflower_seeds"
+	}
+}

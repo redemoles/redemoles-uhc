@@ -1,0 +1,126 @@
+{
+	"display": {
+		"icon": {
+			"id": "crossbow"
+		},
+		"title": {
+			"text": "Enchantements pour Arbalète",
+			"color": "#3FE7FF"
+		},
+		"description": {
+			"text": "",
+			"color": "#ffffff"
+		},
+		"frame": "challenge",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"parent": "aic:_root_03",
+	"criteria": {
+		"quick_charge_1": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/quick_charge_1": true
+						}
+					}
+				}
+			}
+		},
+		"quick_charge_2": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/quick_charge_2": true
+						}
+					}
+				}
+			}
+		},
+		"quick_charge_3": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/quick_charge_3": true
+						}
+					}
+				}
+			}
+		},
+		"piercing_1": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/piercing_1": true
+						}
+					}
+				}
+			}
+		},
+		"piercing_2": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/piercing_2": true
+						}
+					}
+				}
+			}
+		},
+		"piercing_3": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/piercing_3": true
+						}
+					}
+				}
+			}
+		},
+		"piercing_4": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/piercing_4": true
+						}
+					}
+				}
+			}
+		},
+		"multishot": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/multishot": true
+						}
+					}
+				}
+			}
+		}
+	}
+}

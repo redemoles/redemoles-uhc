@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "bone"
+		},
+		"title": {
+			"text": "Bone",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"bone"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:decoration/bone_block",
+	"rewards": {
+		"function": "aic:advancements/item/bone"
+	}
+}

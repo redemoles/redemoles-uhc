@@ -1,0 +1,178 @@
+{
+	"display": {
+		"icon": {
+			"id": "mace"
+		},
+		"title": {
+			"text": "Enchantements pour Masse",
+			"color": "#3FE7FF"
+		},
+		"description": {
+			"text": "",
+			"color": "#ffffff"
+		},
+		"frame": "challenge",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"parent": "aic:_root_03",
+	"criteria": {
+		"density_1": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/density_1": true
+						}
+					}
+				}
+			}
+		},
+		"density_2": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/density_2": true
+						}
+					}
+				}
+			}
+		},
+		"density_3": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/density_3": true
+						}
+					}
+				}
+			}
+		},
+		"density_4": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/density_4": true
+						}
+					}
+				}
+			}
+		},
+		"density_5": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/density_5": true
+						}
+					}
+				}
+			}
+		},
+		"breach_1": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/breach_1": true
+						}
+					}
+				}
+			}
+		},
+		"breach_2": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/breach_2": true
+						}
+					}
+				}
+			}
+		},
+		"breach_3": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/breach_3": true
+						}
+					}
+				}
+			}
+		},
+		"breach_4": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/breach_4": true
+						}
+					}
+				}
+			}
+		},
+		"wind_burst_1": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/wind_burst_1": true
+						}
+					}
+				}
+			}
+		},
+		"wind_burst_2": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/wind_burst_2": true
+						}
+					}
+				}
+			}
+		},
+		"wind_burst_3": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/wind_burst_3": true
+						}
+					}
+				}
+			}
+		}
+	}
+}

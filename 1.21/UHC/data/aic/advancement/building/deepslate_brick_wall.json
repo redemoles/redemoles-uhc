@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "deepslate_brick_wall"
+		},
+		"title": {
+			"text": "Deepslate Brick Wall",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"deepslate_brick_wall"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:building/deepslate_brick_slab",
+	"rewards": {
+		"function": "aic:advancements/item/deepslate_brick_wall"
+	}
+}

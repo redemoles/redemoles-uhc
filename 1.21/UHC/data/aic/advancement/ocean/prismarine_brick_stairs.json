@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "prismarine_brick_stairs"
+		},
+		"title": {
+			"text": "Prismarine Brick Stairs",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"prismarine_brick_stairs"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:ocean/prismarine_bricks",
+	"rewards": {
+		"function": "aic:advancements/item/prismarine_brick_stairs"
+	}
+}

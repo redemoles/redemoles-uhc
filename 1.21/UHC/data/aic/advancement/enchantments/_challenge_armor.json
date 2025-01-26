@@ -1,0 +1,516 @@
+{
+	"display": {
+		"icon": {
+			"id": "diamond_chestplate"
+		},
+		"title": {
+			"text": "Enchantements pour Armure",
+			"color": "#3FE7FF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "challenge",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"parent": "aic:_root_03",
+	"criteria": {
+		"respiration_1": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/respiration_1": true
+						}
+					}
+				}
+			}
+		},
+		"respiration_2": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/respiration_2": true
+						}
+					}
+				}
+			}
+		},
+		"respiration_3": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/respiration_3": true
+						}
+					}
+				}
+			}
+		},
+		"aqua_affinity": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/aqua_affinity": true
+						}
+					}
+				}
+			}
+		},
+		"swift_sneak_1": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/swift_sneak_1": true
+						}
+					}
+				}
+			}
+		},
+		"swift_sneak_2": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/swift_sneak_2": true
+						}
+					}
+				}
+			}
+		},
+		"swift_sneak_3": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/swift_sneak_3": true
+						}
+					}
+				}
+			}
+		},
+		"thorns_1": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/thorns_1": true
+						}
+					}
+				}
+			}
+		},
+		"thorns_2": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/thorns_2": true
+						}
+					}
+				}
+			}
+		},
+		"thorns_3": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/thorns_3": true
+						}
+					}
+				}
+			}
+		},
+		"feather_falling_1": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/feather_falling_1": true
+						}
+					}
+				}
+			}
+		},
+		"feather_falling_2": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/feather_falling_2": true
+						}
+					}
+				}
+			}
+		},
+		"feather_falling_3": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/feather_falling_3": true
+						}
+					}
+				}
+			}
+		},
+		"feather_falling_4": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/feather_falling_4": true
+						}
+					}
+				}
+			}
+		},
+		"depth_strider_1": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/depth_strider_1": true
+						}
+					}
+				}
+			}
+		},
+		"depth_strider_2": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/depth_strider_2": true
+						}
+					}
+				}
+			}
+		},
+		"depth_strider_3": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/depth_strider_3": true
+						}
+					}
+				}
+			}
+		},
+		"frost_walker_1": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/frost_walker_1": true
+						}
+					}
+				}
+			}
+		},
+		"frost_walker_2": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/frost_walker_2": true
+						}
+					}
+				}
+			}
+		},
+		"soul_speed_1": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/soul_speed_1": true
+						}
+					}
+				}
+			}
+		},
+		"soul_speed_2": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/soul_speed_2": true
+						}
+					}
+				}
+			}
+		},
+		"soul_speed_3": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/soul_speed_3": true
+						}
+					}
+				}
+			}
+		},
+		"blast_protection_1": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/blast_protection_1": true
+						}
+					}
+				}
+			}
+		},
+		"blast_protection_2": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/blast_protection_2": true
+						}
+					}
+				}
+			}
+		},
+		"blast_protection_3": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/blast_protection_3": true
+						}
+					}
+				}
+			}
+		},
+		"blast_protection_4": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/blast_protection_4": true
+						}
+					}
+				}
+			}
+		},
+		"fire_protection_1": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/fire_protection_1": true
+						}
+					}
+				}
+			}
+		},
+		"fire_protection_2": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/fire_protection_2": true
+						}
+					}
+				}
+			}
+		},
+		"fire_protection_3": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/fire_protection_3": true
+						}
+					}
+				}
+			}
+		},
+		"fire_protection_4": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/fire_protection_4": true
+						}
+					}
+				}
+			}
+		},
+		"projectile_protection_1": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/projectile_protection_1": true
+						}
+					}
+				}
+			}
+		},
+		"projectile_protection_2": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/projectile_protection_2": true
+						}
+					}
+				}
+			}
+		},
+		"projectile_protection_3": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/projectile_protection_3": true
+						}
+					}
+				}
+			}
+		},
+		"projectile_protection_4": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/projectile_protection_4": true
+						}
+					}
+				}
+			}
+		},
+		"protection_1": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/protection_1": true
+						}
+					}
+				}
+			}
+		},
+		"protection_2": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/protection_2": true
+						}
+					}
+				}
+			}
+		},
+		"protection_3": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/protection_3": true
+						}
+					}
+				}
+			}
+		},
+		"protection_4": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/protection_4": true
+						}
+					}
+				}
+			}
+		}
+	}
+}

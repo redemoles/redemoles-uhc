@@ -1,0 +1,191 @@
+{
+	"display": {
+		"icon": {
+			"id": "amethyst_block"
+		},
+		"title": {
+			"text": "Grottes",
+			"color": "#3FE7FF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "challenge",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"sculk": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/sculk": true
+						}
+					}
+				}
+			}
+		},
+		"sculk_catalyst": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/sculk_catalyst": true
+						}
+					}
+				}
+			}
+		},
+		"sculk_shrieker": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/sculk_shrieker": true
+						}
+					}
+				}
+			}
+		},
+		"sculk_sensor": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/sculk_sensor": true
+						}
+					}
+				}
+			}
+		},
+		"calibrated_sculk_sensor": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/calibrated_sculk_sensor": true
+						}
+					}
+				}
+			}
+		},
+		"sculk_vein": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/sculk_vein": true
+						}
+					}
+				}
+			}
+		},
+		"calcite": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/calcite": true
+						}
+					}
+				}
+			}
+		},
+		"amethyst_block": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/amethyst_block": true
+						}
+					}
+				}
+			}
+		},
+		"amethyst_cluster": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/amethyst_cluster": true
+						}
+					}
+				}
+			}
+		},
+		"large_amethyst_bud": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/large_amethyst_bud": true
+						}
+					}
+				}
+			}
+		},
+		"medium_amethyst_bud": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/medium_amethyst_bud": true
+						}
+					}
+				}
+			}
+		},
+		"small_amethyst_bud": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/small_amethyst_bud": true
+						}
+					}
+				}
+			}
+		},
+		"amethyst_shard": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/amethyst_shard": true
+						}
+					}
+				}
+			}
+		}
+	},
+	"parent": "aic:_root_05"
+}

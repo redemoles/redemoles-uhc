@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "sniffer_egg"
+		},
+		"title": {
+			"text": "Sniffer Egg",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"sniffer_egg"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:_root_09",
+	"rewards": {
+		"function": "aic:advancements/item/sniffer_egg"
+	}
+}

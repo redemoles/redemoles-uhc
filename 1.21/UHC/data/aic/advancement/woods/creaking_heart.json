@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "creaking_heart"
+		},
+		"title": {
+			"text": "Creaking Heart",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"creaking_heart"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:woods/pale_oak_chest_boat",
+	"rewards": {
+		"function": "aic:advancements/item/creaking_heart"
+	}
+}

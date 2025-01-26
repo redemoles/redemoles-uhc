@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "redstone_ore"
+		},
+		"title": {
+			"text": "Redstone Ore",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"redstone_ore"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:caves/deepslate_redstone_ore",
+	"rewards": {
+		"function": "aic:advancements/item/redstone_ore"
+	}
+}

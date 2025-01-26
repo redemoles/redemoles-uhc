@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "turtle_helmet"
+		},
+		"title": {
+			"text": "Turtle Helmet",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"turtle_helmet"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:ocean/turtle_scute",
+	"rewards": {
+		"function": "aic:advancements/item/turtle_helmet"
+	}
+}

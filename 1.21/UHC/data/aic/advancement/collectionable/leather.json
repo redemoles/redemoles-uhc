@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "leather"
+		},
+		"title": {
+			"text": "Leather",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"leather"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:collectionable/feather",
+	"rewards": {
+		"function": "aic:advancements/item/leather"
+	}
+}

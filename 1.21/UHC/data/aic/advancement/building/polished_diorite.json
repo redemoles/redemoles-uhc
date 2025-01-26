@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "polished_diorite"
+		},
+		"title": {
+			"text": "Polished Diorite",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"polished_diorite"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:building/diorite_wall",
+	"rewards": {
+		"function": "aic:advancements/item/polished_diorite"
+	}
+}

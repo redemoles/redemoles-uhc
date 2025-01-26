@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "firework_star"
+		},
+		"title": {
+			"text": "Firework Star",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"firework_star"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:collectionable/gunpowder",
+	"rewards": {
+		"function": "aic:advancements/item/firework_star"
+	}
+}

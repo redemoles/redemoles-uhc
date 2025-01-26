@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "slime_block"
+		},
+		"title": {
+			"text": "Slime Block",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"slime_block"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:collectionable/slime_ball",
+	"rewards": {
+		"function": "aic:advancements/item/slime_block"
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"criteria": {
+	  "requirement": {
+		"trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:stored_enchantments": [
+                {
+                  "enchantments": "impaling",
+                  "levels": 4
+                }
+              ]
+			  }
+			}
+		  ]
+		}
+	  }
+	},
+	"parent": "aic:stored_enchantments/impaling_3",
+	"requirements": [
+	  [
+		"requirement"
+	  ]
+	],
+	"rewards": {
+	  "function": "aic:advancements/item/stored_enchantments/impaling_4"
+	}
+  }

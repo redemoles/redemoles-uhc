@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "acacia_hanging_sign"
+		},
+		"title": {
+			"text": "Acacia Hanging Sign",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"acacia_hanging_sign"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:woods/acacia_sign",
+	"rewards": {
+		"function": "aic:advancements/item/acacia_hanging_sign"
+	}
+}

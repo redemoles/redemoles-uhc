@@ -1,0 +1,52 @@
+{
+	"display": {
+	  "icon": {
+		"id": "minecraft:lingering_potion",
+		"components": {
+		  "minecraft:potion_contents": {
+			"custom_color": 16646020
+		  }
+		}
+	  },
+	  "title": {
+		"text": "Lingering Potion of Leaping",
+		"color": "#FFFFFF"
+	  },
+	  "description": {
+		"text": "Normal",
+		"color": "#FFFFFF"
+	  },
+	  "frame": "task",
+	  "show_toast": false,
+	  "announce_to_chat": false,
+	  "hidden": false
+	},
+	"criteria": {
+	  "requirement": {
+		"trigger": "minecraft:inventory_changed",
+		"conditions": {
+		  "items": [
+			{
+			  "items": [
+				"lingering_potion"
+			  ],
+			  "components": {
+				"minecraft:potion_contents": {
+					"potion": "leaping"
+				}
+			  }
+			}
+		  ]
+		}
+	  }
+	},
+	"parent": "aic:potion/lingering_potion_empty_akward",
+	"requirements": [
+	  [
+		"requirement"
+	  ]
+	],
+	"rewards": {
+	  "function": "aic:advancements/item/lingering_potion_jump_boost_akward"
+	}
+  }

@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "blaze_rod"
+		},
+		"title": {
+			"text": "Blaze Rod",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"blaze_rod"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:nether/_challenge_nether",
+	"rewards": {
+		"function": "aic:advancements/item/blaze_rod"
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "raw_iron"
+		},
+		"title": {
+			"text": "Raw Iron",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"raw_iron"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:caves/iron_block",
+	"rewards": {
+		"function": "aic:advancements/item/raw_iron"
+	}
+}

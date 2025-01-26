@@ -43,6 +43,7 @@ execute if score #border uhc.data.setup matches 0 run gamerule doMobSpawning fal
 execute if score #vanilla uhc.gamemode matches 1 run function uhc:in_game/timer/cooldown with storage uhc:settings
 execute if score #bhc uhc.gamemode matches 1 run function bhc:timer/minute
 execute if score #nzl uhc.gamemode matches 1 run function nzl:timer/minute
+execute if score #aic uhc.gamemode matches 3 run function aic:timer/minute
 
 ## REDUCTION DE VIE FORCÉE
 

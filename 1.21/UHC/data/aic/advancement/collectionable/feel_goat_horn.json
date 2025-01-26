@@ -1,0 +1,40 @@
+{
+	"display": {
+		"icon": {
+			"id": "goat_horn"
+		},
+		"title": {
+			"text": "Feel Goat Horn",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"goat_horn"
+						],
+						"components": {
+							"instrument": "feel_goat_horn"
+						}
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:collectionable/dream_goat_horn",
+	"rewards": {
+		"function": "aic:advancements/item/feel_goat_horn"
+	}
+}

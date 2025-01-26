@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "lapis_lazuli"
+		},
+		"title": {
+			"text": "Lapis Lazuli",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"lapis_lazuli"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:caves/lapis_ore",
+	"rewards": {
+		"function": "aic:advancements/item/lapis_lazuli"
+	}
+}

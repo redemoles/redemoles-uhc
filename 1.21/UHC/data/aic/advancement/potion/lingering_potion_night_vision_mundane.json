@@ -1,0 +1,52 @@
+{
+	"display": {
+	  "icon": {
+		"id": "minecraft:lingering_potion",
+		"components": {
+		  "minecraft:potion_contents": {
+			"custom_color": 12779366
+		  }
+		}
+	  },
+	  "title": {
+		"text": "Lingering Potion of Night Vision",
+		"color": "#FFFFFF"
+	  },
+	  "description": {
+		"text": "Long",
+		"color": "#FFFFFF"
+	  },
+	  "frame": "task",
+	  "show_toast": false,
+	  "announce_to_chat": false,
+	  "hidden": false
+	},
+	"criteria": {
+	  "requirement": {
+		"trigger": "minecraft:inventory_changed",
+		"conditions": {
+		  "items": [
+			{
+			  "items": [
+				"lingering_potion"
+			  ],
+			  "components": {
+				"minecraft:potion_contents": {
+					"potion": "long_night_vision"
+				}
+			  }
+			}
+		  ]
+		}
+	  }
+	},
+	"parent": "aic:potion/lingering_potion_invisibility_mundane",
+	"requirements": [
+	  [
+		"requirement"
+	  ]
+	],
+	"rewards": {
+	  "function": "aic:advancements/item/lingering_potion_night_vision_mundane"
+	}
+  }

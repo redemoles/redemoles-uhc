@@ -21,6 +21,7 @@ effect give @a[tag=uhc.player] weakness infinite 9 true
 execute as @a[tag=uhc.player] run attribute @s jump_strength base set 0
 execute as @a[tag=uhc.player] run attribute @s minecraft:fall_damage_multiplier base set 1.0
 execute if score #pvp_mod uhc.data.setup matches 1 as @a[tag=uhc.player] run attribute @s minecraft:attack_speed base set 1024
+execute if score #knockback uhc.data.setup matches 1 as @a[tag=uhc.player] run attribute @s minecraft:attack_knockback base set 0.55
 
 advancement revoke @a everything
 
@@ -34,12 +35,12 @@ execute if score #dru uhc.gamemode matches 1 run give @a[tag=uhc.player] minecra
 execute if score #fte uhc.gamemode matches 1 run function fte:start/give
 execute if score #nzl uhc.gamemode matches 1 run give @a[tag=uhc.player] minecraft:golden_carrot 8
 execute if score #prv uhc.gamemode matches 1 run give @a[tag=uhc.player] minecraft:golden_carrot 8
-give @a[tag=uhc.player] minecraft:oak_boat 1
+execute unless score #aic uhc.gamemode matches 3 run give @a[tag=uhc.player] minecraft:oak_boat 1
 
 ## Scenarios
 # Ironman
-tag @a[tag=uhc.player] add uhc.ironman
-execute store result score #ironman uhc.data.setup if entity @a[tag=uhc.player]
+execute unless score #aic uhc.gamemode matches 3 run tag @a[tag=uhc.player] add uhc.ironman
+execute unless score #aic uhc.gamemode matches 3 store result score #ironman uhc.data.setup if entity @a[tag=uhc.player]
 
 # Best PvE
 execute if score #best_pve uhc.scenario matches 1 run function uhc:start/scenarios/best_pve

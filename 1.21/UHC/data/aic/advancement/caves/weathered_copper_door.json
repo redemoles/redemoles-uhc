@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "weathered_copper_door"
+		},
+		"title": {
+			"text": "Weathered Copper Door",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"weathered_copper_door"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:caves/weathered_cut_copper_slab",
+	"rewards": {
+		"function": "aic:advancements/item/weathered_copper_door"
+	}
+}

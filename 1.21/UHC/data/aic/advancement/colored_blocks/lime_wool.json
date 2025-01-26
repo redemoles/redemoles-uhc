@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "lime_wool"
+		},
+		"title": {
+			"text": "Lime Wool",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"lime_wool"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:colored_blocks/light_blue_wool",
+	"rewards": {
+		"function": "aic:advancements/item/lime_wool"
+	}
+}

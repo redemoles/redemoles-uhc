@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "crimson_slab"
+		},
+		"title": {
+			"text": "Crimson Slab",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"crimson_slab"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:woods/crimson_stairs",
+	"rewards": {
+		"function": "aic:advancements/item/crimson_slab"
+	}
+}

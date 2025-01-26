@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "chainmail_chestplate"
+		},
+		"title": {
+			"text": "Chainmail Chestplate",
+			"color": "#3FE7FF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"chainmail_chestplate"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:tools/chainmail_helmet",
+	"rewards": {
+		"function": "aic:advancements/item/chainmail_chestplate"
+	}
+}

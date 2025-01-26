@@ -1,0 +1,1690 @@
+{
+	"display": {
+		"icon": {
+			"id": "silence_armor_trim_smithing_template"
+		},
+		"title": {
+			"text": "Collectionnable",
+			"color": "#3FE7FF",
+			"bold": true
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "goal",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"parent": "aic:aic/tools",
+	"rewards": {
+		"function": "aic:advancements/collection/collectionable"
+	},
+	"criteria": {
+		"bordure_indented_banner_pattern": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/bordure_indented_banner_pattern": true
+						}
+					}
+				}
+			}
+		},
+		"creeper_banner_pattern": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/creeper_banner_pattern": true
+						}
+					}
+				}
+			}
+		},
+		"field_masoned_banner_pattern": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/field_masoned_banner_pattern": true
+						}
+					}
+				}
+			}
+		},
+		"flow_banner_pattern": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/flow_banner_pattern": true
+						}
+					}
+				}
+			}
+		},
+		"flower_banner_pattern": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/flower_banner_pattern": true
+						}
+					}
+				}
+			}
+		},
+		"globe_banner_pattern": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/globe_banner_pattern": true
+						}
+					}
+				}
+			}
+		},
+		"guster_banner_pattern": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/guster_banner_pattern": true
+						}
+					}
+				}
+			}
+		},
+		"mojang_banner_pattern": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/mojang_banner_pattern": true
+						}
+					}
+				}
+			}
+		},
+		"piglin_banner_pattern": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/piglin_banner_pattern": true
+						}
+					}
+				}
+			}
+		},
+		"skull_banner_pattern": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/skull_banner_pattern": true
+						}
+					}
+				}
+			}
+		},
+		"bucket": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/bucket": true
+						}
+					}
+				}
+			}
+		},
+		"milk_bucket": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/milk_bucket": true
+						}
+					}
+				}
+			}
+		},
+		"powder_snow_bucket": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/powder_snow_bucket": true
+						}
+					}
+				}
+			}
+		},
+		"lava_bucket": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/lava_bucket": true
+						}
+					}
+				}
+			}
+		},
+		"water_bucket": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/water_bucket": true
+						}
+					}
+				}
+			}
+		},
+		"cod_bucket": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/cod_bucket": true
+						}
+					}
+				}
+			}
+		},
+		"salmon_bucket": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/salmon_bucket": true
+						}
+					}
+				}
+			}
+		},
+		"pufferfish_bucket": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/pufferfish_bucket": true
+						}
+					}
+				}
+			}
+		},
+		"tropical_fish_bucket": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/tropical_fish_bucket": true
+						}
+					}
+				}
+			}
+		},
+		"tadpole_bucket": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/tadpole_bucket": true
+						}
+					}
+				}
+			}
+		},
+		"axolotl_bucket": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/axolotl_bucket": true
+						}
+					}
+				}
+			}
+		},
+		"admire_goat_horn": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/admire_goat_horn": true
+						}
+					}
+				}
+			}
+		},
+		"call_goat_horn": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/call_goat_horn": true
+						}
+					}
+				}
+			}
+		},
+		"dream_goat_horn": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/dream_goat_horn": true
+						}
+					}
+				}
+			}
+		},
+		"feel_goat_horn": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/feel_goat_horn": true
+						}
+					}
+				}
+			}
+		},
+		"ponder_goat_horn": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/ponder_goat_horn": true
+						}
+					}
+				}
+			}
+		},
+		"seek_goat_horn": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/seek_goat_horn": true
+						}
+					}
+				}
+			}
+		},
+		"sing_goat_horn": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/sing_goat_horn": true
+						}
+					}
+				}
+			}
+		},
+		"yearn_goat_horn": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/yearn_goat_horn": true
+						}
+					}
+				}
+			}
+		},
+		"wither_skeleton_skull": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/wither_skeleton_skull": true
+						}
+					}
+				}
+			}
+		},
+		"skeleton_skull": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/skeleton_skull": true
+						}
+					}
+				}
+			}
+		},
+		"creeper_head": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/creeper_head": true
+						}
+					}
+				}
+			}
+		},
+		"piglin_head": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/piglin_head": true
+						}
+					}
+				}
+			}
+		},
+		"zombie_head": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/zombie_head": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_13": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_13": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_blocks": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_blocks": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_cat": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_cat": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_chirp": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_chirp": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_far": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_far": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_mall": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_mall": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_mellohi": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_mellohi": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_stal": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_stal": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_strad": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_strad": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_ward": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_ward": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_11": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_11": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_wait": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_wait": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_relic": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_relic": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_creator_music_box": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_creator_music_box": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_precipice": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_precipice": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_creator": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_creator": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_pigstep": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_pigstep": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_otherside": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_otherside": true
+						}
+					}
+				}
+			}
+		},
+		"music_disc_5": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/music_disc_5": true
+						}
+					}
+				}
+			}
+		},
+		"disc_fragment_5": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/disc_fragment_5": true
+						}
+					}
+				}
+			}
+		},
+		"angler_pottery_sherd": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/angler_pottery_sherd": true
+						}
+					}
+				}
+			}
+		},
+		"archer_pottery_sherd": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/archer_pottery_sherd": true
+						}
+					}
+				}
+			}
+		},
+		"arms_up_pottery_sherd": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/arms_up_pottery_sherd": true
+						}
+					}
+				}
+			}
+		},
+		"blade_pottery_sherd": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/blade_pottery_sherd": true
+						}
+					}
+				}
+			}
+		},
+		"brewer_pottery_sherd": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/brewer_pottery_sherd": true
+						}
+					}
+				}
+			}
+		},
+		"burn_pottery_sherd": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/burn_pottery_sherd": true
+						}
+					}
+				}
+			}
+		},
+		"danger_pottery_sherd": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/danger_pottery_sherd": true
+						}
+					}
+				}
+			}
+		},
+		"explorer_pottery_sherd": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/explorer_pottery_sherd": true
+						}
+					}
+				}
+			}
+		},
+		"flow_pottery_sherd": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/flow_pottery_sherd": true
+						}
+					}
+				}
+			}
+		},
+		"friend_pottery_sherd": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/friend_pottery_sherd": true
+						}
+					}
+				}
+			}
+		},
+		"guster_pottery_sherd": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/guster_pottery_sherd": true
+						}
+					}
+				}
+			}
+		},
+		"heart_pottery_sherd": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/heart_pottery_sherd": true
+						}
+					}
+				}
+			}
+		},
+		"heartbreak_pottery_sherd": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/heartbreak_pottery_sherd": true
+						}
+					}
+				}
+			}
+		},
+		"howl_pottery_sherd": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/howl_pottery_sherd": true
+						}
+					}
+				}
+			}
+		},
+		"miner_pottery_sherd": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/miner_pottery_sherd": true
+						}
+					}
+				}
+			}
+		},
+		"mourner_pottery_sherd": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/mourner_pottery_sherd": true
+						}
+					}
+				}
+			}
+		},
+		"plenty_pottery_sherd": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/plenty_pottery_sherd": true
+						}
+					}
+				}
+			}
+		},
+		"prize_pottery_sherd": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/prize_pottery_sherd": true
+						}
+					}
+				}
+			}
+		},
+		"scrape_pottery_sherd": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/scrape_pottery_sherd": true
+						}
+					}
+				}
+			}
+		},
+		"sheaf_pottery_sherd": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/sheaf_pottery_sherd": true
+						}
+					}
+				}
+			}
+		},
+		"shelter_pottery_sherd": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/shelter_pottery_sherd": true
+						}
+					}
+				}
+			}
+		},
+		"skull_pottery_sherd": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/skull_pottery_sherd": true
+						}
+					}
+				}
+			}
+		},
+		"snort_pottery_sherd": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/snort_pottery_sherd": true
+						}
+					}
+				}
+			}
+		},
+		"decorated_pot": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/decorated_pot": true
+						}
+					}
+				}
+			}
+		},
+		"bolt_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/bolt_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"coast_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/coast_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"dune_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/dune_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"eye_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/eye_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"flow_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/flow_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"host_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/host_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"netherite_upgrade_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/netherite_upgrade_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"raiser_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/raiser_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"rib_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/rib_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"sentry_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/sentry_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"shaper_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/shaper_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"silence_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/silence_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"snout_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/snout_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"spire_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/spire_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"tide_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/tide_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"vex_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/vex_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"ward_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/ward_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"wayfinder_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/wayfinder_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"wild_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/wild_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"string": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/string": true
+						}
+					}
+				}
+			}
+		},
+		"slime_ball": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/slime_ball": true
+						}
+					}
+				}
+			}
+		},
+		"slime_block": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/slime_block": true
+						}
+					}
+				}
+			}
+		},
+		"lead": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/lead": true
+						}
+					}
+				}
+			}
+		},
+		"phantom_membrane": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/phantom_membrane": true
+						}
+					}
+				}
+			}
+		},
+		"breeze_rod": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/breeze_rod": true
+						}
+					}
+				}
+			}
+		},
+		"wind_charge": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/wind_charge": true
+						}
+					}
+				}
+			}
+		},
+		"trial_key": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/trial_key": true
+						}
+					}
+				}
+			}
+		},
+		"ominous_trial_key": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/ominous_trial_key": true
+						}
+					}
+				}
+			}
+		},
+		"heavy_core": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/heavy_core": true
+						}
+					}
+				}
+			}
+		},
+		"echo_shard": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/echo_shard": true
+						}
+					}
+				}
+			}
+		},
+		"experience_bottle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/experience_bottle": true
+						}
+					}
+				}
+			}
+		},
+		"name_tag": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/name_tag": true
+						}
+					}
+				}
+			}
+		},
+		"paper": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/paper": true
+						}
+					}
+				}
+			}
+		},
+		"map": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/map": true
+						}
+					}
+				}
+			}
+		},
+		"filled_map": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/filled_map": true
+						}
+					}
+				}
+			}
+		},
+		"ink_sac": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/ink_sac": true
+						}
+					}
+				}
+			}
+		},
+		"glow_ink_sac": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/glow_ink_sac": true
+						}
+					}
+				}
+			}
+		},
+		"book": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/book": true
+						}
+					}
+				}
+			}
+		},
+		"writable_book": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/writable_book": true
+						}
+					}
+				}
+			}
+		},
+		"written_book": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/written_book": true
+						}
+					}
+				}
+			}
+		},
+		"enchanted_book": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/enchanted_book": true
+						}
+					}
+				}
+			}
+		},
+		"gunpowder": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/gunpowder": true
+						}
+					}
+				}
+			}
+		},
+		"firework_star": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/firework_star": true
+						}
+					}
+				}
+			}
+		},
+		"fire_charge": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/fire_charge": true
+						}
+					}
+				}
+			}
+		},
+		"firework_rocket": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/firework_rocket": true
+						}
+					}
+				}
+			}
+		},
+		"feather": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/feather": true
+						}
+					}
+				}
+			}
+		},
+		"leather": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/leather": true
+						}
+					}
+				}
+			}
+		},
+		"rabbit_hide": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/rabbit_hide": true
+						}
+					}
+				}
+			}
+		},
+		"rabbit_foot": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/rabbit_foot": true
+						}
+					}
+				}
+			}
+		},
+		"armadillo_scute": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/armadillo_scute": true
+						}
+					}
+				}
+			}
+		}
+	}
+}

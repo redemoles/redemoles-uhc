@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "comparator"
+		},
+		"title": {
+			"text": "Comparator",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"comparator"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:redstone/repeater",
+	"rewards": {
+		"function": "aic:advancements/item/comparator"
+	}
+}

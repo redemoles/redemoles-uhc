@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "rib_armor_trim_smithing_template"
+		},
+		"title": {
+			"text": "Rib Armor Trim Smithing Template",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"rib_armor_trim_smithing_template"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:collectionable/snout_armor_trim_smithing_template",
+	"rewards": {
+		"function": "aic:advancements/item/rib_armor_trim_smithing_template"
+	}
+}

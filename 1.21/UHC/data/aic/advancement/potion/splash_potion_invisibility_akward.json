@@ -1,0 +1,52 @@
+{
+	"display": {
+	  "icon": {
+		"id": "minecraft:splash_potion",
+		"components": {
+		  "minecraft:potion_contents": {
+			"custom_color": 16185078
+		  }
+		}
+	  },
+	  "title": {
+		"text": "Splash Potion of Invisibility",
+		"color": "#FFFFFF"
+	  },
+	  "description": {
+		"text": "Normal",
+		"color": "#FFFFFF"
+	  },
+	  "frame": "task",
+	  "show_toast": false,
+	  "announce_to_chat": false,
+	  "hidden": false
+	},
+	"criteria": {
+	  "requirement": {
+		"trigger": "minecraft:inventory_changed",
+		"conditions": {
+		  "items": [
+			{
+			  "items": [
+				"splash_potion"
+			  ],
+			  "components": {
+				"minecraft:potion_contents": {
+					"potion": "invisibility"
+				}
+			  }
+			}
+		  ]
+		}
+	  }
+	},
+	"parent": "aic:potion/splash_potion_fire_resistance_akward",
+	"requirements": [
+	  [
+		"requirement"
+	  ]
+	],
+	"rewards": {
+	  "function": "aic:advancements/item/splash_potion_invisibility_akward"
+	}
+  }

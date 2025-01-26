@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "golden_shovel"
+		},
+		"title": {
+			"text": "Golden Shovel",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"golden_shovel"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:tools/golden_axe",
+	"rewards": {
+		"function": "aic:advancements/item/golden_shovel"
+	}
+}

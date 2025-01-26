@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "netherite_block"
+		},
+		"title": {
+			"text": "Netherite Block",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"netherite_block"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:nether/netherite_ingot",
+	"rewards": {
+		"function": "aic:advancements/item/netherite_block"
+	}
+}

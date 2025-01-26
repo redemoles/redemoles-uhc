@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "red_concrete"
+		},
+		"title": {
+			"text": "Red Concrete",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"red_concrete"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:colored_blocks/orange_concrete",
+	"rewards": {
+		"function": "aic:advancements/item/red_concrete"
+	}
+}

@@ -1,0 +1,1024 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:diamond_sword"
+		},
+		"title": {
+			"text": "Outils et Combat",
+			"color": "#3FE7FF",
+			"bold": true
+		},
+		"description": {
+			"text": "",
+			"color": "green"
+		},
+		"background": "minecraft:textures/block/netherite_block.png",
+		"frame": "challenge",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"wooden_sword": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/wooden_sword": true
+						}
+					}
+				}
+			}
+		},
+		"wooden_pickaxe": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/wooden_pickaxe": true
+						}
+					}
+				}
+			}
+		},
+		"wooden_axe": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/wooden_axe": true
+						}
+					}
+				}
+			}
+		},
+		"wooden_shovel": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/wooden_shovel": true
+						}
+					}
+				}
+			}
+		},
+		"wooden_hoe": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/wooden_hoe": true
+						}
+					}
+				}
+			}
+		},
+		"leather_helmet": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/leather_helmet": true
+						}
+					}
+				}
+			}
+		},
+		"leather_chestplate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/leather_chestplate": true
+						}
+					}
+				}
+			}
+		},
+		"leather_leggings": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/leather_leggings": true
+						}
+					}
+				}
+			}
+		},
+		"leather_boots": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/leather_boots": true
+						}
+					}
+				}
+			}
+		},
+		"leather_horse_armor": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/leather_horse_armor": true
+						}
+					}
+				}
+			}
+		},
+		"stone_sword": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/stone_sword": true
+						}
+					}
+				}
+			}
+		},
+		"stone_pickaxe": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/stone_pickaxe": true
+						}
+					}
+				}
+			}
+		},
+		"stone_axe": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/stone_axe": true
+						}
+					}
+				}
+			}
+		},
+		"stone_shovel": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/stone_shovel": true
+						}
+					}
+				}
+			}
+		},
+		"stone_hoe": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/stone_hoe": true
+						}
+					}
+				}
+			}
+		},
+		"chainmail_helmet": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/chainmail_helmet": true
+						}
+					}
+				}
+			}
+		},
+		"chainmail_chestplate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/chainmail_chestplate": true
+						}
+					}
+				}
+			}
+		},
+		"chainmail_leggings": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/chainmail_leggings": true
+						}
+					}
+				}
+			}
+		},
+		"chainmail_boots": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/chainmail_boots": true
+						}
+					}
+				}
+			}
+		},
+		"shield": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/shield": true
+						}
+					}
+				}
+			}
+		},
+		"golden_sword": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/golden_sword": true
+						}
+					}
+				}
+			}
+		},
+		"golden_pickaxe": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/golden_pickaxe": true
+						}
+					}
+				}
+			}
+		},
+		"golden_axe": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/golden_axe": true
+						}
+					}
+				}
+			}
+		},
+		"golden_shovel": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/golden_shovel": true
+						}
+					}
+				}
+			}
+		},
+		"golden_hoe": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/golden_hoe": true
+						}
+					}
+				}
+			}
+		},
+		"golden_helmet": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/golden_helmet": true
+						}
+					}
+				}
+			}
+		},
+		"golden_chestplate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/golden_chestplate": true
+						}
+					}
+				}
+			}
+		},
+		"golden_leggings": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/golden_leggings": true
+						}
+					}
+				}
+			}
+		},
+		"golden_boots": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/golden_boots": true
+						}
+					}
+				}
+			}
+		},
+		"golden_horse_armor": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/golden_horse_armor": true
+						}
+					}
+				}
+			}
+		},
+		"iron_sword": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/iron_sword": true
+						}
+					}
+				}
+			}
+		},
+		"iron_pickaxe": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/iron_pickaxe": true
+						}
+					}
+				}
+			}
+		},
+		"iron_axe": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/iron_axe": true
+						}
+					}
+				}
+			}
+		},
+		"iron_shovel": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/iron_shovel": true
+						}
+					}
+				}
+			}
+		},
+		"iron_hoe": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/iron_hoe": true
+						}
+					}
+				}
+			}
+		},
+		"iron_helmet": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/iron_helmet": true
+						}
+					}
+				}
+			}
+		},
+		"iron_chestplate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/iron_chestplate": true
+						}
+					}
+				}
+			}
+		},
+		"iron_leggings": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/iron_leggings": true
+						}
+					}
+				}
+			}
+		},
+		"iron_boots": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/iron_boots": true
+						}
+					}
+				}
+			}
+		},
+		"iron_horse_armor": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/iron_horse_armor": true
+						}
+					}
+				}
+			}
+		},
+		"diamond_sword": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/diamond_sword": true
+						}
+					}
+				}
+			}
+		},
+		"diamond_pickaxe": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/diamond_pickaxe": true
+						}
+					}
+				}
+			}
+		},
+		"diamond_axe": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/diamond_axe": true
+						}
+					}
+				}
+			}
+		},
+		"diamond_shovel": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/diamond_shovel": true
+						}
+					}
+				}
+			}
+		},
+		"diamond_hoe": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/diamond_hoe": true
+						}
+					}
+				}
+			}
+		},
+		"diamond_helmet": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/diamond_helmet": true
+						}
+					}
+				}
+			}
+		},
+		"diamond_chestplate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/diamond_chestplate": true
+						}
+					}
+				}
+			}
+		},
+		"diamond_leggings": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/diamond_leggings": true
+						}
+					}
+				}
+			}
+		},
+		"diamond_boots": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/diamond_boots": true
+						}
+					}
+				}
+			}
+		},
+		"diamond_horse_armor": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/diamond_horse_armor": true
+						}
+					}
+				}
+			}
+		},
+		"netherite_sword": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/netherite_sword": true
+						}
+					}
+				}
+			}
+		},
+		"netherite_pickaxe": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/netherite_pickaxe": true
+						}
+					}
+				}
+			}
+		},
+		"netherite_axe": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/netherite_axe": true
+						}
+					}
+				}
+			}
+		},
+		"netherite_shovel": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/netherite_shovel": true
+						}
+					}
+				}
+			}
+		},
+		"netherite_hoe": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/netherite_hoe": true
+						}
+					}
+				}
+			}
+		},
+		"netherite_helmet": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/netherite_helmet": true
+						}
+					}
+				}
+			}
+		},
+		"netherite_chestplate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/netherite_chestplate": true
+						}
+					}
+				}
+			}
+		},
+		"netherite_leggings": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/netherite_leggings": true
+						}
+					}
+				}
+			}
+		},
+		"netherite_boots": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/netherite_boots": true
+						}
+					}
+				}
+			}
+		},
+		"bow": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/bow": true
+						}
+					}
+				}
+			}
+		},
+		"crossbow": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/crossbow": true
+						}
+					}
+				}
+			}
+		},
+		"trident": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/trident": true
+						}
+					}
+				}
+			}
+		},
+		"mace": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/mace": true
+						}
+					}
+				}
+			}
+		},
+		"flint_and_steel": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/flint_and_steel": true
+						}
+					}
+				}
+			}
+		},
+		"fishing_rod": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/fishing_rod": true
+						}
+					}
+				}
+			}
+		},
+		"carrot_on_a_stick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/carrot_on_a_stick": true
+						}
+					}
+				}
+			}
+		},
+		"warped_fungus_on_a_stick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/warped_fungus_on_a_stick": true
+						}
+					}
+				}
+			}
+		},
+		"shears": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/shears": true
+						}
+					}
+				}
+			}
+		},
+		"brush": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/brush": true
+						}
+					}
+				}
+			}
+		},
+		"elytra": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/elytra": true
+						}
+					}
+				}
+			}
+		},
+		"compass": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/compass": true
+						}
+					}
+				}
+			}
+		},
+		"recovery_compass": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/recovery_compass": true
+						}
+					}
+				}
+			}
+		},
+		"clock": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/clock": true
+						}
+					}
+				}
+			}
+		},
+		"spyglass": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/spyglass": true
+						}
+					}
+				}
+			}
+		},
+		"saddle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/saddle": true
+						}
+					}
+				}
+			}
+		},
+		"wolf_armor": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/wolf_armor": true
+						}
+					}
+				}
+			}
+		},
+		"totem_of_undying": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:tools/totem_of_undying": true
+						}
+					}
+				}
+			}
+		}
+	}
+}

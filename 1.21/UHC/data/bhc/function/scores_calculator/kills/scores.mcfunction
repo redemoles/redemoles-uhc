@@ -13,7 +13,7 @@ scoreboard players add @s bhc.invKills 1
 scoreboard players operation @s bhc.invKills *= #1m bhc.data
 
 # Départage des équipes à 1 kill et plus
-execute as @e[type=marker,tag=BHC] run scoreboard players add @s bhc.invKills 1
+execute as @e[type=marker,tag=UHC] run scoreboard players add @s bhc.invKills 1
 
 # Départage des équipes à 0 kill
-execute as @e[type=marker,tag=BHC,scores={bhc.invKills=..1000000}] run scoreboard players operation @s bhc.invKills = @s bhc.invDeath
+execute as @e[type=marker,tag=UHC,scores={bhc.invKills=..1000000}] run scoreboard players operation @s bhc.invKills = @s bhc.invDeath

@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "music_disc_otherside"
+		},
+		"title": {
+			"text": "Music Disc otherside",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"music_disc_otherside"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:collectionable/music_disc_pigstep",
+	"rewards": {
+		"function": "aic:advancements/item/music_disc_otherside"
+	}
+}

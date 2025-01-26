@@ -1,0 +1,1023 @@
+{
+	"display": {
+		"icon": {
+			"id": "netherrack"
+		},
+		"title": {
+			"text": "Nether",
+			"color": "#3FE7FF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "challenge",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"blackstone": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/blackstone": true
+						}
+					}
+				}
+			}
+		},
+		"blackstone_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/blackstone_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"blackstone_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/blackstone_slab": true
+						}
+					}
+				}
+			}
+		},
+		"blackstone_wall": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/blackstone_wall": true
+						}
+					}
+				}
+			}
+		},
+		"polished_blackstone": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/polished_blackstone": true
+						}
+					}
+				}
+			}
+		},
+		"polished_blackstone_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/polished_blackstone_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"polished_blackstone_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/polished_blackstone_slab": true
+						}
+					}
+				}
+			}
+		},
+		"polished_blackstone_wall": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/polished_blackstone_wall": true
+						}
+					}
+				}
+			}
+		},
+		"polished_blackstone_bricks": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/polished_blackstone_bricks": true
+						}
+					}
+				}
+			}
+		},
+		"polished_blackstone_brick_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/polished_blackstone_brick_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"polished_blackstone_brick_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/polished_blackstone_brick_slab": true
+						}
+					}
+				}
+			}
+		},
+		"polished_blackstone_brick_wall": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/polished_blackstone_brick_wall": true
+						}
+					}
+				}
+			}
+		},
+		"gilded_blackstone": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/gilded_blackstone": true
+						}
+					}
+				}
+			}
+		},
+		"chiseled_polished_blackstone": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/chiseled_polished_blackstone": true
+						}
+					}
+				}
+			}
+		},
+		"cracked_polished_blackstone_bricks": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/cracked_polished_blackstone_bricks": true
+						}
+					}
+				}
+			}
+		},
+		"polished_blackstone_pressure_plate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/polished_blackstone_pressure_plate": true
+						}
+					}
+				}
+			}
+		},
+		"polished_blackstone_button": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/polished_blackstone_button": true
+						}
+					}
+				}
+			}
+		},
+		"netherrack": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/netherrack": true
+						}
+					}
+				}
+			}
+		},
+		"nether_gold_ore": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/nether_gold_ore": true
+						}
+					}
+				}
+			}
+		},
+		"nether_quartz_ore": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/nether_quartz_ore": true
+						}
+					}
+				}
+			}
+		},
+		"magma_block": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/magma_block": true
+						}
+					}
+				}
+			}
+		},
+		"glowstone": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/glowstone": true
+						}
+					}
+				}
+			}
+		},
+		"glowstone_dust": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/glowstone_dust": true
+						}
+					}
+				}
+			}
+		},
+		"obsidian": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/obsidian": true
+						}
+					}
+				}
+			}
+		},
+		"crying_obsidian": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/crying_obsidian": true
+						}
+					}
+				}
+			}
+		},
+		"respawn_anchor": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/respawn_anchor": true
+						}
+					}
+				}
+			}
+		},
+		"basalt": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/basalt": true
+						}
+					}
+				}
+			}
+		},
+		"polished_basalt": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/polished_basalt": true
+						}
+					}
+				}
+			}
+		},
+		"smooth_basalt": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/smooth_basalt": true
+						}
+					}
+				}
+			}
+		},
+		"nether_bricks": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/nether_bricks": true
+						}
+					}
+				}
+			}
+		},
+		"nether_brick_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/nether_brick_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"nether_brick_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/nether_brick_slab": true
+						}
+					}
+				}
+			}
+		},
+		"nether_brick_wall": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/nether_brick_wall": true
+						}
+					}
+				}
+			}
+		},
+		"red_nether_bricks": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/red_nether_bricks": true
+						}
+					}
+				}
+			}
+		},
+		"red_nether_brick_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/red_nether_brick_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"red_nether_brick_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/red_nether_brick_slab": true
+						}
+					}
+				}
+			}
+		},
+		"red_nether_brick_wall": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/red_nether_brick_wall": true
+						}
+					}
+				}
+			}
+		},
+		"cracked_nether_bricks": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/cracked_nether_bricks": true
+						}
+					}
+				}
+			}
+		},
+		"chiseled_nether_bricks": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/chiseled_nether_bricks": true
+						}
+					}
+				}
+			}
+		},
+		"nether_brick_fence": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/nether_brick_fence": true
+						}
+					}
+				}
+			}
+		},
+		"nether_brick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/nether_brick": true
+						}
+					}
+				}
+			}
+		},
+		"ancient_debris": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/ancient_debris": true
+						}
+					}
+				}
+			}
+		},
+		"netherite_scrap": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/netherite_scrap": true
+						}
+					}
+				}
+			}
+		},
+		"netherite_ingot": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/netherite_ingot": true
+						}
+					}
+				}
+			}
+		},
+		"netherite_block": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/netherite_block": true
+						}
+					}
+				}
+			}
+		},
+		"lodestone": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/lodestone": true
+						}
+					}
+				}
+			}
+		},
+		"quartz_block": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/quartz_block": true
+						}
+					}
+				}
+			}
+		},
+		"quartz_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/quartz_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"quartz_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/quartz_slab": true
+						}
+					}
+				}
+			}
+		},
+		"quartz_pillar": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/quartz_pillar": true
+						}
+					}
+				}
+			}
+		},
+		"smooth_quartz": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/smooth_quartz": true
+						}
+					}
+				}
+			}
+		},
+		"smooth_quartz_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/smooth_quartz_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"smooth_quartz_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/smooth_quartz_slab": true
+						}
+					}
+				}
+			}
+		},
+		"quartz_bricks": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/quartz_bricks": true
+						}
+					}
+				}
+			}
+		},
+		"chiseled_quartz_block": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/chiseled_quartz_block": true
+						}
+					}
+				}
+			}
+		},
+		"quartz": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/quartz": true
+						}
+					}
+				}
+			}
+		},
+		"soul_soil": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/soul_soil": true
+						}
+					}
+				}
+			}
+		},
+		"soul_sand": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/soul_sand": true
+						}
+					}
+				}
+			}
+		},
+		"soul_torch": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/soul_torch": true
+						}
+					}
+				}
+			}
+		},
+		"soul_lantern": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/soul_lantern": true
+						}
+					}
+				}
+			}
+		},
+		"soul_campfire": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/soul_campfire": true
+						}
+					}
+				}
+			}
+		},
+		"shroomlight": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/shroomlight": true
+						}
+					}
+				}
+			}
+		},
+		"crimson_nylium": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/crimson_nylium": true
+						}
+					}
+				}
+			}
+		},
+		"weeping_vines": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/weeping_vines": true
+						}
+					}
+				}
+			}
+		},
+		"crimson_roots": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/crimson_roots": true
+						}
+					}
+				}
+			}
+		},
+		"warped_nylium": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/warped_nylium": true
+						}
+					}
+				}
+			}
+		},
+		"twisting_vines": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/twisting_vines": true
+						}
+					}
+				}
+			}
+		},
+		"warped_roots": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/warped_roots": true
+						}
+					}
+				}
+			}
+		},
+		"nether_sprouts": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/nether_sprouts": true
+						}
+					}
+				}
+			}
+		},
+		"blaze_rod": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/blaze_rod": true
+						}
+					}
+				}
+			}
+		},
+		"blaze_powder": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/blaze_powder": true
+						}
+					}
+				}
+			}
+		},
+		"nether_wart": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/nether_wart": true
+						}
+					}
+				}
+			}
+		},
+		"magma_cream": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/magma_cream": true
+						}
+					}
+				}
+			}
+		},
+		"ghast_tear": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/ghast_tear": true
+						}
+					}
+				}
+			}
+		},
+		"wither_rose": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/wither_rose": true
+						}
+					}
+				}
+			}
+		},
+		"nether_star": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/nether_star": true
+						}
+					}
+				}
+			}
+		},
+		"beacon": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/beacon": true
+						}
+					}
+				}
+			}
+		}
+	},
+	"parent": "aic:_root_04"
+}

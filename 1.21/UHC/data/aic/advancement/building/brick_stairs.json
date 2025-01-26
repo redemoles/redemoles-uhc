@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "brick_stairs"
+		},
+		"title": {
+			"text": "Brick Stairs",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"brick_stairs"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:building/bricks",
+	"rewards": {
+		"function": "aic:advancements/item/brick_stairs"
+	}
+}

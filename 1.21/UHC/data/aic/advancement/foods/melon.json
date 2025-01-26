@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "melon"
+		},
+		"title": {
+			"text": "Melon",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"melon"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:foods/glistering_melon_slice",
+	"rewards": {
+		"function": "aic:advancements/item/melon"
+	}
+}

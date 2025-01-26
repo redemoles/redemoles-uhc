@@ -1,0 +1,50 @@
+{
+	"display": {
+	  "icon": {
+		"id": "suspicious_stew"
+	  },
+	  "title": {
+		"text": "Suspicious Stew Poison",
+		"color": "#FFFFFF"
+	  },
+	  "description": {
+		"text": "",
+		"color": "#FFFFFF"
+	  },
+	  "frame": "task",
+	  "show_toast": false,
+	  "announce_to_chat": false,
+	  "hidden": false
+	},
+	"criteria": {
+	  "requirement": {
+		"trigger": "minecraft:inventory_changed",
+		"conditions": {
+		  "items": [
+			{
+			  "items": [
+				"suspicious_stew"
+			  ],
+			  "components": {
+				"minecraft:suspicious_stew_effects": [
+				  {
+					"id": "minecraft:poison",
+					"duration": 220
+				  }
+				]
+			  }
+			}
+		  ]
+		}
+	  }
+	},
+	"parent": "aic:foods/suspicious_stew_night_vision",
+	"requirements": [
+	  [
+		"requirement"
+	  ]
+	],
+	"rewards": {
+	  "function": "aic:advancements/item/suspicious_stew_poison"
+	}
+  }

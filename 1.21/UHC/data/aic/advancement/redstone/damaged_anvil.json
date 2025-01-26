@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "damaged_anvil"
+		},
+		"title": {
+			"text": "Damaged Anvil",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"damaged_anvil"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:redstone/chipped_anvil",
+	"rewards": {
+		"function": "aic:advancements/item/damaged_anvil"
+	}
+}

@@ -19,7 +19,10 @@ scoreboard players add @e[type=item] uhc.timer.entities 1
 kill @e[type=item,scores={uhc.timer.entities=150..}]
 
 ## Kill Phantom
-tp @e[type=minecraft:phantom] 0 -1000 0
+execute unless score #aic uhc.gamemode matches 3 run tp @e[type=minecraft:phantom] 0 -1000 0
+
+## Respawn Dragon en All Items
+execute if score #aic uhc.gamemode matches 3 run function aic:timer/second
 
 ## TIMER POUR CHAQUE MODE DE JEU
 

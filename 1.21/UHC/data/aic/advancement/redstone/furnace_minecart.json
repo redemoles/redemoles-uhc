@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "furnace_minecart"
+		},
+		"title": {
+			"text": "Furnace Minecart",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"furnace_minecart"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:redstone/chest_minecart",
+	"rewards": {
+		"function": "aic:advancements/item/furnace_minecart"
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "stone_bricks"
+		},
+		"title": {
+			"text": "Stone Bricks",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"stone_bricks"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:building/cobblestone_wall",
+	"rewards": {
+		"function": "aic:advancements/item/stone_bricks"
+	}
+}

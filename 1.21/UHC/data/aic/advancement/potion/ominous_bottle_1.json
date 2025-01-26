@@ -1,0 +1,40 @@
+{
+	"display": {
+		"icon": {
+			"id": "ominous_bottle"
+		},
+		"title": {
+			"text": "Ominous Bottle",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "Bad Omen (1:40:00)",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"ominous_bottle"
+						],
+						"components": {
+							"ominous_bottle_amplifier": 0
+						}
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:_root_02",
+	"rewards": {
+		"function": "aic:advancements/item/ominous_bottle_1"
+	}
+}

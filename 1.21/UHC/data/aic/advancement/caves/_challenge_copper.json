@@ -1,0 +1,958 @@
+{
+	"display": {
+		"icon": {
+			"id": "oxidized_copper"
+		},
+		"title": {
+			"text": "Cuivre",
+			"color": "#3FE7FF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "challenge",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"weathered_copper": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/weathered_copper": true
+						}
+					}
+				}
+			}
+		},
+		"weathered_chiseled_copper": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/weathered_chiseled_copper": true
+						}
+					}
+				}
+			}
+		},
+		"weathered_cut_copper": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/weathered_cut_copper": true
+						}
+					}
+				}
+			}
+		},
+		"weathered_cut_copper_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/weathered_cut_copper_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"weathered_cut_copper_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/weathered_cut_copper_slab": true
+						}
+					}
+				}
+			}
+		},
+		"weathered_copper_door": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/weathered_copper_door": true
+						}
+					}
+				}
+			}
+		},
+		"weathered_copper_trapdoor": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/weathered_copper_trapdoor": true
+						}
+					}
+				}
+			}
+		},
+		"weathered_copper_grate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/weathered_copper_grate": true
+						}
+					}
+				}
+			}
+		},
+		"weathered_copper_bulb": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/weathered_copper_bulb": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_weathered_copper": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_weathered_copper": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_weathered_chiseled_copper": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_weathered_chiseled_copper": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_weathered_cut_copper": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_weathered_cut_copper": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_weathered_cut_copper_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_weathered_cut_copper_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_weathered_cut_copper_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_weathered_cut_copper_slab": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_weathered_copper_door": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_weathered_copper_door": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_weathered_copper_trapdoor": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_weathered_copper_trapdoor": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_weathered_copper_grate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_weathered_copper_grate": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_weathered_copper_bulb": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_weathered_copper_bulb": true
+						}
+					}
+				}
+			}
+		},
+		"oxidized_copper": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/oxidized_copper": true
+						}
+					}
+				}
+			}
+		},
+		"oxidized_chiseled_copper": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/oxidized_chiseled_copper": true
+						}
+					}
+				}
+			}
+		},
+		"oxidized_cut_copper": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/oxidized_cut_copper": true
+						}
+					}
+				}
+			}
+		},
+		"oxidized_cut_copper_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/oxidized_cut_copper_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"oxidized_cut_copper_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/oxidized_cut_copper_slab": true
+						}
+					}
+				}
+			}
+		},
+		"oxidized_copper_door": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/oxidized_copper_door": true
+						}
+					}
+				}
+			}
+		},
+		"oxidized_copper_trapdoor": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/oxidized_copper_trapdoor": true
+						}
+					}
+				}
+			}
+		},
+		"oxidized_copper_grate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/oxidized_copper_grate": true
+						}
+					}
+				}
+			}
+		},
+		"oxidized_copper_bulb": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/oxidized_copper_bulb": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_oxidized_copper": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_oxidized_copper": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_oxidized_chiseled_copper": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_oxidized_chiseled_copper": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_oxidized_cut_copper": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_oxidized_cut_copper": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_oxidized_cut_copper_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_oxidized_cut_copper_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_oxidized_cut_copper_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_oxidized_cut_copper_slab": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_oxidized_copper_door": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_oxidized_copper_door": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_oxidized_copper_trapdoor": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_oxidized_copper_trapdoor": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_oxidized_copper_grate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_oxidized_copper_grate": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_oxidized_copper_bulb": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_oxidized_copper_bulb": true
+						}
+					}
+				}
+			}
+		},
+		"exposed_copper": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/exposed_copper": true
+						}
+					}
+				}
+			}
+		},
+		"exposed_chiseled_copper": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/exposed_chiseled_copper": true
+						}
+					}
+				}
+			}
+		},
+		"exposed_cut_copper": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/exposed_cut_copper": true
+						}
+					}
+				}
+			}
+		},
+		"exposed_cut_copper_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/exposed_cut_copper_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"exposed_cut_copper_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/exposed_cut_copper_slab": true
+						}
+					}
+				}
+			}
+		},
+		"exposed_copper_door": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/exposed_copper_door": true
+						}
+					}
+				}
+			}
+		},
+		"exposed_copper_trapdoor": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/exposed_copper_trapdoor": true
+						}
+					}
+				}
+			}
+		},
+		"exposed_copper_grate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/exposed_copper_grate": true
+						}
+					}
+				}
+			}
+		},
+		"exposed_copper_bulb": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/exposed_copper_bulb": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_exposed_copper": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_exposed_copper": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_exposed_chiseled_copper": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_exposed_chiseled_copper": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_exposed_cut_copper": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_exposed_cut_copper": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_exposed_cut_copper_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_exposed_cut_copper_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_exposed_cut_copper_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_exposed_cut_copper_slab": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_exposed_copper_door": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_exposed_copper_door": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_exposed_copper_trapdoor": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_exposed_copper_trapdoor": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_exposed_copper_grate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_exposed_copper_grate": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_exposed_copper_bulb": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_exposed_copper_bulb": true
+						}
+					}
+				}
+			}
+		},
+		"copper_block": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/copper_block": true
+						}
+					}
+				}
+			}
+		},
+		"chiseled_copper": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/chiseled_copper": true
+						}
+					}
+				}
+			}
+		},
+		"cut_copper": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/cut_copper": true
+						}
+					}
+				}
+			}
+		},
+		"cut_copper_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/cut_copper_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"cut_copper_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/cut_copper_slab": true
+						}
+					}
+				}
+			}
+		},
+		"copper_door": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/copper_door": true
+						}
+					}
+				}
+			}
+		},
+		"copper_trapdoor": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/copper_trapdoor": true
+						}
+					}
+				}
+			}
+		},
+		"copper_grate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/copper_grate": true
+						}
+					}
+				}
+			}
+		},
+		"copper_bulb": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/copper_bulb": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_copper": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_copper_block": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_chiseled_copper": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_chiseled_copper": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_cut_copper": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_cut_copper": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_cut_copper_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_cut_copper_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_cut_copper_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_cut_copper_slab": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_copper_door": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_copper_door": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_copper_trapdoor": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_copper_trapdoor": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_copper_grate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_copper_grate": true
+						}
+					}
+				}
+			}
+		},
+		"waxed_copper_bulb": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/waxed_copper_bulb": true
+						}
+					}
+				}
+			}
+		}
+	},
+	"parent": "aic:_root_05"
+}

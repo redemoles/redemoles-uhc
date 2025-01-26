@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "stone_pressure_plate"
+		},
+		"title": {
+			"text": "Stone Pressure Plate",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"stone_pressure_plate"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:building/cracked_stone_bricks",
+	"rewards": {
+		"function": "aic:advancements/item/stone_pressure_plate"
+	}
+}

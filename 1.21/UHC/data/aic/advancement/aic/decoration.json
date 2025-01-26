@@ -1,0 +1,1040 @@
+{
+	"display": {
+		"icon": {
+			"id": "rose_bush"
+		},
+		"title": {
+			"text": "Décoration",
+			"color": "#3FE7FF",
+			"bold": true
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "goal",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"parent": "aic:aic/redstone",
+	"rewards": {
+		"function": "aic:advancements/collection/decoration"
+	},
+	"criteria": {
+		"blue_ice": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/blue_ice": true
+						}
+					}
+				}
+			}
+		},
+		"packed_ice": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/packed_ice": true
+						}
+					}
+				}
+			}
+		},
+		"ice": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/ice": true
+						}
+					}
+				}
+			}
+		},
+		"snow_block": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/snow_block": true
+						}
+					}
+				}
+			}
+		},
+		"snow": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/snow": true
+						}
+					}
+				}
+			}
+		},
+		"snowball": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/snowball": true
+						}
+					}
+				}
+			}
+		},
+		"grass_block": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/grass_block": true
+						}
+					}
+				}
+			}
+		},
+		"podzol": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/podzol": true
+						}
+					}
+				}
+			}
+		},
+		"mycelium": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/mycelium": true
+						}
+					}
+				}
+			}
+		},
+		"dirt": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/dirt": true
+						}
+					}
+				}
+			}
+		},
+		"coarse_dirt": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/coarse_dirt": true
+						}
+					}
+				}
+			}
+		},
+		"rooted_dirt": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/rooted_dirt": true
+						}
+					}
+				}
+			}
+		},
+		"gravel": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/gravel": true
+						}
+					}
+				}
+			}
+		},
+		"flint": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/flint": true
+						}
+					}
+				}
+			}
+		},
+		"hanging_roots": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/hanging_roots": true
+						}
+					}
+				}
+			}
+		},
+		"glow_lichen": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/glow_lichen": true
+						}
+					}
+				}
+			}
+		},
+		"dripstone_block": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/dripstone_block": true
+						}
+					}
+				}
+			}
+		},
+		"pointed_dripstone": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/pointed_dripstone": true
+						}
+					}
+				}
+			}
+		},
+		"azalea": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/azalea": true
+						}
+					}
+				}
+			}
+		},
+		"flowering_azalea": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/flowering_azalea": true
+						}
+					}
+				}
+			}
+		},
+		"azalea_leaves": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/azalea_leaves": true
+						}
+					}
+				}
+			}
+		},
+		"flowering_azalea_leaves": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/flowering_azalea_leaves": true
+						}
+					}
+				}
+			}
+		},
+		"moss_block": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/moss_block": true
+						}
+					}
+				}
+			}
+		},
+		"moss_carpet": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/moss_carpet": true
+						}
+					}
+				}
+			}
+		},
+		"spore_blossom": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/spore_blossom": true
+						}
+					}
+				}
+			}
+		},
+		"pale_moss_block": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/pale_moss_block": true
+						}
+					}
+				}
+			}
+		},
+		"pale_moss_carpet": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/pale_moss_carpet": true
+						}
+					}
+				}
+			}
+		},
+		"pale_hanging_moss": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/pale_hanging_moss": true
+						}
+					}
+				}
+			}
+		},
+		"cactus": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/cactus": true
+						}
+					}
+				}
+			}
+		},
+		"vine": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/vine": true
+						}
+					}
+				}
+			}
+		},
+		"tall_grass": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/tall_grass": true
+						}
+					}
+				}
+			}
+		},
+		"large_fern": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/large_fern": true
+						}
+					}
+				}
+			}
+		},
+		"short_grass": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/short_grass": true
+						}
+					}
+				}
+			}
+		},
+		"fern": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/fern": true
+						}
+					}
+				}
+			}
+		},
+		"big_dripleaf": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/big_dripleaf": true
+						}
+					}
+				}
+			}
+		},
+		"small_dripleaf": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/small_dripleaf": true
+						}
+					}
+				}
+			}
+		},
+		"lily_pad": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/lily_pad": true
+						}
+					}
+				}
+			}
+		},
+		"flower_pot": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/flower_pot": true
+						}
+					}
+				}
+			}
+		},
+		"peony": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/peony": true
+						}
+					}
+				}
+			}
+		},
+		"lilac": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/lilac": true
+						}
+					}
+				}
+			}
+		},
+		"rose_bush": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/rose_bush": true
+						}
+					}
+				}
+			}
+		},
+		"sunflower": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/sunflower": true
+						}
+					}
+				}
+			}
+		},
+		"dandelion": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/dandelion": true
+						}
+					}
+				}
+			}
+		},
+		"poppy": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/poppy": true
+						}
+					}
+				}
+			}
+		},
+		"blue_orchid": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/blue_orchid": true
+						}
+					}
+				}
+			}
+		},
+		"azure_bluet": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/azure_bluet": true
+						}
+					}
+				}
+			}
+		},
+		"orange_tulip": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/orange_tulip": true
+						}
+					}
+				}
+			}
+		},
+		"pink_tulip": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/pink_tulip": true
+						}
+					}
+				}
+			}
+		},
+		"red_tulip": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/red_tulip": true
+						}
+					}
+				}
+			}
+		},
+		"white_tulip": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/white_tulip": true
+						}
+					}
+				}
+			}
+		},
+		"lily_of_the_valley": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/lily_of_the_valley": true
+						}
+					}
+				}
+			}
+		},
+		"cornflower": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/cornflower": true
+						}
+					}
+				}
+			}
+		},
+		"allium": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/allium": true
+						}
+					}
+				}
+			}
+		},
+		"oxeye_daisy": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/oxeye_daisy": true
+						}
+					}
+				}
+			}
+		},
+		"closed_eyeblossom": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/closed_eyeblossom": true
+						}
+					}
+				}
+			}
+		},
+		"open_eyeblossom": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/open_eyeblossom": true
+						}
+					}
+				}
+			}
+		},
+		"dead_bush": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/dead_bush": true
+						}
+					}
+				}
+			}
+		},
+		"sniffer_egg": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/sniffer_egg": true
+						}
+					}
+				}
+			}
+		},
+		"pitcher_plant": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/pitcher_plant": true
+						}
+					}
+				}
+			}
+		},
+		"torchflower_seeds": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/torchflower_seeds": true
+						}
+					}
+				}
+			}
+		},
+		"pitcher_pod": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/pitcher_pod": true
+						}
+					}
+				}
+			}
+		},
+		"torchflower": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/torchflower": true
+						}
+					}
+				}
+			}
+		},
+		"ochre_froglight": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/ochre_froglight": true
+						}
+					}
+				}
+			}
+		},
+		"pearlescent_froglight": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/pearlescent_froglight": true
+						}
+					}
+				}
+			}
+		},
+		"verdant_froglight": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/verdant_froglight": true
+						}
+					}
+				}
+			}
+		},
+		"bone_block": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/bone_block": true
+						}
+					}
+				}
+			}
+		},
+		"bone": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/bone": true
+						}
+					}
+				}
+			}
+		},
+		"bone_meal": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/bone_meal": true
+						}
+					}
+				}
+			}
+		},
+		"cobweb": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/cobweb": true
+						}
+					}
+				}
+			}
+		},
+		"campfire": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/campfire": true
+						}
+					}
+				}
+			}
+		},
+		"lantern": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/lantern": true
+						}
+					}
+				}
+			}
+		},
+		"torch": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/torch": true
+						}
+					}
+				}
+			}
+		},
+		"ladder": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/ladder": true
+						}
+					}
+				}
+			}
+		},
+		"iron_bars": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/iron_bars": true
+						}
+					}
+				}
+			}
+		},
+		"chain": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/chain": true
+						}
+					}
+				}
+			}
+		},
+		"item_frame": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/item_frame": true
+						}
+					}
+				}
+			}
+		},
+		"glow_item_frame": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/glow_item_frame": true
+						}
+					}
+				}
+			}
+		},
+		"painting": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/painting": true
+						}
+					}
+				}
+			}
+		}
+	}
+}

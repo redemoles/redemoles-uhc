@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "acacia_button"
+		},
+		"title": {
+			"text": "Acacia Button",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"acacia_button"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:woods/acacia_pressure_plate",
+	"rewards": {
+		"function": "aic:advancements/item/acacia_button"
+	}
+}

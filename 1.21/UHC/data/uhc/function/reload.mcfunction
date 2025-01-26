@@ -143,6 +143,7 @@ scoreboard players set #lives uhc.players.lives 1
 scoreboard players set #shield_percent uhc.data.setup 100
 scoreboard players set #shield uhc.data.setup 336
 scoreboard players set #pvp_mod uhc.data.setup 0
+scoreboard players set #knockback uhc.data.setup 0
 
 scoreboard players set #pve uhc.data.setup 2
 scoreboard players set #pvp uhc.data.setup 40
@@ -167,9 +168,11 @@ execute unless score #lobby lobby.data matches 1.. run scoreboard players set #l
 scoreboard players set #load lobby.data 0
 
 ## Autres modes
+function aic:load
 function bhc:load
 function dru:load
 function fte:load
+function mls:load
 function nzl:reload/sb
 function prv:load
 function uau:load

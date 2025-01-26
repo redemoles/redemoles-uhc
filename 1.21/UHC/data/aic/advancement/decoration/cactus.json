@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "cactus"
+		},
+		"title": {
+			"text": "Cactus",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"cactus"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:_root_09",
+	"rewards": {
+		"function": "aic:advancements/item/cactus"
+	}
+}

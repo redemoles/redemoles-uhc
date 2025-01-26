@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "weathered_copper_grate"
+		},
+		"title": {
+			"text": "Weathered Copper Grate",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"weathered_copper_grate"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:caves/weathered_copper_trapdoor",
+	"rewards": {
+		"function": "aic:advancements/item/weathered_copper_grate"
+	}
+}

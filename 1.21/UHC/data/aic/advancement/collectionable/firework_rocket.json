@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "firework_rocket"
+		},
+		"title": {
+			"text": "Firework Rocket",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"firework_rocket"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:collectionable/fire_charge",
+	"rewards": {
+		"function": "aic:advancements/item/firework_rocket"
+	}
+}

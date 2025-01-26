@@ -31,9 +31,9 @@ scoreboard players set #live_1 uhc.data.setup 0
 
 ## Configuration de la Worldborder
 execute store result storage uhc:settings border_size int 1 run scoreboard players get #border_size_start uhc.data.setup
-execute in minecraft:overworld run function fte:start/wb_start
-execute in minecraft:the_nether run function fte:start/wb_start
-execute in minecraft:the_end run function fte:start/wb_start
+execute in minecraft:overworld run function fte:start/wb_start with storage uhc:settings
+execute in minecraft:the_nether run function fte:start/wb_start with storage uhc:settings
+execute in minecraft:the_end run function fte:start/wb_start with storage uhc:settings
 
 ## Configuration des messages de mort
 # 0 : Message par défaut

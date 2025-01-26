@@ -13,8 +13,10 @@ scoreboard players set #start uhc.data.setup 1
 execute if score #bhc uhc.gamemode matches 1 run function bhc:start/
 execute if score #dru uhc.gamemode matches 1 run function dru:start/
 execute if score #fte uhc.gamemode matches 1 run function fte:start/
+execute if score #mls uhc.gamemode matches 1 run function mls:start/
 execute if score #nzl uhc.gamemode matches 1 run function nzl:start/
 execute if score #prv uhc.gamemode matches 1 run function prv:start/
+execute if score #aic uhc.gamemode matches 3 run function aic:start/
 
 ## Annulation des effets causés par le passage de la minute -1 à 0
 scoreboard players set #tick_start uhc.data.setup 201

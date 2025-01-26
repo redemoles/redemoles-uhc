@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "music_disc_wait"
+		},
+		"title": {
+			"text": "Music Disc Wait",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"music_disc_wait"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:collectionable/music_disc_strad",
+	"rewards": {
+		"function": "aic:advancements/item/music_disc_wait"
+	}
+}

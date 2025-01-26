@@ -1,0 +1,282 @@
+{
+	"display": {
+		"icon": {
+			"id": "deepslate"
+		},
+		"title": {
+			"text": "Ardoise",
+			"color": "#3FE7FF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "challenge",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"cobbled_deepslate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/cobbled_deepslate": true
+						}
+					}
+				}
+			}
+		},
+		"cobbled_deepslate_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/cobbled_deepslate_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"cobbled_deepslate_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/cobbled_deepslate_slab": true
+						}
+					}
+				}
+			}
+		},
+		"cobbled_deepslate_wall": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/cobbled_deepslate_wall": true
+						}
+					}
+				}
+			}
+		},
+		"deepslate_bricks": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/deepslate_bricks": true
+						}
+					}
+				}
+			}
+		},
+		"deepslate_brick_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/deepslate_brick_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"deepslate_brick_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/deepslate_brick_slab": true
+						}
+					}
+				}
+			}
+		},
+		"deepslate_brick_wall": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/deepslate_brick_wall": true
+						}
+					}
+				}
+			}
+		},
+		"deepslate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/deepslate": true
+						}
+					}
+				}
+			}
+		},
+		"cracked_deepslate_bricks": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/cracked_deepslate_bricks": true
+						}
+					}
+				}
+			}
+		},
+		"polished_deepslate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/polished_deepslate": true
+						}
+					}
+				}
+			}
+		},
+		"polished_deepslate_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/polished_deepslate_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"polished_deepslate_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/polished_deepslate_slab": true
+						}
+					}
+				}
+			}
+		},
+		"polished_deepslate_wall": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/polished_deepslate_wall": true
+						}
+					}
+				}
+			}
+		},
+		"deepslate_tiles": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/deepslate_tiles": true
+						}
+					}
+				}
+			}
+		},
+		"deepslate_tile_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/deepslate_tile_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"deepslate_tile_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/deepslate_tile_slab": true
+						}
+					}
+				}
+			}
+		},
+		"deepslate_tile_wall": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/deepslate_tile_wall": true
+						}
+					}
+				}
+			}
+		},
+		"chiseled_deepslate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/chiseled_deepslate": true
+						}
+					}
+				}
+			}
+		},
+		"cracked_deepslate_tiles": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/cracked_deepslate_tiles": true
+						}
+					}
+				}
+			}
+		}
+	},
+	"parent": "aic:_root_06"
+}

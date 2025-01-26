@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "lava_bucket"
+		},
+		"title": {
+			"text": "Lava Bucket",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"lava_bucket"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:collectionable/powder_snow_bucket",
+	"rewards": {
+		"function": "aic:advancements/item/lava_bucket"
+	}
+}

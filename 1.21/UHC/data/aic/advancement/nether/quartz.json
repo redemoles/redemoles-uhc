@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "quartz"
+		},
+		"title": {
+			"text": "Quartz",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"quartz"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:nether/chiseled_quartz_block",
+	"rewards": {
+		"function": "aic:advancements/item/quartz"
+	}
+}

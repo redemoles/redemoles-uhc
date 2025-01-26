@@ -1,0 +1,348 @@
+{
+	"display": {
+		"icon": {
+			"id": "diamond_sword"
+		},
+		"title": {
+			"text": "Enchantements pour Épée",
+			"color": "#3FE7FF"
+		},
+		"description": {
+			"text": "",
+			"color": "#ffffff"
+		},
+		"frame": "challenge",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"parent": "aic:_root_03",
+	"criteria": {
+		"bane_of_arthropods_1": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/bane_of_arthropods_1": true
+						}
+					}
+				}
+			}
+		},
+		"bane_of_arthropods_2": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/bane_of_arthropods_2": true
+						}
+					}
+				}
+			}
+		},
+		"bane_of_arthropods_3": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/bane_of_arthropods_3": true
+						}
+					}
+				}
+			}
+		},
+		"bane_of_arthropods_4": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/bane_of_arthropods_4": true
+						}
+					}
+				}
+			}
+		},
+		
+		"bane_of_arthropods_5": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/bane_of_arthropods_5": true
+						}
+					}
+				}
+			}
+		},
+		"sharpness_1": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/sharpness_1": true
+						}
+					}
+				}
+			}
+		},
+		"sharpness_2": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/sharpness_2": true
+						}
+					}
+				}
+			}
+		},
+		"sharpness_3": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/sharpness_3": true
+						}
+					}
+				}
+			}
+		},
+		"sharpness_4": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/sharpness_4": true
+						}
+					}
+				}
+			}
+		},
+		"sharpness_5": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/sharpness_5": true
+						}
+					}
+				}
+			}
+		},
+		"smite_1": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/smite_1": true
+						}
+					}
+				}
+			}
+		},
+		"smite_2": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/smite_2": true
+						}
+					}
+				}
+			}
+		},
+		"smite_3": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/smite_3": true
+						}
+					}
+				}
+			}
+		},
+		"smite_4": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/smite_4": true
+						}
+					}
+				}
+			}
+		},
+		"smite_5": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/smite_5": true
+						}
+					}
+				}
+			}
+		},
+		"knockback_1": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/knockback_1": true
+						}
+					}
+				}
+			}
+		},
+		"knockback_2": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/knockback_2": true
+						}
+					}
+				}
+			}
+		},
+		"fire_aspect_1": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/fire_aspect_1": true
+						}
+					}
+				}
+			}
+		},
+		"fire_aspect_2": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/fire_aspect_2": true
+						}
+					}
+				}
+			}
+		},
+		"looting_1": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/looting_1": true
+						}
+					}
+				}
+			}
+		},
+		"looting_2": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/looting_2": true
+						}
+					}
+				}
+			}
+		},
+		"looting_3": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/looting_3": true
+						}
+					}
+				}
+			}
+		},
+		"sweeping_edge_1": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/sweeping_edge_1": true
+						}
+					}
+				}
+			}
+		},
+		"sweeping_edge_2": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/sweeping_edge_2": true
+						}
+					}
+				}
+			}
+		},
+		"sweeping_edge_3": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/sweeping_edge_3": true
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "stone_sword"
+		},
+		"title": {
+			"text": "Stone Sword",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"stone_sword"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:_root_12",
+	"rewards": {
+		"function": "aic:advancements/item/stone_sword"
+	}
+}

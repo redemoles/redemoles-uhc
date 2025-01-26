@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "cornflower"
+		},
+		"title": {
+			"text": "Cornflower",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"cornflower"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:decoration/lily_of_the_valley",
+	"rewards": {
+		"function": "aic:advancements/item/cornflower"
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "nether_gold_ore"
+		},
+		"title": {
+			"text": "Nether Gold Ore",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"nether_gold_ore"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:nether/netherrack",
+	"rewards": {
+		"function": "aic:advancements/item/nether_gold_ore"
+	}
+}

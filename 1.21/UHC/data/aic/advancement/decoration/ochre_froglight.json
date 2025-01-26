@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "ochre_froglight"
+		},
+		"title": {
+			"text": "Ochre Froglight",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"ochre_froglight"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:decoration/torchflower",
+	"rewards": {
+		"function": "aic:advancements/item/ochre_froglight"
+	}
+}

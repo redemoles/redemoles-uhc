@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "weathered_cut_copper_slab"
+		},
+		"title": {
+			"text": "Weathered Cut Copper Slab",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"weathered_cut_copper_slab"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:caves/weathered_cut_copper_stairs",
+	"rewards": {
+		"function": "aic:advancements/item/weathered_cut_copper_slab"
+	}
+}

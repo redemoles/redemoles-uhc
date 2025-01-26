@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "polished_blackstone_bricks"
+		},
+		"title": {
+			"text": "Polished Blackstone Bricks",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"polished_blackstone_bricks"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:nether/polished_blackstone_wall",
+	"rewards": {
+		"function": "aic:advancements/item/polished_blackstone_bricks"
+	}
+}

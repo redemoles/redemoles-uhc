@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "light_gray_shulker_box"
+		},
+		"title": {
+			"text": "Light Gray Shulker Box",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"light_gray_shulker_box"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:colored_blocks/white_shulker_box",
+	"rewards": {
+		"function": "aic:advancements/item/light_gray_shulker_box"
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "acacia_stairs"
+		},
+		"title": {
+			"text": "Acacia Stairs",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"acacia_stairs"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:woods/acacia_planks",
+	"rewards": {
+		"function": "aic:advancements/item/acacia_stairs"
+	}
+}

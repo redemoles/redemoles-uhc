@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "spectral_arrow"
+		},
+		"title": {
+			"text": "Spectral Arrow",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"spectral_arrow"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:potion/arrow",
+	"rewards": {
+		"function": "aic:advancements/item/spectral_arrow"
+	}
+}

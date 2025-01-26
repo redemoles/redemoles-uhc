@@ -1,0 +1,27 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+          "damage": {
+            "blocked": false,
+            "source_entity": {
+              "type": "#minecraft:arrows"
+            }
+          },
+          "entity": {
+            "type": "minecraft:player",
+            "distance": {
+              "absolute": {
+                "min": 30,
+                "max": 49.999
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "uhc:in_game/scenarios/rewarding_longshots/50_100"
+    }
+  }

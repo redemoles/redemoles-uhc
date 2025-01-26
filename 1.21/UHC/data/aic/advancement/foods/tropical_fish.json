@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "tropical_fish"
+		},
+		"title": {
+			"text": "Tropical Fish",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"tropical_fish"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:foods/pufferfish",
+	"rewards": {
+		"function": "aic:advancements/item/tropical_fish"
+	}
+}

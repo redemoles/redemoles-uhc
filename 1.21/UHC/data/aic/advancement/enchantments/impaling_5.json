@@ -1,0 +1,47 @@
+{
+	"display": {
+	  "icon": {
+		"id": "minecraft:written_book"
+	  },
+	  "title": {
+		"text": "Impaling V",
+		"color": "#FFFFFF"
+	  },
+	  "description": {
+		"text": "",
+		"color": "#FFFFFF"
+	  },
+	  "frame": "task",
+	  "show_toast": false,
+	  "announce_to_chat": false,
+	  "hidden": false
+	},
+	"criteria": {
+	  "requirement": {
+		"trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:enchantments": [
+                {
+                  "enchantments": "impaling",
+                  "levels": 5
+                }
+              ]
+			  }
+			}
+		  ]
+		}
+	  }
+	},
+	"parent": "aic:enchantments/impaling_4",
+	"requirements": [
+	  [
+		"requirement"
+	  ]
+	],
+	"rewards": {
+	  "function": "aic:advancements/item/impaling_5"
+	}
+  }

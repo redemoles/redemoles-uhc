@@ -1,0 +1,152 @@
+{
+	"display": {
+		"icon": {
+			"id": "bordure_indented_banner_pattern"
+		},
+		"title": {
+			"text": "Motifs de bannière",
+			"color": "#3FE7FF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "challenge",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"bordure_indented_banner_pattern": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/bordure_indented_banner_pattern": true
+						}
+					}
+				}
+			}
+		},
+		"creeper_banner_pattern": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/creeper_banner_pattern": true
+						}
+					}
+				}
+			}
+		},
+		"field_masoned_banner_pattern": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/field_masoned_banner_pattern": true
+						}
+					}
+				}
+			}
+		},
+		"flow_banner_pattern": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/flow_banner_pattern": true
+						}
+					}
+				}
+			}
+		},
+		"flower_banner_pattern": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/flower_banner_pattern": true
+						}
+					}
+				}
+			}
+		},
+		"globe_banner_pattern": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/globe_banner_pattern": true
+						}
+					}
+				}
+			}
+		},
+		"guster_banner_pattern": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/guster_banner_pattern": true
+						}
+					}
+				}
+			}
+		},
+		"mojang_banner_pattern": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/mojang_banner_pattern": true
+						}
+					}
+				}
+			}
+		},
+		"piglin_banner_pattern": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/piglin_banner_pattern": true
+						}
+					}
+				}
+			}
+		},
+		"skull_banner_pattern": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/skull_banner_pattern": true
+						}
+					}
+				}
+			}
+		}
+	},
+	"parent": "aic:_root_01"
+}

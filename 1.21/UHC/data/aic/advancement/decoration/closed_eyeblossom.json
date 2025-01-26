@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "closed_eyeblossom"
+		},
+		"title": {
+			"text": "Closed Eyeblossom",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"closed_eyeblossom"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:decoration/oxeye_daisy",
+	"rewards": {
+		"function": "aic:advancements/item/closed_eyeblossom"
+	}
+}

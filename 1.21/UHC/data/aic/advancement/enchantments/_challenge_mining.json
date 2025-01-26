@@ -1,0 +1,139 @@
+{
+	"display": {
+		"icon": {
+			"id": "diamond_pickaxe"
+		},
+		"title": {
+			"text": "Enchantements pour Minage",
+			"color": "#3FE7FF"
+		},
+		"description": {
+			"text": "",
+			"color": "#ffffff"
+		},
+		"frame": "challenge",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"parent": "aic:_root_03",
+	"criteria": {
+		"efficiency_1": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/efficiency_1": true
+						}
+					}
+				}
+			}
+		},
+		"efficiency_2": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/efficiency_2": true
+						}
+					}
+				}
+			}
+		},
+		"efficiency_3": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/efficiency_3": true
+						}
+					}
+				}
+			}
+		},
+		"efficiency_4": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/efficiency_4": true
+						}
+					}
+				}
+			}
+		},
+		"efficiency_5": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/efficiency_5": true
+						}
+					}
+				}
+			}
+		},
+		"fortune_1": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/fortune_1": true
+						}
+					}
+				}
+			}
+		},
+		"fortune_2": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/fortune_2": true
+						}
+					}
+				}
+			}
+		},
+		"fortune_3": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/fortune_3": true
+						}
+					}
+				}
+			}
+		},
+		"silk_touch": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/silk_touch": true
+						}
+					}
+				}
+			}
+		}
+	}
+}

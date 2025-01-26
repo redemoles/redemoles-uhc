@@ -1,0 +1,178 @@
+{
+	"display": {
+		"icon": {
+			"id": "trident"
+		},
+		"title": {
+			"text": "Enchantements pour Trident",
+			"color": "#3FE7FF"
+		},
+		"description": {
+			"text": "",
+			"color": "#ffffff"
+		},
+		"frame": "challenge",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"parent": "aic:_root_03",
+	"criteria": {
+		"impaling_1": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/impaling_1": true
+						}
+					}
+				}
+			}
+		},
+		"impaling_2": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/impaling_2": true
+						}
+					}
+				}
+			}
+		},
+		"impaling_3": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/impaling_3": true
+						}
+					}
+				}
+			}
+		},
+		"impaling_4": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/impaling_4": true
+						}
+					}
+				}
+			}
+		},
+		"impaling_5": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/impaling_5": true
+						}
+					}
+				}
+			}
+		},
+		"loyalty_1": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/loyalty_1": true
+						}
+					}
+				}
+			}
+		},
+		"loyalty_2": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/loyalty_2": true
+						}
+					}
+				}
+			}
+		},
+		"loyalty_3": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/loyalty_3": true
+						}
+					}
+				}
+			}
+		},
+		"riptide_1": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/riptide_1": true
+						}
+					}
+				}
+			}
+		},
+		"riptide_2": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/riptide_2": true
+						}
+					}
+				}
+			}
+		},
+		"riptide_3": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/riptide_3": true
+						}
+					}
+				}
+			}
+		},
+		"channeling": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/channeling": true
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "pink_tulip"
+		},
+		"title": {
+			"text": "Pink Tulip",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"pink_tulip"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:decoration/orange_tulip",
+	"rewards": {
+		"function": "aic:advancements/item/pink_tulip"
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "cherry_door"
+		},
+		"title": {
+			"text": "Cherry Door",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"cherry_door"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:woods/cherry_fence_gate",
+	"rewards": {
+		"function": "aic:advancements/item/cherry_door"
+	}
+}

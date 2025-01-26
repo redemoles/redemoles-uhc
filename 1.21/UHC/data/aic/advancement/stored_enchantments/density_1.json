@@ -1,0 +1,29 @@
+{
+	"criteria": {
+	  "requirement": {
+		"trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:stored_enchantments": [
+                {
+                  "enchantments": "density",
+                  "levels": 1
+                }
+              ]
+			  }
+			}
+		  ]
+		}
+	  }
+	},
+	"requirements": [
+	  [
+		"requirement"
+	  ]
+	],
+	"rewards": {
+	  "function": "aic:advancements/item/stored_enchantments/density_1"
+	}
+  }

@@ -1,0 +1,100 @@
+{
+	"display": {
+		"icon": {
+			"id": "shears"
+		},
+		"title": {
+			"text": "Enchantements pour tout support",
+			"color": "#3FE7FF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "challenge",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"parent": "aic:_root_03",
+	"criteria": {
+		"unbreaking_1": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/unbreaking_1": true
+						}
+					}
+				}
+			}
+		},
+		"unbreaking_2": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/unbreaking_2": true
+						}
+					}
+				}
+			}
+		},
+		"unbreaking_3": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/unbreaking_3": true
+						}
+					}
+				}
+			}
+		},
+		"curse_of_binding": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/curse_of_binding": true
+						}
+					}
+				}
+			}
+		},
+		"curse_of_vanishing": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/curse_of_vanishing": true
+						}
+					}
+				}
+			}
+		},
+		"mending": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/mending": true
+						}
+					}
+				}
+			}
+		}
+	}
+}

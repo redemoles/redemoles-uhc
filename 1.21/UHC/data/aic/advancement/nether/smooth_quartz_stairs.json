@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "smooth_quartz_stairs"
+		},
+		"title": {
+			"text": "Smooth Quartz Stairs",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"smooth_quartz_stairs"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:nether/smooth_quartz",
+	"rewards": {
+		"function": "aic:advancements/item/smooth_quartz_stairs"
+	}
+}

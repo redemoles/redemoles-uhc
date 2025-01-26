@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "white_wool"
+		},
+		"title": {
+			"text": "White Wool",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"white_wool"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:colored_blocks/pink_wool",
+	"rewards": {
+		"function": "aic:advancements/item/white_wool"
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "diorite_stairs"
+		},
+		"title": {
+			"text": "Diorite Stairs",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"diorite_stairs"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:building/diorite",
+	"rewards": {
+		"function": "aic:advancements/item/diorite_stairs"
+	}
+}

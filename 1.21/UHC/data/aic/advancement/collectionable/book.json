@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "book"
+		},
+		"title": {
+			"text": "Book",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"book"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:collectionable/glow_ink_sac",
+	"rewards": {
+		"function": "aic:advancements/item/book"
+	}
+}

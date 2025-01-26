@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "blackstone_wall"
+		},
+		"title": {
+			"text": "Blackstone Wall",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"blackstone_wall"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:nether/blackstone_slab",
+	"rewards": {
+		"function": "aic:advancements/item/blackstone_wall"
+	}
+}

@@ -53,7 +53,7 @@ execute if score #settings_border uhc.host.menu matches 32 run scoreboard player
 execute if score #settings_border uhc.host.menu matches 33 run scoreboard players add #shrink2 uhc.data.setup 10
 
 # Meet-up, Shrink 1, Shrink 2
-execute if score #settings_border uhc.host.menu matches 1.. if score #border_size_start uhc.data.setup matches 2000.. run scoreboard players set #border_size_start uhc.data.setup 2000
+execute if score #settings_border uhc.host.menu matches 1.. if score #border_size_start uhc.data.setup matches 5000.. run scoreboard players set #border_size_start uhc.data.setup 5000
 execute if score #settings_border uhc.host.menu matches 1.. if score #border_size_end uhc.data.setup > #border_size_start uhc.data.setup run scoreboard players operation #border_size_end uhc.data.setup = #border_size_start uhc.data.setup
 execute if score #settings_border uhc.host.menu matches 1.. if score #shrink1_size_end uhc.data.setup > #border_size_end uhc.data.setup run scoreboard players operation #shrink1_size_end uhc.data.setup = #border_size_end uhc.data.setup
 execute if score #settings_border uhc.host.menu matches 1.. if score #shrink2_size_end uhc.data.setup > #shrink1_size_end uhc.data.setup run scoreboard players operation #shrink2_size_end uhc.data.setup = #shrink1_size_end uhc.data.setup

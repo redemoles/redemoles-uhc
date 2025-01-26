@@ -1,0 +1,52 @@
+{
+	"display": {
+	  "icon": {
+		"id": "minecraft:tipped_arrow",
+		"components": {
+		  "minecraft:potion_contents": {
+			"custom_color": 9154528
+		  }
+		}
+	  },
+	  "title": {
+		"text": "Arrow of Slowness",
+		"color": "#FFFFFF"
+	  },
+	  "description": {
+		"text": "Strong",
+		"color": "#FFFFFF"
+	  },
+	  "frame": "task",
+	  "show_toast": false,
+	  "announce_to_chat": false,
+	  "hidden": false
+	},
+	"criteria": {
+	  "requirement": {
+		"trigger": "minecraft:inventory_changed",
+		"conditions": {
+		  "items": [
+			{
+			  "items": [
+				"tipped_arrow"
+			  ],
+			  "components": {
+				"minecraft:potion_contents": {
+					"potion": "strong_slowness"
+				}
+			  }
+			}
+		  ]
+		}
+	  }
+	},
+	"parent": "aic:potion/tipped_arrow_regeneration_thick",
+	"requirements": [
+	  [
+		"requirement"
+	  ]
+	],
+	"rewards": {
+	  "function": "aic:advancements/item/tipped_arrow_slowness_thick"
+	}
+  }

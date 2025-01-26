@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "netherite_scrap"
+		},
+		"title": {
+			"text": "Netherite Scrap",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"netherite_scrap"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:nether/ancient_debris",
+	"rewards": {
+		"function": "aic:advancements/item/netherite_scrap"
+	}
+}

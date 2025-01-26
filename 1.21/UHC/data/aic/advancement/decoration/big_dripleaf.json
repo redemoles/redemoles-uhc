@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "big_dripleaf"
+		},
+		"title": {
+			"text": "Big Dripleaf",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"big_dripleaf"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:decoration/fern",
+	"rewards": {
+		"function": "aic:advancements/item/big_dripleaf"
+	}
+}

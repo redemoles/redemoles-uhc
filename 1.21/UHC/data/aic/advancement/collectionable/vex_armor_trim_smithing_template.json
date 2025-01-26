@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "vex_armor_trim_smithing_template"
+		},
+		"title": {
+			"text": "Vex Armor Trim Smithing Template",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"vex_armor_trim_smithing_template"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:collectionable/sentry_armor_trim_smithing_template",
+	"rewards": {
+		"function": "aic:advancements/item/vex_armor_trim_smithing_template"
+	}
+}

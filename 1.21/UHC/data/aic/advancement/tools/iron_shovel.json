@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "iron_shovel"
+		},
+		"title": {
+			"text": "Iron Shovel",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"iron_shovel"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:tools/iron_axe",
+	"rewards": {
+		"function": "aic:advancements/item/iron_shovel"
+	}
+}

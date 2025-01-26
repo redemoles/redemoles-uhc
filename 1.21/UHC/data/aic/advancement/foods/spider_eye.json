@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "spider_eye"
+		},
+		"title": {
+			"text": "Spider Eye",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"spider_eye"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:foods/mushroom_stew",
+	"rewards": {
+		"function": "aic:advancements/item/spider_eye"
+	}
+}

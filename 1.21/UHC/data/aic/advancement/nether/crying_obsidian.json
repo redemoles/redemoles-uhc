@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "crying_obsidian"
+		},
+		"title": {
+			"text": "Crying Obsidian",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"crying_obsidian"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:nether/obsidian",
+	"rewards": {
+		"function": "aic:advancements/item/crying_obsidian"
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "birch_boat"
+		},
+		"title": {
+			"text": "Birch Boat",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"birch_boat"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:woods/birch_leaves",
+	"rewards": {
+		"function": "aic:advancements/item/birch_boat"
+	}
+}

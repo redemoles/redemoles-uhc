@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "resin_brick"
+		},
+		"title": {
+			"text": "Resin Brick",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"resin_brick"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:building/resin_brick_wall",
+	"rewards": {
+		"function": "aic:advancements/item/resin_brick"
+	}
+}

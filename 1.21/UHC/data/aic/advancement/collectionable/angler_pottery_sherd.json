@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "angler_pottery_sherd"
+		},
+		"title": {
+			"text": "Angler Pottery Sherd",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"angler_pottery_sherd"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:collectionable/decorated_pot",
+	"rewards": {
+		"function": "aic:advancements/item/angler_pottery_sherd"
+	}
+}

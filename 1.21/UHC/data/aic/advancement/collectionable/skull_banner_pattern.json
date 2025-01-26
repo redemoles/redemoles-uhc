@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "skull_banner_pattern"
+		},
+		"title": {
+			"text": "Skull Banner Pattern",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"skull_banner_pattern"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:collectionable/piglin_banner_pattern",
+	"rewards": {
+		"function": "aic:advancements/item/skull_banner_pattern"
+	}
+}

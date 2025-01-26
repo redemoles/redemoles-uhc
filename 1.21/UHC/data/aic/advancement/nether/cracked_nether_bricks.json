@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "cracked_nether_bricks"
+		},
+		"title": {
+			"text": "Cracked Nether Bricks",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"cracked_nether_bricks"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:nether/red_nether_brick_wall",
+	"rewards": {
+		"function": "aic:advancements/item/cracked_nether_bricks"
+	}
+}

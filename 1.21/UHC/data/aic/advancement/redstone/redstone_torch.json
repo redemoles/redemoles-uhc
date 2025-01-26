@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "redstone_torch"
+		},
+		"title": {
+			"text": "Redstone Torch",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"redstone_torch"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:_root_10",
+	"rewards": {
+		"function": "aic:advancements/item/redstone_torch"
+	}
+}

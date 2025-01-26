@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "moss_carpet"
+		},
+		"title": {
+			"text": "Moss Carpet",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"moss_carpet"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:decoration/moss_block",
+	"rewards": {
+		"function": "aic:advancements/item/moss_carpet"
+	}
+}

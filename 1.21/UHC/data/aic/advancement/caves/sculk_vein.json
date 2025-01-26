@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "sculk_vein"
+		},
+		"title": {
+			"text": "Sculk Vein",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"sculk_vein"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:caves/calibrated_sculk_sensor",
+	"rewards": {
+		"function": "aic:advancements/item/sculk_vein"
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "small_amethyst_bud"
+		},
+		"title": {
+			"text": "Small Amethyst Bud",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"small_amethyst_bud"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:caves/medium_amethyst_bud",
+	"rewards": {
+		"function": "aic:advancements/item/small_amethyst_bud"
+	}
+}

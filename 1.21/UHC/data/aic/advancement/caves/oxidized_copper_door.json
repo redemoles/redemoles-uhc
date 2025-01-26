@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "oxidized_copper_door"
+		},
+		"title": {
+			"text": "Oxidized Copper Door",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"oxidized_copper_door"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:caves/oxidized_cut_copper_slab",
+	"rewards": {
+		"function": "aic:advancements/item/oxidized_copper_door"
+	}
+}

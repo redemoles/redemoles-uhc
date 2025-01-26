@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "sheaf_pottery_sherd"
+		},
+		"title": {
+			"text": "Sheaf Pottery Sherd",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"sheaf_pottery_sherd"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:collectionable/scrape_pottery_sherd",
+	"rewards": {
+		"function": "aic:advancements/item/sheaf_pottery_sherd"
+	}
+}

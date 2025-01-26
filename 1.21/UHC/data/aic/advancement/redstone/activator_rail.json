@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "activator_rail"
+		},
+		"title": {
+			"text": "Activator Rail",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"activator_rail"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:redstone/rail",
+	"rewards": {
+		"function": "aic:advancements/item/activator_rail"
+	}
+}

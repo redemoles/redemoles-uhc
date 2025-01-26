@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "mangrove_propagule"
+		},
+		"title": {
+			"text": "Mangrove Propagule",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"mangrove_propagule"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:_root_13",
+	"rewards": {
+		"function": "aic:advancements/item/mangrove_propagule"
+	}
+}

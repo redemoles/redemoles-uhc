@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "rabbit_stew"
+		},
+		"title": {
+			"text": "Rabbit Stew",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"rabbit_stew"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:foods/cooked_rabbit",
+	"rewards": {
+		"function": "aic:advancements/item/rabbit_stew"
+	}
+}

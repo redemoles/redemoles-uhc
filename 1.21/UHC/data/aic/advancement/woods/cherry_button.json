@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "cherry_button"
+		},
+		"title": {
+			"text": "Cherry Button",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"cherry_button"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:woods/cherry_pressure_plate",
+	"rewards": {
+		"function": "aic:advancements/item/cherry_button"
+	}
+}

@@ -1,0 +1,139 @@
+{
+	"display": {
+		"icon": {
+			"id": "bow"
+		},
+		"title": {
+			"text": "Enchantements pour Arc",
+			"color": "#3FE7FF"
+		},
+		"description": {
+			"text": "",
+			"color": "#ffffff"
+		},
+		"frame": "challenge",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"parent": "aic:_root_03",
+	"criteria": {
+		"power_1": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/power_1": true
+						}
+					}
+				}
+			}
+		},
+		"power_2": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/power_2": true
+						}
+					}
+				}
+			}
+		},
+		"power_3": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/power_3": true
+						}
+					}
+				}
+			}
+		},
+		"power_4": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/power_4": true
+						}
+					}
+				}
+			}
+		},
+		"power_5": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/power_5": true
+						}
+					}
+				}
+			}
+		},
+		"punch_1": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/punch_1": true
+						}
+					}
+				}
+			}
+		},
+		"punch_2": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/punch_2": true
+						}
+					}
+				}
+			}
+		},
+		"flame": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/flame": true
+						}
+					}
+				}
+			}
+		},
+		"infinity": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/infinity": true
+						}
+					}
+				}
+			}
+		}
+	}
+}

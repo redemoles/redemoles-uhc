@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "stripped_crimson_stem"
+		},
+		"title": {
+			"text": "Stripped Crimson Stem",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"stripped_crimson_stem"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:woods/crimson_stem",
+	"rewards": {
+		"function": "aic:advancements/item/stripped_crimson_stem"
+	}
+}

@@ -1,0 +1,50 @@
+{
+	"display": {
+	  "icon": {
+		"id": "suspicious_stew"
+	  },
+	  "title": {
+		"text": "Suspicious Stew Jump Boost",
+		"color": "#FFFFFF"
+	  },
+	  "description": {
+		"text": "",
+		"color": "#FFFFFF"
+	  },
+	  "frame": "task",
+	  "show_toast": false,
+	  "announce_to_chat": false,
+	  "hidden": false
+	},
+	"criteria": {
+	  "requirement": {
+		"trigger": "minecraft:inventory_changed",
+		"conditions": {
+		  "items": [
+			{
+			  "items": [
+				"suspicious_stew"
+			  ],
+			  "components": {
+				"minecraft:suspicious_stew_effects": [
+				  {
+					"id": "minecraft:jump_boost",
+					"duration": 100
+				  }
+				]
+			  }
+			}
+		  ]
+		}
+	  }
+	},
+	"parent": "aic:foods/suspicious_stew_fire_resistance",
+	"requirements": [
+	  [
+		"requirement"
+	  ]
+	],
+	"rewards": {
+	  "function": "aic:advancements/item/suspicious_stew_jump_boost"
+	}
+  }

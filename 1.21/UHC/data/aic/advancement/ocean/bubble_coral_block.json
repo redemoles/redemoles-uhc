@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "bubble_coral_block"
+		},
+		"title": {
+			"text": "Bubble Coral Block",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"bubble_coral_block"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:_root_07",
+	"rewards": {
+		"function": "aic:advancements/item/bubble_coral_block"
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "waxed_exposed_copper_trapdoor"
+		},
+		"title": {
+			"text": "Waxed Exposed Copper Trapdoor",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"waxed_exposed_copper_trapdoor"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:caves/waxed_exposed_copper_door",
+	"rewards": {
+		"function": "aic:advancements/item/waxed_exposed_copper_trapdoor"
+	}
+}

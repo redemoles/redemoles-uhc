@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "amethyst_cluster"
+		},
+		"title": {
+			"text": "Amethyst Cluster",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"amethyst_cluster"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:caves/amethyst_block",
+	"rewards": {
+		"function": "aic:advancements/item/amethyst_cluster"
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "leather_leggings"
+		},
+		"title": {
+			"text": "Leather Leggings",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"leather_leggings"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:tools/leather_chestplate",
+	"rewards": {
+		"function": "aic:advancements/item/leather_leggings"
+	}
+}

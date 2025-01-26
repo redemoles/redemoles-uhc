@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "black_glazed_terracotta"
+		},
+		"title": {
+			"text": "Black Glazed Terracotta",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"black_glazed_terracotta"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:colored_blocks/gray_glazed_terracotta",
+	"rewards": {
+		"function": "aic:advancements/item/black_glazed_terracotta"
+	}
+}

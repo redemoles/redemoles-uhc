@@ -1,0 +1,529 @@
+{
+	"display": {
+		"icon": {
+			"id": "diamond"
+		},
+		"title": {
+			"text": "Minerais",
+			"color": "#3FE7FF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "challenge",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"deepslate_coal_ore": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/deepslate_coal_ore": true
+						}
+					}
+				}
+			}
+		},
+		"coal_ore": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/coal_ore": true
+						}
+					}
+				}
+			}
+		},
+		"coal": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/coal": true
+						}
+					}
+				}
+			}
+		},
+		"coal_block": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/coal_block": true
+						}
+					}
+				}
+			}
+		},
+		"deepslate_copper_ore": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/deepslate_copper_ore": true
+						}
+					}
+				}
+			}
+		},
+		"copper_ore": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/copper_ore": true
+						}
+					}
+				}
+			}
+		},
+		"copper_ingot": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/copper_ingot": true
+						}
+					}
+				}
+			}
+		},
+		"raw_copper_block": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/raw_copper_block": true
+						}
+					}
+				}
+			}
+		},
+		"raw_copper": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/raw_copper": true
+						}
+					}
+				}
+			}
+		},
+		"deepslate_iron_ore": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/deepslate_iron_ore": true
+						}
+					}
+				}
+			}
+		},
+		"iron_ore": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/iron_ore": true
+						}
+					}
+				}
+			}
+		},
+		"iron_ingot": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/iron_ingot": true
+						}
+					}
+				}
+			}
+		},
+		"iron_block": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/iron_block": true
+						}
+					}
+				}
+			}
+		},
+		"raw_iron": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/raw_iron": true
+						}
+					}
+				}
+			}
+		},
+		"raw_iron_block": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/raw_iron_block": true
+						}
+					}
+				}
+			}
+		},
+		"iron_nugget": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/iron_nugget": true
+						}
+					}
+				}
+			}
+		},
+		"deepslate_gold_ore": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/deepslate_gold_ore": true
+						}
+					}
+				}
+			}
+		},
+		"gold_ore": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/gold_ore": true
+						}
+					}
+				}
+			}
+		},
+		"gold_ingot": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/gold_ingot": true
+						}
+					}
+				}
+			}
+		},
+		"gold_block": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/gold_block": true
+						}
+					}
+				}
+			}
+		},
+		"raw_gold": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/raw_gold": true
+						}
+					}
+				}
+			}
+		},
+		"raw_gold_block": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/raw_gold_block": true
+						}
+					}
+				}
+			}
+		},
+		"gold_nugget": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/gold_nugget": true
+						}
+					}
+				}
+			}
+		},
+		"deepslate_lapis_ore": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/deepslate_lapis_ore": true
+						}
+					}
+				}
+			}
+		},
+		"lapis_ore": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/lapis_ore": true
+						}
+					}
+				}
+			}
+		},
+		"lapis_lazuli": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/lapis_lazuli": true
+						}
+					}
+				}
+			}
+		},
+		"lapis_block": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/lapis_block": true
+						}
+					}
+				}
+			}
+		},
+		"deepslate_redstone_ore": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/deepslate_redstone_ore": true
+						}
+					}
+				}
+			}
+		},
+		"redstone_ore": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/redstone_ore": true
+						}
+					}
+				}
+			}
+		},
+		"redstone": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/redstone": true
+						}
+					}
+				}
+			}
+		},
+		"redstone_block": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/redstone_block": true
+						}
+					}
+				}
+			}
+		},
+		"deepslate_diamond_ore": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/deepslate_diamond_ore": true
+						}
+					}
+				}
+			}
+		},
+		"diamond_ore": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/diamond_ore": true
+						}
+					}
+				}
+			}
+		},
+		"diamond": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/diamond": true
+						}
+					}
+				}
+			}
+		},
+		"diamond_block": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/diamond_block": true
+						}
+					}
+				}
+			}
+		},
+		"deepslate_emerald_ore": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/deepslate_emerald_ore": true
+						}
+					}
+				}
+			}
+		},
+		"emerald_ore": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/emerald_ore": true
+						}
+					}
+				}
+			}
+		},
+		"emerald": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/emerald": true
+						}
+					}
+				}
+			}
+		},
+		"emerald_block": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:caves/emerald_block": true
+						}
+					}
+				}
+			}
+		}
+	},
+	"parent": "aic:_root_05"
+}

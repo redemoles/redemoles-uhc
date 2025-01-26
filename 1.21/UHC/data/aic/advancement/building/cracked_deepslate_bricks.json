@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "cracked_deepslate_bricks"
+		},
+		"title": {
+			"text": "Cracked Deepslate Bricks",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"cracked_deepslate_bricks"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:building/deepslate",
+	"rewards": {
+		"function": "aic:advancements/item/cracked_deepslate_bricks"
+	}
+}

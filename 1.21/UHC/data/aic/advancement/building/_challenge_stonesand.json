@@ -1,0 +1,308 @@
+{
+	"display": {
+		"icon": {
+			"id": "sand"
+		},
+		"title": {
+			"text": "Sable",
+			"color": "#3FE7FF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "challenge",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"sandstone": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/sandstone": true
+						}
+					}
+				}
+			}
+		},
+		"sandstone_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/sandstone_slab": true
+						}
+					}
+				}
+			}
+		},
+		"sandstone_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/sandstone_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"sandstone_wall": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/sandstone_wall": true
+						}
+					}
+				}
+			}
+		},
+		"smooth_sandstone": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/smooth_sandstone": true
+						}
+					}
+				}
+			}
+		},
+		"smooth_sandstone_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/smooth_sandstone_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"smooth_sandstone_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/smooth_sandstone_slab": true
+						}
+					}
+				}
+			}
+		},
+		"cut_sandstone": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/cut_sandstone": true
+						}
+					}
+				}
+			}
+		},
+		"cut_sandstone_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/cut_sandstone_slab": true
+						}
+					}
+				}
+			}
+		},
+		"chiseled_sandstone": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/chiseled_sandstone": true
+						}
+					}
+				}
+			}
+		},
+		"sand": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/sand": true
+						}
+					}
+				}
+			}
+		},
+		"red_sandstone": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/red_sandstone": true
+						}
+					}
+				}
+			}
+		},
+		"red_sandstone_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/red_sandstone_slab": true
+						}
+					}
+				}
+			}
+		},
+		"red_sandstone_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/red_sandstone_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"red_sandstone_wall": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/red_sandstone_wall": true
+						}
+					}
+				}
+			}
+		},
+		"smooth_red_sandstone": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/smooth_red_sandstone": true
+						}
+					}
+				}
+			}
+		},
+		"smooth_red_sandstone_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/smooth_red_sandstone_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"smooth_red_sandstone_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/smooth_red_sandstone_slab": true
+						}
+					}
+				}
+			}
+		},
+		"cut_red_sandstone": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/cut_red_sandstone": true
+						}
+					}
+				}
+			}
+		},
+		"cut_red_sandstone_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/cut_red_sandstone_slab": true
+						}
+					}
+				}
+			}
+		},
+		"chiseled_red_sandstone": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/chiseled_red_sandstone": true
+						}
+					}
+				}
+			}
+		},
+		"red_sand": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/red_sand": true
+						}
+					}
+				}
+			}
+		}
+	},
+	"parent": "aic:_root_06"
+}

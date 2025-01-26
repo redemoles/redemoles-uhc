@@ -12,7 +12,7 @@ scoreboard players operation @s bhc.invStageA /= #1m bhc.data
 scoreboard players add @s bhc.invStageA 1
 scoreboard players operation @a[predicate=uhc:id_teams] bhc.invStageA = @s bhc.invStageA
 scoreboard players operation @s bhc.invStageA *= #1m bhc.data
-scoreboard players add @e[type=marker,tag=BHC] bhc.invStageA 1
+scoreboard players add @e[type=marker,tag=UHC] bhc.invStageA 1
 
 # Aléatoire
 execute store result score #reward bhc.random run random value 1..4

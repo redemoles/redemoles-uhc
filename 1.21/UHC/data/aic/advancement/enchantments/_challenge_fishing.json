@@ -1,0 +1,100 @@
+{
+	"display": {
+		"icon": {
+			"id": "fishing_rod"
+		},
+		"title": {
+			"text": "Enchantements pour Canne à pêche",
+			"color": "#3FE7FF"
+		},
+		"description": {
+			"text": "",
+			"color": "#ffffff"
+		},
+		"frame": "challenge",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"parent": "aic:_root_03",
+	"criteria": {
+		"luck_of_the_sea_1": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/luck_of_the_sea_1": true
+						}
+					}
+				}
+			}
+		},
+		"luck_of_the_sea_2": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/luck_of_the_sea_2": true
+						}
+					}
+				}
+			}
+		},
+		"luck_of_the_sea_3": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/luck_of_the_sea_3": true
+						}
+					}
+				}
+			}
+		},
+		"lure_1": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/lure_1": true
+						}
+					}
+				}
+			}
+		},
+		"lure_2": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/lure_2": true
+						}
+					}
+				}
+			}
+		},
+		"lure_3": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:enchantments/lure_3": true
+						}
+					}
+				}
+			}
+		}
+	}
+}

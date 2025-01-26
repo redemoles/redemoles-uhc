@@ -15,7 +15,7 @@ function bhc:scores_calculator/death/bonus
 
 ## Calcul Classement Final
 
-execute as @e[type=marker,tag=BHC] run function bhc:scores_calculator/endgame/equality_1
-execute as @e[type=marker,tag=BHC] run function bhc:scores_calculator/endgame/equality_2
+execute as @e[type=marker,tag=UHC] run function bhc:scores_calculator/endgame/equality_1
+execute as @e[type=marker,tag=UHC] run function bhc:scores_calculator/endgame/equality_2
 scoreboard objectives setdisplay sidebar bhc.Total
 function bhc:scores_calculator/endgame/message

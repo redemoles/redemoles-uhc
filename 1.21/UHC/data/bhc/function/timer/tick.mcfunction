@@ -12,4 +12,4 @@ scoreboard players add #tick bhc.data 1
 execute if entity @p[tag=test] run scoreboard players add #tick bhc.data 19
 
 # Marker tick
-execute as @e[type=marker,tag=BHC] run function bhc:timer/marker_tick
+execute as @e[type=marker,tag=UHC] run function bhc:timer/marker_tick

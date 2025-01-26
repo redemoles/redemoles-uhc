@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "pitcher_pod"
+		},
+		"title": {
+			"text": "Pitcher Pod",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"pitcher_pod"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:decoration/torchflower_seeds",
+	"rewards": {
+		"function": "aic:advancements/item/pitcher_pod"
+	}
+}

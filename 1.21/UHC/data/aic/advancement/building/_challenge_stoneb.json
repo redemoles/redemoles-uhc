@@ -1,0 +1,295 @@
+{
+	"display": {
+		"icon": {
+			"id": "diorite"
+		},
+		"title": {
+			"text": "Roche",
+			"color": "#3FE7FF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "challenge",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"andesite": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/andesite": true
+						}
+					}
+				}
+			}
+		},
+		"andesite_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/andesite_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"andesite_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/andesite_slab": true
+						}
+					}
+				}
+			}
+		},
+		"andesite_wall": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/andesite_wall": true
+						}
+					}
+				}
+			}
+		},
+		"polished_andesite": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/polished_andesite": true
+						}
+					}
+				}
+			}
+		},
+		"polished_andesite_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/polished_andesite_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"polished_andesite_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/polished_andesite_slab": true
+						}
+					}
+				}
+			}
+		},
+		"diorite": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/diorite": true
+						}
+					}
+				}
+			}
+		},
+		"diorite_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/diorite_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"diorite_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/diorite_slab": true
+						}
+					}
+				}
+			}
+		},
+		"diorite_wall": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/diorite_wall": true
+						}
+					}
+				}
+			}
+		},
+		"polished_diorite": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/polished_diorite": true
+						}
+					}
+				}
+			}
+		},
+		"polished_diorite_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/polished_diorite_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"polished_diorite_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/polished_diorite_slab": true
+						}
+					}
+				}
+			}
+		},
+		"granite": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/granite": true
+						}
+					}
+				}
+			}
+		},
+		"granite_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/granite_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"granite_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/granite_slab": true
+						}
+					}
+				}
+			}
+		},
+		"granite_wall": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/granite_wall": true
+						}
+					}
+				}
+			}
+		},
+		"polished_granite": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/polished_granite": true
+						}
+					}
+				}
+			}
+		},
+		"polished_granite_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/polished_granite_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"polished_granite_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/polished_granite_slab": true
+						}
+					}
+				}
+			}
+		}
+	},
+	"parent": "aic:_root_06"
+}

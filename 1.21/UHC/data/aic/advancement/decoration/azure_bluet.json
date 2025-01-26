@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "azure_bluet"
+		},
+		"title": {
+			"text": "Azure Bluet",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"azure_bluet"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:decoration/blue_orchid",
+	"rewards": {
+		"function": "aic:advancements/item/azure_bluet"
+	}
+}

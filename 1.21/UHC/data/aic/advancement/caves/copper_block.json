@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "copper_block"
+		},
+		"title": {
+			"text": "Copper Block",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"copper_block"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:caves/_challenge_copper",
+	"rewards": {
+		"function": "aic:advancements/item/copper_block"
+	}
+}

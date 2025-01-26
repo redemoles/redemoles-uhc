@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "oxidized_copper_grate"
+		},
+		"title": {
+			"text": "Oxidized Copper Grate",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"oxidized_copper_grate"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:caves/oxidized_copper_trapdoor",
+	"rewards": {
+		"function": "aic:advancements/item/oxidized_copper_grate"
+	}
+}

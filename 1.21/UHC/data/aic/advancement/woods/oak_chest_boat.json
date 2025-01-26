@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "oak_chest_boat"
+		},
+		"title": {
+			"text": "Oak Chest Boat",
+			"color": "#3FE7FF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"oak_chest_boat"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:woods/oak_boat",
+	"rewards": {
+		"function": "aic:advancements/item/oak_chest_boat"
+	}
+}

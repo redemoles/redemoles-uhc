@@ -1,0 +1,50 @@
+{
+	"display": {
+	  "icon": {
+		"id": "suspicious_stew"
+	  },
+	  "title": {
+		"text": "Suspicious Stew Wither",
+		"color": "#FFFFFF"
+	  },
+	  "description": {
+		"text": "",
+		"color": "#FFFFFF"
+	  },
+	  "frame": "task",
+	  "show_toast": false,
+	  "announce_to_chat": false,
+	  "hidden": false
+	},
+	"criteria": {
+	  "requirement": {
+		"trigger": "minecraft:inventory_changed",
+		"conditions": {
+		  "items": [
+			{
+			  "items": [
+				"suspicious_stew"
+			  ],
+			  "components": {
+				"minecraft:suspicious_stew_effects": [
+				  {
+					"id": "minecraft:wither",
+					"duration": 140
+				  }
+				]
+			  }
+			}
+		  ]
+		}
+	  }
+	},
+	"parent": "aic:foods/suspicious_stew_weakness",
+	"requirements": [
+	  [
+		"requirement"
+	  ]
+	],
+	"rewards": {
+	  "function": "aic:advancements/item/suspicious_stew_wither"
+	}
+  }

@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "trapped_chest"
+		},
+		"title": {
+			"text": "Trapped Chest",
+			"color": "#3FE7FF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"trapped_chest"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:redstone/chest",
+	"rewards": {
+		"function": "aic:advancements/item/trapped_chest"
+	}
+}

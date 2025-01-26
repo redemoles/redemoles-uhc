@@ -1,0 +1,269 @@
+{
+	"display": {
+		"icon": {
+			"id": "netherite_upgrade_smithing_template"
+		},
+		"title": {
+			"text": "Modèles de forge",
+			"color": "#3FE7FF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "challenge",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"bolt_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/bolt_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"coast_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/coast_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"dune_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/dune_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"eye_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/eye_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"flow_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/flow_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"host_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/host_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"netherite_upgrade_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/netherite_upgrade_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"raiser_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/raiser_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"rib_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/rib_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"sentry_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/sentry_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"shaper_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/shaper_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"silence_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/silence_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"snout_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/snout_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"spire_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/spire_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"tide_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/tide_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"vex_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/vex_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"ward_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/ward_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"wayfinder_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/wayfinder_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		},
+		"wild_armor_trim_smithing_template": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:collectionable/wild_armor_trim_smithing_template": true
+						}
+					}
+				}
+			}
+		}
+	},
+	"parent": "aic:_root_01"
+}

@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "oak_boat"
+		},
+		"title": {
+			"text": "Oak Boat",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"oak_boat"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:woods/oak_leaves",
+	"rewards": {
+		"function": "aic:advancements/item/oak_boat"
+	}
+}

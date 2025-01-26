@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "pointed_dripstone"
+		},
+		"title": {
+			"text": "Pointed Dripstone",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"pointed_dripstone"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:decoration/dripstone_block",
+	"rewards": {
+		"function": "aic:advancements/item/pointed_dripstone"
+	}
+}

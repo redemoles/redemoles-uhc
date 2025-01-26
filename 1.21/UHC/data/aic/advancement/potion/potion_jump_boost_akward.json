@@ -1,0 +1,52 @@
+{
+	"display": {
+	  "icon": {
+		"id": "minecraft:potion",
+		"components": {
+		  "minecraft:potion_contents": {
+			"custom_color": 16646020
+		  }
+		}
+	  },
+	  "title": {
+		"text": "Potion of Leaping",
+		"color": "#FFFFFF"
+	  },
+	  "description": {
+		"text": "Normal",
+		"color": "#FFFFFF"
+	  },
+	  "frame": "task",
+	  "show_toast": false,
+	  "announce_to_chat": false,
+	  "hidden": false
+	},
+	"criteria": {
+	  "requirement": {
+		"trigger": "minecraft:inventory_changed",
+		"conditions": {
+		  "items": [
+			{
+			  "items": [
+				"potion"
+			  ],
+			  "components": {
+				"minecraft:potion_contents": {
+					"potion": "leaping"
+				}
+			  }
+			}
+		  ]
+		}
+	  }
+	},
+	"parent": "aic:potion/potion_empty_akward",
+	"requirements": [
+	  [
+		"requirement"
+	  ]
+	],
+	"rewards": {
+	  "function": "aic:advancements/item/potion_jump_boost_akward"
+	}
+  }

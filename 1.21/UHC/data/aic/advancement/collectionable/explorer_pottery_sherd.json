@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "explorer_pottery_sherd"
+		},
+		"title": {
+			"text": "Explorer Pottery Sherd",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"explorer_pottery_sherd"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:collectionable/danger_pottery_sherd",
+	"rewards": {
+		"function": "aic:advancements/item/explorer_pottery_sherd"
+	}
+}

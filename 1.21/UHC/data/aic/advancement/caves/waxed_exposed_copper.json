@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "waxed_exposed_copper"
+		},
+		"title": {
+			"text": "Waxed Exposed Copper",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"waxed_exposed_copper"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:caves/exposed_copper_bulb",
+	"rewards": {
+		"function": "aic:advancements/item/waxed_exposed_copper"
+	}
+}

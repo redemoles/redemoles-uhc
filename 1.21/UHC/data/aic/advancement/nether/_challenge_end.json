@@ -1,0 +1,308 @@
+{
+	"display": {
+		"icon": {
+			"id": "end_stone"
+		},
+		"title": {
+			"text": "End",
+			"color": "#3FE7FF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "challenge",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"end_stone": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/end_stone": true
+						}
+					}
+				}
+			}
+		},
+		"end_stone_bricks": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/end_stone_bricks": true
+						}
+					}
+				}
+			}
+		},
+		"end_stone_brick_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/end_stone_brick_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"end_stone_brick_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/end_stone_brick_slab": true
+						}
+					}
+				}
+			}
+		},
+		"end_stone_brick_wall": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/end_stone_brick_wall": true
+						}
+					}
+				}
+			}
+		},
+		"purpur_block": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/purpur_block": true
+						}
+					}
+				}
+			}
+		},
+		"purpur_pillar": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/purpur_pillar": true
+						}
+					}
+				}
+			}
+		},
+		"purpur_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/purpur_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"purpur_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/purpur_slab": true
+						}
+					}
+				}
+			}
+		},
+		"end_rod": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/end_rod": true
+						}
+					}
+				}
+			}
+		},
+		"chorus_plant": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/chorus_plant": true
+						}
+					}
+				}
+			}
+		},
+		"chorus_flower": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/chorus_flower": true
+						}
+					}
+				}
+			}
+		},
+		"chorus_fruit": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/chorus_fruit": true
+						}
+					}
+				}
+			}
+		},
+		"popped_chorus_fruit": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/popped_chorus_fruit": true
+						}
+					}
+				}
+			}
+		},
+		"ender_pearl": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/ender_pearl": true
+						}
+					}
+				}
+			}
+		},
+		"ender_eye": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/ender_eye": true
+						}
+					}
+				}
+			}
+		},
+		"ender_chest": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/ender_chest": true
+						}
+					}
+				}
+			}
+		},
+		"end_crystal": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/end_crystal": true
+						}
+					}
+				}
+			}
+		},
+		"dragon_breath": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/dragon_breath": true
+						}
+					}
+				}
+			}
+		},
+		"dragon_egg": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/dragon_egg": true
+						}
+					}
+				}
+			}
+		},
+		"dragon_head": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/dragon_head": true
+						}
+					}
+				}
+			}
+		},
+		"shulker_shell": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:nether/shulker_shell": true
+						}
+					}
+				}
+			}
+		}
+	},
+	"parent": "aic:_root_04"
+}

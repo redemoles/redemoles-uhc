@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "wither_rose"
+		},
+		"title": {
+			"text": "Wither Rose",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"wither_rose"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:nether/ghast_tear",
+	"rewards": {
+		"function": "aic:advancements/item/wither_rose"
+	}
+}

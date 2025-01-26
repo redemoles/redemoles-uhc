@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "smithing_table"
+		},
+		"title": {
+			"text": "Smithing Table",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"smithing_table"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:redstone/loom",
+	"rewards": {
+		"function": "aic:advancements/item/smithing_table"
+	}
+}

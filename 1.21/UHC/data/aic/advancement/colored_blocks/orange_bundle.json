@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "orange_bundle"
+		},
+		"title": {
+			"text": "Orange Bundle",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"orange_bundle"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:colored_blocks/yellow_bundle",
+	"rewards": {
+		"function": "aic:advancements/item/orange_bundle"
+	}
+}

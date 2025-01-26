@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "chest_minecart"
+		},
+		"title": {
+			"text": "Chest Minecart",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"chest_minecart"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:redstone/minecart",
+	"rewards": {
+		"function": "aic:advancements/item/chest_minecart"
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "end_stone_brick_wall"
+		},
+		"title": {
+			"text": "End Stone Brick Wall",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"end_stone_brick_wall"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:nether/end_stone_brick_slab",
+	"rewards": {
+		"function": "aic:advancements/item/end_stone_brick_wall"
+	}
+}

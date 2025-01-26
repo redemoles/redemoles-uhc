@@ -1,0 +1,529 @@
+{
+	"display": {
+		"icon": {
+			"id": "stone"
+		},
+		"title": {
+			"text": "Roche",
+			"color": "#3FE7FF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "challenge",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"cobblestone": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/cobblestone": true
+						}
+					}
+				}
+			}
+		},
+		"cobblestone_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/cobblestone_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"cobblestone_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/cobblestone_slab": true
+						}
+					}
+				}
+			}
+		},
+		"cobblestone_wall": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/cobblestone_wall": true
+						}
+					}
+				}
+			}
+		},
+		"stone_bricks": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/stone_bricks": true
+						}
+					}
+				}
+			}
+		},
+		"stone_brick_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/stone_brick_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"stone_brick_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/stone_brick_slab": true
+						}
+					}
+				}
+			}
+		},
+		"stone_brick_wall": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/stone_brick_wall": true
+						}
+					}
+				}
+			}
+		},
+		"stone": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/stone": true
+						}
+					}
+				}
+			}
+		},
+		"stone_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/stone_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"stone_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/stone_slab": true
+						}
+					}
+				}
+			}
+		},
+		"chiseled_stone_bricks": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/chiseled_stone_bricks": true
+						}
+					}
+				}
+			}
+		},
+		"cracked_stone_bricks": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/cracked_stone_bricks": true
+						}
+					}
+				}
+			}
+		},
+		"stone_pressure_plate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/stone_pressure_plate": true
+						}
+					}
+				}
+			}
+		},
+		"stone_button": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/stone_button": true
+						}
+					}
+				}
+			}
+		},
+		"tuff": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/tuff": true
+						}
+					}
+				}
+			}
+		},
+		"tuff_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/tuff_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"tuff_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/tuff_slab": true
+						}
+					}
+				}
+			}
+		},
+		"tuff_wall": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/tuff_wall": true
+						}
+					}
+				}
+			}
+		},
+		"tuff_bricks": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/tuff_bricks": true
+						}
+					}
+				}
+			}
+		},
+		"tuff_brick_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/tuff_brick_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"tuff_brick_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/tuff_brick_slab": true
+						}
+					}
+				}
+			}
+		},
+		"tuff_brick_wall": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/tuff_brick_wall": true
+						}
+					}
+				}
+			}
+		},
+		"polished_tuff": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/polished_tuff": true
+						}
+					}
+				}
+			}
+		},
+		"polished_tuff_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/polished_tuff_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"polished_tuff_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/polished_tuff_slab": true
+						}
+					}
+				}
+			}
+		},
+		"polished_tuff_wall": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/polished_tuff_wall": true
+						}
+					}
+				}
+			}
+		},
+		"chiseled_tuff": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/chiseled_tuff": true
+						}
+					}
+				}
+			}
+		},
+		"chiseled_tuff_bricks": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/chiseled_tuff_bricks": true
+						}
+					}
+				}
+			}
+		},
+		"mossy_cobblestone": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/mossy_cobblestone": true
+						}
+					}
+				}
+			}
+		},
+		"mossy_cobblestone_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/mossy_cobblestone_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"mossy_cobblestone_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/mossy_cobblestone_slab": true
+						}
+					}
+				}
+			}
+		},
+		"mossy_cobblestone_wall": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/mossy_cobblestone_wall": true
+						}
+					}
+				}
+			}
+		},
+		"mossy_stone_bricks": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/mossy_stone_bricks": true
+						}
+					}
+				}
+			}
+		},
+		"mossy_stone_brick_stairs": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/mossy_stone_brick_stairs": true
+						}
+					}
+				}
+			}
+		},
+		"mossy_stone_brick_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/mossy_stone_brick_slab": true
+						}
+					}
+				}
+			}
+		},
+		"mossy_stone_brick_wall": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/mossy_stone_brick_wall": true
+						}
+					}
+				}
+			}
+		},
+		"smooth_stone": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/smooth_stone": true
+						}
+					}
+				}
+			}
+		},
+		"smooth_stone_slab": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:building/smooth_stone_slab": true
+						}
+					}
+				}
+			}
+		}
+	},
+	"parent": "aic:_root_06"
+}

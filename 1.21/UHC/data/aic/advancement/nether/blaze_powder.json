@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "blaze_powder"
+		},
+		"title": {
+			"text": "Blaze Powder",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"blaze_powder"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:nether/blaze_rod",
+	"rewards": {
+		"function": "aic:advancements/item/blaze_powder"
+	}
+}

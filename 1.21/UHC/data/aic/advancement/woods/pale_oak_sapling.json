@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "pale_oak_sapling"
+		},
+		"title": {
+			"text": "Pale Oak Sapling",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"pale_oak_sapling"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:_root_13",
+	"rewards": {
+		"function": "aic:advancements/item/pale_oak_sapling"
+	}
+}

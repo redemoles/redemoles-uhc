@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "waxed_weathered_copper_trapdoor"
+		},
+		"title": {
+			"text": "Waxed Weathered Copper Trapdoor",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"waxed_weathered_copper_trapdoor"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:caves/waxed_weathered_copper_door",
+	"rewards": {
+		"function": "aic:advancements/item/waxed_weathered_copper_trapdoor"
+	}
+}

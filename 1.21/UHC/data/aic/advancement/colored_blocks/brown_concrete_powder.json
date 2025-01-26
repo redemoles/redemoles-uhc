@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "brown_concrete_powder"
+		},
+		"title": {
+			"text": "Brown Concrete Powder",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"brown_concrete_powder"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:colored_blocks/green_concrete_powder",
+	"rewards": {
+		"function": "aic:advancements/item/brown_concrete_powder"
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "polished_tuff"
+		},
+		"title": {
+			"text": "Polished Tuff",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"polished_tuff"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:building/tuff_brick_wall",
+	"rewards": {
+		"function": "aic:advancements/item/polished_tuff"
+	}
+}

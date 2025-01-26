@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "stripped_jungle_log"
+		},
+		"title": {
+			"text": "Stripped Jungle Log",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"stripped_jungle_log"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:woods/jungle_log",
+	"rewards": {
+		"function": "aic:advancements/item/stripped_jungle_log"
+	}
+}

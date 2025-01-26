@@ -24,6 +24,10 @@ execute if score #shield uhc.data.setup matches 0 run clear @s shield
 execute if score #pve uhc.data.setup matches ..0 run scoreboard players set @s[scores={uhc.effect.resistance=-1}] uhc.effect.resistance 0
 effect give @s[scores={uhc.effect.resistance=-1}] minecraft:resistance infinite 4 true
 effect clear @s[scores={uhc.effect.resistance=0}] minecraft:resistance
+effect give @s[scores={uhc.effect.resistance=1}] minecraft:resistance infinite 1 true
+
+# Effets aux joueurs - Reset pour le prochain tick
+execute if score #pve uhc.data.setup matches ..0 run scoreboard players set @s uhc.effect.resistance 0
 
 # Respawn
 execute as @s[scores={uhc.timer.respawn=1..}] run function uhc:in_game/players_settings/respawn/cooldown
@@ -38,3 +42,6 @@ execute if score #team_health uhc.scenario matches 1 unless score @s uhc.players
 
 ## Border TP
 execute if score #border uhc.data.setup matches ..0 as @s[tag=uhc.player] run function uhc:in_game/tp/border/coords
+
+## Joueur à respwan
+execute as @s[tag=uhc.revive] run function uhc:in_game/players_settings/spec/revive

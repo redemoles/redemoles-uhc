@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "rabbit_foot"
+		},
+		"title": {
+			"text": "Rabbit Foot",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"rabbit_foot"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:collectionable/rabbit_hide",
+	"rewards": {
+		"function": "aic:advancements/item/rabbit_foot"
+	}
+}

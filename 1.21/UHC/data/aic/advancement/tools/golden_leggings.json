@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "golden_leggings"
+		},
+		"title": {
+			"text": "Golden Leggings",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"golden_leggings"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:tools/golden_chestplate",
+	"rewards": {
+		"function": "aic:advancements/item/golden_leggings"
+	}
+}

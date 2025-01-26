@@ -13,22 +13,22 @@ scoreboard players add #team uhc.id.teams 1
 execute if entity @e[type=marker,predicate=uhc:id_teams,distance=0.1..] run function bhc:test/scores/teams_1
 scoreboard players operation @s uhc.id.teams = #team uhc.id.teams
 
-execute if score #team uhc.id.teams matches 1 run data merge entity @s {Tags:["01","BHC","UHC"],CustomName:'{"text":"Équipe Indigo"}',data:{name:"§1"}}
-execute if score #team uhc.id.teams matches 2 run data merge entity @s {Tags:["02","BHC","UHC"],CustomName:'{"text":"Équipe Bleue"}',data:{name:"§9"}}
-execute if score #team uhc.id.teams matches 3 run data merge entity @s {Tags:["03","BHC","UHC"],CustomName:'{"text":"Équipe Azur"}',data:{name:"§3"}}
-execute if score #team uhc.id.teams matches 4 run data merge entity @s {Tags:["04","BHC","UHC"],CustomName:'{"text":"Équipe Cyan"}',data:{name:"§b"}}
-execute if score #team uhc.id.teams matches 5 run data merge entity @s {Tags:["05","BHC","UHC"],CustomName:'{"text":"Équipe Vert f."}',data:{name:"§2"}}
-execute if score #team uhc.id.teams matches 6 run data merge entity @s {Tags:["06","BHC","UHC"],CustomName:'{"text":"Équipe Vert c."}',data:{name:"§a"}}
-execute if score #team uhc.id.teams matches 7 run data merge entity @s {Tags:["07","BHC","UHC"],CustomName:'{"text":"Équipe Jaune"}',data:{name:"§e"}}
-execute if score #team uhc.id.teams matches 8 run data merge entity @s {Tags:["08","BHC","UHC"],CustomName:'{"text":"Équipe Orange"}',data:{name:"§6"}}
-execute if score #team uhc.id.teams matches 9 run data merge entity @s {Tags:["09","BHC","UHC"],CustomName:'{"text":"Équipe Rouge c."}',data:{name:"§c"}}
-execute if score #team uhc.id.teams matches 10 run data merge entity @s {Tags:["10","BHC","UHC"],CustomName:'{"text":"Équipe Rouge f."}',data:{name:"§4"}}
-execute if score #team uhc.id.teams matches 11 run data merge entity @s {Tags:["11","BHC","UHC"],CustomName:'{"text":"Équipe Violette"}',data:{name:"§5"}}
-execute if score #team uhc.id.teams matches 12 run data merge entity @s {Tags:["12","BHC","UHC"],CustomName:'{"text":"Équipe Rose"}',data:{name:"§d"}}
-#execute if score #team uhc.id.teams matches 13 run data merge entity @s {Tags:["13","BHC","UHC"],CustomName:'{"text":"Équipe Blanche"}',data:{name:"§f"}}
-#execute if score #team uhc.id.teams matches 14 run data merge entity @s {Tags:["14","BHC","UHC"],CustomName:'{"text":"Équipe Gris c."}',data:{name:"§7"}}
-#execute if score #team uhc.id.teams matches 15 run data merge entity @s {Tags:["15","BHC","UHC"],CustomName:'{"text":"Équipe Gris f."}',data:{name:"§8"}}
-#execute if score #team uhc.id.teams matches 16 run data merge entity @s {Tags:["16","BHC","UHC"],CustomName:'{"text":"Équipe Noire"}',data:{name:"§0"}}
+execute if score #team uhc.id.teams matches 1 run data merge entity @s {Tags:["01","UHC"],CustomName:'{"text":"Équipe Indigo"}',data:{name:"§1"}}
+execute if score #team uhc.id.teams matches 2 run data merge entity @s {Tags:["02","UHC"],CustomName:'{"text":"Équipe Bleue"}',data:{name:"§9"}}
+execute if score #team uhc.id.teams matches 3 run data merge entity @s {Tags:["03","UHC"],CustomName:'{"text":"Équipe Azur"}',data:{name:"§3"}}
+execute if score #team uhc.id.teams matches 4 run data merge entity @s {Tags:["04","UHC"],CustomName:'{"text":"Équipe Cyan"}',data:{name:"§b"}}
+execute if score #team uhc.id.teams matches 5 run data merge entity @s {Tags:["05","UHC"],CustomName:'{"text":"Équipe Vert f."}',data:{name:"§2"}}
+execute if score #team uhc.id.teams matches 6 run data merge entity @s {Tags:["06","UHC"],CustomName:'{"text":"Équipe Vert c."}',data:{name:"§a"}}
+execute if score #team uhc.id.teams matches 7 run data merge entity @s {Tags:["07","UHC"],CustomName:'{"text":"Équipe Jaune"}',data:{name:"§e"}}
+execute if score #team uhc.id.teams matches 8 run data merge entity @s {Tags:["08","UHC"],CustomName:'{"text":"Équipe Orange"}',data:{name:"§6"}}
+execute if score #team uhc.id.teams matches 9 run data merge entity @s {Tags:["09","UHC"],CustomName:'{"text":"Équipe Rouge c."}',data:{name:"§c"}}
+execute if score #team uhc.id.teams matches 10 run data merge entity @s {Tags:["10","UHC"],CustomName:'{"text":"Équipe Rouge f."}',data:{name:"§4"}}
+execute if score #team uhc.id.teams matches 11 run data merge entity @s {Tags:["11","UHC"],CustomName:'{"text":"Équipe Violette"}',data:{name:"§5"}}
+execute if score #team uhc.id.teams matches 12 run data merge entity @s {Tags:["12","UHC"],CustomName:'{"text":"Équipe Rose"}',data:{name:"§d"}}
+#execute if score #team uhc.id.teams matches 13 run data merge entity @s {Tags:["13","UHC"],CustomName:'{"text":"Équipe Blanche"}',data:{name:"§f"}}
+#execute if score #team uhc.id.teams matches 14 run data merge entity @s {Tags:["14","UHC"],CustomName:'{"text":"Équipe Gris c."}',data:{name:"§7"}}
+#execute if score #team uhc.id.teams matches 15 run data merge entity @s {Tags:["15","UHC"],CustomName:'{"text":"Équipe Gris f."}',data:{name:"§8"}}
+#execute if score #team uhc.id.teams matches 16 run data merge entity @s {Tags:["16","UHC"],CustomName:'{"text":"Équipe Noire"}',data:{name:"§0"}}
 
 # Team join des markers
 team join 01 @s[type=marker,tag=01]

@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "spruce_planks"
+		},
+		"title": {
+			"text": "Spruce Planks",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"spruce_planks"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:woods/stripped_spruce_log",
+	"rewards": {
+		"function": "aic:advancements/item/spruce_planks"
+	}
+}

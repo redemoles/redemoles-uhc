@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "glass_bottle"
+		},
+		"title": {
+			"text": "Glass Bottle",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"glass_bottle"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:potion/ominous_bottle_5",
+	"rewards": {
+		"function": "aic:advancements/item/glass_bottle"
+	}
+}

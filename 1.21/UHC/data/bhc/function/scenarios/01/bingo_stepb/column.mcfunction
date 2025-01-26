@@ -12,7 +12,7 @@ scoreboard players operation @s bhc.invStageB /= #1m bhc.data
 scoreboard players add @s bhc.invStageB 5
 scoreboard players operation @a[predicate=uhc:id_teams] bhc.invStageB = @s bhc.invStageB
 scoreboard players operation @s bhc.invStageB *= #1m bhc.data
-scoreboard players add @e[type=marker,tag=BHC] bhc.invStageB 1
+scoreboard players add @e[type=marker,tag=UHC] bhc.invStageB 1
 
 # Récompenses
 execute if score #total_first_column bhc.data matches 1 run give @p[tag=bhc.new_adv] minecraft:diamond 4

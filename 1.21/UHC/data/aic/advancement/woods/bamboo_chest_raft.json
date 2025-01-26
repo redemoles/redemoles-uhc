@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "bamboo_chest_raft"
+		},
+		"title": {
+			"text": "Bamboo Chest Raft",
+			"color": "#3FE7FF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"bamboo_chest_raft"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:woods/bamboo_raft",
+	"rewards": {
+		"function": "aic:advancements/item/bamboo_chest_raft"
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "charcoal"
+		},
+		"title": {
+			"text": "Charcoal",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"charcoal"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:woods/oak_chest_boat",
+	"rewards": {
+		"function": "aic:advancements/item/charcoal"
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "pink_concrete"
+		},
+		"title": {
+			"text": "Pink Concrete",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"pink_concrete"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:colored_blocks/magenta_concrete",
+	"rewards": {
+		"function": "aic:advancements/item/pink_concrete"
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "pearlescent_froglight"
+		},
+		"title": {
+			"text": "Pearlescent Froglight",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"pearlescent_froglight"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:decoration/ochre_froglight",
+	"rewards": {
+		"function": "aic:advancements/item/pearlescent_froglight"
+	}
+}

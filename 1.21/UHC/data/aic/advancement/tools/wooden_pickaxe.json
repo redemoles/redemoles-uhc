@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "wooden_pickaxe"
+		},
+		"title": {
+			"text": "Wooden Pickaxe",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"wooden_pickaxe"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:tools/wooden_sword",
+	"rewards": {
+		"function": "aic:advancements/item/wooden_pickaxe"
+	}
+}

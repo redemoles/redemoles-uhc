@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "warped_fence_gate"
+		},
+		"title": {
+			"text": "Warped Fence Gate",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"warped_fence_gate"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:woods/warped_fence",
+	"rewards": {
+		"function": "aic:advancements/item/warped_fence_gate"
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "magenta_glazed_terracotta"
+		},
+		"title": {
+			"text": "Magenta Glazed Terracotta",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"magenta_glazed_terracotta"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:colored_blocks/purple_glazed_terracotta",
+	"rewards": {
+		"function": "aic:advancements/item/magenta_glazed_terracotta"
+	}
+}

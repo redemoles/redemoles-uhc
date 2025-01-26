@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "deepslate_diamond_ore"
+		},
+		"title": {
+			"text": "Deepslate Diamond Ore",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"deepslate_diamond_ore"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:caves/_challenge_ore",
+	"rewards": {
+		"function": "aic:advancements/item/deepslate_diamond_ore"
+	}
+}

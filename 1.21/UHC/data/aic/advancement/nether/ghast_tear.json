@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "ghast_tear"
+		},
+		"title": {
+			"text": "Ghast Tear",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"ghast_tear"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:nether/magma_cream",
+	"rewards": {
+		"function": "aic:advancements/item/ghast_tear"
+	}
+}

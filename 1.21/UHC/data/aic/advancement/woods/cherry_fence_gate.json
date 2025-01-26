@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "cherry_fence_gate"
+		},
+		"title": {
+			"text": "Cherry Fence Gate",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"cherry_fence_gate"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:woods/cherry_fence",
+	"rewards": {
+		"function": "aic:advancements/item/cherry_fence_gate"
+	}
+}

@@ -1,0 +1,152 @@
+{
+	"display": {
+		"icon": {
+			"id": "glowstone_dust"
+		},
+		"title": {
+			"text": "Potions épaisses",
+			"color": "#3FE7FF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "challenge",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"tipped_arrow_empty_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/tipped_arrow_empty_thick": true
+						}
+					}
+				}
+			}
+		},
+		"tipped_arrow_jump_boost_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/tipped_arrow_jump_boost_thick": true
+						}
+					}
+				}
+			}
+		},
+		"tipped_arrow_poison_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/tipped_arrow_poison_thick": true
+						}
+					}
+				}
+			}
+		},
+		"tipped_arrow_regeneration_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/tipped_arrow_regeneration_thick": true
+						}
+					}
+				}
+			}
+		},
+		"tipped_arrow_slowness_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/tipped_arrow_slowness_thick": true
+						}
+					}
+				}
+			}
+		},
+		"tipped_arrow_strength_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/tipped_arrow_strength_thick": true
+						}
+					}
+				}
+			}
+		},
+		"tipped_arrow_swiftness_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/tipped_arrow_swiftness_thick": true
+						}
+					}
+				}
+			}
+		},
+		"tipped_arrow_turtle_master_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/tipped_arrow_turtle_master_thick": true
+						}
+					}
+				}
+			}
+		},
+		"tipped_arrow_instant_damage_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/tipped_arrow_instant_damage_thick": true
+						}
+					}
+				}
+			}
+		},
+		"tipped_arrow_instant_health_thick": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:potion/tipped_arrow_instant_health_thick": true
+						}
+					}
+				}
+			}
+		}
+	},
+	"parent": "aic:potion/_challenge_arrow"
+}

@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "twisting_vines"
+		},
+		"title": {
+			"text": "Twisting Vines",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"twisting_vines"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:nether/warped_nylium",
+	"rewards": {
+		"function": "aic:advancements/item/twisting_vines"
+	}
+}

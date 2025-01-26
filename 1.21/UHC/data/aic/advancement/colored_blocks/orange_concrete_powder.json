@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "orange_concrete_powder"
+		},
+		"title": {
+			"text": "Orange Concrete Powder",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"orange_concrete_powder"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:colored_blocks/yellow_concrete_powder",
+	"rewards": {
+		"function": "aic:advancements/item/orange_concrete_powder"
+	}
+}

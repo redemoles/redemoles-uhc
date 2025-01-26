@@ -1,0 +1,52 @@
+{
+	"display": {
+	  "icon": {
+		"id": "minecraft:lingering_potion",
+		"components": {
+		  "minecraft:potion_contents": {
+			"custom_color": 16185078
+		  }
+		}
+	  },
+	  "title": {
+		"text": "Lingering Potion of Invisibility",
+		"color": "#FFFFFF"
+	  },
+	  "description": {
+		"text": "Long",
+		"color": "#FFFFFF"
+	  },
+	  "frame": "task",
+	  "show_toast": false,
+	  "announce_to_chat": false,
+	  "hidden": false
+	},
+	"criteria": {
+	  "requirement": {
+		"trigger": "minecraft:inventory_changed",
+		"conditions": {
+		  "items": [
+			{
+			  "items": [
+				"lingering_potion"
+			  ],
+			  "components": {
+				"minecraft:potion_contents": {
+					"potion": "long_invisibility"
+				}
+			  }
+			}
+		  ]
+		}
+	  }
+	},
+	"parent": "aic:potion/lingering_potion_fire_resistance_mundane",
+	"requirements": [
+	  [
+		"requirement"
+	  ]
+	],
+	"rewards": {
+	  "function": "aic:advancements/item/lingering_potion_invisibility_mundane"
+	}
+  }

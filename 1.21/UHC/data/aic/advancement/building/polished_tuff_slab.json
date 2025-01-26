@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "polished_tuff_slab"
+		},
+		"title": {
+			"text": "Polished Tuff Slab",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"polished_tuff_slab"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:building/polished_tuff_stairs",
+	"rewards": {
+		"function": "aic:advancements/item/polished_tuff_slab"
+	}
+}

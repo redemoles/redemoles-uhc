@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "honey_bottle"
+		},
+		"title": {
+			"text": "Honey Bottle",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"honey_bottle"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:foods/beehive",
+	"rewards": {
+		"function": "aic:advancements/item/honey_bottle"
+	}
+}

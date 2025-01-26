@@ -23,7 +23,7 @@ playsound minecraft:entity.experience_orb.pickup master @a ~ ~ ~ 0.5 1 0.5
 scoreboard objectives setdisplay sidebar bhc.StageB
 
 # Reset des succès
-execute as @e[type=marker,tag=BHC] run function bhc:scenarios/00/timer/reset_scores
+execute as @e[type=marker,tag=UHC] run function bhc:scenarios/00/timer/reset_scores
 
 # Enregistrement du nombre de lignes et colonnes
 function bingo_b1:load

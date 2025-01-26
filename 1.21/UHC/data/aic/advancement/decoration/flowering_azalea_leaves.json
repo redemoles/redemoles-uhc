@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "flowering_azalea_leaves"
+		},
+		"title": {
+			"text": "Flowering Azalea Leaves",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"flowering_azalea_leaves"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:decoration/azalea_leaves",
+	"rewards": {
+		"function": "aic:advancements/item/flowering_azalea_leaves"
+	}
+}

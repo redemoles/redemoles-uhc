@@ -8,6 +8,7 @@
 #
 
 scoreboard players set #start_game uhc.data.setup 1
+execute if score #aic uhc.gamemode matches 1 run scoreboard players set #aic uhc.gamemode 3
 
 ## Auto-set de la partie
 execute unless score #Minutes uhc.data.display matches 0.. run scoreboard players set #tick uhc.data.setup 0

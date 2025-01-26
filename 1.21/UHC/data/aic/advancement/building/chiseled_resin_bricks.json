@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "chiseled_resin_bricks"
+		},
+		"title": {
+			"text": "Chiseled Resin Bricks",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"chiseled_resin_bricks"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:building/resin_brick",
+	"rewards": {
+		"function": "aic:advancements/item/chiseled_resin_bricks"
+	}
+}

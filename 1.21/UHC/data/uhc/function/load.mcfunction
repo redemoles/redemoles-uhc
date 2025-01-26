@@ -22,6 +22,7 @@ tag Redemoles add host
 #define storage uhc:spawn
 #define storage uhc:temp
 #define storage uhc:team
+#define storage aic:temp
 
 # Affichage du message de chargement
 tellraw @a[tag=host] {"text":"[Loaded UHC 1.21 - v1.2.24w52a - par Redemoles]","color":"#BF00FF"}

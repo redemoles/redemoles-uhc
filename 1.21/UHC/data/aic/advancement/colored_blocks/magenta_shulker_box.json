@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "magenta_shulker_box"
+		},
+		"title": {
+			"text": "Magenta Shulker Box",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"magenta_shulker_box"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:colored_blocks/purple_shulker_box",
+	"rewards": {
+		"function": "aic:advancements/item/magenta_shulker_box"
+	}
+}

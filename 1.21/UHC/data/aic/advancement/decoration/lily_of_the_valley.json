@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "lily_of_the_valley"
+		},
+		"title": {
+			"text": "Lily Of The Valley",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"lily_of_the_valley"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:decoration/white_tulip",
+	"rewards": {
+		"function": "aic:advancements/item/lily_of_the_valley"
+	}
+}

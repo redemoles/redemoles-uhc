@@ -1,0 +1,1036 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:apple"
+		},
+		"title": {
+			"text": "Nourriture",
+			"color": "#3FE7FF",
+			"bold": true
+		},
+		"description": {
+			"text": "",
+			"color": "green"
+		},
+		"background": "minecraft:textures/block/beehive_front.png",
+		"frame": "challenge",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"criteria": {
+		"bee_nest": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/bee_nest": true
+						}
+					}
+				}
+			}
+		},
+		"beehive": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/beehive": true
+						}
+					}
+				}
+			}
+		},
+		"honey_bottle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/honey_bottle": true
+						}
+					}
+				}
+			}
+		},
+		"honey_block": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/honey_block": true
+						}
+					}
+				}
+			}
+		},
+		"honeycomb": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/honeycomb": true
+						}
+					}
+				}
+			}
+		},
+		"honeycomb_block": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/honeycomb_block": true
+						}
+					}
+				}
+			}
+		},
+		"glow_berries": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/glow_berries": true
+						}
+					}
+				}
+			}
+		},
+		"sweet_berries": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/sweet_berries": true
+						}
+					}
+				}
+			}
+		},
+		"porkchop": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/porkchop": true
+						}
+					}
+				}
+			}
+		},
+		"beef": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/beef": true
+						}
+					}
+				}
+			}
+		},
+		"mutton": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/mutton": true
+						}
+					}
+				}
+			}
+		},
+		"chicken": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/chicken": true
+						}
+					}
+				}
+			}
+		},
+		"rabbit": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/rabbit": true
+						}
+					}
+				}
+			}
+		},
+		"rotten_flesh": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/rotten_flesh": true
+						}
+					}
+				}
+			}
+		},
+		"cooked_porkchop": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/cooked_porkchop": true
+						}
+					}
+				}
+			}
+		},
+		"cooked_beef": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/cooked_beef": true
+						}
+					}
+				}
+			}
+		},
+		"cooked_mutton": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/cooked_mutton": true
+						}
+					}
+				}
+			}
+		},
+		"cooked_chicken": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/cooked_chicken": true
+						}
+					}
+				}
+			}
+		},
+		"cooked_rabbit": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/cooked_rabbit": true
+						}
+					}
+				}
+			}
+		},
+		"rabbit_stew": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/rabbit_stew": true
+						}
+					}
+				}
+			}
+		},
+		"melon_seeds": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/melon_seeds": true
+						}
+					}
+				}
+			}
+		},
+		"melon_slice": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/melon_slice": true
+						}
+					}
+				}
+			}
+		},
+		"glistering_melon_slice": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/glistering_melon_slice": true
+						}
+					}
+				}
+			}
+		},
+		"melon": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/melon": true
+						}
+					}
+				}
+			}
+		},
+		"pumpkin_seeds": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/pumpkin_seeds": true
+						}
+					}
+				}
+			}
+		},
+		"pumpkin": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/pumpkin": true
+						}
+					}
+				}
+			}
+		},
+		"carved_pumpkin": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/carved_pumpkin": true
+						}
+					}
+				}
+			}
+		},
+		"jack_o_lantern": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/jack_o_lantern": true
+						}
+					}
+				}
+			}
+		},
+		"pumpkin_pie": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/pumpkin_pie": true
+						}
+					}
+				}
+			}
+		},
+		"brown_mushroom_block": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/brown_mushroom_block": true
+						}
+					}
+				}
+			}
+		},
+		"red_mushroom_block": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/red_mushroom_block": true
+						}
+					}
+				}
+			}
+		},
+		"mushroom_stem": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/mushroom_stem": true
+						}
+					}
+				}
+			}
+		},
+		"brown_mushroom": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/brown_mushroom": true
+						}
+					}
+				}
+			}
+		},
+		"red_mushroom": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/red_mushroom": true
+						}
+					}
+				}
+			}
+		},
+		"bowl": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/bowl": true
+						}
+					}
+				}
+			}
+		},
+		"mushroom_stew": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/mushroom_stew": true
+						}
+					}
+				}
+			}
+		},
+		"spider_eye": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/spider_eye": true
+						}
+					}
+				}
+			}
+		},
+		"fermented_spider_eye": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/fermented_spider_eye": true
+						}
+					}
+				}
+			}
+		},
+		"kelp": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/kelp": true
+						}
+					}
+				}
+			}
+		},
+		"dried_kelp": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/dried_kelp": true
+						}
+					}
+				}
+			}
+		},
+		"dried_kelp_block": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/dried_kelp_block": true
+						}
+					}
+				}
+			}
+		},
+		"cod": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/cod": true
+						}
+					}
+				}
+			}
+		},
+		"cooked_cod": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/cooked_cod": true
+						}
+					}
+				}
+			}
+		},
+		"salmon": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/salmon": true
+						}
+					}
+				}
+			}
+		},
+		"cooked_salmon": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/cooked_salmon": true
+						}
+					}
+				}
+			}
+		},
+		"pufferfish": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/pufferfish": true
+						}
+					}
+				}
+			}
+		},
+		"tropical_fish": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/tropical_fish": true
+						}
+					}
+				}
+			}
+		},
+		"beetroot": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/beetroot": true
+						}
+					}
+				}
+			}
+		},
+		"beetroot_seeds": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/beetroot_seeds": true
+						}
+					}
+				}
+			}
+		},
+		"beetroot_soup": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/beetroot_soup": true
+						}
+					}
+				}
+			}
+		},
+		"potato": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/potato": true
+						}
+					}
+				}
+			}
+		},
+		"baked_potato": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/baked_potato": true
+						}
+					}
+				}
+			}
+		},
+		"poisonous_potato": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/poisonous_potato": true
+						}
+					}
+				}
+			}
+		},
+		"carrot": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/carrot": true
+						}
+					}
+				}
+			}
+		},
+		"golden_carrot": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/golden_carrot": true
+						}
+					}
+				}
+			}
+		},
+		"apple": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/apple": true
+						}
+					}
+				}
+			}
+		},
+		"golden_apple": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/golden_apple": true
+						}
+					}
+				}
+			}
+		},
+		"enchanted_golden_apple": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/enchanted_golden_apple": true
+						}
+					}
+				}
+			}
+		},
+		"suspicious_stew_blindness": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/suspicious_stew_blindness": true
+						}
+					}
+				}
+			}
+		},
+		"suspicious_stew_fire_resistance": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/suspicious_stew_fire_resistance": true
+						}
+					}
+				}
+			}
+		},
+		"suspicious_stew_jump_boost": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/suspicious_stew_jump_boost": true
+						}
+					}
+				}
+			}
+		},
+		"suspicious_stew_nausea": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/suspicious_stew_nausea": true
+						}
+					}
+				}
+			}
+		},
+		"suspicious_stew_night_vision": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/suspicious_stew_night_vision": true
+						}
+					}
+				}
+			}
+		},
+		"suspicious_stew_poison": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/suspicious_stew_poison": true
+						}
+					}
+				}
+			}
+		},
+		"suspicious_stew_regeneration": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/suspicious_stew_regeneration": true
+						}
+					}
+				}
+			}
+		},
+		"suspicious_stew_saturation": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/suspicious_stew_saturation": true
+						}
+					}
+				}
+			}
+		},
+		"suspicious_stew_weakness": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/suspicious_stew_weakness": true
+						}
+					}
+				}
+			}
+		},
+		"suspicious_stew_wither": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/suspicious_stew_wither": true
+						}
+					}
+				}
+			}
+		},
+		"wheat_seeds": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/wheat_seeds": true
+						}
+					}
+				}
+			}
+		},
+		"wheat": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/wheat": true
+						}
+					}
+				}
+			}
+		},
+		"hay_block": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/hay_block": true
+						}
+					}
+				}
+			}
+		},
+		"bread": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/bread": true
+						}
+					}
+				}
+			}
+		},
+		"cookie": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/cookie": true
+						}
+					}
+				}
+			}
+		},
+		"cocoa_beans": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/cocoa_beans": true
+						}
+					}
+				}
+			}
+		},
+		"cake": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/cake": true
+						}
+					}
+				}
+			}
+		},
+		"egg": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/egg": true
+						}
+					}
+				}
+			}
+		},
+		"sugar_cane": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/sugar_cane": true
+						}
+					}
+				}
+			}
+		},
+		"sugar": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/sugar": true
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,40 @@
+{
+	"display": {
+		"icon": {
+			"id": "goat_horn"
+		},
+		"title": {
+			"text": "Yearn Goat Horn",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"goat_horn"
+						],
+						"components": {
+							"instrument": "yearn_goat_horn"
+						}
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:collectionable/sing_goat_horn",
+	"rewards": {
+		"function": "aic:advancements/item/yearn_goat_horn"
+	}
+}

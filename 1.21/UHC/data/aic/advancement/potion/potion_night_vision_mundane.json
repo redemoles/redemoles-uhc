@@ -1,0 +1,52 @@
+{
+	"display": {
+	  "icon": {
+		"id": "minecraft:potion",
+		"components": {
+		  "minecraft:potion_contents": {
+			"custom_color": 12779366
+		  }
+		}
+	  },
+	  "title": {
+		"text": "Potion of Night Vision",
+		"color": "#FFFFFF"
+	  },
+	  "description": {
+		"text": "Long",
+		"color": "#FFFFFF"
+	  },
+	  "frame": "task",
+	  "show_toast": false,
+	  "announce_to_chat": false,
+	  "hidden": false
+	},
+	"criteria": {
+	  "requirement": {
+		"trigger": "minecraft:inventory_changed",
+		"conditions": {
+		  "items": [
+			{
+			  "items": [
+				"potion"
+			  ],
+			  "components": {
+				"minecraft:potion_contents": {
+					"potion": "long_night_vision"
+				}
+			  }
+			}
+		  ]
+		}
+	  }
+	},
+	"parent": "aic:potion/potion_invisibility_mundane",
+	"requirements": [
+	  [
+		"requirement"
+	  ]
+	],
+	"rewards": {
+	  "function": "aic:advancements/item/potion_night_vision_mundane"
+	}
+  }

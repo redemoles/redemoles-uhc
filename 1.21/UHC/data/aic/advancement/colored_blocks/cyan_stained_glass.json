@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "cyan_stained_glass"
+		},
+		"title": {
+			"text": "Cyan Stained Glass",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"cyan_stained_glass"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:colored_blocks/blue_stained_glass",
+	"rewards": {
+		"function": "aic:advancements/item/cyan_stained_glass"
+	}
+}

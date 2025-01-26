@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "pumpkin_pie"
+		},
+		"title": {
+			"text": "Pumpkin Pie",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"pumpkin_pie"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:foods/jack_o_lantern",
+	"rewards": {
+		"function": "aic:advancements/item/pumpkin_pie"
+	}
+}

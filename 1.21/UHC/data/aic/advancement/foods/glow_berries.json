@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "glow_berries"
+		},
+		"title": {
+			"text": "Glow Berries",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"glow_berries"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:foods/honeycomb_block",
+	"rewards": {
+		"function": "aic:advancements/item/glow_berries"
+	}
+}
