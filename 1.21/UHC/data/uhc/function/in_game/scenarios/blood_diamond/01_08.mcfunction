@@ -9,5 +9,6 @@
 
 give @s diamond
 $tellraw @s [{"text":"Blood Diamond ($(mined)/8) : +1 diamant (100%)","color":"#3FE7FF"}]
-title @s title [{"text":"+1 diamant","color":"#3FE7FF"}]
-$title @s subtitle [{"text":"Blood Diamond - Palier Safe ($(mined)/8)","color":"#3FE7FF"}]
+
+title @s[scores={uhc.scenario.blood_diamond.mined=1}] title [{"text":""}]
+title @s[scores={uhc.scenario.blood_diamond.mined=1}] subtitle [{"text":"Blood Diamond - Palier 1","color":"#3FE7FF"}]

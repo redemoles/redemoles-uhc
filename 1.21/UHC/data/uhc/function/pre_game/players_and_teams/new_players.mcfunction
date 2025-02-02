@@ -39,3 +39,4 @@ experience set @s 0 points
 scoreboard players set @s uhc.players.online 1
 scoreboard players set @s uhc.players.lang 1
 scoreboard players set @s uhc.id.random_teams 0
+title @s reset

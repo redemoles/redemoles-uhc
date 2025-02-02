@@ -12,6 +12,7 @@ clear @s
 effect clear @s
 scoreboard players set @s uhc.players.lang 1
 tag @s remove uhc.player.dead
+title @s reset
 
 ## Reset tags de tous les modes de jeu
 # Fate UHC
