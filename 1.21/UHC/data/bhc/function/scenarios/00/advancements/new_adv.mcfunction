@@ -41,14 +41,6 @@ $execute as @p[tag=!bhc.new_adv] if score @s bhc.column_$(column) = #column bhc.
 execute if score #team_first_column bhc.data matches 1 run scoreboard players add @e[tag=bhc.new_adv] bhc.column 1
 scoreboard players operation @s bhc.column = @e[type=marker,predicate=uhc:id_teams] bhc.column
 
-## Scores
-# Ajout de stepa au joueur et à l'équipe
-$execute if score #team_first_case bhc.data matches 1 if score #stepa_enabled bhc.data matches $(step) run function bhc:scenarios/00/advancements/stepa
-$execute if score #team_first_case bhc.data matches 1 if score #stepb_enabled bhc.data matches $(step) run function bhc:scenarios/00/advancements/stepb
-
-## Resélection de l'équipe du joueur
-scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
-
 ## Messages
 
 # Msg FRA
@@ -72,3 +64,8 @@ $execute if score #team_first_case bhc.data matches 1 run advancement grant @a[p
 ## Si FFA → Don du dernier succès non complété d'une ligne/colonne
 $execute if score #TeamSize uhc.data.setup matches 1 if score @s bhc.line_$(line) = #line-1 bhc.data run function bhc:scenarios/00/advancements/ffa_line with storage $(namespace) $(line)_$(column)
 $execute if score #TeamSize uhc.data.setup matches 1 if score @s bhc.column_$(column) = #column-1 bhc.data run function bhc:scenarios/00/advancements/ffa_column with storage $(namespace) $(line)_$(column)
+
+## Scores
+# Ajout de stepa au joueur et à l'équipe
+$execute if score #team_first_case bhc.data matches 1 if score #stepa_enabled bhc.data matches $(step) run function bhc:scenarios/00/advancements/stepa
+$execute if score #team_first_case bhc.data matches 1 if score #stepb_enabled bhc.data matches $(step) run function bhc:scenarios/00/advancements/stepb

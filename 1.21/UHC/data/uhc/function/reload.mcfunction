@@ -56,6 +56,8 @@ scoreboard objectives add nzl.scenario dummy
 scoreboard objectives add best_pve.list trigger
 
 scoreboard objectives remove uhc.id.teams
+scoreboard objectives remove uhc.id.random_teams
+scoreboard objectives remove uhc.id.random_teams.ban
 scoreboard objectives remove uhc.id.players
 scoreboard objectives remove uhc.id.spawns
 scoreboard objectives remove uhc.game.end
@@ -83,6 +85,8 @@ scoreboard objectives remove uhc.spawn.check
 scoreboard objectives remove uhc.world.end
 
 scoreboard objectives add uhc.id.teams dummy
+scoreboard objectives add uhc.id.random_teams dummy
+scoreboard objectives add uhc.id.random_teams.ban dummy
 scoreboard objectives add uhc.id.players dummy
 scoreboard objectives add uhc.id.spawns dummy
 scoreboard objectives add uhc.game.end trigger
@@ -180,6 +184,7 @@ function uau:load
 # Multipliers
 scoreboard players set #-1m uhc.data.numbers -1000000
 scoreboard players set #-1 uhc.data.numbers -1
+scoreboard players set #00 uhc.data.numbers 0
 scoreboard players set #01 uhc.data.numbers 1
 scoreboard players set #02 uhc.data.numbers 2
 scoreboard players set #03 uhc.data.numbers 3
@@ -212,3 +217,9 @@ scoreboard players set #1m uhc.data.numbers 1000000
 execute in uhc:sign run forceload add 0 0
 execute in uhc:sign run setblock 0 -1 0 minecraft:stone
 execute in uhc:sign run setblock 0 0 0 minecraft:oak_sign
+
+# TP border define
+execute store result storage uhc:temp tp.xp int 1 run scoreboard players get #00 uhc.data.numbers
+execute store result storage uhc:temp tp.xn int 1 run scoreboard players get #00 uhc.data.numbers
+execute store result storage uhc:temp tp.zp int 1 run scoreboard players get #00 uhc.data.numbers
+execute store result storage uhc:temp tp.zn int 1 run scoreboard players get #00 uhc.data.numbers

@@ -14,6 +14,7 @@ scoreboard players set @s uhc.players.death 0
 tag @s remove uhc.spec
 tag @s add uhc.player
 tag @s remove uhc.revive
+tag @s remove uhc.player.dead
 
 gamemode survival @s
 effect clear @s

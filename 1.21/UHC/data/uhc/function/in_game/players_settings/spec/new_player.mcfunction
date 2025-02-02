@@ -11,6 +11,7 @@ team leave @s
 clear @s
 effect clear @s
 scoreboard players set @s uhc.players.lang 1
+tag @s remove uhc.player.dead
 
 ## Reset tags de tous les modes de jeu
 # Fate UHC
@@ -28,6 +29,14 @@ tag @s remove fte.item.archer
 tag @s remove fte.item.lancer
 tag @s remove fte.item.saber
 tag @s remove fte.summon.cancel
+# Moles
+tag @s remove mls.kit.enchanteur
+tag @s remove mls.kit.endertan
+tag @s remove mls.kit.pyrolienne
+tag @s remove mls.kit.sorcerique
+tag @s remove mls.kit.tiranic
+tag @s remove mls.kit.usain_bottes
+tag @s remove mls.kit.whealer
 # Nuzlocke UHC
 tag @s remove nzl.type.01
 tag @s remove nzl.type.02

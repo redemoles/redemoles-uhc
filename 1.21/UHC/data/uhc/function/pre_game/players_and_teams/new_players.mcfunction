@@ -10,6 +10,7 @@
 ## Mise au lobby des joueurs
 
 tag @s remove uhc.player
+tag @s remove uhc.player.dead
 tag @s remove test
 tag @s add uhc.spec
 execute if score #lobby lobby.data matches 0 run tp @s 0 305 0
@@ -37,3 +38,4 @@ experience set @s 0 levels
 experience set @s 0 points
 scoreboard players set @s uhc.players.online 1
 scoreboard players set @s uhc.players.lang 1
+scoreboard players set @s uhc.id.random_teams 0

@@ -25,3 +25,6 @@ execute if score #total_first_case bhc.data matches 1 if score #reward bhc.rando
 give @p[tag=bhc.new_adv] minecraft:gold_ingot 4
 give @p[tag=bhc.new_adv] minecraft:apple
 experience add @p[tag=bhc.new_adv] 1 levels
+
+# Score personnel
+scoreboard players add @p[tag=bhc.new_adv] bhc.StageB.personal 1

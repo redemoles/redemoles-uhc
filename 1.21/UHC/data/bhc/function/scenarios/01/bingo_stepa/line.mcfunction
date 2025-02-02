@@ -18,3 +18,6 @@ scoreboard players add @e[type=marker,tag=UHC] bhc.invStageA 1
 execute if score #total_first_line bhc.data matches 1 run give @p[tag=bhc.new_adv] minecraft:diamond 3
 give @p[tag=bhc.new_adv] minecraft:diamond 3
 experience add @p[tag=bhc.new_adv] 1 levels
+
+# Score personnel
+scoreboard players add @p[tag=bhc.new_adv] bhc.StageA.personal 2

@@ -24,3 +24,6 @@ execute if score #reward bhc.random matches 2..3 run give @p[tag=bhc.new_adv] mi
 execute if score #reward bhc.random matches 2..3 run give @p[tag=bhc.new_adv] minecraft:apple
 execute if score #reward bhc.random matches 4 run give @p[tag=bhc.new_adv] minecraft:diamond 1
 experience add @p[tag=bhc.new_adv] 1 levels
+
+# Score personnel
+scoreboard players add @p[tag=bhc.new_adv] bhc.StageA.personal 1

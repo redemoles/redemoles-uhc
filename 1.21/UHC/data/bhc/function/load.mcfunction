@@ -8,6 +8,12 @@
 #
 
 # Reset tous les scoreboards
+scoreboard objectives remove bhc.StageA.personal
+scoreboard objectives remove bhc.StageB.personal
+scoreboard objectives remove bhc.Kills.personal
+scoreboard objectives remove bhc.Death.personal
+scoreboard objectives remove bhc.Total.personal
+
 scoreboard objectives remove bhc.invStageA
 scoreboard objectives remove bhc.invStageB
 scoreboard objectives remove bhc.invKills
@@ -93,6 +99,12 @@ scoreboard objectives remove bhc.data
 scoreboard objectives remove bhc.ironman
 scoreboard objectives remove bhc.timer
 scoreboard objectives remove bhc.teams.livescount
+
+scoreboard objectives add bhc.StageA.personal dummy
+scoreboard objectives add bhc.StageB.personal dummy
+scoreboard objectives add bhc.Kills.personal dummy
+scoreboard objectives add bhc.Death.personal dummy
+scoreboard objectives add bhc.Total.personal dummy
 
 scoreboard objectives add bhc.invStageA dummy
 scoreboard objectives add bhc.invStageB dummy
