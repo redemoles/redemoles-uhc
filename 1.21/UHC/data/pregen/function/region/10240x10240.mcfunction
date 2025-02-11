@@ -12914,4 +12914,4 @@ execute if score #chunk_pregen pregen.world matches 7404 run tag @a[scores={preg
 execute if score #chunk_pregen pregen.world matches 7404 run tag @a[scores={pregen.world=1..}] add host.world_generation.8000
 
 execute if score #chunk_pregen pregen.world matches 7404 run scoreboard players set #chunk_pregen pregen.world 99999
-execute if score #chunk_pregen pregen.world matches 7404 if score #world_generation uhc.host.menu matches 1 run function uhc:pre_game/menu/load/world_generation/
+execute if score #chunk_pregen pregen.world matches 7404 if score #world_generation uhc.menu.host matches 1 run function uhc:pre_game/menu/load/world_generation/

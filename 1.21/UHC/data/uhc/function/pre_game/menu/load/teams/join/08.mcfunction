@@ -20,4 +20,4 @@ execute if score #vanilla uhc.gamemode matches 1 run tellraw @s[scores={uhc.play
 execute if score #bhc uhc.gamemode matches 1 run tellraw @s[scores={uhc.players.lang=2}] [{"text":"You joined the ","color":"#BF7FFF","bold":false},{"text":"Orange Team","color":"gold","bold":false}]
 
 scoreboard players set @s uhc.id.teams 8
-advancement grant @a only uhc:inventory_menu
+scoreboard players set @s uhc.menu.update 1

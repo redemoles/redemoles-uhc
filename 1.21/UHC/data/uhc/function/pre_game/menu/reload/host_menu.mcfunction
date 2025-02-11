@@ -17,23 +17,23 @@ item replace entity @s inventory.5 with minecraft:command_block[minecraft:item_n
 item replace entity @s inventory.6 with minecraft:repeating_command_block[minecraft:item_name='{"text":"Scenarios","color":"#CF3FFF","italic":false}']
 item replace entity @s inventory.7 with minecraft:chain_command_block[minecraft:item_name='{"text":"Paramètres","color":"#CFCFCF","italic":false}']
 item replace entity @s inventory.19 with minecraft:book[minecraft:item_name='{"text":"Config Résumé","color":"#3FE7FF","italic":false}']
-item replace entity @s inventory.22 with minecraft:nether_star[minecraft:item_name='{"text":"DÉMARRAGE","color":"#FFE73F","italic":false,"bold":true}',lore=['{"text":"/datapack disable vanilla","color":"#BFBFBF","italic":false}']]
+item replace entity @s inventory.22 with minecraft:nether_star[minecraft:item_name='{"text":"DÉMARRAGE","color":"#FFE73F","italic":false,"bold":true}']
 item replace entity @s inventory.25 with minecraft:white_banner[minecraft:item_name='{"text":"Équipes","color":"#3FE7FF","italic":false}']
 
-scoreboard players set #principal uhc.host.menu 1
-scoreboard players set #gamemode uhc.host.menu 0
-scoreboard players set #gamemode_bhc uhc.host.menu 0
-scoreboard players set #lobby uhc.host.menu 0
-scoreboard players set #teams uhc.host.menu 0
-scoreboard players set #scenarios uhc.host.menu 0
-scoreboard players set #settings uhc.host.menu 0
-scoreboard players set #settings_lives uhc.host.menu 0
-scoreboard players set #settings_pve uhc.host.menu 0
-scoreboard players set #settings_pvp uhc.host.menu 0
-scoreboard players set #settings_border uhc.host.menu 0
-scoreboard players set #start uhc.host.menu 0
-scoreboard players set #world_check uhc.host.menu 0
-scoreboard players set #world_generation uhc.host.menu 0
+scoreboard players set #principal uhc.menu.host 1
+scoreboard players set #gamemode uhc.menu.host 0
+scoreboard players set #gamemode_bhc uhc.menu.host 0
+scoreboard players set #lobby uhc.menu.host 0
+scoreboard players set #teams uhc.menu.host 0
+scoreboard players set #scenarios uhc.menu.host 0
+scoreboard players set #settings uhc.menu.host 0
+scoreboard players set #settings_lives uhc.menu.host 0
+scoreboard players set #settings_pve uhc.menu.host 0
+scoreboard players set #settings_pvp uhc.menu.host 0
+scoreboard players set #settings_border uhc.menu.host 0
+scoreboard players set #start uhc.menu.host 0
+scoreboard players set #world_check uhc.menu.host 0
+scoreboard players set #world_generation uhc.menu.host 0
 
 scoreboard players set #vanilla uhc.gamemode 1
 scoreboard players set #bhc uhc.gamemode 0

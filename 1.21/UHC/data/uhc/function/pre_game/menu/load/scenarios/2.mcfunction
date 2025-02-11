@@ -8,8 +8,8 @@
 #
 
 clear @s
-scoreboard players set #principal uhc.host.menu 0
-scoreboard players set #scenarios uhc.host.menu 2
+scoreboard players set #principal uhc.menu.host 0
+scoreboard players set #scenarios uhc.menu.host 2
 
 
 

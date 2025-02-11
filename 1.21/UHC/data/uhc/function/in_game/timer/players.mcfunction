@@ -25,6 +25,7 @@ execute if score #pve uhc.data.setup matches ..0 run scoreboard players set @s[s
 effect give @s[scores={uhc.effect.resistance=-1}] minecraft:resistance infinite 4 true
 effect clear @s[scores={uhc.effect.resistance=0}] minecraft:resistance
 effect give @s[scores={uhc.effect.resistance=1}] minecraft:resistance infinite 1 true
+execute unless score #nzl uhc.gamemode matches 1 run effect give @s[tag=uhc.player.night_vision] minecraft:night_vision infinite 0 true
 
 # Effets aux joueurs - Reset pour le prochain tick
 execute if score #pve uhc.data.setup matches ..0 run scoreboard players set @s uhc.effect.resistance 0

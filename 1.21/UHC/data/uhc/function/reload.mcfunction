@@ -65,7 +65,8 @@ scoreboard objectives remove uhc.data.arrow
 scoreboard objectives remove uhc.data.display
 scoreboard objectives remove uhc.data.setup
 scoreboard objectives remove uhc.data.numbers
-scoreboard objectives remove uhc.host.menu
+scoreboard objectives remove uhc.menu.host
+scoreboard objectives remove uhc.menu.update
 scoreboard objectives remove uhc.meetup.activate
 scoreboard objectives remove uhc.players.online
 scoreboard objectives remove uhc.players.disconnect
@@ -94,7 +95,8 @@ scoreboard objectives add uhc.data.arrow minecraft.used:minecraft.bow
 scoreboard objectives add uhc.data.display dummy
 scoreboard objectives add uhc.data.setup dummy
 scoreboard objectives add uhc.data.numbers dummy
-scoreboard objectives add uhc.host.menu dummy
+scoreboard objectives add uhc.menu.host dummy
+scoreboard objectives add uhc.menu.update dummy
 scoreboard objectives add uhc.meetup.activate trigger
 scoreboard objectives add uhc.players.online dummy
 scoreboard objectives add uhc.players.disconnect minecraft.custom:minecraft.leave_game

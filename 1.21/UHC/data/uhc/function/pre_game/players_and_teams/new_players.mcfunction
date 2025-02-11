@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/players_and_teams/new_players
 #
-# @within			uhc:pre_game/tick
+# @within			uhc:pre_game/timer/tick
 # @executed			default context
 #
 # @description		Formation des équipes et effets à donner au spawn

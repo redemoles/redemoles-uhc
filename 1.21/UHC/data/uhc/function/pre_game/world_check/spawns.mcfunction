@@ -2,7 +2,7 @@
 #> uhc:pre_game/world_check/spawns
 #
 # @within			uhc:pre_game/menu/load/world_check/spawns
-# @within			uhc:pre_game/tick
+# @within			uhc:pre_game/timer/tick
 #
 # @description		Vérification des points de spawns des équipes
 #

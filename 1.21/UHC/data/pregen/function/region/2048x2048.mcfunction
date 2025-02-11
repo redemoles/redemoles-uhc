@@ -575,4 +575,4 @@ execute if score #chunk_pregen pregen.world matches 1261 run tellraw @a[scores={
 execute if score #chunk_pregen pregen.world matches 1261 run tag @a[scores={pregen.world=1..}] add host.world_generation.2000
 
 execute if score #chunk_pregen pregen.world matches 1261 run scoreboard players set #chunk_pregen pregen.world 99999
-execute if score #chunk_pregen pregen.world matches 1261 if score #world_generation uhc.host.menu matches 1 run function uhc:pre_game/menu/load/world_generation/
+execute if score #chunk_pregen pregen.world matches 1261 if score #world_generation uhc.menu.host matches 1 run function uhc:pre_game/menu/load/world_generation/

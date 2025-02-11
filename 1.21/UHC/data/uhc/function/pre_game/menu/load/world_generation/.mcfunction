@@ -8,8 +8,8 @@
 #
 
 clear @s
-scoreboard players set #principal uhc.host.menu 0
-scoreboard players set #world_generation uhc.host.menu 1
+scoreboard players set #principal uhc.menu.host 0
+scoreboard players set #world_generation uhc.menu.host 1
 
 
 

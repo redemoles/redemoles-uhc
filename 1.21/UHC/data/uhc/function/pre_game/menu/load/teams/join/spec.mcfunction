@@ -22,4 +22,4 @@ execute if score #bhc uhc.gamemode matches 1 run tellraw @s[scores={uhc.players.
 execute if score #dru uhc.gamemode matches 1 run tellraw @s[scores={uhc.players.lang=2}] [{"text":"You joined the ","color":"#9F3FFF","bold":false}, {"text":"Spectators","color":"#BF7FFF"}]
 
 scoreboard players reset @s uhc.id.teams
-advancement grant @a only uhc:inventory_menu
+scoreboard players set @s uhc.menu.update 1

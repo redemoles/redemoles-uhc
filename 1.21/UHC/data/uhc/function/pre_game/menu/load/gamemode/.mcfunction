@@ -8,9 +8,9 @@
 #
 
 clear @s
-scoreboard players set #principal uhc.host.menu 0
-scoreboard players set #gamemode uhc.host.menu 1
-scoreboard players set #gamemode_bhc uhc.host.menu 0
+scoreboard players set #principal uhc.menu.host 0
+scoreboard players set #gamemode uhc.menu.host 1
+scoreboard players set #gamemode_bhc uhc.menu.host 0
 
 
 
