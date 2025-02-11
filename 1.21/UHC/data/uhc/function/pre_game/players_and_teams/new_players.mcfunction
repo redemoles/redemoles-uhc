@@ -8,18 +8,20 @@
 #
 
 ## Mise au lobby des joueurs
-
 tag @s remove uhc.player
 tag @s remove uhc.player.dead
 tag @s remove test
 tag @s add uhc.spec
 execute if score #lobby lobby.data matches 0 run tp @s 0 305 0
-execute if score #lobby lobby.data matches 1 run tp @s 0 293 0
+execute if score #lobby lobby.data matches 1.. run tp @s 0 293 0
 gamemode adventure @s
-effect clear @s
 clear @s
 execute as @s[tag=host] run function uhc:pre_game/menu/reload/host_menu
 execute as @s[tag=!host] run function uhc:pre_game/menu/reload/players_menu
+
+# Reset effets
+effect clear @s
+effect give @s minecraft:absorption 1 1 true
 attribute @s minecraft:max_health base set 20
 attribute @s minecraft:jump_strength base set 0.42
 attribute @s minecraft:movement_speed base set 0.10000000149011612
@@ -33,6 +35,7 @@ effect give @s minecraft:saturation infinite 0 true
 effect give @s minecraft:resistance infinite 4 true
 effect give @s minecraft:weakness infinite 4 true
 effect give @s minecraft:instant_health infinite 1 true
+
 advancement revoke @s everything
 experience set @s 0 levels
 experience set @s 0 points

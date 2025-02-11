@@ -7,6 +7,8 @@
 # @description		Commandes pre-game en tick
 #
 
+effect clear @s minecraft:absorption
+
 # Joueur au Lobby
 execute unless score @s uhc.players.online matches 1 run function uhc:pre_game/players_and_teams/new_players
 
