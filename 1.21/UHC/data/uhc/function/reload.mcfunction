@@ -65,7 +65,10 @@ scoreboard objectives remove uhc.data.arrow
 scoreboard objectives remove uhc.data.display
 scoreboard objectives remove uhc.data.setup
 scoreboard objectives remove uhc.data.numbers
-scoreboard objectives remove uhc.menu.host
+scoreboard objectives remove uhc.menu.host.settings.lives
+scoreboard objectives remove uhc.menu.host.settings.pve
+scoreboard objectives remove uhc.menu.host.settings.pvp
+scoreboard objectives remove uhc.menu.host.settings.border
 scoreboard objectives remove uhc.menu.update
 scoreboard objectives remove uhc.meetup.activate
 scoreboard objectives remove uhc.players.online
@@ -95,7 +98,11 @@ scoreboard objectives add uhc.data.arrow minecraft.used:minecraft.bow
 scoreboard objectives add uhc.data.display dummy
 scoreboard objectives add uhc.data.setup dummy
 scoreboard objectives add uhc.data.numbers dummy
-scoreboard objectives add uhc.menu.host dummy
+scoreboard objectives add uhc.menu.host.settings dummy
+scoreboard objectives add uhc.menu.host.settings.lives dummy
+scoreboard objectives add uhc.menu.host.settings.pve dummy
+scoreboard objectives add uhc.menu.host.settings.pvp dummy
+scoreboard objectives add uhc.menu.host.settings.border dummy
 scoreboard objectives add uhc.menu.update dummy
 scoreboard objectives add uhc.meetup.activate trigger
 scoreboard objectives add uhc.players.online dummy
@@ -138,8 +145,40 @@ weather clear 999999
 worldborder center 0.0 0.0
 worldborder set 302
 
-scoreboard players set #vanilla uhc.gamemode 0
+## Modes de jeu
+scoreboard players set #vanilla uhc.gamemode 1
+scoreboard players set #bhc uhc.gamemode 0
+scoreboard players set #bhc bhc.scenario -1
+scoreboard players set #dru uhc.gamemode 0
+scoreboard players set #fte uhc.gamemode 0
+scoreboard players set #mls uhc.gamemode 0
+scoreboard players set #nzl uhc.gamemode 0
+scoreboard players set #nzl nzl.scenario -1
+scoreboard players set #prv uhc.gamemode 0
+scoreboard players set #uau uhc.gamemode 0
+scoreboard players set #aic uhc.gamemode 0
 
+## Scénarios
+scoreboard players set #assassins uhc.scenario 0
+scoreboard players set #bats uhc.scenario 0
+scoreboard players set #best_pve uhc.scenario 0
+scoreboard players set #blood_cycle uhc.scenario 0
+scoreboard players set #blood_diamond uhc.scenario 0
+scoreboard players set #bow_swap uhc.scenario 0
+scoreboard players set #compensation uhc.scenario 0
+
+scoreboard players set #cut_clean uhc.scenario 0
+scoreboard players set #go_to_hell uhc.scenario 0
+scoreboard players set #gone_fishing uhc.scenario 0
+scoreboard players set #red_arrows uhc.scenario 0
+scoreboard players set #rewarding_longshots uhc.scenario 0
+scoreboard players set #shared_health uhc.scenario 0
+scoreboard players set #sky_high uhc.scenario 0
+
+scoreboard players set #team_health uhc.scenario 0
+scoreboard players set #time_bomb uhc.scenario 0
+
+## Configuration de la partie
 scoreboard players set #ffa uhc.data.display 0
 scoreboard players set #live_1 uhc.data.display 0
 scoreboard players set #live_2 uhc.data.display 0
@@ -173,7 +212,7 @@ scoreboard objectives add lobby.data dummy
 execute unless score #lobby lobby.data matches 1.. run scoreboard players set #lobby lobby.data 1
 scoreboard players set #load lobby.data 0
 
-## Autres modes
+## Reload des fonctionnalités des modes de jeu
 function aic:load
 function bhc:load
 function dru:load
@@ -183,7 +222,7 @@ function nzl:reload/sb
 function prv:load
 function uau:load
 
-# Multipliers
+## Multiplicateurs
 scoreboard players set #-1m uhc.data.numbers -1000000
 scoreboard players set #-1 uhc.data.numbers -1
 scoreboard players set #00 uhc.data.numbers 0

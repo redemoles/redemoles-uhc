@@ -8,9 +8,9 @@
 #
 
 clear @s
-scoreboard players set #principal uhc.menu.host 0
-scoreboard players set #scenarios uhc.menu.host 1
-
+tag @s remove host.menu.principal
+tag @s add host.menu.scenarios.1
+tag @s remove host.menu.scenarios.2
 
 
 

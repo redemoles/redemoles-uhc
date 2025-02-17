@@ -7,7 +7,8 @@
 # @description		Menu
 #
 
-scoreboard players set #settings uhc.menu.host 3
-scoreboard players set #settings_lives uhc.menu.host 2
+scoreboard players set @s uhc.menu.host.settings 3
+scoreboard players set @s uhc.menu.host.settings.lives 2
 
-function uhc:pre_game/menu/load/settings/
+execute as @s[tag=host] run function uhc:pre_game/menu/load/settings/
+execute as @s[tag=!host] run function uhc:pre_game/menu/load/settings/players_menu/

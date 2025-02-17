@@ -8,20 +8,21 @@
 #
 
 clear @s
-scoreboard players set #principal uhc.menu.host 1
-scoreboard players set #gamemode uhc.menu.host 0
-scoreboard players set #gamemode_bhc uhc.menu.host 0
-scoreboard players set #lobby uhc.menu.host 0
-scoreboard players set #teams uhc.menu.host 0
-scoreboard players set #scenarios uhc.menu.host 0
-scoreboard players set #settings uhc.menu.host 0
-scoreboard players set #settings_lives uhc.menu.host 0
-scoreboard players set #settings_pve uhc.menu.host 0
-scoreboard players set #settings_pvp uhc.menu.host 0
-scoreboard players set #settings_border uhc.menu.host 0
-scoreboard players set #start uhc.menu.host 0
-scoreboard players set #world_check uhc.menu.host 0
-scoreboard players set #world_generation uhc.menu.host 0
+tag @s add host.menu.principal
+tag @s remove host.menu.gamemode
+tag @s remove host.menu.gamemode.bhc
+tag @s remove host.menu.lobby
+tag @s remove host.menu.teams
+tag @s remove host.menu.scenarios.1
+tag @s remove host.menu.scenarios.2
+scoreboard players set @s uhc.menu.host.settings 0
+scoreboard players set @s uhc.menu.host.settings.lives 0
+scoreboard players set @s uhc.menu.host.settings.pve 0
+scoreboard players set @s uhc.menu.host.settings.pvp 0
+scoreboard players set @s uhc.menu.host.settings.border 0
+tag @s remove host.menu.start
+tag @s remove host.menu.world_check
+tag @s remove host.menu.world_generation
 
 function uhc:pre_game/menu/load/background
 

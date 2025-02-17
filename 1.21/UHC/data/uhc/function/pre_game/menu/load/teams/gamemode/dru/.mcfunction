@@ -10,8 +10,8 @@
 clear @s
 
 tag @s add menu.players
-
-
+tag @s add players.menu.teams
+scoreboard players set @s uhc.menu.host.settings 0
 
 
 
@@ -32,6 +32,6 @@ item replace entity @s[tag=uhc.player.night_vision,scores={uhc.players.lang=1}] 
 item replace entity @s[tag=!uhc.player.night_vision,scores={uhc.players.lang=2}] inventory.24 with minecraft:light[minecraft:item_name='{"text":"Night Vision","color":"#FF3F3F","italic":false,"bold":true}',minecraft:lore=['{"text":"Click to activate","color":"#FFE73F","italic":false,"bold":false}','{"text":"Disabled for some game modes","color":"#E7E7E7","italic":true,"bold":false}'],minecraft:hide_additional_tooltip={},block_state={level:"0"}]
 item replace entity @s[tag=uhc.player.night_vision,scores={uhc.players.lang=2}] inventory.24 with minecraft:light[minecraft:item_name='{"text":"Night Vision","color":"#3FE7FF","italic":false,"bold":true}',minecraft:lore=['{"text":"Click to desactivate","color":"#FFE73F","italic":false,"bold":false}','{"text":"Disabled for some game modes","color":"#E7E7E7","italic":true,"bold":false}'],minecraft:hide_additional_tooltip={},block_state={level:"15"}]
 
-item replace entity @s[tag=host] inventory.22 with minecraft:book[minecraft:item_name='{"text":"Configuration","color":"#3FE7FF","italic":false}']
+item replace entity @s[tag=host] inventory.22 with minecraft:book[minecraft:item_name='{"text":"Configuration de la partie","color":"#3FE7FF","bold":true,"italic":false}']
 
 tag @s remove menu.players

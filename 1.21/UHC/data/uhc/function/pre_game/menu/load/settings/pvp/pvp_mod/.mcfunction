@@ -7,7 +7,9 @@
 # @description		Menu
 #
 
-scoreboard players set #settings uhc.menu.host 3
+scoreboard players set @s uhc.menu.host.settings 3
 scoreboard players add #pvp_mod uhc.data.setup 1
 execute if score #pvp_mod uhc.data.setup matches 2 run scoreboard players set #pvp_mod uhc.data.setup 0
-function uhc:pre_game/menu/load/settings/
+
+execute as @s[tag=host] run function uhc:pre_game/menu/load/settings/
+execute as @s[tag=!host] run function uhc:pre_game/menu/load/settings/players_menu/

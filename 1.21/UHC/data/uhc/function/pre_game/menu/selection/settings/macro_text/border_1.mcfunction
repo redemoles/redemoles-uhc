@@ -7,4 +7,4 @@
 # @description		Menu
 #
 
-execute if score #settings uhc.menu.host matches 1.. if score #settings_border uhc.menu.host matches 1.. unless items entity @s inventory.11 *[minecraft:item_name='[{"text":"2ème réduction","color":"#3FE7FF"}]'] run function uhc:pre_game/menu/load/settings/border/border_1/
+execute unless items entity @s[scores={uhc.menu.host.settings=1..,uhc.menu.host.settings.border=1..}] inventory.11 *[minecraft:item_name='[{"text":"2ème réduction","color":"#3FE7FF"}]'] run function uhc:pre_game/menu/load/settings/border/border_1/

@@ -8,8 +8,8 @@
 #
 
 clear @s
-scoreboard players set #principal uhc.menu.host 0
-scoreboard players set #lobby uhc.menu.host 1
+tag @s remove host.menu.principal
+tag @s add host.menu.lobby
 
 
 

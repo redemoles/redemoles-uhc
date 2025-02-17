@@ -7,8 +7,10 @@
 # @description		Menu
 #
 
-scoreboard players set #settings uhc.menu.host 3
-scoreboard players add #settings_border uhc.menu.host 1
-execute unless score #settings_border uhc.menu.host matches 32..34 run scoreboard players set #settings_border uhc.menu.host 31
-execute if score #settings_border uhc.menu.host matches 31..32 run scoreboard players set #settings uhc.menu.host 5
-function uhc:pre_game/menu/load/settings/
+scoreboard players set @s uhc.menu.host.settings 3
+scoreboard players add @s uhc.menu.host.settings.border 1
+execute unless score @s uhc.menu.host.settings.border matches 32..34 run scoreboard players set @s uhc.menu.host.settings.border 31
+execute if score @s uhc.menu.host.settings.border matches 31..32 run scoreboard players set @s uhc.menu.host.settings 5
+
+execute as @s[tag=host] run function uhc:pre_game/menu/load/settings/
+execute as @s[tag=!host] run function uhc:pre_game/menu/load/settings/players_menu/

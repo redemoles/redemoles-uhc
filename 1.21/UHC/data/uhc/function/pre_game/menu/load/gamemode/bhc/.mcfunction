@@ -8,9 +8,9 @@
 #
 
 clear @s
-scoreboard players set #principal uhc.menu.host 0
-scoreboard players set #gamemode uhc.menu.host 0
-scoreboard players set #gamemode_bhc uhc.menu.host 1
+tag @s remove host.menu.principal
+tag @s remove host.menu.gamemode
+tag @s add host.menu.gamemode.bhc
 
 
 
@@ -19,7 +19,7 @@ scoreboard players set #gamemode_bhc uhc.menu.host 1
 
 function uhc:pre_game/menu/load/background
 
-execute unless score #bhc bhc.scenario matches 1 run item replace entity @s inventory.1 with minecraft:blue_concrete[minecraft:item_name='{"text":"BHC I","color":"#5F5FFF","italic":false}']
+execute unless score #bhc bhc.scenario matches 1 run item replace entity @s inventory.1 with minecraft:blue_concrete[minecraft:item_name='{"text":"BHC I - Ruée Vers l\'Or","color":"#5F5FFF","italic":false}']
 execute unless score #bhc bhc.scenario matches 2 run item replace entity @s inventory.2 with minecraft:black_concrete[minecraft:item_name='{"text":"BHC II","color":"#5FAFFF","italic":false}']
 execute unless score #bhc bhc.scenario matches 3 run item replace entity @s inventory.3 with minecraft:black_concrete[minecraft:item_name='{"text":"BHC III","color":"#5FFFFF","italic":false}']
 execute unless score #bhc bhc.scenario matches 4 run item replace entity @s inventory.4 with minecraft:black_concrete[minecraft:item_name='{"text":"BHC IV","color":"#5FAF5F","italic":false}']
@@ -29,7 +29,7 @@ execute unless score #bhc bhc.scenario matches 7 run item replace entity @s inve
 execute unless score #bhc bhc.scenario matches 8 run item replace entity @s inventory.10 with minecraft:black_concrete[minecraft:item_name='{"text":"BHC VIII","color":"#FF5F5F","italic":false}']
 execute unless score #bhc bhc.scenario matches 0 run item replace entity @s inventory.16 with minecraft:white_concrete[minecraft:item_name='{"text":"BHC Vanilla","color":"#FFFFFF","italic":false}']
 
-execute if score #bhc bhc.scenario matches 1 run item replace entity @s inventory.1 with minecraft:blue_concrete[minecraft:item_name='{"text":"BHC I","color":"#5F5FFF","italic":false}',lore=['{"text":"Sélectionné","color":"#3FE7FF","italic":false}'],minecraft:enchantment_glint_override=true]
+execute if score #bhc bhc.scenario matches 1 run item replace entity @s inventory.1 with minecraft:blue_concrete[minecraft:item_name='{"text":"BHC I - Ruée Vers l\'Or","color":"#5F5FFF","italic":false}',lore=['{"text":"Sélectionné","color":"#3FE7FF","italic":false}'],minecraft:enchantment_glint_override=true]
 execute if score #bhc bhc.scenario matches 2 run item replace entity @s inventory.2 with minecraft:cyan_concrete[minecraft:item_name='{"text":"BHC II","color":"#5FAFFF","italic":false}',lore=['{"text":"Sélectionné","color":"#3FE7FF","italic":false}'],minecraft:enchantment_glint_override=true]
 execute if score #bhc bhc.scenario matches 3 run item replace entity @s inventory.3 with minecraft:light_blue_concrete[minecraft:item_name='{"text":"BHC III","color":"#5FFFFF","italic":false}',lore=['{"text":"Sélectionné","color":"#3FE7FF","italic":false}'],minecraft:enchantment_glint_override=true]
 execute if score #bhc bhc.scenario matches 4 run item replace entity @s inventory.4 with minecraft:green_concrete[minecraft:item_name='{"text":"BHC IV","color":"#5FAF5F","italic":false}',lore=['{"text":"Sélectionné","color":"#3FE7FF","italic":false}'],minecraft:enchantment_glint_override=true]
