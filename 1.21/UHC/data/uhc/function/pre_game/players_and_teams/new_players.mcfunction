@@ -14,8 +14,8 @@ tag @s remove test
 tag @s remove players.menu.settings
 tag @s add players.menu.teams
 tag @s add uhc.spec
-execute if score #lobby lobby.data matches 0 run tp @s 0 305 0
-execute if score #lobby lobby.data matches 1.. run tp @s 0 293 0
+execute if score #lobby lobby.data matches 0 run tp @s 0 305 0 0 0
+execute if score #lobby lobby.data matches 1.. run tp @s 0 293 0 0 0
 gamemode adventure @s
 clear @s
 execute as @s[tag=host] run function uhc:pre_game/menu/reload/host_menu

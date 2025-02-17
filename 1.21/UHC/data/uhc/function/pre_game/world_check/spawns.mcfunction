@@ -58,7 +58,7 @@ execute if score @s uhc.spawn.check matches 0..31 run title @s actionbar [{"text
 execute if score @s uhc.spawn.check matches 32 run title @s actionbar [{"text":"Vérification terminée !","color":"#FFE73F","bold":true}]
 
 execute if score @s uhc.spawn.check matches 32 run gamemode adventure @s
-execute if score @s uhc.spawn.check matches 32 if score #lobby lobby.data matches 0 run tp @s 0 305 0
-execute if score @s uhc.spawn.check matches 32 if score #lobby lobby.data matches 1 run tp @s 0 293 0
+execute if score @s uhc.spawn.check matches 32 if score #lobby lobby.data matches 0 run tp @s 0 305 0 0 0
+execute if score @s uhc.spawn.check matches 32 if score #lobby lobby.data matches 1.. run tp @s 0 293 0 0 0
 
 execute if score @s uhc.spawn.check matches 32 run scoreboard players reset @s uhc.spawn.check
