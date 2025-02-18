@@ -21,24 +21,24 @@ $execute as @p[tag=!bhc.new_adv,advancements={$(namespace):$(line)_$(column)=tru
 # Ligne
 $execute if score #team_first_case bhc.data matches 1 run scoreboard players add @e[type=marker,predicate=uhc:id_teams] bhc.line_$(line) 1
 $scoreboard players operation @s bhc.line_$(line) = @e[type=marker,predicate=uhc:id_teams] bhc.line_$(line)
-scoreboard players set #team_first_$(line) bhc.data 0
-scoreboard players set #total_first_$(line) bhc.data 0
-$execute if score @s bhc.line_$(line) = #line bhc.data run scoreboard players set #team_first_$(line) bhc.data 1
-$execute if score @s bhc.line_$(line) = #line bhc.data run scoreboard players set #total_first_$(line) bhc.data 1
-$execute as @p[tag=!bhc.new_adv,predicate=uhc:id_teams] if score @s bhc.line_$(line) = #line bhc.data run scoreboard players set #team_first_$(line) bhc.data 0
-$execute as @p[tag=!bhc.new_adv] if score @s bhc.line_$(line) = #line bhc.data run scoreboard players set #total_first_$(line) bhc.data 0
-execute if score #team_first_$(line) bhc.data matches 1 run scoreboard players add @e[tag=bhc.new_adv] bhc.line 1
+scoreboard players set #team_first_line_$(line) bhc.data 0
+scoreboard players set #total_first_line_$(line) bhc.data 0
+$execute if score @s bhc.line_$(line) = #line bhc.data run scoreboard players set #team_first_line_$(line) bhc.data 1
+$execute if score @s bhc.line_$(line) = #line bhc.data run scoreboard players set #total_first_line_$(line) bhc.data 1
+$execute as @p[tag=!bhc.new_adv,predicate=uhc:id_teams] if score @s bhc.line_$(line) = #line bhc.data run scoreboard players set #team_first_line_$(line) bhc.data 0
+$execute as @p[tag=!bhc.new_adv] if score @s bhc.line_$(line) = #line bhc.data run scoreboard players set #total_first_line_$(line) bhc.data 0
+execute if score #team_first_line_$(line) bhc.data matches 1 run scoreboard players add @e[tag=bhc.new_adv] bhc.line 1
 scoreboard players operation @s bhc.line = @e[type=marker,predicate=uhc:id_teams] bhc.line
 # Colonne
 $execute if score #team_first_case bhc.data matches 1 run scoreboard players add @e[type=marker,predicate=uhc:id_teams] bhc.column_$(column) 1
 $scoreboard players operation @s bhc.column_$(column) = @e[type=marker,predicate=uhc:id_teams] bhc.column_$(column)
-scoreboard players set #team_first_$(column) bhc.data 0
-scoreboard players set #total_first_$(column) bhc.data 0
-$execute if score @s bhc.column_$(column) = #column bhc.data run scoreboard players set #team_first_$(column) bhc.data 1
-$execute if score @s bhc.column_$(column) = #column bhc.data run scoreboard players set #total_first_$(column) bhc.data 1
-$execute as @p[tag=!bhc.new_adv,predicate=uhc:id_teams] if score @s bhc.column_$(column) = #column bhc.data run scoreboard players set #team_first_$(column) bhc.data 0
-$execute as @p[tag=!bhc.new_adv] if score @s bhc.column_$(column) = #column bhc.data run scoreboard players set #total_first_$(column) bhc.data 0
-execute if score #team_first_$(column) bhc.data matches 1 run scoreboard players add @e[tag=bhc.new_adv] bhc.column 1
+scoreboard players set #team_first_column_$(column) bhc.data 0
+scoreboard players set #total_first_column_$(column) bhc.data 0
+$execute if score @s bhc.column_$(column) = #column bhc.data run scoreboard players set #team_first_column_$(column) bhc.data 1
+$execute if score @s bhc.column_$(column) = #column bhc.data run scoreboard players set #total_first_column_$(column) bhc.data 1
+$execute as @p[tag=!bhc.new_adv,predicate=uhc:id_teams] if score @s bhc.column_$(column) = #column bhc.data run scoreboard players set #team_first_column_$(column) bhc.data 0
+$execute as @p[tag=!bhc.new_adv] if score @s bhc.column_$(column) = #column bhc.data run scoreboard players set #total_first_column_$(column) bhc.data 0
+execute if score #team_first_column_$(column) bhc.data matches 1 run scoreboard players add @e[tag=bhc.new_adv] bhc.column 1
 scoreboard players operation @s bhc.column = @e[type=marker,predicate=uhc:id_teams] bhc.column
 
 ## Messages
@@ -51,8 +51,8 @@ $execute if score #team_first_case bhc.data matches 1 unless score #total_first_
 $execute if score #total_first_$(namespace)_$(line)_$(column) bhc.data matches 1 run tellraw @a[scores={uhc.players.lang=2}] [{"selector":"@s","bold":true},{"text":" just achieved ","color":"#FFFFFF","bold":false},{"text":"[","color":"#4F1F7F","bold":false,"hoverEvent":{"action":"show_text","contents":{"text":"$(description)","color":"#FFF7BF"}}},{"text":"$(title)","color":"#FFE73F","bold":false,"hoverEvent":{"action":"show_text","contents":{"text":"$(description)","color":"#FFF7BF"}}},{"text":"]","color":"#4F1F7F","bold":false,"hoverEvent":{"action":"show_text","contents":{"text":"$(description)","color":"#FFF7BF"}}}]
 $execute if score #team_first_case bhc.data matches 1 unless score #total_first_$(namespace)_$(line)_$(column) bhc.data matches 1 run tellraw @a[scores={uhc.players.lang=2}] [{"selector":"@s","bold":true},{"text":" just achieved ","color":"#FFFFFF","bold":false},{"text":"[","color":"#4F1F7F","bold":false,"hoverEvent":{"action":"show_text","contents":{"text":"$(description)","color":"#FFF7BF"}}},{"text":"$(title)","color":"#9F3FFF","bold":false,"hoverEvent":{"action":"show_text","contents":{"text":"$(description)","color":"#FFF7BF"}}},{"text":"]","color":"#4F1F7F","bold":false,"hoverEvent":{"action":"show_text","contents":{"text":"$(description)","color":"#FFF7BF"}}}]
 
-execute if score #team_first_$(line) bhc.data matches 1 run function bhc:scenarios/08/advancements/message_line
-execute if score #team_first_$(column) bhc.data matches 1 run function bhc:scenarios/08/advancements/message_column
+execute if score #team_first_line_$(line) bhc.data matches 1 run function bhc:scenarios/08/advancements/message_line
+execute if score #team_first_column_$(column) bhc.data matches 1 run function bhc:scenarios/08/advancements/message_column
 
 ## Désélection du joueur et son équipe
 tag @e[type=marker,tag=UHC] remove bhc.new_adv

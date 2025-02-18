@@ -15,7 +15,7 @@ scoreboard players operation @s bhc.invStageA *= #1m uhc.data.numbers
 scoreboard players add @e[type=marker,tag=UHC] bhc.invStageA 1
 
 # Récompenses
-execute if score #total_first_$(line) bhc.data matches 1 run give @p[tag=bhc.reward_adv] minecraft:diamond 3
+execute if score #total_first_line_$(line) bhc.data matches 1 run give @p[tag=bhc.reward_adv] minecraft:diamond 3
 give @p[tag=bhc.reward_adv] minecraft:diamond 3
 experience add @p[tag=bhc.reward_adv] 1 levels
 

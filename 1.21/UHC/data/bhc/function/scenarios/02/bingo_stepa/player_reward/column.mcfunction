@@ -8,7 +8,7 @@
 #
 
 # Récompenses
-$execute if score #total_first_$(column) bhc.data matches 1 run give @s minecraft:diamond 3
+$execute if score #total_first_column_$(column) bhc.data matches 1 run give @s minecraft:diamond 3
 give @s minecraft:diamond 3
 experience add @s 1 levels
 

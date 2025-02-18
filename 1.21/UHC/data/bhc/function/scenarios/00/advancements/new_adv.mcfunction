@@ -24,8 +24,8 @@ $execute if score #team_first_case bhc.data matches 1 unless score #total_first_
 $execute if score #total_first_$(namespace)_$(line)_$(column) bhc.data matches 1 run tellraw @a[scores={uhc.players.lang=2}] [{"selector":"@s","bold":true},{"text":" just achieved ","color":"#FFFFFF","bold":false},{"text":"[","color":"#4F1F7F","bold":false,"hoverEvent":{"action":"show_text","contents":{"text":"$(description)","color":"#FFF7BF"}}},{"text":"$(title)","color":"#FFE73F","bold":false,"hoverEvent":{"action":"show_text","contents":{"text":"$(description)","color":"#FFF7BF"}}},{"text":"]","color":"#4F1F7F","bold":false,"hoverEvent":{"action":"show_text","contents":{"text":"$(description)","color":"#FFF7BF"}}}]
 $execute if score #team_first_case bhc.data matches 1 unless score #total_first_$(namespace)_$(line)_$(column) bhc.data matches 1 run tellraw @a[scores={uhc.players.lang=2}] [{"selector":"@s","bold":true},{"text":" just achieved ","color":"#FFFFFF","bold":false},{"text":"[","color":"#4F1F7F","bold":false,"hoverEvent":{"action":"show_text","contents":{"text":"$(description)","color":"#FFF7BF"}}},{"text":"$(title)","color":"#9F3FFF","bold":false,"hoverEvent":{"action":"show_text","contents":{"text":"$(description)","color":"#FFF7BF"}}},{"text":"]","color":"#4F1F7F","bold":false,"hoverEvent":{"action":"show_text","contents":{"text":"$(description)","color":"#FFF7BF"}}}]
 
-$execute if score #team_first_$(line) bhc.data matches 1 run function bhc:scenarios/00/advancements/message_line
-$execute if score #team_first_$(column) bhc.data matches 1 run function bhc:scenarios/00/advancements/message_column
+$execute if score #team_first_line_$(line) bhc.data matches 1 run function bhc:scenarios/00/advancements/message_line with storage $(namespace) $(line)_$(column)
+$execute if score #team_first_column_$(column) bhc.data matches 1 run function bhc:scenarios/00/advancements/message_column with storage $(namespace) $(line)_$(column)
 
 ## Désélection du joueur et son équipe
 tag @e[type=marker,tag=UHC] remove bhc.new_adv
