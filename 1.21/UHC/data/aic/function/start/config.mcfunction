@@ -27,9 +27,9 @@ scoreboard players operation #shrink2_length uhc.data.setup *= #60 uhc.data.numb
 scoreboard players add #minutes aic.data.end_game 1
 
 # Vies
-scoreboard players set #live_3 uhc.data.setup 0
-scoreboard players set #live_2 uhc.data.setup 1440
-scoreboard players set #live_1 uhc.data.setup 1440
+scoreboard players set #live_3 uhc.data.display 0
+scoreboard players set #live_2 uhc.data.display 1440
+scoreboard players set #live_1 uhc.data.display 1440
 
 ## Configuration de la Worldborder
 execute store result storage uhc:settings border_size int 1 run scoreboard players get #border_size_start uhc.data.setup

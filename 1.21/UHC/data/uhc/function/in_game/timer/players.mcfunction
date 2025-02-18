@@ -21,10 +21,10 @@ execute if score #shield uhc.data.setup matches 1..335 if items entity @s weapon
 execute if score #shield uhc.data.setup matches 0 run clear @s shield
 
 # Fire Aspect / Flame
-execute if items entity @s weapon.mainhand *[enchantments~[{enchantments:"minecraft:fire_aspect"}]] unless score #aic uhc.gamemode matches 1 run item modify entity @s weapon.mainhand {function:"minecraft:set_enchantments",enchantments:{"minecraft:fire_aspect":-255},add:true}
-execute if items entity @s weapon.mainhand *[enchantments~[{enchantments:"minecraft:flame"}]] unless score #aic uhc.gamemode matches 1 run item modify entity @s weapon.mainhand {function:"minecraft:set_enchantments",enchantments:{"minecraft:flame":-255},add:true}
-execute if items entity @s weapon.offhand *[enchantments~[{enchantments:"minecraft:fire_aspect"}]] unless score #aic uhc.gamemode matches 1 run item modify entity @s weapon.offhand {function:"minecraft:set_enchantments",enchantments:{"minecraft:fire_aspect":-255},add:true}
-execute if items entity @s weapon.offhand *[enchantments~[{enchantments:"minecraft:flame"}]] unless score #aic uhc.gamemode matches 1 run item modify entity @s weapon.offhand {function:"minecraft:set_enchantments",enchantments:{"minecraft:flame":-255},add:true}
+execute if score #fire_flame uhc.data.setup matches 0 if items entity @s weapon.mainhand *[enchantments~[{enchantments:"minecraft:fire_aspect"}]] unless score #aic uhc.gamemode matches 1 run item modify entity @s weapon.mainhand {function:"minecraft:set_enchantments",enchantments:{"minecraft:fire_aspect":-255},add:true}
+execute if score #fire_flame uhc.data.setup matches 0 if items entity @s weapon.mainhand *[enchantments~[{enchantments:"minecraft:flame"}]] unless score #aic uhc.gamemode matches 1 run item modify entity @s weapon.mainhand {function:"minecraft:set_enchantments",enchantments:{"minecraft:flame":-255},add:true}
+execute if score #fire_flame uhc.data.setup matches 0 if items entity @s weapon.offhand *[enchantments~[{enchantments:"minecraft:fire_aspect"}]] unless score #aic uhc.gamemode matches 1 run item modify entity @s weapon.offhand {function:"minecraft:set_enchantments",enchantments:{"minecraft:fire_aspect":-255},add:true}
+execute if score #fire_flame uhc.data.setup matches 0 if items entity @s weapon.offhand *[enchantments~[{enchantments:"minecraft:flame"}]] unless score #aic uhc.gamemode matches 1 run item modify entity @s weapon.offhand {function:"minecraft:set_enchantments",enchantments:{"minecraft:flame":-255},add:true}
 
 # Effets aux joueurs
 execute if score #pve uhc.data.setup matches ..0 run scoreboard players set @s[scores={uhc.effect.resistance=-1}] uhc.effect.resistance 0

@@ -51,8 +51,8 @@ execute if score #best_pve uhc.scenario matches 1 run scoreboard players enable 
 execute if score #cut_clean uhc.scenario matches 1 as @e[type=item,tag=!uhc.cut_clean] run function uhc:in_game/scenarios/cut_clean/tick
 
 ## Réduction de vie automatique
-execute if score #live_2 uhc.data.setup matches 0 if score #lives uhc.players.lives matches 3 as @e[type=marker,tag=UHC] run function uhc:in_game/players_settings/lives_remove/lives_2
-execute if score #live_1 uhc.data.setup matches 0 if score #lives uhc.players.lives matches 2 as @e[type=marker,tag=UHC] run function uhc:in_game/players_settings/lives_remove/lives_1
+execute if score #live_2 uhc.data.display matches 0 if score #lives uhc.players.lives matches 3 as @e[type=marker,tag=UHC] run function uhc:in_game/players_settings/lives_remove/lives_2
+execute if score #live_1 uhc.data.display matches 0 if score #lives uhc.players.lives matches 2 as @e[type=marker,tag=UHC] run function uhc:in_game/players_settings/lives_remove/lives_1
 
 ## Morts
 # Message de mort

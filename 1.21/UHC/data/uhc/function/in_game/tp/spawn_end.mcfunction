@@ -1,11 +1,14 @@
 
-#> uhc:in_game/tp/spawn_end
+#> uhc:in_game/tp/spawn_start
 #
-# @within			bhc:death/death
-# @within			uhc:in_game/force_commands/meetup
+# @within			uhc:in_game/players_settings/death/
+# @within			uhc:start/game_teams/
 #
 # @description		Configuration du timer 
 #
+
+execute if score #Minutes uhc.data.display matches 0.. store result score #can_respawn uhc.data.display run data get entity @s SpawnDimension
+execute if score #can_respawn uhc.data.display matches 1.. run return fail
 
 # Spawn 00
 tp @s[scores={uhc.id.spawns=00}] 0 200 0

@@ -31,6 +31,9 @@ execute in uhc:sign run function uhc:pre_game/menu/load/settings/pvp/knockback/m
 execute in uhc:sign run function uhc:pre_game/menu/load/settings/pvp/shield/macro_set
 
 
+execute in uhc:sign run function uhc:pre_game/menu/load/settings/pvp/fire_flame/macro_set
+
+
 execute in uhc:sign run function uhc:pre_game/menu/load/settings/border/macro_set
 function uhc:pre_game/menu/selection/settings/macro_text/border with storage uhc:settings
 

@@ -7,11 +7,6 @@
 # @description		Fonction de configuration des timers dans la partie et de la border
 #
 
-# Vies
-scoreboard players operation #live_1 uhc.data.setup = #live_1 uhc.data.display
-scoreboard players operation #live_2 uhc.data.setup = #live_2 uhc.data.display
-scoreboard players operation #live_3 uhc.data.setup = #live_3 uhc.data.display
-
 ## Configuration de la Worldborder
 scoreboard players operation #border_size_start uhc.data.setup *= #02 uhc.data.numbers
 scoreboard players operation #border_size_end uhc.data.setup *= #02 uhc.data.numbers
