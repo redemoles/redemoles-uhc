@@ -251,7 +251,7 @@ scoreboard players set #60 uhc.data.numbers 60
 scoreboard players set #100 uhc.data.numbers 100
 scoreboard players set #336 uhc.data.numbers 336
 scoreboard players set #1200 uhc.data.numbers 1200
-scoreboard players set #bonus uhc.data.numbers 12000
+scoreboard players set #12000 uhc.data.numbers 12000
 scoreboard players set #1m uhc.data.numbers 1000000
 
 ## Sign

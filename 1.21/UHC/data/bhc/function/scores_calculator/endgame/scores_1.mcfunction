@@ -17,5 +17,5 @@ scoreboard players operation @s bhc.invST += @s bhc.invSB
 scoreboard players operation @s bhc.invST += @s bhc.invSK
 scoreboard players operation @s bhc.invST += @s bhc.invSD
 # Ajout des points d'anti-égalité
-scoreboard players operation @s bhc.invST *= #100 bhc.data
+scoreboard players operation @s bhc.invST *= #100 uhc.data.numbers
 scoreboard players operation @s bhc.invST += @s bhc.CR

@@ -18,6 +18,10 @@ execute if score #lobby lobby.data matches 0 run tp @s 0 305 0 0 0
 execute if score #lobby lobby.data matches 1.. run tp @s 0 293 0 0 0
 gamemode adventure @s
 clear @s
+title @s reset
+scoreboard players set @s uhc.players.online 1
+scoreboard players set @s uhc.players.lang 1
+scoreboard players set @s uhc.id.random_teams 0
 execute as @s[tag=host] run function uhc:pre_game/menu/reload/host_menu
 execute as @s[tag=!host] run function uhc:pre_game/menu/reload/players_menu
 
@@ -41,7 +45,3 @@ effect give @s minecraft:instant_health infinite 1 true
 advancement revoke @s everything
 experience set @s 0 levels
 experience set @s 0 points
-scoreboard players set @s uhc.players.online 1
-scoreboard players set @s uhc.players.lang 1
-scoreboard players set @s uhc.id.random_teams 0
-title @s reset

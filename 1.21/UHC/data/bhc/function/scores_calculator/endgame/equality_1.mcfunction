@@ -16,10 +16,10 @@ scoreboard players remove @s bhc.CD 17
 scoreboard players set @s[predicate=uhc:id_team_alive] bhc.invSR 100
 scoreboard players operation @s bhc.invSR -= @s bhc.CA
 scoreboard players operation @s bhc.invSR -= @s bhc.CB
-scoreboard players operation @s bhc.invSR *= #100 bhc.data
+scoreboard players operation @s bhc.invSR *= #100 uhc.data.numbers
 scoreboard players operation @s bhc.invSR += @s bhc.invStageA
 scoreboard players operation @s bhc.invSR += @s bhc.invStageB
-scoreboard players operation @s bhc.invSR *= #100 bhc.data
+scoreboard players operation @s bhc.invSR *= #100 uhc.data.numbers
 scoreboard players operation @s bhc.invSR -= @s bhc.CD
 
 scoreboard players add @s bhc.CA 17

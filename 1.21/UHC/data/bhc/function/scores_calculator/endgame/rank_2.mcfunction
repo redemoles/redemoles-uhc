@@ -14,25 +14,25 @@ scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
 
 # Classement Étape A → Affichage pour le message de fin
 scoreboard players operation @a[predicate=uhc:id_teams] bhc.invStageA = @s bhc.invStageA
-scoreboard players operation @a[predicate=uhc:id_teams] bhc.invStageA /= #1m bhc.data
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.invStageA /= #1m uhc.data.numbers
 scoreboard players operation @a[predicate=uhc:id_teams] bhc.invSA = @s bhc.invSA
 scoreboard players operation @a[predicate=uhc:id_teams] bhc.CA = @s bhc.CA
 
 # Classement Étape B → Affichage pour le message de fin
 scoreboard players operation @a[predicate=uhc:id_teams] bhc.invStageB = @s bhc.invStageB
-scoreboard players operation @a[predicate=uhc:id_teams] bhc.invStageB /= #1m bhc.data
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.invStageB /= #1m uhc.data.numbers
 scoreboard players operation @a[predicate=uhc:id_teams] bhc.invSB = @s bhc.invSB
 scoreboard players operation @a[predicate=uhc:id_teams] bhc.CB = @s bhc.CB
 
 # Classement Kills → Affichage pour le message de fin
 scoreboard players operation @a[predicate=uhc:id_teams] bhc.invKills = @s bhc.invKills
-scoreboard players operation @a[predicate=uhc:id_teams] bhc.invKills /= #1m bhc.data
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.invKills /= #1m uhc.data.numbers
 scoreboard players operation @a[predicate=uhc:id_teams] bhc.invSK = @s bhc.invSK
 scoreboard players operation @a[predicate=uhc:id_teams] bhc.CK = @s bhc.CK
 
 # Classement Survie → Affichage pour le message de fin
 scoreboard players operation @a[predicate=uhc:id_teams] bhc.invDeath = @s bhc.invDeath
-scoreboard players operation @a[predicate=uhc:id_teams] bhc.invDeath /= #1200 bhc.data
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.invDeath /= #1200 uhc.data.numbers
 scoreboard players operation @a[predicate=uhc:id_teams] bhc.invSD = @s bhc.invSD
 scoreboard players operation @a[predicate=uhc:id_teams] bhc.CD = @s bhc.CD
 

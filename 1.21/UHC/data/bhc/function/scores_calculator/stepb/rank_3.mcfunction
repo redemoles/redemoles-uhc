@@ -21,7 +21,7 @@ scoreboard players remove @s[scores={bhc.CB=-14..}] bhc.invSB 4
 execute if score @s bhc.invSB matches ..0 run scoreboard players set @s bhc.invSB 0
 
 # Application du % → Valeur de ce score pour le score total
-scoreboard players operation @s bhc.invSB *= #02 bhc.data
+scoreboard players operation @s bhc.invSB *= #02 uhc.data.numbers
 
 ## Classement
 # Classement Étape B → Score d'équipe → Score d'affichage pour le tableau

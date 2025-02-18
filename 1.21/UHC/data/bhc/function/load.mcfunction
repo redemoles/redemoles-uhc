@@ -192,35 +192,6 @@ scoreboard objectives add bhc.ironman dummy
 scoreboard objectives add bhc.timer dummy
 scoreboard objectives add bhc.teams.livescount dummy
 
-scoreboard players set #-1m bhc.data -1000000
-scoreboard players set #-1 bhc.data -1
-scoreboard players set #01 bhc.data 1
-scoreboard players set #02 bhc.data 2
-scoreboard players set #03 bhc.data 3
-scoreboard players set #04 bhc.data 4
-scoreboard players set #05 bhc.data 5
-scoreboard players set #06 bhc.data 6
-scoreboard players set #07 bhc.data 7
-scoreboard players set #08 bhc.data 8
-scoreboard players set #09 bhc.data 9
-scoreboard players set #10 bhc.data 10
-scoreboard players set #15 bhc.data 15
-scoreboard players set #16 bhc.data 16
-scoreboard players set #17 bhc.data 17
-scoreboard players set #20 bhc.data 20
-scoreboard players set #25 bhc.data 25
-scoreboard players set #30 bhc.data 30
-scoreboard players set #35 bhc.data 35
-scoreboard players set #40 bhc.data 40
-scoreboard players set #45 bhc.data 45
-scoreboard players set #50 bhc.data 50
-scoreboard players set #55 bhc.data 55
-scoreboard players set #60 bhc.data 60
-scoreboard players set #100 bhc.data 100
-scoreboard players set #1200 bhc.data 1200
-scoreboard players set #bonus bhc.data 12000
-scoreboard players set #1m bhc.data 1000000
-
 # Roll Bingo 01-04
 scoreboard players set #select_B01 bhc.data 0
 scoreboard players set #select_B02 bhc.data 0

@@ -8,4 +8,4 @@
 #
 
 ## Bonus vie non utilisée
-scoreboard players operation @s bhc.invDeath /= #10 bhc.data
+scoreboard players operation @s bhc.invDeath /= #10 uhc.data.numbers

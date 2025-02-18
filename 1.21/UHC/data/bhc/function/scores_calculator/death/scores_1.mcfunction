@@ -12,9 +12,9 @@ scoreboard players operation @s bhc.invDeath = #tick bhc.data
 
 ## Bonus
 # Vie non utilisée
-scoreboard players operation @s bhc.teams.livescount *= #bonus bhc.data
+scoreboard players operation @s bhc.teams.livescount *= #12000 uhc.data.numbers
 scoreboard players operation @s bhc.invDeath += @s bhc.teams.livescount
-scoreboard players operation @s bhc.teams.livescount /= #bonus bhc.data
+scoreboard players operation @s bhc.teams.livescount /= #12000 uhc.data.numbers
 
 # Ironman
 scoreboard players operation @s bhc.invDeath += @s bhc.ironman
