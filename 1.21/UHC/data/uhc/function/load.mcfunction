@@ -11,5 +11,5 @@
 tag Redemoles add host
 
 # Affichage du message de chargement
-tellraw @a[tag=host] {"text":"[Loaded UHC 1.21.4 - v25w08c - par Redemoles]","color":"#BF00FF"}
+tellraw @a[tag=host] {"text":"[Loaded UHC 1.21.4 - v25w08d - par Redemoles]","color":"#BF00FF"}
 tellraw @a[tag=host] {"text":"/function uhc:reload pour démarrer/réinitialiser le datapack\n","color":"#DF7FFF","clickEvent":{"action":"run_command","value":"/gamerule sendCommandFeedback true"}}
