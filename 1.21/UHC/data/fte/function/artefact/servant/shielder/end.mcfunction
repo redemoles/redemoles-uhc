@@ -1,7 +1,7 @@
 
-#> fte:servant/shielder/end
+#> fte:artefact/servant/shielder/end
 #
-# @within			fte:servant/shielder/tick
+# @within			fte:artefact/servant/shielder/tick
 #
 #
 # @description		Fin de l'artefact de Shielder

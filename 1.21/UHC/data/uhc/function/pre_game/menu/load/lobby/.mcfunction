@@ -27,4 +27,4 @@ execute if score #lobby lobby.data matches 0 run item replace entity @s inventor
 execute if score #lobby lobby.data matches 1 run item replace entity @s inventory.2 with minecraft:granite[minecraft:item_name='{"text":"BHC I","color":"#3FE7FF","italic":false}',lore=['{"text":"Sélectionné","color":"#3FE7FF","italic":false}'],minecraft:enchantment_glint_override=true]
 execute if score #lobby lobby.data matches 2 run item replace entity @s inventory.3 with minecraft:pale_moss_block[minecraft:item_name='{"text":"BHC I - Pale Garden","color":"#3FE7FF","italic":false}',lore=['{"text":"Sélectionné","color":"#3FE7FF","italic":false}'],minecraft:enchantment_glint_override=true]
 
-item replace entity @s inventory.25 with minecraft:barrier[minecraft:item_name='{"text":"FERMER","color":"#FF3F3F","italic":false}']
+item replace entity @s inventory.25 with minecraft:barrier[minecraft:item_name='{"text":"FERMER","color":"#FF3F3F","italic":false}',minecraft:custom_data={Tags:"close"}]

@@ -1,5 +1,5 @@
 
-#> fte:servant/shielder/start
+#> fte:artefact/servant/shielder/start
 #
 # @within			fte:sceau/artefact_1
 #

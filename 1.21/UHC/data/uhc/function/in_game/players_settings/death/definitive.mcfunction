@@ -27,9 +27,6 @@ execute if score #team_out uhc.id.teams matches 1 run scoreboard players remove 
 
 # Attribution des effets
 function uhc:in_game/players_settings/spec/
-function uhc:in_game/players_settings/death/reveal
-function uhc:in_game/inventory/drop
-execute as @a[scores={uhc.reward.kills=1..}] run function uhc:in_game/players_settings/kill/
 
 # Msg FRA
 execute if score #vanilla uhc.gamemode matches 1 run tellraw @s[scores={uhc.players.lang=1}] [{"text":"Tu es mort. Merci d'avoir participé. Si un chat vocal de proximité est utilisé, merci de te rendre muet.\n","color":"#3FE7FF"}]

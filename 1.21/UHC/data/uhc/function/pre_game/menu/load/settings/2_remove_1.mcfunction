@@ -28,11 +28,14 @@ execute if score @s uhc.menu.host.settings.pve matches 1 unless score #pve uhc.d
 
 # Période sans PvP
 execute if score @s uhc.menu.host.settings.pvp matches 1 unless score #pvp uhc.data.setup matches ..0 run scoreboard players remove #pvp uhc.data.setup 1
-execute if score @s uhc.menu.host.settings.pvp matches 1 if score #pve uhc.data.setup > #pvp uhc.data.setup run scoreboard players operation #pve uhc.data.setup = #pvp uhc.data.setup
+
 
 # Durabilité des boucliers
 execute if score @s uhc.menu.host.settings.pvp matches 2 unless score #shield_percent uhc.data.setup matches ..0 run scoreboard players remove #shield_percent uhc.data.setup 1
 
+
+# Absorption
+execute if score @s uhc.menu.host.settings.pvp matches 3 unless score #absorption uhc.data.setup matches ..0 run scoreboard players remove #absorption uhc.data.setup 1
 
 # Border - Taille initiale
 execute if score @s uhc.menu.host.settings.border matches 1 run scoreboard players remove #border_size_start uhc.data.setup 2

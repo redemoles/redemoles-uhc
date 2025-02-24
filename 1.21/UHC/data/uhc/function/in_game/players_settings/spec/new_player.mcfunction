@@ -10,9 +10,11 @@
 team leave @s
 clear @s
 effect clear @s
-scoreboard players set @s uhc.players.lang 1
+execute unless score @s uhc.players.lang matches 1.. run scoreboard players set @s uhc.players.lang 1
 tag @s remove uhc.player.dead
 title @s reset
+
+tag @s remove uhc.fire_flame
 
 ## Reset tags de tous les modes de jeu
 # Fate UHC
@@ -31,6 +33,9 @@ tag @s remove fte.item.lancer
 tag @s remove fte.item.saber
 tag @s remove fte.summon.cancel
 # Moles
+tag @s remove mls.command.kit
+tag @s remove mls.command.reveal
+tag @s remove mls.command.superreveal
 tag @s remove mls.kit.enchanteur
 tag @s remove mls.kit.endertan
 tag @s remove mls.kit.pyrolienne

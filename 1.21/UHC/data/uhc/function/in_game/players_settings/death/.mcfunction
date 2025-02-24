@@ -19,9 +19,14 @@ execute if score #fte uhc.gamemode matches 1 if score @s uhc.players.lives match
 ## PRV UHC
 execute if score #prv uhc.gamemode matches 1 if score @s uhc.players.lives matches ..0 run function prv:death/
 
+## Scenarios
+# Permakill
+execute if score #permakill uhc.scenario matches 1 run time add 600s
+
 ## Récompenses au kill, changement paramètres du joueur mort
 function uhc:in_game/players_settings/death/reveal
-execute if score @s uhc.players.lives matches 1.. as @a[scores={uhc.reward.kills=1..}] run function uhc:in_game/players_settings/kill/
+function uhc:in_game/inventory/drop
+execute as @a[scores={uhc.reward.kills=1..}] run function uhc:in_game/players_settings/kill/
 execute if score @s uhc.players.lives matches ..0 run function uhc:in_game/players_settings/death/definitive
 
 ## BHC → Attribution des points de survie (seulement si la partie n'est pas terminée)

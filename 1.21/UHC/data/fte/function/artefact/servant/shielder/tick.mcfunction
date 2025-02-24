@@ -1,5 +1,5 @@
 
-#> fte:servant/shielder/tick
+#> fte:artefact/servant/shielder/tick
 #
 # @within			fte:timer/artefact/servant
 #

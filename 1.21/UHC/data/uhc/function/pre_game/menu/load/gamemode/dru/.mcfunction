@@ -13,6 +13,7 @@ scoreboard players set #bhc bhc.scenario -1
 execute if score #dru uhc.gamemode matches 1 run scoreboard players remove #dru uhc.gamemode 2
 scoreboard players set #fte uhc.gamemode 0
 scoreboard players set #mls uhc.gamemode 0
+scoreboard players set #mls mls.scenario 0
 scoreboard players set #nzl uhc.gamemode 0
 scoreboard players set #nzl nzl.scenario -1
 scoreboard players set #prv uhc.gamemode 0

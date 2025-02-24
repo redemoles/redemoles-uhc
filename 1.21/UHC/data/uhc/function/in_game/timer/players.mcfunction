@@ -21,15 +21,20 @@ execute if score #shield uhc.data.setup matches 1..335 if items entity @s weapon
 execute if score #shield uhc.data.setup matches 0 run clear @s shield
 
 # Fire Aspect / Flame
-execute if score #fire_flame uhc.data.setup matches 0 if items entity @s weapon.mainhand *[enchantments~[{enchantments:"minecraft:fire_aspect"}]] unless score #aic uhc.gamemode matches 1 run item modify entity @s weapon.mainhand {function:"minecraft:set_enchantments",enchantments:{"minecraft:fire_aspect":-255},add:true}
-execute if score #fire_flame uhc.data.setup matches 0 if items entity @s weapon.mainhand *[enchantments~[{enchantments:"minecraft:flame"}]] unless score #aic uhc.gamemode matches 1 run item modify entity @s weapon.mainhand {function:"minecraft:set_enchantments",enchantments:{"minecraft:flame":-255},add:true}
-execute if score #fire_flame uhc.data.setup matches 0 if items entity @s weapon.offhand *[enchantments~[{enchantments:"minecraft:fire_aspect"}]] unless score #aic uhc.gamemode matches 1 run item modify entity @s weapon.offhand {function:"minecraft:set_enchantments",enchantments:{"minecraft:fire_aspect":-255},add:true}
-execute if score #fire_flame uhc.data.setup matches 0 if items entity @s weapon.offhand *[enchantments~[{enchantments:"minecraft:flame"}]] unless score #aic uhc.gamemode matches 1 run item modify entity @s weapon.offhand {function:"minecraft:set_enchantments",enchantments:{"minecraft:flame":-255},add:true}
+execute if score #fire_flame uhc.data.setup matches 0 unless score #aic uhc.gamemode matches 1 if items entity @s[tag=!uhc.fire_flame] weapon.mainhand *[enchantments~[{enchantments:"minecraft:fire_aspect"}]] run item modify entity @s weapon.mainhand {function:"minecraft:set_enchantments",enchantments:{"minecraft:fire_aspect":-255},add:true}
+execute if score #fire_flame uhc.data.setup matches 0 unless score #aic uhc.gamemode matches 1 if items entity @s[tag=!uhc.fire_flame] weapon.mainhand *[enchantments~[{enchantments:"minecraft:flame"}]] run item modify entity @s weapon.mainhand {function:"minecraft:set_enchantments",enchantments:{"minecraft:flame":-255},add:true}
+execute if score #fire_flame uhc.data.setup matches 0 unless score #aic uhc.gamemode matches 1 if items entity @s[tag=!uhc.fire_flame] weapon.offhand *[enchantments~[{enchantments:"minecraft:fire_aspect"}]] run item modify entity @s weapon.offhand {function:"minecraft:set_enchantments",enchantments:{"minecraft:fire_aspect":-255},add:true}
+execute if score #fire_flame uhc.data.setup matches 0 unless score #aic uhc.gamemode matches 1 if items entity @s[tag=!uhc.fire_flame] weapon.offhand *[enchantments~[{enchantments:"minecraft:flame"}]] run item modify entity @s weapon.offhand {function:"minecraft:set_enchantments",enchantments:{"minecraft:flame":-255},add:true}
+
+# Absorption
+execute if score #absorption uhc.data.setup matches 1 run scoreboard players set @s[nbt={active_effects:[{id:"minecraft:absorption"}]}] uhc.timer.absorption 121
+execute if score #absorption uhc.data.setup matches 1 run attribute @s[nbt={active_effects:[{id:"minecraft:absorption"}]}] minecraft:max_absorption base set 2
+execute if score #absorption uhc.data.setup matches ..1 run effect clear @s[nbt={active_effects:[{id:"minecraft:absorption"}]}] absorption
 
 # Effets aux joueurs
 execute if score #pve uhc.data.setup matches ..0 run scoreboard players set @s[scores={uhc.effect.resistance=-1}] uhc.effect.resistance 0
 effect give @s[scores={uhc.effect.resistance=-1}] minecraft:resistance infinite 4 true
-effect clear @s[scores={uhc.effect.resistance=0}] minecraft:resistance
+execute unless score #annonce mls.players.team matches 1 run effect clear @s[scores={uhc.effect.resistance=0}] minecraft:resistance
 effect give @s[scores={uhc.effect.resistance=1}] minecraft:resistance infinite 1 true
 execute unless score #nzl uhc.gamemode matches 1 run effect give @s[tag=uhc.player.night_vision] minecraft:night_vision infinite 0 true
 
@@ -41,6 +46,7 @@ execute as @s[scores={uhc.timer.respawn=1..}] run function uhc:in_game/players_s
 
 ## Scenarios
 execute if score #best_pve uhc.scenario matches 1 as @s[tag=uhc.scenario.best_pve] run function uhc:in_game/scenarios/best_pve/tick
+execute if score #blood_cycle uhc.scenario matches 1 run function uhc:in_game/scenarios/blood_cycle/
 execute if score #blood_diamond uhc.scenario matches 1 as @s[scores={uhc.scenario.blood_diamond.deepslate=1..}] run function uhc:in_game/scenarios/blood_diamond/reward
 execute if score #blood_diamond uhc.scenario matches 1 as @s[scores={uhc.scenario.blood_diamond.temp=1..}] run function uhc:in_game/scenarios/blood_diamond/reward
 execute if score #go_to_hell uhc.scenario matches 1 run function uhc:in_game/scenarios/go_to_hell/tick

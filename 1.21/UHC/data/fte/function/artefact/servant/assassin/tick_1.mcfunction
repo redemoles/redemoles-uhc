@@ -1,7 +1,7 @@
 
-#> fte:servant/assassin/tick_1
+#> fte:artefact/servant/assassin/tick_1
 #
-# @within			fte:servant/assassin/tick
+# @within			fte:artefact/servant/assassin/tick
 #
 #
 # @description		Effect give en fonction de la durée restante de l'Artéfact en cours

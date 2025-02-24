@@ -34,17 +34,20 @@ function uhc:pre_game/menu/load/settings/pve/macro_text with storage uhc:setting
 execute in uhc:sign run function uhc:pre_game/menu/load/settings/pvp/macro_set
 function uhc:pre_game/menu/load/settings/pvp/macro_text with storage uhc:settings
 
-execute if score @s uhc.menu.host.settings.pvp matches 1.. in uhc:sign run function uhc:pre_game/menu/load/settings/pvp/pvp_mod/macro_set
-execute if score @s uhc.menu.host.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/pvp_mod/macro_text with storage uhc:settings
 
-execute if score @s uhc.menu.host.settings.pvp matches 1.. in uhc:sign run function uhc:pre_game/menu/load/settings/pvp/knockback/macro_set
-execute if score @s uhc.menu.host.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/knockback/macro_text with storage uhc:settings
+execute if score @s uhc.menu.host.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/pvp_mod/macro_text
+
+
+execute if score @s uhc.menu.host.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/knockback/macro_text
 
 execute if score @s uhc.menu.host.settings.pvp matches 1.. in uhc:sign run function uhc:pre_game/menu/load/settings/pvp/shield/macro_set
 execute if score @s uhc.menu.host.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/shield/macro_text with storage uhc:settings
 
-execute if score @s uhc.menu.host.settings.pvp matches 1.. in uhc:sign run function uhc:pre_game/menu/load/settings/pvp/fire_flame/macro_set
-execute if score @s uhc.menu.host.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/fire_flame/macro_text with storage uhc:settings
+
+execute if score @s uhc.menu.host.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/fire_flame/macro_text
+
+
+execute if score @s uhc.menu.host.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/absorption/macro_text
 
 execute in uhc:sign run function uhc:pre_game/menu/load/settings/border/macro_set
 function uhc:pre_game/menu/load/settings/border/macro_text with storage uhc:settings
@@ -68,4 +71,4 @@ execute if score @s uhc.menu.host.settings matches 5 run item replace entity @s 
 execute if score @s uhc.menu.host.settings matches 5 run item replace entity @s inventory.23 with minecraft:light_blue_concrete_powder[minecraft:item_name='{"text":"+2","color":"#3FE7FF","italic":false}']
 execute if score @s uhc.menu.host.settings matches 5 run item replace entity @s inventory.24 with minecraft:cyan_concrete_powder[minecraft:item_name='{"text":"+50","color":"#3FCFCF","italic":false}']
 
-item replace entity @s inventory.25 with minecraft:barrier[minecraft:item_name='{"text":"FERMER","color":"#FF3F3F","italic":false}']
+item replace entity @s inventory.25 with minecraft:barrier[minecraft:item_name='{"text":"FERMER","color":"#FF3F3F","italic":false}',minecraft:custom_data={Tags:"close"}]

@@ -116,7 +116,7 @@ scoreboard objectives add bhc.StageA dummy "Bingo Classique"
 scoreboard objectives add bhc.StageB dummy "Bingo Spécial"
 scoreboard objectives add bhc.Kills dummy "Kills"
 scoreboard objectives add bhc.Death dummy "Survie"
-scoreboard objectives add bhc.Total dummy "Total"
+scoreboard objectives add bhc.Total dummy "Score Total"
 
 scoreboard objectives add bhc.invSA dummy
 scoreboard objectives add bhc.invSB dummy

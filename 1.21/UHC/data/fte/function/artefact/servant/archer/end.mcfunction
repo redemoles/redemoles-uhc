@@ -1,7 +1,7 @@
 
-#> fte:servant/archer/end
+#> fte:artefact/servant/archer/end
 #
-# @within			fte:servant/archer/tick
+# @within			fte:artefact/servant/archer/tick
 #
 #
 # @description		Fin de l'artefact d'Archer

@@ -25,7 +25,7 @@ execute if score @s uhc.menu.host.settings.lives matches 2 if score #live_1 uhc.
 # Période de Résistance
 execute if score @s uhc.menu.host.settings.pve matches 1 run scoreboard players add #pve uhc.data.setup 10
 execute if score @s uhc.menu.host.settings.pve matches 1 if score #pve uhc.data.setup matches 300.. run scoreboard players set #pve uhc.data.setup 300
-execute if score @s uhc.menu.host.settings.pve matches 1 if score #pvp uhc.data.setup < #pve uhc.data.setup run scoreboard players operation #pvp uhc.data.setup = #pve uhc.data.setup
+
 # Période sans PvP
 execute if score @s uhc.menu.host.settings.pvp matches 1 run scoreboard players add #pvp uhc.data.setup 10
 execute if score @s uhc.menu.host.settings.pvp matches 1 if score #pvp uhc.data.setup matches 300.. run scoreboard players set #pvp uhc.data.setup 300
@@ -33,6 +33,9 @@ execute if score @s uhc.menu.host.settings.pvp matches 1 if score #pvp uhc.data.
 # Durabilité des boucliers
 execute if score @s uhc.menu.host.settings.pvp matches 2 run scoreboard players add #shield_percent uhc.data.setup 10
 execute if score @s uhc.menu.host.settings.pvp matches 2 if score #shield_percent uhc.data.setup matches 100.. run scoreboard players set #shield_percent uhc.data.setup 100
+
+
+
 
 # Border - Taille initiale
 execute if score @s uhc.menu.host.settings.border matches 1 run scoreboard players add #border_size_start uhc.data.setup 50

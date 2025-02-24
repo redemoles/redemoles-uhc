@@ -21,6 +21,6 @@ execute if score #message uhc.data.setup matches 1..8 run tellraw @s[scores={uhc
 
 # Attribution d'effets au killer
 effect give @s minecraft:regeneration 4 1 true
-give @s golden_apple 2
 experience add @s 2 levels
+execute if score #experienceless uhc.scenario matches 1 run experience add @s 4 levels
 scoreboard players remove @s uhc.reward.kills 1

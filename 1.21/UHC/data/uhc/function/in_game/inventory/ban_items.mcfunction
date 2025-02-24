@@ -19,8 +19,11 @@ execute if entity @s[tag=uhc.inventory_changed] if score #nzl uhc.gamemode match
 # Ban Items PRV UHC
 execute if entity @s[tag=uhc.inventory_changed] if score #prv uhc.gamemode matches 1 run function prv:inventory/ban_items
 
+# Ban Enchanting Setup
+execute if data entity @s[tag=uhc.inventory_changed] Inventory[{id:"minecraft:enchanting_table"}] if score #enchanting_setup uhc.scenario matches 1 run function uhc:in_game/scenarios/enchanting_setup/ban_items
+
 # Compensation Items
-execute if data entity @s[tag=uhc.inventory_changed] Inventory[{id:"minecraft:enchanted_golden_apple"}] run give @s gold_block 4
+execute if data entity @s[tag=uhc.inventory_changed] Inventory[{id:"minecraft:enchanted_golden_apple"}] unless data entity @s[tag=uhc.inventory_changed] Inventory[{id:"minecraft:totem_of_undying"}] run give @s gold_block 4
 execute if data entity @s[tag=uhc.inventory_changed] Inventory[{id:"minecraft:totem_of_undying"}] run give @s gold_block 4
 
 # Retrait advancement pour pouvoir le répéter

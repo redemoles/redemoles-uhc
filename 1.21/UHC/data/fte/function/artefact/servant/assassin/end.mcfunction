@@ -1,7 +1,7 @@
 
-#> fte:servant/assassin/end
+#> fte:artefact/servant/assassin/end
 #
-# @within			fte:servant/assassin/tick
+# @within			fte:artefact/servant/assassin/tick
 #
 #
 # @description		Fin de l'artefact d'Assassin

@@ -1,7 +1,7 @@
 
-#> fte:servant/rider/tick_1
+#> fte:artefact/servant/rider/tick_1
 #
-# @within			fte:servant/rider/tick
+# @within			fte:artefact/servant/rider/tick
 #
 #
 # @description		Effect give en fonction de la durée restante de l'Artéfact en cours

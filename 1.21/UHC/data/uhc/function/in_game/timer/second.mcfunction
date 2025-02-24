@@ -24,12 +24,14 @@ execute unless score #aic uhc.gamemode matches 3 run tp @e[type=minecraft:phanto
 ## Respawn Dragon en All Items
 execute if score #aic uhc.gamemode matches 3 run function aic:timer/second
 
-## TIMER POUR CHAQUE MODE DE JEU
+## Absorption 1 coeur
+execute if score #absorption uhc.data.setup matches ..1 as @a[scores={uhc.timer.absorption=1}] run attribute @s minecraft:max_absorption base set 0
+execute if score #absorption uhc.data.setup matches ..1 run scoreboard players remove @a[scores={uhc.timer.absorption=1..}] uhc.timer.absorption 1
 
+## Autres mode de jeu
 execute if score #Minutes uhc.data.display matches 0.. if score #nzl uhc.gamemode matches 1 run function nzl:timer/second
 
-## ALERTES SONORES
-
+## Alertes sonores
 execute if score #pve uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches 59 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
 execute if score #pvp uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches 59 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
 execute if score #border uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches 59 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
@@ -42,8 +44,7 @@ execute if score #border uhc.data.setup matches 1 if score #sec_cooldown uhc.dat
 execute if score #shrink1 uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches 5 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
 execute if score #shrink2 uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches 5 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
 
-## ALERTE HOTBAR
-
+## Alertes Hotbar
 execute if score #hotbar_cooldown uhc.data.display matches 0.. run scoreboard players remove #hotbar_cooldown uhc.data.display 1
 
 execute if score #start uhc.data.setup matches 0 if score #sec_cooldown uhc.data.display matches 30 run scoreboard players set #hotbar_cooldown uhc.data.display 32

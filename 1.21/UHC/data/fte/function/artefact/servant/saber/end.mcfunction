@@ -1,7 +1,7 @@
 
-#> fte:servant/saber/end
+#> fte:artefact/servant/saber/end
 #
-# @within			fte:servant/saber/tick
+# @within			fte:artefact/servant/saber/tick
 #
 #
 # @description		Fin de l'artefact de Saber

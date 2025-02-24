@@ -1,7 +1,7 @@
 
-#> fte:servant/berserker/tick_1
+#> fte:artefact/servant/berserker/tick_1
 #
-# @within			fte:servant/berserker/tick
+# @within			fte:artefact/servant/berserker/tick
 #
 #
 # @description		Effect give en fonction de la durée restante de l'Artéfact en cours

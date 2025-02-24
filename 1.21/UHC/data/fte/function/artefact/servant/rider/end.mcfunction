@@ -1,7 +1,7 @@
 
-#> fte:servant/rider/end
+#> fte:artefact/servant/rider/end
 #
-# @within			fte:servant/rider/tick
+# @within			fte:artefact/servant/rider/tick
 #
 #
 # @description		Fin de l'artefact de Rider

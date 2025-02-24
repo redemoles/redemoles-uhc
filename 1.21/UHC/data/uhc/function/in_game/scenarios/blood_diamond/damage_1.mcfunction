@@ -1,16 +1,21 @@
 
 #> uhc:in_game/scenarios/blood_diamond/damage_1
 #
-# @within			uhc:in_game/scenarios/go_to_hell/damage
+# @within			uhc:in_game/scenarios/blood_diamond/reward
 # @executed			default context
 #
-# @description		Perte de vie pour tous les joueurs ayant passé 30 secondes hors du Nether
+# @description		Palier 3 - Dégâts progressifs
 #
 
-$execute if score #random uhc.scenario.blood_diamond.temp matches 1..50 run tellraw @s [{"text":"Blood Diamond ($(mined)/∞) : -$(damage) HP, Rien (50%)","color":"#FF3F3F"}]
-$execute if score #random uhc.scenario.blood_diamond.temp matches 51..100 run tellraw @s [{"text":"Blood Diamond ($(mined)/∞) : -$(damage) HP, +1 diamant (50%)","color":"#FF3F3F"}]
+$execute if score #random uhc.scenario.blood_diamond.temp matches 1..50 run tellraw @s[scores={uhc.players.lang=1}] [{"text":"Blood Diamond ($(mined)/∞) >","color":"#FF3F3F","bold":true},{"text":" -$(damage) PV, Rien (50%)","color":"#FF3F3F","bold":false}]
+$execute if score #random uhc.scenario.blood_diamond.temp matches 51..100 run tellraw @s[scores={uhc.players.lang=1}] [{"text":"Blood Diamond ($(mined)/∞) >","color":"#FF3F3F","bold":true},{"text":" -$(damage) PV, +1 diamant (50%)","color":"#FF3F3F","bold":false}]
 
-$title @s title [{"text":"-$(damage) HP","color":"#FF3F3F"}]
-title @s subtitle [{"text":"Blood Diamond - Progressif","color":"#FF3F3F"}]
+$execute if score #random uhc.scenario.blood_diamond.temp matches 1..50 run tellraw @s[scores={uhc.players.lang=2}] [{"text":"Blood Diamond ($(mined)/∞) >","color":"#FF3F3F","bold":true},{"text":" -$(damage) HP, Nothing (50%)","color":"#FF3F3F","bold":false}]
+$execute if score #random uhc.scenario.blood_diamond.temp matches 51..100 run tellraw @s[scores={uhc.players.lang=2}] [{"text":"Blood Diamond ($(mined)/∞) >","color":"#FF3F3F","bold":true},{"text":" -$(damage) HP, +1 diamond (50%)","color":"#FF3F3F","bold":false}]
+
+$title @s[scores={uhc.players.lang=1}] title [{"text":"-$(damage) PV","color":"#FF3F3F"}]
+title @s[scores={uhc.players.lang=1}] subtitle [{"text":"Blood Diamond - Progressif","color":"#FF3F3F"}]
+$title @s[scores={uhc.players.lang=2}] title [{"text":"-$(damage) HP","color":"#FF3F3F"}]
+title @s[scores={uhc.players.lang=2}] subtitle [{"text":"Blood Diamond - Progressive","color":"#FF3F3F"}]
 
 $damage @s $(damage)

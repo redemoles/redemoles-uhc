@@ -1,7 +1,7 @@
 
-#> fte:servant/lancer/tick_1
+#> fte:artefact/servant/lancer/tick_1
 #
-# @within			fte:servant/lancer/tick
+# @within			fte:artefact/servant/lancer/tick
 #
 #
 # @description		Effect give en fonction de la durée restante de l'Artéfact en cours

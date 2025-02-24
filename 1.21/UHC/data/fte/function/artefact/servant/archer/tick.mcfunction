@@ -1,5 +1,5 @@
 
-#> fte:servant/archer/tick
+#> fte:artefact/servant/archer/tick
 #
 # @within			fte:timer/artefact/servant
 #

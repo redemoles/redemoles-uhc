@@ -17,16 +17,16 @@ scoreboard players set #shrink2 uhc.data.setup 1440
 scoreboard players set #border_length uhc.data.setup 0
 scoreboard players set #shrink1_length uhc.data.setup 0
 scoreboard players set #shrink2_length uhc.data.setup 0
-scoreboard players set #border_size_start uhc.data.setup 20002
-scoreboard players set #border_size_end uhc.data.setup 20002
-scoreboard players set #shrink1_size_end uhc.data.setup 20002
-scoreboard players set #shrink2_size_end uhc.data.setup 20002
+scoreboard players set #border_size_start uhc.data.setup 20001
+scoreboard players set #border_size_end uhc.data.setup 20001
+scoreboard players set #shrink1_size_end uhc.data.setup 20001
+scoreboard players set #shrink2_size_end uhc.data.setup 20001
 scoreboard players operation #border_length uhc.data.setup *= #60 uhc.data.numbers
 scoreboard players operation #shrink1_length uhc.data.setup *= #60 uhc.data.numbers
 scoreboard players operation #shrink2_length uhc.data.setup *= #60 uhc.data.numbers
 scoreboard players add #minutes aic.data.end_game 1
 
-# Vies
+## Vies
 scoreboard players set #live_3 uhc.data.display 0
 scoreboard players set #live_2 uhc.data.display 1440
 scoreboard players set #live_1 uhc.data.display 1440

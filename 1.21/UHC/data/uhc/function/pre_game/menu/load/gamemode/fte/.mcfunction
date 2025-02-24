@@ -13,6 +13,7 @@ scoreboard players set #bhc bhc.scenario -1
 scoreboard players set #dru uhc.gamemode 0
 execute if score #fte uhc.gamemode matches 1 run scoreboard players remove #fte uhc.gamemode 2
 scoreboard players set #mls uhc.gamemode 0
+scoreboard players set #mls mls.scenario 0
 scoreboard players set #nzl uhc.gamemode 0
 scoreboard players set #nzl nzl.scenario -1
 scoreboard players set #prv uhc.gamemode 0
@@ -43,7 +44,7 @@ scoreboard players set #shrink1_length uhc.data.setup 5
 scoreboard players set #shrink2_length uhc.data.setup 5
 scoreboard players set #border_size_start uhc.data.setup 1500
 scoreboard players set #border_size_end uhc.data.setup 150
-scoreboard players set #shrink1_size_end uhc.data.setup 32
+scoreboard players set #shrink1_size_end uhc.data.setup 64
 scoreboard players set #shrink2_size_end uhc.data.setup 16
 
 ## Vies

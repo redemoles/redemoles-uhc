@@ -18,11 +18,11 @@ execute if entity @p[tag=fte.roles.servant,predicate=fte:id_teams] run scoreboar
 execute unless entity @p[tag=fte.roles.servant,predicate=fte:id_teams] run tellraw @s {"text":"Votre Servant ne peut recevoir cet ordre.","color":"red"}
 
 # Activation Artefact
-execute if entity @s[scores={fte.id.teams=1}] as @p[tag=fte.roles.servant,predicate=fte:id_teams] run function fte:artefact/servant/archer/start
-execute if entity @s[scores={fte.id.teams=2}] as @p[tag=fte.roles.servant,predicate=fte:id_teams] run function fte:artefact/servant/assassin/start
-execute if entity @s[scores={fte.id.teams=3}] as @p[tag=fte.roles.servant,predicate=fte:id_teams] run function fte:artefact/servant/berserker/start
-execute if entity @s[scores={fte.id.teams=4}] as @p[tag=fte.roles.servant,predicate=fte:id_teams] run function fte:artefact/servant/caster/start
-execute if entity @s[scores={fte.id.teams=5}] as @p[tag=fte.roles.servant,predicate=fte:id_teams] run function fte:artefact/servant/lancer/start
-execute if entity @s[scores={fte.id.teams=6}] as @p[tag=fte.roles.servant,predicate=fte:id_teams] run function fte:artefact/servant/rider/start
-execute if entity @s[scores={fte.id.teams=8}] as @p[tag=fte.roles.servant,predicate=fte:id_teams] run function fte:artefact/servant/saber/start
-execute if entity @s[scores={fte.id.teams=9}] as @p[tag=fte.roles.servant,predicate=fte:id_teams] run function fte:artefact/servant/shielder/start
+execute if entity @s[scores={fte.id.teams=1}] as @p[tag=fte.roles.servant,predicate=fte:id_teams] at @s run function fte:artefact/servant/archer/start
+execute if entity @s[scores={fte.id.teams=2}] as @p[tag=fte.roles.servant,predicate=fte:id_teams] at @s run function fte:artefact/servant/assassin/start
+execute if entity @s[scores={fte.id.teams=3}] as @p[tag=fte.roles.servant,predicate=fte:id_teams] at @s run function fte:artefact/servant/berserker/start
+execute if entity @s[scores={fte.id.teams=4}] as @p[tag=fte.roles.servant,predicate=fte:id_teams] at @s run function fte:artefact/servant/caster/start
+execute if entity @s[scores={fte.id.teams=5}] as @p[tag=fte.roles.servant,predicate=fte:id_teams] at @s run function fte:artefact/servant/lancer/start
+execute if entity @s[scores={fte.id.teams=6}] as @p[tag=fte.roles.servant,predicate=fte:id_teams] at @s run function fte:artefact/servant/rider/start
+execute if entity @s[scores={fte.id.teams=8}] as @p[tag=fte.roles.servant,predicate=fte:id_teams] at @s run function fte:artefact/servant/saber/start
+execute if entity @s[scores={fte.id.teams=9}] as @p[tag=fte.roles.servant,predicate=fte:id_teams] at @s run function fte:artefact/servant/shielder/start

@@ -4,7 +4,7 @@
 # @within			uhc:start/setup_players
 # @executed			default context
 #
-# @description		Fonction de configuration de la partie
+# @description		Création de la liste Best PvE
 #
 
 tag @a[tag=uhc.player] add uhc.scenario.best_pve

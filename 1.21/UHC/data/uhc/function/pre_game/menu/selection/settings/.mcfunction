@@ -22,17 +22,20 @@ function uhc:pre_game/menu/selection/settings/macro_text/pve with storage uhc:se
 execute in uhc:sign run function uhc:pre_game/menu/load/settings/pvp/macro_set
 function uhc:pre_game/menu/selection/settings/macro_text/pvp with storage uhc:settings
 
-execute in uhc:sign run function uhc:pre_game/menu/load/settings/pvp/pvp_mod/macro_set
-function uhc:pre_game/menu/selection/settings/macro_text/pvp_1 with storage uhc:settings
 
-execute in uhc:sign run function uhc:pre_game/menu/load/settings/pvp/knockback/macro_set
-function uhc:pre_game/menu/selection/settings/macro_text/pvp_2 with storage uhc:settings
+function uhc:pre_game/menu/selection/settings/macro_text/pvp_1
+
+
+function uhc:pre_game/menu/selection/settings/macro_text/pvp_2
 
 execute in uhc:sign run function uhc:pre_game/menu/load/settings/pvp/shield/macro_set
 function uhc:pre_game/menu/selection/settings/macro_text/pvp_3 with storage uhc:settings
 
-execute in uhc:sign run function uhc:pre_game/menu/load/settings/pvp/fire_flame/macro_set
-function uhc:pre_game/menu/selection/settings/macro_text/pvp_4 with storage uhc:settings
+
+function uhc:pre_game/menu/selection/settings/macro_text/pvp_4
+
+
+function uhc:pre_game/menu/selection/settings/macro_text/pvp_5
 
 execute in uhc:sign run function uhc:pre_game/menu/load/settings/border/macro_set
 function uhc:pre_game/menu/selection/settings/macro_text/border with storage uhc:settings
@@ -56,5 +59,5 @@ execute unless items entity @s[scores={uhc.menu.host.settings=5}] inventory.21 *
 execute unless items entity @s[scores={uhc.menu.host.settings=5}] inventory.23 *[minecraft:item_name='{"text":"+2","color":"#3FE7FF","italic":false}'] run function uhc:pre_game/menu/load/settings/3_add_1
 execute unless items entity @s[scores={uhc.menu.host.settings=5}] inventory.24 *[minecraft:item_name='{"text":"+50","color":"#3FCFCF","italic":false}'] run function uhc:pre_game/menu/load/settings/4_add_10
 
-execute unless items entity @s[scores={uhc.menu.host.settings=1..}] inventory.25 *[minecraft:item_name='{"text":"FERMER","color":"#FF3F3F","italic":false}'] run function uhc:pre_game/menu/load/principal/
+execute unless items entity @s[scores={uhc.menu.host.settings=1..}] inventory.25 *[minecraft:custom_data={Tags:"close"}] run function uhc:pre_game/menu/load/principal/
 execute if score @s uhc.menu.host.settings matches 1.. run function uhc:pre_game/menu/load/settings/

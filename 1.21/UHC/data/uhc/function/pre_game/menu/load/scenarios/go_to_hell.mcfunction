@@ -4,7 +4,7 @@
 # @within			uhc:pre_game/menu/selection/scenarios
 #
 #
-# @description		Activation/Désactivation Best PvE
+# @description		Activation/Désactivation Go To Hell
 #
 
 scoreboard players set #sky_high uhc.scenario 0

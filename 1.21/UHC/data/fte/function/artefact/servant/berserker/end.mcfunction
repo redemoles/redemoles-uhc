@@ -1,7 +1,7 @@
 
-#> fte:servant/berserker/end
+#> fte:artefact/servant/berserker/end
 #
-# @within			fte:servant/berserker/tick
+# @within			fte:artefact/servant/berserker/tick
 #
 #
 # @description		Fin de l'artefact de Berserker

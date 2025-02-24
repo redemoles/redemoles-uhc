@@ -12,10 +12,10 @@ scoreboard players operation #border_size_start uhc.data.setup *= #02 uhc.data.n
 scoreboard players operation #border_size_end uhc.data.setup *= #02 uhc.data.numbers
 scoreboard players operation #shrink1_size_end uhc.data.setup *= #02 uhc.data.numbers
 scoreboard players operation #shrink2_size_end uhc.data.setup *= #02 uhc.data.numbers
-scoreboard players add #border_size_start uhc.data.setup 2
-scoreboard players add #border_size_end uhc.data.setup 2
-scoreboard players add #shrink1_size_end uhc.data.setup 2
-scoreboard players add #shrink2_size_end uhc.data.setup 2
+scoreboard players add #border_size_start uhc.data.setup 1
+scoreboard players add #border_size_end uhc.data.setup 1
+scoreboard players add #shrink1_size_end uhc.data.setup 1
+scoreboard players add #shrink2_size_end uhc.data.setup 1
 scoreboard players operation #border_length uhc.data.setup *= #60 uhc.data.numbers
 scoreboard players operation #shrink1_length uhc.data.setup *= #60 uhc.data.numbers
 scoreboard players operation #shrink2_length uhc.data.setup *= #60 uhc.data.numbers

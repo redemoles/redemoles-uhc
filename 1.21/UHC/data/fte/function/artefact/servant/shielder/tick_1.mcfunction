@@ -1,7 +1,7 @@
 
-#> fte:servant/shielder/tick_1
+#> fte:artefact/servant/shielder/tick_1
 #
-# @within			fte:servant/shielder/tick
+# @within			fte:artefact/servant/shielder/tick
 #
 #
 # @description		Effect give en fonction de la durée restante de l'Artéfact en cours

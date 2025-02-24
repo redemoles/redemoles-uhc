@@ -1,7 +1,7 @@
 
-#> fte:servant/lancer/end
+#> fte:artefact/servant/lancer/end
 #
-# @within			fte:servant/lancer/tick
+# @within			fte:artefact/servant/lancer/tick
 #
 #
 # @description		Fin de l'artefact de Lancer

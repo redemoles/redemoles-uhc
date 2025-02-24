@@ -1,5 +1,5 @@
 
-#> fte:servant/lancer/start
+#> fte:artefact/servant/lancer/start
 #
 # @within			fte:sceau/artefact_1
 #

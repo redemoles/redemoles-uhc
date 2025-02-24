@@ -4,7 +4,7 @@
 # @within			uhc:pre_game/menu/selection/scenarios
 #
 #
-# @description		Activation/Désactivation Best PvE
+# @description		Activation/Désactivation Time Bomb
 #
 
 

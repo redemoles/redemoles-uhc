@@ -20,10 +20,25 @@ scoreboard objectives remove uhc.scenario.bats
 scoreboard objectives remove uhc.scenario.best_pve.list
 scoreboard objectives remove uhc.scenario.best_pve.reward
 scoreboard objectives remove uhc.scenario.best_pve.tick
+scoreboard objectives remove uhc.scenario.blood_cycle.coal
+scoreboard objectives remove uhc.scenario.blood_cycle.coal_deepslate
+scoreboard objectives remove uhc.scenario.blood_cycle.iron
+scoreboard objectives remove uhc.scenario.blood_cycle.iron_deepslate
+scoreboard objectives remove uhc.scenario.blood_cycle.gold
+scoreboard objectives remove uhc.scenario.blood_cycle.gold_deepslate
+scoreboard objectives remove uhc.scenario.blood_cycle.lapis
+scoreboard objectives remove uhc.scenario.blood_cycle.lapis_deepslate
+scoreboard objectives remove uhc.scenario.blood_cycle.redstone
+scoreboard objectives remove uhc.scenario.blood_cycle.redstone_deepslate
+scoreboard objectives remove uhc.scenario.blood_cycle.diamond
+scoreboard objectives remove uhc.scenario.blood_cycle.diamond_deepslate
 scoreboard objectives remove uhc.scenario.blood_diamond.damage
+scoreboard objectives remove uhc.scenario.blood_diamond.deepslate
 scoreboard objectives remove uhc.scenario.blood_diamond.mined
 scoreboard objectives remove uhc.scenario.blood_diamond.temp
+scoreboard objectives remove uhc.scenario.bookception
 scoreboard objectives remove uhc.scenario.cut_clean.random
+scoreboard objectives remove uhc.scenario.enchanting_setup
 scoreboard objectives remove uhc.scenario.go_to_hell.damage
 scoreboard objectives remove uhc.scenario.go_to_hell.tick
 scoreboard objectives remove uhc.scenario.team_health.player
@@ -39,11 +54,26 @@ scoreboard objectives add uhc.scenario.bats dummy
 scoreboard objectives add uhc.scenario.best_pve.list dummy
 scoreboard objectives add uhc.scenario.best_pve.reward dummy
 scoreboard objectives add uhc.scenario.best_pve.tick dummy
+scoreboard objectives add uhc.scenario.blood_cycle dummy
+scoreboard objectives add uhc.scenario.blood_cycle.coal minecraft.mined:minecraft.coal_ore
+scoreboard objectives add uhc.scenario.blood_cycle.coal_deepslate minecraft.mined:minecraft.deepslate_coal_ore
+scoreboard objectives add uhc.scenario.blood_cycle.iron minecraft.mined:minecraft.iron_ore
+scoreboard objectives add uhc.scenario.blood_cycle.iron_deepslate minecraft.mined:minecraft.deepslate_iron_ore
+scoreboard objectives add uhc.scenario.blood_cycle.gold minecraft.mined:minecraft.gold_ore
+scoreboard objectives add uhc.scenario.blood_cycle.gold_deepslate minecraft.mined:minecraft.deepslate_gold_ore
+scoreboard objectives add uhc.scenario.blood_cycle.lapis minecraft.mined:minecraft.lapis_ore
+scoreboard objectives add uhc.scenario.blood_cycle.lapis_deepslate minecraft.mined:minecraft.deepslate_lapis_ore
+scoreboard objectives add uhc.scenario.blood_cycle.redstone minecraft.mined:minecraft.redstone_ore
+scoreboard objectives add uhc.scenario.blood_cycle.redstone_deepslate minecraft.mined:minecraft.deepslate_redstone_ore
+scoreboard objectives add uhc.scenario.blood_cycle.diamond minecraft.mined:minecraft.diamond_ore
+scoreboard objectives add uhc.scenario.blood_cycle.diamond_deepslate minecraft.mined:minecraft.deepslate_diamond_ore
 scoreboard objectives add uhc.scenario.blood_diamond.damage dummy
 scoreboard objectives add uhc.scenario.blood_diamond.deepslate minecraft.mined:minecraft.deepslate_diamond_ore
 scoreboard objectives add uhc.scenario.blood_diamond.mined dummy
 scoreboard objectives add uhc.scenario.blood_diamond.temp minecraft.mined:minecraft.diamond_ore
+scoreboard objectives add uhc.scenario.bookception dummy
 scoreboard objectives add uhc.scenario.cut_clean.random dummy
+scoreboard objectives add uhc.scenario.enchanting_setup dummy
 scoreboard objectives add uhc.scenario.go_to_hell.damage dummy
 scoreboard objectives add uhc.scenario.go_to_hell.tick dummy
 scoreboard objectives add uhc.scenario.team_health.player dummy
@@ -69,6 +99,12 @@ scoreboard objectives remove uhc.menu.host.settings.lives
 scoreboard objectives remove uhc.menu.host.settings.pve
 scoreboard objectives remove uhc.menu.host.settings.pvp
 scoreboard objectives remove uhc.menu.host.settings.border
+scoreboard objectives remove uhc.menu.host.gamemode.mls
+scoreboard objectives remove uhc.menu.host.gamemode.mls.moles_per_team
+scoreboard objectives remove uhc.menu.host.gamemode.mls.moles_per_game
+scoreboard objectives remove uhc.menu.host.gamemode.mls.teams_of_moles
+scoreboard objectives remove uhc.menu.host.gamemode.mls.teams_of_supermoles
+scoreboard objectives remove uhc.menu.host.gamemode.mls.supermoles_per_team
 scoreboard objectives remove uhc.menu.update
 scoreboard objectives remove uhc.meetup.activate
 scoreboard objectives remove uhc.players.online
@@ -79,12 +115,12 @@ scoreboard objectives remove uhc.players.health
 scoreboard objectives remove uhc.players.timer
 scoreboard objectives remove uhc.players.kills
 scoreboard objectives remove uhc.players.death
-scoreboard objectives remove uhc.players.lang
 scoreboard objectives remove uhc.reward.kills
 scoreboard objectives remove uhc.effect.resistance
 scoreboard objectives remove uhc.timer.respawn
 scoreboard objectives remove uhc.timer.start
 scoreboard objectives remove uhc.timer.entities
+scoreboard objectives remove uhc.timer.absorption
 scoreboard objectives remove uhc.spawn.check
 scoreboard objectives remove uhc.world.end
 
@@ -98,6 +134,12 @@ scoreboard objectives add uhc.data.arrow minecraft.used:minecraft.bow
 scoreboard objectives add uhc.data.display dummy
 scoreboard objectives add uhc.data.setup dummy
 scoreboard objectives add uhc.data.numbers dummy
+scoreboard objectives add uhc.menu.host.gamemode.mls dummy
+scoreboard objectives add uhc.menu.host.gamemode.mls.moles_per_team dummy
+scoreboard objectives add uhc.menu.host.gamemode.mls.moles_per_game dummy
+scoreboard objectives add uhc.menu.host.gamemode.mls.teams_of_moles dummy
+scoreboard objectives add uhc.menu.host.gamemode.mls.teams_of_supermoles dummy
+scoreboard objectives add uhc.menu.host.gamemode.mls.supermoles_per_team dummy
 scoreboard objectives add uhc.menu.host.settings dummy
 scoreboard objectives add uhc.menu.host.settings.lives dummy
 scoreboard objectives add uhc.menu.host.settings.pve dummy
@@ -119,6 +161,7 @@ scoreboard objectives add uhc.effect.resistance dummy
 scoreboard objectives add uhc.timer.respawn dummy
 scoreboard objectives add uhc.timer.start dummy
 scoreboard objectives add uhc.timer.entities dummy
+scoreboard objectives add uhc.timer.absorption dummy
 scoreboard objectives add uhc.spawn.check trigger
 scoreboard objectives add uhc.world.end dummy
 scoreboard objectives setdisplay sidebar
@@ -142,8 +185,8 @@ execute in minecraft:overworld run function uhc:all_dimension_commands/reload
 execute in minecraft:the_nether run function uhc:all_dimension_commands/reload
 execute in minecraft:the_end run function uhc:all_dimension_commands/reload
 weather clear 999999
-worldborder center 0.0 0.0
-worldborder set 302
+worldborder center 0.5 0.5
+worldborder set 301
 
 ## Modes de jeu
 scoreboard players set #vanilla uhc.gamemode 1
@@ -152,6 +195,7 @@ scoreboard players set #bhc bhc.scenario -1
 scoreboard players set #dru uhc.gamemode 0
 scoreboard players set #fte uhc.gamemode 0
 scoreboard players set #mls uhc.gamemode 0
+scoreboard players set #mls mls.scenario 0
 scoreboard players set #nzl uhc.gamemode 0
 scoreboard players set #nzl nzl.scenario -1
 scoreboard players set #prv uhc.gamemode 0
@@ -159,24 +203,31 @@ scoreboard players set #uau uhc.gamemode 0
 scoreboard players set #aic uhc.gamemode 0
 
 ## Scénarios
-scoreboard players set #assassins uhc.scenario 0
 scoreboard players set #bats uhc.scenario 0
 scoreboard players set #best_pve uhc.scenario 0
 scoreboard players set #blood_cycle uhc.scenario 0
 scoreboard players set #blood_diamond uhc.scenario 0
-scoreboard players set #bow_swap uhc.scenario 0
-scoreboard players set #compensation uhc.scenario 0
-
+scoreboard players set #bookception uhc.scenario 0
 scoreboard players set #cut_clean uhc.scenario 0
+scoreboard players set #enchanting_setup uhc.scenario 0
+
+scoreboard players set #experienceless uhc.scenario 0
 scoreboard players set #go_to_hell uhc.scenario 0
 scoreboard players set #gone_fishing uhc.scenario 0
+scoreboard players set #no_fall uhc.scenario 0
+scoreboard players set #permakill uhc.scenario 0
 scoreboard players set #red_arrows uhc.scenario 0
 scoreboard players set #rewarding_longshots uhc.scenario 0
+
 scoreboard players set #shared_health uhc.scenario 0
 scoreboard players set #sky_high uhc.scenario 0
-
 scoreboard players set #team_health uhc.scenario 0
 scoreboard players set #time_bomb uhc.scenario 0
+
+# Enchanting Setup
+scoreboard players set #100b uhc.scenario.enchanting_setup 0
+scoreboard players set #500b uhc.scenario.enchanting_setup 0
+scoreboard players set #1000b uhc.scenario.enchanting_setup 0
 
 ## Configuration de la partie
 scoreboard players set #ffa uhc.data.display 0
@@ -190,6 +241,7 @@ scoreboard players set #shield uhc.data.setup 336
 scoreboard players set #pvp_mod uhc.data.setup 0
 scoreboard players set #knockback uhc.data.setup 0
 scoreboard players set #fire_flame uhc.data.setup 0
+scoreboard players set #absorption uhc.data.setup 2
 
 scoreboard players set #pve uhc.data.setup 2
 scoreboard players set #pvp uhc.data.setup 40
@@ -215,6 +267,7 @@ scoreboard players set #load lobby.data 0
 
 ## Reload des fonctionnalités des modes de jeu
 function aic:load
+function ass:load
 function bhc:load
 function dru:load
 function fte:load
