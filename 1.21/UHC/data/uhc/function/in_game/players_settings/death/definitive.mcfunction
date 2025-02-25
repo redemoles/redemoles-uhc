@@ -27,6 +27,7 @@ execute if score #team_out uhc.id.teams matches 1 run scoreboard players remove 
 
 # Attribution des effets
 function uhc:in_game/players_settings/spec/
+execute if score #biome_paranoia uhc.scenario matches 1.. run function uhc:in_game/scenarios/biome_paranoia/death
 
 # Msg FRA
 execute if score #vanilla uhc.gamemode matches 1 run tellraw @s[scores={uhc.players.lang=1}] [{"text":"Tu es mort. Merci d'avoir participé. Si un chat vocal de proximité est utilisé, merci de te rendre muet.\n","color":"#3FE7FF"}]

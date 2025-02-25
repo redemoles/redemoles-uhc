@@ -15,6 +15,7 @@ tag @s remove uhc.spec
 tag @s add uhc.player
 tag @s remove uhc.revive
 tag @s remove uhc.player.dead
+tag @s remove uhc.scenario.sound_paranoia.on
 
 gamemode survival @s
 effect clear @s

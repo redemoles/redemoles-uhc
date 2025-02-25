@@ -14,6 +14,7 @@ tag @s remove test
 tag @s remove players.menu.settings
 tag @s add players.menu.teams
 tag @s add uhc.spec
+tag @s remove uhc.scenario.sound_paranoia.on
 execute if score #lobby lobby.data matches 0 run tp @s 0 305 0 0 0
 execute if score #lobby lobby.data matches 1.. run tp @s 0 293 0 0 0
 gamemode adventure @s
@@ -28,6 +29,7 @@ execute as @s[tag=!host] run function uhc:pre_game/menu/reload/players_menu
 # Reset effets
 effect clear @s
 effect give @s minecraft:absorption 1 1 true
+attribute @s minecraft:max_absorption base set 0
 attribute @s minecraft:max_health base set 20
 attribute @s minecraft:jump_strength base set 0.42
 attribute @s minecraft:movement_speed base set 0.10000000149011612

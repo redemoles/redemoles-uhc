@@ -1,0 +1,15 @@
+[
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "biomes": [
+          "minecraft:end_barrens",
+          "minecraft:end_highlands",
+          "minecraft:end_midlands",
+          "minecraft:the_end",
+          "minecraft:small_end_islands",
+          "minecraft:the_void"
+        ]
+      }
+    }
+  ]

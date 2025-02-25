@@ -45,18 +45,12 @@ execute as @e[type=arrow] run function uhc:in_game/entities/arrow/
 # Ironman reward
 execute if score #ironman uhc.data.setup matches 1 as @p[tag=uhc.ironman] run function uhc:in_game/scenarios/ironman/reward
 
-# Best PvE
 execute if score #best_pve uhc.scenario matches 1 as @p[scores={best_pve.list=1}] run function uhc:in_game/scenarios/best_pve/list
 execute if score #best_pve uhc.scenario matches 1 run scoreboard players enable @a best_pve.list
-
-# Cut Clean
 execute if score #cut_clean uhc.scenario matches 1 as @e[type=item,tag=!uhc.cut_clean] run function uhc:in_game/scenarios/cut_clean/tick
-
-# Experienceless
 execute if score #experienceless uhc.scenario matches 1 as @e[type=experience_orb] run kill @s
-
-# Enchanting Setup
 execute if score #enchanting_setup uhc.scenario matches 1 run function uhc:in_game/scenarios/enchanting_setup/tick
+execute if score #sound_paranoia uhc.scenario matches 1 as @e[type=marker,tag=uhc.sound_paranoia.on] at @s run function uhc:in_game/scenarios/sound_paranoia/tick
 
 ## Réduction de vie automatique
 execute if score #live_2 uhc.data.display matches 0 if score #lives uhc.players.lives matches 3 as @e[type=marker,tag=UHC] run function uhc:in_game/players_settings/lives_remove/lives_2

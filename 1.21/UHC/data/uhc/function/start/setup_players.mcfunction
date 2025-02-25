@@ -45,10 +45,16 @@ execute unless score #aic uhc.gamemode matches 3 store result score #ironman uhc
 # Best PvE
 execute if score #best_pve uhc.scenario matches 1 run function uhc:start/scenarios/best_pve
 
+# Biome Paranoia
+execute if score #biome_paranoia uhc.scenario matches 2 as @a[tag=uhc.player] in uhc:sign run function uhc:start/scenarios/biome_paranoia
+
 # Gone Fishing
 execute if score #gone_fishing uhc.scenario matches 1 run give @a[tag=uhc.player] minecraft:fishing_rod[enchantments={luck_of_the_sea:255,lure:3},unbreakable={}]
 execute if score #gone_fishing uhc.scenario matches 1 run give @a[tag=uhc.player] minecraft:anvil 64
 execute if score #gone_fishing uhc.scenario matches 1 run experience set @a[tag=uhc.player] 10000 levels
+
+# Sound Paranoia
+execute if score #sound_paranoia uhc.scenario matches 1 as @a[tag=uhc.player] store result score @s uhc.scenario.sound_paranoia.wait run random value 90..450
 
 # Team Health
 execute if score #team_health uhc.scenario matches 1 run scoreboard objectives setdisplay list uhc.scenario.team_health.team

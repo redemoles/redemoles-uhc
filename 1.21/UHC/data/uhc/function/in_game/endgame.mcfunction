@@ -20,4 +20,5 @@ execute if score #vanilla uhc.gamemode matches 1 run tellraw @a[scores={uhc.play
 execute if score #fte uhc.gamemode matches 1 run tellraw @a[scores={uhc.players.lang=2}] [{"text":"The game is over!\nThe victory is attributed to ","color":"#FFFFFF"},{"selector":"@a[predicate=uhc:id_team_alive]","bold":true,"color":"#FF3F3F"},{"text":" !\n","color":"#FFFFFF"}]
 execute if score #vanilla uhc.gamemode matches 1 run tellraw @a[scores={uhc.players.lang=2}] [{"text":"The game is over!\nThe victory is attributed to ","color":"#3FE7FF"},{"selector":"@a[predicate=uhc:id_team_alive]","bold":true,"color":"#2FAFBF"},{"text":" !\n","color":"#3FE7FF"}]
 
-execute if score #vanilla uhc.gamemode matches 1 run scoreboard objectives setdisplay sidebar uhc.players.kills
+execute unless score #bhc uhc.gamemode matches 1 run scoreboard objectives setdisplay sidebar uhc.players.kills
+gamerule spectatorsGenerateChunks true

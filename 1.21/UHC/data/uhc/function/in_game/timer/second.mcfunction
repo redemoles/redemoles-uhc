@@ -24,9 +24,14 @@ execute unless score #aic uhc.gamemode matches 3 run tp @e[type=minecraft:phanto
 ## Respawn Dragon en All Items
 execute if score #aic uhc.gamemode matches 3 run function aic:timer/second
 
-## Absorption 1 coeur
+## Paramètres
+# Absorption
 execute if score #absorption uhc.data.setup matches ..1 as @a[scores={uhc.timer.absorption=1}] run attribute @s minecraft:max_absorption base set 0
 execute if score #absorption uhc.data.setup matches ..1 run scoreboard players remove @a[scores={uhc.timer.absorption=1..}] uhc.timer.absorption 1
+
+## Scénarios
+# Sound Paranoia
+execute as @a[tag=uhc.player] at @s run function uhc:in_game/scenarios/sound_paranoia/cooldown
 
 ## Autres mode de jeu
 execute if score #Minutes uhc.data.display matches 0.. if score #nzl uhc.gamemode matches 1 run function nzl:timer/second

@@ -20,6 +20,7 @@ scoreboard objectives remove uhc.scenario.bats
 scoreboard objectives remove uhc.scenario.best_pve.list
 scoreboard objectives remove uhc.scenario.best_pve.reward
 scoreboard objectives remove uhc.scenario.best_pve.tick
+scoreboard objectives remove uhc.biome_paranoia.team
 scoreboard objectives remove uhc.scenario.blood_cycle.coal
 scoreboard objectives remove uhc.scenario.blood_cycle.coal_deepslate
 scoreboard objectives remove uhc.scenario.blood_cycle.iron
@@ -45,6 +46,29 @@ scoreboard objectives remove uhc.scenario.team_health.player
 scoreboard objectives remove uhc.scenario.team_health.team
 scoreboard objectives remove uhc.scenario.sky_high.damage
 scoreboard objectives remove uhc.scenario.sky_high.tick
+scoreboard objectives remove uhc.scenario.sound_paranoia.number
+scoreboard objectives remove uhc.scenario.sound_paranoia.sound
+scoreboard objectives remove uhc.scenario.sound_paranoia.stereo
+scoreboard objectives remove uhc.scenario.sound_paranoia.tick
+scoreboard objectives remove uhc.scenario.sound_paranoia.wait
+scoreboard objectives remove uhc.scenario.sound_paranoia.sb.total_player
+scoreboard objectives remove uhc.scenario.sound_paranoia.sb.total_sound
+scoreboard objectives remove uhc.scenario.sound_paranoia.sb.creeper
+scoreboard objectives remove uhc.scenario.sound_paranoia.sb.ghast
+scoreboard objectives remove uhc.scenario.sound_paranoia.sb.zombie
+scoreboard objectives remove uhc.scenario.sound_paranoia.sb.piglin_brute
+scoreboard objectives remove uhc.scenario.sound_paranoia.sb.player_eat
+scoreboard objectives remove uhc.scenario.sound_paranoia.sb.skeleton
+scoreboard objectives remove uhc.scenario.sound_paranoia.sb.witch
+scoreboard objectives remove uhc.scenario.sound_paranoia.sb.arrow
+scoreboard objectives remove uhc.scenario.sound_paranoia.sb.player_fall
+scoreboard objectives remove uhc.scenario.sound_paranoia.sb.wind_charge
+scoreboard objectives remove uhc.scenario.sound_paranoia.sb.lava
+scoreboard objectives remove uhc.scenario.sound_paranoia.sb.enderpearl
+scoreboard objectives remove uhc.scenario.sound_paranoia.sb.warden
+scoreboard objectives remove uhc.scenario.sound_paranoia.sb.water_bucket
+scoreboard objectives remove uhc.scenario.sound_paranoia.sb.wither_skeleton
+scoreboard objectives remove uhc.scenario.sound_paranoia.sb.placed_blocks
 scoreboard objectives remove bhc.scenario
 scoreboard objectives remove nzl.scenario
 
@@ -54,6 +78,7 @@ scoreboard objectives add uhc.scenario.bats dummy
 scoreboard objectives add uhc.scenario.best_pve.list dummy
 scoreboard objectives add uhc.scenario.best_pve.reward dummy
 scoreboard objectives add uhc.scenario.best_pve.tick dummy
+scoreboard objectives add uhc.biome_paranoia.team dummy
 scoreboard objectives add uhc.scenario.blood_cycle dummy
 scoreboard objectives add uhc.scenario.blood_cycle.coal minecraft.mined:minecraft.coal_ore
 scoreboard objectives add uhc.scenario.blood_cycle.coal_deepslate minecraft.mined:minecraft.deepslate_coal_ore
@@ -80,6 +105,29 @@ scoreboard objectives add uhc.scenario.team_health.player dummy
 scoreboard objectives add uhc.scenario.team_health.team dummy
 scoreboard objectives add uhc.scenario.sky_high.damage dummy
 scoreboard objectives add uhc.scenario.sky_high.tick dummy
+scoreboard objectives add uhc.scenario.sound_paranoia.number dummy
+scoreboard objectives add uhc.scenario.sound_paranoia.sound dummy
+scoreboard objectives add uhc.scenario.sound_paranoia.stereo dummy
+scoreboard objectives add uhc.scenario.sound_paranoia.tick dummy
+scoreboard objectives add uhc.scenario.sound_paranoia.wait dummy
+scoreboard objectives add uhc.scenario.sound_paranoia.sb.total_player dummy "Total"
+scoreboard objectives add uhc.scenario.sound_paranoia.sb.total_sound dummy "Total"
+scoreboard objectives add uhc.scenario.sound_paranoia.sb.creeper dummy "Creeper"
+scoreboard objectives add uhc.scenario.sound_paranoia.sb.ghast dummy "Ghast"
+scoreboard objectives add uhc.scenario.sound_paranoia.sb.zombie dummy "Zombie"
+scoreboard objectives add uhc.scenario.sound_paranoia.sb.piglin_brute dummy "Piglin brute"
+scoreboard objectives add uhc.scenario.sound_paranoia.sb.player_eat dummy "Player eat"
+scoreboard objectives add uhc.scenario.sound_paranoia.sb.skeleton dummy "Skeleton"
+scoreboard objectives add uhc.scenario.sound_paranoia.sb.witch dummy "Witch"
+scoreboard objectives add uhc.scenario.sound_paranoia.sb.arrow dummy "Arrow"
+scoreboard objectives add uhc.scenario.sound_paranoia.sb.player_fall dummy "Player fall"
+scoreboard objectives add uhc.scenario.sound_paranoia.sb.wind_charge dummy "Wind Charge"
+scoreboard objectives add uhc.scenario.sound_paranoia.sb.lava dummy "Lava"
+scoreboard objectives add uhc.scenario.sound_paranoia.sb.enderpearl dummy "Enderpearl"
+scoreboard objectives add uhc.scenario.sound_paranoia.sb.warden dummy "Warden"
+scoreboard objectives add uhc.scenario.sound_paranoia.sb.water_bucket dummy "Water bucket"
+scoreboard objectives add uhc.scenario.sound_paranoia.sb.wither_skeleton dummy "Wither Skeleton"
+scoreboard objectives add uhc.scenario.sound_paranoia.sb.placed_blocks dummy "Blocks"
 scoreboard objectives add bhc.scenario dummy
 scoreboard objectives add nzl.scenario dummy
 
@@ -205,22 +253,24 @@ scoreboard players set #aic uhc.gamemode 0
 ## Scénarios
 scoreboard players set #bats uhc.scenario 0
 scoreboard players set #best_pve uhc.scenario 0
+scoreboard players set #biome_paranoia uhc.scenario 0
 scoreboard players set #blood_cycle uhc.scenario 0
 scoreboard players set #blood_diamond uhc.scenario 0
 scoreboard players set #bookception uhc.scenario 0
 scoreboard players set #cut_clean uhc.scenario 0
-scoreboard players set #enchanting_setup uhc.scenario 0
 
+scoreboard players set #enchanting_setup uhc.scenario 0
 scoreboard players set #experienceless uhc.scenario 0
 scoreboard players set #go_to_hell uhc.scenario 0
 scoreboard players set #gone_fishing uhc.scenario 0
 scoreboard players set #no_fall uhc.scenario 0
 scoreboard players set #permakill uhc.scenario 0
 scoreboard players set #red_arrows uhc.scenario 0
-scoreboard players set #rewarding_longshots uhc.scenario 0
 
+scoreboard players set #rewarding_longshots uhc.scenario 0
 scoreboard players set #shared_health uhc.scenario 0
 scoreboard players set #sky_high uhc.scenario 0
+scoreboard players set #sound_paranoia uhc.scenario 0
 scoreboard players set #team_health uhc.scenario 0
 scoreboard players set #time_bomb uhc.scenario 0
 

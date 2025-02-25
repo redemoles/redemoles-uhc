@@ -1,0 +1,24 @@
+{
+	"condition": "minecraft:entity_scores",
+	"entity": "this",
+	"scores": {
+		"uhc.scenario.sound_paranoia.number": {
+			"min": {
+				"type": "minecraft:score",
+				"target": {
+					"type": "minecraft:fixed",
+					"name": "#number"
+				},
+				"score": "uhc.scenario.sound_paranoia.number"
+			},
+			"max": {
+				"type": "minecraft:score",
+				"target": {
+					"type": "minecraft:fixed",
+					"name": "#number"
+				},
+				"score": "uhc.scenario.sound_paranoia.number"
+			}
+		}
+	}
+}

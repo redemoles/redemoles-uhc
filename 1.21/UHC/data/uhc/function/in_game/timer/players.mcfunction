@@ -15,6 +15,7 @@ execute unless score @s uhc.players.online matches 1 run function uhc:in_game/pl
 # Reconnexion d'un joueur
 execute if score @s uhc.players.disconnect matches 1.. run function uhc:in_game/players_settings/reconnect/
 
+## Paramètres
 # Bouclier
 execute if score #shield uhc.data.setup matches 1..335 if items entity @s weapon.mainhand shield[max_damage=336] run function uhc:in_game/inventory/shield
 execute if score #shield uhc.data.setup matches 1..335 if items entity @s weapon.offhand shield[max_damage=336] run function uhc:in_game/inventory/shield
@@ -46,6 +47,8 @@ execute as @s[scores={uhc.timer.respawn=1..}] run function uhc:in_game/players_s
 
 ## Scenarios
 execute if score #best_pve uhc.scenario matches 1 as @s[tag=uhc.scenario.best_pve] run function uhc:in_game/scenarios/best_pve/tick
+execute if score #biome_paranoia uhc.scenario matches 1 as @s[tag=uhc.player] run function uhc:in_game/scenarios/biome_paranoia/by_colors
+execute if score #biome_paranoia uhc.scenario matches 2 as @s[tag=uhc.player] run function uhc:in_game/scenarios/biome_paranoia/by_nickname
 execute if score #blood_cycle uhc.scenario matches 1 run function uhc:in_game/scenarios/blood_cycle/
 execute if score #blood_diamond uhc.scenario matches 1 as @s[scores={uhc.scenario.blood_diamond.deepslate=1..}] run function uhc:in_game/scenarios/blood_diamond/reward
 execute if score #blood_diamond uhc.scenario matches 1 as @s[scores={uhc.scenario.blood_diamond.temp=1..}] run function uhc:in_game/scenarios/blood_diamond/reward
