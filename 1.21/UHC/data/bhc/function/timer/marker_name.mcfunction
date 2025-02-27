@@ -7,13 +7,13 @@
 # @description		Boucle d'affichage des noms d'équipe
 #
 
-$scoreboard players operation $(name) bhc.StageA = @s bhc.invStageA
+$scoreboard players operation $(name) bhc.StepA = @s bhc.invStepA
 $scoreboard players operation $(name) bhc.SA = @s bhc.invSA
-$scoreboard players operation $(name) bhc.StageA /= #1m uhc.data.numbers
+$scoreboard players operation $(name) bhc.StepA /= #1m uhc.data.numbers
 
-$scoreboard players operation $(name) bhc.StageB = @s bhc.invStageB
+$scoreboard players operation $(name) bhc.StepB = @s bhc.invStepB
 $scoreboard players operation $(name) bhc.SB = @s bhc.invSB
-$scoreboard players operation $(name) bhc.StageB /= #1m uhc.data.numbers
+$scoreboard players operation $(name) bhc.StepB /= #1m uhc.data.numbers
 
 $scoreboard players operation $(name) bhc.Kills = @s bhc.invKills
 $scoreboard players operation $(name) bhc.SK = @s bhc.invSK

@@ -161,6 +161,7 @@ scoreboard objectives remove uhc.players.tp
 scoreboard objectives remove uhc.players.lives
 scoreboard objectives remove uhc.players.health
 scoreboard objectives remove uhc.players.timer
+scoreboard objectives remove uhc.players.border_alert
 scoreboard objectives remove uhc.players.kills
 scoreboard objectives remove uhc.players.death
 scoreboard objectives remove uhc.reward.kills
@@ -201,6 +202,7 @@ scoreboard objectives add uhc.players.tp dummy
 scoreboard objectives add uhc.players.lives dummy
 scoreboard objectives add uhc.players.health health
 scoreboard objectives add uhc.players.timer dummy "Minutes jouées"
+scoreboard objectives add uhc.players.border_alert dummy
 scoreboard objectives add uhc.players.kills playerKillCount "Kills"
 scoreboard objectives add uhc.players.death deathCount
 scoreboard objectives add uhc.players.lang dummy
@@ -296,19 +298,19 @@ scoreboard players set #absorption uhc.data.setup 2
 scoreboard players set #pve uhc.data.setup 2
 scoreboard players set #pvp uhc.data.setup 40
 
-scoreboard players set #border_size_start uhc.data.setup 1000
+scoreboard players set #shrink_1_size_start uhc.data.setup 1000
 
-scoreboard players set #border uhc.data.setup 60
-scoreboard players set #border_length uhc.data.setup 20
-scoreboard players set #border_size_end uhc.data.setup 150
+scoreboard players set #shrink_1 uhc.data.setup 60
+scoreboard players set #shrink_1_length uhc.data.setup 20
+scoreboard players set #shrink_1_size_end uhc.data.setup 150
 
-scoreboard players set #shrink1 uhc.data.setup 80
-scoreboard players set #shrink1_length uhc.data.setup 5
-scoreboard players set #shrink1_size_end uhc.data.setup 64
+scoreboard players set #shrink_2 uhc.data.setup 80
+scoreboard players set #shrink_2_length uhc.data.setup 5
+scoreboard players set #shrink_2_size_end uhc.data.setup 64
 
-scoreboard players set #shrink2 uhc.data.setup 100
-scoreboard players set #shrink2_length uhc.data.setup 5
-scoreboard players set #shrink2_size_end uhc.data.setup 32
+scoreboard players set #shrink_3 uhc.data.setup 100
+scoreboard players set #shrink_3_length uhc.data.setup 5
+scoreboard players set #shrink_3_size_end uhc.data.setup 32
 
 ## Génération du Lobby
 scoreboard objectives add lobby.data dummy

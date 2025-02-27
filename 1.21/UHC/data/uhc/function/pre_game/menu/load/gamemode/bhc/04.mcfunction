@@ -28,16 +28,16 @@ execute if score #bhc bhc.scenario matches 4 run tellraw @a [{"text":"Bingo","co
 ## UHC → Préparation Config pre-game
 scoreboard players set #pve uhc.data.setup 2
 scoreboard players set #pvp uhc.data.setup 40
-scoreboard players set #border uhc.data.setup 80
-scoreboard players set #shrink1 uhc.data.setup 110
-scoreboard players set #shrink2 uhc.data.setup 120
-scoreboard players set #border_length uhc.data.setup 20
-scoreboard players set #shrink1_length uhc.data.setup 5
-scoreboard players set #shrink2_length uhc.data.setup 5
-scoreboard players set #border_size_start uhc.data.setup 2000
-scoreboard players set #border_size_end uhc.data.setup 150
-scoreboard players set #shrink1_size_end uhc.data.setup 64
-scoreboard players set #shrink2_size_end uhc.data.setup 16
+scoreboard players set #shrink_1 uhc.data.setup 80
+scoreboard players set #shrink_2 uhc.data.setup 110
+scoreboard players set #shrink_3 uhc.data.setup 120
+scoreboard players set #shrink_1_length uhc.data.setup 20
+scoreboard players set #shrink_2_length uhc.data.setup 5
+scoreboard players set #shrink_3_length uhc.data.setup 5
+scoreboard players set #shrink_1_size_start uhc.data.setup 2000
+scoreboard players set #shrink_1_size_end uhc.data.setup 150
+scoreboard players set #shrink_2_size_end uhc.data.setup 64
+scoreboard players set #shrink_3_size_end uhc.data.setup 16
 
 ## Vies
 scoreboard players set #lives uhc.players.lives 3

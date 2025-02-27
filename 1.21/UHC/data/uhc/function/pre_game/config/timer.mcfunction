@@ -8,18 +8,18 @@
 #
 
 ## Configuration de la Worldborder
-scoreboard players operation #border_size_start uhc.data.setup *= #02 uhc.data.numbers
-scoreboard players operation #border_size_end uhc.data.setup *= #02 uhc.data.numbers
-scoreboard players operation #shrink1_size_end uhc.data.setup *= #02 uhc.data.numbers
-scoreboard players operation #shrink2_size_end uhc.data.setup *= #02 uhc.data.numbers
-scoreboard players add #border_size_start uhc.data.setup 1
-scoreboard players add #border_size_end uhc.data.setup 1
-scoreboard players add #shrink1_size_end uhc.data.setup 1
-scoreboard players add #shrink2_size_end uhc.data.setup 1
-scoreboard players operation #border_length uhc.data.setup *= #60 uhc.data.numbers
-scoreboard players operation #shrink1_length uhc.data.setup *= #60 uhc.data.numbers
-scoreboard players operation #shrink2_length uhc.data.setup *= #60 uhc.data.numbers
-execute store result storage uhc:settings border_size int 1 run scoreboard players get #border_size_start uhc.data.setup
+scoreboard players operation #shrink_1_size_start uhc.data.setup *= #02 uhc.data.numbers
+scoreboard players operation #shrink_1_size_end uhc.data.setup *= #02 uhc.data.numbers
+scoreboard players operation #shrink_2_size_end uhc.data.setup *= #02 uhc.data.numbers
+scoreboard players operation #shrink_3_size_end uhc.data.setup *= #02 uhc.data.numbers
+scoreboard players add #shrink_1_size_start uhc.data.setup 1
+scoreboard players add #shrink_1_size_end uhc.data.setup 1
+scoreboard players add #shrink_2_size_end uhc.data.setup 1
+scoreboard players add #shrink_3_size_end uhc.data.setup 1
+scoreboard players operation #shrink_1_length uhc.data.setup *= #60 uhc.data.numbers
+scoreboard players operation #shrink_2_length uhc.data.setup *= #60 uhc.data.numbers
+scoreboard players operation #shrink_3_length uhc.data.setup *= #60 uhc.data.numbers
+execute store result storage uhc:settings border_size int 1 run scoreboard players get #shrink_1_size_start uhc.data.setup
 execute in minecraft:overworld run function uhc:pre_game/config/wb_start with storage uhc:settings
 execute in minecraft:the_nether run function uhc:pre_game/config/wb_start with storage uhc:settings
 execute in minecraft:the_end run function uhc:pre_game/config/wb_start with storage uhc:settings

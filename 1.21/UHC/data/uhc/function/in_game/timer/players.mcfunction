@@ -57,7 +57,7 @@ execute if score #sky_high uhc.scenario matches 1 at @s run function uhc:in_game
 execute if score #team_health uhc.scenario matches 1 unless score @s uhc.players.health = @s uhc.scenario.team_health.player as @e[type=marker,tag=UHC,predicate=uhc:id_teams] run function uhc:in_game/scenarios/team_health/
 
 ## Border TP
-execute if score #border uhc.data.setup matches ..0 as @s[tag=uhc.player] run function uhc:in_game/tp/border/coords
+execute if score #shrink_1 uhc.data.setup matches ..0 as @s[tag=uhc.player] run function uhc:in_game/tp/border/coords
 
 ## Joueur à respwan
 execute as @s[tag=uhc.revive] run function uhc:in_game/players_settings/spec/revive

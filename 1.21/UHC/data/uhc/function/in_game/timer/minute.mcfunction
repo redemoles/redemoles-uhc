@@ -15,47 +15,50 @@ scoreboard players add #Minutes uhc.data.display 1
 ## Minuteur interne
 scoreboard players remove #pve uhc.data.setup 1
 scoreboard players remove #pvp uhc.data.setup 1
-scoreboard players remove #border uhc.data.setup 1
-scoreboard players remove #shrink1 uhc.data.setup 1
-scoreboard players remove #shrink2 uhc.data.setup 1
+scoreboard players remove #shrink_1 uhc.data.setup 1
+scoreboard players remove #shrink_2 uhc.data.setup 1
+scoreboard players remove #shrink_3 uhc.data.setup 1
+scoreboard players remove #shrink_1_timer_end uhc.data.setup 1
+scoreboard players remove #shrink_2_timer_end uhc.data.setup 1
+scoreboard players remove #shrink_3_timer_end uhc.data.setup 1
 scoreboard players remove #live_3 uhc.data.display 1
 scoreboard players remove #live_2 uhc.data.display 1
 scoreboard players remove #live_1 uhc.data.display 1
 execute as @a[tag=uhc.player] run scoreboard players operation @s uhc.players.timer = #Minutes uhc.data.display
 
 ## Réduction de la worldborder
-execute if score #border uhc.data.setup matches 0 store result storage uhc:settings border_size int 1 run scoreboard players get #border_size_end uhc.data.setup
-execute if score #shrink1 uhc.data.setup matches 0 store result storage uhc:settings border_size int 1 run scoreboard players get #shrink1_size_end uhc.data.setup
-execute if score #shrink2 uhc.data.setup matches 0 store result storage uhc:settings border_size int 1 run scoreboard players get #shrink2_size_end uhc.data.setup
+execute if score #shrink_1 uhc.data.setup matches 0 store result storage uhc:settings border_size int 1 run scoreboard players get #shrink_1_size_end uhc.data.setup
+execute if score #shrink_2 uhc.data.setup matches 0 store result storage uhc:settings border_size int 1 run scoreboard players get #shrink_2_size_end uhc.data.setup
+execute if score #shrink_3 uhc.data.setup matches 0 store result storage uhc:settings border_size int 1 run scoreboard players get #shrink_3_size_end uhc.data.setup
 
-execute if score #border uhc.data.setup matches 0 store result storage uhc:settings border_length int 1 run scoreboard players get #border_length uhc.data.setup
-execute if score #shrink1 uhc.data.setup matches 0 store result storage uhc:settings border_length int 1 run scoreboard players get #shrink1_length uhc.data.setup
-execute if score #shrink2 uhc.data.setup matches 0 store result storage uhc:settings border_length int 1 run scoreboard players get #shrink2_length uhc.data.setup
+execute if score #shrink_1 uhc.data.setup matches 0 store result storage uhc:settings border_length int 1 run scoreboard players get #shrink_1_length uhc.data.setup
+execute if score #shrink_2 uhc.data.setup matches 0 store result storage uhc:settings border_length int 1 run scoreboard players get #shrink_2_length uhc.data.setup
+execute if score #shrink_3 uhc.data.setup matches 0 store result storage uhc:settings border_length int 1 run scoreboard players get #shrink_3_length uhc.data.setup
 
 execute in minecraft:overworld run function uhc:pre_game/config/wb_shrinks with storage uhc:settings
 execute in minecraft:the_nether run function uhc:pre_game/config/wb_shrinks with storage uhc:settings
 execute in minecraft:the_end run function uhc:pre_game/config/wb_shrinks with storage uhc:settings
 
-execute if score #border uhc.data.setup matches 0 run gamerule doMobSpawning false
+execute if score #shrink_1 uhc.data.setup matches 0 run gamerule doMobSpawning false
 
 ## Annonces
-execute if score #border uhc.data.setup matches 0 run scoreboard players remove #border_size_end uhc.data.setup 2
-execute if score #shrink1 uhc.data.setup matches 0 run scoreboard players remove #shrink1_size_end uhc.data.setup 2
-execute if score #shrink2 uhc.data.setup matches 0 run scoreboard players remove #shrink2_size_end uhc.data.setup 2
+execute if score #shrink_1 uhc.data.setup matches 0 run scoreboard players remove #shrink_1_size_end uhc.data.setup 1
+execute if score #shrink_2 uhc.data.setup matches 0 run scoreboard players remove #shrink_2_size_end uhc.data.setup 1
+execute if score #shrink_3 uhc.data.setup matches 0 run scoreboard players remove #shrink_3_size_end uhc.data.setup 1
 
-execute if score #border uhc.data.setup matches 0 store result storage uhc:settings border_size int 0.5 run scoreboard players get #border_size_end uhc.data.setup
-execute if score #shrink1 uhc.data.setup matches 0 store result storage uhc:settings border_size int 0.5 run scoreboard players get #shrink1_size_end uhc.data.setup
-execute if score #shrink2 uhc.data.setup matches 0 store result storage uhc:settings border_size int 0.5 run scoreboard players get #shrink2_size_end uhc.data.setup
+execute if score #shrink_1 uhc.data.setup matches 0 store result storage uhc:settings border_size int 0.5 run scoreboard players get #shrink_1_size_end uhc.data.setup
+execute if score #shrink_2 uhc.data.setup matches 0 store result storage uhc:settings border_size int 0.5 run scoreboard players get #shrink_2_size_end uhc.data.setup
+execute if score #shrink_3 uhc.data.setup matches 0 store result storage uhc:settings border_size int 0.5 run scoreboard players get #shrink_3_size_end uhc.data.setup
 
-execute if score #border uhc.data.setup matches 0 store result storage uhc:settings border_length int 0.0167 run scoreboard players get #border_length uhc.data.setup
-execute if score #shrink1 uhc.data.setup matches 0 store result storage uhc:settings border_length int 0.0167 run scoreboard players get #shrink1_length uhc.data.setup
-execute if score #shrink2 uhc.data.setup matches 0 store result storage uhc:settings border_length int 0.0167 run scoreboard players get #shrink2_length uhc.data.setup
+execute if score #shrink_1 uhc.data.setup matches 0 store result storage uhc:settings border_length int 0.0167 run scoreboard players get #shrink_1_length uhc.data.setup
+execute if score #shrink_2 uhc.data.setup matches 0 store result storage uhc:settings border_length int 0.0167 run scoreboard players get #shrink_2_length uhc.data.setup
+execute if score #shrink_3 uhc.data.setup matches 0 store result storage uhc:settings border_length int 0.0167 run scoreboard players get #shrink_3_length uhc.data.setup
 
-execute if score #border uhc.data.setup matches 0 run scoreboard players add #border_size_end uhc.data.setup 2
-execute if score #shrink1 uhc.data.setup matches 0 run scoreboard players add #shrink1_size_end uhc.data.setup 2
-execute if score #shrink2 uhc.data.setup matches 0 run scoreboard players add #shrink2_size_end uhc.data.setup 2
+execute if score #shrink_1 uhc.data.setup matches 0 run scoreboard players add #shrink_1_size_end uhc.data.setup 1
+execute if score #shrink_2 uhc.data.setup matches 0 run scoreboard players add #shrink_2_size_end uhc.data.setup 1
+execute if score #shrink_3 uhc.data.setup matches 0 run scoreboard players add #shrink_3_size_end uhc.data.setup 1
 
-execute if score #vanilla uhc.gamemode matches 1 run function uhc:in_game/timer/cooldown with storage uhc:settings
+function uhc:in_game/timer/cooldown with storage uhc:settings
 
 ## Minuteur de modes de jeu
 execute if score #bhc uhc.gamemode matches 1 run function bhc:timer/minute
@@ -67,15 +70,9 @@ execute if score #blood_cycle uhc.scenario matches 1 run function uhc:in_game/sc
 
 ## Réduction de vie forcée
 # Msg FRA
-execute unless score #bhc uhc.gamemode matches 1 if score #lives_start uhc.players.lives matches 3.. if score #live_2 uhc.data.display matches 0 run tellraw @a[scores={uhc.players.lang=1}] [{"text":" Le nombre de vies maximum descend à 2 !","color":"#FF3F3F","bold":false}]
-execute if score #bhc uhc.gamemode matches 1 if score #lives_start uhc.players.lives matches 3.. if score #live_2 uhc.data.display matches 0 run tellraw @a[scores={uhc.players.lang=1}] [{"text":"[","color":"#DFC300","bold":true},{"text":"Bingo","color":"#BF7FFF"},{"text":"UHC","color":"#9F3FFF"},{"text":"]","color":"#DFC300"},{"text":" Le nombre de vies maximum descend à 2 !","color":"#FF3F3F","bold":false}]
-
-execute unless score #bhc uhc.gamemode matches 1 if score #lives_start uhc.players.lives matches 2.. if score #live_1 uhc.data.display matches 0 run tellraw @a[scores={uhc.players.lang=1}] [{"text":" Le nombre de vies maximum descend à 1 !","color":"#FF3F3F","bold":false}]
-execute if score #bhc uhc.gamemode matches 1 if score #lives_start uhc.players.lives matches 2.. if score #live_1 uhc.data.display matches 0 run tellraw @a[scores={uhc.players.lang=1}] [{"text":"[","color":"#DFC300","bold":true},{"text":"Bingo","color":"#BF7FFF"},{"text":"UHC","color":"#9F3FFF"},{"text":"]","color":"#DFC300"},{"text":" Le nombre de vies maximum descend à 1 !","color":"#FF3F3F","bold":false}]
+execute if score #lives_start uhc.players.lives matches 3.. if score #live_2 uhc.data.display matches 0 run tellraw @a[scores={uhc.players.lang=1}] [{"text":"\nLe nombre de vies maximum descend à 2 !","color":"#FF3F3F","bold":false}]
+execute if score #lives_start uhc.players.lives matches 2.. if score #live_1 uhc.data.display matches 0 run tellraw @a[scores={uhc.players.lang=1}] [{"text":"\nLe nombre de vies maximum descend à 1 !\n","color":"#FF3F3F","bold":false}]
 
 # Msg ENG
-execute unless score #bhc uhc.gamemode matches 1 if score #lives_start uhc.players.lives matches 3.. if score #live_2 uhc.data.display matches 0 run tellraw @a[scores={uhc.players.lang=2}] [{"text":" The maximum number of lives drops to 2!","color":"#FF3F3F","bold":false}]
-execute if score #bhc uhc.gamemode matches 1 if score #lives_start uhc.players.lives matches 3.. if score #live_2 uhc.data.display matches 0 run tellraw @a[scores={uhc.players.lang=2}] [{"text":"[","color":"#DFC300","bold":true},{"text":"Bingo","color":"#BF7FFF"},{"text":"UHC","color":"#9F3FFF"},{"text":"]","color":"#DFC300"},{"text":" The maximum number of lives drops to 2!","color":"#FF3F3F","bold":false}]
-
-execute unless score #bhc uhc.gamemode matches 1 if score #lives_start uhc.players.lives matches 2.. if score #live_1 uhc.data.display matches 0 run tellraw @a[scores={uhc.players.lang=2}] [{"text":" The maximum number of lives drops to 1!","color":"#FF3F3F","bold":false}]
-execute if score #bhc uhc.gamemode matches 1 if score #lives_start uhc.players.lives matches 2.. if score #live_1 uhc.data.display matches 0 run tellraw @a[scores={uhc.players.lang=2}] [{"text":"[","color":"#DFC300","bold":true},{"text":"Bingo","color":"#BF7FFF"},{"text":"UHC","color":"#9F3FFF"},{"text":"]","color":"#DFC300"},{"text":" The maximum number of lives drops to 1!","color":"#FF3F3F","bold":false}]
+execute if score #lives_start uhc.players.lives matches 3.. if score #live_2 uhc.data.display matches 0 run tellraw @a[scores={uhc.players.lang=2}] [{"text":"\nThe maximum number of lives drops to 2!","color":"#FF3F3F","bold":false}]
+execute if score #lives_start uhc.players.lives matches 2.. if score #live_1 uhc.data.display matches 0 run tellraw @a[scores={uhc.players.lang=2}] [{"text":"\nThe maximum number of lives drops to 1!","color":"#FF3F3F","bold":false}]

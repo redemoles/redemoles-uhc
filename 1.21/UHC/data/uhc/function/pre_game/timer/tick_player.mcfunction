@@ -30,8 +30,7 @@ title @s[team=13,scores={uhc.players.lang=1}] actionbar [{"text":"Équipe Blanch
 title @s[team=14,scores={uhc.players.lang=1}] actionbar [{"text":"Équipe Gris c.","color":"gray","bold":true}]
 title @s[team=15,scores={uhc.players.lang=1}] actionbar [{"text":"Équipe Gris f.","color":"dark_gray","bold":true}]
 title @s[team=16,scores={uhc.players.lang=1}] actionbar [{"text":"Équipe Noire","color":"black","bold":true}]
-execute if score #bhc uhc.gamemode matches 0 run title @s[tag=uhc.spec,scores={uhc.players.lang=1}] actionbar [{"text":"Choisis ton équipe dans l'inventaire","color":"#3F9FFF","bold":true}]
-execute if score #bhc uhc.gamemode matches 1 run title @s[tag=uhc.spec,scores={uhc.players.lang=1}] actionbar [{"text":"Choisis ton équipe dans l'inventaire","color":"#9F3FFF","bold":true}]
+title @s[tag=uhc.spec,scores={uhc.players.lang=1}] actionbar [{"text":"Choisis ton équipe dans l'inventaire","color":"#3FCFFF","bold":true}]
 # ENG
 title @s[team=01,scores={uhc.players.lang=2}] actionbar [{"text":"Indigo Team","color":"dark_blue","bold":true}]
 title @s[team=02,scores={uhc.players.lang=2}] actionbar [{"text":"Blue Team","color":"blue","bold":true}]
@@ -49,8 +48,7 @@ title @s[team=13,scores={uhc.players.lang=2}] actionbar [{"text":"White Team","c
 title @s[team=14,scores={uhc.players.lang=2}] actionbar [{"text":"L. Gray Team","color":"gray","bold":true}]
 title @s[team=15,scores={uhc.players.lang=2}] actionbar [{"text":"D. Gray Team","color":"dark_gray","bold":true}]
 title @s[team=16,scores={uhc.players.lang=2}] actionbar [{"text":"Black Team","color":"black","bold":true}]
-execute if score #bhc uhc.gamemode matches 0 run title @s[tag=uhc.spec,scores={uhc.players.lang=2}] actionbar [{"text":"Choose your team in your inventory","color":"#3F9FFF","bold":true}]
-execute if score #bhc uhc.gamemode matches 1 run title @s[tag=uhc.spec,scores={uhc.players.lang=2}] actionbar [{"text":"Choose your team in your inventory","color":"#9F3FFF","bold":true}]
+title @s[tag=uhc.spec,scores={uhc.players.lang=2}] actionbar [{"text":"Choose your team in your inventory","color":"#3FCFFF","bold":true}]
 
 # Vérification des spawns
 execute as @s[scores={uhc.spawn.check=0..}] run function uhc:pre_game/world_check/spawns

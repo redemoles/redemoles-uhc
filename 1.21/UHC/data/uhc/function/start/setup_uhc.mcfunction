@@ -22,12 +22,23 @@ execute if score #aic uhc.gamemode matches 3 run function aic:start/
 scoreboard players set #tick_start uhc.data.setup 201
 scoreboard players add #pve uhc.data.setup 1
 scoreboard players add #pvp uhc.data.setup 1
-scoreboard players add #border uhc.data.setup 1
-scoreboard players add #shrink1 uhc.data.setup 1
-scoreboard players add #shrink2 uhc.data.setup 1
+scoreboard players add #shrink_1 uhc.data.setup 1
+scoreboard players add #shrink_2 uhc.data.setup 1
+scoreboard players add #shrink_3 uhc.data.setup 1
 scoreboard players add #live_3 uhc.data.display 1
 scoreboard players add #live_2 uhc.data.display 1
 scoreboard players add #live_1 uhc.data.display 1
+
+## Border Alerte Sonore
+scoreboard players operation #shrink_1_timer_end uhc.data.setup += #shrink_1_length uhc.data.setup
+scoreboard players operation #shrink_2_timer_end uhc.data.setup += #shrink_2_length uhc.data.setup
+scoreboard players operation #shrink_3_timer_end uhc.data.setup += #shrink_3_length uhc.data.setup
+scoreboard players operation #shrink_1_timer_end uhc.data.setup /= #60 uhc.data.numbers
+scoreboard players operation #shrink_2_timer_end uhc.data.setup /= #60 uhc.data.numbers
+scoreboard players operation #shrink_3_timer_end uhc.data.setup /= #60 uhc.data.numbers
+scoreboard players operation #shrink_1_timer_end uhc.data.setup += #shrink_1 uhc.data.setup
+scoreboard players operation #shrink_2_timer_end uhc.data.setup += #shrink_2 uhc.data.setup
+scoreboard players operation #shrink_3_timer_end uhc.data.setup += #shrink_3 uhc.data.setup
 
 ## Nombre de vies
 scoreboard players operation #lives_start uhc.players.lives = #lives uhc.players.lives

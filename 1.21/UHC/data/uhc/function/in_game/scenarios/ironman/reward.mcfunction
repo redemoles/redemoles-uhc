@@ -7,13 +7,13 @@
 # @description		Récompense pour le dernier Ironman
 #
 
-# Msg FRA
-tellraw @a[scores={uhc.players.lang=1},tag=!uhc.ironman] [{"selector":"@s"},{"text":" est Ironman !\n","color":"#FFE73F"}]
-tellraw @s[scores={uhc.players.lang=1}] [{"text":"Tu es le dernier Ironman ! Cela mérite une petite récompense !\n","color":"#FFE73F"}]
+# Message à l'Ironman
+tellraw @s[scores={uhc.players.lang=1}] [{"text":"\nTu es le dernier Ironman ! Cela mérite une petite récompense !","color":"#FFE73F"}]
+tellraw @s[scores={uhc.players.lang=2}] [{"text":"\nYou are the last Ironman! You deserve a little reward!","color":"#FFE73F"}]
 
-# Msg ENG
-tellraw @a[scores={uhc.players.lang=2},tag=!uhc.ironman] [{"selector":"@s"},{"text":" is Ironman !\n","color":"#FFE73F"}]
-tellraw @s[scores={uhc.players.lang=2}] [{"text":"You are the last Ironman! You deserve a little reward!\n","color":"#FFE73F"}]
+# Message aux autrs joueurs
+tellraw @a[scores={uhc.players.lang=1},tag=!uhc.ironman] [{"text":"\n"},{"selector":"@s"},{"text":" est Ironman !","color":"#FFE73F"}]
+tellraw @a[scores={uhc.players.lang=2},tag=!uhc.ironman] [{"text":"\n"},{"selector":"@s"},{"text":" is Ironman !","color":"#FFE73F"}]
 
 give @s golden_apple 2
 

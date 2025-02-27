@@ -4,7 +4,7 @@
 # @within			bhc:scenarios/02/advancements/new_adv
 #
 #
-# @description		Don du dernier succès non complété d'une ligne si FFA
+# @description		Don du dernier succès non complété d'une colonne si FFA
 #
 
 $advancement grant @s only $(namespace):1_$(column)

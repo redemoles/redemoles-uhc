@@ -7,7 +7,7 @@
 # @description		Gamerule pour toutes les dimensions
 #
 
-$execute if score #border uhc.data.setup matches 0 run worldborder set $(border_size) $(border_length)
-$execute if score #shrink1 uhc.data.setup matches 0 run worldborder set $(border_size) $(border_length)
-$execute if score #shrink2 uhc.data.setup matches 0 run worldborder set $(border_size) $(border_length)
-execute if score #shrink1 uhc.data.setup matches 0 run worldborder warning time 30
+$execute if score #shrink_1 uhc.data.setup matches 0 run worldborder set $(border_size) $(border_length)
+$execute if score #shrink_2 uhc.data.setup matches 0 run worldborder set $(border_size) $(border_length)
+$execute if score #shrink_3 uhc.data.setup matches 0 run worldborder set $(border_size) $(border_length)
+execute if score #shrink_2 uhc.data.setup matches 0 run worldborder warning time 30

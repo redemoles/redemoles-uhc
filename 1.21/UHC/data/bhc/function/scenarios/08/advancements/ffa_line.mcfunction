@@ -1,5 +1,5 @@
 
-#> bhc:scenarios/08/dvancements/ffa_line
+#> bhc:scenarios/08/advancements/ffa_line
 #
 # @within			bhc:scenarios/08/advancements/new_adv
 #

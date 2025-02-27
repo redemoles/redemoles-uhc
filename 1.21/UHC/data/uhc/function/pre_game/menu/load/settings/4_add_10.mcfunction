@@ -38,54 +38,54 @@ execute if score @s uhc.menu.host.settings.pvp matches 2 if score #shield_percen
 
 
 # Border - Taille initiale
-execute if score @s uhc.menu.host.settings.border matches 1 run scoreboard players add #border_size_start uhc.data.setup 50
+execute if score @s uhc.menu.host.settings.border matches 1 run scoreboard players add #shrink_1_size_start uhc.data.setup 50
 
 # Meet-up - Taille initiale, Taille finale, Temps début de réduction
-execute if score @s uhc.menu.host.settings.border matches 11 run scoreboard players add #border_size_start uhc.data.setup 50
-execute if score @s uhc.menu.host.settings.border matches 12 run scoreboard players add #border_size_end uhc.data.setup 50
-execute if score @s uhc.menu.host.settings.border matches 13 run scoreboard players add #border uhc.data.setup 10
+execute if score @s uhc.menu.host.settings.border matches 11 run scoreboard players add #shrink_1_size_start uhc.data.setup 50
+execute if score @s uhc.menu.host.settings.border matches 12 run scoreboard players add #shrink_1_size_end uhc.data.setup 50
+execute if score @s uhc.menu.host.settings.border matches 13 run scoreboard players add #shrink_1 uhc.data.setup 10
 
 # Shrink 1 - Taille initiale, Taille finale, Temps début de réduction
-execute if score @s uhc.menu.host.settings.border matches 21 run scoreboard players add #border_size_end uhc.data.setup 50
-execute if score @s uhc.menu.host.settings.border matches 22 run scoreboard players add #shrink1_size_end uhc.data.setup 50
-execute if score @s uhc.menu.host.settings.border matches 23 run scoreboard players add #shrink1 uhc.data.setup 10
+execute if score @s uhc.menu.host.settings.border matches 21 run scoreboard players add #shrink_1_size_end uhc.data.setup 50
+execute if score @s uhc.menu.host.settings.border matches 22 run scoreboard players add #shrink_2_size_end uhc.data.setup 50
+execute if score @s uhc.menu.host.settings.border matches 23 run scoreboard players add #shrink_2 uhc.data.setup 10
 
 # Shrink 2 - Taille initiale, Taille finale, Temps début de réduction
-execute if score @s uhc.menu.host.settings.border matches 31 run scoreboard players add #shrink1_size_end uhc.data.setup 50
-execute if score @s uhc.menu.host.settings.border matches 32 run scoreboard players add #shrink2_size_end uhc.data.setup 50
-execute if score @s uhc.menu.host.settings.border matches 33 run scoreboard players add #shrink2 uhc.data.setup 10
+execute if score @s uhc.menu.host.settings.border matches 31 run scoreboard players add #shrink_2_size_end uhc.data.setup 50
+execute if score @s uhc.menu.host.settings.border matches 32 run scoreboard players add #shrink_3_size_end uhc.data.setup 50
+execute if score @s uhc.menu.host.settings.border matches 33 run scoreboard players add #shrink_3 uhc.data.setup 10
 
 # Meet-up, Shrink 1, Shrink 2
-execute if score @s uhc.menu.host.settings.border matches 1.. if score #border_size_start uhc.data.setup matches 5000.. run scoreboard players set #border_size_start uhc.data.setup 5000
-execute if score @s uhc.menu.host.settings.border matches 1.. if score #border_size_end uhc.data.setup > #border_size_start uhc.data.setup run scoreboard players operation #border_size_end uhc.data.setup = #border_size_start uhc.data.setup
-execute if score @s uhc.menu.host.settings.border matches 1.. if score #shrink1_size_end uhc.data.setup > #border_size_end uhc.data.setup run scoreboard players operation #shrink1_size_end uhc.data.setup = #border_size_end uhc.data.setup
-execute if score @s uhc.menu.host.settings.border matches 1.. if score #shrink2_size_end uhc.data.setup > #shrink1_size_end uhc.data.setup run scoreboard players operation #shrink2_size_end uhc.data.setup = #shrink1_size_end uhc.data.setup
+execute if score @s uhc.menu.host.settings.border matches 1.. if score #shrink_1_size_start uhc.data.setup matches 5000.. run scoreboard players set #shrink_1_size_start uhc.data.setup 5000
+execute if score @s uhc.menu.host.settings.border matches 1.. if score #shrink_1_size_end uhc.data.setup > #shrink_1_size_start uhc.data.setup run scoreboard players operation #shrink_1_size_end uhc.data.setup = #shrink_1_size_start uhc.data.setup
+execute if score @s uhc.menu.host.settings.border matches 1.. if score #shrink_2_size_end uhc.data.setup > #shrink_1_size_end uhc.data.setup run scoreboard players operation #shrink_2_size_end uhc.data.setup = #shrink_1_size_end uhc.data.setup
+execute if score @s uhc.menu.host.settings.border matches 1.. if score #shrink_3_size_end uhc.data.setup > #shrink_2_size_end uhc.data.setup run scoreboard players operation #shrink_3_size_end uhc.data.setup = #shrink_2_size_end uhc.data.setup
 
-execute if score @s uhc.menu.host.settings.border matches 1.. if score #border uhc.data.setup matches 300.. run scoreboard players set #border uhc.data.setup 300
-execute if score @s uhc.menu.host.settings.border matches 1.. if score #shrink1 uhc.data.setup matches 300.. run scoreboard players set #border uhc.data.setup 300
-execute if score @s uhc.menu.host.settings.border matches 1.. if score #shrink2 uhc.data.setup matches 300.. run scoreboard players set #shrink2 uhc.data.setup 300
+execute if score @s uhc.menu.host.settings.border matches 1.. if score #shrink_1 uhc.data.setup matches 300.. run scoreboard players set #shrink_1 uhc.data.setup 300
+execute if score @s uhc.menu.host.settings.border matches 1.. if score #shrink_2 uhc.data.setup matches 300.. run scoreboard players set #shrink_2 uhc.data.setup 300
+execute if score @s uhc.menu.host.settings.border matches 1.. if score #shrink_3 uhc.data.setup matches 300.. run scoreboard players set #shrink_3 uhc.data.setup 300
 
-execute if score @s uhc.menu.host.settings.border matches 1.. if score #shrink1 uhc.data.setup < #border uhc.data.setup run scoreboard players operation #shrink1 uhc.data.setup = #border uhc.data.setup
-execute if score @s uhc.menu.host.settings.border matches 1.. if score #shrink2 uhc.data.setup < #shrink1 uhc.data.setup run scoreboard players operation #shrink2 uhc.data.setup = #shrink1 uhc.data.setup
+execute if score @s uhc.menu.host.settings.border matches 1.. if score #shrink_2 uhc.data.setup < #shrink_1 uhc.data.setup run scoreboard players operation #shrink_2 uhc.data.setup = #shrink_1 uhc.data.setup
+execute if score @s uhc.menu.host.settings.border matches 1.. if score #shrink_3 uhc.data.setup < #shrink_2 uhc.data.setup run scoreboard players operation #shrink_3 uhc.data.setup = #shrink_2 uhc.data.setup
 
 
 # Meet-up - Temps de réduction
-execute if score @s uhc.menu.host.settings.border matches 1.. run scoreboard players operation #temp uhc.data.setup = #shrink1 uhc.data.setup
-execute if score @s uhc.menu.host.settings.border matches 1.. run scoreboard players operation #temp uhc.data.setup -= #border uhc.data.setup
-execute if score @s uhc.menu.host.settings.border matches 14 run scoreboard players add #border_length uhc.data.setup 10
-execute if score @s uhc.menu.host.settings.border matches 1.. if score #border_length uhc.data.setup > #temp uhc.data.setup run scoreboard players operation #border_length uhc.data.setup = #temp uhc.data.setup
+execute if score @s uhc.menu.host.settings.border matches 1.. run scoreboard players operation #temp uhc.data.setup = #shrink_2 uhc.data.setup
+execute if score @s uhc.menu.host.settings.border matches 1.. run scoreboard players operation #temp uhc.data.setup -= #shrink_1 uhc.data.setup
+execute if score @s uhc.menu.host.settings.border matches 14 run scoreboard players add #shrink_1_length uhc.data.setup 10
+execute if score @s uhc.menu.host.settings.border matches 1.. if score #shrink_1_length uhc.data.setup > #temp uhc.data.setup run scoreboard players operation #shrink_1_length uhc.data.setup = #temp uhc.data.setup
 
 
 # Shrink 1 - Temps de réduction
-execute if score @s uhc.menu.host.settings.border matches 1.. run scoreboard players operation #temp uhc.data.setup = #shrink2 uhc.data.setup
-execute if score @s uhc.menu.host.settings.border matches 1.. run scoreboard players operation #temp uhc.data.setup -= #shrink1 uhc.data.setup
-execute if score @s uhc.menu.host.settings.border matches 24 run scoreboard players add #shrink1_length uhc.data.setup 10
-execute if score @s uhc.menu.host.settings.border matches 1.. if score #shrink1_length uhc.data.setup > #temp uhc.data.setup run scoreboard players operation #shrink1_length uhc.data.setup = #temp uhc.data.setup
+execute if score @s uhc.menu.host.settings.border matches 1.. run scoreboard players operation #temp uhc.data.setup = #shrink_3 uhc.data.setup
+execute if score @s uhc.menu.host.settings.border matches 1.. run scoreboard players operation #temp uhc.data.setup -= #shrink_2 uhc.data.setup
+execute if score @s uhc.menu.host.settings.border matches 24 run scoreboard players add #shrink_2_length uhc.data.setup 10
+execute if score @s uhc.menu.host.settings.border matches 1.. if score #shrink_2_length uhc.data.setup > #temp uhc.data.setup run scoreboard players operation #shrink_2_length uhc.data.setup = #temp uhc.data.setup
 
 
 # Shrink 2 - Temps de réduction
 execute if score @s uhc.menu.host.settings.border matches 1.. run scoreboard players set #temp uhc.data.setup 300
-execute if score @s uhc.menu.host.settings.border matches 1.. run scoreboard players operation #temp uhc.data.setup -= #shrink2 uhc.data.setup
-execute if score @s uhc.menu.host.settings.border matches 34 run scoreboard players add #shrink2_length uhc.data.setup 10
-execute if score @s uhc.menu.host.settings.border matches 1.. if score #shrink2_length uhc.data.setup > #temp uhc.data.setup run scoreboard players operation #shrink2_length uhc.data.setup = #temp uhc.data.setup
+execute if score @s uhc.menu.host.settings.border matches 1.. run scoreboard players operation #temp uhc.data.setup -= #shrink_3 uhc.data.setup
+execute if score @s uhc.menu.host.settings.border matches 34 run scoreboard players add #shrink_3_length uhc.data.setup 10
+execute if score @s uhc.menu.host.settings.border matches 1.. if score #shrink_3_length uhc.data.setup > #temp uhc.data.setup run scoreboard players operation #shrink_3_length uhc.data.setup = #temp uhc.data.setup
 

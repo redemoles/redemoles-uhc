@@ -34,19 +34,19 @@ execute if score #aic uhc.gamemode matches 1 run tellraw @a [{"text":"All Items"
 scoreboard players set #pve uhc.data.setup 2
 scoreboard players set #pvp uhc.data.setup 60
 scoreboard players set #minutes aic.data.end_game 240
-scoreboard players set #border uhc.data.setup 1440
-scoreboard players set #shrink1 uhc.data.setup 1440
-scoreboard players set #shrink2 uhc.data.setup 1440
-scoreboard players set #border_length uhc.data.setup 0
-scoreboard players set #shrink1_length uhc.data.setup 0
-scoreboard players set #shrink2_length uhc.data.setup 0
-scoreboard players set #border_size_start uhc.data.setup 20000
-scoreboard players set #border_size_end uhc.data.setup 20000
-scoreboard players set #shrink1_size_end uhc.data.setup 20000
-scoreboard players set #shrink2_size_end uhc.data.setup 20000
-scoreboard players operation #border_length uhc.data.setup *= #60 uhc.data.numbers
-scoreboard players operation #shrink1_length uhc.data.setup *= #60 uhc.data.numbers
-scoreboard players operation #shrink2_length uhc.data.setup *= #60 uhc.data.numbers
+scoreboard players set #shrink_1 uhc.data.setup 1440
+scoreboard players set #shrink_2 uhc.data.setup 1440
+scoreboard players set #shrink_3 uhc.data.setup 1440
+scoreboard players set #shrink_1_length uhc.data.setup 0
+scoreboard players set #shrink_2_length uhc.data.setup 0
+scoreboard players set #shrink_3_length uhc.data.setup 0
+scoreboard players set #shrink_1_size_start uhc.data.setup 20000
+scoreboard players set #shrink_1_size_end uhc.data.setup 20000
+scoreboard players set #shrink_2_size_end uhc.data.setup 20000
+scoreboard players set #shrink_3_size_end uhc.data.setup 20000
+scoreboard players operation #shrink_1_length uhc.data.setup *= #60 uhc.data.numbers
+scoreboard players operation #shrink_2_length uhc.data.setup *= #60 uhc.data.numbers
+scoreboard players operation #shrink_3_length uhc.data.setup *= #60 uhc.data.numbers
 scoreboard players add #minutes aic.data.end_game 1
 
 ## Vies

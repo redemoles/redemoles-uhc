@@ -13,16 +13,13 @@ scoreboard players set #stepa_enabled bhc.data 1
 
 
 
-# Msg FRA
-tellraw @a[scores={uhc.players.lang=1}] [{"text":"[","color":"#DFC300","bold":true},{"text":"Bingo","color":"#BF7FFF"},{"text":"UHC","color":"#9F3FFF"},{"text":"]","color":"#DFC300"},{"text":" Début du Bingo ","color":"#BF7FFF","bold":false},{"text":"Classique\n","color":"#9F3FFF","bold":true}]
-
-# Msg ENG
-tellraw @a[scores={uhc.players.lang=2}] [{"text":"[","color":"#DFC300","bold":true},{"text":"Bingo","color":"#BF7FFF"},{"text":"UHC","color":"#9F3FFF"},{"text":"]","color":"#DFC300"},{"text":" Start of ","color":"#BF7FFF","bold":false},{"text":"Classic","color":"#9F3FFF","bold":true},{"text":" Bingo\n","color":"#BF7FFF","bold":false}]
+tellraw @a[scores={uhc.players.lang=1}] [{"text":"\n[","color":"#FFFFFF","bold":true},{"text":"Bingo","color":"#9F3FFF"},{"text":"UHC","color":"#FFE73F"},{"text":"]","color":"#FFFFFF"},{"text":" Début du ","color":"#FFFFFF","bold":false},{"text":"Bingo Classique\n","color":"#9F3FFF","bold":true}]
+tellraw @a[scores={uhc.players.lang=2}] [{"text":"\n[","color":"#FFFFFF","bold":true},{"text":"Bingo","color":"#9F3FFF"},{"text":"UHC","color":"#FFE73F"},{"text":"]","color":"#FFFFFF"},{"text":" Start of ","color":"#FFFFFF","bold":false},{"text":"Classic Bingo\n","color":"#9F3FFF","bold":true}]
 
 playsound minecraft:entity.experience_orb.pickup master @a ~ ~ ~ 0.5 1 0.5
 
 # Scoreboard d'affichage
-scoreboard objectives setdisplay sidebar bhc.StageA
+scoreboard objectives setdisplay sidebar bhc.StepA
 
 # Reset des succès
 execute as @e[type=marker,tag=UHC] run function bhc:scenarios/01/timer/reset_scores

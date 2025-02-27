@@ -13,4 +13,4 @@ give @s minecraft:diamond 3
 experience add @s 1 levels
 
 # Score personnel
-scoreboard players add @s bhc.StageB.personal 2
+scoreboard players add @s bhc.StepB.personal 2

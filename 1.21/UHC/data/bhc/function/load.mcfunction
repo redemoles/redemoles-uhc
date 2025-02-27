@@ -8,20 +8,20 @@
 #
 
 # Reset tous les scoreboards
-scoreboard objectives remove bhc.StageA.personal
-scoreboard objectives remove bhc.StageB.personal
+scoreboard objectives remove bhc.StepA.personal
+scoreboard objectives remove bhc.StepB.personal
 scoreboard objectives remove bhc.Kills.personal
 scoreboard objectives remove bhc.Death.personal
 scoreboard objectives remove bhc.Total.personal
 
-scoreboard objectives remove bhc.invStageA
-scoreboard objectives remove bhc.invStageB
+scoreboard objectives remove bhc.invStepA
+scoreboard objectives remove bhc.invStepB
 scoreboard objectives remove bhc.invKills
 scoreboard objectives remove bhc.invDeath
 scoreboard objectives remove bhc.invTotal
 
-scoreboard objectives remove bhc.StageA
-scoreboard objectives remove bhc.StageB
+scoreboard objectives remove bhc.StepA
+scoreboard objectives remove bhc.StepB
 scoreboard objectives remove bhc.Kills
 scoreboard objectives remove bhc.Death
 scoreboard objectives remove bhc.Total
@@ -100,20 +100,20 @@ scoreboard objectives remove bhc.ironman
 scoreboard objectives remove bhc.timer
 scoreboard objectives remove bhc.teams.livescount
 
-scoreboard objectives add bhc.StageA.personal dummy
-scoreboard objectives add bhc.StageB.personal dummy
+scoreboard objectives add bhc.StepA.personal dummy
+scoreboard objectives add bhc.StepB.personal dummy
 scoreboard objectives add bhc.Kills.personal dummy
 scoreboard objectives add bhc.Death.personal dummy
 scoreboard objectives add bhc.Total.personal dummy
 
-scoreboard objectives add bhc.invStageA dummy
-scoreboard objectives add bhc.invStageB dummy
+scoreboard objectives add bhc.invStepA dummy
+scoreboard objectives add bhc.invStepB dummy
 scoreboard objectives add bhc.invKills dummy
 scoreboard objectives add bhc.invDeath dummy
 scoreboard objectives add bhc.invTotal dummy
 
-scoreboard objectives add bhc.StageA dummy "Bingo Classique"
-scoreboard objectives add bhc.StageB dummy "Bingo Spécial"
+scoreboard objectives add bhc.StepA dummy "Bingo Classique"
+scoreboard objectives add bhc.StepB dummy "Bingo Spécial"
 scoreboard objectives add bhc.Kills dummy "Kills"
 scoreboard objectives add bhc.Death dummy "Survie"
 scoreboard objectives add bhc.Total dummy "Score Total"

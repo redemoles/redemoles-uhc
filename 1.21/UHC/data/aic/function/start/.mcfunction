@@ -16,5 +16,5 @@ scoreboard objectives setdisplay sidebar aic.team.score
 scoreboard players set #death aic.data.end_dragon -1
 
 ## Message de démarrage
-tellraw @a[scores={uhc.players.lang=1}] [{"text":"[","color":"#DFC300","bold":true},{"text":"All Items ","color":"#3FE7FF"},{"text":"Rush","color":"#2FAFBF"},{"text":"]","color":"#DFC300"},{"text":" La partie vient de démarrer !\n","color":"#FFE73F","bold":true}]
-tellraw @a[scores={uhc.players.lang=2}] [{"text":"[","color":"#DFC300","bold":true},{"text":"All Items ","color":"#3FE7FF"},{"text":"Rush","color":"#2FAFBF"},{"text":"]","color":"#DFC300"},{"text":" Game starting now!\n","color":"#FFE73F","bold":true}]
+tellraw @a[scores={uhc.players.lang=1}] [{"text":"\n[","color":"#DFC300","bold":true},{"text":"All Items ","color":"#3FE7FF"},{"text":"Rush","color":"#2FAFBF"},{"text":"]","color":"#DFC300"},{"text":" La partie vient de démarrer !","color":"#FFE73F","bold":true}]
+tellraw @a[scores={uhc.players.lang=2}] [{"text":"\n[","color":"#DFC300","bold":true},{"text":"All Items ","color":"#3FE7FF"},{"text":"Rush","color":"#2FAFBF"},{"text":"]","color":"#DFC300"},{"text":" Game starting now!","color":"#FFE73F","bold":true}]

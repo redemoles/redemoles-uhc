@@ -13,4 +13,4 @@ give @s minecraft:diamond 4
 experience add @s 2 levels
 
 # Score personnel
-scoreboard players add @s bhc.StageB.personal 5
+scoreboard players add @s bhc.StepB.personal 5
