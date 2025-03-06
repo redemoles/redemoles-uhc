@@ -22,6 +22,6 @@ execute as @e[type=marker,tag=temp] run function uhc:start/game_ffa/id_marker
 scoreboard players set #team uhc.id.teams 0
 
 ## Nombre d'équipes en jeu
-scoreboard players set #TeamSize uhc.data.setup 1
+scoreboard players set #team_size uhc.data.setup 1
 scoreboard players operation #Teams uhc.data.display = #Joueurs uhc.data.display
 scoreboard players operation #Teams uhc.data.setup = #Joueurs uhc.data.display

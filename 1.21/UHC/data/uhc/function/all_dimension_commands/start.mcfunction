@@ -9,7 +9,7 @@
 
 gamerule sendCommandFeedback false
 difficulty normal
-execute unless score #TeamSize uhc.data.setup matches 1 run difficulty hard
+execute unless score #team_size uhc.data.setup matches 1 run difficulty hard
 gamerule doFireTick true
 gamerule doMobSpawning true
 gamerule spectatorsGenerateChunks false

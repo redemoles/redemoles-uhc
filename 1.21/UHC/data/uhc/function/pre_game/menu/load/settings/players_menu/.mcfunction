@@ -61,4 +61,5 @@ function uhc:pre_game/menu/load/settings/players_menu/gamemode/macro_text with s
 
 function uhc:pre_game/menu/load/settings/players_menu/scenarios/macro_text
 
-item replace entity @s inventory.25 with minecraft:white_banner[minecraft:item_name='{"text":"Équipes","color":"#3FE7FF","italic":false}']
+item replace entity @s[scores={uhc.players.lang=1}] inventory.25 with minecraft:white_banner[minecraft:item_name='{"text":"Équipes","color":"#3FE7FF","italic":false}',minecraft:custom_data={Tags:"menu_teams"}]
+item replace entity @s[scores={uhc.players.lang=2}] inventory.25 with minecraft:white_banner[minecraft:item_name='{"text":"Teams","color":"#3FE7FF","italic":false}',minecraft:custom_data={Tags:"menu_teams"}]

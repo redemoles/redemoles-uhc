@@ -10,7 +10,7 @@
 clear @s
 
 tag @s add menu.players
-tag @s add players.menu.teams
+tag @s[tag=!host] add players.menu.teams
 scoreboard players set @s uhc.menu.host.settings 0
 
 
@@ -19,9 +19,9 @@ scoreboard players set @s uhc.menu.host.settings 0
 
 function uhc:pre_game/menu/load/background
 
-scoreboard players set #team uhc.id.teams 7
+scoreboard players set #team uhc.id.teams 99
 function uhc:pre_game/menu/load/teams/gamemode/dru/teams/
-function uhc:pre_game/menu/load/teams/gamemode/dru/teams/07 with storage uhc:team
+function uhc:pre_game/menu/load/teams/gamemode/dru/teams/00 with storage uhc:team
 
 function uhc:pre_game/menu/load/teams/gamemode/dru/spec/
 function uhc:pre_game/menu/load/teams/gamemode/dru/spec/players with storage uhc:team

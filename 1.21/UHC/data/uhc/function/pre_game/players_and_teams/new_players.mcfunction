@@ -12,6 +12,7 @@ tag @s remove uhc.player
 tag @s remove uhc.player.dead
 tag @s remove test
 tag @s remove players.menu.settings
+tag @s remove uhc.random_team.in_a_team
 tag @s add players.menu.teams
 tag @s add uhc.spec
 tag @s remove uhc.scenario.sound_paranoia.on

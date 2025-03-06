@@ -27,6 +27,7 @@ scoreboard players set @s uhc.menu.host.settings.lives 0
 scoreboard players set @s uhc.menu.host.settings.pve 0
 scoreboard players set @s uhc.menu.host.settings.pvp 0
 scoreboard players set @s uhc.menu.host.settings.border 0
+scoreboard players set @s uhc.menu.host.teams_settings 0
 tag @s remove host.menu.start
 tag @s remove host.menu.world_check
 tag @s remove host.menu.world_generation
@@ -41,6 +42,7 @@ item replace entity @s[scores={uhc.players.lang=1}] inventory.6 with minecraft:r
 item replace entity @s[scores={uhc.players.lang=1}] inventory.7 with minecraft:chain_command_block[minecraft:item_name='{"text":"Paramètres","color":"#CFCFCF","italic":false}',minecraft:custom_data={Tags:"menu_settings"}]
 item replace entity @s[scores={uhc.players.lang=1}] inventory.19 with minecraft:book[minecraft:item_name='{"text":"Config Résumé","color":"#3FE7FF","italic":false}',minecraft:custom_data={Tags:"rules_summary"}]
 item replace entity @s[scores={uhc.players.lang=1}] inventory.22 with minecraft:nether_star[minecraft:item_name='{"text":"DÉMARRAGE","color":"#FFE73F","italic":false,"bold":true}',minecraft:custom_data={Tags:"menu_start"}]
+item replace entity @s[scores={uhc.players.lang=1}] inventory.24 with minecraft:light_blue_banner[minecraft:item_name='{"text":"Paramètres des équipes","color":"#3FE7FF","italic":false}',minecraft:custom_data={Tags:"menu_teams_settings"}]
 item replace entity @s[scores={uhc.players.lang=1}] inventory.25 with minecraft:white_banner[minecraft:item_name='{"text":"Équipes","color":"#3FE7FF","italic":false}',minecraft:custom_data={Tags:"menu_teams"}]
 
 item replace entity @s[scores={uhc.players.lang=2}] inventory.1 with minecraft:grass_block[minecraft:item_name='{"text":"World gneration","color":"#3F9F3F","italic":false}',minecraft:custom_data={Tags:"menu_world_generation"}]
@@ -51,4 +53,5 @@ item replace entity @s[scores={uhc.players.lang=2}] inventory.6 with minecraft:r
 item replace entity @s[scores={uhc.players.lang=2}] inventory.7 with minecraft:chain_command_block[minecraft:item_name='{"text":"Settings","color":"#CFCFCF","italic":false}',minecraft:custom_data={Tags:"menu_settings"}]
 item replace entity @s[scores={uhc.players.lang=2}] inventory.19 with minecraft:book[minecraft:item_name='{"text":"Settings summary","color":"#3FE7FF","italic":false}',minecraft:custom_data={Tags:"rules_summary"}]
 item replace entity @s[scores={uhc.players.lang=2}] inventory.22 with minecraft:nether_star[minecraft:item_name='{"text":"START","color":"#FFE73F","italic":false,"bold":true}',minecraft:custom_data={Tags:"menu_start"}]
+item replace entity @s[scores={uhc.players.lang=2}] inventory.24 with minecraft:light_blue_banner[minecraft:item_name='{"text":"Teams settings","color":"#3FE7FF","italic":false}',minecraft:custom_data={Tags:"menu_teams_settings"}]
 item replace entity @s[scores={uhc.players.lang=2}] inventory.25 with minecraft:white_banner[minecraft:item_name='{"text":"Teams","color":"#3FE7FF","italic":false}',minecraft:custom_data={Tags:"menu_teams"}]

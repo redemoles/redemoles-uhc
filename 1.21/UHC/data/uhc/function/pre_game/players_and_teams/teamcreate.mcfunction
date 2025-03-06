@@ -8,6 +8,7 @@
 #
 
 ## Suppression des équipes
+team remove 00
 team remove 01
 team remove 02
 team remove 03
@@ -24,6 +25,23 @@ team remove 13
 team remove 14
 team remove 15
 team remove 16
+team remove 17
+team remove 18
+team remove 19
+team remove 20
+team remove 21
+team remove 22
+team remove 23
+team remove 24
+team remove 25
+team remove 26
+team remove 27
+team remove 28
+team remove 29
+team remove 30
+team remove 31
+team remove 32
+team remove 99
 
 ## Suppression des équipes d'affichage
 team remove sb01
@@ -44,6 +62,7 @@ team remove sb15
 team remove sb16
 
 ## Création des équipes
+team add 00
 team add 01
 team add 02
 team add 03
@@ -60,8 +79,26 @@ team add 13
 team add 14
 team add 15
 team add 16
+team add 17
+team add 18
+team add 19
+team add 20
+team add 21
+team add 22
+team add 23
+team add 24
+team add 25
+team add 26
+team add 27
+team add 28
+team add 29
+team add 30
+team add 31
+team add 32
+team add 99
 
 ## Couleurs des équipes
+team modify 00 color yellow
 team modify 01 color dark_blue
 team modify 02 color blue
 team modify 03 color dark_aqua
@@ -78,6 +115,23 @@ team modify 13 color white
 team modify 14 color gray
 team modify 15 color dark_gray
 team modify 16 color black
+team modify 17 color dark_blue
+team modify 18 color blue
+team modify 19 color dark_aqua
+team modify 20 color aqua
+team modify 21 color dark_green
+team modify 22 color green
+team modify 23 color yellow
+team modify 24 color gold
+team modify 25 color red
+team modify 26 color dark_red
+team modify 27 color dark_purple
+team modify 28 color light_purple
+team modify 29 color white
+team modify 30 color gray
+team modify 31 color dark_gray
+team modify 32 color black
+team modify 99 color yellow
 
 ## Affichage scoreboard des équipes
 team add sb01

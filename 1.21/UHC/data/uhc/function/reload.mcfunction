@@ -143,16 +143,17 @@ scoreboard objectives remove uhc.data.arrow
 scoreboard objectives remove uhc.data.display
 scoreboard objectives remove uhc.data.setup
 scoreboard objectives remove uhc.data.numbers
-scoreboard objectives remove uhc.menu.host.settings.lives
-scoreboard objectives remove uhc.menu.host.settings.pve
-scoreboard objectives remove uhc.menu.host.settings.pvp
-scoreboard objectives remove uhc.menu.host.settings.border
 scoreboard objectives remove uhc.menu.host.gamemode.mls
 scoreboard objectives remove uhc.menu.host.gamemode.mls.moles_per_team
 scoreboard objectives remove uhc.menu.host.gamemode.mls.moles_per_game
 scoreboard objectives remove uhc.menu.host.gamemode.mls.teams_of_moles
 scoreboard objectives remove uhc.menu.host.gamemode.mls.teams_of_supermoles
 scoreboard objectives remove uhc.menu.host.gamemode.mls.supermoles_per_team
+scoreboard objectives remove uhc.menu.host.settings.lives
+scoreboard objectives remove uhc.menu.host.settings.pve
+scoreboard objectives remove uhc.menu.host.settings.pvp
+scoreboard objectives remove uhc.menu.host.settings.border
+scoreboard objectives remove uhc.menu.host.teams_settings
 scoreboard objectives remove uhc.menu.update
 scoreboard objectives remove uhc.meetup.activate
 scoreboard objectives remove uhc.players.online
@@ -194,6 +195,7 @@ scoreboard objectives add uhc.menu.host.settings.lives dummy
 scoreboard objectives add uhc.menu.host.settings.pve dummy
 scoreboard objectives add uhc.menu.host.settings.pvp dummy
 scoreboard objectives add uhc.menu.host.settings.border dummy
+scoreboard objectives add uhc.menu.host.teams_settings dummy
 scoreboard objectives add uhc.menu.update dummy
 scoreboard objectives add uhc.meetup.activate trigger
 scoreboard objectives add uhc.players.online dummy
@@ -311,6 +313,13 @@ scoreboard players set #shrink_2_size_end uhc.data.setup 64
 scoreboard players set #shrink_3 uhc.data.setup 100
 scoreboard players set #shrink_3_length uhc.data.setup 5
 scoreboard players set #shrink_3_size_end uhc.data.setup 32
+
+scoreboard players set #random_team uhc.data.setup 0
+scoreboard players set #random_team_players uhc.data.setup 0
+scoreboard players set #random_team_start uhc.data.setup 1
+scoreboard players set #random_team_tick uhc.data.setup -1
+scoreboard players set #anonyme_team uhc.data.setup 0
+scoreboard players set #team_size uhc.data.setup 4
 
 ## Génération du Lobby
 scoreboard objectives add lobby.data dummy

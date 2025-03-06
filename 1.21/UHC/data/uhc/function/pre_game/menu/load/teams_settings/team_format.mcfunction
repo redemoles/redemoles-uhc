@@ -1,0 +1,12 @@
+
+#> uhc:pre_game/menu/load/teams_settings/team_format
+#
+# @within			uhc:pre_game/menu/selection/
+#
+#
+# @description		Menu
+#
+
+scoreboard players set @s uhc.menu.host.teams_settings 1
+scoreboard players add #random_team uhc.data.setup 1
+execute if score #random_team uhc.data.setup matches 2 run scoreboard players set #random_team uhc.data.setup 0

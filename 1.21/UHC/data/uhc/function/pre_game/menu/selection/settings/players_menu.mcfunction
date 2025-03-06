@@ -52,7 +52,7 @@ function uhc:pre_game/menu/selection/settings/macro_text/_gamemode with storage 
 
 function uhc:pre_game/menu/selection/settings/macro_text/_scenarios
 
-execute if score #bhc uhc.gamemode matches 1 unless items entity @s[scores={uhc.menu.host.settings=1..}] inventory.25 *[minecraft:item_name='{"text":"Équipes","color":"#3FE7FF","italic":false}'] run function uhc:pre_game/menu/load/teams/gamemode/bhc/
-execute if score #dru uhc.gamemode matches 1 unless items entity @s[scores={uhc.menu.host.settings=1..}] inventory.25 *[minecraft:item_name='{"text":"Équipes","color":"#3FE7FF","italic":false}'] run function uhc:pre_game/menu/load/teams/gamemode/dru/
-execute unless score #bhc uhc.gamemode matches 1 unless score #dru uhc.gamemode matches 1 unless items entity @s[scores={uhc.menu.host.settings=1..}] inventory.25 *[minecraft:item_name='{"text":"Équipes","color":"#3FE7FF","italic":false}'] run function uhc:pre_game/menu/load/teams/gamemode/vanilla/
+execute if score #dru uhc.gamemode matches 1 unless items entity @s[scores={uhc.menu.host.settings=1..}] inventory.25 *[minecraft:custom_data={Tags:"menu_teams"}] run function uhc:pre_game/menu/load/teams/gamemode/dru/
+execute unless score #dru uhc.gamemode matches 1 if score #random_team uhc.data.setup matches 0 unless items entity @s[scores={uhc.menu.host.settings=1..}] inventory.25 *[minecraft:custom_data={Tags:"menu_teams"}] run function uhc:pre_game/menu/load/teams/gamemode/vanilla/
+execute unless score #dru uhc.gamemode matches 1 if score #random_team uhc.data.setup matches 1 unless items entity @s[scores={uhc.menu.host.settings=1..}] inventory.25 *[minecraft:custom_data={Tags:"menu_teams"}] run function uhc:pre_game/menu/load/teams/gamemode/vanilla_random/
 execute if entity @s[scores={uhc.menu.host.settings=1..}] run function uhc:pre_game/menu/load/settings/players_menu/

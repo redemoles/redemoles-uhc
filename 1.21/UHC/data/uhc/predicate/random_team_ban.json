@@ -1,0 +1,50 @@
+[
+	{
+	  "condition": "minecraft:entity_scores",
+	  "entity": "this",
+	  "scores": {
+		"uhc.id.random_teams": {
+		  "min": {
+			"type": "minecraft:score",
+			"target": {
+			  "type": "minecraft:fixed",
+			  "name": "#team"
+			},
+			"score": "uhc.id.random_teams"
+		  },
+		  "max": {
+			"type": "minecraft:score",
+			"target": {
+			  "type": "minecraft:fixed",
+			  "name": "#team"
+			},
+			"score": "uhc.id.random_teams"
+		  }
+		}
+	  }
+	},
+	{
+	  "condition": "minecraft:entity_scores",
+	  "entity": "this",
+	  "scores": {
+		"uhc.id.random_teams.ban": {
+		  "min": {
+			"type": "minecraft:score",
+			"target": {
+			  "type": "minecraft:fixed",
+			  "name": "#ban"
+			},
+			"score": "uhc.id.random_teams.ban"
+		  },
+		  "max": {
+			"type": "minecraft:score",
+			"target": {
+			  "type": "minecraft:fixed",
+			  "name": "#ban"
+			},
+			"score": "uhc.id.random_teams.ban"
+		  }
+		}
+	  }
+	}
+  ]

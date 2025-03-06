@@ -7,9 +7,15 @@
 # @description		Formation des équipes
 #
 
+execute store result score #temp uhc.data.setup if entity @a[scores={uhc.id.teams=14}]
+execute if score #temp uhc.data.setup >= #team_size uhc.data.setup run tellraw @s[scores={uhc.players.lang=1}] [{"text":"Équipe complète","color":"#FF3F3F"}]
+execute if score #temp uhc.data.setup >= #team_size uhc.data.setup run tellraw @s[scores={uhc.players.lang=2}] [{"text":"Team full","color":"#FF3F3F"}]
+execute if score #temp uhc.data.setup >= #team_size uhc.data.setup run return fail
+
 tag @s remove uhc.spec
 tag @s add uhc.player
-team join 14 @s
+execute if score #anonyme_team uhc.data.setup matches 0 run team join 14 @s
+execute if score #anonyme_team uhc.data.setup matches 1 run team join 99 @s
 
 tellraw @s[scores={uhc.players.lang=1}] [{"text":"Tu viens de rejoindre l'","color":"#3FE7FF","bold":false},{"text":"Équipe Gris c.","color":"gray","bold":false}]
 tellraw @s[scores={uhc.players.lang=2}] [{"text":"You joined the ","color":"#3FE7FF","bold":false},{"text":"L. Gray Team","color":"gray","bold":false}]
