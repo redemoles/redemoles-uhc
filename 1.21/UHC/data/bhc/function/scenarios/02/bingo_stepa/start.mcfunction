@@ -8,7 +8,7 @@
 #
 
 # Activation du Bingo
-scoreboard players set #bingo_a1_enabled bhc.data 1
+scoreboard players set #bingo_2a_enabled bhc.data 1
 scoreboard players set #stepa_enabled bhc.data 1
 
 tellraw @a[scores={uhc.players.lang=1}] [{"text":"\n[","color":"#FFFFFF","bold":true},{"text":"Bingo","color":"#9F3FFF"},{"text":"UHC","color":"#FFE73F"},{"text":"]","color":"#FFFFFF"},{"text":" Début du ","color":"#FFFFFF","bold":false},{"text":"Bingo Classique A","color":"#9F3FFF","bold":true}]
@@ -23,4 +23,4 @@ scoreboard objectives setdisplay sidebar bhc.StepA
 execute as @e[type=marker,tag=UHC] run function bhc:scenarios/02/timer/reset_scores
 
 # Enregistrement du nombre de lignes et colonnes
-function bingo_a1:load
+function bingo_2a:load

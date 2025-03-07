@@ -8,7 +8,7 @@
 #
 
 # Activation du Bingo
-scoreboard players set #bingo_b1_enabled bhc.data 1
+scoreboard players set #bingo_1b_enabled bhc.data 1
 scoreboard players set #stepb_enabled bhc.data 2
 scoreboard players set #case bhc.case 1000
 scoreboard players set #exhausted bhc.case 3
@@ -25,4 +25,4 @@ scoreboard objectives setdisplay sidebar bhc.StepB
 execute as @e[type=marker,tag=UHC] run function bhc:scenarios/01/timer/reset_scores
 
 # Enregistrement du nombre de lignes et colonnes
-function bingo_b1:load
+function bingo_1b:load

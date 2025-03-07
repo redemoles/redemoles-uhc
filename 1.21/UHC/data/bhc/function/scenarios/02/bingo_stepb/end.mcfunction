@@ -8,7 +8,7 @@
 #
 
 # Désactivation du Bingo
-scoreboard players set #bingo_b1_enabled bhc.data 0
+scoreboard players set #bingo_2b_enabled bhc.data 0
 scoreboard players set #stepb_enabled bhc.data 0
 
 # Msg FRA
