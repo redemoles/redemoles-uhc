@@ -7,5 +7,8 @@
 # @description		Menu
 #
 
-$execute if score @s uhc.menu.host.settings.pvp matches 1.. run item replace entity @s inventory.12 with minecraft:shield[minecraft:item_name='[{"text":"Durabilité des boucliers : ","color":"#CFCFCF","italic":false},$(interpreted_2),{"text":"%","color":"#CFCFCF","italic":false}]',damage=$(durability)]
-$execute if score @s[tag=host] uhc.menu.host.settings.pvp matches 2 run item replace entity @s inventory.22 with minecraft:shield[minecraft:item_name='[{"text":"Durabilité des boucliers : ","color":"#CFCFCF","italic":false},$(interpreted_2),{"text":"%","color":"#CFCFCF","italic":false}]',damage=$(durability)]
+$item replace entity @s[scores={uhc.players.lang=1,uhc.menu.host.settings.pvp=1..}] inventory.12 with minecraft:shield[minecraft:item_name='[{"text":"Durabilité des boucliers : ","color":"#CFCFCF","italic":false},$(interpreted_2),{"text":"%","color":"#CFCFCF","italic":false}]',damage=$(durability),minecraft:custom_data={Tags:"settings_pvp_shield"}]
+$item replace entity @s[scores={uhc.players.lang=1,uhc.menu.host.settings.pvp=2},tag=host] inventory.22 with minecraft:shield[minecraft:item_name='[{"text":"Durabilité des boucliers : ","color":"#CFCFCF","italic":false},$(interpreted_2),{"text":"%","color":"#CFCFCF","italic":false}]',damage=$(durability),minecraft:custom_data={Tags:"settings_pvp_shield"}]
+
+$item replace entity @s[scores={uhc.players.lang=2,uhc.menu.host.settings.pvp=1..}] inventory.12 with minecraft:shield[minecraft:item_name='[{"text":"Shields durability : ","color":"#CFCFCF","italic":false},$(interpreted_2),{"text":"%","color":"#CFCFCF","italic":false}]',damage=$(durability),minecraft:custom_data={Tags:"settings_pvp_shield"}]
+$item replace entity @s[scores={uhc.players.lang=2,uhc.menu.host.settings.pvp=2},tag=host] inventory.22 with minecraft:shield[minecraft:item_name='[{"text":"Shields durability : ","color":"#CFCFCF","italic":false},$(interpreted_2),{"text":"%","color":"#CFCFCF","italic":false}]',damage=$(durability),minecraft:custom_data={Tags:"settings_pvp_shield"}]

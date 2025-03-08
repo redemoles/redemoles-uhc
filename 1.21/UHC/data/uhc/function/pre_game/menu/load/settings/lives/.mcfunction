@@ -7,7 +7,7 @@
 # @description		Menu
 #
 
-scoreboard players set @s uhc.menu.host.settings 2
+scoreboard players set @s[tag=host] uhc.menu.host.settings 2
 scoreboard players set @s uhc.menu.host.settings.lives 1
 scoreboard players set @s uhc.menu.host.settings.pve 0
 scoreboard players set @s uhc.menu.host.settings.pvp 0

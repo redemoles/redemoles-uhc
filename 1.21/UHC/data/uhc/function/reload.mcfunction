@@ -292,7 +292,7 @@ scoreboard players set #lives uhc.players.lives 1
 
 scoreboard players set #shield_percent uhc.data.setup 100
 scoreboard players set #shield uhc.data.setup 336
-scoreboard players set #pvp_mod uhc.data.setup 0
+scoreboard players set #spam_click uhc.data.setup 0
 scoreboard players set #knockback uhc.data.setup 0
 scoreboard players set #fire_flame uhc.data.setup 0
 scoreboard players set #absorption uhc.data.setup 2

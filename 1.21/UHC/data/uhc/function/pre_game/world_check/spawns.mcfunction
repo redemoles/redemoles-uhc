@@ -54,8 +54,11 @@ execute if score @s uhc.spawn.check matches 31 run tp @s 0 300 -96
 ## Téléportations
 execute at @s positioned over world_surface run tp @s ~ ~ ~
 
-execute if score @s uhc.spawn.check matches 0..31 run title @s actionbar [{"text":"Vérification des spawns","color":"#FFE73F","bold":true}]
-execute if score @s uhc.spawn.check matches 32 run title @s actionbar [{"text":"Vérification terminée !","color":"#FFE73F","bold":true}]
+execute if score @s uhc.spawn.check matches 0..31 run title @s[scores={uhc.players.lang=1}] actionbar [{"text":"Vérification des points d'apparition","color":"#FFE73F","bold":true}]
+execute if score @s uhc.spawn.check matches 32 run title @s[scores={uhc.players.lang=1}] actionbar [{"text":"Vérification terminée !","color":"#FFE73F","bold":true}]
+
+execute if score @s uhc.spawn.check matches 0..31 run title @s[scores={uhc.players.lang=2}] actionbar [{"text":"Spawn points check","color":"#FFE73F","bold":true}]
+execute if score @s uhc.spawn.check matches 32 run title @s[scores={uhc.players.lang=2}] actionbar [{"text":"Check completed !","color":"#FFE73F","bold":true}]
 
 execute if score @s uhc.spawn.check matches 32 run gamemode adventure @s
 execute if score @s uhc.spawn.check matches 32 if score #lobby lobby.data matches 0 run tp @s 0 305 0 0 0

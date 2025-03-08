@@ -10,8 +10,8 @@
 # Nbr de vie
 execute if score @s uhc.menu.host.settings.lives matches 1 unless score #lives uhc.players.lives matches 3 run scoreboard players add #lives uhc.players.lives 1
 execute if score @s uhc.menu.host.settings.lives matches 1 if score #lives uhc.players.lives matches 4 run scoreboard players set #live_3 uhc.data.display 0
-execute if score @s uhc.menu.host.settings.lives matches 1 if score #lives uhc.players.lives matches 3 run scoreboard players set #live_2 uhc.data.display 60
-execute if score @s uhc.menu.host.settings.lives matches 1 if score #lives uhc.players.lives matches 2 run scoreboard players set #live_1 uhc.data.display 100
+execute if score @s uhc.menu.host.settings.lives matches 1 if score #lives uhc.players.lives matches 3 run scoreboard players set #live_2 uhc.data.display 0
+execute if score @s uhc.menu.host.settings.lives matches 1 if score #lives uhc.players.lives matches 2 run scoreboard players set #live_1 uhc.data.display 0
 
 # Descente à 2 vies
 execute if score @s uhc.menu.host.settings.lives matches 3 unless score #live_2 uhc.data.display matches 300.. run scoreboard players add #live_2 uhc.data.display 1

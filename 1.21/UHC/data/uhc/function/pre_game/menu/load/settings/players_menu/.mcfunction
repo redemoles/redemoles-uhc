@@ -34,8 +34,8 @@ function uhc:pre_game/menu/load/settings/pve/macro_text with storage uhc:setting
 execute in uhc:sign run function uhc:pre_game/menu/load/settings/pvp/macro_set
 function uhc:pre_game/menu/load/settings/pvp/macro_text with storage uhc:settings
 
-execute if score @s uhc.menu.host.settings.pvp matches 1.. in uhc:sign run function uhc:pre_game/menu/load/settings/pvp/pvp_mod/macro_set
-execute if score @s uhc.menu.host.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/pvp_mod/macro_text with storage uhc:settings
+execute if score @s uhc.menu.host.settings.pvp matches 1.. in uhc:sign run function uhc:pre_game/menu/load/settings/pvp/spam_click/macro_set
+execute if score @s uhc.menu.host.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/spam_click/macro_text with storage uhc:settings
 
 execute if score @s uhc.menu.host.settings.pvp matches 1.. in uhc:sign run function uhc:pre_game/menu/load/settings/pvp/knockback/macro_set
 execute if score @s uhc.menu.host.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/knockback/macro_text with storage uhc:settings

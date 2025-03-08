@@ -7,5 +7,8 @@
 # @description		Menu
 #
 
-$item replace entity @s inventory.1 with minecraft:totem_of_undying[minecraft:item_name='[{"text":"Nombre de vies : ","color":"#FF3FFF","italic":false},$(interpreted_2)]']
-$execute if score @s[tag=host] uhc.menu.host.settings.lives matches 1 run item replace entity @s inventory.22 with minecraft:totem_of_undying[minecraft:item_name='[{"text":"Nombre de vies : ","color":"#FF3FFF","italic":false},$(interpreted_2)]']
+$item replace entity @s[scores={uhc.players.lang=1}] inventory.1 with minecraft:totem_of_undying[minecraft:item_name='[{"text":"Vies","color":"#FF3FFF","italic":false}]',minecraft:lore=['[{"text":"Nombre de vies : ","color":"#FFFFFF","italic":false},$(interpreted_2)]'],minecraft:custom_data={Tags:"settings_lives"}]
+$item replace entity @s[scores={uhc.players.lang=1,uhc.menu.host.settings.lives=1},tag=host] inventory.22 with minecraft:totem_of_undying[minecraft:item_name='[{"text":"Vies","color":"#FF3FFF","italic":false}]',minecraft:lore=['[{"text":"Nombre de vies : ","color":"#FFFFFF","italic":false},$(interpreted_2)]'],minecraft:custom_data={Tags:"settings_lives"}]
+
+$item replace entity @s[scores={uhc.players.lang=2}] inventory.1 with minecraft:totem_of_undying[minecraft:item_name='[{"text":"Lifes","color":"#FF3FFF","italic":false}]',minecraft:lore=['[{"text":"Number of lifes : ","color":"#FFFFFF","italic":false},$(interpreted_2)]'],minecraft:custom_data={Tags:"settings_lives"}]
+$item replace entity @s[scores={uhc.players.lang=2,uhc.menu.host.settings.lives=1},tag=host] inventory.22 with minecraft:totem_of_undying[minecraft:item_name='[{"text":"Lifes","color":"#FF3FFF","italic":false}]',minecraft:lore=['[{"text":"Number of lifes : ","color":"#FFFFFF","italic":false},$(interpreted_2)]'],minecraft:custom_data={Tags:"settings_lives"}]
