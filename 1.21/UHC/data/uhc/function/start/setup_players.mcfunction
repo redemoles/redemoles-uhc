@@ -56,9 +56,6 @@ execute if score #gone_fishing uhc.scenario matches 1 run experience set @a[tag=
 # Sound Paranoia
 execute if score #sound_paranoia uhc.scenario matches 1 as @a[tag=uhc.player] store result score @s uhc.scenario.sound_paranoia.wait run random value 90..450
 
-# Team Health
-execute if score #team_health uhc.scenario matches 1 run scoreboard objectives setdisplay list uhc.scenario.team_health.team
-
 ## Nombre de vie
 scoreboard players set @a[tag=uhc.spec] uhc.players.lives 0
 scoreboard players operation @a[tag=uhc.player] uhc.players.lives = #lives uhc.players.lives

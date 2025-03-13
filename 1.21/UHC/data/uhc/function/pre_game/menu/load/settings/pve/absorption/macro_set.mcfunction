@@ -1,5 +1,5 @@
 
-#> uhc:pre_game/menu/load/settings/pvp/absorption/macro_set
+#> uhc:pre_game/menu/load/settings/pve/absorption/macro_set
 #
 # @within			uhc:pre_game/menu/selection/
 #

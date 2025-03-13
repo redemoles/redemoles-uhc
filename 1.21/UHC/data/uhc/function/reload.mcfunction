@@ -161,6 +161,7 @@ scoreboard objectives remove uhc.players.disconnect
 scoreboard objectives remove uhc.players.tp
 scoreboard objectives remove uhc.players.lives
 scoreboard objectives remove uhc.players.health
+scoreboard objectives remove uhc.players.health.100
 scoreboard objectives remove uhc.players.timer
 scoreboard objectives remove uhc.players.border_alert
 scoreboard objectives remove uhc.players.kills
@@ -203,6 +204,7 @@ scoreboard objectives add uhc.players.disconnect minecraft.custom:minecraft.leav
 scoreboard objectives add uhc.players.tp dummy
 scoreboard objectives add uhc.players.lives dummy
 scoreboard objectives add uhc.players.health health
+scoreboard objectives add uhc.players.health.100 dummy
 scoreboard objectives add uhc.players.timer dummy "Minutes jouées"
 scoreboard objectives add uhc.players.border_alert dummy
 scoreboard objectives add uhc.players.kills playerKillCount "Kills"
@@ -295,7 +297,10 @@ scoreboard players set #shield uhc.data.setup 336
 scoreboard players set #spam_click uhc.data.setup 0
 scoreboard players set #knockback uhc.data.setup 0
 scoreboard players set #fire_flame uhc.data.setup 0
+
 scoreboard players set #absorption uhc.data.setup 2
+scoreboard players add #hp_tab uhc.data.setup 3
+scoreboard players add #hp_name uhc.data.setup 0
 
 scoreboard players set #pve uhc.data.setup 2
 scoreboard players set #pvp uhc.data.setup 40

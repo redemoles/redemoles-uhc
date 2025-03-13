@@ -15,3 +15,6 @@ function uhc:pre_game/menu/load/scenarios/2
 
 execute if score #team_health uhc.scenario matches 0 run tellraw @a [{"text":"Team Health","color":"#FF3F3F","bold":true},{"text":" désactivé","color":"#FF3F3F","bold":false}]
 execute if score #team_health uhc.scenario matches 1 run tellraw @a [{"text":"Team Health","color":"#3FE7FF","bold":true},{"text":" activé","color":"#3FE7FF","bold":false}]
+
+execute if score #team_health uhc.scenario matches 0 unless score #hp_tab uhc.data.setup matches 0 unless score #hp_tab uhc.data.setup matches 2 run scoreboard objectives setdisplay list uhc.players.health
+execute if score #team_health uhc.scenario matches 1 unless score #hp_tab uhc.data.setup matches 0 unless score #hp_tab uhc.data.setup matches 2 run scoreboard objectives setdisplay list uhc.scenario.team_health.team

@@ -45,6 +45,9 @@ execute if score #pve uhc.data.setup matches ..0 run scoreboard players set @s u
 # Respawn
 execute as @s[scores={uhc.timer.respawn=1..}] run function uhc:in_game/players_settings/respawn/cooldown
 
+# Vie en pourcentage
+execute unless score #team_health uhc.scenario matches 1 store result score @s uhc.players.health.100 run data get entity @s Health 5
+
 ## Scenarios
 execute if score #best_pve uhc.scenario matches 1 as @s[tag=uhc.scenario.best_pve] run function uhc:in_game/scenarios/best_pve/tick
 execute if score #biome_paranoia uhc.scenario matches 1 as @s[tag=uhc.player] run function uhc:in_game/scenarios/biome_paranoia/by_colors
@@ -54,7 +57,7 @@ execute if score #blood_diamond uhc.scenario matches 1 as @s[scores={uhc.scenari
 execute if score #blood_diamond uhc.scenario matches 1 as @s[scores={uhc.scenario.blood_diamond.temp=1..}] run function uhc:in_game/scenarios/blood_diamond/reward
 execute if score #go_to_hell uhc.scenario matches 1 run function uhc:in_game/scenarios/go_to_hell/tick
 execute if score #sky_high uhc.scenario matches 1 at @s run function uhc:in_game/scenarios/sky_high/tick
-execute if score #team_health uhc.scenario matches 1 unless score @s uhc.players.health = @s uhc.scenario.team_health.player as @e[type=marker,tag=UHC,predicate=uhc:id_teams] run function uhc:in_game/scenarios/team_health/
+execute if score #team_health uhc.scenario matches 1 unless score @s uhc.players.health = @s uhc.scenario.team_health.player run function uhc:in_game/scenarios/team_health/
 
 ## Border TP
 execute if score #shrink_1 uhc.data.setup matches ..0 as @s[tag=uhc.player] run function uhc:in_game/tp/border/coords

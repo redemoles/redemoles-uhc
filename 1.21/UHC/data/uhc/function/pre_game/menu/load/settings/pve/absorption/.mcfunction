@@ -1,5 +1,5 @@
 
-#> uhc:pre_game/menu/load/settings/pvp/absorption/
+#> uhc:pre_game/menu/load/settings/pve/absorption/
 #
 # @within			uhc:pre_game/menu/selection/
 #
@@ -8,7 +8,7 @@
 #
 
 scoreboard players set @s uhc.menu.host.settings 2
-scoreboard players set @s uhc.menu.host.settings.pvp 3
+scoreboard players set @s uhc.menu.host.settings.pve 2
 
 execute as @s[tag=host] run function uhc:pre_game/menu/load/settings/
 execute as @s[tag=!host] run function uhc:pre_game/menu/load/settings/players_menu/

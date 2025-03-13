@@ -50,6 +50,10 @@ title @s[scores={uhc.id.teams=15,uhc.players.lang=2}] actionbar [{"text":"D. Gra
 title @s[scores={uhc.id.teams=16,uhc.players.lang=2}] actionbar [{"text":"Black Team","color":"black","bold":true}]
 title @s[tag=uhc.spec,scores={uhc.players.lang=2}] actionbar [{"text":"Choose your team in your inventory","color":"#3FCFFF","bold":true}]
 
+# Vie en pourcentage
+execute unless score #team_health uhc.scenario matches 1 store result score @s uhc.players.health.100 run data get entity @s Health 5
+execute if score #team_health uhc.scenario matches 1 run function uhc:in_game/scenarios/team_health/
+
 # Vérification des spawns
 execute as @s[scores={uhc.spawn.check=0..}] run function uhc:pre_game/world_check/spawns
 

@@ -35,7 +35,7 @@ execute if score @s uhc.menu.host.settings.pvp matches 2 unless score #shield_pe
 
 
 # Absorption
-execute if score @s uhc.menu.host.settings.pvp matches 3 unless score #absorption uhc.data.setup matches ..0 run scoreboard players remove #absorption uhc.data.setup 1
+execute if score @s uhc.menu.host.settings.pve matches 2 unless score #absorption uhc.data.setup matches ..0 run scoreboard players remove #absorption uhc.data.setup 1
 
 # Border - Taille initiale
 execute if score @s uhc.menu.host.settings.border matches 1 run scoreboard players remove #shrink_1_size_start uhc.data.setup 2
