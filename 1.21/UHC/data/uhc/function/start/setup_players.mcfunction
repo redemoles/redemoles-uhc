@@ -12,7 +12,8 @@ effect clear @a
 clear @a
 experience set @a 0 levels
 experience set @a 0 points
-gamemode adventure @a
+gamemode adventure @a[tag=uhc.player]
+gamemode spectator @a[tag=uhc.spec]
 
 effect give @a[tag=uhc.player] resistance infinite 4 true
 effect give @a[tag=uhc.player] blindness infinite 4 true

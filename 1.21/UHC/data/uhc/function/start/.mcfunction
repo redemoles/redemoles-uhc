@@ -16,5 +16,5 @@ execute unless score #Minutes uhc.data.display matches 0.. run scoreboard player
 execute unless score #Minutes uhc.data.display matches 0.. run function uhc:pre_game/config/timer
 
 ## Random team
-execute if score #random_team_start uhc.data.setup matches 1 run function uhc:pre_game/players_and_teams/random_team/
-execute if score #random_team_start uhc.data.setup matches 1 if score #anonyme_team uhc.data.setup matches 0 run function uhc:pre_game/players_and_teams/random_team/reveal/instant
+execute if score #random_team_start uhc.data.setup matches 1 if score #random_team uhc.data.setup matches 1 run function uhc:pre_game/players_and_teams/random_team/
+execute if score #random_team_start uhc.data.setup matches 1 if score #random_team uhc.data.setup matches 1 if score #anonyme_team uhc.data.setup matches 0 run function uhc:pre_game/players_and_teams/random_team/reveal/instant

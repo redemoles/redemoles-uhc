@@ -21,11 +21,13 @@ execute if score #lobby lobby.data matches 1.. run tp @s 0 293 0 0 0
 gamemode adventure @s
 clear @s
 title @s reset
-scoreboard players set @s uhc.players.online 1
 scoreboard players set @s uhc.players.lang 1
 scoreboard players set @s uhc.id.random_teams 0
+
+# → L'ordre des commandes doit rester comme ça
 execute as @s[tag=host] run function uhc:pre_game/menu/reload/host_menu
 execute as @s[tag=!host] run function uhc:pre_game/menu/reload/players_menu
+scoreboard players set @s uhc.players.online 1
 
 # Reset effets
 effect clear @s
