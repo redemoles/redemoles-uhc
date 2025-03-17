@@ -203,8 +203,8 @@ scoreboard objectives add uhc.players.online dummy
 scoreboard objectives add uhc.players.disconnect minecraft.custom:minecraft.leave_game
 scoreboard objectives add uhc.players.tp dummy
 scoreboard objectives add uhc.players.lives dummy
-scoreboard objectives add uhc.players.health health
-scoreboard objectives add uhc.players.health.100 dummy
+scoreboard objectives add uhc.players.health health "❤"
+scoreboard objectives add uhc.players.health.100 dummy "%"
 scoreboard objectives add uhc.players.timer dummy "Minutes jouées"
 scoreboard objectives add uhc.players.border_alert dummy
 scoreboard objectives add uhc.players.kills playerKillCount "Kills"

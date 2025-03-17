@@ -51,6 +51,7 @@ title @s[scores={uhc.id.teams=16,uhc.players.lang=2}] actionbar [{"text":"Black 
 title @s[tag=uhc.spec,scores={uhc.players.lang=2}] actionbar [{"text":"Choose your team in your inventory","color":"#3FCFFF","bold":true}]
 
 # Vie en pourcentage
+scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
 execute unless score #team_health uhc.scenario matches 1 store result score @s uhc.players.health.100 run data get entity @s Health 5
 execute if score #team_health uhc.scenario matches 1 run function uhc:in_game/scenarios/team_health/
 
