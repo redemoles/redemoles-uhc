@@ -21,18 +21,6 @@ scoreboard objectives remove uhc.scenario.best_pve.list
 scoreboard objectives remove uhc.scenario.best_pve.reward
 scoreboard objectives remove uhc.scenario.best_pve.tick
 scoreboard objectives remove uhc.biome_paranoia.team
-scoreboard objectives remove uhc.scenario.blood_cycle.coal
-scoreboard objectives remove uhc.scenario.blood_cycle.coal_deepslate
-scoreboard objectives remove uhc.scenario.blood_cycle.iron
-scoreboard objectives remove uhc.scenario.blood_cycle.iron_deepslate
-scoreboard objectives remove uhc.scenario.blood_cycle.gold
-scoreboard objectives remove uhc.scenario.blood_cycle.gold_deepslate
-scoreboard objectives remove uhc.scenario.blood_cycle.lapis
-scoreboard objectives remove uhc.scenario.blood_cycle.lapis_deepslate
-scoreboard objectives remove uhc.scenario.blood_cycle.redstone
-scoreboard objectives remove uhc.scenario.blood_cycle.redstone_deepslate
-scoreboard objectives remove uhc.scenario.blood_cycle.diamond
-scoreboard objectives remove uhc.scenario.blood_cycle.diamond_deepslate
 scoreboard objectives remove uhc.scenario.blood_diamond.damage
 scoreboard objectives remove uhc.scenario.blood_diamond.deepslate
 scoreboard objectives remove uhc.scenario.blood_diamond.mined
@@ -69,6 +57,21 @@ scoreboard objectives remove uhc.scenario.sound_paranoia.sb.warden
 scoreboard objectives remove uhc.scenario.sound_paranoia.sb.water_bucket
 scoreboard objectives remove uhc.scenario.sound_paranoia.sb.wither_skeleton
 scoreboard objectives remove uhc.scenario.sound_paranoia.sb.placed_blocks
+scoreboard objectives remove uhc.players.mined.coal
+scoreboard objectives remove uhc.players.mined.coal_deepslate
+scoreboard objectives remove uhc.players.mined.copper
+scoreboard objectives remove uhc.players.mined.copper_deepslate
+scoreboard objectives remove uhc.players.mined.iron
+scoreboard objectives remove uhc.players.mined.iron_deepslate
+scoreboard objectives remove uhc.players.mined.gold
+scoreboard objectives remove uhc.players.mined.gold_deepslate
+scoreboard objectives remove uhc.players.mined.lapis
+scoreboard objectives remove uhc.players.mined.lapis_deepslate
+scoreboard objectives remove uhc.players.mined.redstone
+scoreboard objectives remove uhc.players.mined.redstone_deepslate
+scoreboard objectives remove uhc.players.mined.diamond
+scoreboard objectives remove uhc.players.mined.diamond_deepslate
+scoreboard objectives remove uhc.players.mined.raw_copper_block
 scoreboard objectives remove bhc.scenario
 scoreboard objectives remove nzl.scenario
 
@@ -80,18 +83,6 @@ scoreboard objectives add uhc.scenario.best_pve.reward dummy
 scoreboard objectives add uhc.scenario.best_pve.tick dummy
 scoreboard objectives add uhc.biome_paranoia.team dummy
 scoreboard objectives add uhc.scenario.blood_cycle dummy
-scoreboard objectives add uhc.scenario.blood_cycle.coal minecraft.mined:minecraft.coal_ore
-scoreboard objectives add uhc.scenario.blood_cycle.coal_deepslate minecraft.mined:minecraft.deepslate_coal_ore
-scoreboard objectives add uhc.scenario.blood_cycle.iron minecraft.mined:minecraft.iron_ore
-scoreboard objectives add uhc.scenario.blood_cycle.iron_deepslate minecraft.mined:minecraft.deepslate_iron_ore
-scoreboard objectives add uhc.scenario.blood_cycle.gold minecraft.mined:minecraft.gold_ore
-scoreboard objectives add uhc.scenario.blood_cycle.gold_deepslate minecraft.mined:minecraft.deepslate_gold_ore
-scoreboard objectives add uhc.scenario.blood_cycle.lapis minecraft.mined:minecraft.lapis_ore
-scoreboard objectives add uhc.scenario.blood_cycle.lapis_deepslate minecraft.mined:minecraft.deepslate_lapis_ore
-scoreboard objectives add uhc.scenario.blood_cycle.redstone minecraft.mined:minecraft.redstone_ore
-scoreboard objectives add uhc.scenario.blood_cycle.redstone_deepslate minecraft.mined:minecraft.deepslate_redstone_ore
-scoreboard objectives add uhc.scenario.blood_cycle.diamond minecraft.mined:minecraft.diamond_ore
-scoreboard objectives add uhc.scenario.blood_cycle.diamond_deepslate minecraft.mined:minecraft.deepslate_diamond_ore
 scoreboard objectives add uhc.scenario.blood_diamond.damage dummy
 scoreboard objectives add uhc.scenario.blood_diamond.deepslate minecraft.mined:minecraft.deepslate_diamond_ore
 scoreboard objectives add uhc.scenario.blood_diamond.mined dummy
@@ -128,6 +119,23 @@ scoreboard objectives add uhc.scenario.sound_paranoia.sb.warden dummy "Warden"
 scoreboard objectives add uhc.scenario.sound_paranoia.sb.water_bucket dummy "Water bucket"
 scoreboard objectives add uhc.scenario.sound_paranoia.sb.wither_skeleton dummy "Wither Skeleton"
 scoreboard objectives add uhc.scenario.sound_paranoia.sb.placed_blocks dummy "Blocks"
+scoreboard objectives add uhc.players.mined.coal minecraft.mined:minecraft.coal_ore
+scoreboard objectives add uhc.players.mined.coal_deepslate minecraft.mined:minecraft.deepslate_coal_ore
+scoreboard objectives add uhc.players.mined.copper minecraft.mined:minecraft.copper_ore
+scoreboard objectives add uhc.players.mined.copper_deepslate minecraft.mined:minecraft.deepslate_copper_ore
+scoreboard objectives add uhc.players.mined.iron minecraft.mined:minecraft.iron_ore
+scoreboard objectives add uhc.players.mined.iron_deepslate minecraft.mined:minecraft.deepslate_iron_ore
+scoreboard objectives add uhc.players.mined.gold minecraft.mined:minecraft.gold_ore
+scoreboard objectives add uhc.players.mined.gold_deepslate minecraft.mined:minecraft.deepslate_gold_ore
+scoreboard objectives add uhc.players.mined.lapis minecraft.mined:minecraft.lapis_ore
+scoreboard objectives add uhc.players.mined.lapis_deepslate minecraft.mined:minecraft.deepslate_lapis_ore
+scoreboard objectives add uhc.players.mined.redstone minecraft.mined:minecraft.redstone_ore
+scoreboard objectives add uhc.players.mined.redstone_deepslate minecraft.mined:minecraft.deepslate_redstone_ore
+scoreboard objectives add uhc.players.mined.diamond minecraft.mined:minecraft.diamond_ore
+scoreboard objectives add uhc.players.mined.diamond_deepslate minecraft.mined:minecraft.deepslate_diamond_ore
+scoreboard objectives add uhc.players.mined.raw_copper_block minecraft.mined:minecraft.raw_copper_block
+scoreboard objectives add uhc.players.mined.raw_gold_block minecraft.mined:minecraft.raw_gold_block
+scoreboard objectives add uhc.players.mined.raw_iron_block minecraft.mined:minecraft.raw_iron_block
 scoreboard objectives add bhc.scenario dummy
 scoreboard objectives add nzl.scenario dummy
 
@@ -279,6 +287,7 @@ scoreboard players set #sky_high uhc.scenario 0
 scoreboard players set #sound_paranoia uhc.scenario 0
 scoreboard players set #team_health uhc.scenario 0
 scoreboard players set #time_bomb uhc.scenario 0
+scoreboard players set #trade_uhc uhc.scenario 0
 
 # Enchanting Setup
 scoreboard players set #100b uhc.scenario.enchanting_setup 0

@@ -26,6 +26,9 @@ execute if score #team_health uhc.scenario matches 1 unless items entity @s[tag=
 execute if score #time_bomb uhc.scenario matches 0 unless items entity @s[tag=host.menu.scenarios.2] inventory.6 *[minecraft:item_name='{"text":"Time Bomb","color":"#FF3F3F","italic":false}'] run function uhc:pre_game/menu/load/scenarios/time_bomb
 execute if score #time_bomb uhc.scenario matches 1 unless items entity @s[tag=host.menu.scenarios.2] inventory.6 *[minecraft:item_name='{"text":"Time Bomb","color":"#3FE7FF","italic":false}'] run function uhc:pre_game/menu/load/scenarios/time_bomb
 
+execute if score #trade_uhc uhc.scenario matches 0 unless items entity @s[tag=host.menu.scenarios.2] inventory.7 *[minecraft:item_name='{"text":"Trade UHC","color":"#FF3F3F","italic":false}'] run function uhc:pre_game/menu/load/scenarios/trade_uhc
+execute if score #trade_uhc uhc.scenario matches 1 unless items entity @s[tag=host.menu.scenarios.2] inventory.7 *[minecraft:item_name='{"text":"Trade UHC","color":"#3FE7FF","italic":false}'] run function uhc:pre_game/menu/load/scenarios/trade_uhc
+
 # Ligne 3
 execute unless items entity @s[tag=host.menu.scenarios.2] inventory.24 *[minecraft:item_name='{"text":"Page 1","color":"#3FE7FF","italic":false}'] run function uhc:pre_game/menu/load/scenarios/1
 execute unless items entity @s[tag=host.menu.scenarios.2] inventory.25 *[minecraft:custom_data={Tags:"close"}] run function uhc:pre_game/menu/load/principal/

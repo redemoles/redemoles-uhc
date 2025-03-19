@@ -58,6 +58,7 @@ execute if score #blood_diamond uhc.scenario matches 1 as @s[scores={uhc.scenari
 execute if score #go_to_hell uhc.scenario matches 1 run function uhc:in_game/scenarios/go_to_hell/tick
 execute if score #sky_high uhc.scenario matches 1 at @s run function uhc:in_game/scenarios/sky_high/tick
 execute if score #team_health uhc.scenario matches 1 unless score @s uhc.players.health = @s uhc.scenario.team_health.player run function uhc:in_game/scenarios/team_health/
+execute if score #trade_uhc uhc.scenario matches 1 unless score #blood_cycle uhc.scenario matches 1 run function uhc:in_game/scenarios/trade_uhc/
 
 ## Border TP
 execute if score #shrink_1 uhc.data.setup matches ..0 as @s[tag=uhc.player] run function uhc:in_game/tp/border/coords

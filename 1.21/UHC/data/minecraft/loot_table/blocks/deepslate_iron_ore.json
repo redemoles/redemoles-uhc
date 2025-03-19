@@ -9,6 +9,7 @@
 			"children": [
 			  {
 				"type": "minecraft:item",
+				"functions": [],
 				"conditions": [
 				  {
 					"condition": "minecraft:value_check",
@@ -38,7 +39,7 @@
 					}
 				  }
 				],
-				"name": "minecraft:diamond_ore"
+				"name": "minecraft:deepslate_iron_ore"
 			  },
 			  {
 				"type": "minecraft:item",
@@ -52,86 +53,55 @@
 					"function": "minecraft:explosion_decay"
 				  }
 				],
-				"name": "minecraft:diamond",
+				"name": "minecraft:raw_iron",
 				"conditions": [
 				  {
-					"condition": "minecraft:any_of",
-					"terms": [
-					  {
-						"condition": "minecraft:value_check",
-						"value": {
-						  "type": "minecraft:score",
-						  "target": {
-							"type": "minecraft:fixed",
-							"name": "#trade_uhc"
-						  },
-						  "score": "uhc.scenario"
-						},
-						"range": 0
-					  }
-					]
-				  }
-				]
-			  },
-			  {
-				"type": "minecraft:item",
-				"name": "minecraft:emerald",
-				"functions": [
-				  {
-					"function": "minecraft:apply_bonus",
-					"enchantment": "minecraft:fortune",
-					"formula": "minecraft:ore_drops"
-				  },
-				  {
-					"function": "minecraft:explosion_decay"
-				  }
-				],
-				"conditions": [
-				  {
-					"condition": "minecraft:any_of",
-					"terms": [
-					  {
-						"condition": "minecraft:value_check",
-						"value": {
-						  "type": "minecraft:score",
-						  "target": {
-							"type": "minecraft:fixed",
-							"name": "#trade_uhc"
-						  },
-						  "score": "uhc.scenario"
-						},
-						"range": 1
-					  }
-					]
+					"condition": "minecraft:value_check",
+					"value": {
+					  "type": "minecraft:score",
+					  "target": {
+						"type": "minecraft:fixed",
+						"name": "#trade_uhc"
+					  },
+					  "score": "uhc.scenario"
+					},
+					"range": 0
 				  }
 				]
 			  }
-			],
-			"conditions": []
-		  }
-		],
-		"rolls": 1,
-		"functions": [],
-		"conditions": [
+			]
+		  },
 		  {
-			"condition": "minecraft:any_of",
-			"terms": [
+			"type": "minecraft:item",
+			"name": "minecraft:emerald",
+			"functions": [
+			  {
+				"function": "minecraft:apply_bonus",
+				"enchantment": "minecraft:fortune",
+				"formula": "minecraft:ore_drops"
+			  },
+			  {
+				"function": "minecraft:explosion_decay"
+			  }
+			],
+			"conditions": [
 			  {
 				"condition": "minecraft:value_check",
 				"value": {
 				  "type": "minecraft:score",
 				  "target": {
 					"type": "minecraft:fixed",
-					"name": "#blood_diamond"
+					"name": "#trade_uhc"
 				  },
 				  "score": "uhc.scenario"
 				},
-				"range": 0
+				"range": 1
 			  }
 			]
 		  }
-		]
+		],
+		"rolls": 1
 	  }
 	],
-	"random_sequence": "minecraft:blocks/diamond_ore"
+	"random_sequence": "minecraft:blocks/deepslate_iron_ore"
   }

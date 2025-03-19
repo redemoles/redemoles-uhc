@@ -1,5 +1,5 @@
 
-#> uhc:in_game/scenarios/blood_diamond/01_08
+#> uhc:in_game/scenarios/blood_diamond/step_safe
 #
 # @within			uhc:in_game/scenarios/blood_diamond/reward
 # @executed			default context

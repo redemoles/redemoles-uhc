@@ -1,0 +1,59 @@
+{
+	"type": "minecraft:block",
+	"pools": [
+	  {
+		"bonus_rolls": 0,
+		"entries": [
+		  {
+			"type": "minecraft:alternatives",
+			"children": [
+			  {
+				"type": "minecraft:item",
+				"name": "minecraft:raw_copper_block",
+				"conditions": [
+				  {
+					"condition": "minecraft:value_check",
+					"value": {
+					  "type": "minecraft:score",
+					  "target": {
+						"type": "minecraft:fixed",
+						"name": "#trade_uhc"
+					  },
+					  "score": "uhc.scenario"
+					},
+					"range": 0
+				  }
+				]
+			  },
+			  {
+				"type": "minecraft:item",
+				"name": "minecraft:emerald_block",
+				"conditions": [
+				  {
+					"condition": "minecraft:value_check",
+					"value": {
+					  "type": "minecraft:score",
+					  "target": {
+						"type": "minecraft:fixed",
+						"name": "#trade_uhc"
+					  },
+					  "score": "uhc.scenario"
+					},
+					"range": 1
+				  }
+				]
+			  }
+			],
+			"conditions": []
+		  }
+		],
+		"conditions": [
+		  {
+			"condition": "minecraft:survives_explosion"
+		  }
+		],
+		"rolls": 1
+	  }
+	],
+	"random_sequence": "minecraft:blocks/raw_copper_block"
+  }
