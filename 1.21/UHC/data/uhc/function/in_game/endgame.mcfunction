@@ -8,7 +8,7 @@
 #
 
 scoreboard players operation #team_alive uhc.id.teams = @s uhc.id.teams
-execute if score #bhc uhc.gamemode matches 1 if score #end uhc.game.end matches 1 as @e[type=marker,tag=UHC,predicate=uhc:id_team_alive] run function bhc:scores_calculator/endgame/detect
+execute if score #bhc uhc.gamemode matches 1 if score #end uhc.game.end matches 1 as @n[type=marker,tag=UHC,predicate=uhc:id_team_alive] run function bhc:scores_calculator/endgame/detect
 execute if score #bhc uhc.gamemode matches 1 if score #end uhc.game.end matches 2 run function bhc:scores_calculator/endgame/message
 execute if score #aic uhc.gamemode matches 1 if score #minutes aic.data.end_game matches 0 run function aic:timer/end_game/annonce
 

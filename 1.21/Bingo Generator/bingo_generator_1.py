@@ -7,7 +7,7 @@ import zipfile
 import os
 
 # Stop program if not executed from the root folder
-if not os.path.exists("bingo_generator_1a.py"):
+if not os.path.exists("bingo_generator_1.py"):
 	print("Please execute this program from its folder.")
 	exit()
 
@@ -168,7 +168,7 @@ import zipfile
 import os
 
 # Stop program if not executed from the root folder
-if not os.path.exists("bingo_generator_1b.py"):
+if not os.path.exists("bingo_generator_1.py"):
 	print("Please execute this program from its folder.")
 	exit()
 

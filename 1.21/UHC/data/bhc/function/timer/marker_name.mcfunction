@@ -23,5 +23,6 @@ $scoreboard players operation $(name) bhc.Death = @s bhc.invDeath
 $scoreboard players operation $(name) bhc.SD = @s bhc.invSD
 $scoreboard players operation $(name) bhc.Death /= #1200 uhc.data.numbers
 
+$scoreboard players operation $(name) bhc.Bingo = @s bhc.invST
 $scoreboard players operation $(name) bhc.Total = @s bhc.invTotal
 $scoreboard players operation $(name) bhc.ST = @s bhc.invST

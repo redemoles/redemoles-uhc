@@ -185,19 +185,19 @@ team modify sb14 prefix "Équipe Gris c."
 team modify sb15 prefix "Équipe Gris f."
 team modify sb16 prefix "Équipe Noire"
 
-team join sb01 §1
-team join sb02 §9
-team join sb03 §3
-team join sb04 §b
-team join sb05 §2
-team join sb06 §a
-team join sb07 §e
-team join sb08 §6
-team join sb09 §c
-team join sb10 §4
-team join sb11 §5
-team join sb12 §d
-team join sb13 §f
-team join sb14 §7
-team join sb15 §8
-team join sb16 §0
+team join sb01 §0§1
+team join sb02 §1§9
+team join sb03 §2§3
+team join sb04 §3§b
+team join sb05 §4§2
+team join sb06 §5§a
+team join sb07 §6§e
+team join sb08 §7§6
+team join sb09 §8§c
+team join sb10 §9§4
+team join sb11 §a§5
+team join sb12 §b§d
+team join sb13 §c§f
+team join sb14 §d§7
+team join sb15 §e§8
+team join sb16 §f§0

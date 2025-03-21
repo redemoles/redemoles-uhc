@@ -8,9 +8,9 @@
 #
 
 
-
-
-
+# Scoreboard d'advancement (+ recréation si partie relancée)
+$execute unless score #$(namespace)_$(line)_$(column) bhc.case matches -1000.. run scoreboard objectives remove bhc.$(namespace)_$(line)_$(column)
+$execute unless score #$(namespace)_$(line)_$(column) bhc.case matches -1000.. run scoreboard objectives add bhc.$(namespace)_$(line)_$(column) dummy
 
 ## Test si premier joueur de l'équipe et de la game à compléter
 # Premier joueur de l'équipe à réaliser la case
@@ -47,7 +47,7 @@ $execute if score @s bhc.column_$(column) = #column bhc.data run scoreboard play
 $execute if score @s bhc.column_$(column) = #column bhc.data unless score #column_$(column) bhc.column matches 1.. run scoreboard players set #total_first_column_$(column) bhc.data 1
 $execute if score @s bhc.column_$(column) = #column bhc.data run scoreboard players add @s bhc.column 1
 $execute if score @s bhc.column_$(column) = #column bhc.data run scoreboard players add #column_$(column) bhc.column 1
-$scoreboard players operation @a[predicate=uhc:id_teams] bhc.column_$(column) = @s bhc.line_$(column)
+$scoreboard players operation @a[predicate=uhc:id_teams] bhc.column_$(column) = @s bhc.column_$(column)
 scoreboard players operation @a[predicate=uhc:id_teams] bhc.column = @s bhc.column
 
 $scoreboard players set @s bhc.$(namespace)_$(line)_$(column) 1

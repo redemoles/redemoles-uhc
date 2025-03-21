@@ -10,9 +10,7 @@
 # Reset tous les scoreboards
 scoreboard objectives remove bhc.StepA.personal
 scoreboard objectives remove bhc.StepB.personal
-scoreboard objectives remove bhc.Kills.personal
-scoreboard objectives remove bhc.Death.personal
-scoreboard objectives remove bhc.Total.personal
+scoreboard objectives remove bhc.Bingo
 
 scoreboard objectives remove bhc.invStepA
 scoreboard objectives remove bhc.invStepB
@@ -102,9 +100,7 @@ scoreboard objectives remove bhc.teams.livescount
 
 scoreboard objectives add bhc.StepA.personal dummy
 scoreboard objectives add bhc.StepB.personal dummy
-scoreboard objectives add bhc.Kills.personal dummy
-scoreboard objectives add bhc.Death.personal dummy
-scoreboard objectives add bhc.Total.personal dummy
+scoreboard objectives add bhc.Bingo dummy "Score Bingos"
 
 scoreboard objectives add bhc.invStepA dummy
 scoreboard objectives add bhc.invStepB dummy

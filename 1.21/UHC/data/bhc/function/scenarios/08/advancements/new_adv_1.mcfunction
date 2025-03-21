@@ -8,9 +8,9 @@
 #
 
 
-
-
-
+# Scoreboard d'advancement (+ recréation si partie relancée)
+$execute unless score #$(namespace)_$(line)_$(column) bhc.case matches -1000.. run scoreboard objectives remove bhc.$(namespace)_$(line)_$(column)
+$execute unless score #$(namespace)_$(line)_$(column) bhc.case matches -1000.. run scoreboard objectives add bhc.$(namespace)_$(line)_$(column) dummy
 
 ## Test si premier joueur de l'équipe et de la game à compléter
 # Premier joueur de l'équipe à réaliser la case
