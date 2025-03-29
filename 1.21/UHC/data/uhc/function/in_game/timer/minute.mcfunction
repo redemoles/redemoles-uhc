@@ -71,7 +71,7 @@ execute if score #blood_cycle uhc.scenario matches 1 run function uhc:in_game/sc
 ## Réduction de vie forcée
 # Msg FRA
 execute if score #lives_start uhc.players.lives matches 3.. if score #live_2 uhc.data.display matches 0 run tellraw @a[scores={uhc.players.lang=1}] [{"text":"\nLe nombre de vies maximum descend à 2 !","color":"#FF3F3F","bold":false}]
-execute if score #lives_start uhc.players.lives matches 2.. if score #live_1 uhc.data.display matches 0 run tellraw @a[scores={uhc.players.lang=1}] [{"text":"\nLe nombre de vies maximum descend à 1 !\n","color":"#FF3F3F","bold":false}]
+execute if score #lives_start uhc.players.lives matches 2.. if score #live_1 uhc.data.display matches 0 run tellraw @a[scores={uhc.players.lang=1}] [{"text":"\nLe nombre de vies maximum descend à 1 !","color":"#FF3F3F","bold":false}]
 
 # Msg ENG
 execute if score #lives_start uhc.players.lives matches 3.. if score #live_2 uhc.data.display matches 0 run tellraw @a[scores={uhc.players.lang=2}] [{"text":"\nThe maximum number of lives drops to 2!","color":"#FF3F3F","bold":false}]

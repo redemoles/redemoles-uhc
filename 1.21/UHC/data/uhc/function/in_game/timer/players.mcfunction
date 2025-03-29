@@ -27,6 +27,10 @@ execute if score #fire_flame uhc.data.setup matches 0 unless score #aic uhc.game
 execute if score #fire_flame uhc.data.setup matches 0 unless score #aic uhc.gamemode matches 1 if items entity @s[tag=!uhc.fire_flame] weapon.offhand *[enchantments~[{enchantments:"minecraft:fire_aspect"}]] run item modify entity @s weapon.offhand {function:"minecraft:set_enchantments",enchantments:{"minecraft:fire_aspect":-255},add:true}
 execute if score #fire_flame uhc.data.setup matches 0 unless score #aic uhc.gamemode matches 1 if items entity @s[tag=!uhc.fire_flame] weapon.offhand *[enchantments~[{enchantments:"minecraft:flame"}]] run item modify entity @s weapon.offhand {function:"minecraft:set_enchantments",enchantments:{"minecraft:flame":-255},add:true}
 
+# PvP Version 1.8
+execute if score #version uhc.data.setup matches 1 run function uhc:in_game/players_settings/version_pvp/1_8
+execute if score #version uhc.data.setup matches 0 run function uhc:in_game/players_settings/version_pvp/1_21
+
 # Absorption
 execute if score #absorption uhc.data.setup matches 1 run scoreboard players set @s[nbt={active_effects:[{id:"minecraft:absorption"}]}] uhc.timer.absorption 121
 execute if score #absorption uhc.data.setup matches 1 run attribute @s[nbt={active_effects:[{id:"minecraft:absorption"}]}] minecraft:max_absorption base set 2
@@ -36,7 +40,9 @@ execute if score #absorption uhc.data.setup matches ..1 run effect clear @s[nbt=
 execute if score #pve uhc.data.setup matches ..0 run scoreboard players set @s[scores={uhc.effect.resistance=-1}] uhc.effect.resistance 0
 effect give @s[scores={uhc.effect.resistance=-1}] minecraft:resistance infinite 4 true
 execute unless score #annonce mls.players.team matches 1 run effect clear @s[scores={uhc.effect.resistance=0}] minecraft:resistance
-effect give @s[scores={uhc.effect.resistance=1}] minecraft:resistance infinite 1 true
+effect give @s[scores={uhc.effect.resistance=1}] minecraft:resistance infinite 0 true
+effect give @s[scores={uhc.effect.resistance=2}] minecraft:resistance infinite 1 true
+effect give @s[scores={uhc.effect.resistance=3}] minecraft:resistance infinite 2 true
 execute unless score #nzl uhc.gamemode matches 1 run effect give @s[tag=uhc.player.night_vision] minecraft:night_vision infinite 0 true
 
 # Effets aux joueurs - Reset pour le prochain tick

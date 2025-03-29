@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": {
+          "type": "minecraft:player"
+        },
+        "item": {
+          "items": "#minecraft:swords",
+          "components": {
+            "minecraft:consumable": {
+              "consume_seconds": 1000000,
+              "animation": "block",
+              "has_consume_particles": false
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "uhc:in_game/players_settings/version_pvp/block"
+  }
+}
