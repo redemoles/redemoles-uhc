@@ -26,8 +26,8 @@ execute if score #aic uhc.gamemode matches 3 run function aic:timer/second
 
 ## Paramètres
 # Absorption
-execute if score #absorption uhc.data.setup matches ..1 as @a[scores={uhc.timer.absorption=1}] run attribute @s minecraft:max_absorption base set 0
-execute if score #absorption uhc.data.setup matches ..1 run scoreboard players remove @a[scores={uhc.timer.absorption=1..}] uhc.timer.absorption 1
+execute as @a[scores={uhc.timer.absorption=1}] run attribute @s minecraft:max_absorption base set 0
+scoreboard players remove @a[scores={uhc.timer.absorption=1..}] uhc.timer.absorption 1
 
 ## Scénarios
 # Sound Paranoia

@@ -12,7 +12,7 @@ scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
 
 ## Message
 # FRA
-execute unless score #bhc uhc.gamemode matches 1 if score #live_2 uhc.data.display matches 0 run tellraw @a[scores={uhc.players.lives=3,uhc.players.lang=1},predicate=uhc:id_teams] [{"text":"Tu as subit une réduction de vie forcée. Voilà ","color":"#FFFFFF","bold":false},{"text":"2 pommes d'or","color":"#FFE73F","bold":false},{"text":" pour compenser.","color":"#FFFFFF","bold":false}]
+execute unless score #bhc uhc.gamemode matches 1 if score #live_2 uhc.data.display matches 0 run tellraw @a[scores={uhc.players.lives=3,uhc.players.lang=1},predicate=uhc:id_teams] [{"text":"Tu as subi une réduction de vie forcée. Voilà ","color":"#FFFFFF","bold":false},{"text":"2 pommes d'or","color":"#FFE73F","bold":false},{"text":" pour compenser.","color":"#FFFFFF","bold":false}]
 execute if score #bhc uhc.gamemode matches 1 if score #live_2 uhc.data.display matches 0 run tellraw @a[scores={uhc.players.lives=3,uhc.players.lang=1},predicate=uhc:id_teams] [{"text":"Bravo ! Tu as tenu jusqu'à la réduction de vie forcée !\nTu obtiens ","color":"#FFFFFF","bold":false},{"text":"2 pommes d'or","color":"#FFE73F","bold":false},{"text":", et ton équipe reçoit ","color":"#FFFFFF","bold":false},{"text":"10","color":"#00DFDF","bold":true},{"text":" points de ","color":"#7FFFFF","bold":false},{"text":"Survie","color":"#3FFFF","bold":true},{"text":".","color":"#7FFFFF","bold":false}]
 
 # ENG

@@ -20,7 +20,13 @@ execute if score #message uhc.data.setup matches 1..4 run tellraw @a[scores={uhc
 execute if score #message uhc.data.setup matches 1..8 run tellraw @s[scores={uhc.players.lang=2}] [{"text":"You have ","color":"#FF3FFF"},{"score":{"name":"@s","objective":"uhc.players.kills"},"color":"#9F3FFF","bold":true},{"text":" kill(s)","color":"#FF3FFF"}]
 
 # Attribution d'effets au killer
-effect give @s minecraft:regeneration 4 1 true
+$execute if score #reward_kill_health uhc.data.setup matches 2.. run effect give @s minecraft:regeneration $(health) 1 true
+execute if score #reward_kill_absorption uhc.data.setup matches 1 run effect give @s minecraft:absorption 10 0 true
+execute if score #reward_kill_absorption uhc.data.setup matches 1 run attribute @s[scores={uhc.players.lives=1..}] max_absorption base set 4
+execute if score #reward_kill_absorption uhc.data.setup matches 1 run scoreboard players set @s[scores={uhc.players.lives=1..}] uhc.timer.absorption 11
+execute if score #reward_kill_absorption uhc.data.setup matches 1 run effect clear @s minecraft:absorption
 experience add @s 2 levels
 execute if score #experienceless uhc.scenario matches 1 run experience add @s 4 levels
 scoreboard players remove @s uhc.reward.kills 1
+
+execute if score #vanilla uhc.gamemode matches 1 if score #message uhc.data.setup matches 0 run scoreboard objectives setdisplay sidebar uhc.players.kills

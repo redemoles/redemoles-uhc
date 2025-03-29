@@ -34,6 +34,10 @@ execute if score @s uhc.menu.host.settings.pvp matches 1 unless score #pvp uhc.d
 execute if score @s uhc.menu.host.settings.pvp matches 2 unless score #shield_percent uhc.data.setup matches 100.. run scoreboard players add #shield_percent uhc.data.setup 1
 
 
+# Régénération après kill
+execute if score @s uhc.menu.host.settings.pvp matches 3 unless score #reward_kill_health uhc.data.setup matches 4.. run scoreboard players add #reward_kill_health uhc.data.setup 1
+
+
 # Absorption
 execute if score @s uhc.menu.host.settings.pve matches 2 unless score #absorption uhc.data.setup matches 2.. run scoreboard players add #absorption uhc.data.setup 1
 

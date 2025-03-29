@@ -6,7 +6,7 @@
 #
 # @description		Génération d'équipes aléatoires
 #
-tellraw @a[tag=host] [{"text":"[Test]","bold":true},{"text":" Entrée function équipe interdite en tant que "},{"selector":"@s"}]
+tellraw @a[tag=host] [{"text":"","bold":false},{"text":"[Test]","bold":true},{"text":" Entrée function équipe interdite en tant que "},{"selector":"@s"}]
 tag @s add uhc.random_team.ban
 execute unless entity @p[tag=!uhc.random_team.ban,tag=uhc.player,scores={uhc.id.random_teams=0,uhc.id.random_teams.ban=1..}] run tag @s add uhc.random_team.ban_list.empty
 execute if entity @s[tag=uhc.random_team.ban_list.empty] unless entity @p[tag=!uhc.random_team.ban,tag=uhc.player,scores={uhc.id.random_teams=0}] run tag @s add uhc.random_team.temp

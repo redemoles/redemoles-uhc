@@ -23,7 +23,7 @@ effect clear @s
 tp @s 0 200 0
 scoreboard players set @s uhc.players.tp 1
 
-execute if score #knockback uhc.data.setup matches 1 run attribute @s minecraft:attack_knockback base set 0.55
-execute if score #spam_click uhc.data.setup matches 1 run attribute @s minecraft:attack_speed base set 1024
+execute if score #version uhc.data.setup matches 1 run attribute @s minecraft:attack_knockback base set 0.55
+execute if score #version uhc.data.setup matches 1 run attribute @s minecraft:attack_speed base set 1024
 
 execute if score #no_fall uhc.scenario matches 1 run attribute @s minecraft:fall_damage_multiplier base set 0.0

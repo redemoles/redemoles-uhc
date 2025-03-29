@@ -263,6 +263,7 @@ scoreboard players set #nzl nzl.scenario -1
 scoreboard players set #prv uhc.gamemode 0
 scoreboard players set #uau uhc.gamemode 0
 scoreboard players set #aic uhc.gamemode 0
+data modify storage uhc:settings gamemode set value '[{"text":"Vanilla","color":"#E7E7E7","bold":true,"italic":false}]'
 
 ## Scénarios
 scoreboard players set #bats uhc.scenario 0
@@ -303,9 +304,11 @@ scoreboard players set #lives uhc.players.lives 1
 
 scoreboard players set #shield_percent uhc.data.setup 100
 scoreboard players set #shield uhc.data.setup 336
-scoreboard players set #spam_click uhc.data.setup 0
-scoreboard players set #knockback uhc.data.setup 0
+scoreboard players set #version uhc.data.setup 0
 scoreboard players set #fire_flame uhc.data.setup 0
+scoreboard players set #reward_kill_health uhc.data.setup 0
+scoreboard players set #reward_kill_absorption uhc.data.setup 0
+execute store result storage uhc:settings reward_kill.health int 1 run scoreboard players get #reward_kill_health uhc.data.setup
 
 scoreboard players set #absorption uhc.data.setup 2
 scoreboard players add #hp_tab uhc.data.setup 3

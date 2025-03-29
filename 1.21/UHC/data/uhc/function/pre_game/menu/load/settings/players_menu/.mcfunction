@@ -31,17 +31,29 @@ execute if score @s uhc.menu.host.settings.lives matches 1.. run function uhc:pr
 execute in uhc:sign run function uhc:pre_game/menu/load/settings/pve/macro_set
 function uhc:pre_game/menu/load/settings/pve/macro_text with storage uhc:settings
 
+
+execute if score @s uhc.menu.host.settings.pve matches 1.. run function uhc:pre_game/menu/load/settings/pve/hp_tab/macro_text
+
+
+execute if score @s uhc.menu.host.settings.pve matches 1.. run function uhc:pre_game/menu/load/settings/pve/hp_name/macro_text
+
+
+execute if score @s uhc.menu.host.settings.pve matches 1.. run function uhc:pre_game/menu/load/settings/pve/absorption/macro_text
+
 execute in uhc:sign run function uhc:pre_game/menu/load/settings/pvp/macro_set
 function uhc:pre_game/menu/load/settings/pvp/macro_text with storage uhc:settings
 
-execute if score @s uhc.menu.host.settings.pvp matches 1.. in uhc:sign run function uhc:pre_game/menu/load/settings/pvp/spam_click/macro_set
-execute if score @s uhc.menu.host.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/spam_click/macro_text with storage uhc:settings
 
-execute if score @s uhc.menu.host.settings.pvp matches 1.. in uhc:sign run function uhc:pre_game/menu/load/settings/pvp/knockback/macro_set
-execute if score @s uhc.menu.host.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/knockback/macro_text with storage uhc:settings
+execute if score @s uhc.menu.host.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/version/macro_text with storage uhc:settings
 
 execute if score @s uhc.menu.host.settings.pvp matches 1.. in uhc:sign run function uhc:pre_game/menu/load/settings/pvp/shield/macro_set
 execute if score @s uhc.menu.host.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/shield/macro_text with storage uhc:settings
+
+
+execute if score @s uhc.menu.host.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/fire_flame/macro_text with storage uhc:settings
+
+execute if score @s uhc.menu.host.settings.pvp matches 1.. in uhc:sign run function uhc:pre_game/menu/load/settings/pvp/no_clean/macro_set
+execute if score @s uhc.menu.host.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/no_clean/macro_text with storage uhc:settings
 
 execute in uhc:sign run function uhc:pre_game/menu/load/settings/border/macro_set
 function uhc:pre_game/menu/load/settings/border/macro_text with storage uhc:settings
