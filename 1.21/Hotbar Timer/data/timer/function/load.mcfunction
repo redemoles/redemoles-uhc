@@ -12,7 +12,7 @@ tag Redemoles add host
 
 # Affichage du message de chargement
 tellraw @a[tag=host] {"text":"[Hotbar Timer Datapack - par Redemoles]","color":"#BF00FF"}
-#tellraw @a[tag=host] {"text":"Clique ici pour démarrer le timer","color":"#DF7FFF","clickEvent":{"action":"run_command","value":"/function timer:start"}}
+#tellraw @a[tag=host] {"text":"Clique ici pour démarrer le timer","color":"#DF7FFF","click_event":{"action":"run_command","command":"/function timer:start"}}
 tellraw @a[tag=host] {"text":""}
 
 scoreboard objectives add timer.data dummy
