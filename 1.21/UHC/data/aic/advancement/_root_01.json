@@ -12,7 +12,7 @@
 			"text": "",
 			"color": "green"
 		},
-		"background": "minecraft:textures/block/sculk_sensor_bottom.png",
+		"background": "minecraft:block/sculk_sensor_bottom",
 		"frame": "challenge",
 		"show_toast": false,
 		"announce_to_chat": false

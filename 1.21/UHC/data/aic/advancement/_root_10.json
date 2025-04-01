@@ -12,7 +12,7 @@
 			"text": "",
 			"color": "green"
 		},
-		"background": "minecraft:textures/block/furnace_top.png",
+		"background": "minecraft:block/furnace_top",
 		"frame": "challenge",
 		"show_toast": false,
 		"announce_to_chat": false,

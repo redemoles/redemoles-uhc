@@ -32,4 +32,4 @@ execute if score #nzl uhc.gamemode matches 1 if score #type_start nzl.data match
 execute unless items entity @s[tag=host.menu.gamemode] inventory.25 *[minecraft:custom_data={Tags:"close"}] run function uhc:pre_game/menu/load/principal/
 execute if entity @s[tag=host.menu.gamemode] run function uhc:pre_game/menu/load/gamemode/
 
-execute if score #vanilla uhc.gamemode matches 1 run data modify storage uhc:settings gamemode set value '[{"text":"Aucun","color":"#E7E7E7","bold":true}]'
+execute if score #vanilla uhc.gamemode matches 1 run data modify storage uhc:settings gamemode set value [{"text":"Aucun","color":"#E7E7E7","bold":true}]

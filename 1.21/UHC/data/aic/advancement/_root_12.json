@@ -12,7 +12,7 @@
 			"text": "",
 			"color": "green"
 		},
-		"background": "minecraft:textures/block/netherite_block.png",
+		"background": "minecraft:block/netherite_block",
 		"frame": "challenge",
 		"show_toast": false,
 		"announce_to_chat": false,

@@ -12,7 +12,7 @@
 			"text": "",
 			"color": "green"
 		},
-		"background": "minecraft:textures/block/blue_concrete_powder.png",
+		"background": "minecraft:block/blue_concrete_powder",
 		"frame": "challenge",
 		"show_toast": false,
 		"announce_to_chat": false,

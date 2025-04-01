@@ -20,7 +20,7 @@ scoreboard players set #prv uhc.gamemode 0
 scoreboard players set #uau uhc.gamemode 0
 scoreboard players set #aic uhc.gamemode 0
 
-data modify storage uhc:settings gamemode set value '[{"text":"Fate","color":"#FFFFFF","bold":true,"italic":false},{"text":" UHC","color":"#E73F3F","bold":true,"italic":false}]'
+data modify storage uhc:settings gamemode set value [{"text":"Fate","color":"#FFFFFF","bold":true,"italic":false},{"text":" UHC","color":"#E73F3F","bold":true,"italic":false}]
 scoreboard players add #fte uhc.gamemode 1
 execute if score #fte uhc.gamemode matches 0 run scoreboard players set #vanilla uhc.gamemode 1
 

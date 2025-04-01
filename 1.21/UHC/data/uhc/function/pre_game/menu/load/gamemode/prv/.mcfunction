@@ -20,7 +20,7 @@ execute if score #prv uhc.gamemode matches 1 run scoreboard players remove #prv 
 scoreboard players set #uau uhc.gamemode 0
 scoreboard players set #aic uhc.gamemode 0
 
-data modify storage uhc:settings gamemode set value '[{"text":"P","color":"#3F3FFF","bold":true},{"text":"R","color":"#FF3F3F","bold":true},{"text":"V","color":"#3FCF3F","bold":true},{"text":" UHC","color":"#FFFFFF","bold":true}]'
+data modify storage uhc:settings gamemode set value [{"text":"P","color":"#3F3FFF","bold":true},{"text":"R","color":"#FF3F3F","bold":true},{"text":"V","color":"#3FCF3F","bold":true},{"text":" UHC","color":"#FFFFFF","bold":true}]
 scoreboard players add #prv uhc.gamemode 1
 execute if score #prv uhc.gamemode matches 0 run scoreboard players set #vanilla uhc.gamemode 1
 

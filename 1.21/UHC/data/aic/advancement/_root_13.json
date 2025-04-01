@@ -12,7 +12,7 @@
 			"text": "",
 			"color": "green"
 		},
-		"background": "minecraft:textures/block/oak_planks.png",
+		"background": "minecraft:block/oak_planks",
 		"frame": "challenge",
 		"show_toast": false,
 		"announce_to_chat": false

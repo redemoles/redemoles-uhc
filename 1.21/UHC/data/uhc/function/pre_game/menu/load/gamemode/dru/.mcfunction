@@ -20,7 +20,7 @@ scoreboard players set #prv uhc.gamemode 0
 scoreboard players set #uau uhc.gamemode 0
 scoreboard players set #aic uhc.gamemode 0
 
-data modify storage uhc:settings gamemode set value '[{"text":"Dragon","color":"#5F2FBF","bold":true,"italic":false},{"text":" UHC","color":"#FFE73F","bold":true,"italic":false}]'
+data modify storage uhc:settings gamemode set value [{"text":"Dragon","color":"#5F2FBF","bold":true,"italic":false},{"text":" UHC","color":"#FFE73F","bold":true,"italic":false}]
 scoreboard players add #dru uhc.gamemode 1
 execute if score #dru uhc.gamemode matches 0 run scoreboard players set #vanilla uhc.gamemode 1
 

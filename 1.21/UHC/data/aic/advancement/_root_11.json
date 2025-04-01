@@ -12,7 +12,7 @@
 			"text": "",
 			"color": "green"
 		},
-		"background": "minecraft:textures/block/beehive_front.png",
+		"background": "minecraft:block/beehive_front",
 		"frame": "challenge",
 		"show_toast": false,
 		"announce_to_chat": false

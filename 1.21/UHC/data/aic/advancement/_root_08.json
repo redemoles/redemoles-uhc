@@ -12,7 +12,7 @@
 			"text": "",
 			"color": "green"
 		},
-		"background": "minecraft:textures/block/terracotta.png",
+		"background": "minecraft:block/terracotta",
 		"frame": "challenge",
 		"show_toast": false,
 		"announce_to_chat": false,

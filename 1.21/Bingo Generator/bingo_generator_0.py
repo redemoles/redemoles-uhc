@@ -22,7 +22,7 @@ icon_item = "minecraft:paper"
 title_color = "#9F3FFF"
 description = ""
 description_color = "green"
-background = "minecraft:textures/block/purple_concrete_powder.png"
+background = "minecraft:block/purple_concrete_powder"
 
 # Create the root advancement
 root_advancement = dict(json.loads(f"""
@@ -154,7 +154,7 @@ scoreboard players remove #column-1 {configuration_objective} 1
 	# Write the pack.mcmeta file
 	zip_file.writestr("pack.mcmeta", f"""{{
 	"pack": {{
-		"pack_format": 61,
+		"pack_format": 71,
 		"description": "Generated Bingo on {datetime.date.today().strftime("%Y/%m/%d")}"
 	}}
 }}""")
@@ -183,7 +183,7 @@ icon_item = "minecraft:paper"
 title_color = "#9F3FFF"
 description = ""
 description_color = "green"
-background = "minecraft:textures/block/purple_concrete_powder.png"
+background = "minecraft:block/purple_concrete_powder"
 
 # Create the root advancement
 root_advancement = dict(json.loads(f"""
@@ -315,7 +315,7 @@ scoreboard players remove #column-1 {configuration_objective} 1
 	# Write the pack.mcmeta file
 	zip_file.writestr("pack.mcmeta", f"""{{
 	"pack": {{
-		"pack_format": 61,
+		"pack_format": 71,
 		"description": "Generated Bingo on {datetime.date.today().strftime("%Y/%m/%d")}"
 	}}
 }}""")

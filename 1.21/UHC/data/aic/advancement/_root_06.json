@@ -12,7 +12,7 @@
 			"text": "",
 			"color": "green"
 		},
-		"background": "minecraft:textures/block/bricks.png",
+		"background": "minecraft:block/bricks",
 		"frame": "challenge",
 		"show_toast": false,
 		"announce_to_chat": false,

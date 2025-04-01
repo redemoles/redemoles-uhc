@@ -23,7 +23,7 @@ $scoreboard players set #total_first_$(namespace)_$(line)_$(column) bhc.data 0
 $execute unless score #$(namespace)_$(line)_$(column) bhc.case matches -1000.. run scoreboard players set #total_first_$(namespace)_$(line)_$(column) bhc.data 1
 #    Si première fois
 $execute if score #total_first_$(namespace)_$(line)_$(column) bhc.data matches 1 if score #stepa_enabled bhc.data matches $(step) run scoreboard players set #$(namespace)_$(line)_$(column) bhc.case 1000
-$execute if score #total_first_$(namespace)_$(line)_$(column) bhc.data matches 1 if score #stepb_enabled bhc.data matches $(step) run scoreboard players operation #$(namespace)_$(line)_$(column) bhc.case = #case bhc.case
+$execute if score #total_first_$(namespace)_$(line)_$(column) bhc.data matches 1 if score #stepb_enabled bhc.data matches $(step) run scoreboard players set #$(namespace)_$(line)_$(column) bhc.case 1000
 
 
 

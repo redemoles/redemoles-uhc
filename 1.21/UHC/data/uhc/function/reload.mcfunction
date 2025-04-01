@@ -263,7 +263,7 @@ scoreboard players set #nzl nzl.scenario -1
 scoreboard players set #prv uhc.gamemode 0
 scoreboard players set #uau uhc.gamemode 0
 scoreboard players set #aic uhc.gamemode 0
-data modify storage uhc:settings gamemode set value '[{"text":"Vanilla","color":"#E7E7E7","bold":true,"italic":false}]'
+data modify storage uhc:settings gamemode set value [{"text":"Vanilla","color":"#E7E7E7","bold":true,"italic":false}]
 
 ## Scénarios
 scoreboard players set #bats uhc.scenario 0
