@@ -46,7 +46,7 @@ $execute if score #stepa_enabled bhc.data matches $(step) run function bhc:scena
 $execute if score #stepb_enabled bhc.data matches $(step) run function bhc:scenarios/08/advancements/stepb with storage $(namespace) $(line)_$(column)
 
 ## Si FFA → Don du dernier succès non complété d'une ligne/colonne
-$execute if score #team_size uhc.data.setup matches 1 if score @s bhc.line_$(line) = #line-1 bhc.data run function bhc:scenarios/08/advancements/ffa_line with storage $(namespace) $(line)_$(column)
-$execute if score #team_size uhc.data.setup matches 1 if score @s bhc.column_$(column) = #column-1 bhc.data run function bhc:scenarios/08/advancements/ffa_column with storage $(namespace) $(line)_$(column)
+#$execute if score #team_size uhc.data.setup matches 1 if score @s bhc.line_$(line) = #line-1 bhc.data run function bhc:scenarios/08/advancements/ffa_line with storage $(namespace) $(line)_$(column)
+#$execute if score #team_size uhc.data.setup matches 1 if score @s bhc.column_$(column) = #column-1 bhc.data run function bhc:scenarios/08/advancements/ffa_column with storage $(namespace) $(line)_$(column)
 
 tag @s remove bhc.new_adv

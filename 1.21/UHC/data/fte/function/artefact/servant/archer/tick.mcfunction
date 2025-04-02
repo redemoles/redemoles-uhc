@@ -13,7 +13,7 @@ execute if score #archer_tick fte.artefact.timer matches 1 if score #archer fte.
 execute if score #archer_tick fte.artefact.timer matches 1 if score #archer fte.artefact.timer matches 1.. run scoreboard players remove #archer_tick fte.artefact.timer 20
 
 # Give d'items et d'effets
-execute as @p[scores={fte.id.teams=1},tag=fte.item.archer] unless items entity @s inventory.* minecraft:bow[enchantments={'minecraft:power':5,'minecraft:infinity':1},minecraft:item_name=[{"text":"Archer","color":"dark_green","bold":true,"underlined":true,"italic":false}],unbreakable={}] run give @s minecraft:bow[enchantments={'minecraft:power':5,'minecraft:infinity':1},minecraft:item_name=[{"text":"Archer","color":"dark_green","bold":true,"underlined":true,"italic":false}],unbreakable={}]
+execute as @p[scores={fte.id.teams=1},tag=fte.item.archer] unless items entity @s inventory.* minecraft:bow[enchantments={"minecraft:power":5,"minecraft:infinity":1},minecraft:item_name=[{"text":"Archer","color":"dark_green","bold":true,"underlined":true,"italic":false}],unbreakable={}] run give @s minecraft:bow[enchantments={"minecraft:power":5,"minecraft:infinity":1},minecraft:item_name=[{"text":"Archer","color":"dark_green","bold":true,"underlined":true,"italic":false}],unbreakable={}]
 execute as @p[scores={fte.id.teams=1},tag=fte.item.archer] unless items entity @s inventory.* minecraft:arrow run give @s minecraft:arrow
 
 

@@ -50,7 +50,7 @@ execute if score #best_pve uhc.scenario matches 1 run function uhc:start/scenari
 execute if score #biome_paranoia uhc.scenario matches 2 as @a[tag=uhc.player] in uhc:sign run function uhc:start/scenarios/biome_paranoia
 
 # Gone Fishing
-execute if score #gone_fishing uhc.scenario matches 1 run give @a[tag=uhc.player] minecraft:fishing_rod[enchantments={luck_of_the_sea:255,lure:3},unbreakable={}]
+execute if score #gone_fishing uhc.scenario matches 1 run give @a[tag=uhc.player] minecraft:fishing_rod[enchantments={"minecraft:luck_of_the_sea":255,"minecraft:lure":3},unbreakable={}]
 execute if score #gone_fishing uhc.scenario matches 1 run give @a[tag=uhc.player] minecraft:anvil 64
 execute if score #gone_fishing uhc.scenario matches 1 run experience set @a[tag=uhc.player] 10000 levels
 

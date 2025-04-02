@@ -13,7 +13,7 @@ execute if score #r_saber_tick fte.artefact.timer matches 1 if score #r_saber ft
 execute if score #r_saber_tick fte.artefact.timer matches 1 if score #r_saber fte.artefact.timer matches 1.. run scoreboard players remove #r_saber_tick fte.artefact.timer 20
 
 # Give d'items et d'effets
-execute as @p[scores={fte.id.teams=7},tag=fte.item.saber] unless items entity @s inventory.* minecraft:diamond_sword[enchantments={'minecraft:sharpness':5},minecraft:item_name=[{"text":"Saber","color":"dark_blue","bold":true,"underlined":true,"italic":false}],unbreakable={}] run give @s minecraft:diamond_sword[enchantments={'minecraft:sharpness':5},minecraft:item_name=[{"text":"Saber","color":"dark_blue","bold":true,"underlined":true,"italic":false}],unbreakable={}]
+execute as @p[scores={fte.id.teams=7},tag=fte.item.saber] unless items entity @s inventory.* minecraft:diamond_sword[enchantments={"minecraft:sharpness":5},minecraft:item_name=[{"text":"Saber","color":"dark_blue","bold":true,"underlined":true,"italic":false}],unbreakable={}] run give @s minecraft:diamond_sword[enchantments={"minecraft:sharpness":5},minecraft:item_name=[{"text":"Saber","color":"dark_blue","bold":true,"underlined":true,"italic":false}],unbreakable={}]
 
 
 

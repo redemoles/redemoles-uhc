@@ -24,5 +24,25 @@ scoreboard objectives setdisplay sidebar bhc.StepB
 # Reset des succès
 execute as @e[type=marker,tag=UHC] run function bhc:scenarios/01/timer/reset_scores
 
+scoreboard players set #line_1 bhc.line 0
+scoreboard players set #line_2 bhc.line 0
+scoreboard players set #line_3 bhc.line 0
+scoreboard players set #line_4 bhc.line 0
+scoreboard players set #line_5 bhc.line 0
+scoreboard players set #line_6 bhc.line 0
+scoreboard players set #line_7 bhc.line 0
+scoreboard players set #line_8 bhc.line 0
+scoreboard players set #line_9 bhc.line 0
+
+scoreboard players set #column_1 bhc.column 0
+scoreboard players set #column_2 bhc.column 0
+scoreboard players set #column_3 bhc.column 0
+scoreboard players set #column_4 bhc.column 0
+scoreboard players set #column_5 bhc.column 0
+scoreboard players set #column_6 bhc.column 0
+scoreboard players set #column_7 bhc.column 0
+scoreboard players set #column_8 bhc.column 0
+scoreboard players set #column_9 bhc.column 0
+
 # Enregistrement du nombre de lignes et colonnes
 function bingo_1b:load

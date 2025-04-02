@@ -42,6 +42,7 @@ scoreboard players set #team uhc.id.teams 0
 ## Nombre d'équipes en jeu
 scoreboard players set #Teams uhc.data.display 0
 execute as @a[tag=uhc.player] run function uhc:start/game_teams/id_teams
+scoreboard players set #team_size uhc.data.setup 1
 scoreboard players operation #team_size uhc.data.setup > @e[type=marker,tag=UHC] uhc.data.setup
 
 scoreboard players operation #Teams uhc.data.setup = #Teams uhc.data.display

@@ -11,22 +11,22 @@
 scoreboard players add #team uhc.id.teams 1
 scoreboard players operation @s uhc.id.teams = #team uhc.id.teams
 
-execute if entity @p[team=01,predicate=uhc:id_teams] run data merge entity @s {Tags:["01","UHC"],CustomName:'{"text":"Équipe Indigo"}',data:{name:"§0§1"}}
-execute if entity @p[team=02,predicate=uhc:id_teams] run data merge entity @s {Tags:["02","UHC"],CustomName:'{"text":"Équipe Bleue"}',data:{name:"§1§9"}}
-execute if entity @p[team=03,predicate=uhc:id_teams] run data merge entity @s {Tags:["03","UHC"],CustomName:'{"text":"Équipe Azur"}',data:{name:"§2§3"}}
-execute if entity @p[team=04,predicate=uhc:id_teams] run data merge entity @s {Tags:["04","UHC"],CustomName:'{"text":"Équipe Cyan"}',data:{name:"§3§b"}}
-execute if entity @p[team=05,predicate=uhc:id_teams] run data merge entity @s {Tags:["05","UHC"],CustomName:'{"text":"Équipe Vert f."}',data:{name:"§4§2"}}
-execute if entity @p[team=06,predicate=uhc:id_teams] run data merge entity @s {Tags:["06","UHC"],CustomName:'{"text":"Équipe Vert c."}',data:{name:"§5§a"}}
-execute if entity @p[team=07,predicate=uhc:id_teams] run data merge entity @s {Tags:["07","UHC"],CustomName:'{"text":"Équipe Jaune"}',data:{name:"§6§e"}}
-execute if entity @p[team=08,predicate=uhc:id_teams] run data merge entity @s {Tags:["08","UHC"],CustomName:'{"text":"Équipe Orange"}',data:{name:"§7§6"}}
-execute if entity @p[team=09,predicate=uhc:id_teams] run data merge entity @s {Tags:["09","UHC"],CustomName:'{"text":"Équipe Rouge c."}',data:{name:"§8§c"}}
-execute if entity @p[team=10,predicate=uhc:id_teams] run data merge entity @s {Tags:["10","UHC"],CustomName:'{"text":"Équipe Rouge f."}',data:{name:"§9§4"}}
-execute if entity @p[team=11,predicate=uhc:id_teams] run data merge entity @s {Tags:["11","UHC"],CustomName:'{"text":"Équipe Violette"}',data:{name:"§a§5"}}
-execute if entity @p[team=12,predicate=uhc:id_teams] run data merge entity @s {Tags:["12","UHC"],CustomName:'{"text":"Équipe Rose"}',data:{name:"§b§d"}}
-execute if entity @p[team=13,predicate=uhc:id_teams] run data merge entity @s {Tags:["13","UHC"],CustomName:'{"text":"Équipe Blanche"}',data:{name:"§c§f"}}
-execute if entity @p[team=14,predicate=uhc:id_teams] run data merge entity @s {Tags:["14","UHC"],CustomName:'{"text":"Équipe Gris c."}',data:{name:"§d§7"}}
-execute if entity @p[team=15,predicate=uhc:id_teams] run data merge entity @s {Tags:["15","UHC"],CustomName:'{"text":"Équipe Gris f."}',data:{name:"§e§8"}}
-execute if entity @p[team=16,predicate=uhc:id_teams] run data merge entity @s {Tags:["16","UHC"],CustomName:'{"text":"Équipe Noire"}',data:{name:"§f§0"}}
+execute if entity @p[team=01,predicate=uhc:id_teams] run data merge entity @s {Tags:["01","UHC"],CustomName:[{"text":"Équipe Indigo"}],data:{name:"§0§1"}}
+execute if entity @p[team=02,predicate=uhc:id_teams] run data merge entity @s {Tags:["02","UHC"],CustomName:[{"text":"Équipe Bleue"}],data:{name:"§1§9"}}
+execute if entity @p[team=03,predicate=uhc:id_teams] run data merge entity @s {Tags:["03","UHC"],CustomName:[{"text":"Équipe Azur"}],data:{name:"§2§3"}}
+execute if entity @p[team=04,predicate=uhc:id_teams] run data merge entity @s {Tags:["04","UHC"],CustomName:[{"text":"Équipe Cyan"}],data:{name:"§3§b"}}
+execute if entity @p[team=05,predicate=uhc:id_teams] run data merge entity @s {Tags:["05","UHC"],CustomName:[{"text":"Équipe Vert f."}],data:{name:"§4§2"}}
+execute if entity @p[team=06,predicate=uhc:id_teams] run data merge entity @s {Tags:["06","UHC"],CustomName:[{"text":"Équipe Vert c."}],data:{name:"§5§a"}}
+execute if entity @p[team=07,predicate=uhc:id_teams] run data merge entity @s {Tags:["07","UHC"],CustomName:[{"text":"Équipe Jaune"}],data:{name:"§6§e"}}
+execute if entity @p[team=08,predicate=uhc:id_teams] run data merge entity @s {Tags:["08","UHC"],CustomName:[{"text":"Équipe Orange"}],data:{name:"§7§6"}}
+execute if entity @p[team=09,predicate=uhc:id_teams] run data merge entity @s {Tags:["09","UHC"],CustomName:[{"text":"Équipe Rouge c."}],data:{name:"§8§c"}}
+execute if entity @p[team=10,predicate=uhc:id_teams] run data merge entity @s {Tags:["10","UHC"],CustomName:[{"text":"Équipe Rouge f."}],data:{name:"§9§4"}}
+execute if entity @p[team=11,predicate=uhc:id_teams] run data merge entity @s {Tags:["11","UHC"],CustomName:[{"text":"Équipe Violette"}],data:{name:"§a§5"}}
+execute if entity @p[team=12,predicate=uhc:id_teams] run data merge entity @s {Tags:["12","UHC"],CustomName:[{"text":"Équipe Rose"}],data:{name:"§b§d"}}
+execute if entity @p[team=13,predicate=uhc:id_teams] run data merge entity @s {Tags:["13","UHC"],CustomName:[{"text":"Équipe Blanche"}],data:{name:"§c§f"}}
+execute if entity @p[team=14,predicate=uhc:id_teams] run data merge entity @s {Tags:["14","UHC"],CustomName:[{"text":"Équipe Gris c."}],data:{name:"§d§7"}}
+execute if entity @p[team=15,predicate=uhc:id_teams] run data merge entity @s {Tags:["15","UHC"],CustomName:[{"text":"Équipe Gris f."}],data:{name:"§e§8"}}
+execute if entity @p[team=16,predicate=uhc:id_teams] run data merge entity @s {Tags:["16","UHC"],CustomName:[{"text":"Équipe Noire"}],data:{name:"§f§0"}}
 
 # Team join des markers
 team join 01 @s[tag=01]

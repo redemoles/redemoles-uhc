@@ -12,7 +12,7 @@ execute at @s run tag @r[distance=0.1..,tag=uhc.player] add uhc.blood_diamond.re
 execute if score #random uhc.scenario.blood_diamond.temp matches 1..25 run damage @s 1
 execute if score #random uhc.scenario.blood_diamond.temp matches 26..50 run give @s gold_ingot
 execute if score #random uhc.scenario.blood_diamond.temp matches 51..75 run give @s emerald
-execute if score #random uhc.scenario.blood_diamond.temp matches 76..100 at @s run give @p[tag=uhc.blood_diamond.receive] emerald
+execute if score #random uhc.scenario.blood_diamond.temp matches 76..100 run give @p[tag=uhc.blood_diamond.receive] emerald
 
 # Msg FRA
 $execute if score #random uhc.scenario.blood_diamond.temp matches 1..25 run tellraw @s[scores={uhc.players.lang=1}] [{"text":"Blood Diamond ($(mined)/16) >","color":"#FFE73F","bold":true},{"text":" -1 PV (25%)","color":"#FF3F3F","bold":false}]
