@@ -8,7 +8,7 @@
 #
 
 ## Chargement du Lobby
-execute if score #load lobby.data matches 0 run function lobby:auto/load
+execute if score #load lobby.data matches 0 in uhc:lobby run function lobby:load
 
 ## Joueurs
 execute as @a run function uhc:pre_game/timer/tick_player

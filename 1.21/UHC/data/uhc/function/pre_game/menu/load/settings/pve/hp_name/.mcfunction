@@ -16,3 +16,6 @@ execute as @s[tag=!host] run function uhc:pre_game/menu/load/settings/players_me
 execute if score #hp_name uhc.data.setup matches 0 run scoreboard objectives setdisplay below_name
 execute if score #hp_name uhc.data.setup matches 1 run scoreboard objectives setdisplay below_name uhc.players.health
 execute if score #hp_name uhc.data.setup matches 2 run scoreboard objectives setdisplay below_name uhc.players.health.100
+
+execute if score #hp_tab uhc.data.setup matches 2 run scoreboard players add #hp_100 uhc.data.setup 1
+execute if score #hp_tab uhc.data.setup matches 0 run scoreboard players remove #hp_100 uhc.data.setup 1

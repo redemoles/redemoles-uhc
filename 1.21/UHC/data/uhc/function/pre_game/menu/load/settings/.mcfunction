@@ -19,16 +19,16 @@ execute unless score @s uhc.menu.host.settings matches 1.. run scoreboard player
 
 function uhc:pre_game/menu/load/background
 
-execute in uhc:sign run function uhc:pre_game/menu/load/settings/lives/macro_set
+execute in uhc:lobby run function uhc:pre_game/menu/load/settings/lives/macro_set
 function uhc:pre_game/menu/load/settings/lives/macro_text with storage uhc:settings
 
-execute if score @s uhc.menu.host.settings.lives matches 1.. in uhc:sign run function uhc:pre_game/menu/load/settings/lives/live_1/macro_set
+execute if score @s uhc.menu.host.settings.lives matches 1.. in uhc:lobby run function uhc:pre_game/menu/load/settings/lives/live_1/macro_set
 execute if score @s uhc.menu.host.settings.lives matches 1.. run function uhc:pre_game/menu/load/settings/lives/live_1/macro_text with storage uhc:settings
 
-execute if score @s uhc.menu.host.settings.lives matches 1.. in uhc:sign run function uhc:pre_game/menu/load/settings/lives/live_2/macro_set
+execute if score @s uhc.menu.host.settings.lives matches 1.. in uhc:lobby run function uhc:pre_game/menu/load/settings/lives/live_2/macro_set
 execute if score @s uhc.menu.host.settings.lives matches 1.. run function uhc:pre_game/menu/load/settings/lives/live_2/macro_text with storage uhc:settings
 
-execute in uhc:sign run function uhc:pre_game/menu/load/settings/pve/macro_set
+execute in uhc:lobby run function uhc:pre_game/menu/load/settings/pve/macro_set
 function uhc:pre_game/menu/load/settings/pve/macro_text with storage uhc:settings
 
 
@@ -40,31 +40,31 @@ execute if score @s uhc.menu.host.settings.pve matches 1.. run function uhc:pre_
 
 execute if score @s uhc.menu.host.settings.pve matches 1.. run function uhc:pre_game/menu/load/settings/pve/absorption/macro_text
 
-execute in uhc:sign run function uhc:pre_game/menu/load/settings/pvp/macro_set
+execute in uhc:lobby run function uhc:pre_game/menu/load/settings/pvp/macro_set
 function uhc:pre_game/menu/load/settings/pvp/macro_text with storage uhc:settings
 
 
 execute if score @s uhc.menu.host.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/version/macro_text
 
-execute if score @s uhc.menu.host.settings.pvp matches 1.. in uhc:sign run function uhc:pre_game/menu/load/settings/pvp/shield/macro_set
+execute if score @s uhc.menu.host.settings.pvp matches 1.. in uhc:lobby run function uhc:pre_game/menu/load/settings/pvp/shield/macro_set
 execute if score @s uhc.menu.host.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/shield/macro_text with storage uhc:settings
 
 
 execute if score @s uhc.menu.host.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/fire_flame/macro_text
 
-execute if score @s uhc.menu.host.settings.pvp matches 1.. in uhc:sign run function uhc:pre_game/menu/load/settings/pvp/no_clean/macro_set
+execute if score @s uhc.menu.host.settings.pvp matches 1.. in uhc:lobby run function uhc:pre_game/menu/load/settings/pvp/no_clean/macro_set
 execute if score @s uhc.menu.host.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/no_clean/macro_text with storage uhc:settings
 
-execute in uhc:sign run function uhc:pre_game/menu/load/settings/border/macro_set
+execute in uhc:lobby run function uhc:pre_game/menu/load/settings/border/macro_set
 function uhc:pre_game/menu/load/settings/border/macro_text with storage uhc:settings
 
-execute if score @s uhc.menu.host.settings.border matches 1.. in uhc:sign run function uhc:pre_game/menu/load/settings/border/border_0/macro_set
+execute if score @s uhc.menu.host.settings.border matches 1.. in uhc:lobby run function uhc:pre_game/menu/load/settings/border/border_0/macro_set
 execute if score @s uhc.menu.host.settings.border matches 1.. run function uhc:pre_game/menu/load/settings/border/border_0/macro_text with storage uhc:settings
 
-execute if score @s uhc.menu.host.settings.border matches 1.. in uhc:sign run function uhc:pre_game/menu/load/settings/border/border_1/macro_set
+execute if score @s uhc.menu.host.settings.border matches 1.. in uhc:lobby run function uhc:pre_game/menu/load/settings/border/border_1/macro_set
 execute if score @s uhc.menu.host.settings.border matches 1.. run function uhc:pre_game/menu/load/settings/border/border_1/macro_text with storage uhc:settings
 
-execute if score @s uhc.menu.host.settings.border matches 1.. in uhc:sign run function uhc:pre_game/menu/load/settings/border/border_2/macro_set
+execute if score @s uhc.menu.host.settings.border matches 1.. in uhc:lobby run function uhc:pre_game/menu/load/settings/border/border_2/macro_set
 execute if score @s uhc.menu.host.settings.border matches 1.. run function uhc:pre_game/menu/load/settings/border/border_2/macro_text with storage uhc:settings
 
 execute if score @s uhc.menu.host.settings matches 3..4 run item replace entity @s inventory.20 with minecraft:purple_concrete[minecraft:item_name=[{"text":"-10","color":"#CF3F3F","italic":false}],minecraft:custom_data={Tags:"-10"}]

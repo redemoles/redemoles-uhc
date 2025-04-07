@@ -15,4 +15,4 @@ execute as @a[scores={fte.sceau.artefact=1}] run function fte:sceau/artefact
 execute as @a[scores={fte.sceau.tp=1}] run function fte:sceau/tp
 
 # Effets Artéfact
-execute as @e[type=marker,tag=fte] in uhc:sign run function fte:timer/artefact/
+execute as @e[type=marker,tag=fte] in uhc:lobby run function fte:timer/artefact/

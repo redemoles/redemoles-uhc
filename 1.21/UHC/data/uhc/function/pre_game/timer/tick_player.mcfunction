@@ -7,7 +7,7 @@
 # @description		Commandes pre-game en tick
 #
 
-effect clear @s minecraft:absorption
+execute if entity @s[nbt={active_effects:[{id:"minecraft:absorption"}]}] run effect clear @s minecraft:absorption
 
 # Joueur au Lobby
 execute unless score @s uhc.players.online matches 1 run function uhc:pre_game/players_and_teams/new_players
@@ -52,11 +52,11 @@ title @s[tag=uhc.spec,scores={uhc.players.lang=2}] actionbar [{"text":"Choose yo
 
 # Vie en pourcentage
 scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
-execute unless score #team_health uhc.scenario matches 1 store result score @s uhc.players.health.100 run data get entity @s Health 5
+execute unless score #team_health uhc.scenario matches 1 if score #hp_100 uhc.data.setup matches 1.. store result score @s uhc.players.health.100 run data get entity @s Health 5
 execute if score #team_health uhc.scenario matches 1 run function uhc:in_game/scenarios/team_health/
 
 # Vérification des spawns
-execute as @s[scores={uhc.spawn.check=0..}] run function uhc:pre_game/world_check/spawns
+execute as @s[scores={uhc.spawn.check=0..}] in minecraft:overworld run function uhc:pre_game/world_check/spawns
 
 # Mise à jour de l'inventaire (latence anti-spam)
 scoreboard players add @s[scores={uhc.menu.update=1..8}] uhc.menu.update 1

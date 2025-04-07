@@ -14,7 +14,7 @@ execute if score #tick uhc.data.setup matches 20 run function uhc:in_game/timer/
 
 ## TP
 # TP un joueur au sol après spawn ou respawn
-execute as @a[scores={uhc.players.tp=1}] at @s positioned over world_surface run tp @s ~ ~ ~
+execute as @a[scores={uhc.players.tp=1}] at @s positioned over motion_blocking_no_leaves run tp @s ~ ~ ~
 scoreboard players set @a uhc.players.tp 0
 
 ## Start
@@ -40,7 +40,8 @@ execute unless score #hotbar_cooldown uhc.data.display matches 1.. if score #aic
 
 ## Scenarios
 # Réduction des dégâts des flèches
-execute as @e[type=arrow] run function uhc:in_game/entities/arrow/
+execute if score #custom_arrow uhc.data.setup matches 1.. as @e[type=arrow] run function uhc:in_game/entities/arrow/
+execute unless score #custom_arrow uhc.data.setup matches 1.. as @e[type=arrow,tag=!uhc.checked] run function uhc:in_game/entities/arrow/basic
 
 # Ironman reward
 execute if score #ironman uhc.data.setup matches 1 as @p[tag=uhc.ironman] run function uhc:in_game/scenarios/ironman/reward
@@ -53,8 +54,8 @@ execute if score #enchanting_setup uhc.scenario matches 1 run function uhc:in_ga
 execute if score #sound_paranoia uhc.scenario matches 1 as @e[type=marker,tag=uhc.sound_paranoia.on] at @s run function uhc:in_game/scenarios/sound_paranoia/tick
 
 ## Réduction de vie automatique
-execute if score #live_2 uhc.data.display matches 0 if score #lives uhc.players.lives matches 3 as @e[type=marker,tag=UHC] run function uhc:in_game/players_settings/lives_remove/lives_2
-execute if score #live_1 uhc.data.display matches 0 if score #lives uhc.players.lives matches 2 as @e[type=marker,tag=UHC] run function uhc:in_game/players_settings/lives_remove/lives_1
+execute if score #live_2 uhc.data.display matches ..0 if score #lives uhc.players.lives matches 3 if entity @p[scores={uhc.players.lives=3}] as @e[type=marker,tag=UHC] run function uhc:in_game/players_settings/lives_remove/lives_2
+execute if score #live_1 uhc.data.display matches ..0 if score #lives uhc.players.lives matches 2 if entity @p[scores={uhc.players.lives=2}] as @e[type=marker,tag=UHC] run function uhc:in_game/players_settings/lives_remove/lives_1
 
 ## Morts
 # Message de mort
@@ -66,11 +67,12 @@ execute as @e[type=player,scores={uhc.players.death=1}] run function uhc:in_game
 
 ## @a → Effets, Respawn, Connexion d'un joueur externe, Scenarios
 execute as @a run function uhc:in_game/timer/players
+execute if score #absorption uhc.data.setup matches ..1 as @a[tag=uhc.player,nbt={active_effects:[{id:"minecraft:absorption"}]}] run function uhc:in_game/players_settings/absorption/
 
 ## End
 # Détection entrée/sortie de l'end et respawn d'un joueur mort
-execute in the_end run scoreboard players set @a[distance=0..] uhc.world.end 1
-execute as @e[type=player,x=-48,y=240,z=-48,dx=49,dy=320,dz=49,scores={uhc.world.end=1}] run function uhc:in_game/tp/end_exit
+execute in minecraft:the_end run scoreboard players set @a[distance=0..] uhc.world.end 1
+execute in minecraft:overworld as @a[distance=0..,scores={uhc.world.end=1}] run function uhc:in_game/tp/end_exit
 
 ## Force commands
 # Force Meet-up

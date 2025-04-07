@@ -8,7 +8,7 @@
 #
 
 ## Téléportation
-spreadplayers 0 0 240 960 false @a[tag=uhc.player]
+execute in minecraft:overworld run spreadplayers 0 0 240 960 false @a[tag=uhc.player]
 scoreboard players set @a[tag=uhc.player] uhc.players.tp 1
 
 ## Id Joueurs et Markers

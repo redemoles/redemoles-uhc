@@ -35,10 +35,10 @@ with open(DESTINATION, "w") as f:
 			upperY = y + FORCELOAD_ZONE
 			
 			# Forceload Add
-			f.write(f"execute if score #chunk_pregen pregen.world matches {i} in the_end run forceload add {x} {y} {upperX} {upperY}\n")
+			f.write(f"execute if score #overworld_chunk_pregen pregen.world matches {i} in the_end run forceload add {x} {y} {upperX} {upperY}\n")
 			
 			# Forceload Remove
-			f.write(f"execute if score #chunk_pregen pregen.world matches {i+FORCELOAD_DELAY} in the_end run forceload remove {x} {y} {upperX} {upperY}\n")
+			f.write(f"execute if score #overworld_chunk_pregen pregen.world matches {i+FORCELOAD_DELAY} in the_end run forceload remove {x} {y} {upperX} {upperY}\n")
 	
 	# Messages
 	for i in range(0, NB_MESSAGES+1):
@@ -46,5 +46,5 @@ with open(DESTINATION, "w") as f:
 		size = ZONE * 2
 		tick = int(progress * total_forceloads) + FORCELOAD_DELAY + STARTING_TICK
 		percentage = int(progress * 100)
-		f.write(f'execute if score #chunk_pregen pregen.world matches {tick} run tellraw @a[scores={{pregen.world=1..}}] [{{"text":"End : {size}x{size} ({i}/{NB_MESSAGES}, {percentage}%)","color":"#6F3FFF"}}]\n')
+		f.write(f'execute if score #overworld_chunk_pregen pregen.world matches {tick} run tellraw @a [{{"text":"End : {size}x{size} ({i}/{NB_MESSAGES}, {percentage}%)","color":"#6F3FFF"}}]\n')
 

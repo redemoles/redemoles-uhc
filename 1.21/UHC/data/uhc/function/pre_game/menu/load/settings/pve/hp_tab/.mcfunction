@@ -22,3 +22,6 @@ execute if score #hp_tab uhc.data.setup matches 0 run scoreboard objectives modi
 execute if score #hp_tab uhc.data.setup matches 0 run scoreboard objectives modify uhc.scenario.team_health.team rendertype integer
 execute if score #hp_tab uhc.data.setup matches 3 run scoreboard objectives modify uhc.players.health rendertype hearts
 execute if score #hp_tab uhc.data.setup matches 3 run scoreboard objectives modify uhc.scenario.team_health.team rendertype hearts
+
+execute if score #hp_tab uhc.data.setup matches 2 run scoreboard players add #hp_100 uhc.data.setup 1
+execute if score #hp_tab uhc.data.setup matches 3 run scoreboard players remove #hp_100 uhc.data.setup 1

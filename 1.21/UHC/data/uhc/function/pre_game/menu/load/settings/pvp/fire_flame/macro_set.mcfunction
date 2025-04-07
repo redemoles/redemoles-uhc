@@ -7,5 +7,5 @@
 # @description		Menu
 #
 
-data modify block 0 0 0 front_text.messages[2] set value [{"score":{"name":"#fire_flame","objective":"uhc.data.setup"},"color":"#FF3F3F","bold":true}]
-data modify storage uhc:settings interpreted_2 set from block 0 0 0 front_text.messages[2]
+data modify block 0 -61 0 front_text.messages[2] set value [{"score":{"name":"#fire_flame","objective":"uhc.data.setup"},"color":"#FF3F3F","bold":true}]
+data modify storage uhc:settings interpreted_2 set from block 0 -61 0 front_text.messages[2]

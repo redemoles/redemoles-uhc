@@ -13,8 +13,8 @@ execute if score #berserker_tick fte.artefact.timer matches 1 if score #berserke
 execute if score #berserker_tick fte.artefact.timer matches 1 if score #berserker fte.artefact.timer matches 1.. run scoreboard players remove #berserker_tick fte.artefact.timer 20
 
 # Give d'items et d'effets
-data modify block 0 0 0 front_text.messages[0] set value [{"score":{"name":"#berserker","objective":"fte.artefact.timer"}}]
-data modify storage fte:temp interpreted_0 set from block 0 0 0 front_text.messages[0]
+execute in uhc:lobby run data modify block 0 -61 0 front_text.messages[0] set value [{"score":{"name":"#berserker","objective":"fte.artefact.timer"}}]
+execute in uhc:lobby run data modify storage fte:temp interpreted_0 set from block 0 -61 0 front_text.messages[0]
 function fte:artefact/servant/berserker/tick_1 with storage fte:temp
 
 

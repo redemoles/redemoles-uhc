@@ -22,7 +22,7 @@ scoreboard players operation #bingo_bk bhc.timer += #bingo_bs bhc.timer
 scoreboard players operation #bingo_by bhc.timer += #bingo_bs bhc.timer
 
 # Start
- # 0 : Démarrage 30 secondes après tp 
+ # 0 : Démarrage 30 secondes après tp
  # 1 : Démarrage immédiat
 scoreboard players set #start uhc.data.setup 0
 

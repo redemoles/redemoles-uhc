@@ -18,8 +18,8 @@ execute if score #Secondes uhc.data.display matches 60 run function uhc:in_game/
 scoreboard players add @e[type=item] uhc.timer.entities 1
 kill @e[type=item,scores={uhc.timer.entities=150..}]
 
-## Kill Phantom
-execute unless score #aic uhc.gamemode matches 3 run tp @e[type=minecraft:phantom] 0 -1000 0
+## Kill Bats
+execute unless score #bats uhc.scenario matches 1 run tp @e[type=minecraft:bat] 0 -1000 0
 
 ## Respawn Dragon en All Items
 execute if score #aic uhc.gamemode matches 3 run function aic:timer/second

@@ -8,7 +8,7 @@
 #
 
 scoreboard players add @s uhc.scenario.blood_diamond.damage 1
-execute if score #random uhc.scenario.blood_diamond.temp matches 51..100 run give @s emerald
+give @s minecraft:emerald
 
-execute store result storage uhc:blood_diamond damage int 1 run scoreboard players get @s uhc.scenario.blood_diamond.damage
-function uhc:in_game/scenarios/blood_diamond/trade_uhc/step_damage_1 with storage uhc:blood_diamond
+execute store result storage uhc:settings blood_diamond.damage int 1 run scoreboard players get @s uhc.scenario.blood_diamond.damage
+function uhc:in_game/scenarios/blood_diamond/trade_uhc/step_damage_1 with storage uhc:settings blood_diamond

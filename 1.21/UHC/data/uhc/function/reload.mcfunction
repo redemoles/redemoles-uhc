@@ -7,8 +7,9 @@
 # @description		Function executed when the datapack is loaded
 #
 
+setworldspawn 0 300 0
 function uhc:load
-function pregen:load
+execute unless score #overworld_chunk_pregen pregen.world matches 0.. run function pregen:load
 
 ## Reset des équipes
 function uhc:pre_game/players_and_teams/teamcreate
@@ -25,6 +26,7 @@ scoreboard objectives remove uhc.scenario.blood_diamond.damage
 scoreboard objectives remove uhc.scenario.blood_diamond.deepslate
 scoreboard objectives remove uhc.scenario.blood_diamond.mined
 scoreboard objectives remove uhc.scenario.blood_diamond.temp
+scoreboard objectives remove uhc.scenario.blood_diamond.tier
 scoreboard objectives remove uhc.scenario.bookception
 scoreboard objectives remove uhc.scenario.cut_clean.random
 scoreboard objectives remove uhc.scenario.enchanting_setup
@@ -87,6 +89,7 @@ scoreboard objectives add uhc.scenario.blood_diamond.damage dummy
 scoreboard objectives add uhc.scenario.blood_diamond.deepslate minecraft.mined:minecraft.deepslate_diamond_ore
 scoreboard objectives add uhc.scenario.blood_diamond.mined dummy
 scoreboard objectives add uhc.scenario.blood_diamond.temp minecraft.mined:minecraft.diamond_ore
+scoreboard objectives add uhc.scenario.blood_diamond.tier dummy
 scoreboard objectives add uhc.scenario.bookception dummy
 scoreboard objectives add uhc.scenario.cut_clean.random dummy
 scoreboard objectives add uhc.scenario.enchanting_setup dummy
@@ -157,6 +160,7 @@ scoreboard objectives remove uhc.menu.host.gamemode.mls.moles_per_game
 scoreboard objectives remove uhc.menu.host.gamemode.mls.teams_of_moles
 scoreboard objectives remove uhc.menu.host.gamemode.mls.teams_of_supermoles
 scoreboard objectives remove uhc.menu.host.gamemode.mls.supermoles_per_team
+scoreboard objectives remove uhc.menu.host.scenarios.blood_diamond
 scoreboard objectives remove uhc.menu.host.settings.lives
 scoreboard objectives remove uhc.menu.host.settings.pve
 scoreboard objectives remove uhc.menu.host.settings.pvp
@@ -199,6 +203,7 @@ scoreboard objectives add uhc.menu.host.gamemode.mls.moles_per_game dummy
 scoreboard objectives add uhc.menu.host.gamemode.mls.teams_of_moles dummy
 scoreboard objectives add uhc.menu.host.gamemode.mls.teams_of_supermoles dummy
 scoreboard objectives add uhc.menu.host.gamemode.mls.supermoles_per_team dummy
+scoreboard objectives add uhc.menu.host.scenarios.blood_diamond dummy
 scoreboard objectives add uhc.menu.host.settings dummy
 scoreboard objectives add uhc.menu.host.settings.lives dummy
 scoreboard objectives add uhc.menu.host.settings.pve dummy
@@ -290,6 +295,20 @@ scoreboard players set #team_health uhc.scenario 0
 scoreboard players set #time_bomb uhc.scenario 0
 scoreboard players set #trade_uhc uhc.scenario 0
 
+# Blood Diamond
+scoreboard players set #end_tier_1 uhc.scenario.blood_diamond.tier 8
+scoreboard players set #end_tier_2 uhc.scenario.blood_diamond.tier 20
+scoreboard players set #mined_tier_2 uhc.scenario.blood_diamond.tier 12
+execute store result storage uhc:settings blood_diamond.end_tier_1 int 1 run scoreboard players get #end_tier_1 uhc.scenario.blood_diamond.tier
+execute store result storage uhc:settings blood_diamond.end_tier_2 int 1 run scoreboard players get #end_tier_2 uhc.scenario.blood_diamond.tier
+scoreboard players add #end_tier_1 uhc.scenario.blood_diamond.tier 1
+scoreboard players add #end_tier_2 uhc.scenario.blood_diamond.tier 1
+execute store result storage uhc:settings blood_diamond.start_tier_2 int 1 run scoreboard players get #end_tier_1 uhc.scenario.blood_diamond.tier
+execute store result storage uhc:settings blood_diamond.start_tier_3 int 1 run scoreboard players get #end_tier_2 uhc.scenario.blood_diamond.tier
+scoreboard players remove #end_tier_1 uhc.scenario.blood_diamond.tier 1
+scoreboard players remove #end_tier_2 uhc.scenario.blood_diamond.tier 1
+execute store result storage uhc:settings blood_diamond.mined_tier_2 int 1 run scoreboard players get #mined_tier_2 uhc.scenario.blood_diamond.tier
+
 # Enchanting Setup
 scoreboard players set #100b uhc.scenario.enchanting_setup 0
 scoreboard players set #500b uhc.scenario.enchanting_setup 0
@@ -311,8 +330,9 @@ scoreboard players set #reward_kill_absorption uhc.data.setup 0
 execute store result storage uhc:settings reward_kill.health int 1 run scoreboard players get #reward_kill_health uhc.data.setup
 
 scoreboard players set #absorption uhc.data.setup 2
-scoreboard players add #hp_tab uhc.data.setup 3
-scoreboard players add #hp_name uhc.data.setup 0
+scoreboard players set #hp_tab uhc.data.setup 3
+scoreboard players set #hp_name uhc.data.setup 0
+scoreboard players set #hp_100 uhc.data.setup 0
 
 scoreboard players set #pve uhc.data.setup 2
 scoreboard players set #pvp uhc.data.setup 40
@@ -337,6 +357,8 @@ scoreboard players set #random_team_start uhc.data.setup 1
 scoreboard players set #random_team_tick uhc.data.setup -1
 scoreboard players set #anonyme_team uhc.data.setup 0
 scoreboard players set #team_size uhc.data.setup 4
+
+scoreboard players set #custom_arrow uhc.data.setup 0
 
 ## Génération du Lobby
 scoreboard objectives add lobby.data dummy
@@ -387,9 +409,9 @@ scoreboard players set #12000 uhc.data.numbers 12000
 scoreboard players set #1m uhc.data.numbers 1000000
 
 ## Sign
-execute in uhc:sign run forceload add 0 0
-execute in uhc:sign run setblock 0 -1 0 minecraft:stone
-execute in uhc:sign run setblock 0 0 0 minecraft:oak_sign
+execute in uhc:lobby run forceload add 0 0
+execute in uhc:lobby run setblock 0 -62 0 minecraft:stone
+execute in uhc:lobby run setblock 0 -61 0 minecraft:oak_sign
 
 # TP border define
 execute store result storage uhc:temp tp.xp int 1 run scoreboard players get #00 uhc.data.numbers

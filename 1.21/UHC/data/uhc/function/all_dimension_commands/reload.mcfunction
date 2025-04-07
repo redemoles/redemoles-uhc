@@ -18,4 +18,5 @@ gamerule spectatorsGenerateChunks true
 gamerule naturalRegeneration false
 gamerule showDeathMessages false
 gamerule keepInventory true
-difficulty peaceful
+gamerule doInsomnia false
+difficulty normal

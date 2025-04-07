@@ -24,7 +24,7 @@ execute if score #random_team uhc.data.setup matches 1 run item replace entity @
 execute if score #random_team uhc.data.setup matches 0 run item replace entity @s[scores={uhc.players.lang=2}] inventory.1 with minecraft:light_blue_concrete[minecraft:item_name=[{"text":"Team format","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"• ","color":"#3FE7FF","italic":false},{"text":"Chosen team","color":"#FFFFFF","italic":false}],[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"Random team","color":"#9F9F9F","italic":true}]],minecraft:custom_data={Tags:"team_format"}]
 execute if score #random_team uhc.data.setup matches 1 run item replace entity @s[scores={uhc.players.lang=2}] inventory.1 with minecraft:yellow_concrete[minecraft:item_name=[{"text":"Team format","color":"#FFE73F","italic":false}],minecraft:lore=[[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"Chosen team","color":"#9F9F9F","italic":true}],[{"text":"• ","color":"#3FE7FF","italic":false},{"text":"Random team","color":"#FFFFFF","italic":false}]],minecraft:custom_data={Tags:"team_format"}]
 
-execute in uhc:sign run function uhc:pre_game/menu/load/teams_settings/team_size/macro_set
+execute in uhc:lobby run function uhc:pre_game/menu/load/teams_settings/team_size/macro_set
 function uhc:pre_game/menu/load/teams_settings/team_size/macro_text with storage uhc:settings
 
 execute if score #anonyme_team uhc.data.setup matches 0 run item replace entity @s[scores={uhc.players.lang=1}] inventory.7 with minecraft:red_concrete[minecraft:item_name=[{"text":"Équipes anonymes","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"team_anonyme"}]

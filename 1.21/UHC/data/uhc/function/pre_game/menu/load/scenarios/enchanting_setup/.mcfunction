@@ -4,7 +4,7 @@
 # @within			uhc:pre_game/menu/selection/scenarios
 #
 #
-# @description		Activation/Désactivation Enchanting Setup
+# @description		Menu Enchanting Setup
 #
 
 clear @s

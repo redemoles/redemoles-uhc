@@ -45,6 +45,7 @@ tag @s remove host.menu.lobby
 tag @s remove host.menu.teams
 tag @s remove host.menu.scenarios.1
 tag @s remove host.menu.scenarios.2
+scoreboard players set @s uhc.menu.host.scenarios.blood_diamond 0
 tag @s remove host.menu.scenarios.enchanting_setup
 scoreboard players set @s uhc.menu.host.settings 0
 scoreboard players set @s uhc.menu.host.settings.lives 0

@@ -7,5 +7,5 @@
 # @description		Menu
 #
 
-data modify block 0 0 0 front_text.messages[2] set value [{"score":{"name":"#shrink_1_size_start","objective":"uhc.data.setup"},"color":"#FF3F3F","bold":true,"italic":false}]
-data modify storage uhc:settings interpreted_2 set from block 0 0 0 front_text.messages[2]
+data modify block 0 -61 0 front_text.messages[2] set value [{"score":{"name":"#shrink_1_size_start","objective":"uhc.data.setup"},"color":"#FF3F3F","bold":true,"italic":false}]
+data modify storage uhc:settings interpreted_2 set from block 0 -61 0 front_text.messages[2]

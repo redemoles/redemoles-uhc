@@ -15,11 +15,11 @@ experience set @a 0 points
 gamemode adventure @a[tag=uhc.player]
 gamemode spectator @a[tag=uhc.spec]
 
-effect give @a[tag=uhc.player] resistance infinite 4 true
-effect give @a[tag=uhc.player] blindness infinite 4 true
-effect give @a[tag=uhc.player] slowness infinite 9 true
-effect give @a[tag=uhc.player] weakness infinite 9 true
-execute as @a[tag=uhc.player] run attribute @s jump_strength base set 0
+effect give @a[tag=uhc.player] minecraft:resistance infinite 4 true
+effect give @a[tag=uhc.player] minecraft:blindness infinite 4 true
+effect give @a[tag=uhc.player] minecraft:slowness infinite 9 true
+effect give @a[tag=uhc.player] minecraft:weakness infinite 9 true
+execute as @a[tag=uhc.player] run attribute @s minecraft:jump_strength base set 0
 execute unless score #no_fall uhc.scenario matches 1 as @a[tag=uhc.player] run attribute @s minecraft:fall_damage_multiplier base set 1.0
 execute if score #version uhc.data.setup matches 1 as @a[tag=uhc.player] run attribute @s minecraft:attack_speed base set 1024
 execute if score #version uhc.data.setup matches 1 as @a[tag=uhc.player] run attribute @s minecraft:attack_knockback base set 0.55
@@ -47,7 +47,7 @@ execute unless score #aic uhc.gamemode matches 3 store result score #ironman uhc
 execute if score #best_pve uhc.scenario matches 1 run function uhc:start/scenarios/best_pve
 
 # Biome Paranoia
-execute if score #biome_paranoia uhc.scenario matches 2 as @a[tag=uhc.player] in uhc:sign run function uhc:start/scenarios/biome_paranoia
+execute if score #biome_paranoia uhc.scenario matches 2 as @a[tag=uhc.player] in uhc:lobby run function uhc:start/scenarios/biome_paranoia
 
 # Gone Fishing
 execute if score #gone_fishing uhc.scenario matches 1 run give @a[tag=uhc.player] minecraft:fishing_rod[enchantments={"minecraft:luck_of_the_sea":255,"minecraft:lure":3},unbreakable={}]
@@ -73,7 +73,7 @@ execute if score #dru uhc.gamemode matches 1 run function dru:start/set_moles
 execute if score #ffa uhc.data.display matches 0 run function uhc:start/game_teams/
 execute if score #ffa uhc.data.display matches 1.. run function uhc:start/game_ffa/
 
-tp @a[tag=uhc.spec] 0 200 0
+execute in minecraft:overworld run tp @a[tag=uhc.spec] 0 200 0
 
 ## Suppression du lobby
-function lobby:auto/delete
+#execute in uhc:lobby run function lobby:delete
