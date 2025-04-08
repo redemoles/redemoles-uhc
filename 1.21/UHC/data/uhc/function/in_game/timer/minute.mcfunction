@@ -15,6 +15,7 @@ scoreboard players add #Minutes uhc.data.display 1
 ## Minuteur interne
 scoreboard players remove #pve uhc.data.setup 1
 scoreboard players remove #pvp uhc.data.setup 1
+scoreboard players remove #respawn_2_timer uhc.data.setup 1
 scoreboard players remove #shrink_1 uhc.data.setup 1
 scoreboard players remove #shrink_2 uhc.data.setup 1
 scoreboard players remove #shrink_3 uhc.data.setup 1
@@ -76,3 +77,10 @@ execute if score #lives_start uhc.players.lives matches 2.. if score #live_1 uhc
 # Msg ENG
 execute if score #lives_start uhc.players.lives matches 3.. if score #live_2 uhc.data.display matches 0 run tellraw @a[scores={uhc.players.lang=2}] [{"text":"\nThe maximum number of lives drops to 2!","color":"#FF3F3F","bold":false}]
 execute if score #lives_start uhc.players.lives matches 2.. if score #live_1 uhc.data.display matches 0 run tellraw @a[scores={uhc.players.lang=2}] [{"text":"\nThe maximum number of lives drops to 1!","color":"#FF3F3F","bold":false}]
+
+execute if score #live_2 uhc.data.display matches 0 run scoreboard players set #lives uhc.players.lives 2
+execute if score #live_1 uhc.data.display matches 0 run scoreboard players set #lives uhc.players.lives 1
+
+execute if score #respawn_2_enabled uhc.data.setup matches 1 if score #respawn_2_timer uhc.data.setup matches 0 run tellraw @a[scores={uhc.players.lang=1}] [{"text":"\nChangement des points de réapparition !","color":"#FF3F3F","bold":false}]
+execute if score #respawn_2_enabled uhc.data.setup matches 1 if score #respawn_2_timer uhc.data.setup matches 0 run tellraw @a[scores={uhc.players.lang=2}] [{"text":"\nChange of respawns points!","color":"#FF3F3F","bold":false}]
+execute if score #respawn_2_enabled uhc.data.setup matches 1 if score #respawn_2_timer uhc.data.setup matches 0 as @a[tag=uhc.player] run function uhc:in_game/tp/spawn_msg_2

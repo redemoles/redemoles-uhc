@@ -29,4 +29,3 @@ execute if score #bhc uhc.gamemode matches 1 run scoreboard players operation @s
 
 ## Retrait vie
 scoreboard players set @a[scores={uhc.players.lives=3},predicate=uhc:id_teams] uhc.players.lives 2
-scoreboard players set #lives uhc.players.lives 2

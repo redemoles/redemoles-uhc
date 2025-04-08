@@ -54,8 +54,8 @@ execute if score #enchanting_setup uhc.scenario matches 1 run function uhc:in_ga
 execute if score #sound_paranoia uhc.scenario matches 1 as @e[type=marker,tag=uhc.sound_paranoia.on] at @s run function uhc:in_game/scenarios/sound_paranoia/tick
 
 ## Réduction de vie automatique
-execute if score #live_2 uhc.data.display matches ..0 if score #lives uhc.players.lives matches 3 if entity @p[scores={uhc.players.lives=3}] as @e[type=marker,tag=UHC] run function uhc:in_game/players_settings/lives_remove/lives_2
-execute if score #live_1 uhc.data.display matches ..0 if score #lives uhc.players.lives matches 2 if entity @p[scores={uhc.players.lives=2}] as @e[type=marker,tag=UHC] run function uhc:in_game/players_settings/lives_remove/lives_1
+execute if score #live_2 uhc.data.display matches ..0 if entity @p[scores={uhc.players.lives=3}] as @e[type=marker,tag=UHC] run function uhc:in_game/players_settings/lives_remove/lives_2
+execute if score #live_1 uhc.data.display matches ..0 if entity @p[scores={uhc.players.lives=2}] as @e[type=marker,tag=UHC] run function uhc:in_game/players_settings/lives_remove/lives_1
 
 ## Morts
 # Message de mort
@@ -67,7 +67,7 @@ execute as @e[type=player,scores={uhc.players.death=1}] run function uhc:in_game
 
 ## @a → Effets, Respawn, Connexion d'un joueur externe, Scenarios
 execute as @a run function uhc:in_game/timer/players
-execute if score #absorption uhc.data.setup matches ..1 as @a[tag=uhc.player,nbt={active_effects:[{id:"minecraft:absorption"}]}] run function uhc:in_game/players_settings/absorption/
+execute if score #absorption uhc.data.setup matches ..1 as @a[tag=uhc.player,predicate=uhc:effect_absorption] run function uhc:in_game/players_settings/absorption/
 
 ## End
 # Détection entrée/sortie de l'end et respawn d'un joueur mort

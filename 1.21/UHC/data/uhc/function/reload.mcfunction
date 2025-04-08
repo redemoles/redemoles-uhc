@@ -9,7 +9,7 @@
 
 setworldspawn 0 300 0
 function uhc:load
-execute unless score #overworld_chunk_pregen pregen.world matches 0.. run function pregen:load
+function pregen:load
 
 ## Reset des équipes
 function uhc:pre_game/players_and_teams/teamcreate
@@ -350,6 +350,9 @@ scoreboard players set #shrink_2_size_end uhc.data.setup 64
 scoreboard players set #shrink_3 uhc.data.setup 100
 scoreboard players set #shrink_3_length uhc.data.setup 5
 scoreboard players set #shrink_3_size_end uhc.data.setup 32
+
+scoreboard players set #respawn_2_enabled uhc.data.setup 1
+scoreboard players set #respawn_2_timer uhc.data.setup 60
 
 scoreboard players set #random_team uhc.data.setup 0
 scoreboard players set #random_team_players uhc.data.setup 0

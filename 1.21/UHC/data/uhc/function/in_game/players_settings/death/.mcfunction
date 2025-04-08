@@ -38,12 +38,9 @@ scoreboard players set @s[scores={uhc.players.lives=1..}] uhc.timer.respawn 31
 scoreboard players set @s[scores={uhc.players.lives=1..}] uhc.players.death 0
 
 # Lieu de Respawn
-execute if score @s uhc.players.lives matches 1.. if score #Minutes uhc.data.display matches ..59 unless score @s uhc.meetup.activate matches 2 in minecraft:overworld run function uhc:in_game/tp/spawn_start
-execute if score @s uhc.players.lives matches 1.. if score #Minutes uhc.data.display matches ..59 if score @s uhc.meetup.activate matches 2 in minecraft:overworld run function uhc:in_game/tp/spawn_end
-execute if score @s uhc.players.lives matches 1.. if score #Minutes uhc.data.display matches 60.. in minecraft:overworld run function uhc:in_game/tp/spawn_end
-
-# TP au sol
-scoreboard players set @s[scores={uhc.players.lives=1..}] uhc.world.end 1
+execute if score @s uhc.players.lives matches 1.. if score #respawn_2_enabled uhc.data.setup matches 0 in minecraft:overworld run function uhc:in_game/tp/spawn_start
+execute if score @s uhc.players.lives matches 1.. if score #respawn_2_enabled uhc.data.setup matches 1 if score #respawn_2_timer uhc.data.setup matches 1.. in minecraft:overworld run function uhc:in_game/tp/spawn_start
+execute if score @s uhc.players.lives matches 1.. if score #respawn_2_enabled uhc.data.setup matches 1 if score #respawn_2_timer uhc.data.setup matches ..0 in minecraft:overworld run function uhc:in_game/tp/spawn_end
 
 # Récupère les coordonnées du joueur mort
 data modify storage uhc:temp input.x set from entity @s LastDeathLocation.pos[0]

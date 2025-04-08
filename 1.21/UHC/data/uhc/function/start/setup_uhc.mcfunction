@@ -22,6 +22,7 @@ execute if score #aic uhc.gamemode matches 3 run function aic:start/
 scoreboard players set #tick_start uhc.data.setup 201
 scoreboard players add #pve uhc.data.setup 1
 scoreboard players add #pvp uhc.data.setup 1
+scoreboard players add #respawn_2_timer uhc.data.setup 1
 scoreboard players add #shrink_1 uhc.data.setup 1
 scoreboard players add #shrink_2 uhc.data.setup 1
 scoreboard players add #shrink_3 uhc.data.setup 1
