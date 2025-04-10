@@ -67,6 +67,7 @@ execute as @e[type=player,scores={uhc.players.death=1}] run function uhc:in_game
 
 ## @a → Effets, Respawn, Connexion d'un joueur externe, Scenarios
 execute as @a run function uhc:in_game/timer/players
+execute if score #no_pvp_safety uhc.data.setup matches 1 run function uhc:in_game/players_settings/pvp/safety
 execute if score #absorption uhc.data.setup matches ..1 as @a[tag=uhc.player,predicate=uhc:effect_absorption] run function uhc:in_game/players_settings/absorption/
 
 ## End

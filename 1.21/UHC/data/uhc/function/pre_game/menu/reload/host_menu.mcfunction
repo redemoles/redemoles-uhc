@@ -12,7 +12,7 @@ function uhc:pre_game/menu/load/background
 
 item replace entity @s[scores={uhc.players.lang=1}] inventory.1 with minecraft:grass_block[minecraft:item_name=[{"text":"Génération du monde","color":"#3F9F3F","italic":false}],minecraft:custom_data={Tags:"menu_world_generation"}]
 item replace entity @s[scores={uhc.players.lang=1}] inventory.2 with minecraft:ender_eye[minecraft:item_name=[{"text":"Vérifications du monde","color":"#FFE73F","italic":false}],minecraft:custom_data={Tags:"menu_world_check"}]
-item replace entity @s[scores={uhc.players.lang=1}] inventory.3 with minecraft:clock[minecraft:item_name=[{"text":"Lobby","color":"#3FE7FF","italic":false}],minecraft:custom_data={Tags:"menu_lobby"}]
+item replace entity @s[scores={uhc.players.lang=1}] inventory.3 with minecraft:beacon[minecraft:item_name=[{"text":"Lobby","color":"#3FE7FF","italic":false}],minecraft:custom_data={Tags:"menu_lobby"}]
 item replace entity @s[scores={uhc.players.lang=1}] inventory.5 with minecraft:command_block[minecraft:item_name=[{"text":"Mode de jeu","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"menu_gamemodes"}]
 item replace entity @s[scores={uhc.players.lang=1}] inventory.6 with minecraft:repeating_command_block[minecraft:item_name=[{"text":"Scénarios","color":"#CF3FFF","italic":false}],minecraft:custom_data={Tags:"menu_scenarios"}]
 item replace entity @s[scores={uhc.players.lang=1}] inventory.7 with minecraft:chain_command_block[minecraft:item_name=[{"text":"Paramètres","color":"#CFCFCF","italic":false}],minecraft:custom_data={Tags:"menu_settings"}]
@@ -23,7 +23,7 @@ item replace entity @s[scores={uhc.players.lang=1}] inventory.25 with minecraft:
 
 item replace entity @s[scores={uhc.players.lang=2}] inventory.1 with minecraft:grass_block[minecraft:item_name=[{"text":"World gneration","color":"#3F9F3F","italic":false}],minecraft:custom_data={Tags:"menu_world_generation"}]
 item replace entity @s[scores={uhc.players.lang=2}] inventory.2 with minecraft:ender_eye[minecraft:item_name=[{"text":"World check","color":"#FFE73F","italic":false}],minecraft:custom_data={Tags:"menu_world_check"}]
-item replace entity @s[scores={uhc.players.lang=2}] inventory.3 with minecraft:clock[minecraft:item_name=[{"text":"Lobby","color":"#3FE7FF","italic":false}],minecraft:custom_data={Tags:"menu_lobby"}]
+item replace entity @s[scores={uhc.players.lang=2}] inventory.3 with minecraft:beacon[minecraft:item_name=[{"text":"Lobby","color":"#3FE7FF","italic":false}],minecraft:custom_data={Tags:"menu_lobby"}]
 item replace entity @s[scores={uhc.players.lang=2}] inventory.5 with minecraft:command_block[minecraft:item_name=[{"text":"Gamemodes","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"menu_gamemodes"}]
 item replace entity @s[scores={uhc.players.lang=2}] inventory.6 with minecraft:repeating_command_block[minecraft:item_name=[{"text":"Scenarios","color":"#CF3FFF","italic":false}],minecraft:custom_data={Tags:"menu_scenarios"}]
 item replace entity @s[scores={uhc.players.lang=2}] inventory.7 with minecraft:chain_command_block[minecraft:item_name=[{"text":"Settings","color":"#CFCFCF","italic":false}],minecraft:custom_data={Tags:"menu_settings"}]

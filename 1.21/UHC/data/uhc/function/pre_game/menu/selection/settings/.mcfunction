@@ -20,7 +20,8 @@ execute unless items entity @s[scores={uhc.menu.host.settings=1..}] inventory.3 
 execute unless items entity @s[scores={uhc.menu.host.settings.pvp=1..}] inventory.10 *[minecraft:custom_data={Tags:"settings_pvp_version"}] run function uhc:pre_game/menu/load/settings/pvp/version/
 execute unless items entity @s[scores={uhc.menu.host.settings.pvp=1..}] inventory.11 *[minecraft:custom_data={Tags:"settings_pvp_shield"}] run function uhc:pre_game/menu/load/settings/pvp/shield/
 execute unless items entity @s[scores={uhc.menu.host.settings.pvp=1..}] inventory.12 *[minecraft:custom_data={Tags:"settings_pvp_fire_flame"}] run function uhc:pre_game/menu/load/settings/pvp/fire_flame/
-execute unless items entity @s[scores={uhc.menu.host.settings.pvp=1..}] inventory.13 *[minecraft:custom_data={Tags:"settings_pvp_no_clean"}] run function uhc:pre_game/menu/load/settings/pvp/no_clean/
+execute unless items entity @s[scores={uhc.menu.host.settings.pvp=1..}] inventory.13 *[minecraft:custom_data={Tags:"settings_pvp_friendly_fire"}] run function uhc:pre_game/menu/load/settings/pvp/friendly_fire/
+execute unless items entity @s[scores={uhc.menu.host.settings.pvp=1..}] inventory.14 *[minecraft:custom_data={Tags:"settings_pvp_no_clean"}] run function uhc:pre_game/menu/load/settings/pvp/no_clean/
 execute unless items entity @s[scores={uhc.menu.host.settings.pvp=3}] inventory.22 *[minecraft:custom_data={Tags:"settings_pvp_no_clean"}] run function uhc:pre_game/menu/load/settings/pvp/no_clean/
 
 execute unless items entity @s[scores={uhc.menu.host.settings=1..}] inventory.4 *[minecraft:custom_data={Tags:"settings_border"}] run function uhc:pre_game/menu/load/settings/border/

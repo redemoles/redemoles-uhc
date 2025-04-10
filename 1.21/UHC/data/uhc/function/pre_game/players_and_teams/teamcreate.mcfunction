@@ -42,6 +42,7 @@ team remove 30
 team remove 31
 team remove 32
 team remove 99
+team remove uhc.pvp.safety
 
 ## Suppression des équipes d'affichage
 team remove sb01
@@ -96,6 +97,7 @@ team add 30
 team add 31
 team add 32
 team add 99
+team add uhc.pvp.safety
 
 ## Couleurs des équipes
 team modify 00 color yellow
@@ -132,6 +134,9 @@ team modify 30 color gray
 team modify 31 color dark_gray
 team modify 32 color black
 team modify 99 color yellow
+team modify uhc.pvp.safety color yellow
+team modify uhc.pvp.safety friendlyFire false
+team modify uhc.pvp.safety prefix [{"text":"PvP Off ","color":"#FF3F3F"}]
 
 ## Affichage scoreboard des équipes
 team add sb01

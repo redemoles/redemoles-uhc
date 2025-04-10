@@ -11,9 +11,9 @@
 #
 
 ## Sélection de l'équipe du joueur
-scoreboard players operation #teams uhc.id.teams = @s uhc.id.teams
+scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
 execute as @e[type=marker,predicate=uhc:id_teams] run function aic:advancements/collection_finished_1 with storage aic:temp item
 
 ## Messages
 $execute if score #first_time aic.data.score matches 1 run tellraw @a[scores={uhc.players.lang=1}] [{"text":""},{"selector":"@s","bold":true},{"text":" vient de terminer la collection : ","color":"#FFE73F"},{"text":"$(collection_name)","color":"#3FE7FF"}]
-$execute if score #first_time aic.data.score matches 1 run tellraw @a[scores={uhc.players.lang=2}] [{"text":""},{"selector":"@s","bold":true},{"text":" just completed the collection_id: ","color":"#FFE73F"},{"text":"$(collection_name)","color":"#3FE7FF"}]
+$execute if score #first_time aic.data.score matches 1 run tellraw @a[scores={uhc.players.lang=2}] [{"text":""},{"selector":"@s","bold":true},{"text":" just completed the collection: ","color":"#FFE73F"},{"text":"$(collection_name)","color":"#3FE7FF"}]

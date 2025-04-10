@@ -55,6 +55,9 @@ execute if score @s uhc.menu.host.settings.pvp matches 1.. run function uhc:pre_
 execute if score @s uhc.menu.host.settings.pvp matches 1.. in uhc:lobby run function uhc:pre_game/menu/load/settings/pvp/no_clean/macro_set
 execute if score @s uhc.menu.host.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/no_clean/macro_text with storage uhc:settings
 
+
+execute if score @s uhc.menu.host.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/friendly_fire/macro_text
+
 execute in uhc:lobby run function uhc:pre_game/menu/load/settings/border/macro_set
 function uhc:pre_game/menu/load/settings/border/macro_text with storage uhc:settings
 

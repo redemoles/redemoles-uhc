@@ -321,6 +321,13 @@ scoreboard players set #live_2 uhc.data.display 0
 scoreboard players set #live_3 uhc.data.display 0
 scoreboard players set #lives uhc.players.lives 1
 
+scoreboard players set #pve uhc.data.setup 2
+scoreboard players set #absorption uhc.data.setup 2
+scoreboard players set #hp_tab uhc.data.setup 3
+scoreboard players set #hp_name uhc.data.setup 0
+scoreboard players set #hp_100 uhc.data.setup 0
+
+scoreboard players set #pvp uhc.data.setup 40
 scoreboard players set #shield_percent uhc.data.setup 100
 scoreboard players set #shield uhc.data.setup 336
 scoreboard players set #version uhc.data.setup 0
@@ -328,14 +335,8 @@ scoreboard players set #fire_flame uhc.data.setup 0
 scoreboard players set #reward_kill_health uhc.data.setup 0
 scoreboard players set #reward_kill_absorption uhc.data.setup 0
 execute store result storage uhc:settings reward_kill.health int 1 run scoreboard players get #reward_kill_health uhc.data.setup
-
-scoreboard players set #absorption uhc.data.setup 2
-scoreboard players set #hp_tab uhc.data.setup 3
-scoreboard players set #hp_name uhc.data.setup 0
-scoreboard players set #hp_100 uhc.data.setup 0
-
-scoreboard players set #pve uhc.data.setup 2
-scoreboard players set #pvp uhc.data.setup 40
+scoreboard players set #friendly_fire uhc.data.setup 1
+scoreboard players set #no_pvp_safety uhc.data.setup 1
 
 scoreboard players set #shrink_1_size_start uhc.data.setup 1000
 
