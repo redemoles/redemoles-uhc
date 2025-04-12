@@ -8,6 +8,7 @@
 #
 
 scoreboard players set #lobby lobby.data 1
-scoreboard players set #load lobby.data 0
+scoreboard players set #loaded lobby.data 0
+scoreboard players set #tick lobby.data 0
 
 function uhc:pre_game/menu/load/lobby/

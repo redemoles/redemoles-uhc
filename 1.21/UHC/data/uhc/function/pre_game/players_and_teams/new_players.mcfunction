@@ -16,7 +16,8 @@ tag @s remove uhc.random_team.in_a_team
 tag @s add players.menu.teams
 tag @s add uhc.spec
 tag @s remove uhc.scenario.sound_paranoia.on
-execute if score #lobby lobby.data matches 1.. in uhc:lobby run tp @s 0 0 0 0 0
+execute if score #lobby lobby.data matches 00..09 in uhc:lobby run tp @s 0 65 0 0 0
+execute if score #lobby lobby.data matches 10..19 in uhc:lobby run tp @s 0 65 0 0 0
 gamemode adventure @s
 clear @s
 title @s reset

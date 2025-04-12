@@ -251,6 +251,8 @@ scoreboard players set #end uhc.game.end 0
 execute in minecraft:overworld run function uhc:all_dimension_commands/reload
 execute in minecraft:the_nether run function uhc:all_dimension_commands/reload
 execute in minecraft:the_end run function uhc:all_dimension_commands/reload
+execute in uhc:lobby run function uhc:all_dimension_commands/reload
+execute in uhc:lobby run gamerule doVinesSpread false
 weather clear 999999
 worldborder center 0.5 0.5
 worldborder set 301
@@ -367,7 +369,8 @@ scoreboard players set #custom_arrow uhc.data.setup 0
 ## Génération du Lobby
 scoreboard objectives add lobby.data dummy
 execute unless score #lobby lobby.data matches 1.. run scoreboard players set #lobby lobby.data 1
-scoreboard players set #load lobby.data 0
+execute unless score #lobby lobby.data matches 1.. run scoreboard players set #loaded lobby.data 0
+execute unless score #lobby lobby.data matches 1.. run scoreboard players set #tick lobby.data 0
 
 ## Reload des fonctionnalités des modes de jeu
 function aic:load
@@ -414,7 +417,7 @@ scoreboard players set #1m uhc.data.numbers 1000000
 
 ## Sign
 execute in uhc:lobby run forceload add 0 0
-execute in uhc:lobby run setblock 0 -62 0 minecraft:stone
+execute in uhc:lobby run setblock 0 -62 0 minecraft:barrier
 execute in uhc:lobby run setblock 0 -61 0 minecraft:oak_sign
 
 # TP border define
