@@ -19,4 +19,5 @@ gamerule naturalRegeneration false
 gamerule showDeathMessages false
 gamerule keepInventory true
 gamerule doInsomnia false
+gamerule doTraderSpawning false
 difficulty normal

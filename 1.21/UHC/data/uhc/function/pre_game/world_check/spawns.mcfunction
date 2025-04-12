@@ -61,6 +61,7 @@ execute if score @s uhc.spawn.check matches 0..31 run title @s[scores={uhc.playe
 execute if score @s uhc.spawn.check matches 32 run title @s[scores={uhc.players.lang=2}] actionbar [{"text":"Check completed !","color":"#FFE73F","bold":true}]
 
 execute if score @s uhc.spawn.check matches 32 run gamemode adventure @s
-execute if score @s uhc.spawn.check matches 32 if score #lobby lobby.data matches 1.. in uhc:lobby run tp @s 0 0 0 0 0
+execute if score @s uhc.spawn.check matches 32 if score #lobby lobby.data matches 00..09 in uhc:lobby run tp @s 0 65 0 0 0
+execute if score @s uhc.spawn.check matches 32 if score #lobby lobby.data matches 10..19 in uhc:lobby run tp @s 0 65 0 0 0
 
 execute if score @s uhc.spawn.check matches 32 run scoreboard players reset @s uhc.spawn.check
