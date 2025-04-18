@@ -12,4 +12,4 @@ scoreboard players add #next_id uhc.id.players 1
 scoreboard players operation @s uhc.id.players = #next_id uhc.id.players
 scoreboard players operation @s uhc.id.teams = @s uhc.id.players
 summon marker 1 1 1 {Tags:["temp","UHC"]}
-team leave @s
+team join 99 @s

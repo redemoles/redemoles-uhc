@@ -1,5 +1,5 @@
 
-#> uhc:pre_game/world_check/spawns
+#> uhc:pre_game/world_check/spawns_2
 #
 # @within			
 # @executed			default context

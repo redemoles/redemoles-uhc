@@ -15,7 +15,8 @@
 		"background": "minecraft:block/moss_block",
 		"frame": "challenge",
 		"show_toast": false,
-		"announce_to_chat": false
+		"announce_to_chat": false,
+		"hidden": false
 	},
 	"criteria": {
 		"blue_ice": {
@@ -382,19 +383,6 @@
 				}
 			}
 		},
-		"cactus": {
-			"trigger": "minecraft:location",
-			"conditions": {
-				"player":  {
-					"type_specific": {
-						"type": "player",
-						"advancements": {
-							"aic:decoration/cactus": true
-						}
-					}
-				}
-			}
-		},
 		"vine": {
 			"trigger": "minecraft:location",
 			"conditions": {
@@ -460,6 +448,32 @@
 				}
 			}
 		},
+		"bush": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/bush": true
+						}
+					}
+				}
+			}
+		},
+		"firefly_bush": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/firefly_bush": true
+						}
+					}
+				}
+			}
+		},
 		"big_dripleaf": {
 			"trigger": "minecraft:location",
 			"conditions": {
@@ -494,6 +508,71 @@
 						"type": "player",
 						"advancements": {
 							"aic:decoration/lily_pad": true
+						}
+					}
+				}
+			}
+		},
+		"cactus": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/cactus": true
+						}
+					}
+				}
+			}
+		},
+		"cactus_flower": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/cactus_flower": true
+						}
+					}
+				}
+			}
+		},
+		"tall_dry_grass": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/tall_dry_grass": true
+						}
+					}
+				}
+			}
+		},
+		"short_dry_grass": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/short_dry_grass": true
+						}
+					}
+				}
+			}
+		},
+		"dead_bush": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:decoration/dead_bush": true
 						}
 					}
 				}
@@ -741,19 +820,6 @@
 						"type": "player",
 						"advancements": {
 							"aic:decoration/open_eyeblossom": true
-						}
-					}
-				}
-			}
-		},
-		"dead_bush": {
-			"trigger": "minecraft:location",
-			"conditions": {
-				"player":  {
-					"type_specific": {
-						"type": "player",
-						"advancements": {
-							"aic:decoration/dead_bush": true
 						}
 					}
 				}

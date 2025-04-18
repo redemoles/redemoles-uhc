@@ -15,7 +15,8 @@
 	  "background": "minecraft:block/amethyst_block",
 	  "frame": "challenge",
 	  "show_toast": false,
-	  "announce_to_chat": false
+	  "announce_to_chat": false,
+	  "hidden": false
 	},
 	"criteria": {
 		"unbreaking_1": {

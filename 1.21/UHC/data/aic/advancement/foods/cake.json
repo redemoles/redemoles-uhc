@@ -30,7 +30,7 @@
 			}
 		}
 	},
-	"parent": "aic:foods/egg",
+	"parent": "aic:foods/brown_egg",
 	"rewards": {
 		"function": "aic:advancements/item/cake"
 	}

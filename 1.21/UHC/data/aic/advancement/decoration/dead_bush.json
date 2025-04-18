@@ -30,7 +30,7 @@
 			}
 		}
 	},
-	"parent": "aic:decoration/open_eyeblossom",
+	"parent": "aic:decoration/short_dry_grass",
 	"rewards": {
 		"function": "aic:advancements/item/dead_bush"
 	}

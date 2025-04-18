@@ -7,7 +7,7 @@
 # @description		Donne les effets / gamemode aux specs
 #
 
-team leave @s
+team join 99 @s
 clear @s
 effect clear @s
 execute unless score @s uhc.players.lang matches 1.. run scoreboard players set @s uhc.players.lang 1
@@ -15,6 +15,13 @@ tag @s remove uhc.player.dead
 title @s reset
 
 tag @s remove uhc.fire_flame
+
+## Reset tags des mini-jeux du lobby
+tag @s remove mgs.tc.player
+tag @s remove mgs.tc.spec
+tag @s remove mgs.tc.finished
+tag @s remove mgs.tc.team.01
+tag @s remove mgs.tc.team.02
 
 ## Reset tags de tous les modes de jeu
 # Fate UHC

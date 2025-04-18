@@ -30,7 +30,7 @@
 			}
 		}
 	},
-	"parent": "aic:decoration/cactus",
+	"parent": "aic:_root_09",
 	"rewards": {
 		"function": "aic:advancements/item/vine"
 	}

@@ -8,12 +8,21 @@
 #
 
 scoreboard players set #start_game uhc.data.setup 1
+scoreboard players set #tick_start uhc.data.setup 3
 execute if score #aic uhc.gamemode matches 1 run scoreboard players set #aic uhc.gamemode 3
 
 ## Auto-set de la partie
 execute unless score #Minutes uhc.data.display matches 0.. run scoreboard players set #tick uhc.data.setup 0
 execute unless score #Minutes uhc.data.display matches 0.. run scoreboard players set #Secondes uhc.data.display 0
 execute unless score #Minutes uhc.data.display matches 0.. run function uhc:pre_game/config/timer
+
+## Mini-jeux lobby
+tag @a remove mgs.tc.player
+tag @a remove mgs.tc.spec
+tag @a remove mgs.tc.finished
+tag @a remove mgs.tc.team.01
+tag @a remove mgs.tc.team.02
+execute as @s run function uhc:pre_game/players_and_teams/reset_effects
 
 ## Random team
 execute if score #random_team_start uhc.data.setup matches 1 if score #random_team uhc.data.setup matches 1 run function uhc:pre_game/players_and_teams/random_team/

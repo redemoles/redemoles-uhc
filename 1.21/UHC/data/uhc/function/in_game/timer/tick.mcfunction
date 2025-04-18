@@ -14,7 +14,7 @@ execute if score #tick uhc.data.setup matches 20 run function uhc:in_game/timer/
 
 ## TP
 # TP un joueur au sol après spawn ou respawn
-execute as @a[scores={uhc.players.tp=1}] at @s positioned over motion_blocking_no_leaves run tp @s ~ ~ ~
+execute as @a[scores={uhc.players.tp=1}] at @s positioned over motion_blocking run tp @s ~ ~ ~
 scoreboard players set @a uhc.players.tp 0
 
 ## Start

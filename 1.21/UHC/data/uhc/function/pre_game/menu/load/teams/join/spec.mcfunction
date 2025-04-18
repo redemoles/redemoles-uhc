@@ -9,8 +9,8 @@
 
 tag @s add uhc.spec
 tag @s remove uhc.player
-team leave @s
-execute if score #anonyme_team uhc.data.setup matches 1 run team join 99 @s
+team join 99 @s
+execute if score #anonyme_team uhc.data.setup matches 1 run team join 98 @s
 
 tellraw @s[scores={uhc.players.lang=1}] [{"text":"Tu viens de rejoindre les ","color":"#3F9FFF","bold":false}, {"text":"Spectateurs","color":"aqua"}]
 tellraw @s[scores={uhc.players.lang=2}] [{"text":"You joined the ","color":"#3F9FFF","bold":false}, {"text":"Spectators","color":"aqua"}]

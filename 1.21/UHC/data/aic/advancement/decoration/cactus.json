@@ -30,7 +30,7 @@
 			}
 		}
 	},
-	"parent": "aic:_root_09",
+	"parent": "aic:decoration/lily_pad",
 	"rewards": {
 		"function": "aic:advancements/item/cactus"
 	}

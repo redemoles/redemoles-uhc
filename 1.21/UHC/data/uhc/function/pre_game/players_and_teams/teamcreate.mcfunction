@@ -41,6 +41,7 @@ team remove 29
 team remove 30
 team remove 31
 team remove 32
+team remove 98
 team remove 99
 team remove uhc.pvp.safety
 
@@ -96,11 +97,12 @@ team add 29
 team add 30
 team add 31
 team add 32
+team add 98
 team add 99
 team add uhc.pvp.safety
 
 ## Couleurs des équipes
-team modify 00 color yellow
+team modify 00 color white
 team modify 01 color dark_blue
 team modify 02 color blue
 team modify 03 color dark_aqua
@@ -133,7 +135,8 @@ team modify 29 color white
 team modify 30 color gray
 team modify 31 color dark_gray
 team modify 32 color black
-team modify 99 color yellow
+team modify 98 color yellow
+team modify 99 color white
 team modify uhc.pvp.safety color yellow
 team modify uhc.pvp.safety friendlyFire false
 team modify uhc.pvp.safety prefix [{"text":"PvP Off ","color":"#FF3F3F"}]
@@ -206,3 +209,24 @@ team join sb13 §c§f
 team join sb14 §d§7
 team join sb15 §e§8
 team join sb16 §f§0
+
+## Collision entre joueurs (seulement pour lobby)
+team modify 00 collisionRule never
+team modify 01 collisionRule never
+team modify 02 collisionRule never
+team modify 03 collisionRule never
+team modify 04 collisionRule never
+team modify 05 collisionRule never
+team modify 06 collisionRule never
+team modify 07 collisionRule never
+team modify 08 collisionRule never
+team modify 09 collisionRule never
+team modify 10 collisionRule never
+team modify 11 collisionRule never
+team modify 12 collisionRule never
+team modify 13 collisionRule never
+team modify 14 collisionRule never
+team modify 15 collisionRule never
+team modify 16 collisionRule never
+team modify 98 collisionRule never
+team modify 99 collisionRule never

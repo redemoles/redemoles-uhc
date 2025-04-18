@@ -1,54 +1,25 @@
 
-#> uhc:pre_game/timer/tick
+#> uhc:pre_game/timer/tick_player
 #
-# @within			uhc:tick
+# @within			uhc:pre_game/timer/tick
 # @executed			default context
 #
-# @description		Commandes pre-game en tick
+# @description		Commandes pre-game en tick pour joueurs
 #
 
 execute if entity @s[nbt={active_effects:[{id:"minecraft:absorption"}]}] run effect clear @s minecraft:absorption
 
-# Joueur au Lobby
+# Joueur hors du lobby
 execute unless score @s uhc.players.online matches 1 run function uhc:pre_game/players_and_teams/new_players
+execute at @s if entity @s[nbt={Dimension:"uhc:lobby"},y=-1,dy=-64] in uhc:lobby run tp @s 0 65 0 0 0
 
-## Hotbar d'équipe
-# FRA
-title @s[scores={uhc.id.teams=01,uhc.players.lang=1}] actionbar [{"text":"Équipe Indigo","color":"dark_blue","bold":true}]
-title @s[scores={uhc.id.teams=02,uhc.players.lang=1}] actionbar [{"text":"Équipe Bleue","color":"blue","bold":true}]
-title @s[scores={uhc.id.teams=03,uhc.players.lang=1}] actionbar [{"text":"Équipe Azur","color":"dark_aqua","bold":true}]
-title @s[scores={uhc.id.teams=04,uhc.players.lang=1}] actionbar [{"text":"Équipe Cyan","color":"aqua","bold":true}]
-title @s[scores={uhc.id.teams=05,uhc.players.lang=1}] actionbar [{"text":"Équipe Vert f.","color":"dark_green","bold":true}]
-title @s[scores={uhc.id.teams=06,uhc.players.lang=1}] actionbar [{"text":"Équipe Vert c.","color":"green","bold":true}]
-title @s[scores={uhc.id.teams=07,uhc.players.lang=1}] actionbar [{"text":"Équipe Jaune","color":"yellow","bold":true}]
-title @s[scores={uhc.id.teams=08,uhc.players.lang=1}] actionbar [{"text":"Équipe Orange","color":"gold","bold":true}]
-title @s[scores={uhc.id.teams=09,uhc.players.lang=1}] actionbar [{"text":"Équipe Rouge c.","color":"red","bold":true}]
-title @s[scores={uhc.id.teams=10,uhc.players.lang=1}] actionbar [{"text":"Équipe Rouge f.","color":"dark_red","bold":true}]
-title @s[scores={uhc.id.teams=11,uhc.players.lang=1}] actionbar [{"text":"Équipe Violette","color":"dark_purple","bold":true}]
-title @s[scores={uhc.id.teams=12,uhc.players.lang=1}] actionbar [{"text":"Équipe Rose","color":"light_purple","bold":true}]
-title @s[scores={uhc.id.teams=13,uhc.players.lang=1}] actionbar [{"text":"Équipe Blanche","color":"white","bold":true}]
-title @s[scores={uhc.id.teams=14,uhc.players.lang=1}] actionbar [{"text":"Équipe Gris c.","color":"gray","bold":true}]
-title @s[scores={uhc.id.teams=15,uhc.players.lang=1}] actionbar [{"text":"Équipe Gris f.","color":"dark_gray","bold":true}]
-title @s[scores={uhc.id.teams=16,uhc.players.lang=1}] actionbar [{"text":"Équipe Noire","color":"black","bold":true}]
-title @s[tag=uhc.spec,scores={uhc.players.lang=1}] actionbar [{"text":"Choisis ton équipe dans l'inventaire","color":"#3FCFFF","bold":true}]
-# ENG
-title @s[scores={uhc.id.teams=01,uhc.players.lang=2}] actionbar [{"text":"Indigo Team","color":"dark_blue","bold":true}]
-title @s[scores={uhc.id.teams=02,uhc.players.lang=2}] actionbar [{"text":"Blue Team","color":"blue","bold":true}]
-title @s[scores={uhc.id.teams=03,uhc.players.lang=2}] actionbar [{"text":"Azure Team","color":"dark_aqua","bold":true}]
-title @s[scores={uhc.id.teams=04,uhc.players.lang=2}] actionbar [{"text":"Cyan Team","color":"aqua","bold":true}]
-title @s[scores={uhc.id.teams=05,uhc.players.lang=2}] actionbar [{"text":"D. Green Team","color":"dark_green","bold":true}]
-title @s[scores={uhc.id.teams=06,uhc.players.lang=2}] actionbar [{"text":"L. Green Team","color":"green","bold":true}]
-title @s[scores={uhc.id.teams=07,uhc.players.lang=2}] actionbar [{"text":"Yellow Team","color":"yellow","bold":true}]
-title @s[scores={uhc.id.teams=08,uhc.players.lang=2}] actionbar [{"text":"Orange Team","color":"gold","bold":true}]
-title @s[scores={uhc.id.teams=09,uhc.players.lang=2}] actionbar [{"text":"L. Red Team","color":"red","bold":true}]
-title @s[scores={uhc.id.teams=10,uhc.players.lang=2}] actionbar [{"text":"D. Red Team","color":"dark_red","bold":true}]
-title @s[scores={uhc.id.teams=11,uhc.players.lang=2}] actionbar [{"text":"Purple Team","color":"dark_purple","bold":true}]
-title @s[scores={uhc.id.teams=12,uhc.players.lang=2}] actionbar [{"text":"Pink Team","color":"light_purple","bold":true}]
-title @s[scores={uhc.id.teams=13,uhc.players.lang=2}] actionbar [{"text":"White Team","color":"white","bold":true}]
-title @s[scores={uhc.id.teams=14,uhc.players.lang=2}] actionbar [{"text":"L. Gray Team","color":"gray","bold":true}]
-title @s[scores={uhc.id.teams=15,uhc.players.lang=2}] actionbar [{"text":"D. Gray Team","color":"dark_gray","bold":true}]
-title @s[scores={uhc.id.teams=16,uhc.players.lang=2}] actionbar [{"text":"Black Team","color":"black","bold":true}]
-title @s[tag=uhc.spec,scores={uhc.players.lang=2}] actionbar [{"text":"Choose your team in your inventory","color":"#3FCFFF","bold":true}]
+# Reconnexion d'un joueur
+execute if score @s uhc.players.disconnect matches 1.. in uhc:lobby run function uhc:pre_game/players_and_teams/reconnect/
+
+## Hotbar
+execute if entity @s[scores={uhc.players.lang=1},tag=!mgs.tc.player,tag=!mgs.tc.spec] run function uhc:pre_game/timer/hotbar/1_fra
+execute if entity @s[scores={uhc.players.lang=2},tag=!mgs.tc.player,tag=!mgs.tc.spec] run function uhc:pre_game/timer/hotbar/2_eng
+execute unless entity @s[tag=!mgs.tc.player,tag=!mgs.tc.spec] run function lobby:mini_games/tc/hotbar/
 
 # Vie en pourcentage
 scoreboard players operation #team uhc.id.teams = @s uhc.id.teams

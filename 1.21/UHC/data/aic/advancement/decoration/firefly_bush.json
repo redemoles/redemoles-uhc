@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "firefly_bush"
+		},
+		"title": {
+			"text": "Firefly Bush",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"firefly_bush"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:decoration/bush",
+	"rewards": {
+		"function": "aic:advancements/item/firefly_bush"
+	}
+}

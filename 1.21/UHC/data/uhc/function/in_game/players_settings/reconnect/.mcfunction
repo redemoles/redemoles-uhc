@@ -8,10 +8,10 @@
 #
 
 scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
+scoreboard players set @s uhc.players.disconnect 0
 
 # Team Health
 execute if score #team_health uhc.scenario matches 1 run function uhc:in_game/scenarios/team_health/
-scoreboard players set @s uhc.players.disconnect 0
 
 # Supprimer les effets de start / respawn
 execute if score #Minutes uhc.data.display matches 0.. as @s[tag=uhc.player,predicate=uhc:effect_respawn] run function uhc:in_game/players_settings/reconnect/start

@@ -8,6 +8,7 @@
 #
 
 # Message au centre de l'écran
+execute if score #tick_start uhc.data.setup matches 4 run title @a reset
 execute if score #tick_start uhc.data.setup matches 4 if score #vanilla uhc.gamemode matches 1 run title @a title [{"text":"UHC","color":"#3FE7FF","bold":false}]
 execute if score #tick_start uhc.data.setup matches 4 if score #bhc uhc.gamemode matches 1 run title @a title [{"text":"Bingo","color":"#9F3FFF","bold":false},{"text":" UHC","color":"#FFE73F","bold":false}]
 execute if score #tick_start uhc.data.setup matches 4 if score #dru uhc.gamemode matches 1 run title @a title [{"text":"Dragon","color":"#5F2FBF","bold":false},{"text":" UHC","color":"#FFE73F","bold":false}]
@@ -32,5 +33,5 @@ execute if score #tick_start uhc.data.setup matches 140 run playsound minecraft:
 execute if score #tick_start uhc.data.setup matches 159 run function uhc:start/setup_uhc
 
 # TP sol si spawn [0;0]
-execute if score #tick_start uhc.data.setup matches 106 if score #dru uhc.gamemode matches 1 run scoreboard players set @a[tag=uhc.player] uhc.players.tp 1
-execute if score #tick_start uhc.data.setup matches 106 if score #aic uhc.gamemode matches 3 run scoreboard players set @a[tag=uhc.player] uhc.players.tp 1
+execute if score #tick_start uhc.data.setup matches 80 if score #dru uhc.gamemode matches 1 run scoreboard players set @a[tag=uhc.player] uhc.players.tp 1
+execute if score #tick_start uhc.data.setup matches 80 if score #aic uhc.gamemode matches 3 run scoreboard players set @a[tag=uhc.player] uhc.players.tp 1

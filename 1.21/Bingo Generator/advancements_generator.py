@@ -111,7 +111,7 @@ unobtainable_blocks = [
 	"minecraft:suspicious_gravel",
 	"minecraft:bell",
 	"minecraft:tall_grass",
-	"minecraft:vault",
+	"minecraft:vault"
 ]
 block_should_not_contains = ["command_block", "test", "spawn", "infested", "banner_pattern", "template", "chainmail", "netherite", "frog", "turtle", "head", "sherd", "torchflower", "pitcher", "horse", "music_disc"]
 unobtainable_blocks += [block for block in blocks if any(x in block for x in block_should_not_contains)]

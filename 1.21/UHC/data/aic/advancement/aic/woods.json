@@ -750,6 +750,19 @@
 				}
 			}
 		},
+		"wildflowers": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/wildflowers": true
+						}
+					}
+				}
+			}
+		},
 		"birch_leaves": {
 			"trigger": "minecraft:location",
 			"conditions": {
@@ -2271,14 +2284,14 @@
 				}
 			}
 		},
-		"charcoal": {
+		"leaf_litter": {
 			"trigger": "minecraft:location",
 			"conditions": {
 				"player":  {
 					"type_specific": {
 						"type": "player",
 						"advancements": {
-							"aic:woods/charcoal": true
+							"aic:woods/leaf_litter": true
 						}
 					}
 				}
@@ -2786,6 +2799,19 @@
 						"type": "player",
 						"advancements": {
 							"aic:woods/spruce_leaves": true
+						}
+					}
+				}
+			}
+		},
+		"charcoal": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:woods/charcoal": true
 						}
 					}
 				}

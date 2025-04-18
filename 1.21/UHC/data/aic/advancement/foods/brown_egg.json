@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "brown_egg"
+		},
+		"title": {
+			"text": "Brown Egg",
+			"color": "#FFFFFF"
+		},
+		"description": {
+			"text": "",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"brown_egg"
+						]
+					}
+				]
+			}
+		}
+	},
+	"parent": "aic:foods/blue_egg",
+	"rewards": {
+		"function": "aic:advancements/item/brown_egg"
+	}
+}

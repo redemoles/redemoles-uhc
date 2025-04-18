@@ -233,7 +233,7 @@ scoreboard objectives add uhc.spawn.check trigger
 scoreboard objectives add uhc.world.end dummy
 scoreboard objectives setdisplay sidebar
 scoreboard objectives setdisplay list uhc.players.health
-kill @e[type=marker]
+kill @e[type=marker,tag=!lobby]
 kill @e[type=falling_block]
 title @a reset
 
@@ -367,10 +367,7 @@ scoreboard players set #team_size uhc.data.setup 4
 scoreboard players set #custom_arrow uhc.data.setup 0
 
 ## Génération du Lobby
-scoreboard objectives add lobby.data dummy
-execute unless score #lobby lobby.data matches 1.. run scoreboard players set #lobby lobby.data 1
-execute unless score #lobby lobby.data matches 1.. run scoreboard players set #loaded lobby.data 0
-execute unless score #lobby lobby.data matches 1.. run scoreboard players set #tick lobby.data 0
+function lobby:load
 
 ## Reload des fonctionnalités des modes de jeu
 function aic:load
@@ -411,6 +408,7 @@ scoreboard players set #55 uhc.data.numbers 55
 scoreboard players set #60 uhc.data.numbers 60
 scoreboard players set #100 uhc.data.numbers 100
 scoreboard players set #336 uhc.data.numbers 336
+scoreboard players set #1000 uhc.data.numbers 1000
 scoreboard players set #1200 uhc.data.numbers 1200
 scoreboard players set #12000 uhc.data.numbers 12000
 scoreboard players set #1m uhc.data.numbers 1000000

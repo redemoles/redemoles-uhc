@@ -7,8 +7,11 @@
 # @description		Commandes pre-game en tick
 #
 
-## Chargement du Lobby
-execute if score #loaded lobby.data matches 0 in uhc:lobby run function lobby:load/
+## Chargement du lobby
+execute if score #loaded lobby.structure.data matches 0 in uhc:lobby run function lobby:lobby_map/
+
+## Mini-jeux de lobby
+execute if score #lobby lobby.structure.data matches 10..19 in uhc:lobby positioned 0 64 0 run function lobby:mini_games/
 
 ## Joueurs
 execute as @a run function uhc:pre_game/timer/tick_player
@@ -20,4 +23,5 @@ execute if entity @p[scores={uhc.menu.update=9..}] unless entity @p[scores={uhc.
 execute if score #random_team_tick uhc.data.setup matches 0.. run function uhc:pre_game/players_and_teams/random_team/reveal/progressive
 
 ## Kill item au sol
-kill @e[type=item]
+execute as @e[type=minecraft:item,tag=!lobby.item.checked] run function uhc:pre_game/timer/tick_item
+execute as @e[type=minecraft:experience_orb] run kill @s

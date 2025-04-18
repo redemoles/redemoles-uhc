@@ -30,7 +30,7 @@
 			}
 		}
 	},
-	"parent": "aic:decoration/fern",
+	"parent": "aic:decoration/firefly_bush",
 	"rewards": {
 		"function": "aic:advancements/item/big_dripleaf"
 	}

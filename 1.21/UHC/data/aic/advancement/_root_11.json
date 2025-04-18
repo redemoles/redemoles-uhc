@@ -15,7 +15,8 @@
 		"background": "minecraft:block/beehive_front",
 		"frame": "challenge",
 		"show_toast": false,
-		"announce_to_chat": false
+		"announce_to_chat": false,
+		"hidden": false
 	},
 	"criteria": {
 		"bee_nest": {
@@ -954,19 +955,6 @@
 				}
 			}
 		},
-		"cookie": {
-			"trigger": "minecraft:location",
-			"conditions": {
-				"player":  {
-					"type_specific": {
-						"type": "player",
-						"advancements": {
-							"aic:foods/cookie": true
-						}
-					}
-				}
-			}
-		},
 		"cocoa_beans": {
 			"trigger": "minecraft:location",
 			"conditions": {
@@ -980,27 +968,14 @@
 				}
 			}
 		},
-		"cake": {
+		"cookie": {
 			"trigger": "minecraft:location",
 			"conditions": {
 				"player":  {
 					"type_specific": {
 						"type": "player",
 						"advancements": {
-							"aic:foods/cake": true
-						}
-					}
-				}
-			}
-		},
-		"egg": {
-			"trigger": "minecraft:location",
-			"conditions": {
-				"player":  {
-					"type_specific": {
-						"type": "player",
-						"advancements": {
-							"aic:foods/egg": true
+							"aic:foods/cookie": true
 						}
 					}
 				}
@@ -1027,6 +1002,58 @@
 						"type": "player",
 						"advancements": {
 							"aic:foods/sugar": true
+						}
+					}
+				}
+			}
+		},
+		"egg": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/egg": true
+						}
+					}
+				}
+			}
+		},
+		"blue_egg": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/blue_egg": true
+						}
+					}
+				}
+			}
+		},
+		"brown_egg": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/brown_egg": true
+						}
+					}
+				}
+			}
+		},
+		"cake": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"aic:foods/cake": true
 						}
 					}
 				}

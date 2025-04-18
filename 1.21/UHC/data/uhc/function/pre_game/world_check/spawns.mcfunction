@@ -52,7 +52,7 @@ execute if score @s uhc.spawn.check matches 29 run tp @s 0 300 96
 execute if score @s uhc.spawn.check matches 31 run tp @s 0 300 -96
 
 ## Téléportations
-execute at @s positioned over motion_blocking_no_leaves run tp @s ~ ~ ~
+execute at @s positioned over motion_blocking run tp @s ~ ~ ~
 
 execute if score @s uhc.spawn.check matches 0..31 run title @s[scores={uhc.players.lang=1}] actionbar [{"text":"Vérification des points d'apparition","color":"#FFE73F","bold":true}]
 execute if score @s uhc.spawn.check matches 32 run title @s[scores={uhc.players.lang=1}] actionbar [{"text":"Vérification terminée !","color":"#FFE73F","bold":true}]
@@ -61,7 +61,7 @@ execute if score @s uhc.spawn.check matches 0..31 run title @s[scores={uhc.playe
 execute if score @s uhc.spawn.check matches 32 run title @s[scores={uhc.players.lang=2}] actionbar [{"text":"Check completed !","color":"#FFE73F","bold":true}]
 
 execute if score @s uhc.spawn.check matches 32 run gamemode adventure @s
-execute if score @s uhc.spawn.check matches 32 if score #lobby lobby.data matches 00..09 in uhc:lobby run tp @s 0 65 0 0 0
-execute if score @s uhc.spawn.check matches 32 if score #lobby lobby.data matches 10..19 in uhc:lobby run tp @s 0 65 0 0 0
+execute if score @s uhc.spawn.check matches 32 if score #lobby lobby.structure.data matches 00..09 in uhc:lobby run tp @s 0 65 0 0 0
+execute if score @s uhc.spawn.check matches 32 if score #lobby lobby.structure.data matches 10..19 in uhc:lobby run tp @s 0 65 0 0 0
 
 execute if score @s uhc.spawn.check matches 32 run scoreboard players reset @s uhc.spawn.check
