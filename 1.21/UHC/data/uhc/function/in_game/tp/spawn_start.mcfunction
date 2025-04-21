@@ -35,7 +35,7 @@ tp @s[scores={uhc.id.spawns=16}] 0 300 -960 0.0 0.0
 
 scoreboard players set @s uhc.players.tp 1
 
-execute if score #respawn_2_enabled uhc.data.setup matches 0 run function uhc:in_game/tp/spawn_msg_1
-execute if score #respawn_2_enabled uhc.data.setup matches 1 if score #respawn_2_timer uhc.data.setup matches 1.. run function uhc:in_game/tp/spawn_msg_1
-execute if score #respawn_2_enabled uhc.data.setup matches 1 if score #respawn_2_timer uhc.data.setup matches ..0 run function uhc:in_game/tp/spawn_msg_2
-execute if score #respawn_2_enabled uhc.data.setup matches 1 if score #Minutes uhc.data.display matches ..0 run function uhc:in_game/tp/spawn_msg_2
+execute if score #respawn_2_enabled uhc.data.setup matches 0 if score #live_1 uhc.data.display matches 1.. run function uhc:in_game/tp/spawn_msg_1
+execute if score #respawn_2_enabled uhc.data.setup matches 1 if score #respawn_2_timer uhc.data.setup matches 1.. if score #live_1 uhc.data.display matches 1.. run function uhc:in_game/tp/spawn_msg_1
+execute if score #respawn_2_enabled uhc.data.setup matches 1 if score #respawn_2_timer uhc.data.setup matches ..0 if score #live_1 uhc.data.display matches 1.. run function uhc:in_game/tp/spawn_msg_2
+execute if score #respawn_2_enabled uhc.data.setup matches 1 if score #Minutes uhc.data.display matches ..0 if score #live_1 uhc.data.display matches 1.. run function uhc:in_game/tp/spawn_msg_2

@@ -4,7 +4,7 @@
 # @within			uhc:in_game/scenarios/best_pve/list_1
 # 
 #
-# @description		Retrait de la liste PvE
+# @description		Obtention de la liste Best PvE avec /trigger best_pve.list set 1
 #
 
 scoreboard players operation #secondes uhc.scenario.best_pve.tick = @s uhc.scenario.best_pve.tick
@@ -14,5 +14,5 @@ scoreboard players operation #minutes uhc.scenario.best_pve.tick /= #60 uhc.data
 scoreboard players operation #minutes uhc.scenario.best_pve.tick *= #60 uhc.data.numbers
 scoreboard players operation #secondes uhc.scenario.best_pve.tick -= #minutes uhc.scenario.best_pve.tick
 scoreboard players operation #minutes uhc.scenario.best_pve.tick /= #60 uhc.data.numbers
-tellraw @s[scores={best_pve.list=0..}] [{"selector":"@p[scores={uhc.scenario.best_pve.list=1}]"},{"text":" ["},{"score":{"name":"#minutes","objective":"uhc.scenario.best_pve.tick"}},{"text":"m"},{"score":{"name":"#secondes","objective":"uhc.scenario.best_pve.tick"}},{"text":"s"},{"text":"]"}]
-scoreboard players set @s uhc.scenario.best_pve.list 2
+tellraw @p[scores={best_pve.list=0..}] [{"selector":"@s"},{"text":" ["},{"score":{"name":"#minutes","objective":"uhc.scenario.best_pve.tick"}},{"text":"m"},{"score":{"name":"#secondes","objective":"uhc.scenario.best_pve.tick"}},{"text":"s"},{"text":"]"}]
+scoreboard players reset @s uhc.scenario.best_pve.list

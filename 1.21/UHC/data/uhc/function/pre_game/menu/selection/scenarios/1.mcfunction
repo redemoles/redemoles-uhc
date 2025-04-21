@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/selection/scenarios/1
 #
-# @within			uhc:pre_game/menu/host_menu
+# @within			uhc:pre_game/menu/detector/host_menu
 # @within			uhc:pre_game/menu/selection/scenarios/2
 #
 # @description		Redirection

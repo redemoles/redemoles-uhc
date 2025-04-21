@@ -17,7 +17,7 @@ execute unless score @s uhc.menu.host.settings matches 1.. run scoreboard player
 
 
 
-function uhc:pre_game/menu/load/background
+function uhc:pre_game/menu/load/background/
 
 execute in uhc:lobby run function uhc:pre_game/menu/load/settings/lives/macro_set
 function uhc:pre_game/menu/load/settings/lives/macro_text with storage uhc:settings
@@ -49,11 +49,11 @@ execute if score @s uhc.menu.host.settings.pvp matches 1.. run function uhc:pre_
 execute if score @s uhc.menu.host.settings.pvp matches 1.. in uhc:lobby run function uhc:pre_game/menu/load/settings/pvp/shield/macro_set
 execute if score @s uhc.menu.host.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/shield/macro_text with storage uhc:settings
 
-
-execute if score @s uhc.menu.host.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/fire_flame/macro_text with storage uhc:settings
-
 execute if score @s uhc.menu.host.settings.pvp matches 1.. in uhc:lobby run function uhc:pre_game/menu/load/settings/pvp/no_clean/macro_set
 execute if score @s uhc.menu.host.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/no_clean/macro_text with storage uhc:settings
+
+
+execute if score @s uhc.menu.host.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/friendly_fire/macro_text
 
 execute in uhc:lobby run function uhc:pre_game/menu/load/settings/border/macro_set
 function uhc:pre_game/menu/load/settings/border/macro_text with storage uhc:settings
@@ -66,6 +66,17 @@ execute if score @s uhc.menu.host.settings.border matches 1.. run function uhc:p
 
 execute if score @s uhc.menu.host.settings.border matches 1.. in uhc:lobby run function uhc:pre_game/menu/load/settings/border/border_2/macro_set
 execute if score @s uhc.menu.host.settings.border matches 1.. run function uhc:pre_game/menu/load/settings/border/border_2/macro_text with storage uhc:settings
+
+item replace entity @s[scores={uhc.players.lang=1}] inventory.5 with minecraft:chest[minecraft:item_name=[{"text":"Inventaire","color":"#FFE73F","italic":false}],minecraft:lore=[{"text":"Règles de stuff","color":"#FFFFFF","italic":false}],minecraft:custom_data={Tags:"settings_inventory"}]
+item replace entity @s[scores={uhc.players.lang=2}] inventory.5 with minecraft:chest[minecraft:item_name=[{"text":"Inventory","color":"#FFE73F","italic":false}],minecraft:lore=[{"text":"Items rules","color":"#FFFFFF","italic":false}],minecraft:custom_data={Tags:"settings_inventory"}]
+
+
+execute if score @s uhc.menu.host.settings.inventory matches 1.. run function uhc:pre_game/menu/load/settings/inventory/fire_flame/macro_text
+
+
+
+
+
 
 
 function uhc:pre_game/menu/load/settings/players_menu/gamemode/macro_text with storage uhc:settings

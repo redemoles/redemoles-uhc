@@ -17,7 +17,7 @@ tag @s remove host.menu.scenarios.enchanting_setup
 
 
 
-function uhc:pre_game/menu/load/background
+function uhc:pre_game/menu/load/background/
 
 execute if score #bats uhc.scenario matches 0 run item replace entity @s inventory.1 with minecraft:red_concrete[minecraft:item_name=[{"text":"Bats","color":"#FF3F3F","italic":false}],minecraft:lore=[[{"text":"A player killing a bat has:","color":"#FFFFFF","italic":false}],[{"text":"• ","color":"#3FE7FF","italic":false},{"text":"95% chance of getting a golden apple","color":"#7FEFFF","italic":false}],[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"5% chance of dying","color":"#FF7F7F","italic":false}]]]
 execute if score #bats uhc.scenario matches 1 run item replace entity @s inventory.1 with minecraft:bat_spawn_egg[minecraft:item_name=[{"text":"Bats","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"A player killing a bat has:","color":"#FFFFFF","italic":false}],[{"text":"• ","color":"#3FE7FF","italic":false},{"text":"95% chance of getting a golden apple","color":"#7FEFFF","italic":false}],[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"5% chance of dying","color":"#FF7F7F","italic":false}]]]
@@ -51,4 +51,5 @@ execute if score #red_arrows uhc.scenario matches 0 run item replace entity @s i
 execute if score #red_arrows uhc.scenario matches 1 run item replace entity @s inventory.16 with minecraft:magenta_glazed_terracotta[minecraft:item_name=[{"text":"Red Arrows","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"When a player dies, a red arrow appears at his position.","color":"#FFFFFF","italic":false}]]]
 
 item replace entity @s inventory.24 with minecraft:arrow[minecraft:item_name=[{"text":"Page 2","color":"#3FE7FF","italic":false}]]
-item replace entity @s inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"FERMER","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
+item replace entity @s[scores={uhc.players.lang=1}] inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Fermer","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
+item replace entity @s[scores={uhc.players.lang=2}] inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Close","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]

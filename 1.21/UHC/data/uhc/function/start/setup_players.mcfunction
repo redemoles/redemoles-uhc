@@ -29,14 +29,13 @@ advancement revoke @a everything
 scoreboard objectives remove uhc.players.online
 scoreboard objectives add uhc.players.online dummy
 scoreboard players set @a[tag=uhc.player] uhc.players.online 1
+scoreboard players enable @a ironman.list
+
+function uhc:in_game/players_settings/pvp/friendly_fire/disable
 
 ## Starter
-execute if score #vanilla uhc.gamemode matches 1 run give @a[tag=uhc.player] minecraft:golden_carrot 8
-execute if score #dru uhc.gamemode matches 1 run give @a[tag=uhc.player] minecraft:golden_carrot 8
-execute if score #fte uhc.gamemode matches 1 run function fte:start/give
-execute if score #nzl uhc.gamemode matches 1 run give @a[tag=uhc.player] minecraft:golden_carrot 8
-execute if score #prv uhc.gamemode matches 1 run give @a[tag=uhc.player] minecraft:golden_carrot 8
-execute unless score #aic uhc.gamemode matches 3 run give @a[tag=uhc.player] minecraft:oak_boat 1
+data modify storage uhc:temp Item_starter set from storage uhc:settings Item_starter
+execute unless score #aic uhc.gamemode matches 3 run function uhc:start/item_starter with storage uhc:temp Item_starter[0]
 
 ## Scenarios
 # Ironman
@@ -44,7 +43,7 @@ execute unless score #aic uhc.gamemode matches 3 run tag @a[tag=uhc.player] add 
 execute unless score #aic uhc.gamemode matches 3 store result score #ironman uhc.data.setup if entity @a[tag=uhc.player]
 
 # Best PvE
-execute if score #best_pve uhc.scenario matches 1 run function uhc:start/scenarios/best_pve
+execute if score #best_pve uhc.scenario matches 1 run tag @a[tag=uhc.player] add uhc.scenario.best_pve
 
 # Biome Paranoia
 execute if score #biome_paranoia uhc.scenario matches 2 as @a[tag=uhc.player] in uhc:lobby run function uhc:start/scenarios/biome_paranoia
@@ -73,7 +72,4 @@ execute if score #dru uhc.gamemode matches 1 run function dru:start/set_moles
 execute if score #ffa uhc.data.display matches 0 run function uhc:start/game_teams/
 execute if score #ffa uhc.data.display matches 1.. run function uhc:start/game_ffa/
 
-execute in minecraft:overworld run tp @a[tag=uhc.spec] 0 200 0
-
-## Suppression du lobby
-#execute in uhc:lobby run function lobby:delete
+execute in minecraft:overworld positioned 0 200 0 positioned over motion_blocking run tp @a[tag=uhc.spec] ~ ~16 ~

@@ -17,7 +17,7 @@ tag @s add host.menu.world_generation
 
 
 
-function uhc:pre_game/menu/load/background
+function uhc:pre_game/menu/load/background/
 
 execute unless score #overworld_finished pregen.world matches 2.. run item replace entity @s inventory.1 with minecraft:red_concrete[minecraft:item_name=[{"text":"1000/-1000","color":"#FF3F3F","italic":false}],minecraft:lore=[{"text":"Overworld","color":"#FFFFFF","italic":false}],minecraft:custom_data={Tags:"overworld_2000"}]
 execute unless score #overworld_finished pregen.world matches 4.. run item replace entity @s inventory.2 with minecraft:red_concrete[minecraft:item_name=[{"text":"2000/-2000","color":"#FF3F3F","italic":false}],minecraft:lore=[{"text":"Overworld","color":"#FFFFFF","italic":false}],minecraft:custom_data={Tags:"overworld_4000"}]
@@ -82,8 +82,8 @@ execute if score #the_end_finished pregen.world matches 8.. run item replace ent
 execute if score #the_end_finished pregen.world matches 10.. run item replace entity @s inventory.23 with minecraft:end_stone[minecraft:item_name=[{"text":"5000/-5000","color":"#3FE7FF","italic":false}],minecraft:lore=[{"text":"End","color":"#FFFFFF","italic":false}],minecraft:custom_data={Tags:"the_end_10000"}]
 execute if score #the_end_finished pregen.world matches 20.. run item replace entity @s inventory.24 with minecraft:end_stone[minecraft:item_name=[{"text":"10000/-10000","color":"#3FE7FF","italic":false}],minecraft:lore=[{"text":"End","color":"#FFFFFF","italic":false}],minecraft:custom_data={Tags:"the_end_20000"}]
 
-item replace entity @s[scores={uhc.players.lang=1}] inventory.7 with minecraft:barrier[minecraft:item_name=[{"text":"ANNULER","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"cancel"}]
-item replace entity @s[scores={uhc.players.lang=1}] inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"FERMER","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
+item replace entity @s[scores={uhc.players.lang=1}] inventory.7 with minecraft:barrier[minecraft:item_name=[{"text":"Annuler","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"cancel"}]
+item replace entity @s[scores={uhc.players.lang=1}] inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Fermer","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
 
-item replace entity @s[scores={uhc.players.lang=2}] inventory.7 with minecraft:barrier[minecraft:item_name=[{"text":"CANCEL","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"cancel"}]
-item replace entity @s[scores={uhc.players.lang=2}] inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"CLOSE","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
+item replace entity @s[scores={uhc.players.lang=2}] inventory.7 with minecraft:barrier[minecraft:item_name=[{"text":"Cancel","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"cancel"}]
+item replace entity @s[scores={uhc.players.lang=2}] inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Close","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]

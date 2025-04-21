@@ -17,7 +17,7 @@ scoreboard players set @s[scores={uhc.menu.host.teams_settings=0}] uhc.menu.host
 
 
 
-function uhc:pre_game/menu/load/background
+function uhc:pre_game/menu/load/background/
 
 execute if score #random_team uhc.data.setup matches 0 run item replace entity @s[scores={uhc.players.lang=1}] inventory.1 with minecraft:light_blue_concrete[minecraft:item_name=[{"text":"Format d'équipe","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"• ","color":"#3FE7FF","italic":false},{"text":"Équipe choisie","color":"#FFFFFF","italic":false}],[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"Équipe aléatoire","color":"#9F9F9F","italic":true}]],minecraft:custom_data={Tags:"team_format"}]
 execute if score #random_team uhc.data.setup matches 1 run item replace entity @s[scores={uhc.players.lang=1}] inventory.1 with minecraft:yellow_concrete[minecraft:item_name=[{"text":"Format d'équipe","color":"#FFE73F","italic":false}],minecraft:lore=[[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"Équipe choisie","color":"#9F9F9F","italic":true}],[{"text":"• ","color":"#3FE7FF","italic":false},{"text":"Équipe aléatoire","color":"#FFFFFF","italic":false}]],minecraft:custom_data={Tags:"team_format"}]
@@ -58,4 +58,5 @@ execute if score @s uhc.menu.host.teams_settings matches 2 run item replace enti
 execute if score @s uhc.menu.host.teams_settings matches 2 run item replace entity @s inventory.23 with minecraft:light_blue_concrete[minecraft:item_name=[{"text":"+1","color":"#3FE7FF","italic":false}]]
 execute if score @s uhc.menu.host.teams_settings matches 2 run item replace entity @s inventory.24 with minecraft:cyan_concrete[minecraft:item_name=[{"text":"+4","color":"#3FCFCF","italic":false}]]
 
-item replace entity @s inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"FERMER","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
+item replace entity @s[scores={uhc.players.lang=1}] inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Fermer","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
+item replace entity @s[scores={uhc.players.lang=2}] inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Close","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]

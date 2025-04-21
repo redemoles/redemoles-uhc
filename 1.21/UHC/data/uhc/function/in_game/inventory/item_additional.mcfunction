@@ -1,15 +1,15 @@
 
 #> uhc:in_game/inventory/item_additional
 #
-# @within			uhc:inventory/location
+# @within			uhc:in_game/inventory/location
 # @executed			default context
 #
 # @description		
 #
 
 # Pomme d'or
-execute if score #pvp uhc.data.setup matches ..0 run summon item ~ ~ ~ {Item:{id:"minecraft:golden_apple",count:2}}
-execute if score #pvp uhc.data.setup matches 1.. if score @s uhc.players.lives matches ..0 run summon item ~ ~ ~ {Item:{id:"minecraft:golden_apple",count:2}}
+execute if score #pvp uhc.data.setup matches ..0 run function uhc:in_game/inventory/item_additional_custom
+execute if score #pvp uhc.data.setup matches 1.. if score @s uhc.players.lives matches ..0 run function uhc:in_game/inventory/item_additional_custom
 
 # Bookception
 execute if score #bookception uhc.scenario matches 1 if score #pvp uhc.data.setup matches ..0 run function uhc:in_game/scenarios/bookception/

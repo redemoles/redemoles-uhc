@@ -1,7 +1,7 @@
 
 #> uhc:in_game/inventory/item
 #
-# @within			uhc:inventory/location
+# @within			uhc:in_game/inventory/location
 # @executed			default context
 #
 # @description		

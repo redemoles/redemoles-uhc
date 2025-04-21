@@ -17,7 +17,7 @@ scoreboard players set @s uhc.menu.host.gamemode.mls 1
 
 
 
-function uhc:pre_game/menu/load/background
+function uhc:pre_game/menu/load/background/
 
 execute unless score #mls mls.scenario matches 1.. run item replace entity @s[scores={uhc.players.lang=1}] inventory.1 with minecraft:red_concrete[minecraft:item_name=[{"text":"Moles Désactivé","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"type_moles"}]
 execute if score #mls mls.scenario matches 1 run item replace entity @s[scores={uhc.players.lang=1}] inventory.1 with minecraft:light_blue_concrete[minecraft:item_name=[{"text":"Moles Normal","color":"#3FE7FF","italic":false}],minecraft:custom_data={Tags:"type_moles"},minecraft:lore=[[{"text":"Les taupes sont choisis aléatoirement dans chaque équipe.","color":"#FFFFFF","italic":false}]]]
@@ -47,8 +47,8 @@ execute if score @s uhc.menu.host.gamemode.mls matches 2 run item replace entity
 execute if score @s uhc.menu.host.gamemode.mls matches 2 run item replace entity @s inventory.23 with minecraft:light_blue_concrete[minecraft:item_name=[{"text":"+1","color":"#3FE7FF","italic":false}]]
 execute if score @s uhc.menu.host.gamemode.mls matches 2 run item replace entity @s inventory.24 with minecraft:cyan_concrete[minecraft:item_name=[{"text":"+4","color":"#3FCFCF","italic":false}]]
 
-item replace entity @s[scores={uhc.players.lang=1}] inventory.19 with minecraft:red_glazed_terracotta[minecraft:item_name=[{"text":"DÉSACTIVER","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"disable"}]
-item replace entity @s[scores={uhc.players.lang=1}] inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"FERMER","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
+item replace entity @s[scores={uhc.players.lang=1}] inventory.19 with minecraft:red_glazed_terracotta[minecraft:item_name=[{"text":"Désactiver","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"disable"}]
+item replace entity @s[scores={uhc.players.lang=1}] inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Fermer","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
 
-item replace entity @s[scores={uhc.players.lang=2}] inventory.19 with minecraft:red_glazed_terracotta[minecraft:item_name=[{"text":"DISABLE","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"disable"}]
-item replace entity @s[scores={uhc.players.lang=2}] inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"CANCEL","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
+item replace entity @s[scores={uhc.players.lang=2}] inventory.19 with minecraft:red_glazed_terracotta[minecraft:item_name=[{"text":"Disable","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"disable"}]
+item replace entity @s[scores={uhc.players.lang=2}] inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Cancel","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]

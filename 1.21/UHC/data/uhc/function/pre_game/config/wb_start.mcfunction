@@ -10,4 +10,4 @@
 # Worldborder
 $worldborder set $(border_size)
 worldborder center 0.5 0.5
-worldborder warning time 180
+worldborder warning time 90

@@ -4,7 +4,7 @@
 # @within			uhc:in_game/scenarios/_advancements/took_damage
 # @executed			default context
 #
-# @description		Le joueur qui exécute /trigger best_pve.list set 1 obtient la Best PvE list
+# @description		Obtention de la liste Best PvE avec /trigger best_pve.list set 1
 #
 
 scoreboard players set #team uhc.id.teams 0

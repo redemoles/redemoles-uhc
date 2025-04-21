@@ -86,6 +86,6 @@ execute if score #lives_start uhc.players.lives matches 2.. if score #live_1 uhc
 execute if score #live_2 uhc.data.display matches 0 run scoreboard players set #lives uhc.players.lives 2
 execute if score #live_1 uhc.data.display matches 0 run scoreboard players set #lives uhc.players.lives 1
 
-execute if score #respawn_2_enabled uhc.data.setup matches 1 if score #respawn_2_timer uhc.data.setup matches 0 run tellraw @a[scores={uhc.players.lang=1}] [{"text":"\nChangement des points de réapparition !","color":"#FF3F3F","bold":false}]
-execute if score #respawn_2_enabled uhc.data.setup matches 1 if score #respawn_2_timer uhc.data.setup matches 0 run tellraw @a[scores={uhc.players.lang=2}] [{"text":"\nChange of respawns points!","color":"#FF3F3F","bold":false}]
-execute if score #respawn_2_enabled uhc.data.setup matches 1 if score #respawn_2_timer uhc.data.setup matches 0 as @a[tag=uhc.player] run function uhc:in_game/tp/spawn_msg_2
+execute if score #respawn_2_enabled uhc.data.setup matches 1 if score #respawn_2_timer uhc.data.setup matches 0 if score #live_1 uhc.data.display matches 1.. run tellraw @a[scores={uhc.players.lang=1}] [{"text":"\nChangement des points de réapparition !","color":"#FF3F3F","bold":false}]
+execute if score #respawn_2_enabled uhc.data.setup matches 1 if score #respawn_2_timer uhc.data.setup matches 0 if score #live_1 uhc.data.display matches 1.. run tellraw @a[scores={uhc.players.lang=2}] [{"text":"\nChange of respawns points!","color":"#FF3F3F","bold":false}]
+execute if score #respawn_2_enabled uhc.data.setup matches 1 if score #respawn_2_timer uhc.data.setup matches 0 if score #live_1 uhc.data.display matches 1.. as @a[tag=uhc.player] run function uhc:in_game/tp/spawn_msg_2

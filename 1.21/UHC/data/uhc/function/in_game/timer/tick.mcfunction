@@ -43,7 +43,9 @@ execute unless score #hotbar_cooldown uhc.data.display matches 1.. if score #aic
 execute if score #custom_arrow uhc.data.setup matches 1.. as @e[type=arrow] run function uhc:in_game/entities/arrow/
 execute unless score #custom_arrow uhc.data.setup matches 1.. as @e[type=arrow,tag=!uhc.checked] run function uhc:in_game/entities/arrow/basic
 
-# Ironman reward
+# Ironman
+execute if score #ironman uhc.data.setup matches 1.. as @p[scores={ironman.list=1}] run function uhc:in_game/scenarios/ironman/list
+execute if score #ironman uhc.data.setup matches 1.. run scoreboard players enable @a ironman.list
 execute if score #ironman uhc.data.setup matches 1 as @p[tag=uhc.ironman] run function uhc:in_game/scenarios/ironman/reward
 
 execute if score #best_pve uhc.scenario matches 1 as @p[scores={best_pve.list=1}] run function uhc:in_game/scenarios/best_pve/list

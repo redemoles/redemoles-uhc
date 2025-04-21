@@ -7,8 +7,6 @@
 # @description		Commandes pre-game en tick pour joueurs
 #
 
-execute if entity @s[nbt={active_effects:[{id:"minecraft:absorption"}]}] run effect clear @s minecraft:absorption
-
 # Joueur hors du lobby
 execute unless score @s uhc.players.online matches 1 run function uhc:pre_game/players_and_teams/new_players
 execute at @s if entity @s[nbt={Dimension:"uhc:lobby"},y=-1,dy=-64] in uhc:lobby run tp @s 0 65 0 0 0
@@ -16,10 +14,16 @@ execute at @s if entity @s[nbt={Dimension:"uhc:lobby"},y=-1,dy=-64] in uhc:lobby
 # Reconnexion d'un joueur
 execute if score @s uhc.players.disconnect matches 1.. in uhc:lobby run function uhc:pre_game/players_and_teams/reconnect/
 
-## Hotbar
+# Hotbar
 execute if entity @s[scores={uhc.players.lang=1},tag=!mgs.tc.player,tag=!mgs.tc.spec] run function uhc:pre_game/timer/hotbar/1_fra
 execute if entity @s[scores={uhc.players.lang=2},tag=!mgs.tc.player,tag=!mgs.tc.spec] run function uhc:pre_game/timer/hotbar/2_eng
 execute unless entity @s[tag=!mgs.tc.player,tag=!mgs.tc.spec] run function lobby:mini_games/tc/hotbar/
+
+# Modification des items au démarrage et des items additionnels à la mort d'un joueur
+execute if score @s[tag=host,gamemode=adventure] uhc.menu.host.settings.inventory matches 2 run function uhc:pre_game/menu/load/settings/inventory/item_starter/validate
+execute if score @s[tag=host,gamemode=adventure] uhc.menu.host.settings.inventory matches 3 run function uhc:pre_game/menu/load/settings/inventory/item_ironman/validate
+execute if score @s[tag=host,gamemode=adventure] uhc.menu.host.settings.inventory matches 4 run function uhc:pre_game/menu/load/settings/inventory/item_notch_totem/validate
+execute if score @s[tag=host,gamemode=adventure] uhc.menu.host.settings.inventory matches 5 run function uhc:pre_game/menu/load/settings/inventory/item_additional/validate
 
 # Vie en pourcentage
 scoreboard players operation #team uhc.id.teams = @s uhc.id.teams

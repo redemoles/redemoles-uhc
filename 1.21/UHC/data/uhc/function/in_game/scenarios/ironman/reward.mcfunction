@@ -7,17 +7,17 @@
 # @description		Récompense pour le dernier Ironman
 #
 
-# Message à l'Ironman
-tellraw @s[scores={uhc.players.lang=1}] [{"text":"\nTu es le dernier Ironman ! Cela mérite une petite récompense !","color":"#FFE73F"}]
-tellraw @s[scores={uhc.players.lang=2}] [{"text":"\nYou are the last Ironman! You deserve a little reward!","color":"#FFE73F"}]
+# Message aux autres joueurs
+tellraw @a[scores={uhc.players.lang=1}] [{"text":"\n"},{"selector":"@s"},{"text":" est Ironman !","color":"#FFE73F"}]
+tellraw @a[scores={uhc.players.lang=2}] [{"text":"\n"},{"selector":"@s"},{"text":" is Ironman !","color":"#FFE73F"}]
 
-# Message aux autrs joueurs
-tellraw @a[scores={uhc.players.lang=1},tag=!uhc.ironman] [{"text":"\n"},{"selector":"@s"},{"text":" est Ironman !","color":"#FFE73F"}]
-tellraw @a[scores={uhc.players.lang=2},tag=!uhc.ironman] [{"text":"\n"},{"selector":"@s"},{"text":" is Ironman !","color":"#FFE73F"}]
+# Item
+data modify storage uhc:temp Item_ironman set from storage uhc:settings Item_ironman
+execute if data storage uhc:temp Item_ironman[0] run function uhc:in_game/scenarios/ironman/item with storage uhc:temp Item_ironman[0]
 
-give @s golden_apple 2
-
+# Bingo UHC
 scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
 execute if score #bhc uhc.gamemode matches 1 run scoreboard players set @e[type=marker,predicate=uhc:id_teams] bhc.ironman 6000
 
+# Anti-boucle
 scoreboard players remove #ironman uhc.data.setup 1

@@ -33,7 +33,7 @@ tag @s remove host.menu.start
 tag @s remove host.menu.world_check
 tag @s remove host.menu.world_generation
 
-function uhc:pre_game/menu/load/background
+function uhc:pre_game/menu/load/background/
 
 item replace entity @s[scores={uhc.players.lang=1}] inventory.1 with minecraft:grass_block[minecraft:item_name=[{"text":"Génération du monde","color":"#3F9F3F","italic":false}],minecraft:custom_data={Tags:"menu_world_generation"}]
 item replace entity @s[scores={uhc.players.lang=1}] inventory.2 with minecraft:ender_eye[minecraft:item_name=[{"text":"Vérifications du monde","color":"#FFE73F","italic":false}],minecraft:custom_data={Tags:"menu_world_check"}]

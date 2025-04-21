@@ -59,6 +59,7 @@ scoreboard objectives remove uhc.scenario.sound_paranoia.sb.warden
 scoreboard objectives remove uhc.scenario.sound_paranoia.sb.water_bucket
 scoreboard objectives remove uhc.scenario.sound_paranoia.sb.wither_skeleton
 scoreboard objectives remove uhc.scenario.sound_paranoia.sb.placed_blocks
+scoreboard objectives remove uhc.players.ironman.list
 scoreboard objectives remove uhc.players.mined.coal
 scoreboard objectives remove uhc.players.mined.coal_deepslate
 scoreboard objectives remove uhc.players.mined.copper
@@ -122,6 +123,7 @@ scoreboard objectives add uhc.scenario.sound_paranoia.sb.warden dummy "Warden"
 scoreboard objectives add uhc.scenario.sound_paranoia.sb.water_bucket dummy "Water bucket"
 scoreboard objectives add uhc.scenario.sound_paranoia.sb.wither_skeleton dummy "Wither Skeleton"
 scoreboard objectives add uhc.scenario.sound_paranoia.sb.placed_blocks dummy "Blocks"
+scoreboard objectives add uhc.players.ironman.list dummy
 scoreboard objectives add uhc.players.mined.coal minecraft.mined:minecraft.coal_ore
 scoreboard objectives add uhc.players.mined.coal_deepslate minecraft.mined:minecraft.deepslate_coal_ore
 scoreboard objectives add uhc.players.mined.copper minecraft.mined:minecraft.copper_ore
@@ -143,6 +145,7 @@ scoreboard objectives add bhc.scenario dummy
 scoreboard objectives add nzl.scenario dummy
 
 scoreboard objectives add best_pve.list trigger
+scoreboard objectives add ironman.list trigger
 
 scoreboard objectives remove uhc.id.teams
 scoreboard objectives remove uhc.id.random_teams
@@ -165,6 +168,7 @@ scoreboard objectives remove uhc.menu.host.settings.lives
 scoreboard objectives remove uhc.menu.host.settings.pve
 scoreboard objectives remove uhc.menu.host.settings.pvp
 scoreboard objectives remove uhc.menu.host.settings.border
+scoreboard objectives remove uhc.menu.host.settings.inventory
 scoreboard objectives remove uhc.menu.host.teams_settings
 scoreboard objectives remove uhc.menu.update
 scoreboard objectives remove uhc.meetup.activate
@@ -209,6 +213,7 @@ scoreboard objectives add uhc.menu.host.settings.lives dummy
 scoreboard objectives add uhc.menu.host.settings.pve dummy
 scoreboard objectives add uhc.menu.host.settings.pvp dummy
 scoreboard objectives add uhc.menu.host.settings.border dummy
+scoreboard objectives add uhc.menu.host.settings.inventory dummy
 scoreboard objectives add uhc.menu.host.teams_settings dummy
 scoreboard objectives add uhc.menu.update dummy
 scoreboard objectives add uhc.meetup.activate trigger
@@ -365,6 +370,13 @@ scoreboard players set #anonyme_team uhc.data.setup 0
 scoreboard players set #team_size uhc.data.setup 4
 
 scoreboard players set #custom_arrow uhc.data.setup 0
+
+## Items additionels à la mort d'un joueur
+execute unless score #lobby lobby.structure.data matches 1.. run data modify storage uhc:settings Item_starter set value [{count: 1, Slot: 1b, id: "minecraft:oak_boat"}]
+execute unless score #lobby lobby.structure.data matches 1.. run data modify storage uhc:settings Item_starter set value [{count: 8, Slot: 0b, id: "minecraft:golden_carrot"}]
+execute unless score #lobby lobby.structure.data matches 1.. run data modify storage uhc:settings Item_ironman set value [{count: 2, Slot: 0b, id: "minecraft:golden_apple"}]
+execute unless score #lobby lobby.structure.data matches 1.. run data modify storage uhc:settings Item_additional set value [{count: 2, Slot: 0b, id: "minecraft:golden_apple"}]
+execute unless score #lobby lobby.structure.data matches 1.. run data modify storage uhc:settings Item_notch_totem set value [{count: 4, Slot: 0b, id: "minecraft:gold_block"}]
 
 ## Génération du Lobby
 function lobby:load

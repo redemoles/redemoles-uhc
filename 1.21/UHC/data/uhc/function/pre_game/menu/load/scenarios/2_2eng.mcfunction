@@ -17,7 +17,7 @@ tag @s add host.menu.scenarios.2
 
 
 
-function uhc:pre_game/menu/load/background
+function uhc:pre_game/menu/load/background/
 
 execute if score #rewarding_longshots uhc.scenario matches 0 run item replace entity @s inventory.1 with minecraft:black_concrete[minecraft:item_name=[{"text":"Rewarding Longshots","color":"#FF3F3F","italic":false}]]
 execute if score #rewarding_longshots uhc.scenario matches 1 run item replace entity @s inventory.1 with minecraft:black_concrete[minecraft:item_name=[{"text":"Rewarding Longshots","color":"#FF3F3F","italic":false}]]
@@ -35,4 +35,5 @@ execute if score #trade_uhc uhc.scenario matches 0 run item replace entity @s in
 execute if score #trade_uhc uhc.scenario matches 1 run item replace entity @s inventory.7 with minecraft:emerald[minecraft:item_name=[{"text":"Trade UHC","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"All minerals, except gold, give emerald.","color":"#FFFFFF","italic":false}]]]
 
 item replace entity @s inventory.24 with minecraft:arrow[minecraft:item_name=[{"text":"Page 1","color":"#3FE7FF","italic":false}]]
-item replace entity @s inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"FERMER","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
+item replace entity @s[scores={uhc.players.lang=1}] inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Fermer","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
+item replace entity @s[scores={uhc.players.lang=2}] inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Close","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]

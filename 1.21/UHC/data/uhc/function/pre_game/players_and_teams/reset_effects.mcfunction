@@ -9,7 +9,6 @@
 
 # Réinitialisation des effets
 effect clear @s
-effect give @s minecraft:absorption 1 1 true
 attribute @s minecraft:max_absorption base set 0
 attribute @s minecraft:max_health base set 20
 attribute @s minecraft:jump_strength base set 0.42

@@ -49,6 +49,11 @@ scoreboard players operation #shrink_2_length uhc.data.setup *= #60 uhc.data.num
 scoreboard players operation #shrink_3_length uhc.data.setup *= #60 uhc.data.numbers
 scoreboard players add #minutes aic.data.end_game 1
 
+## Configuration du starter give
+execute if score #aic uhc.gamemode matches 1 run data modify storage uhc:settings Item_starter set value [{}]
+execute if score #aic uhc.gamemode matches 0 run data modify storage uhc:settings Item_starter set value [{count: 1, Slot: 1b, id: "minecraft:oak_boat"}]
+execute if score #aic uhc.gamemode matches 0 run data modify storage uhc:settings Item_starter set value [{count: 8, Slot: 1b, id: "minecraft:golden_carrot"}]
+
 ## Vies
 scoreboard players set #lives uhc.players.lives 3
 scoreboard players set #live_3 uhc.data.display 0

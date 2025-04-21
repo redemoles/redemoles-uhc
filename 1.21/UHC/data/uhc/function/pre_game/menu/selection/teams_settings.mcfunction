@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/selection/teams_settings
 #
-# @within			uhc:pre_game/menu/host_menu
+# @within			uhc:pre_game/menu/detector/host_menu
 # 
 #
 # @description		Redirection

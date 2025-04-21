@@ -17,7 +17,7 @@ execute unless score @s uhc.menu.host.scenarios.blood_diamond matches 1.. run sc
 
 
 
-function uhc:pre_game/menu/load/background
+function uhc:pre_game/menu/load/background/
 
 execute if score #blood_diamond uhc.scenario matches 0 run item replace entity @s[scores={uhc.players.lang=1}] inventory.1 with minecraft:red_concrete[minecraft:item_name=[{"text":"Blood Diamond","color":"#FF3F3F","italic":false}],minecraft:lore=[[{"text":"Désactivé","color":"#FFFFFF","italic":false}]],minecraft:custom_data={Tags:"scenario_blood_diamond_enable"}]
 execute if score #blood_diamond uhc.scenario matches 1 run item replace entity @s[scores={uhc.players.lang=1}] inventory.1 with minecraft:diamond_ore[minecraft:item_name=[{"text":"Blood Diamond","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"Activé","color":"#FFFFFF","italic":false}]],minecraft:custom_data={Tags:"scenario_blood_diamond_enable"}]
@@ -40,4 +40,5 @@ execute if score #trade_uhc uhc.scenario matches 1 run item replace entity @s[sc
 execute if score @s uhc.menu.host.scenarios.blood_diamond matches 2.. run item replace entity @s inventory.21 with minecraft:magenta_concrete[minecraft:item_name=[{"text":"-1","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"-1"}]
 execute if score @s uhc.menu.host.scenarios.blood_diamond matches 2.. run item replace entity @s inventory.23 with minecraft:light_blue_concrete[minecraft:item_name=[{"text":"+1","color":"#3FE7FF","italic":false}],minecraft:custom_data={Tags:"+1"}]
 
-item replace entity @s inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"FERMER","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
+item replace entity @s[scores={uhc.players.lang=1}] inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Fermer","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
+item replace entity @s[scores={uhc.players.lang=2}] inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Close","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]

@@ -17,7 +17,7 @@ scoreboard players set @s uhc.menu.host.settings 0
 
 
 
-function uhc:pre_game/menu/load/background
+function uhc:pre_game/menu/load/background/
 
 scoreboard players set #team uhc.id.teams 1
 function uhc:pre_game/menu/load/teams/gamemode/vanilla/teams/
