@@ -156,7 +156,7 @@ scoreboard objectives remove uhc.game.end
 scoreboard objectives remove uhc.data.arrow
 scoreboard objectives remove uhc.data.display
 scoreboard objectives remove uhc.data.setup
-scoreboard objectives remove uhc.data.numbers
+scoreboard objectives remove uhc.data.setup.temp
 scoreboard objectives remove uhc.menu.host.gamemode.mls
 scoreboard objectives remove uhc.menu.host.gamemode.mls.moles_per_team
 scoreboard objectives remove uhc.menu.host.gamemode.mls.moles_per_game
@@ -200,6 +200,7 @@ scoreboard objectives add uhc.game.end trigger
 scoreboard objectives add uhc.data.arrow minecraft.used:minecraft.bow
 scoreboard objectives add uhc.data.display dummy
 scoreboard objectives add uhc.data.setup dummy
+scoreboard objectives add uhc.data.setup.temp dummy
 scoreboard objectives add uhc.data.numbers dummy
 scoreboard objectives add uhc.menu.host.gamemode.mls dummy
 scoreboard objectives add uhc.menu.host.gamemode.mls.moles_per_team dummy
@@ -372,11 +373,11 @@ scoreboard players set #team_size uhc.data.setup 4
 scoreboard players set #custom_arrow uhc.data.setup 0
 
 ## Items additionels à la mort d'un joueur
-execute unless score #lobby lobby.structure.data matches 1.. run data modify storage uhc:settings Item_starter set value [{count: 1, Slot: 1b, id: "minecraft:oak_boat"}]
-execute unless score #lobby lobby.structure.data matches 1.. run data modify storage uhc:settings Item_starter set value [{count: 8, Slot: 0b, id: "minecraft:golden_carrot"}]
-execute unless score #lobby lobby.structure.data matches 1.. run data modify storage uhc:settings Item_ironman set value [{count: 2, Slot: 0b, id: "minecraft:golden_apple"}]
-execute unless score #lobby lobby.structure.data matches 1.. run data modify storage uhc:settings Item_additional set value [{count: 2, Slot: 0b, id: "minecraft:golden_apple"}]
-execute unless score #lobby lobby.structure.data matches 1.. run data modify storage uhc:settings Item_notch_totem set value [{count: 4, Slot: 0b, id: "minecraft:gold_block"}]
+execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_starter set value [{count: 1, Slot: 1b, id: "minecraft:oak_boat"}]
+execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_starter set value [{count: 8, Slot: 0b, id: "minecraft:golden_carrot"}]
+execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_ironman set value [{count: 2, Slot: 0b, id: "minecraft:golden_apple"}]
+execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_additional set value [{count: 2, Slot: 0b, id: "minecraft:golden_apple"}]
+execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_notch_totem set value [{count: 4, Slot: 0b, id: "minecraft:gold_block"}]
 
 ## Génération du Lobby
 function lobby:load
