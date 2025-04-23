@@ -7,8 +7,8 @@
 # @description		Retrait de la liste Ironman
 #
 
-tellraw @s[scores={uhc.players.lang=1}] [{"text":"\nTu n'es plus Ironman.","color":"#FF3F3F"}]
-tellraw @s[scores={uhc.players.lang=2}] [{"text":"\nYou're no longer Ironman.","color":"#FF3F3F"}]
+tellraw @a[scores={uhc.players.lang=1}] [{"text":"Ironman ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" ","color":"#FFFFFF","bold":false},{"selector":"@s","bold":false},{"text":" n'est plus Ironman.","color":"#FF3F3F","bold":false}]
+tellraw @a[scores={uhc.players.lang=2}] [{"text":"Ironman ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" ","color":"#FFFFFF","bold":false},{"selector":"@s","bold":false},{"text":" is no longer Ironman.","color":"#FF3F3F","bold":false}]
 
 scoreboard players remove #ironman uhc.data.setup 1
 

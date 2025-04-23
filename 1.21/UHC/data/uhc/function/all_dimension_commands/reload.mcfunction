@@ -7,7 +7,7 @@
 # @description		Gamerule pour toutes les dimensions
 #
 
-gamerule sendCommandFeedback true
+gamerule sendCommandFeedback false
 gamerule doFireTick false
 gamerule announceAdvancements false
 gamerule doDaylightCycle false

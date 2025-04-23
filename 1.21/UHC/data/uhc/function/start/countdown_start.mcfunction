@@ -8,6 +8,7 @@
 #
 
 # Message au centre de l'écran
+execute if score #tick_start uhc.data.setup matches 4 run tellraw @a [{"text":"\nLancement de la partie...","color":"#CFCFCF"}]
 execute if score #tick_start uhc.data.setup matches 4 run title @a reset
 execute if score #tick_start uhc.data.setup matches 4 if score #vanilla uhc.gamemode matches 1 run title @a title [{"text":"UHC","color":"#3FE7FF","bold":false}]
 execute if score #tick_start uhc.data.setup matches 4 if score #bhc uhc.gamemode matches 1 run title @a title [{"text":"Bingo","color":"#9F3FFF","bold":false},{"text":" UHC","color":"#FFE73F","bold":false}]

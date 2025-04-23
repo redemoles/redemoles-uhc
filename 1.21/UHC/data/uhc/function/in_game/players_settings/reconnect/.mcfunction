@@ -20,14 +20,15 @@ execute if score #Minutes uhc.data.display matches 0.. as @s[tag=uhc.player,pred
 execute if score #no_pvp_safety uhc.data.setup matches 0 as @s[tag=uhc.player] run function uhc:in_game/players_settings/pvp/safety_remove
 
 # Coordonnées de respawn
-execute if score #respawn_2_enabled uhc.data.setup matches 0 if score #live_1 uhc.data.display matches 1.. run function uhc:in_game/tp/spawn_msg_1
+execute if score #respawn_2_enabled uhc.data.setup matches 0 if score #live_1 uhc.data.display matches 1.. run function uhc:in_game/tp/spawn_msg_1_solo
 execute if score #respawn_2_enabled uhc.data.setup matches 1 if score #respawn_2_timer uhc.data.setup matches 1.. if score #live_1 uhc.data.display matches 1.. run function uhc:in_game/tp/spawn_msg_1
-execute if score #respawn_2_enabled uhc.data.setup matches 1 if score #respawn_2_timer uhc.data.setup matches ..0 if score #live_1 uhc.data.display matches 1.. run function uhc:in_game/tp/spawn_msg_2
+execute if score #respawn_2_enabled uhc.data.setup matches 1 if score #respawn_2_timer uhc.data.setup matches ..0 if score #live_1 uhc.data.display matches 1.. run function uhc:in_game/tp/spawn_msg_2_solo
+execute if score #respawn_2_enabled uhc.data.setup matches 1 if score #Minutes uhc.data.display matches ..0 if score #live_1 uhc.data.display matches 1.. run function uhc:in_game/tp/spawn_msg_2
 
 # Message trigger Ironman
-execute if score #ironman uhc.data.setup matches 1.. run tellraw @a[scores={uhc.players.lang=1}] [{"text":"\nIronman ","color":"#FFE73F","bold":true},{"text":">","color":"#9F9F9F"},{"text":" Pour voir les joueurs dans la liste :","color":"#FFFFFF","bold":false},{"text":"\n/trigger ironman.list set 1","color":"#FFE73F","bold":false}]
-execute if score #ironman uhc.data.setup matches 1.. run tellraw @a[scores={uhc.players.lang=2}] [{"text":"\nIronman ","color":"#FFE73F","bold":true},{"text":">","color":"#9F9F9F"},{"text":" To see the players list :","color":"#FFFFFF","bold":false},{"text":"\n/trigger ironman.list set 1","color":"#FFE73F","bold":false}]
+execute if score #ironman uhc.data.setup matches 1.. run tellraw @a[scores={uhc.players.lang=1}] [{"text":"Ironman ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" Pour voir les joueurs dans la liste :","color":"#FFFFFF","bold":false},{"text":"\n/trigger ironman.list","color":"#FFE73F","bold":false}]
+execute if score #ironman uhc.data.setup matches 1.. run tellraw @a[scores={uhc.players.lang=2}] [{"text":"Ironman ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" To see the players list :","color":"#FFFFFF","bold":false},{"text":"\n/trigger ironman.list","color":"#FFE73F","bold":false}]
 
 # Message trigger Best PvE
-execute if score #best_pve uhc.scenario matches 1 run tellraw @a[scores={uhc.players.lang=1}] [{"text":"\nBest PvE ","color":"#E73F3F","bold":true},{"text":">","color":"#9F9F9F"},{"text":" Pour voir les joueurs dans la liste :","color":"#FFFFFF","bold":false},{"text":"\n/trigger best_pve.list set 1","color":"#FFE73F","bold":false}]
-execute if score #best_pve uhc.scenario matches 1 run tellraw @a[scores={uhc.players.lang=2}] [{"text":"\nBest PvE ","color":"#E73F3F","bold":true},{"text":">","color":"#9F9F9F"},{"text":" To see the players list :","color":"#FFFFFF","bold":false},{"text":"\n/trigger best_pve.list set 1","color":"#FFE73F","bold":false}]
+execute if score #best_pve uhc.scenario matches 1 run tellraw @a[scores={uhc.players.lang=1}] [{"text":"Best PvE ","color":"#E73F3F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" Pour voir les joueurs dans la liste :","color":"#FFFFFF","bold":false},{"text":"\n/trigger best_pve.list","color":"#FFE73F","bold":false}]
+execute if score #best_pve uhc.scenario matches 1 run tellraw @a[scores={uhc.players.lang=2}] [{"text":"Best PvE ","color":"#E73F3F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" To see the players list :","color":"#FFFFFF","bold":false},{"text":"\n/trigger best_pve.list","color":"#FFE73F","bold":false}]

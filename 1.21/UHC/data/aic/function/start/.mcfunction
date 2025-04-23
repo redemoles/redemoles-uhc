@@ -17,5 +17,5 @@ scoreboard players set #death aic.data.end_dragon -1
 gamerule doInsomnia true
 
 ## Message de démarrage
-tellraw @a[scores={uhc.players.lang=1}] [{"text":"\n[","color":"#FFFFFF","bold":true},{"text":"All Items ","color":"#3FE7FF"},{"text":"Rush","color":"#FFE73F"},{"text":"]","color":"#FFFFFF"},{"text":" La partie vient de démarrer !","color":"#FFE73F","bold":true}]
-tellraw @a[scores={uhc.players.lang=2}] [{"text":"\n[","color":"#FFFFFF","bold":true},{"text":"All Items ","color":"#3FE7FF"},{"text":"Rush","color":"#FFE73F"},{"text":"]","color":"#FFFFFF"},{"text":" Game starting now!","color":"#FFE73F","bold":true}]
+tellraw @a[scores={uhc.players.lang=1}] [{"text":"[","color":"#FFFFFF","bold":true},{"text":"All Items ","color":"#3FE7FF"},{"text":"Rush","color":"#FFE73F"},{"text":"]","color":"#FFFFFF"},{"text":" La partie vient de démarrer !","color":"#FFE73F","bold":false}]
+tellraw @a[scores={uhc.players.lang=2}] [{"text":"[","color":"#FFFFFF","bold":true},{"text":"All Items ","color":"#3FE7FF"},{"text":"Rush","color":"#FFE73F"},{"text":"]","color":"#FFFFFF"},{"text":" Game starting now!","color":"#FFE73F","bold":false}]

@@ -18,10 +18,10 @@ execute positioned ~6 ~3 ~-15 run fill ~ ~ ~ ~9 ~1 ~9 minecraft:air
 execute positioned ~-15 ~3 ~-15 run fill ~ ~ ~ ~9 ~1 ~9 minecraft:air
 
 # Test mini-jeu réussie
-execute store result score #team_01 lobby.tc.data if blocks ~7 ~2 ~-7 ~14 ~2 ~-14 ~7 ~ ~-14 all
-execute store result score #team_02 lobby.tc.data if blocks ~-7 ~2 ~-7 ~-14 ~2 ~-14 ~-14 ~ ~-14 all
+execute if score #team_01 lobby.tc.player.score matches 0 store result score #team_01 lobby.tc.player.score if blocks ~7 ~2 ~-7 ~14 ~2 ~-14 ~7 ~ ~-14 all
+execute if score #team_02 lobby.tc.player.score matches 0 store result score #team_02 lobby.tc.player.score if blocks ~-7 ~2 ~-7 ~-14 ~2 ~-14 ~-14 ~ ~-14 all
 
-execute if score #team_01 lobby.tc.data matches 1.. as @a[tag=mgs.tc.player,tag=mgs.tc.team.01] run function lobby:mini_games/tc/mini_games/puzzle/finished
-execute if score #team_02 lobby.tc.data matches 1.. as @a[tag=mgs.tc.player,tag=mgs.tc.team.02] run function lobby:mini_games/tc/mini_games/puzzle/finished
-execute if score #team_01 lobby.tc.data matches 1.. as @a[tag=mgs.tc.player,tag=mgs.tc.team.02] run function lobby:mini_games/tc/mini_games/puzzle/record/time
-execute if score #team_02 lobby.tc.data matches 1.. as @a[tag=mgs.tc.player,tag=mgs.tc.team.01] run function lobby:mini_games/tc/mini_games/puzzle/record/time
+execute if score #team_01 lobby.tc.player.score matches 1.. as @a[tag=mgs.tc.player,tag=mgs.tc.team.01] run function lobby:mini_games/tc/mini_games/puzzle/finished
+execute if score #team_02 lobby.tc.player.score matches 1.. as @a[tag=mgs.tc.player,tag=mgs.tc.team.02] run function lobby:mini_games/tc/mini_games/puzzle/finished
+execute if score #team_01 lobby.tc.player.score matches 1.. as @a[tag=mgs.tc.player,tag=mgs.tc.team.02] run function lobby:mini_games/tc/mini_games/puzzle/record/time
+execute if score #team_02 lobby.tc.player.score matches 1.. as @a[tag=mgs.tc.player,tag=mgs.tc.team.01] run function lobby:mini_games/tc/mini_games/puzzle/record/time

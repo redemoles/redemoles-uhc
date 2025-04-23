@@ -1,7 +1,7 @@
 
-#> uhc:in_game/players_settings/reconnect/
+#> uhc:in_game/players_settings/reconnect/start
 #
-# @within			uhc:in_game/timer/players
+# @within			uhc:in_game/players_settings/reconnect/
 # @executed			default context
 #
 # @description		Donne les effets / gamemode aux specs

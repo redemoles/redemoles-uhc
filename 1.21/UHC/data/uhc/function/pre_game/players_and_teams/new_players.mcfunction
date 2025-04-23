@@ -33,6 +33,10 @@ scoreboard players set @s uhc.players.online 1
 # Réinitialisation des effets
 function uhc:pre_game/players_and_teams/reset_effects
 
+## Réinitialisation tags de tous les scénarios
+# Best PvE
+tag @s remove uhc.scenario.best_pve
+
 advancement revoke @s everything
 experience set @s 0 levels
 experience set @s 0 points

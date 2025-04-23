@@ -16,14 +16,18 @@ title @s reset
 
 tag @s remove uhc.fire_flame
 
-## Reset tags des mini-jeux du lobby
+## Réinitialisation tags des mini-jeux du lobby
 tag @s remove mgs.tc.player
 tag @s remove mgs.tc.spec
 tag @s remove mgs.tc.finished
 tag @s remove mgs.tc.team.01
 tag @s remove mgs.tc.team.02
 
-## Reset tags de tous les modes de jeu
+## Réinitialisation tags de tous les scénarios
+# Best PvE
+tag @s remove uhc.scenario.best_pve
+
+## Réinitialisation tags de tous les modes de jeu
 # Fate UHC
 tag @s remove fte.team.archer
 tag @s remove fte.team.assassin

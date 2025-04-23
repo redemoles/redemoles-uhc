@@ -32,8 +32,8 @@ execute if entity @s[tag=mgs.tc.team.02] as @s[tag=mgs.tc.team.02,scores={uhc.pl
 execute if entity @s[tag=mgs.tc.team.02] as @s[tag=mgs.tc.team.01,scores={uhc.players.lang=2}] run title @s subtitle [{"text":"Your team receive glowing for 40s","color":"#FF3F3F"}]
 
 # Effets
-execute if entity @s[tag=mgs.tc.team.01] as @s[tag=mgs.tc.team.02] run effect give @s minecraft:glowing 40 0 true
-execute if entity @s[tag=mgs.tc.team.02] as @s[tag=mgs.tc.team.01] run effect give @s minecraft:glowing 40 0 true
+execute if entity @s[tag=mgs.tc.team.01] as @a[tag=mgs.tc.team.02] run effect give @s minecraft:glowing 40 0 true
+execute if entity @s[tag=mgs.tc.team.02] as @a[tag=mgs.tc.team.01] run effect give @s minecraft:glowing 40 0 true
 
 # Replacement l'obsidienne
 execute if entity @s run setblock ~ ~5 ~ minecraft:crying_obsidian

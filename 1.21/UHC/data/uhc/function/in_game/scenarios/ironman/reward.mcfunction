@@ -8,8 +8,8 @@
 #
 
 # Message aux autres joueurs
-tellraw @a[scores={uhc.players.lang=1}] [{"text":"\n"},{"selector":"@s"},{"text":" est Ironman !","color":"#FFE73F"}]
-tellraw @a[scores={uhc.players.lang=2}] [{"text":"\n"},{"selector":"@s"},{"text":" is Ironman !","color":"#FFE73F"}]
+tellraw @a[scores={uhc.players.lang=1}] [{"text":"Ironman ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" ","color":"#FFFFFF","bold":false},{"selector":"@s","bold":false},{"text":" est Ironman !","color":"#FFE73F","bold":false}]
+tellraw @a[scores={uhc.players.lang=2}] [{"text":"Ironman ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" ","color":"#FFFFFF","bold":false},{"selector":"@s","bold":false},{"text":" is Ironman !","color":"#FFE73F","bold":false}]
 
 # Item
 data modify storage uhc:temp Item_ironman set from storage uhc:settings Item_ironman

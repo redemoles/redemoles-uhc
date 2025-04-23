@@ -45,7 +45,7 @@ execute unless score #custom_arrow uhc.data.setup matches 1.. as @e[type=arrow,t
 
 # Ironman
 execute if score #ironman uhc.data.setup matches 1.. as @p[scores={ironman.list=1}] run function uhc:in_game/scenarios/ironman/list
-execute if score #ironman uhc.data.setup matches 1.. run scoreboard players enable @a ironman.list
+scoreboard players enable @a ironman.list
 execute if score #ironman uhc.data.setup matches 1 as @p[tag=uhc.ironman] run function uhc:in_game/scenarios/ironman/reward
 
 execute if score #best_pve uhc.scenario matches 1 as @p[scores={best_pve.list=1}] run function uhc:in_game/scenarios/best_pve/list

@@ -39,3 +39,4 @@ execute unless score #timer_start_tick lobby.tc.data matches 1.. as @e[type=mark
 
 # Reset timer démarrage
 scoreboard players set #timer_start_tick lobby.tc.data 122
+stopsound @a[tag=mgs.tc.player]

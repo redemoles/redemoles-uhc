@@ -6,7 +6,7 @@
 #
 # @description		Génération d'équipes aléatoires
 #
-tellraw @a[tag=host] [{"text":"","bold":false},{"text":"[Test]","bold":true},{"text":" Démarrage du groupe de function"}]
+#tellraw @a[tag=host] [{"text":"","bold":false},{"text":"[Test]","bold":true},{"text":" Démarrage du groupe de function"}]
 team join 98 @a[tag=uhc.player]
 scoreboard players set @a[tag=uhc.player] uhc.id.teams 0
 tag @a[tag=uhc.player] add uhc.random_team.in_a_team

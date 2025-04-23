@@ -44,8 +44,8 @@ effect give @s minecraft:invisibility infinite 9 true
 attribute @s minecraft:jump_strength base set 0
 effect clear @s[scores={uhc.timer.respawn=1}] minecraft:resistance
 effect clear @s[scores={uhc.timer.respawn=1}] minecraft:slowness
-effect clear @s[scores={uhc.timer.respawn=1}] minecraft:weakness
-effect clear @s[scores={uhc.timer.respawn=1}] minecraft:invisibility
+execute unless score #playing_os_pve lobby.tc.data matches 1 run effect clear @s[scores={uhc.timer.respawn=1}] minecraft:weakness
+execute unless score #playing_os_pve lobby.tc.data matches 1 run effect clear @s[scores={uhc.timer.respawn=1}] minecraft:invisibility
 attribute @s[scores={uhc.timer.respawn=1}] minecraft:jump_strength base set 0.42
 
 # Absorption

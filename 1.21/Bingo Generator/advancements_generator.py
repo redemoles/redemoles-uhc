@@ -24,7 +24,7 @@ template = """{
 		},
 		"description": {
 			"text": "Obtenir un(e) ___ITEM_NAME___",
-			"color": "#F7EFFF"
+			"color": "#FFFFFF"
 		},
 		"frame": "task",
 		"show_toast": false,
