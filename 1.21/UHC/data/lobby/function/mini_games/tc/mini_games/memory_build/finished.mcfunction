@@ -14,9 +14,9 @@ scoreboard players set #timer_game_min lobby.tc.data 0
 scoreboard players set #timer_game_sec lobby.tc.data 0
 scoreboard players set #timer_game lobby.tc.data 0
 
-execute if score #random_memory_build_pick lobby.tc.data matches 1..3 run function lobby:mini_games/tc/mini_games/memory_build/record/taiga/
-execute if score #random_memory_build_pick lobby.tc.data matches 4..6 run function lobby:mini_games/tc/mini_games/memory_build/record/jungle/
-execute if score #random_memory_build_pick lobby.tc.data matches 7..9 run function lobby:mini_games/tc/mini_games/memory_build/record/cherry/
+execute if score #random_memory_build_pick lobby.tc.data matches 01..04 run function lobby:mini_games/tc/mini_games/memory_build/record/taiga/
+execute if score #random_memory_build_pick lobby.tc.data matches 05..08 run function lobby:mini_games/tc/mini_games/memory_build/record/jungle/
+execute if score #random_memory_build_pick lobby.tc.data matches 09..12 run function lobby:mini_games/tc/mini_games/memory_build/record/cherry/
 
 fill ~22 ~1 ~22 ~-22 ~7 ~-22 minecraft:air replace minecraft:powder_snow
 fill ~2 ~1 ~18 ~-2 ~1 ~-18 minecraft:air replace minecraft:waxed_copper_block

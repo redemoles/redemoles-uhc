@@ -44,6 +44,10 @@ scoreboard objectives add lobby.tc.data.record.os_pve.classic_01 dummy "PB - OS 
 scoreboard objectives add lobby.tc.data.record.os_pve.classic_01.min dummy
 scoreboard objectives add lobby.tc.data.record.os_pve.classic_01.sec dummy
 scoreboard objectives add lobby.tc.data.record.os_pve.classic_01.ms dummy
+scoreboard objectives add lobby.tc.data.record.os_pve.temperature_01 dummy "PB - OS PvE Classique 01"
+scoreboard objectives add lobby.tc.data.record.os_pve.temperature_01.min dummy
+scoreboard objectives add lobby.tc.data.record.os_pve.temperature_01.sec dummy
+scoreboard objectives add lobby.tc.data.record.os_pve.temperature_01.ms dummy
 scoreboard objectives add lobby.tc.data.record.os_pvp dummy "PB - OS PvP"
 scoreboard objectives add lobby.tc.data.record.parkour.classic_01 dummy "PB - Parkour Classique 01"
 scoreboard objectives add lobby.tc.data.record.parkour.classic_01.min dummy
@@ -77,6 +81,7 @@ scoreboard objectives add lobby.tc.record.memory_build.taiga dummy "PB - Memory 
 scoreboard objectives add lobby.tc.record.memory_build.jungle dummy "PB - Memory Build Jungle"
 scoreboard objectives add lobby.tc.record.memory_build.cherry dummy "PB - Memory Build Cherry"
 scoreboard objectives add lobby.tc.record.os_pve.classic_01 dummy "PB - OS PvE Classique 01"
+scoreboard objectives add lobby.tc.record.os_pve.temperature_01 dummy "PB - OS PvE Classique 01"
 scoreboard objectives add lobby.tc.record.os_pvp dummy "PB - OS PvP"
 scoreboard objectives add lobby.tc.record.parkour.classic_01 dummy "PB - Parkour Classique 01"
 scoreboard objectives add lobby.tc.record.parkour.honey_01 dummy "PB - Parkour de miel 01"

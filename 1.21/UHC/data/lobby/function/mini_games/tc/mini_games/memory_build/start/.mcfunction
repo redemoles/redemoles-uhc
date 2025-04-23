@@ -23,6 +23,6 @@ execute if score #timer_start_tick lobby.tc.data matches 00 run scoreboard playe
 execute if score #timer_start_tick lobby.tc.data matches 00 run scoreboard players set #timer_game_sec lobby.tc.data 0
 execute if score #timer_start_tick lobby.tc.data matches 00 run scoreboard players set #timer_game lobby.tc.data 240
 
-execute if score #timer_start_tick lobby.tc.data matches 120 if score #random_memory_build_pick lobby.tc.data matches 1..3 run function lobby:mini_games/tc/mini_games/memory_build/start/taiga
-execute if score #timer_start_tick lobby.tc.data matches 120 if score #random_memory_build_pick lobby.tc.data matches 4..6 run function lobby:mini_games/tc/mini_games/memory_build/start/jungle
-execute if score #timer_start_tick lobby.tc.data matches 120 if score #random_memory_build_pick lobby.tc.data matches 7..9 run function lobby:mini_games/tc/mini_games/memory_build/start/cherry
+execute if score #timer_start_tick lobby.tc.data matches 120 if score #random_memory_build_pick lobby.tc.data matches 01..04 run function lobby:mini_games/tc/mini_games/memory_build/start/taiga
+execute if score #timer_start_tick lobby.tc.data matches 120 if score #random_memory_build_pick lobby.tc.data matches 05..08 run function lobby:mini_games/tc/mini_games/memory_build/start/jungle
+execute if score #timer_start_tick lobby.tc.data matches 120 if score #random_memory_build_pick lobby.tc.data matches 09..12 run function lobby:mini_games/tc/mini_games/memory_build/start/cherry

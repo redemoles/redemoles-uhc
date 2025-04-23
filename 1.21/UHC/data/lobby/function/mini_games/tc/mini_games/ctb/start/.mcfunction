@@ -7,7 +7,7 @@
 # @description		Démarrage du mini-jeu Capture The Block
 #
 
-execute if score #timer_start_tick lobby.tc.data matches 120 run function lobby:mini_games/tc/timer/start_2_teams
+execute if score #timer_start_tick lobby.tc.data matches 121 run function lobby:mini_games/tc/timer/start_2_teams
 execute if score #timer_start_tick lobby.tc.data matches 120 as @a[tag=mgs.tc.player,tag=mgs.tc.team.01] run tp @s ~ ~5 ~19 180 0
 execute if score #timer_start_tick lobby.tc.data matches 120 as @a[tag=mgs.tc.player,tag=mgs.tc.team.02] run tp @s ~ ~5 ~-19 0 0
 
@@ -23,7 +23,8 @@ execute if score #timer_start_tick lobby.tc.data matches 00 run scoreboard playe
 execute if score #timer_start_tick lobby.tc.data matches 00 run scoreboard players set #timer_game_sec lobby.tc.data 40
 execute if score #timer_start_tick lobby.tc.data matches 00 run scoreboard players set #timer_game lobby.tc.data 160
 
-execute if score #timer_start_tick lobby.tc.data matches 120 run function lobby:mini_games/tc/mini_games/ctb/start/text
+execute if score #timer_start_tick lobby.tc.data matches 120 if score #random_ctb_pick lobby.tc.data matches 1 run function lobby:mini_games/tc/mini_games/ctb/start/copper_box
+execute if score #timer_start_tick lobby.tc.data matches 120 if score #random_ctb_pick lobby.tc.data matches 2 run function lobby:mini_games/tc/mini_games/ctb/start/lavarena
 
 execute if score #timer_start_tick lobby.tc.data matches 00 as @a[tag=mgs.tc.player,tag=!mgs.tc.spec] run effect clear @s
 execute if score #timer_start_tick lobby.tc.data matches 120 as @a[tag=mgs.tc.player,tag=!mgs.tc.spec] run give @s minecraft:arrow 16

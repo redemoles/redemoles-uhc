@@ -31,4 +31,5 @@ tag @s remove uhc.ironman
 tag @s remove uhc.scenario.best_pve
 execute if score #sound_paranoia uhc.scenario matches 1 run tag @s add uhc.scenario.sound_paranoia.on
 scoreboard players set @s uhc.players.death 2
+scoreboard players set @s uhc.timer.respawn 0
 scoreboard players set @s uhc.players.online 1

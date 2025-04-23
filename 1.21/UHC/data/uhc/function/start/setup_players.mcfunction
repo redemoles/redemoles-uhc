@@ -60,6 +60,7 @@ execute if score #sound_paranoia uhc.scenario matches 1 as @a[tag=uhc.player] st
 scoreboard players set @a[tag=uhc.spec] uhc.players.lives 0
 scoreboard players operation @a[tag=uhc.player] uhc.players.lives = #lives uhc.players.lives
 scoreboard players set @a uhc.players.death 0
+scoreboard players set @a uhc.timer.respawn 0
 
 ## Nombre de joueurs en jeu
 execute store result score #Joueurs uhc.data.display if entity @a[tag=uhc.player]

@@ -9,6 +9,7 @@
 
 scoreboard players remove #timer_end_tick lobby.tc.data 1
 scoreboard players set @a[tag=mgs.tc.player] uhc.timer.respawn 0
+scoreboard players set @a[tag=mgs.tc.player] uhc.players.death 0
 
 # Suppression des équipes
 tag @a remove mgs.tc.team.01
