@@ -9,7 +9,7 @@
 		},
 		"description": {
 			"text": "Obtenir un(e) Soul Torch",
-			"color": "#F7EFFF"
+			"color": "#FFFFFF"
 		},
 		"frame": "task",
 		"show_toast": false,

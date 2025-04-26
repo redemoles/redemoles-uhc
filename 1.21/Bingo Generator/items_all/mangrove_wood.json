@@ -9,7 +9,7 @@
 		},
 		"description": {
 			"text": "Obtenir un(e) Mangrove Wood",
-			"color": "#F7EFFF"
+			"color": "#FFFFFF"
 		},
 		"frame": "task",
 		"show_toast": false,

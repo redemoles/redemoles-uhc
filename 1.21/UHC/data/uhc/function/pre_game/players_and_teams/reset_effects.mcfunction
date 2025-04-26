@@ -26,3 +26,4 @@ effect give @s minecraft:fire_resistance infinite 0 true
 effect give @s minecraft:resistance infinite 4 true
 effect give @s minecraft:weakness infinite 4 true
 effect give @s minecraft:instant_health infinite 1 true
+effect give @s minecraft:absorption 1 1 true

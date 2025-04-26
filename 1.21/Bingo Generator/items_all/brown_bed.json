@@ -9,7 +9,7 @@
 		},
 		"description": {
 			"text": "Obtenir un(e) Brown Bed",
-			"color": "#F7EFFF"
+			"color": "#FFFFFF"
 		},
 		"frame": "task",
 		"show_toast": false,

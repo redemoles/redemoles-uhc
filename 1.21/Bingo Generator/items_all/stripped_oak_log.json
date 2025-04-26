@@ -9,7 +9,7 @@
 		},
 		"description": {
 			"text": "Obtenir un(e) Stripped Oak Log",
-			"color": "#F7EFFF"
+			"color": "#FFFFFF"
 		},
 		"frame": "task",
 		"show_toast": false,

@@ -9,7 +9,7 @@
 		},
 		"description": {
 			"text": "Obtenir un(e) Lime Concrete",
-			"color": "#F7EFFF"
+			"color": "#FFFFFF"
 		},
 		"frame": "task",
 		"show_toast": false,

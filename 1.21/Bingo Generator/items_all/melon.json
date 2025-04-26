@@ -9,7 +9,7 @@
 		},
 		"description": {
 			"text": "Obtenir un(e) Melon",
-			"color": "#F7EFFF"
+			"color": "#FFFFFF"
 		},
 		"frame": "task",
 		"show_toast": false,
