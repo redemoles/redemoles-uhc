@@ -6,7 +6,7 @@
 #
 # @description		Génération d'équipes aléatoires
 #
-#tellraw @a[tag=host] [{"text":"","bold":false},{"text":"[Test]","bold":true},{"text":" Entrée function randomiseur en tant que "},{"selector":"@s"}]
+#tellraw @a[tag=uhc.host] [{"text":"","bold":false},{"text":"[Test]","bold":true},{"text":" Entrée function randomiseur en tant que "},{"selector":"@s"}]
 tag @s remove uhc.random_team.ban
 
 # Ban list du joueur

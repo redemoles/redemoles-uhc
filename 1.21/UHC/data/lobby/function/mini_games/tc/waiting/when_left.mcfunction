@@ -24,8 +24,8 @@ scoreboard players set @s uhc.players.online 0
 tag @s remove mgs.tc.player
 tag @s remove mgs.tc.team.01
 tag @s remove mgs.tc.team.02
-execute as @s[tag=host] run function uhc:pre_game/menu/reload/host_menu
-execute as @s[tag=!host] run function uhc:pre_game/menu/reload/players_menu
+execute as @s[tag=uhc.host] run function uhc:pre_game/menu/reload/host_menu
+execute as @s[tag=!uhc.host] run function uhc:pre_game/menu/reload/players_menu
 scoreboard players set @s uhc.players.online 1
 function lobby:mini_games/tc/spectators_room/when_joined
 

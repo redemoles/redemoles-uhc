@@ -25,13 +25,13 @@ title @s reset
 scoreboard players set @s uhc.players.lang 1
 scoreboard players set @s uhc.id.random_teams 0
 
-# → L'ordre des commandes doit rester comme ça
-execute as @s[tag=host] run function uhc:pre_game/menu/reload/host_menu
-execute as @s[tag=!host] run function uhc:pre_game/menu/reload/players_menu
-scoreboard players set @s uhc.players.online 1
-
 # Réinitialisation des effets
 function uhc:pre_game/players_and_teams/reset_effects
+
+# → L'ordre des commandes doit rester comme ça
+execute as @s[tag=uhc.host] run function uhc:pre_game/menu/reload/host_menu
+execute as @s[tag=!uhc.host] run function uhc:pre_game/menu/reload/players_menu
+scoreboard players set @s uhc.players.online 1
 
 ## Réinitialisation tags de tous les scénarios
 # Best PvE

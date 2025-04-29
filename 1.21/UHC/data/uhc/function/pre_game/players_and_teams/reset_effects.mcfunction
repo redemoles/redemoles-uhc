@@ -8,7 +8,7 @@
 #
 
 # Réinitialisation des effets
-effect clear @s
+effect clear
 attribute @s minecraft:max_absorption base set 0
 attribute @s minecraft:max_health base set 20
 attribute @s minecraft:jump_strength base set 0.42
@@ -26,4 +26,4 @@ effect give @s minecraft:fire_resistance infinite 0 true
 effect give @s minecraft:resistance infinite 4 true
 effect give @s minecraft:weakness infinite 4 true
 effect give @s minecraft:instant_health infinite 1 true
-effect give @s minecraft:absorption 1 1 true
+execute unless score @s uhc.players.online matches 1 run effect give @s minecraft:absorption 1 0 true

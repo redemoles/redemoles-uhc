@@ -10,7 +10,7 @@
 execute if score #lobby lobby.structure.data matches 1.. run return fail
 
 scoreboard objectives add lobby.structure.data dummy
-scoreboard players set #lobby lobby.structure.data 1
+scoreboard players set #lobby lobby.structure.data 11
 scoreboard players set #loaded lobby.structure.data 0
 scoreboard players set #tick lobby.structure.data 0
 

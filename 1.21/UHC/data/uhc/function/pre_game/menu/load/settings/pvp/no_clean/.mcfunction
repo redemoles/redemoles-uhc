@@ -12,5 +12,5 @@ execute if score @s uhc.menu.host.settings.pvp matches 3 run scoreboard players 
 execute if score @s uhc.menu.host.settings.pvp matches 3 if score #reward_kill_absorption uhc.data.setup matches 2 run scoreboard players set #reward_kill_absorption uhc.data.setup 0
 scoreboard players set @s uhc.menu.host.settings.pvp 3
 
-execute as @s[tag=host] run function uhc:pre_game/menu/load/settings/
-execute as @s[tag=!host] run function uhc:pre_game/menu/load/settings/players_menu/
+execute as @s[tag=uhc.host] run function uhc:pre_game/menu/load/settings/
+execute as @s[tag=!uhc.host] run function uhc:pre_game/menu/load/settings/players_menu/

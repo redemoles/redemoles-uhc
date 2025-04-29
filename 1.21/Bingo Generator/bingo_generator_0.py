@@ -14,7 +14,7 @@ if not os.path.exists("bingo_generator_0.py"):
 # Define configuration
 bingo_size = {"lines": 5, "columns": 5}
 bingo_namespace = "bingo_0a"
-bingo_name = "Bingo - Étape A"
+bingo_name = "Bingo Classique A"
 step_number = "1"
 advancements_folder = "items_all"
 configuration_objective = "bhc.data"
@@ -175,7 +175,7 @@ if not os.path.exists("bingo_generator_0.py"):
 # Define configuration
 bingo_size = {"lines": 5, "columns": 5}
 bingo_namespace = "bingo_0b"
-bingo_name = "Bingo - Étape B"
+bingo_name = "Bingo Classique B"
 step_number = "2"
 advancements_folder = "items_all"
 configuration_objective = "bhc.data"

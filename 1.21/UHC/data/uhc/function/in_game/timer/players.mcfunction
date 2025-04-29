@@ -28,8 +28,8 @@ execute if score #fire_flame uhc.data.setup matches 0 unless score #aic uhc.game
 execute if score #fire_flame uhc.data.setup matches 0 unless score #aic uhc.gamemode matches 1 if items entity @s[tag=!uhc.fire_flame] weapon.offhand *[enchantments~[{enchantments:"minecraft:flame"}]] run item modify entity @s weapon.offhand {function:"minecraft:set_enchantments",enchantments:{"minecraft:flame":-255},add:true}
 
 # PvP Version 1.8
-execute if score #version uhc.data.setup matches 1 run function uhc:in_game/players_settings/version_pvp/1_8
-execute if score #version uhc.data.setup matches 0 run function uhc:in_game/players_settings/version_pvp/1_21
+execute if score #version_pvp uhc.data.setup matches 1 run function uhc:in_game/players_settings/version_pvp/1_8
+execute if score #version_pvp uhc.data.setup matches 0 run function uhc:in_game/players_settings/version_pvp/1_21
 
 # Effets aux joueurs
 execute if score #pve uhc.data.setup matches ..0 run scoreboard players set @s[scores={uhc.effect.resistance=-1}] uhc.effect.resistance 0

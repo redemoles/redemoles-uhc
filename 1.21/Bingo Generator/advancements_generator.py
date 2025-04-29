@@ -155,7 +155,7 @@ mangrove = []
 mesa = []
 #mesa = [block for block in blocks if "red_sand" in block]
 
-pale_block = ["pale", "resin", "creaking"]
+pale_block = ["pale", "resin", "creaking", "eyeblossom"]
 pale = []
 #pale = [block for block in blocks if any(x in block for x in pale_block)]
 

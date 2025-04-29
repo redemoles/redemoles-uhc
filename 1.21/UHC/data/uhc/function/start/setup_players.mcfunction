@@ -21,8 +21,8 @@ effect give @a[tag=uhc.player] minecraft:slowness infinite 9 true
 effect give @a[tag=uhc.player] minecraft:weakness infinite 9 true
 execute as @a[tag=uhc.player] run attribute @s minecraft:jump_strength base set 0
 execute unless score #no_fall uhc.scenario matches 1 as @a[tag=uhc.player] run attribute @s minecraft:fall_damage_multiplier base set 1.0
-execute if score #version uhc.data.setup matches 1 as @a[tag=uhc.player] run attribute @s minecraft:attack_speed base set 1024
-execute if score #version uhc.data.setup matches 1 as @a[tag=uhc.player] run attribute @s minecraft:attack_knockback base set 0.55
+execute if score #version_pvp uhc.data.setup matches 1 as @a[tag=uhc.player] run attribute @s minecraft:attack_speed base set 1024
+execute if score #version_pvp uhc.data.setup matches 1 as @a[tag=uhc.player] run attribute @s minecraft:attack_knockback base set 0.55
 
 advancement revoke @a everything
 

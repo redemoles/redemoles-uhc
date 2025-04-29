@@ -14,8 +14,8 @@ execute if entity @s[tag=mgs.tc.player] run function uhc:pre_game/players_and_te
 # Chargement de l'inventaire
 scoreboard players set @s uhc.players.online 0
 gamemode adventure @s
-execute as @s[tag=host] run function uhc:pre_game/menu/reload/host_menu
-execute as @s[tag=!host] run function uhc:pre_game/menu/reload/players_menu
+execute as @s[tag=uhc.host] run function uhc:pre_game/menu/reload/host_menu
+execute as @s[tag=!uhc.host] run function uhc:pre_game/menu/reload/players_menu
 scoreboard players set @s uhc.players.online 1
 scoreboard players set @s uhc.players.disconnect 0
 

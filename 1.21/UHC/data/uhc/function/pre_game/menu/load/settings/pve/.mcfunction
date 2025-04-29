@@ -7,12 +7,12 @@
 # @description		Menu
 #
 
-scoreboard players set @s[tag=host] uhc.menu.host.settings 3
+scoreboard players set @s[tag=uhc.host] uhc.menu.host.settings 3
 scoreboard players set @s uhc.menu.host.settings.lives 0
 scoreboard players set @s uhc.menu.host.settings.pve 1
 scoreboard players set @s uhc.menu.host.settings.pvp 0
 scoreboard players set @s uhc.menu.host.settings.border 0
 scoreboard players set @s uhc.menu.host.settings.inventory 0
 
-execute as @s[tag=host] run function uhc:pre_game/menu/load/settings/
-execute as @s[tag=!host] run function uhc:pre_game/menu/load/settings/players_menu/
+execute as @s[tag=uhc.host] run function uhc:pre_game/menu/load/settings/
+execute as @s[tag=!uhc.host] run function uhc:pre_game/menu/load/settings/players_menu/

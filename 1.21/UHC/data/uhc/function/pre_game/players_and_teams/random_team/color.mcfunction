@@ -6,7 +6,7 @@
 #
 # @description		Génération d'équipes aléatoires
 #
-#tellraw @a[tag=host] [{"text":"","bold":false},{"text":"[Test]","bold":true},{"text":" Entrée function couleur d'équipe en tant que "},{"selector":"@s"}]
+#tellraw @a[tag=uhc.host] [{"text":"","bold":false},{"text":"[Test]","bold":true},{"text":" Entrée function couleur d'équipe en tant que "},{"selector":"@s"}]
 scoreboard players add #team uhc.id.teams 3
 execute if score #team uhc.id.teams matches 17.. run scoreboard players remove #team uhc.id.teams 16
 scoreboard players operation #team uhc.id.random_teams = @s uhc.id.random_teams

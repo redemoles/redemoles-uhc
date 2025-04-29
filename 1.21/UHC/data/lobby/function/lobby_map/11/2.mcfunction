@@ -1,10 +1,10 @@
 
-#> lobby:lobby_map/10/2
+#> lobby:lobby_map/11/2
 #
 # @within			lobby:lobby_map/
 # @executed			default context
 #
-# @description		Lobby 10 - Bingo UHC - Lobby Base
+# @description		Lobby 11 - Bingo UHC - Lobby Base
 #
 
 scoreboard players set #loaded lobby.structure.data 1

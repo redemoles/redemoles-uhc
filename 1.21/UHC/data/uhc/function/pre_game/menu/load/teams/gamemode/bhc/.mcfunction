@@ -10,7 +10,7 @@
 clear @s
 
 tag @s add menu.players
-tag @s[tag=!host] add players.menu.teams
+tag @s[tag=!uhc.host] add players.menu.teams
 scoreboard players set @s uhc.menu.host.settings 0
 
 

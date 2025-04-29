@@ -338,7 +338,7 @@ scoreboard players set #hp_100 uhc.data.setup 0
 scoreboard players set #pvp uhc.data.setup 40
 scoreboard players set #shield_percent uhc.data.setup 100
 scoreboard players set #shield uhc.data.setup 336
-scoreboard players set #version uhc.data.setup 0
+scoreboard players set #version_pvp uhc.data.setup 0
 scoreboard players set #fire_flame uhc.data.setup 0
 scoreboard players set #reward_kill_health uhc.data.setup 0
 scoreboard players set #reward_kill_absorption uhc.data.setup 0

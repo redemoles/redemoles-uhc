@@ -10,8 +10,8 @@
 scoreboard players add #hp_tab uhc.data.setup 1
 execute if score #hp_tab uhc.data.setup matches 4 run scoreboard players set #hp_tab uhc.data.setup 0
 
-execute as @s[tag=host] run function uhc:pre_game/menu/load/settings/
-execute as @s[tag=!host] run function uhc:pre_game/menu/load/settings/players_menu/
+execute as @s[tag=uhc.host] run function uhc:pre_game/menu/load/settings/
+execute as @s[tag=!uhc.host] run function uhc:pre_game/menu/load/settings/players_menu/
 
 execute if score #hp_tab uhc.data.setup matches 0 run scoreboard objectives setdisplay list
 execute if score #team_health uhc.scenario matches 0 unless score #hp_tab uhc.data.setup matches 0 unless score #hp_tab uhc.data.setup matches 2 run scoreboard objectives setdisplay list uhc.players.health

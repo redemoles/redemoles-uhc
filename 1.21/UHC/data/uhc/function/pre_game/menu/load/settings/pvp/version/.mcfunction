@@ -8,8 +8,8 @@
 #
 
 
-scoreboard players add #version uhc.data.setup 1
-execute if score #version uhc.data.setup matches 2 run scoreboard players set #version uhc.data.setup 0
+scoreboard players add #version_pvp uhc.data.setup 1
+execute if score #version_pvp uhc.data.setup matches 2 run scoreboard players set #version_pvp uhc.data.setup 0
 
-execute as @s[tag=host] run function uhc:pre_game/menu/load/settings/
-execute as @s[tag=!host] run function uhc:pre_game/menu/load/settings/players_menu/
+execute as @s[tag=uhc.host] run function uhc:pre_game/menu/load/settings/
+execute as @s[tag=!uhc.host] run function uhc:pre_game/menu/load/settings/players_menu/
