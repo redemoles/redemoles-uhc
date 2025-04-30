@@ -40,5 +40,5 @@ place template lobby:lobby_map/11/202 ~-70 ~23 ~-70
 fill ~-58 ~-3 ~29 ~64 ~-7 ~65 minecraft:structure_void replace minecraft:barrier
 fill ~-58 ~-8 ~29 ~64 ~-12 ~65 minecraft:structure_void replace minecraft:barrier
 
-time set 3000
+time set 1000
 tp @a ~ ~ ~ 0 0

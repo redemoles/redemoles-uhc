@@ -11,6 +11,9 @@ scoreboard players remove #timer_end_tick lobby.tc.data 1
 scoreboard players set @a[tag=mgs.tc.player] uhc.timer.respawn 0
 scoreboard players set @a[tag=mgs.tc.player] uhc.players.death 0
 
+execute if score #playing_memory_build lobby.tc.data matches 1 run function lobby:mini_games/tc/timer/end_remove_wall
+execute if score #playing_puzzle lobby.tc.data matches 1 run function lobby:mini_games/tc/timer/end_remove_wall
+
 # Suppression des équipes
 tag @a remove mgs.tc.team.01
 tag @a remove mgs.tc.team.02
@@ -25,4 +28,5 @@ execute if score #timer_end_tick lobby.tc.data matches 80 as @a run tag @s remov
 # Suppression de l'inventaire
 execute if score #timer_end_tick lobby.tc.data matches 80 as @a[tag=mgs.tc.player,tag=!mgs.tc.spec] run clear @s
 
+execute if score #timer_end_tick lobby.tc.data matches 80 as @a[tag=mgs.tc.player] run effect clear @s
 execute if score #timer_end_tick lobby.tc.data matches 80 as @a[tag=mgs.tc.player] run function lobby:mini_games/tc/timer/start_effects
