@@ -37,7 +37,7 @@ execute if score #playing_os_pvp lobby.tc.data matches 1 run function lobby:mini
 execute if score #playing_parkour lobby.tc.data matches 1 run function lobby:mini_games/tc/mini_games/parkour/playing
 execute if score #playing_puzzle lobby.tc.data matches 1 run function lobby:mini_games/tc/mini_games/puzzle/playing
 
-# Joueur a terminé sans prendre de record
+
 
 
 

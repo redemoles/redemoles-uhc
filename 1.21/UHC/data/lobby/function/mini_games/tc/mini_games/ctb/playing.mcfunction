@@ -8,7 +8,9 @@
 #
 
 # Détection bloc d'obsidienne miné
-execute as @p[scores={lobby.tc.crying_obsidian_mined=1}] run function lobby:mini_games/tc/mini_games/ctb/playing_obsidian
+execute if score #ctb_x2_team_01 lobby.tc.data matches 1.. run scoreboard players remove #ctb_x2_team_01 lobby.tc.data 1
+execute if score #ctb_x2_team_02 lobby.tc.data matches 1.. run scoreboard players remove #ctb_x2_team_02 lobby.tc.data 1
+execute as @p[scores={lobby.tc.crying_obsidian_mined=1}] run function lobby:mini_games/tc/mini_games/ctb/obsidian/
 
 # Détection bloc de concrete powder miné
 execute as @p[scores={lobby.tc.blue_concrete_powder_mined=1..}] run function lobby:mini_games/tc/mini_games/ctb/playing_concrete_mined
@@ -19,8 +21,8 @@ execute if score #random_ctb_pick lobby.tc.data matches 2 if block ~21 ~6 ~ mine
 execute if score #random_ctb_pick lobby.tc.data matches 2 if block ~-21 ~6 ~ minecraft:air run setblock ~-21 ~6 ~ minecraft:blue_concrete_powder
 
 # Détection bloc de concrete powder posé
-execute as @p[scores={lobby.tc.blue_concrete_powder_placed=1..}] run function lobby:mini_games/tc/mini_games/ctb/playing_concrete_placed
-execute as @p[scores={lobby.tc.red_concrete_powder_placed=1..}] run function lobby:mini_games/tc/mini_games/ctb/playing_concrete_placed
+execute as @p[scores={lobby.tc.blue_concrete_powder_placed=1..}] run function lobby:mini_games/tc/mini_games/ctb/concrete_placed/
+execute as @p[scores={lobby.tc.red_concrete_powder_placed=1..}] run function lobby:mini_games/tc/mini_games/ctb/concrete_placed/
 execute if block ~ ~5 ~-21 minecraft:blue_concrete_powder run setblock ~ ~5 ~-21 minecraft:air
 execute if block ~ ~5 ~21 minecraft:red_concrete_powder run setblock ~ ~5 ~21 minecraft:air
 

@@ -16,5 +16,3 @@ execute if score #message uhc.data.setup matches 4 run tellraw @a[scores={uhc.pl
 execute if score #message uhc.data.setup matches 1..2 run tellraw @a[scores={uhc.players.lang=2}] [{"text":"\n","color":"#3FE7FF"},{"selector":"@s","color":"#9F3FFF"},{"text":" died.","color":"#FF3FFF"}]
 execute if score #message uhc.data.setup matches 7 run tellraw @a[scores={uhc.players.lang=2}] [{"text":"\n","color":"#3FE7FF"},{"selector":"@s","color":"#9F3FFF"},{"text":" died.","color":"#FF3FFF"}]
 execute if score #message uhc.data.setup matches 4 run tellraw @a[scores={uhc.players.lang=2}] [{"text":"\n","color":"#3FE7FF"},{"text":"A player died. ","color":"#FF3FFF"}]
-
-execute if score #message uhc.data.setup matches 0..4 at @s run playsound minecraft:entity.lightning_bolt.thunder master @a ~ ~ ~ 0.4 1 0.4

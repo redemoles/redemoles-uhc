@@ -15,5 +15,5 @@ scoreboard players set @e[type=marker,tag=UHC] bhc.invSK 0
 execute as @e[type=marker,tag=UHC] run function bhc:scores_calculator/kills/rank_1
 
 ## Attribution des scores
-execute as @e[type=marker,tag=UHC,scores={bhc.CK=-14..}] run function bhc:scores_calculator/kills/rank_2
+execute as @e[type=marker,tag=UHC,scores={bhc.CK=-15..}] run function bhc:scores_calculator/kills/rank_2
 execute as @e[type=marker,tag=UHC] run function bhc:scores_calculator/kills/rank_3

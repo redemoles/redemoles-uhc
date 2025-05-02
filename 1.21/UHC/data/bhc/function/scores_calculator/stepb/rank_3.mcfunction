@@ -11,17 +11,14 @@
 # Nombre de points en fonction du nombre d'équipe
 scoreboard players operation @s bhc.invSB += #Teams bhc.data
 
-# 2e place
-scoreboard players remove @s[scores={bhc.CB=-15}] bhc.invSB 2
+# 2e-16e places
+scoreboard players remove @s[scores={bhc.CB=-15..}] bhc.invSB 4
 
-# 3e-16e places
-scoreboard players remove @s[scores={bhc.CB=-14..}] bhc.invSB 4
-
-# Les 2 dernières places
+# Équipes à moins de 0 point
 execute if score @s bhc.invSB matches ..0 run scoreboard players set @s bhc.invSB 0
 
 # Application du % → Valeur de ce score pour le score total
-scoreboard players operation @s bhc.invSB *= #02 uhc.data.numbers
+scoreboard players operation @s bhc.invSB *= #01 uhc.data.numbers
 
 ## Classement
 # Classement Étape B → Score d'équipe → Score d'affichage pour le tableau

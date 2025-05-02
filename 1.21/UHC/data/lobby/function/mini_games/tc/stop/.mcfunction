@@ -9,6 +9,7 @@
 
 function lobby:mini_games/tc/timer/end_forced
 function lobby:mini_games/tc/timer/end
+scoreboard objectives setdisplay sidebar
 
 # Test tous les joueurs
 execute as @a unless entity @s[tag=!mgs.tc.spec,tag=!mgs.tc.player] run function lobby:mini_games/tc/stop/kick

@@ -15,7 +15,7 @@ scoreboard players set @e[type=marker,tag=UHC] bhc.invSB 0
 execute as @e[type=marker,tag=UHC] run function bhc:scores_calculator/stepb/rank_1
 
 ## Attribution des scores
-execute as @e[type=marker,tag=UHC,scores={bhc.CB=-14..}] run function bhc:scores_calculator/stepb/rank_2
+execute as @e[type=marker,tag=UHC,scores={bhc.CB=-15..}] run function bhc:scores_calculator/stepb/rank_2
 execute as @e[type=marker,tag=UHC] run function bhc:scores_calculator/stepb/rank_3
 
 ## Enregistre les scores pour les joueurs

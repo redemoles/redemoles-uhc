@@ -13,7 +13,7 @@ scoreboard players add #temp bhc.data 1
 tag @s add bhc.count
 
 ## Compte le nombre d'équipe avec un score supérieur à celle sélectionnée
-execute store result score #count bhc.data if entity @e[type=marker,tag=UHC,tag=!bhc.count,predicate=bhc:rank_invdeath,scores={bhc.CD=-14..}]
+execute store result score #count bhc.data if entity @e[type=marker,tag=UHC,tag=!bhc.count,predicate=bhc:rank_invdeath,scores={bhc.CD=-15..}]
 
 ## Mise à jour du score d'équipe
 scoreboard players operation @s bhc.invSD -= #count bhc.data

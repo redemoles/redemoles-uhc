@@ -32,4 +32,4 @@ $title @s[scores={uhc.scenario.blood_diamond.mined=$(start_tier_2)}] title [{"te
 $title @s[scores={uhc.scenario.blood_diamond.mined=$(start_tier_2),uhc.players.lang=1}] subtitle [{"text":"Blood Diamond - Palier 2","color":"#FFE73F"}]
 $title @s[scores={uhc.scenario.blood_diamond.mined=$(start_tier_2),uhc.players.lang=2}] subtitle [{"text":"Blood Diamond - Tier 2","color":"#FFE73F"}]
 
-tag @p remove uhc.blood_diamond.receive
+tag @p[tag=uhc.blood_diamond.receive] remove uhc.blood_diamond.receive

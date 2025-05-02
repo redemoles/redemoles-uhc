@@ -13,3 +13,6 @@ execute store result score #random_craft_pick lobby.tc.data run random value 1..
 #execute if score #random_craft_pick lobby.tc.data matches 2 run place template lobby:mini_games/tc/craft/01
 
 scoreboard players set #playing_craft lobby.tc.data 1
+
+# Reset timer démarrage
+scoreboard players set #timer_start_tick lobby.tc.data 302

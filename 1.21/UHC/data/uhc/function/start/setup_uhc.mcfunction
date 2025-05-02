@@ -71,3 +71,27 @@ team modify 14 collisionRule always
 team modify 15 collisionRule always
 team modify 16 collisionRule always
 team modify 99 collisionRule always
+
+## Scoreboard spéciaux
+scoreboard objectives add uhc.scenario.blood_diamond.deepslate minecraft.mined:minecraft.deepslate_diamond_ore
+scoreboard objectives add uhc.scenario.blood_diamond.temp minecraft.mined:minecraft.diamond_ore
+
+scoreboard objectives add uhc.players.mined.coal minecraft.mined:minecraft.coal_ore
+scoreboard objectives add uhc.players.mined.coal_deepslate minecraft.mined:minecraft.deepslate_coal_ore
+scoreboard objectives add uhc.players.mined.copper minecraft.mined:minecraft.copper_ore
+scoreboard objectives add uhc.players.mined.copper_deepslate minecraft.mined:minecraft.deepslate_copper_ore
+scoreboard objectives add uhc.players.mined.iron minecraft.mined:minecraft.iron_ore
+scoreboard objectives add uhc.players.mined.iron_deepslate minecraft.mined:minecraft.deepslate_iron_ore
+scoreboard objectives add uhc.players.mined.gold minecraft.mined:minecraft.gold_ore
+scoreboard objectives add uhc.players.mined.gold_deepslate minecraft.mined:minecraft.deepslate_gold_ore
+scoreboard objectives add uhc.players.mined.lapis minecraft.mined:minecraft.lapis_ore
+scoreboard objectives add uhc.players.mined.lapis_deepslate minecraft.mined:minecraft.deepslate_lapis_ore
+scoreboard objectives add uhc.players.mined.redstone minecraft.mined:minecraft.redstone_ore
+scoreboard objectives add uhc.players.mined.redstone_deepslate minecraft.mined:minecraft.deepslate_redstone_ore
+scoreboard objectives add uhc.players.mined.diamond minecraft.mined:minecraft.diamond_ore
+scoreboard objectives add uhc.players.mined.diamond_deepslate minecraft.mined:minecraft.deepslate_diamond_ore
+scoreboard objectives add uhc.players.mined.raw_copper_block minecraft.mined:minecraft.raw_copper_block
+scoreboard objectives add uhc.players.mined.raw_gold_block minecraft.mined:minecraft.raw_gold_block
+scoreboard objectives add uhc.players.mined.raw_iron_block minecraft.mined:minecraft.raw_iron_block
+scoreboard objectives add uhc.players.kills playerKillCount "Kills"
+scoreboard objectives add uhc.reward.kills playerKillCount

@@ -7,9 +7,8 @@
 # @description		Démarrage du mini-jeu Puzzle
 #
 
-execute if score #timer_start_tick lobby.tc.data matches 120 run function lobby:mini_games/tc/timer/start_2_teams
-execute if score #timer_start_tick lobby.tc.data matches 120 as @a[tag=mgs.tc.player,tag=mgs.tc.team.01] run tp @s ~16 ~1 ~-21 90 0
-execute if score #timer_start_tick lobby.tc.data matches 120 as @a[tag=mgs.tc.player,tag=mgs.tc.team.02] run tp @s ~-16 ~1 ~-21 -90 0
+# Timer pre-start
+execute if score #timer_start_tick lobby.tc.data matches 300 run scoreboard players set #timer_start_tick lobby.tc.data 120
 
 execute if score #timer_start_tick lobby.tc.data matches 120 as @a[tag=mgs.tc.player] run title @s title [{"text":"Puzzle","color":"#FFE73F"}]
 execute if score #timer_start_tick lobby.tc.data matches 120 as @a[tag=mgs.tc.player] run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 0.5 2 0.5

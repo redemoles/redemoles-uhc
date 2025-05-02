@@ -24,4 +24,5 @@ execute if score #random_team_tick uhc.data.setup matches 0.. run function uhc:p
 
 ## Kill item au sol
 execute as @e[type=minecraft:item,tag=!lobby.item.checked] run function uhc:pre_game/timer/tick_item
+execute as @e[type=minecraft:arrow,tag=!uhc.checked] run function uhc:in_game/entities/arrow/basic
 execute as @e[type=minecraft:experience_orb] run kill @s

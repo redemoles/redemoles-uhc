@@ -1,7 +1,7 @@
 
 #> lobby:mini_games/tc/mini_games/ctb/playing_concrete_mined
 #
-# @within			lobby:mini_games/tc/timer/playing
+# @within			lobby:mini_games/tc/mini_games/ctb/playing
 # @executed			default context
 #
 # @description		Récompense suite à une concrete minée

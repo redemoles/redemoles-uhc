@@ -7,6 +7,9 @@
 # @description		Démarrage du mini-jeu One Shot PvP
 #
 
+# Timer pre-start
+execute if score #timer_start_tick lobby.tc.data matches 300 run scoreboard players set #timer_start_tick lobby.tc.data 120
+
 execute if score #timer_start_tick lobby.tc.data matches 120 as @a[tag=mgs.tc.player] run tp @s ~ ~5 ~-21 0 0
 
 

@@ -87,9 +87,7 @@ scoreboard objectives add uhc.scenario.best_pve.tick dummy
 scoreboard objectives add uhc.biome_paranoia.team dummy
 scoreboard objectives add uhc.scenario.blood_cycle dummy
 scoreboard objectives add uhc.scenario.blood_diamond.damage dummy
-scoreboard objectives add uhc.scenario.blood_diamond.deepslate minecraft.mined:minecraft.deepslate_diamond_ore
 scoreboard objectives add uhc.scenario.blood_diamond.mined dummy
-scoreboard objectives add uhc.scenario.blood_diamond.temp minecraft.mined:minecraft.diamond_ore
 scoreboard objectives add uhc.scenario.blood_diamond.tier dummy
 scoreboard objectives add uhc.scenario.bookception dummy
 scoreboard objectives add uhc.scenario.cut_clean.random dummy
@@ -124,23 +122,6 @@ scoreboard objectives add uhc.scenario.sound_paranoia.sb.water_bucket dummy "Wat
 scoreboard objectives add uhc.scenario.sound_paranoia.sb.wither_skeleton dummy "Wither Skeleton"
 scoreboard objectives add uhc.scenario.sound_paranoia.sb.placed_blocks dummy "Blocks"
 scoreboard objectives add uhc.players.ironman.list dummy
-scoreboard objectives add uhc.players.mined.coal minecraft.mined:minecraft.coal_ore
-scoreboard objectives add uhc.players.mined.coal_deepslate minecraft.mined:minecraft.deepslate_coal_ore
-scoreboard objectives add uhc.players.mined.copper minecraft.mined:minecraft.copper_ore
-scoreboard objectives add uhc.players.mined.copper_deepslate minecraft.mined:minecraft.deepslate_copper_ore
-scoreboard objectives add uhc.players.mined.iron minecraft.mined:minecraft.iron_ore
-scoreboard objectives add uhc.players.mined.iron_deepslate minecraft.mined:minecraft.deepslate_iron_ore
-scoreboard objectives add uhc.players.mined.gold minecraft.mined:minecraft.gold_ore
-scoreboard objectives add uhc.players.mined.gold_deepslate minecraft.mined:minecraft.deepslate_gold_ore
-scoreboard objectives add uhc.players.mined.lapis minecraft.mined:minecraft.lapis_ore
-scoreboard objectives add uhc.players.mined.lapis_deepslate minecraft.mined:minecraft.deepslate_lapis_ore
-scoreboard objectives add uhc.players.mined.redstone minecraft.mined:minecraft.redstone_ore
-scoreboard objectives add uhc.players.mined.redstone_deepslate minecraft.mined:minecraft.deepslate_redstone_ore
-scoreboard objectives add uhc.players.mined.diamond minecraft.mined:minecraft.diamond_ore
-scoreboard objectives add uhc.players.mined.diamond_deepslate minecraft.mined:minecraft.deepslate_diamond_ore
-scoreboard objectives add uhc.players.mined.raw_copper_block minecraft.mined:minecraft.raw_copper_block
-scoreboard objectives add uhc.players.mined.raw_gold_block minecraft.mined:minecraft.raw_gold_block
-scoreboard objectives add uhc.players.mined.raw_iron_block minecraft.mined:minecraft.raw_iron_block
 scoreboard objectives add bhc.scenario dummy
 scoreboard objectives add nzl.scenario dummy
 
@@ -226,10 +207,8 @@ scoreboard objectives add uhc.players.health health "❤"
 scoreboard objectives add uhc.players.health.100 dummy "%"
 scoreboard objectives add uhc.players.timer dummy "Minutes jouées"
 scoreboard objectives add uhc.players.border_alert dummy
-scoreboard objectives add uhc.players.kills playerKillCount "Kills"
 scoreboard objectives add uhc.players.death deathCount
 scoreboard objectives add uhc.players.lang dummy
-scoreboard objectives add uhc.reward.kills playerKillCount
 scoreboard objectives add uhc.effect.resistance dummy
 scoreboard objectives add uhc.timer.respawn dummy
 scoreboard objectives add uhc.timer.start dummy

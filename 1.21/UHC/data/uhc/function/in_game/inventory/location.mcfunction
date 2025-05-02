@@ -17,3 +17,5 @@ $execute if score @s uhc.players.lives matches ..0 in $(dim) positioned $(x) $(y
 $execute if score @s uhc.players.lives matches ..0 in $(dim) positioned $(x) $(y) $(z) run tp @s ~ ~ ~
 data modify storage uhc:temp Item_additional set from storage uhc:settings Item_additional
 $execute in $(dim) positioned $(x) $(y) $(z) if data storage uhc:temp Item_additional[0] run function uhc:in_game/inventory/item_additional
+
+$execute if score #message uhc.data.setup matches 0..4 in $(dim) positioned $(x) $(y) $(z) run playsound minecraft:entity.lightning_bolt.thunder master @a[nbt={Dimension:"$(dim)"}] ~ ~ ~ 0.4 1 0.4

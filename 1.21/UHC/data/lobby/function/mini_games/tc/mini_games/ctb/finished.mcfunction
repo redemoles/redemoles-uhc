@@ -33,3 +33,6 @@ execute as @a[tag=mgs.tc.team.02] run function lobby:mini_games/tc/mini_games/ct
 
 execute as @a[tag=mgs.tc.team.01] run function lobby:mini_games/tc/mini_games/ctb/record/difference/
 execute as @a[tag=mgs.tc.team.02] run function lobby:mini_games/tc/mini_games/ctb/record/difference/
+
+scoreboard players set #ctb_x2_team_02 lobby.tc.data 0
+scoreboard players set #ctb_x2_team_02 lobby.tc.data 0

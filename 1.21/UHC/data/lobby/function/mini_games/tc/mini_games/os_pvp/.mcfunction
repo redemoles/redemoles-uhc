@@ -13,3 +13,6 @@ execute if score #random_os_pvp_pick lobby.tc.data matches 1 run place template 
 execute if score #random_os_pvp_pick lobby.tc.data matches 2 run place template lobby:mini_games/tc/os_pvp/copper_box_01
 
 scoreboard players set #playing_os_pvp lobby.tc.data 1
+
+# Reset timer démarrage
+scoreboard players set #timer_start_tick lobby.tc.data 302
