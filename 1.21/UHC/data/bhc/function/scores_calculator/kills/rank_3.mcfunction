@@ -12,13 +12,13 @@
 scoreboard players operation @s bhc.invSK += #Teams bhc.data
 
 # 2-16e places
-scoreboard players remove @s[scores={bhc.CK=-15..}] bhc.invSK 4
+scoreboard players remove @s[scores={bhc.CK=-15..}] bhc.invSK 2
 
 # Équipes à moins de 0 point
 execute if score @s bhc.invSK matches ..0 run scoreboard players set @s bhc.invSK 0
 
 # Application du % → Valeur de ce score pour le score total
-scoreboard players operation @s bhc.invSK *= #01 uhc.data.numbers
+scoreboard players operation @s bhc.invSK *= #02 uhc.data.numbers
 
 ## Classement
 # Classement Kills → Score d'équipe → Score d'affichage pour le tableau

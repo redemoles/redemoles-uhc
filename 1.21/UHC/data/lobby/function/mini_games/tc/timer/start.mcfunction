@@ -13,8 +13,8 @@ execute if score #timer_start_tick lobby.tc.data matches 301 as @a[tag=mgs.tc.pl
 execute if score #timer_start_tick lobby.tc.data matches 301 as @a[tag=mgs.tc.player] run tag @s remove mgs.tc.spec
 
 # Anti-brûlure
-execute if score #timer_start_tick lobby.tc.data matches 301 as @a at @s run setblock ~ ~ ~ minecraft:water
-execute if score #timer_start_tick lobby.tc.data matches 300 as @a at @s run setblock ~ ~ ~ minecraft:air
+execute if score #timer_start_tick lobby.tc.data matches 301 as @a[tag=mgs.tc.player] at @s run setblock ~ ~ ~ minecraft:water
+execute if score #timer_start_tick lobby.tc.data matches 300 as @a[tag=mgs.tc.player] at @s run setblock ~ ~ ~ minecraft:air
 
 # Effets
 execute if score #timer_start_tick lobby.tc.data matches 301 as @a[tag=mgs.tc.player] run function lobby:mini_games/tc/timer/start_effects
