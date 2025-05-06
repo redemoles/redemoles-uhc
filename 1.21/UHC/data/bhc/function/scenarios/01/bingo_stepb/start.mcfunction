@@ -19,7 +19,7 @@ tellraw @a[scores={uhc.players.lang=2}] [{"text":"[","color":"#FFFFFF","bold":tr
 playsound minecraft:entity.experience_orb.pickup master @a ~ ~ ~ 0.5 1 0.5
 
 # Scoreboard d'affichage
-scoreboard objectives setdisplay sidebar bhc.StepB
+scoreboard objectives setdisplay sidebar bhc.stepb.score
 
 # Reset des succès
 execute as @e[type=marker,tag=UHC] run function bhc:scenarios/01/timer/reset_scores

@@ -11,7 +11,7 @@
 scoreboard players remove @s uhc.players.lives 1
 
 ## BHC → Attribution des points de kills (seulement si la partie n'est pas terminée)
-execute if score #bhc uhc.gamemode matches 1 unless score #end uhc.game.end matches 1.. as @a[scores={uhc.reward.kills=1..}] run function bhc:scores_calculator/kills/detect
+execute if score #bhc uhc.gamemode matches 1 unless score #end uhc.game.end matches 1.. as @a[scores={uhc.players.kills.temp=1..}] run function bhc:scores_calculator/kills/detect
 
 ## FATE UHC
 execute if score #fte uhc.gamemode matches 1 if score @s uhc.players.lives matches ..0 run function fte:death/
@@ -26,7 +26,7 @@ execute if score #permakill uhc.scenario matches 1 run time add 600s
 ## Récompenses au kill, changement paramètres du joueur mort
 function uhc:in_game/players_settings/death/reveal
 function uhc:in_game/inventory/drop
-execute as @a[scores={uhc.reward.kills=1..}] run function uhc:in_game/players_settings/kill/ with storage uhc:settings reward_kill
+execute as @a[scores={uhc.players.kills.temp=1..}] run function uhc:in_game/players_settings/kill/ with storage uhc:settings reward_kill
 execute if score @s uhc.players.lives matches ..0 run function uhc:in_game/players_settings/death/definitive
 
 ## BHC → Attribution des points de survie (seulement si la partie n'est pas terminée)

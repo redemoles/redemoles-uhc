@@ -2,8 +2,8 @@
 	"condition": "minecraft:entity_scores",
 	"entity": "this",
 	"scores": {
-		"bhc.invStepA": {
-			"min": {
+		"bhc.stepa.score.inv": {
+			"max": {
 				"type": "minecraft:score",
 				"target": {
 					"type": "minecraft:fixed",

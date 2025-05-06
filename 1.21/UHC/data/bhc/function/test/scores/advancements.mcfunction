@@ -7,6 +7,7 @@
 # @description		Simulation d'une partie
 #
 
+advancement revoke @s[scores={uhc.id.teams=1}] from bingo_0a:root
 advancement grant @s[scores={uhc.id.teams=1}] only bingo_0a:1_1
 advancement grant @s[scores={uhc.id.teams=2}] only bingo_0a:1_2
 advancement grant @s[scores={uhc.id.teams=3}] only bingo_0a:1_3

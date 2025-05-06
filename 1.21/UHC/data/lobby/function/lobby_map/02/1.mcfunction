@@ -51,5 +51,5 @@ place template lobby:lobby_map/02/low_ne ~1 ~-53 ~-32
 place template lobby:lobby_map/02/low_sw ~-30 ~-53 ~0
 place template lobby:lobby_map/02/low_se ~1 ~-53 ~0
 
-time set 23500
+time set 10000
 tp @a ~ ~ ~ 0 0

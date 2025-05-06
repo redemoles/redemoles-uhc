@@ -8,8 +8,8 @@
 #
 
 # Ajout de points au joueur et à l'équipe
-scoreboard players operation @s bhc.invStepB /= #1m uhc.data.numbers
-scoreboard players add @s bhc.invStepB 1
-scoreboard players operation @a[predicate=uhc:id_teams] bhc.invStepB = @s bhc.invStepB
-scoreboard players operation @s bhc.invStepB *= #1m uhc.data.numbers
-scoreboard players add @e[type=marker,tag=UHC] bhc.invStepB 1
+scoreboard players operation @s bhc.stepb.score.inv /= #1m uhc.data.numbers
+scoreboard players add @s bhc.stepb.score.inv 1
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.stepb.score.inv = @s bhc.stepb.score.inv
+scoreboard players operation @s bhc.stepb.score.inv *= #1m uhc.data.numbers
+scoreboard players add @e[type=marker,tag=UHC] bhc.stepb.score.inv 1

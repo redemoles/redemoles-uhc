@@ -19,4 +19,4 @@ execute if score #reward bhc.random matches 4 run give @s minecraft:diamond 1
 experience add @s 1 levels
 
 # Score personnel
-scoreboard players add @s bhc.StepA.personal 1
+scoreboard players add @s bhc.stepa.score.personal 1

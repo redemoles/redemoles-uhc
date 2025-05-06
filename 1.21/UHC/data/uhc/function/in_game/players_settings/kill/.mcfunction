@@ -27,6 +27,6 @@ execute if score #reward_kill_absorption uhc.data.setup matches 1 run scoreboard
 execute if score #reward_kill_absorption uhc.data.setup matches 1 run effect clear @s minecraft:absorption
 experience add @s 2 levels
 execute if score #experienceless uhc.scenario matches 1 run experience add @s 4 levels
-scoreboard players remove @s uhc.reward.kills 1
+scoreboard players remove @s uhc.players.kills.temp 1
 
 execute if score #vanilla uhc.gamemode matches 1 if score #message uhc.data.setup matches 0 run scoreboard objectives setdisplay sidebar uhc.players.kills

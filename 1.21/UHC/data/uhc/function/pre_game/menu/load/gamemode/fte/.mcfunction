@@ -43,7 +43,7 @@ scoreboard players set #shrink_1_length uhc.data.setup 20
 scoreboard players set #shrink_2_length uhc.data.setup 5
 scoreboard players set #shrink_3_length uhc.data.setup 5
 scoreboard players set #shrink_1_size_start uhc.data.setup 1500
-scoreboard players set #shrink_1_size_end uhc.data.setup 150
+scoreboard players set #shrink_1_size_end uhc.data.setup 200
 scoreboard players set #shrink_2_size_end uhc.data.setup 64
 scoreboard players set #shrink_3_size_end uhc.data.setup 16
 

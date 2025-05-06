@@ -1,8 +1,8 @@
 
 #> uhc:in_game/tp/spawn_msg_2_solo
 #
-# @within			bhc:death/death
-# @within			uhc:start/game_teams/
+# @within			uhc:in_game/players_settings/reconnect/
+# @within			uhc:in_game/tp/spawn_start
 #
 # @description		Configuration du timer 
 #

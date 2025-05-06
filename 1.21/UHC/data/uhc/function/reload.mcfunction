@@ -59,6 +59,7 @@ scoreboard objectives remove uhc.scenario.sound_paranoia.sb.warden
 scoreboard objectives remove uhc.scenario.sound_paranoia.sb.water_bucket
 scoreboard objectives remove uhc.scenario.sound_paranoia.sb.wither_skeleton
 scoreboard objectives remove uhc.scenario.sound_paranoia.sb.placed_blocks
+scoreboard objectives remove uhc.teams.ironman
 scoreboard objectives remove uhc.players.ironman.list
 scoreboard objectives remove uhc.players.mined.coal
 scoreboard objectives remove uhc.players.mined.coal_deepslate
@@ -121,6 +122,7 @@ scoreboard objectives add uhc.scenario.sound_paranoia.sb.warden dummy "Warden"
 scoreboard objectives add uhc.scenario.sound_paranoia.sb.water_bucket dummy "Water bucket"
 scoreboard objectives add uhc.scenario.sound_paranoia.sb.wither_skeleton dummy "Wither Skeleton"
 scoreboard objectives add uhc.scenario.sound_paranoia.sb.placed_blocks dummy "Blocks"
+scoreboard objectives add uhc.teams.ironman dummy
 scoreboard objectives add uhc.players.ironman.list dummy
 scoreboard objectives add bhc.scenario dummy
 scoreboard objectives add nzl.scenario dummy
@@ -162,8 +164,8 @@ scoreboard objectives remove uhc.players.health.100
 scoreboard objectives remove uhc.players.timer
 scoreboard objectives remove uhc.players.border_alert
 scoreboard objectives remove uhc.players.kills
+scoreboard objectives remove uhc.players.kills.temp
 scoreboard objectives remove uhc.players.death
-scoreboard objectives remove uhc.reward.kills
 scoreboard objectives remove uhc.effect.resistance
 scoreboard objectives remove uhc.timer.respawn
 scoreboard objectives remove uhc.timer.start
@@ -329,7 +331,7 @@ scoreboard players set #shrink_1_size_start uhc.data.setup 1000
 
 scoreboard players set #shrink_1 uhc.data.setup 60
 scoreboard players set #shrink_1_length uhc.data.setup 20
-scoreboard players set #shrink_1_size_end uhc.data.setup 150
+scoreboard players set #shrink_1_size_end uhc.data.setup 200
 
 scoreboard players set #shrink_2 uhc.data.setup 80
 scoreboard players set #shrink_2_length uhc.data.setup 5
@@ -357,9 +359,6 @@ execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:
 execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_ironman set value [{count: 2, Slot: 0b, id: "minecraft:golden_apple"}]
 execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_additional set value [{count: 2, Slot: 0b, id: "minecraft:golden_apple"}]
 execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_notch_totem set value [{count: 4, Slot: 0b, id: "minecraft:gold_block"}]
-
-## Génération du Lobby
-function lobby:load
 
 ## Reload des fonctionnalités des modes de jeu
 function aic:load
@@ -402,13 +401,18 @@ scoreboard players set #100 uhc.data.numbers 100
 scoreboard players set #336 uhc.data.numbers 336
 scoreboard players set #1000 uhc.data.numbers 1000
 scoreboard players set #1200 uhc.data.numbers 1200
+scoreboard players set #2400 uhc.data.numbers 2400
 scoreboard players set #12000 uhc.data.numbers 12000
 scoreboard players set #1m uhc.data.numbers 1000000
+scoreboard players set #10m uhc.data.numbers 10000000
 
 ## Sign
-execute in uhc:lobby run forceload add 0 0
+execute in uhc:lobby run forceload add -128 -128 127 127
 execute in uhc:lobby run setblock 0 -62 0 minecraft:barrier
 execute in uhc:lobby run setblock 0 -61 0 minecraft:oak_sign
+
+## Génération du Lobby
+function lobby:load
 
 # TP border define
 execute store result storage uhc:temp tp.xp int 1 run scoreboard players get #00 uhc.data.numbers

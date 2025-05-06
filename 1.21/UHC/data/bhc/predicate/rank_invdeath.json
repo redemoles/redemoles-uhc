@@ -2,8 +2,8 @@
 	"condition": "minecraft:entity_scores",
 	"entity": "this",
 	"scores": {
-		"bhc.invDeath": {
-			"min": {
+		"bhc.death.score.inv": {
+			"max": {
 				"type": "minecraft:score",
 				"target": {
 					"type": "minecraft:fixed",

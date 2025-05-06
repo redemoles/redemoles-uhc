@@ -17,7 +17,7 @@ execute if data storage uhc:temp Item_ironman[0] run function uhc:in_game/scenar
 
 # Bingo UHC
 scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
-execute if score #bhc uhc.gamemode matches 1 run scoreboard players set @e[type=marker,predicate=uhc:id_teams] bhc.ironman 6000
+execute if score #bhc uhc.gamemode matches 1 run function bhc:scores_calculator/death/ironman/bonus
 
 # Anti-boucle
 scoreboard players remove #ironman uhc.data.setup 1

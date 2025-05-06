@@ -20,4 +20,4 @@ give @s minecraft:apple
 experience add @s 1 levels
 
 # Score personnel
-scoreboard players add @s bhc.StepB.personal 1
+scoreboard players add @s bhc.stepb.score.personal 1

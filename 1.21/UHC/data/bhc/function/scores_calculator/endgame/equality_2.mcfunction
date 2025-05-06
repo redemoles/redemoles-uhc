@@ -8,7 +8,7 @@
 #
 
 ## Enregistre le score d'équipe
-scoreboard players operation #temp bhc.data = @s bhc.invSR
+scoreboard players operation #temp bhc.data = @s bhc.tie_break.score
 scoreboard players add #temp bhc.data 1
 tag @s add bhc.count
 
@@ -16,6 +16,6 @@ tag @s add bhc.count
 execute store result score #count bhc.data if entity @e[type=marker,tag=UHC,tag=!bhc.count,predicate=bhc:rank_invsr]
 
 ## Classement d'équipe
-scoreboard players operation @s bhc.CR += #count bhc.data
-scoreboard players operation @s bhc.CR *= #-1 uhc.data.numbers
+scoreboard players operation @s bhc.tie_break.rank += #count bhc.data
+scoreboard players operation @s bhc.tie_break.rank *= #-1 uhc.data.numbers
 tag @s remove bhc.count

@@ -32,11 +32,10 @@ execute if score #temp_z uhc.data.setup >= #border_alert_3 uhc.data.setup run ta
 execute if entity @s[tag=uhc.border.alert_3] run tag @s remove uhc.border.alert_2
 
 execute unless score @s uhc.players.border_alert matches 1.. run scoreboard players set @s uhc.players.border_alert 2
-execute if score #border_size uhc.data.display matches 64.. run playsound minecraft:ui.button.click master @s[tag=uhc.border.alert_1,scores={uhc.players.border_alert=2}] ~ ~ ~ 0.4 1.2 0
-execute if score #border_size uhc.data.display matches 16.. run playsound minecraft:ui.button.click master @s[tag=uhc.border.alert_2,scores={uhc.players.border_alert=2}] ~ ~ ~ 0.4 1.5 0
-execute if score #border_size uhc.data.display matches 64.. run playsound minecraft:ui.button.click master @s[tag=uhc.border.alert_2,scores={uhc.players.border_alert=1}] ~ ~ ~ 0.4 1.5 0
-execute if score #border_size uhc.data.display matches 16.. run playsound minecraft:ui.button.click master @s[tag=uhc.border.alert_3,scores={uhc.players.border_alert=2}] ~ ~ ~ 0.4 2 0
-execute if score #border_size uhc.data.display matches 16.. run playsound minecraft:ui.button.click master @s[tag=uhc.border.alert_3,scores={uhc.players.border_alert=1}] ~ ~ ~ 0.4 2 0
+execute if score #border_size uhc.data.display matches 64.. run playsound minecraft:ui.button.click master @s[tag=uhc.border.alert_1,scores={uhc.players.border_alert=2}] ~ ~ ~ 0.25 1.2 0
+execute if score #border_size uhc.data.display matches 16.. run playsound minecraft:ui.button.click master @s[tag=uhc.border.alert_2,scores={uhc.players.border_alert=2}] ~ ~ ~ 0.25 1.5 0
+execute if score #border_size uhc.data.display matches 16.. run playsound minecraft:ui.button.click master @s[tag=uhc.border.alert_3,scores={uhc.players.border_alert=2}] ~ ~ ~ 0.25 2 0
+execute if score #border_size uhc.data.display matches 16.. run playsound minecraft:ui.button.click master @s[tag=uhc.border.alert_3,scores={uhc.players.border_alert=1}] ~ ~ ~ 0.25 2 0
 
 tag @s remove uhc.border.alert_1
 tag @s remove uhc.border.alert_2

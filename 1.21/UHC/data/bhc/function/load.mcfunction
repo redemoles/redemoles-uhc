@@ -8,64 +8,46 @@
 #
 
 # Reset tous les scoreboards
-scoreboard objectives remove bhc.StepA.personal
-scoreboard objectives remove bhc.StepB.personal
-scoreboard objectives remove bhc.Bingo
+scoreboard objectives remove bhc.kills.damage_dealt
+scoreboard objectives remove bhc.kills.damage_taken
 
-scoreboard objectives remove bhc.invStepA
-scoreboard objectives remove bhc.invStepB
-scoreboard objectives remove bhc.invKills
-scoreboard objectives remove bhc.invDeath
-scoreboard objectives remove bhc.invTotal
+scoreboard objectives remove bhc.stepa.score.personal
+scoreboard objectives remove bhc.stepb.score.personal
+scoreboard objectives remove bhc.bingo.score.inv
+scoreboard objectives remove bhc.bingo.score
 
-scoreboard objectives remove bhc.StepA
-scoreboard objectives remove bhc.StepB
-scoreboard objectives remove bhc.Kills
-scoreboard objectives remove bhc.Death
-scoreboard objectives remove bhc.Total
+scoreboard objectives remove bhc.stepa.score.inv
+scoreboard objectives remove bhc.stepb.score.inv
+scoreboard objectives remove bhc.kills.score.inv
+scoreboard objectives remove bhc.death.score.inv
+scoreboard objectives remove bhc.total.score.inv
 
-scoreboard objectives remove bhc.invSA
-scoreboard objectives remove bhc.invSB
-scoreboard objectives remove bhc.invSK
-scoreboard objectives remove bhc.invSD
-scoreboard objectives remove bhc.invST
+scoreboard objectives remove bhc.stepa.score
+scoreboard objectives remove bhc.stepb.score
+scoreboard objectives remove bhc.kills.score
+scoreboard objectives remove bhc.death.score
+scoreboard objectives remove bhc.total.score
 
-scoreboard objectives remove bhc.SA
-scoreboard objectives remove bhc.SB
-scoreboard objectives remove bhc.SK
-scoreboard objectives remove bhc.SD
-scoreboard objectives remove bhc.ST
+scoreboard objectives remove bhc.stepa.rank.score.inv
+scoreboard objectives remove bhc.stepb.rank.score.inv
+scoreboard objectives remove bhc.kills.rank.score.inv
+scoreboard objectives remove bhc.death.rank.score.inv
+scoreboard objectives remove bhc.total.rank.score.inv
 
-scoreboard objectives remove bhc.CA
-scoreboard objectives remove bhc.CB
-scoreboard objectives remove bhc.CK
-scoreboard objectives remove bhc.CD
-scoreboard objectives remove bhc.CT
+scoreboard objectives remove bhc.stepa.rank.score
+scoreboard objectives remove bhc.stepb.rank.score
+scoreboard objectives remove bhc.kills.rank.score
+scoreboard objectives remove bhc.kills.rank.score
+scoreboard objectives remove bhc.total.rank.score
 
-scoreboard objectives remove bhc.invSR
-scoreboard objectives remove bhc.CR
+scoreboard objectives remove bhc.stepa.rank.number
+scoreboard objectives remove bhc.stepb.rank.number
+scoreboard objectives remove bhc.kills.rank.number
+scoreboard objectives remove bhc.death.rank.number
+scoreboard objectives remove bhc.total.rank.number
 
-scoreboard objectives remove bhc.BA1
-scoreboard objectives remove bhc.BA2
-scoreboard objectives remove bhc.BA3
-scoreboard objectives remove bhc.BA4
-scoreboard objectives remove bhc.BA5
-scoreboard objectives remove bhc.BA6
-scoreboard objectives remove bhc.BA7
-scoreboard objectives remove bhc.BA8
-scoreboard objectives remove bhc.BA9
-scoreboard objectives remove bhc.BB
-
-scoreboard objectives remove bhc.invBA1
-scoreboard objectives remove bhc.invBA2
-scoreboard objectives remove bhc.invBA3
-scoreboard objectives remove bhc.invBA4
-scoreboard objectives remove bhc.invBA5
-scoreboard objectives remove bhc.invBA6
-scoreboard objectives remove bhc.invBA7
-scoreboard objectives remove bhc.invBA8
-scoreboard objectives remove bhc.invBA9
-scoreboard objectives remove bhc.invBB
+scoreboard objectives remove bhc.tie_break.score
+scoreboard objectives remove bhc.tie_break.rank
 
 scoreboard objectives remove bhc.case
 
@@ -94,68 +76,49 @@ scoreboard objectives remove bhc.column_9
 scoreboard objectives remove bhc.random
 
 scoreboard objectives remove bhc.data
-scoreboard objectives remove bhc.ironman
+scoreboard objectives remove bhc.ironman.rank
+scoreboard objectives remove bhc.ironman.score
+scoreboard objectives remove bhc.ironman.timer
 scoreboard objectives remove bhc.timer
 scoreboard objectives remove bhc.teams.livescount
 
-scoreboard objectives add bhc.StepA.personal dummy
-scoreboard objectives add bhc.StepB.personal dummy
-scoreboard objectives add bhc.Bingo dummy "Score Bingos"
+scoreboard objectives add bhc.stepa.score.personal dummy [{"text":"Bingo Classique personnel"}]
+scoreboard objectives add bhc.stepb.score.personal dummy [{"text":"Bingo Spécial personnel"}]
+scoreboard objectives add bhc.bingo.score.inv dummy
+scoreboard objectives add bhc.bingo.score dummy "Score Bingos"
 
-scoreboard objectives add bhc.invStepA dummy
-scoreboard objectives add bhc.invStepB dummy
-scoreboard objectives add bhc.invKills dummy
-scoreboard objectives add bhc.invDeath dummy
-scoreboard objectives add bhc.invTotal dummy
+scoreboard objectives add bhc.stepa.score.inv dummy
+scoreboard objectives add bhc.stepb.score.inv dummy
+scoreboard objectives add bhc.kills.score.inv dummy
+scoreboard objectives add bhc.death.score.inv dummy
+scoreboard objectives add bhc.total.score.inv dummy
 
-scoreboard objectives add bhc.StepA dummy "Bingo Classique"
-scoreboard objectives add bhc.StepB dummy "Bingo Spécial"
-scoreboard objectives add bhc.Kills dummy "Kills"
-scoreboard objectives add bhc.Death dummy "Survie"
-scoreboard objectives add bhc.Total dummy "Score Total"
+scoreboard objectives add bhc.stepa.score dummy "Bingo Classique"
+scoreboard objectives add bhc.stepb.score dummy "Bingo Spécial"
+scoreboard objectives add bhc.kills.score dummy "Kills"
+scoreboard objectives add bhc.death.score dummy "Survie"
+scoreboard objectives add bhc.total.score dummy "Score Total"
 
-scoreboard objectives add bhc.invSA dummy
-scoreboard objectives add bhc.invSB dummy
-scoreboard objectives add bhc.invSK dummy
-scoreboard objectives add bhc.invSD dummy
-scoreboard objectives add bhc.invST dummy
+scoreboard objectives add bhc.stepa.rank.score.inv dummy
+scoreboard objectives add bhc.stepb.rank.score.inv dummy
+scoreboard objectives add bhc.kills.rank.score.inv dummy
+scoreboard objectives add bhc.death.rank.score.inv dummy
+scoreboard objectives add bhc.total.rank.score.inv dummy
 
-scoreboard objectives add bhc.SA dummy "Score Bingo C"
-scoreboard objectives add bhc.SB dummy "Score Bingo S"
-scoreboard objectives add bhc.SK dummy "Score Kills"
-scoreboard objectives add bhc.SD dummy "Score Survie"
-scoreboard objectives add bhc.ST dummy "Score Total"
+scoreboard objectives add bhc.stepa.rank.score dummy "Score Bingo C"
+scoreboard objectives add bhc.stepb.rank.score dummy "Score Bingo S"
+scoreboard objectives add bhc.kills.rank.score dummy "Score Kills"
+scoreboard objectives add bhc.kills.rank.score dummy "Score Survie"
+scoreboard objectives add bhc.total.rank.score dummy "Score Total"
 
-scoreboard objectives add bhc.CA dummy
-scoreboard objectives add bhc.CB dummy
-scoreboard objectives add bhc.CK dummy
-scoreboard objectives add bhc.CD dummy
-scoreboard objectives add bhc.CT dummy
+scoreboard objectives add bhc.stepa.rank.number dummy
+scoreboard objectives add bhc.stepb.rank.number dummy
+scoreboard objectives add bhc.kills.rank.number dummy
+scoreboard objectives add bhc.death.rank.number dummy
+scoreboard objectives add bhc.total.rank.number dummy
 
-scoreboard objectives add bhc.invSR dummy "Departage"
-scoreboard objectives add bhc.CR dummy
-
-scoreboard objectives add bhc.BA1 dummy
-scoreboard objectives add bhc.BA2 dummy
-scoreboard objectives add bhc.BA3 dummy
-scoreboard objectives add bhc.BA4 dummy
-scoreboard objectives add bhc.BA5 dummy
-scoreboard objectives add bhc.BA6 dummy
-scoreboard objectives add bhc.BA7 dummy
-scoreboard objectives add bhc.BA8 dummy
-scoreboard objectives add bhc.BA9 dummy
-scoreboard objectives add bhc.BB dummy
-
-scoreboard objectives add bhc.invBA1 dummy
-scoreboard objectives add bhc.invBA2 dummy
-scoreboard objectives add bhc.invBA3 dummy
-scoreboard objectives add bhc.invBA4 dummy
-scoreboard objectives add bhc.invBA5 dummy
-scoreboard objectives add bhc.invBA6 dummy
-scoreboard objectives add bhc.invBA7 dummy
-scoreboard objectives add bhc.invBA8 dummy
-scoreboard objectives add bhc.invBA9 dummy
-scoreboard objectives add bhc.invBB dummy
+scoreboard objectives add bhc.tie_break.score dummy "Departage"
+scoreboard objectives add bhc.tie_break.rank dummy
 
 scoreboard objectives add bhc.case dummy
 
@@ -184,7 +147,9 @@ scoreboard objectives add bhc.column_9 dummy
 scoreboard objectives add bhc.random dummy
 
 scoreboard objectives add bhc.data dummy
-scoreboard objectives add bhc.ironman dummy
+scoreboard objectives add bhc.ironman.rank dummy
+scoreboard objectives add bhc.ironman.score dummy
+scoreboard objectives add bhc.ironman.timer dummy
 scoreboard objectives add bhc.timer dummy
 scoreboard objectives add bhc.teams.livescount dummy
 
@@ -239,3 +204,6 @@ scoreboard players set #bingo_8a_enabled bhc.data 0
 scoreboard players set #bingo_8b_enabled bhc.data 0
 scoreboard players set #bingo_9a_enabled bhc.data 0
 scoreboard players set #bingo_9b_enabled bhc.data 0
+scoreboard players set #bingo_99_enabled bhc.data 0
+
+scoreboard players set #score bhc.ironman.score 0

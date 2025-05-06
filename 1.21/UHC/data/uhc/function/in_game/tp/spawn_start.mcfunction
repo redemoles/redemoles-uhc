@@ -7,7 +7,7 @@
 # @description		Configuration du timer 
 #
 
-execute if score #Minutes uhc.data.display matches 0.. store result score #can_respawn uhc.data.display run data get entity @s respawn.dimension
+execute if score #Minutes uhc.data.display matches 0.. if data entity @s respawn run scoreboard players set #can_respawn uhc.data.display 1
 execute if score #can_respawn uhc.data.display matches 1.. run return fail
 
 # Spawn 00

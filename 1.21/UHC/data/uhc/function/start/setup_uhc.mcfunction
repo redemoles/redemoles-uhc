@@ -94,4 +94,4 @@ scoreboard objectives add uhc.players.mined.raw_copper_block minecraft.mined:min
 scoreboard objectives add uhc.players.mined.raw_gold_block minecraft.mined:minecraft.raw_gold_block
 scoreboard objectives add uhc.players.mined.raw_iron_block minecraft.mined:minecraft.raw_iron_block
 scoreboard objectives add uhc.players.kills playerKillCount "Kills"
-scoreboard objectives add uhc.reward.kills playerKillCount
+scoreboard objectives add uhc.players.kills.temp playerKillCount

@@ -13,9 +13,8 @@ if not os.path.exists("bingo_generator_2.py"):
 
 # Define configuration
 bingo_size = {"lines": 5, "columns": 5}
-bingo_namespace = "bingo_2a"
+bingo_namespace = "bingo_0a"
 bingo_name = "Bingo Classique A"
-bingo_scenario = "02"
 step_number = "1"
 advancements_folder = "items_all"
 configuration_objective = "bhc.data"
@@ -99,13 +98,13 @@ def get_random_advancement(line: int, column: int) -> dict:
 
 		# Prepare the reward function
 		advancement["rewards"] = dict()
-		advancement["rewards"]["function"] = f"{bingo_namespace}:{bingo_scenario}//{line}_{column}"
+		advancement["rewards"]["function"] = f"{bingo_namespace}:{line}_{column}"
 
 		# Add the parent advancement
 		if column > 1:
-			advancement["parent"] = f"{bingo_namespace}:{bingo_scenario}/{line}_{column - 1}"
+			advancement["parent"] = f"{bingo_namespace}:{line}_{column - 1}"
 		else:
-			advancement["parent"] = f"{bingo_namespace}:root_{bingo_scenario}_{step_number}"
+			advancement["parent"] = f"{bingo_namespace}:root"
 
 		# Fix some display issues
 		if advancement["display"] == None:
@@ -127,20 +126,20 @@ with zipfile.ZipFile(f"{bingo_namespace}.zip", "w") as zip_file:
 
 			# Get a random advancement from the folder "advancements" and write it to the data pack
 			advancement = get_random_advancement(line, column)
-			zip_file.writestr(f"data/{bingo_namespace}/advancement/{bingo_scenario}/{line}_{column}.json", json.dumps(advancement, indent = "\t"))
+			zip_file.writestr(f"data/{bingo_namespace}/advancement/{line}_{column}.json", json.dumps(advancement, indent = "\t"))
 
 			# Write the reward function
-			zip_file.writestr(f"data/{bingo_namespace}/function/{bingo_scenario}/{line}_{column}.mcfunction", f"""
+			zip_file.writestr(f"data/{bingo_namespace}/function/{line}_{column}.mcfunction", f"""
 execute if score #{bingo_namespace}_enabled {configuration_objective} matches 1 run data modify storage {bingo_namespace} {line}_{column} set value {{title:"{advancement["display"]["title"]["text"]}", description:"{advancement["display"]["description"]["text"]}", namespace:"{bingo_namespace}", step:"{step_number}", line:"{line}", column:"{column}"}}
 execute if score #{bingo_namespace}_enabled {configuration_objective} matches 1 run function #bhc:advancements with storage {bingo_namespace} {line}_{column}
 execute unless score #{bingo_namespace}_enabled {configuration_objective} matches 1 run advancement revoke @s only {bingo_namespace}:{line}_{column}
 """)
 		# Write a last advancement for the line with no display
 		last_line_advancement["parent"] = f"{bingo_namespace}:{line}_{bingo_size['columns']}"
-		zip_file.writestr(f"data/{bingo_namespace}/advancement/{bingo_scenario}/last_line_{line}.json", json.dumps(last_line_advancement, indent = "\t"))
+		zip_file.writestr(f"data/{bingo_namespace}/advancement/last_line_{line}.json", json.dumps(last_line_advancement, indent = "\t"))
 			
 	# Write the root advancement
-	zip_file.writestr(f"data/{bingo_namespace}/advancement/root_{bingo_scenario}_{step_number}.json", json.dumps(root_advancement, indent = "\t"))
+	zip_file.writestr(f"data/{bingo_namespace}/advancement/root.json", json.dumps(root_advancement, indent = "\t"))
 
 	# Register the number of lines and columns
 	zip_file.writestr(f"data/{bingo_namespace}/function/load.mcfunction", f"""
@@ -161,7 +160,6 @@ scoreboard players remove #column-1 {configuration_objective} 1
 }}""")
 
 
-
 ## Python script that generates a random bingo with advancements
 import datetime
 import json
@@ -170,15 +168,14 @@ import zipfile
 import os
 
 # Stop program if not executed from the root folder
-if not os.path.exists("bingo_generator_2.py"):
+if not os.path.exists("bingo_generator_0.py"):
 	print("Please execute this program from its folder.")
 	exit()
 
 # Define configuration
 bingo_size = {"lines": 5, "columns": 5}
-bingo_namespace = "bingo_2b"
+bingo_namespace = "bingo_0b"
 bingo_name = "Bingo Classique B"
-bingo_scenario = "02"
 step_number = "2"
 advancements_folder = "items_all"
 configuration_objective = "bhc.data"
@@ -303,7 +300,7 @@ execute unless score #{bingo_namespace}_enabled {configuration_objective} matche
 		zip_file.writestr(f"data/{bingo_namespace}/advancement/last_line_{line}.json", json.dumps(last_line_advancement, indent = "\t"))
 			
 	# Write the root advancement
-	zip_file.writestr(f"data/{bingo_namespace}/advancement/root_{bingo_scenario}_{step_number}.json", json.dumps(root_advancement, indent = "\t"))
+	zip_file.writestr(f"data/{bingo_namespace}/advancement/root.json", json.dumps(root_advancement, indent = "\t"))
 
 	# Register the number of lines and columns
 	zip_file.writestr(f"data/{bingo_namespace}/function/load.mcfunction", f"""
@@ -314,7 +311,7 @@ scoreboard players set #column-1 {configuration_objective} {column}
 scoreboard players remove #line-1 {configuration_objective} 1
 scoreboard players remove #column-1 {configuration_objective} 1
 """)
-
+	
 	# Write the pack.mcmeta file
 	zip_file.writestr("pack.mcmeta", f"""{{
 	"pack": {{

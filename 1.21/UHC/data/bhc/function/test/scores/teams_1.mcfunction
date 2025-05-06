@@ -42,5 +42,3 @@ scoreboard players set @s[tag=13] uhc.id.teams 13
 scoreboard players set @s[tag=14] uhc.id.teams 14
 scoreboard players set @s[tag=15] uhc.id.teams 15
 scoreboard players set @s[tag=16] uhc.id.teams 16
-
-kill @s[tag=temp]

@@ -2,7 +2,7 @@
 	"condition": "minecraft:entity_scores",
 	"entity": "this",
 	"scores": {
-		"bhc.invSR": {
+		"bhc.tie_break.score": {
 			"min": {
 				"type": "minecraft:score",
 				"target": {

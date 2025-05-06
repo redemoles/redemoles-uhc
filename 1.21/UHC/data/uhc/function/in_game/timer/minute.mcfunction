@@ -30,7 +30,7 @@ execute as @a[tag=uhc.player] run scoreboard players operation @s uhc.players.ti
 ## Désactivation de la sécurité PvP
 execute if score #pvp uhc.data.setup matches 0 run scoreboard players set #no_pvp_safety uhc.data.setup 0
 execute if score #pvp uhc.data.setup matches 0 as @a[tag=uhc.player] run function uhc:in_game/players_settings/pvp/safety_remove
-execute if score #friendly_fire uhc.data.setup matches 1 run function uhc:in_game/players_settings/pvp/friendly_fire/enable
+execute if score #pvp uhc.data.setup matches 0 if score #friendly_fire uhc.data.setup matches 1 run function uhc:in_game/players_settings/pvp/friendly_fire/enable
 
 ## Réduction de la worldborder
 execute if score #shrink_1 uhc.data.setup matches 0 store result storage uhc:settings border_size int 1 run scoreboard players get #shrink_1_size_end uhc.data.setup

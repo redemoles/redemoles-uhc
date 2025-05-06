@@ -13,39 +13,39 @@
 scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
 
 # Classement Étape A → Affichage pour le message de fin
-scoreboard players operation @a[predicate=uhc:id_teams] bhc.invStepA = @s bhc.invStepA
-scoreboard players operation @a[predicate=uhc:id_teams] bhc.invStepA /= #1m uhc.data.numbers
-scoreboard players operation @a[predicate=uhc:id_teams] bhc.invSA = @s bhc.invSA
-scoreboard players operation @a[predicate=uhc:id_teams] bhc.CA = @s bhc.CA
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.stepa.score.inv = @s bhc.stepa.score.inv
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.stepa.score.inv /= #1m uhc.data.numbers
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.stepa.rank.score.inv = @s bhc.stepa.rank.score.inv
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.stepa.rank.number = @s bhc.stepa.rank.number
 
 # Classement Étape B → Affichage pour le message de fin
-scoreboard players operation @a[predicate=uhc:id_teams] bhc.invStepB = @s bhc.invStepB
-scoreboard players operation @a[predicate=uhc:id_teams] bhc.invStepB /= #1m uhc.data.numbers
-scoreboard players operation @a[predicate=uhc:id_teams] bhc.invSB = @s bhc.invSB
-scoreboard players operation @a[predicate=uhc:id_teams] bhc.CB = @s bhc.CB
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.stepb.score.inv = @s bhc.stepb.score.inv
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.stepb.score.inv /= #1m uhc.data.numbers
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.stepb.rank.score.inv = @s bhc.stepb.rank.score.inv
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.stepb.rank.number = @s bhc.stepb.rank.number
 
 # Classement Kills → Affichage pour le message de fin
-scoreboard players operation @a[predicate=uhc:id_teams] bhc.invKills = @s bhc.invKills
-scoreboard players operation @a[predicate=uhc:id_teams] bhc.invKills /= #1m uhc.data.numbers
-scoreboard players operation @a[predicate=uhc:id_teams] bhc.invSK = @s bhc.invSK
-scoreboard players operation @a[predicate=uhc:id_teams] bhc.CK = @s bhc.CK
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.kills.score.inv = @s bhc.kills.score.inv
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.kills.score.inv /= #10m uhc.data.numbers
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.kills.rank.score.inv = @s bhc.kills.rank.score.inv
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.kills.rank.number = @s bhc.kills.rank.number
 
 # Classement Survie → Affichage pour le message de fin
-scoreboard players operation @a[predicate=uhc:id_teams] bhc.invDeath = @s bhc.invDeath
-scoreboard players operation @a[predicate=uhc:id_teams] bhc.invDeath /= #1200 uhc.data.numbers
-scoreboard players operation @a[predicate=uhc:id_teams] bhc.invSD = @s bhc.invSD
-scoreboard players operation @a[predicate=uhc:id_teams] bhc.CD = @s bhc.CD
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.death.score.inv = @s bhc.death.score.inv
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.death.score.inv /= #1200 uhc.data.numbers
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.death.rank.score.inv = @s bhc.death.rank.score.inv
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.death.rank.number = @s bhc.death.rank.number
 
 # Classement Total → Affichage pour le message de fin
-scoreboard players operation @s bhc.invTotal = @s bhc.invST
-scoreboard players operation @a[predicate=uhc:id_teams] bhc.invTotal = @s bhc.invTotal
-scoreboard players operation @a[predicate=uhc:id_teams] bhc.invST = @s bhc.invST
-scoreboard players operation @a[predicate=uhc:id_teams] bhc.CT = @s bhc.CT
+scoreboard players operation @s bhc.total.score.inv = @s bhc.total.rank.score.inv
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.total.score.inv = @s bhc.total.score.inv
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.total.rank.score.inv = @s bhc.total.rank.score.inv
+scoreboard players operation @a[predicate=uhc:id_teams] bhc.total.rank.number = @s bhc.total.rank.number
 
 function bhc:timer/marker_tick with entity @s data
 
 # Scores → Affichage pour le message de fin
-$scoreboard players operation #max bhc.StepA > $(name) bhc.StepA
-$scoreboard players operation #max bhc.StepB > $(name) bhc.StepB
-$scoreboard players operation #max bhc.Kills > $(name) bhc.Kills
-$scoreboard players operation #max bhc.Death > $(name) bhc.Death
+$scoreboard players operation #max bhc.stepa.score > $(name) bhc.stepa.score
+$scoreboard players operation #max bhc.stepb.score > $(name) bhc.stepb.score
+$scoreboard players operation #max bhc.kills.score > $(name) bhc.kills.score
+$scoreboard players operation #max bhc.death.score > $(name) bhc.death.score

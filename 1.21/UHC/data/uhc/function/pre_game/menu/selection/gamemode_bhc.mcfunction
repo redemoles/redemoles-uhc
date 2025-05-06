@@ -15,6 +15,7 @@ execute unless items entity @s[tag=host.menu.gamemode.bhc] inventory.1 *[minecra
 #execute unless items entity @s[tag=host.menu.gamemode.bhc] inventory.6 *[minecraft:custom_data={Tags:"gamemode_bhc_06"}] run function uhc:pre_game/menu/load/gamemode/bhc/06
 #execute unless items entity @s[tag=host.menu.gamemode.bhc] inventory.7 *[minecraft:custom_data={Tags:"gamemode_bhc_07"}] run function uhc:pre_game/menu/load/gamemode/bhc/07
 #execute unless items entity @s[tag=host.menu.gamemode.bhc] inventory.10 *[minecraft:custom_data={Tags:"gamemode_bhc_08"}] run function uhc:pre_game/menu/load/gamemode/bhc/08
+execute unless items entity @s[tag=host.menu.gamemode.bhc] inventory.15 *[minecraft:custom_data={Tags:"gamemode_bhc_99"}] run function uhc:pre_game/menu/load/gamemode/bhc/99
 execute unless items entity @s[tag=host.menu.gamemode.bhc] inventory.16 *[minecraft:custom_data={Tags:"gamemode_bhc_00"}] run function uhc:pre_game/menu/load/gamemode/bhc/00
 execute unless items entity @s[tag=host.menu.gamemode.bhc] inventory.19 *[minecraft:custom_data={Tags:"disable"}] run function uhc:pre_game/menu/load/gamemode/bhc/disable
 execute unless items entity @s[tag=host.menu.gamemode.bhc] inventory.25 *[minecraft:custom_data={Tags:"close"}] run function uhc:pre_game/menu/load/gamemode/

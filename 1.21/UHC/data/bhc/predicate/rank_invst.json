@@ -2,7 +2,7 @@
 	"condition": "minecraft:entity_scores",
 	"entity": "this",
 	"scores": {
-		"bhc.invST": {
+		"bhc.total.rank.score.inv": {
 			"min": {
 				"type": "minecraft:score",
 				"target": {

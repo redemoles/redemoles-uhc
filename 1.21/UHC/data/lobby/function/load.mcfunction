@@ -7,12 +7,16 @@
 # @description		Création du lobby et des scoreboards au premier démarrage
 #
 
+execute if score #lobby lobby.structure.data matches 00..09 run time set 10000
+execute if score #lobby lobby.structure.data matches 10..19 run time set 1000
 execute if score #lobby lobby.structure.data matches 1.. run return fail
+
+execute in uhc:lobby run fill 32 64 32 -32 64 -32 minecraft:barrier
 
 scoreboard objectives add lobby.structure.data dummy
 scoreboard players set #lobby lobby.structure.data 11
 scoreboard players set #loaded lobby.structure.data 0
-scoreboard players set #tick lobby.structure.data 0
+scoreboard players set #tick lobby.structure.data -1
 
 scoreboard objectives add lobby.tc.data dummy
 scoreboard objectives add lobby.tc.inventory dummy

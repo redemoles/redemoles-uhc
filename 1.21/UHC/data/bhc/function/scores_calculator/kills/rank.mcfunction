@@ -7,13 +7,28 @@
 # @description		Actualisation scores kills 
 #
 
-## Reset Score / Classement
-scoreboard players set @e[type=marker,tag=UHC] bhc.CK -16
-scoreboard players set @e[type=marker,tag=UHC] bhc.invSK 0
+## Enregistre le score d'équipe
+scoreboard players operation #temp bhc.data = @s bhc.kills.score.inv
+scoreboard players remove #temp bhc.data 1
 
-## Classement inversé
-execute as @e[type=marker,tag=UHC] run function bhc:scores_calculator/kills/rank_1
+## Compte le nombre d'équipe avec un score supérieur à celle sélectionnée
+tag @s add bhc.count
+execute store result score #count bhc.data if entity @e[type=marker,tag=UHC,tag=!bhc.count,predicate=bhc:rank_invkills]
+tag @s remove bhc.count
 
-## Attribution des scores
-execute as @e[type=marker,tag=UHC,scores={bhc.CK=-15..}] run function bhc:scores_calculator/kills/rank_2
-execute as @e[type=marker,tag=UHC] run function bhc:scores_calculator/kills/rank_3
+## Classement
+scoreboard players operation @s bhc.kills.rank.number = #Teams bhc.data
+scoreboard players operation @s bhc.kills.rank.number -= #count bhc.data
+
+## Scores
+scoreboard players operation @s bhc.kills.rank.score.inv = #count bhc.data
+scoreboard players add @s[scores={bhc.kills.rank.number=1}] bhc.kills.rank.score.inv 1
+
+# Équipes à moins de 0 point
+execute if score @s bhc.kills.rank.score.inv matches ..0 run scoreboard players set @s bhc.kills.rank.score.inv 0
+
+# Valeur de la catégorie pour le score total
+execute unless score #bhc bhc.scenario matches 99 run scoreboard players operation @s bhc.kills.rank.score.inv *= #02 uhc.data.numbers
+execute if score #bhc bhc.scenario matches 99 run scoreboard players operation @s bhc.kills.rank.score.inv *= #03 uhc.data.numbers
+
+function bhc:scores_calculator/total/score

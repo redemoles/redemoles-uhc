@@ -17,5 +17,5 @@ function bhc:scores_calculator/death/bonus
 
 execute as @e[type=marker,tag=UHC] run function bhc:scores_calculator/endgame/equality_1
 execute as @e[type=marker,tag=UHC] run function bhc:scores_calculator/endgame/equality_2
-scoreboard objectives setdisplay sidebar bhc.Total
+scoreboard objectives setdisplay sidebar bhc.total.score
 function bhc:scores_calculator/endgame/message

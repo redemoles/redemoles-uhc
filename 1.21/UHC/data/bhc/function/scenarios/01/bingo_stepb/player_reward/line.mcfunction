@@ -11,4 +11,4 @@
 experience add @s 2 levels
 
 # Score personnel
-scoreboard players add @s bhc.StepB.personal 2
+scoreboard players add @s bhc.stepb.score.personal 2

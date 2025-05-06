@@ -7,7 +7,7 @@
 # @description		Boucle d'affichage des noms d'équipe
 #
 
-# Timer Survie
+# Catégorie Survie
 execute if score @s uhc.data.setup matches 1.. unless score #end uhc.game.end matches 1.. run function bhc:scores_calculator/death/scores
 
 # Marker name
