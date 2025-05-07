@@ -16,6 +16,7 @@ execute if entity @s[predicate=!uhc:pvp_1_8/swords,predicate=!uhc:pvp_1_8/axes] 
 # Suppression possibilité de bloquer avec une épée
 execute if entity @s[predicate=uhc:pvp_1_8/swords] run item modify entity @s weapon.mainhand [{function:"minecraft:set_components",components:{"!minecraft:consumable":{}}}]
 
+
 # Dégâts des haches 1.21
 execute if entity @s[predicate=uhc:pvp_1_8/wooden_axe] run item modify entity @s weapon.mainhand [{function:"minecraft:set_components",components:{"attribute_modifiers":[{id:"base_attack_damage",type:"attack_damage",amount:6,operation:"add_value",slot:"mainhand"},{"type":"minecraft:attack_speed","amount":-3.200000047683716,"id":"minecraft:base_attack_speed","operation":"add_value","slot":"mainhand"}]}}]
 execute if entity @s[predicate=uhc:pvp_1_8/stone_axe] run item modify entity @s weapon.mainhand [{function:"minecraft:set_components",components:{"attribute_modifiers":[{id:"base_attack_damage",type:"attack_damage",amount:8,operation:"add_value",slot:"mainhand"},{"type":"minecraft:attack_speed","amount":-3.200000047683716,"id":"minecraft:base_attack_speed","operation":"add_value","slot":"mainhand"}]}}]
