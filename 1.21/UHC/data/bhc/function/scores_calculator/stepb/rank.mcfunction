@@ -42,3 +42,4 @@ scoreboard players operation @a[predicate=uhc:id_teams] bhc.stepb.rank.score.inv
 scoreboard players operation @a[predicate=uhc:id_teams] bhc.bingo.score.inv = @s bhc.bingo.score.inv
 
 function bhc:scores_calculator/total/score
+function bhc:timer/marker_tick

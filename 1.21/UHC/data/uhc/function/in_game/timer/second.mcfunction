@@ -13,6 +13,7 @@ scoreboard players add #Secondes uhc.data.display 1
 scoreboard players set #sec_cooldown uhc.data.display 60
 scoreboard players operation #sec_cooldown uhc.data.display -= #Secondes uhc.data.display
 execute if score #Secondes uhc.data.display matches 60 run function uhc:in_game/timer/minute
+execute if score #end uhc.game.end matches 1.. run scoreboard players add #second uhc.game.end 1
 
 ## Compteur avant kill items
 scoreboard players add @e[type=item] uhc.timer.entities 1
@@ -35,6 +36,7 @@ execute if score #sound_paranoia uhc.scenario matches 1 as @a[tag=uhc.player] at
 
 ## Autres mode de jeu
 execute if score #Minutes uhc.data.display matches 0.. if score #nzl uhc.gamemode matches 1 run function nzl:timer/second
+execute if score #Minutes uhc.data.display matches 0.. if score #bhc uhc.gamemode matches 1 run function bhc:timer/second
 
 ## Alertes sonores
 execute if score #pve uhc.data.setup matches 1 if score #sec_cooldown uhc.data.display matches 59 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5

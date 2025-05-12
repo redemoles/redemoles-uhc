@@ -18,7 +18,9 @@ execute positioned ~8 ~1 ~-13 run function lobby:mini_games/tc/mini_games/memory
 execute positioned ~-13 ~1 ~-13 run function lobby:mini_games/tc/mini_games/memory_build/miss_placed_blocks
 
 # Données de bloc à modifier
+execute if score #random_memory_build_pick lobby.tc.data matches 05..08 run fill ~-13 ~2 ~-13 ~13 ~3 ~13 minecraft:stone_button[face=floor,facing=north] replace minecraft:stone_button[face=floor]
 execute if score #random_memory_build_pick lobby.tc.data matches 09..12 run fill ~-13 ~2 ~-13 ~13 ~2 ~13 minecraft:cherry_sapling[stage=0] replace minecraft:cherry_sapling[stage=1]
+execute if score #random_memory_build_pick lobby.tc.data matches 09..12 run fill ~-13 ~2 ~-13 ~13 ~3 ~13 minecraft:pink_petals[flower_amount=1,facing=north] replace minecraft:pink_petals[flower_amount=1]
 
 # Test mini-jeu réussie
 execute if score #team_01 lobby.tc.player.score matches 0 store result score #team_01 lobby.tc.player.score if blocks ~8 ~1 ~-8 ~13 ~5 ~-13 ~8 ~1 ~8 all

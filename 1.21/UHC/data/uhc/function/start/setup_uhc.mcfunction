@@ -93,5 +93,6 @@ scoreboard objectives add uhc.players.mined.diamond_deepslate minecraft.mined:mi
 scoreboard objectives add uhc.players.mined.raw_copper_block minecraft.mined:minecraft.raw_copper_block
 scoreboard objectives add uhc.players.mined.raw_gold_block minecraft.mined:minecraft.raw_gold_block
 scoreboard objectives add uhc.players.mined.raw_iron_block minecraft.mined:minecraft.raw_iron_block
-scoreboard objectives add uhc.players.kills playerKillCount "Kills"
+execute if score #bhc uhc.gamemode matches 0 run scoreboard objectives add uhc.players.kills playerKillCount "Kills"
+execute if score #bhc uhc.gamemode matches 1 run scoreboard objectives add uhc.players.kills playerKillCount [{"text":"Kills ","color":"#FFFFFF"},{"text":">","color":"#00C3DF","bold":true},{"text":" Individuel","color":"#FFFFFF"}]
 scoreboard objectives add uhc.players.kills.temp playerKillCount

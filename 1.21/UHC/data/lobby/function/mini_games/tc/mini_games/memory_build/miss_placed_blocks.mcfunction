@@ -7,11 +7,11 @@
 # @description		Suppression des blocs mal placés
 #
 
-fill ~-2 ~1 ~-2 ~-1 ~4 ~7 minecraft:air
-fill ~-2 ~1 ~-2 ~7 ~4 ~-1 minecraft:air
-fill ~-1 ~1 ~6 ~7 ~4 ~7 minecraft:air
-fill ~6 ~1 ~-1 ~7 ~4 ~7 minecraft:air
-fill ~-2 ~5 ~-2 ~7 ~6 ~7 minecraft:air
+fill ~-2 ~1 ~-2 ~-1 ~4 ~7 minecraft:light[level=0]
+fill ~-2 ~1 ~-2 ~7 ~4 ~-1 minecraft:light[level=0]
+fill ~-1 ~1 ~6 ~7 ~4 ~7 minecraft:light[level=0]
+fill ~6 ~1 ~-1 ~7 ~4 ~7 minecraft:light[level=0]
+fill ~-2 ~5 ~-2 ~7 ~6 ~7 minecraft:light[level=0]
 
 fill ~-2 ~ ~-2 ~7 ~ ~7 minecraft:waxed_copper_trapdoor[waterlogged=false,facing=north] replace minecraft:waxed_copper_trapdoor[waterlogged=true,facing=north]
 fill ~-2 ~ ~-2 ~7 ~ ~7 minecraft:waxed_copper_trapdoor[waterlogged=false,facing=south] replace minecraft:waxed_copper_trapdoor[waterlogged=true,facing=south]

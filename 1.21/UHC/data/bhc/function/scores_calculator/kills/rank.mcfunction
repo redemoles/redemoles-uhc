@@ -32,3 +32,4 @@ execute unless score #bhc bhc.scenario matches 99 run scoreboard players operati
 execute if score #bhc bhc.scenario matches 99 run scoreboard players operation @s bhc.kills.rank.score.inv *= #03 uhc.data.numbers
 
 function bhc:scores_calculator/total/score
+function bhc:timer/marker_tick

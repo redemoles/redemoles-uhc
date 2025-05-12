@@ -57,18 +57,18 @@ scoreboard objectives add lobby.tc.data.record.parkour.classic_01 dummy "PB - Pa
 scoreboard objectives add lobby.tc.data.record.parkour.classic_01.min dummy
 scoreboard objectives add lobby.tc.data.record.parkour.classic_01.sec dummy
 scoreboard objectives add lobby.tc.data.record.parkour.classic_01.ms dummy
-scoreboard objectives add lobby.tc.data.record.parkour.honey_01 dummy "PB - Parkour de miel 01"
+scoreboard objectives add lobby.tc.data.record.parkour.honey_01 dummy "PB - Honey parkour 01"
 scoreboard objectives add lobby.tc.data.record.parkour.honey_01.min dummy
 scoreboard objectives add lobby.tc.data.record.parkour.honey_01.sec dummy
 scoreboard objectives add lobby.tc.data.record.parkour.honey_01.ms dummy
-scoreboard objectives add lobby.tc.data.record.parkour.slimy_piston_01 dummy "PB - Parkour Slimy Piston 01"
-scoreboard objectives add lobby.tc.data.record.parkour.slimy_piston_01.min dummy
-scoreboard objectives add lobby.tc.data.record.parkour.slimy_piston_01.sec dummy
-scoreboard objectives add lobby.tc.data.record.parkour.slimy_piston_01.ms dummy
-scoreboard objectives add lobby.tc.data.record.parkour.chains_together dummy "PB - Parkour Chains Together"
-scoreboard objectives add lobby.tc.data.record.parkour.chains_together.min dummy
-scoreboard objectives add lobby.tc.data.record.parkour.chains_together.sec dummy
-scoreboard objectives add lobby.tc.data.record.parkour.chains_together.ms dummy
+scoreboard objectives add lobby.tc.data.record.parkour.piston_slime_01 dummy "PB - Parkour Piston slime 01"
+scoreboard objectives add lobby.tc.data.record.parkour.piston_slime_01.min dummy
+scoreboard objectives add lobby.tc.data.record.parkour.piston_slime_01.sec dummy
+scoreboard objectives add lobby.tc.data.record.parkour.piston_slime_01.ms dummy
+scoreboard objectives add lobby.tc.data.record.parkour.chains dummy "PB - Parkour Chains"
+scoreboard objectives add lobby.tc.data.record.parkour.chains.min dummy
+scoreboard objectives add lobby.tc.data.record.parkour.chains.sec dummy
+scoreboard objectives add lobby.tc.data.record.parkour.chains.ms dummy
 scoreboard objectives add lobby.tc.data.record.puzzle dummy "PB - Puzzle"
 scoreboard objectives add lobby.tc.data.record.puzzle.min dummy
 scoreboard objectives add lobby.tc.data.record.puzzle.sec dummy
@@ -88,9 +88,9 @@ scoreboard objectives add lobby.tc.record.os_pve.classic_01 dummy "PB - OS PvE C
 scoreboard objectives add lobby.tc.record.os_pve.temperature_01 dummy "PB - OS PvE Classique 01"
 scoreboard objectives add lobby.tc.record.os_pvp dummy "PB - OS PvP"
 scoreboard objectives add lobby.tc.record.parkour.classic_01 dummy "PB - Parkour Classique 01"
-scoreboard objectives add lobby.tc.record.parkour.honey_01 dummy "PB - Parkour de miel 01"
-scoreboard objectives add lobby.tc.record.parkour.slimy_piston_01 dummy "PB - Parkour Slimy Piston 01"
-scoreboard objectives add lobby.tc.record.parkour.chains_together dummy "PB - Parkour Chains Together"
+scoreboard objectives add lobby.tc.record.parkour.honey_01 dummy "PB - Honey parkour 01"
+scoreboard objectives add lobby.tc.record.parkour.piston_slime_01 dummy "PB - Parkour Piston slime 01"
+scoreboard objectives add lobby.tc.record.parkour.chains dummy "PB - Parkour Chains"
 scoreboard objectives add lobby.tc.record.puzzle dummy "PB - Puzzle"
 
 scoreboard objectives add lobby.ssr.data dummy

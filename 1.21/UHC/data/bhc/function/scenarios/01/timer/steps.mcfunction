@@ -19,4 +19,3 @@ scoreboard players add #start_stepb bhc.timer 1
 execute if score #start_stepb bhc.timer = #bingo_b_start bhc.timer run function bhc:scenarios/01/bingo_stepb/start
 execute if score #start_stepb bhc.timer = #bingo_b_exhaustion bhc.timer run function bhc:scenarios/01/bingo_stepb/exhaustion
 execute if score #start_stepb bhc.timer = #bingo_b_end bhc.timer run function bhc:scenarios/01/bingo_stepb/end
-execute if score #start_stepb bhc.timer > #bingo_b_end bhc.timer run scoreboard objectives setdisplay sidebar bhc.total.rank.score
