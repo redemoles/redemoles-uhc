@@ -15,9 +15,5 @@ tellraw @a[scores={uhc.players.lang=2}] [{"text":"Ironman ","color":"#FFE73F","b
 data modify storage uhc:temp Item_ironman set from storage uhc:settings Item_ironman
 execute if data storage uhc:temp Item_ironman[0] run function uhc:in_game/scenarios/ironman/item with storage uhc:temp Item_ironman[0]
 
-# Bingo UHC
-scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
-execute if score #bhc uhc.gamemode matches 1 run function bhc:scores_calculator/death/ironman/bonus
-
 # Anti-boucle
 scoreboard players remove #ironman uhc.data.setup 1

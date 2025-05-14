@@ -22,7 +22,7 @@ scoreboard players operation @s bhc.ironman.rank -= #count bhc.data
 
 ## Scores
 scoreboard players operation @s bhc.ironman.score.inv = #count bhc.data
-scoreboard players add @s[scores={bhc.ironman.rank=1}] bhc.ironman.score.inv 1
+
 
 # Équipes à moins de 0 point
 execute if score @s bhc.ironman.score.inv matches ..0 run scoreboard players set @s bhc.ironman.score.inv 0

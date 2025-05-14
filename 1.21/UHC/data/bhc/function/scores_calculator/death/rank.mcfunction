@@ -29,6 +29,3 @@ execute if score @s bhc.death.rank.score.inv matches ..0 run scoreboard players 
 
 # Valeur de la catégorie pour le score total
 scoreboard players operation @s bhc.death.rank.score.inv *= #04 uhc.data.numbers
-
-function bhc:scores_calculator/total/score
-function bhc:timer/marker_tick

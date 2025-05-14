@@ -64,7 +64,10 @@ blocks = r.content.decode("utf-8").split("\n")
 unobtainable_blocks = [
 	"minecraft:oak_boat",
 	"minecraft:apple",
+	"minecraft:iron_ingot",
 	"minecraft:gold_ingot",
+	"minecraft:diamond",
+	"minecraft:stick",
 	"minecraft:air",
 	"minecraft:cave_air",
 	"minecraft:void_air",
