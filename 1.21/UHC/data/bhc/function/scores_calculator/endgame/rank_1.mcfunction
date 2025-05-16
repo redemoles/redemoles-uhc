@@ -8,7 +8,7 @@
 #
 
 ## Enregistre le score d'équipe
-scoreboard players operation #temp bhc.data = @s bhc.total.rank.score.inv
+scoreboard players operation #temp bhc.data = @s bhc.total.score.inv
 scoreboard players add #temp bhc.data 1
 tag @s add bhc.count
 

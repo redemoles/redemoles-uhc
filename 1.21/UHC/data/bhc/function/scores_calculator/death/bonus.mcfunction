@@ -13,4 +13,4 @@ execute as @e[type=marker,tag=UHC] run function bhc:scores_calculator/death/scor
 execute as @e[type=marker,tag=UHC] run function bhc:scores_calculator/death/bonus_1
 execute as @e[type=marker,tag=UHC] run function bhc:scores_calculator/death/rank
 execute as @e[type=marker,tag=UHC] run function bhc:scores_calculator/death/bonus_2
-execute if score #start_stepb bhc.timer >= #bingo_b_end bhc.timer unless score #end uhc.game.end matches 1.. run scoreboard objectives setdisplay sidebar bhc.total.rank.score
+execute if score #start_stepb bhc.timer >= #bingo_b_end bhc.timer unless score #end uhc.game.end matches 1.. run scoreboard objectives setdisplay sidebar bhc.total.score

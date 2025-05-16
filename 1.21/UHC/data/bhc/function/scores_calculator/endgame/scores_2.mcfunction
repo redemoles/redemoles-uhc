@@ -9,5 +9,5 @@
 
 ## Somme des scores
 # Retrait des points d'anti-égalité
-scoreboard players operation @s bhc.total.rank.score.inv -= @s bhc.tie_break.rank
-scoreboard players operation @s bhc.total.rank.score.inv /= #100 uhc.data.numbers
+scoreboard players operation @s bhc.total.score.inv -= @s bhc.tie_break.rank
+scoreboard players operation @s bhc.total.score.inv /= #100 uhc.data.numbers

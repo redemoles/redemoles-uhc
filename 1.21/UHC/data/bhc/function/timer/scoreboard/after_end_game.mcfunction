@@ -13,7 +13,7 @@ scoreboard players remove #second uhc.game.end 8
 execute if score #sb uhc.game.end matches 13 run scoreboard players set #second uhc.game.end 0
 execute if score #sb uhc.game.end matches 13 run scoreboard players set #sb uhc.game.end -1
 
-execute unless score #sb uhc.game.end matches 01.. run scoreboard objectives setdisplay sidebar bhc.total.rank.score
+execute unless score #sb uhc.game.end matches 01.. run scoreboard objectives setdisplay sidebar bhc.total.score
 
 execute if score #sb uhc.game.end matches 01 run scoreboard objectives setdisplay sidebar bhc.stepa.rank.score
 execute if score #sb uhc.game.end matches 02 run scoreboard objectives setdisplay sidebar bhc.stepa.score

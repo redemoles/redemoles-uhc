@@ -4,7 +4,7 @@
 # @within			uhc:start/countdown_start
 # @executed			default context
 #
-# @description		Fonction de configuration de la partie
+# @description		Configuration des joueurs
 #
 
 ## Préparation des joueurs
@@ -19,6 +19,7 @@ effect give @a[tag=uhc.player] minecraft:resistance infinite 4 true
 effect give @a[tag=uhc.player] minecraft:blindness infinite 4 true
 effect give @a[tag=uhc.player] minecraft:slowness infinite 9 true
 effect give @a[tag=uhc.player] minecraft:weakness infinite 9 true
+effect give @a[tag=uhc.player] minecraft:invisibility infinite 0 true
 execute as @a[tag=uhc.player] run attribute @s minecraft:jump_strength base set 0
 execute unless score #no_fall uhc.scenario matches 1 as @a[tag=uhc.player] run attribute @s minecraft:fall_damage_multiplier base set 1.0
 execute if score #version_pvp uhc.data.setup matches 1 as @a[tag=uhc.player] run attribute @s minecraft:attack_speed base set 1024

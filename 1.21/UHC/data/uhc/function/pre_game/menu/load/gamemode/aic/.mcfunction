@@ -51,7 +51,7 @@ scoreboard players add #minutes aic.data.end_game 1
 
 ## Configuration du starter give
 execute if score #aic uhc.gamemode matches 1 run data modify storage uhc:settings Item_starter set value [{}]
-execute if score #aic uhc.gamemode matches 0 run data modify storage uhc:settings Item_starter set value [{count: 1, Slot: 1b, id: "minecraft:oak_boat"}]
+execute if score #aic uhc.gamemode matches 0 run data modify storage uhc:settings Item_starter set value [{count: 1, Slot: 0b, id: "minecraft:oak_boat"}]
 execute if score #aic uhc.gamemode matches 0 run data modify storage uhc:settings Item_starter set value [{count: 8, Slot: 1b, id: "minecraft:golden_carrot"}]
 
 ## Vies

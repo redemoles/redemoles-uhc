@@ -10,6 +10,7 @@
 ## Mise au lobby des joueurs
 tag @s remove uhc.player
 tag @s remove uhc.player.dead
+tag @s remove uhc.player.start_in_the_sky
 tag @s remove test
 tag @s remove players.menu.settings
 tag @s remove uhc.random_team.in_a_team

@@ -37,9 +37,7 @@ scoreboard players operation @a[predicate=uhc:id_teams] bhc.death.rank.score.inv
 scoreboard players operation @a[predicate=uhc:id_teams] bhc.death.rank.number = @s bhc.death.rank.number
 
 # Classement Total → Affichage pour le message de fin
-scoreboard players operation @s bhc.total.score.inv = @s bhc.total.rank.score.inv
 scoreboard players operation @a[predicate=uhc:id_teams] bhc.total.score.inv = @s bhc.total.score.inv
-scoreboard players operation @a[predicate=uhc:id_teams] bhc.total.rank.score.inv = @s bhc.total.rank.score.inv
 scoreboard players operation @a[predicate=uhc:id_teams] bhc.total.rank.number = @s bhc.total.rank.number
 
 function bhc:timer/marker_tick with entity @s data

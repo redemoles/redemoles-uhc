@@ -32,13 +32,11 @@ scoreboard objectives remove bhc.stepa.rank.score.inv
 scoreboard objectives remove bhc.stepb.rank.score.inv
 scoreboard objectives remove bhc.kills.rank.score.inv
 scoreboard objectives remove bhc.death.rank.score.inv
-scoreboard objectives remove bhc.total.rank.score.inv
 
 scoreboard objectives remove bhc.stepa.rank.score
 scoreboard objectives remove bhc.stepb.rank.score
 scoreboard objectives remove bhc.kills.rank.score
 scoreboard objectives remove bhc.death.rank.score
-scoreboard objectives remove bhc.total.rank.score
 
 scoreboard objectives remove bhc.stepa.rank.number
 scoreboard objectives remove bhc.stepb.rank.number
@@ -99,19 +97,17 @@ scoreboard objectives add bhc.stepa.score dummy [{"text":"Bingo C. ","color":"#F
 scoreboard objectives add bhc.stepb.score dummy [{"text":"Bingo Spé. ","color":"#FFFFFF"},{"text":">","color":"#00C3DF","bold":true},{"text":" Équipes","color":"#FFFFFF"}]
 scoreboard objectives add bhc.kills.score dummy [{"text":"Kills ","color":"#FFFFFF"},{"text":">","color":"#00C3DF","bold":true},{"text":" Équipes","color":"#FFFFFF"}]
 scoreboard objectives add bhc.death.score dummy [{"text":"Survie ","color":"#FFFFFF"},{"text":">","color":"#00C3DF","bold":true},{"text":" Équipes","color":"#FFFFFF"}]
-scoreboard objectives add bhc.total.score dummy [{"text":"Total","color":"#FFFFFF"}]
+scoreboard objectives add bhc.total.score dummy [{"text":"Total","color":"#FFE73F","bold":true}]
 
 scoreboard objectives add bhc.stepa.rank.score.inv dummy
 scoreboard objectives add bhc.stepb.rank.score.inv dummy
 scoreboard objectives add bhc.kills.rank.score.inv dummy
 scoreboard objectives add bhc.death.rank.score.inv dummy
-scoreboard objectives add bhc.total.rank.score.inv dummy
 
 scoreboard objectives add bhc.stepa.rank.score dummy [{"text":"Bingo C. ","color":"#FFFFFF"},{"text":">","color":"#DFC300","bold":true},{"text":" Score","color":"#FFFFFF"}]
 scoreboard objectives add bhc.stepb.rank.score dummy [{"text":"Bingo Spé. ","color":"#FFFFFF"},{"text":">","color":"#DFC300","bold":true},{"text":" Score","color":"#FFFFFF"}]
 scoreboard objectives add bhc.kills.rank.score dummy [{"text":"Kills ","color":"#FFFFFF"},{"text":">","color":"#DFC300","bold":true},{"text":" Score","color":"#FFFFFF"}]
 scoreboard objectives add bhc.death.rank.score dummy [{"text":"Survie ","color":"#FFFFFF"},{"text":">","color":"#DFC300","bold":true},{"text":" Score","color":"#FFFFFF"}]
-scoreboard objectives add bhc.total.rank.score dummy [{"text":"Total","color":"#FFFFFF"}]
 
 scoreboard objectives add bhc.stepa.rank.number dummy
 scoreboard objectives add bhc.stepb.rank.number dummy
@@ -152,7 +148,7 @@ scoreboard objectives add bhc.data dummy
 scoreboard objectives add bhc.ironman.rank dummy
 scoreboard objectives add bhc.ironman.score dummy
 scoreboard objectives add bhc.ironman.score.inv dummy
-scoreboard objectives add bhc.ironman.timer dummy [{"text":"Ironman ","color":"#FFFFFF"},{"text":">","color":"#00C3DF","bold":true},{"text":" Équipes","color":"#FFFFFF"}]
+scoreboard objectives add bhc.ironman.timer dummy [{"text":"Ironman ","color":"#FFFFFF"},{"text":">","color":"#00C3DF","bold":true},{"text":" Minutes","color":"#FFFFFF"}]
 scoreboard objectives add bhc.ironman.timer.inv dummy
 scoreboard objectives add bhc.timer dummy
 scoreboard objectives add bhc.teams.livescount dummy

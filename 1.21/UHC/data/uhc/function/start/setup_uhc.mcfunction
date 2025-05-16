@@ -4,7 +4,7 @@
 # @within			uhc:start/countdown_start
 # @executed			default context
 #
-# @description		Starter give
+# @description		Dernières configurations et démarrage de la partie
 #
 
 scoreboard players set #start uhc.data.setup 1
@@ -53,24 +53,7 @@ scoreboard players set #Secondes uhc.data.display 59
 execute if score #start uhc.data.setup matches 0 run scoreboard players set #Secondes uhc.data.display 29
 
 ## Collision entre joueurs
-team modify 00 collisionRule always
-team modify 01 collisionRule always
-team modify 02 collisionRule always
-team modify 03 collisionRule always
-team modify 04 collisionRule always
-team modify 05 collisionRule always
-team modify 06 collisionRule always
-team modify 07 collisionRule always
-team modify 08 collisionRule always
-team modify 09 collisionRule always
-team modify 10 collisionRule always
-team modify 11 collisionRule always
-team modify 12 collisionRule always
-team modify 13 collisionRule always
-team modify 14 collisionRule always
-team modify 15 collisionRule always
-team modify 16 collisionRule always
-team modify 99 collisionRule always
+execute unless score #start_in_sky uhc.data.setup matches 1 run function uhc:in_game/players_settings/collision/always
 
 ## Scoreboard spéciaux
 scoreboard objectives add uhc.scenario.blood_diamond.deepslate minecraft.mined:minecraft.deepslate_diamond_ore
@@ -93,6 +76,6 @@ scoreboard objectives add uhc.players.mined.diamond_deepslate minecraft.mined:mi
 scoreboard objectives add uhc.players.mined.raw_copper_block minecraft.mined:minecraft.raw_copper_block
 scoreboard objectives add uhc.players.mined.raw_gold_block minecraft.mined:minecraft.raw_gold_block
 scoreboard objectives add uhc.players.mined.raw_iron_block minecraft.mined:minecraft.raw_iron_block
-execute if score #bhc uhc.gamemode matches 0 run scoreboard objectives add uhc.players.kills playerKillCount "Kills"
-execute if score #bhc uhc.gamemode matches 1 run scoreboard objectives add uhc.players.kills playerKillCount [{"text":"Kills ","color":"#FFFFFF"},{"text":">","color":"#00C3DF","bold":true},{"text":" Individuel","color":"#FFFFFF"}]
+execute if score #bhc uhc.gamemode matches 0 run scoreboard objectives add uhc.players.kills dummy "Kills"
+execute if score #bhc uhc.gamemode matches 1 run scoreboard objectives add uhc.players.kills dummy [{"text":"Kills ","color":"#FFFFFF"},{"text":">","color":"#00C3DF","bold":true},{"text":" Individuel","color":"#FFFFFF"}]
 scoreboard objectives add uhc.players.kills.temp playerKillCount

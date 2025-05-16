@@ -30,6 +30,10 @@ execute if score #aic uhc.gamemode matches 3 run function aic:timer/second
 execute as @a[scores={uhc.timer.absorption=1}] run attribute @s minecraft:max_absorption base set 0
 scoreboard players remove @a[scores={uhc.timer.absorption=1..}] uhc.timer.absorption 1
 
+# Démarrage dans le ciel
+execute if score #start_in_sky uhc.data.setup matches 1 if score #Minutes uhc.data.display matches 0 if score #Secondes uhc.data.display matches 15 positioned 0 159 0 run fill ~-5 ~ ~-5 ~5 ~ ~5 minecraft:air
+execute if score #start_in_sky uhc.data.setup matches 1 if score #Minutes uhc.data.display matches 0 if score #Secondes uhc.data.display matches 15 run function uhc:in_game/players_settings/collision/always
+
 ## Scénarios
 # Sound Paranoia
 execute if score #sound_paranoia uhc.scenario matches 1 as @a[tag=uhc.player] at @s run function uhc:in_game/scenarios/sound_paranoia/cooldown

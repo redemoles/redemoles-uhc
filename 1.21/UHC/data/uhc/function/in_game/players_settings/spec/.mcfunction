@@ -26,6 +26,7 @@ effect give @s minecraft:invisibility infinite 1 true
 
 tag @s add uhc.spec
 tag @s remove uhc.player
+tag @s remove uhc.player.start_in_the_sky
 tag @s[scores={uhc.players.online=1}] add uhc.player.dead
 tag @s remove uhc.ironman
 tag @s remove uhc.scenario.best_pve

@@ -10,6 +10,9 @@
 scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
 scoreboard players set @s uhc.players.disconnect 0
 
+# Vérifie si le joueur s'est déconnecté au démarrage lorsque celui-ci se fait depuis une plateforme dans le ciel
+execute if entity @s[tag=uhc.player.start_in_the_sky] run function uhc:in_game/players_settings/reconnect/start_in_the_sky
+
 # Team Health
 execute if score #team_health uhc.scenario matches 1 run function uhc:in_game/scenarios/team_health/
 

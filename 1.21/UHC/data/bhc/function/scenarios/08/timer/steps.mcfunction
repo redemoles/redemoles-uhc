@@ -18,4 +18,4 @@ execute if score #start_stepa bhc.timer = #bingo_a_end bhc.timer run function bh
 scoreboard players add #start_stepb bhc.timer 1
 execute if score #start_stepb bhc.timer = #bingo_b_start bhc.timer run function bhc:scenarios/08/bingo_stepb/start
 execute if score #start_stepb bhc.timer = #bingo_b_end bhc.timer run function bhc:scenarios/08/bingo_stepb/end
-execute if score #start_stepb bhc.timer > #bingo_b_end bhc.timer run scoreboard objectives setdisplay sidebar bhc.total.rank.score
+execute if score #start_stepb bhc.timer > #bingo_b_end bhc.timer run scoreboard objectives setdisplay sidebar bhc.total.score
