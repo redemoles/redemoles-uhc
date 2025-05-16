@@ -25,7 +25,6 @@ $scoreboard players operation $(name) bhc.death.score /= #1200 uhc.data.numbers
 
 $scoreboard players operation $(name) bhc.bingo.score = @s bhc.bingo.score.inv
 $scoreboard players operation $(name) bhc.total.score = @s bhc.total.score.inv
-$scoreboard players operation $(name) bhc.total.rank.score = @s bhc.total.rank.score.inv
 
 $scoreboard players operation $(name) bhc.ironman.timer = @s bhc.ironman.timer.inv
 $scoreboard players operation $(name) bhc.ironman.timer /= #1200 uhc.data.numbers

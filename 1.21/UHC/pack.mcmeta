@@ -1,7 +1,7 @@
 {
 	"pack": {
 		"pack_format": 71,
-		"description": [{"text":"UHC 25s20b","color":"#FFE73F"},{"text":" - ","color":"#6F6F6F"},{"text":"par ","color":"#9F9F9F"},{"text":"Redemoles","color":"#E73FFF"},{"text":" - ","color":"#6F6F6F"},{"text":"pour ","color":"#9F9F9F"},{"text":"MC 1.21.5","color":"#3FE7FF"}]
+		"description": [{"text":"UHC 25s20c","color":"#FFE73F"},{"text":" - ","color":"#6F6F6F"},{"text":"par ","color":"#9F9F9F"},{"text":"Redemoles","color":"#E73FFF"},{"text":" - ","color":"#6F6F6F"},{"text":"pour ","color":"#9F9F9F"},{"text":"MC 1.21.5","color":"#3FE7FF"}]
 	},
 	"filter": {
 		"block": [

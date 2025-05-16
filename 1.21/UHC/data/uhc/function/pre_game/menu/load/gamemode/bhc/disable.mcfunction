@@ -31,5 +31,5 @@ execute if score #bhc uhc.gamemode matches 0 run tellraw @a [{"text":"Bingo","co
 
 ## Configuration du starter give
 execute if score #bhc uhc.gamemode matches 0 run data modify storage uhc:settings Item_starter set value [{}]
-execute if score #bhc uhc.gamemode matches 0 run data modify storage uhc:settings Item_starter set value [{count: 1, Slot: 1b, id: "minecraft:oak_boat"}]
+execute if score #bhc uhc.gamemode matches 0 run data modify storage uhc:settings Item_starter set value [{count: 1, Slot: 0b, id: "minecraft:oak_boat"}]
 execute if score #bhc uhc.gamemode matches 0 run data modify storage uhc:settings Item_starter set value [{count: 8, Slot: 0b, id: "minecraft:golden_carrot"}]

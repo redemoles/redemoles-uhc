@@ -4,7 +4,7 @@
 # @within			uhc:in_game/players_settings/death/
 # @within			uhc:start/game_teams/
 #
-# @description		Configuration du timer 
+# @description		Téléportation aux points d'apparition des équipes
 #
 
 execute if score #Minutes uhc.data.display matches 0.. if data entity @s respawn run scoreboard players set #can_respawn uhc.data.display 1

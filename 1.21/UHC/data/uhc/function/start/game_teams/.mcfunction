@@ -8,10 +8,14 @@
 #
 
 ## Téléportation
+# Points d'apparition par équipe
 scoreboard players set @a[tag=uhc.player] uhc.id.spawns 0
 execute unless score #dru uhc.gamemode matches 1 unless score #aic uhc.gamemode matches 3 run tag @a[tag=uhc.player] add uhc.id.spawns
 execute unless score #dru uhc.gamemode matches 1 unless score #aic uhc.gamemode matches 3 run function uhc:in_game/tp/randomizer/0
-execute in minecraft:overworld as @a[tag=uhc.player] run function uhc:in_game/tp/spawn_start
+execute unless score #start_in_sky uhc.data.setup matches 1 in minecraft:overworld as @a[tag=uhc.player] run function uhc:in_game/tp/spawn_start
+
+# Points d'apparition dans le ciel
+execute if score #start_in_sky uhc.data.setup matches 1 in minecraft:overworld run function uhc:in_game/tp/spawn_start_in_the_sky
 
 ## Markers
 # Summon markers d'équipes

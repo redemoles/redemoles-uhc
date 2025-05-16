@@ -21,6 +21,10 @@ execute if score @s uhc.menu.host.settings.lives matches 3.. if score #live_2 uh
 execute if score @s uhc.menu.host.settings.lives matches 2 run scoreboard players remove #live_1 uhc.data.display 10
 execute if score @s uhc.menu.host.settings.lives matches 2.. if score #live_1 uhc.data.display < #live_2 uhc.data.display run scoreboard players operation #live_1 uhc.data.display = #live_2 uhc.data.display
 
+# Point de réapparition au centre
+execute if score @s uhc.menu.host.settings.lives matches 8 run scoreboard players remove #respawn_2_timer uhc.data.setup 10
+execute if score @s uhc.menu.host.settings.lives matches 8 if score #respawn_2_timer uhc.data.setup matches ..0 run scoreboard players set #respawn_2_timer uhc.data.setup 0
+
 
 # Période de Résistance
 execute if score @s uhc.menu.host.settings.pve matches 1 run scoreboard players remove #pve uhc.data.setup 10

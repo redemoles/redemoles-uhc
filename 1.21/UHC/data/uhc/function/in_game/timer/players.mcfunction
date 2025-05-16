@@ -43,7 +43,10 @@ execute unless score #nzl uhc.gamemode matches 1 run effect give @s[tag=uhc.play
 # Effets aux joueurs - Reset pour le prochain tick
 execute if score #pve uhc.data.setup matches ..0 run scoreboard players set @s uhc.effect.resistance 0
 
-# Respawn
+# Démarrage dans le ciel
+execute in minecraft:overworld positioned 0 160 0 as @s[tag=uhc.player.start_in_the_sky] if entity @s[predicate=uhc:on_ground,distance=25..] run function uhc:in_game/players_settings/start_in_the_sky/on_ground_with_elytra
+
+# Réapparition
 execute as @s[scores={uhc.timer.respawn=1..}] run function uhc:in_game/players_settings/respawn/cooldown
 
 # Vie en pourcentage

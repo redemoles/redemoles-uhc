@@ -8,8 +8,10 @@
 #
 
 execute unless items entity @s[scores={uhc.menu.host.settings=1..}] inventory.1 *[minecraft:custom_data={Tags:"settings_lives"}] run function uhc:pre_game/menu/load/settings/lives/
-execute if score #lives uhc.players.lives matches 2.. unless items entity @s[scores={uhc.menu.host.settings=1..,uhc.menu.host.settings.lives=1..}] inventory.10 *[minecraft:custom_data={Tags:"settings_live_1"}] run function uhc:pre_game/menu/load/settings/lives/live_1/
-execute if score #lives uhc.players.lives matches 3.. unless items entity @s[scores={uhc.menu.host.settings=1..,uhc.menu.host.settings.lives=1..}] inventory.11 *[minecraft:custom_data={Tags:"settings_live_2"}] run function uhc:pre_game/menu/load/settings/lives/live_2/
+execute if score #lives uhc.players.lives matches 2.. unless items entity @s[scores={uhc.menu.host.settings.lives=1..}] inventory.10 *[minecraft:custom_data={Tags:"settings_live_1"}] run function uhc:pre_game/menu/load/settings/lives/live_1/
+execute if score #lives uhc.players.lives matches 3.. unless items entity @s[scores={uhc.menu.host.settings.lives=1..}] inventory.11 *[minecraft:custom_data={Tags:"settings_live_2"}] run function uhc:pre_game/menu/load/settings/lives/live_2/
+execute unless items entity @s[scores={uhc.menu.host.settings.lives=1..}] inventory.15 *[minecraft:custom_data={Tags:"settings_live_start_in_sky"}] run function uhc:pre_game/menu/load/settings/lives/start_in_sky/
+execute unless items entity @s[scores={uhc.menu.host.settings.lives=1..}] inventory.16 *[minecraft:custom_data={Tags:"settings_live_respawn"}] run function uhc:pre_game/menu/load/settings/lives/respawn/
 
 execute unless items entity @s[scores={uhc.menu.host.settings=1..}] inventory.2 *[minecraft:custom_data={Tags:"settings_pve"}] run function uhc:pre_game/menu/load/settings/pve/
 execute unless items entity @s[scores={uhc.menu.host.settings.pve=1..}] inventory.10 *[minecraft:custom_data={Tags:"settings_hp_tab"}] run function uhc:pre_game/menu/load/settings/pve/hp_tab/
@@ -24,9 +26,9 @@ execute unless items entity @s[scores={uhc.menu.host.settings.pvp=1..}] inventor
 execute unless items entity @s[scores={uhc.menu.host.settings.pvp=3}] inventory.22 *[minecraft:custom_data={Tags:"settings_pvp_no_clean"}] run function uhc:pre_game/menu/load/settings/pvp/no_clean/
 
 execute unless items entity @s[scores={uhc.menu.host.settings=1..}] inventory.4 *[minecraft:custom_data={Tags:"settings_border"}] run function uhc:pre_game/menu/load/settings/border/
-execute unless items entity @s[scores={uhc.menu.host.settings=1..,uhc.menu.host.settings.border=1..}] inventory.10 *[minecraft:custom_data={Tags:"settings_border_0"}] run function uhc:pre_game/menu/load/settings/border/border_0/
-execute unless items entity @s[scores={uhc.menu.host.settings=1..,uhc.menu.host.settings.border=1..}] inventory.11 *[minecraft:custom_data={Tags:"settings_border_1"}] run function uhc:pre_game/menu/load/settings/border/border_1/
-execute unless items entity @s[scores={uhc.menu.host.settings=1..,uhc.menu.host.settings.border=1..}] inventory.12 *[minecraft:custom_data={Tags:"settings_border_2"}] run function uhc:pre_game/menu/load/settings/border/border_2/
+execute unless items entity @s[scores={uhc.menu.host.settings.border=1..}] inventory.10 *[minecraft:custom_data={Tags:"settings_border_0"}] run function uhc:pre_game/menu/load/settings/border/border_0/
+execute unless items entity @s[scores={uhc.menu.host.settings.border=1..}] inventory.11 *[minecraft:custom_data={Tags:"settings_border_1"}] run function uhc:pre_game/menu/load/settings/border/border_1/
+execute unless items entity @s[scores={uhc.menu.host.settings.border=1..}] inventory.12 *[minecraft:custom_data={Tags:"settings_border_2"}] run function uhc:pre_game/menu/load/settings/border/border_2/
 
 execute unless items entity @s[scores={uhc.menu.host.settings=1..}] inventory.5 *[minecraft:custom_data={Tags:"settings_inventory"}] run function uhc:pre_game/menu/load/settings/inventory/
 execute unless items entity @s[scores={uhc.menu.host.settings.inventory=1..}] inventory.10 *[minecraft:custom_data={Tags:"settings_inventory_fire_flame"}] run function uhc:pre_game/menu/load/settings/inventory/fire_flame/

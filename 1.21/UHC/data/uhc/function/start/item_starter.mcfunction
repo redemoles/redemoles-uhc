@@ -4,7 +4,7 @@
 # @within			uhc:start/setup_players
 #
 #
-# @description		Menu
+# @description		Items de démarrage
 #
 
 $give @a[tag=uhc.player] $(id) $(count)

@@ -50,7 +50,7 @@ scoreboard players set #shrink_3_size_end uhc.data.setup 16
 ## Configuration du starter give
 execute if score #fte uhc.gamemode matches 1 run function fte:start/give
 execute if score #fte uhc.gamemode matches 0 run data modify storage uhc:settings Item_starter set value [{}]
-execute if score #fte uhc.gamemode matches 0 run data modify storage uhc:settings Item_starter set value [{count: 1, Slot: 1b, id: "minecraft:oak_boat"}]
+execute if score #fte uhc.gamemode matches 0 run data modify storage uhc:settings Item_starter set value [{count: 1, Slot: 0b, id: "minecraft:oak_boat"}]
 execute if score #fte uhc.gamemode matches 0 run data modify storage uhc:settings Item_starter set value [{count: 8, Slot: 1b, id: "minecraft:golden_carrot"}]
 
 ## Vies

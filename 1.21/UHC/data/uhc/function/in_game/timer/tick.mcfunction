@@ -22,21 +22,30 @@ execute if score #tick_start uhc.data.setup matches 0..200 run function uhc:star
 execute if score #start uhc.data.setup matches 1 run function uhc:start/countdown_end
 execute if score #tick_start uhc.data.setup matches 0..200 run return fail
 
-## Hotbar text
+## Hotbar
+# Données Worldborder
 execute store result score #border_size uhc.data.display run worldborder get
 scoreboard players remove #border_size uhc.data.display 1
 scoreboard players operation #border_size uhc.data.display /= #02 uhc.data.numbers
 
-execute if score #hotbar_cooldown uhc.data.display matches 1.. run function uhc:in_game/timer/hotbar_cooldown
-execute unless score #hotbar_cooldown uhc.data.display matches 1.. if score #vanilla uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. run function uhc:in_game/timer/hotbar
+# Texte informations de positions de joueurs
+execute as @a[tag=uhc.player] run execute store result score @s uhc.players.x run data get entity @s Pos[0]
+execute as @a[tag=uhc.player] run execute store result score @s uhc.players.y run data get entity @s Pos[1]
+execute as @a[tag=uhc.player] run execute store result score @s uhc.players.z run data get entity @s Pos[2]
+execute if score #target_allies uhc.data.setup matches 1 as @a[tag=uhc.player] run function uhc:in_game/timer/hotbar/target/
+
+# Texte informations de base
+execute if score #hotbar_cooldown uhc.data.display matches 1.. run function uhc:in_game/timer/hotbar/cooldown
+execute unless score #hotbar_cooldown uhc.data.display matches 1.. if score #vanilla uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. run function uhc:in_game/timer/hotbar/
 execute unless score #hotbar_cooldown uhc.data.display matches 1.. if score #bhc uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. run function bhc:timer/hotbar/
-execute unless score #hotbar_cooldown uhc.data.display matches 1.. if score #dru uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. run function uhc:in_game/timer/hotbar
+execute unless score #hotbar_cooldown uhc.data.display matches 1.. if score #dru uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. run function uhc:in_game/timer/hotbar/
 execute unless score #hotbar_cooldown uhc.data.display matches 1.. if score #fte uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. run function fte:timer/hotbar/
 execute unless score #hotbar_cooldown uhc.data.display matches 1.. if score #mls uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. run function mls:timer/hotbar
 execute unless score #hotbar_cooldown uhc.data.display matches 1.. if score #nzl uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. run function nzl:timer/hotbar/
 execute unless score #hotbar_cooldown uhc.data.display matches 1.. if score #prv uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. run function prv:timer/hotbar/
 execute unless score #hotbar_cooldown uhc.data.display matches 1.. if score #uau uhc.gamemode matches 1 if score #tick uhc.data.setup matches 0.. run function uau:timer/hotbar/
 execute unless score #hotbar_cooldown uhc.data.display matches 1.. if score #aic uhc.gamemode matches 3 if score #tick uhc.data.setup matches 0.. run function aic:timer/hotbar
+tag @a[tag=uhc.target.targeter_done] remove uhc.target.targeter_done
 
 ## Scenarios
 # Réduction des dégâts des flèches

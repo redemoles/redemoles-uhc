@@ -159,6 +159,7 @@ scoreboard objectives remove uhc.players.online
 scoreboard objectives remove uhc.players.disconnect
 scoreboard objectives remove uhc.players.tp
 scoreboard objectives remove uhc.players.lives
+scoreboard objectives remove uhc.players.lives.inv
 scoreboard objectives remove uhc.players.health
 scoreboard objectives remove uhc.players.health.100
 scoreboard objectives remove uhc.players.timer
@@ -205,9 +206,17 @@ scoreboard objectives add uhc.players.online dummy
 scoreboard objectives add uhc.players.disconnect minecraft.custom:minecraft.leave_game
 scoreboard objectives add uhc.players.tp dummy
 scoreboard objectives add uhc.players.lives dummy
+scoreboard objectives add uhc.players.lives.inv dummy
 scoreboard objectives add uhc.players.health health "❤"
 scoreboard objectives add uhc.players.health.100 dummy "%"
 scoreboard objectives add uhc.players.timer dummy "Minutes jouées"
+scoreboard objectives add uhc.players.x dummy
+scoreboard objectives add uhc.players.y dummy
+scoreboard objectives add uhc.players.z dummy
+scoreboard objectives add uhc.players.target.distance dummy
+scoreboard objectives add uhc.players.target.distance.x dummy
+scoreboard objectives add uhc.players.target.distance.z dummy
+scoreboard objectives add uhc.players.target.distance.xxzz dummy
 scoreboard objectives add uhc.players.border_alert dummy
 scoreboard objectives add uhc.players.death deathCount
 scoreboard objectives add uhc.players.lang dummy
@@ -309,6 +318,9 @@ scoreboard players set #live_1 uhc.data.display 0
 scoreboard players set #live_2 uhc.data.display 0
 scoreboard players set #live_3 uhc.data.display 0
 scoreboard players set #lives uhc.players.lives 1
+scoreboard players set #start_in_sky uhc.data.setup 0
+scoreboard players set #respawn_2_enabled uhc.data.setup 1
+scoreboard players set #respawn_2_timer uhc.data.setup 60
 
 scoreboard players set #pve uhc.data.setup 2
 scoreboard players set #absorption uhc.data.setup 2
@@ -341,8 +353,7 @@ scoreboard players set #shrink_3 uhc.data.setup 100
 scoreboard players set #shrink_3_length uhc.data.setup 5
 scoreboard players set #shrink_3_size_end uhc.data.setup 32
 
-scoreboard players set #respawn_2_enabled uhc.data.setup 1
-scoreboard players set #respawn_2_timer uhc.data.setup 60
+scoreboard players set #target_allies uhc.data.setup 0
 
 scoreboard players set #random_team uhc.data.setup 0
 scoreboard players set #random_team_players uhc.data.setup 0
@@ -354,8 +365,8 @@ scoreboard players set #team_size uhc.data.setup 4
 scoreboard players set #custom_arrow uhc.data.setup 0
 
 ## Items additionels à la mort d'un joueur
-execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_starter set value [{count: 1, Slot: 1b, id: "minecraft:oak_boat"}]
-execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_starter set value [{count: 8, Slot: 0b, id: "minecraft:golden_carrot"}]
+execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_starter set value [{count: 1, Slot: 0b, id: "minecraft:oak_boat"}]
+execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_starter set value [{count: 8, Slot: 1b, id: "minecraft:golden_carrot"}]
 execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_ironman set value [{count: 2, Slot: 0b, id: "minecraft:golden_apple"}]
 execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_additional set value [{count: 2, Slot: 0b, id: "minecraft:golden_apple"}]
 execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_notch_totem set value [{count: 4, Slot: 0b, id: "minecraft:gold_block"}]
