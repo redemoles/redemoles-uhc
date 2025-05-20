@@ -18,4 +18,4 @@ execute if score #death aic.data.end_dragon matches 0 unless entity @e[type=ende
 execute if score #minutes aic.data.end_game matches 1 run function aic:timer/end_game/1_min_left
 
 # Bossbar
-execute as @a[tag=uhc.player] at @s run bossbar set aic:ender_dragon players @s[x=-128,dx=256,z=-128,dz=256,nbt={Dimension:"minecraft:the_end"}]
+execute as @a[tag=uhc.player] at @s run bossbar set aic:ender_dragon players @s[x=-128,dx=256,z=-128,dz=256,predicate=uhc:dimension/the_end]

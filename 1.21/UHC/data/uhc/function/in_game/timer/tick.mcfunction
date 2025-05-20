@@ -29,8 +29,9 @@ scoreboard players remove #border_size uhc.data.temp 1
 scoreboard players operation #border_size uhc.data.temp /= #02 uhc.data.numbers
 
 # Texte informations de positions de joueurs
-execute if score #target_allies uhc.data.setup matches 1 as @a[tag=uhc.player] run function uhc:in_game/timer/hotbar/target/
-execute if score #target_allies uhc.data.setup matches 1 run tag @a[tag=uhc.player.location_check] remove uhc.player.location_check
+execute if score #target_allies uhc.data.setup matches 1 unless score #tick uhc.data.temp matches 1..9 unless score #tick uhc.data.temp matches 11..19 as @a[tag=uhc.player] run function uhc:in_game/timer/hotbar/target/
+execute if score #target_allies uhc.data.setup matches 1 unless score #tick uhc.data.temp matches 1..9 unless score #tick uhc.data.temp matches 11..19 run tag @a[tag=uhc.player.location_check] remove uhc.player.location_check
+execute as @a[predicate=uhc:target/tracker] run tag @s add uhc.target.targeter_done
 
 # Texte informations de base
 execute if score #hotbar_cooldown uhc.data.temp matches 1.. run function uhc:in_game/timer/hotbar/cooldown

@@ -33,13 +33,13 @@ execute if score #pvp uhc.data.temp matches 0 as @a[tag=uhc.player] run function
 execute if score #pvp uhc.data.temp matches 0 if score #friendly_fire uhc.data.setup matches 1 run function uhc:in_game/players_settings/pvp/friendly_fire/enable
 
 ## Réduction de la worldborder
-execute if score #shrink_1 uhc.data.temp matches 0 store result storage uhc:settings border_size int 1 run scoreboard players get #shrink_1_size_end uhc.data.setup
-execute if score #shrink_2 uhc.data.temp matches 0 store result storage uhc:settings border_size int 1 run scoreboard players get #shrink_2_size_end uhc.data.setup
-execute if score #shrink_3 uhc.data.temp matches 0 store result storage uhc:settings border_size int 1 run scoreboard players get #shrink_3_size_end uhc.data.setup
+execute if score #shrink_1 uhc.data.temp matches 0 store result storage uhc:settings border_size int 1 run scoreboard players get #shrink_1_size_end uhc.data.temp
+execute if score #shrink_2 uhc.data.temp matches 0 store result storage uhc:settings border_size int 1 run scoreboard players get #shrink_2_size_end uhc.data.temp
+execute if score #shrink_3 uhc.data.temp matches 0 store result storage uhc:settings border_size int 1 run scoreboard players get #shrink_3_size_end uhc.data.temp
 
-execute if score #shrink_1 uhc.data.temp matches 0 store result storage uhc:settings border_length int 1 run scoreboard players get #shrink_1_length uhc.data.setup
-execute if score #shrink_2 uhc.data.temp matches 0 store result storage uhc:settings border_length int 1 run scoreboard players get #shrink_2_length uhc.data.setup
-execute if score #shrink_3 uhc.data.temp matches 0 store result storage uhc:settings border_length int 1 run scoreboard players get #shrink_3_length uhc.data.setup
+execute if score #shrink_1 uhc.data.temp matches 0 store result storage uhc:settings border_length int 1 run scoreboard players get #shrink_1_length uhc.data.temp
+execute if score #shrink_2 uhc.data.temp matches 0 store result storage uhc:settings border_length int 1 run scoreboard players get #shrink_2_length uhc.data.temp
+execute if score #shrink_3 uhc.data.temp matches 0 store result storage uhc:settings border_length int 1 run scoreboard players get #shrink_3_length uhc.data.temp
 
 execute in minecraft:overworld run function uhc:in_game/timer/border/shrinks with storage uhc:settings
 execute in minecraft:the_nether run function uhc:in_game/timer/border/shrinks with storage uhc:settings
@@ -48,21 +48,21 @@ execute in minecraft:the_end run function uhc:in_game/timer/border/shrinks with 
 execute if score #shrink_1 uhc.data.temp matches 0 run gamerule doMobSpawning false
 
 ## Annonces
-execute if score #shrink_1 uhc.data.temp matches 0 run scoreboard players remove #shrink_1_size_end uhc.data.setup 1
-execute if score #shrink_2 uhc.data.temp matches 0 run scoreboard players remove #shrink_2_size_end uhc.data.setup 1
-execute if score #shrink_3 uhc.data.temp matches 0 run scoreboard players remove #shrink_3_size_end uhc.data.setup 1
+execute if score #shrink_1 uhc.data.temp matches 0 run scoreboard players remove #shrink_1_size_end uhc.data.temp 1
+execute if score #shrink_2 uhc.data.temp matches 0 run scoreboard players remove #shrink_2_size_end uhc.data.temp 1
+execute if score #shrink_3 uhc.data.temp matches 0 run scoreboard players remove #shrink_3_size_end uhc.data.temp 1
 
-execute if score #shrink_1 uhc.data.temp matches 0 store result storage uhc:settings border_size int 0.5 run scoreboard players get #shrink_1_size_end uhc.data.setup
-execute if score #shrink_2 uhc.data.temp matches 0 store result storage uhc:settings border_size int 0.5 run scoreboard players get #shrink_2_size_end uhc.data.setup
-execute if score #shrink_3 uhc.data.temp matches 0 store result storage uhc:settings border_size int 0.5 run scoreboard players get #shrink_3_size_end uhc.data.setup
+execute if score #shrink_1 uhc.data.temp matches 0 store result storage uhc:settings border_size int 0.5 run scoreboard players get #shrink_1_size_end uhc.data.temp
+execute if score #shrink_2 uhc.data.temp matches 0 store result storage uhc:settings border_size int 0.5 run scoreboard players get #shrink_2_size_end uhc.data.temp
+execute if score #shrink_3 uhc.data.temp matches 0 store result storage uhc:settings border_size int 0.5 run scoreboard players get #shrink_3_size_end uhc.data.temp
 
-execute if score #shrink_1 uhc.data.temp matches 0 store result storage uhc:settings border_length int 0.0167 run scoreboard players get #shrink_1_length uhc.data.setup
-execute if score #shrink_2 uhc.data.temp matches 0 store result storage uhc:settings border_length int 0.0167 run scoreboard players get #shrink_2_length uhc.data.setup
-execute if score #shrink_3 uhc.data.temp matches 0 store result storage uhc:settings border_length int 0.0167 run scoreboard players get #shrink_3_length uhc.data.setup
+execute if score #shrink_1 uhc.data.temp matches 0 store result storage uhc:settings border_length int 0.0167 run scoreboard players get #shrink_1_length uhc.data.temp
+execute if score #shrink_2 uhc.data.temp matches 0 store result storage uhc:settings border_length int 0.0167 run scoreboard players get #shrink_2_length uhc.data.temp
+execute if score #shrink_3 uhc.data.temp matches 0 store result storage uhc:settings border_length int 0.0167 run scoreboard players get #shrink_3_length uhc.data.temp
 
-execute if score #shrink_1 uhc.data.temp matches 0 run scoreboard players add #shrink_1_size_end uhc.data.setup 1
-execute if score #shrink_2 uhc.data.temp matches 0 run scoreboard players add #shrink_2_size_end uhc.data.setup 1
-execute if score #shrink_3 uhc.data.temp matches 0 run scoreboard players add #shrink_3_size_end uhc.data.setup 1
+execute if score #shrink_1 uhc.data.temp matches 0 run scoreboard players add #shrink_1_size_end uhc.data.temp 1
+execute if score #shrink_2 uhc.data.temp matches 0 run scoreboard players add #shrink_2_size_end uhc.data.temp 1
+execute if score #shrink_3 uhc.data.temp matches 0 run scoreboard players add #shrink_3_size_end uhc.data.temp 1
 
 function uhc:in_game/timer/cooldown with storage uhc:settings
 

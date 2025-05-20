@@ -236,6 +236,7 @@ scoreboard players set #seconds uhc.data.temp -1
 scoreboard players set #teams uhc.data.temp -1
 scoreboard players set #players uhc.data.temp -1
 scoreboard players set #end uhc.game.end 0
+scoreboard players set #pause uhc.data.setup 0
 
 ## Commandes par défaut
 execute in minecraft:overworld run function uhc:all_dimension_commands/reload

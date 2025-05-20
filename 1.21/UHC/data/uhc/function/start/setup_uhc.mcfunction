@@ -28,7 +28,7 @@ scoreboard players operation #shrink_2 uhc.data.temp = #shrink_2 uhc.data.setup
 scoreboard players operation #shrink_3 uhc.data.temp = #shrink_3 uhc.data.setup
 scoreboard players operation #live_3 uhc.data.temp = #live_3 uhc.data.setup
 scoreboard players operation #live_2 uhc.data.temp = #live_2 uhc.data.setup
-scoreboard players operation #live_1 uhc.data.temp = #live_2 uhc.data.setup
+scoreboard players operation #live_1 uhc.data.temp = #live_1 uhc.data.setup
 
 # Divers paramètres
 scoreboard players operation #lives uhc.players.lives = #lives uhc.data.setup
@@ -76,15 +76,18 @@ scoreboard players add #live_2 uhc.data.temp 1
 scoreboard players add #live_1 uhc.data.temp 1
 
 ## Border Alerte Sonore
-scoreboard players operation #shrink_1_timer_end uhc.data.setup += #shrink_1_length uhc.data.setup
-scoreboard players operation #shrink_2_timer_end uhc.data.setup += #shrink_2_length uhc.data.setup
-scoreboard players operation #shrink_3_timer_end uhc.data.setup += #shrink_3_length uhc.data.setup
-scoreboard players operation #shrink_1_timer_end uhc.data.setup /= #60 uhc.data.numbers
-scoreboard players operation #shrink_2_timer_end uhc.data.setup /= #60 uhc.data.numbers
-scoreboard players operation #shrink_3_timer_end uhc.data.setup /= #60 uhc.data.numbers
-scoreboard players operation #shrink_1_timer_end uhc.data.setup += #shrink_1 uhc.data.temp
-scoreboard players operation #shrink_2_timer_end uhc.data.setup += #shrink_2 uhc.data.temp
-scoreboard players operation #shrink_3_timer_end uhc.data.setup += #shrink_3 uhc.data.temp
+scoreboard players operation #shrink_1_timer_end uhc.data.temp = #shrink_1_timer_end uhc.data.setup
+scoreboard players operation #shrink_2_timer_end uhc.data.temp = #shrink_2_timer_end uhc.data.setup
+scoreboard players operation #shrink_3_timer_end uhc.data.temp = #shrink_3_timer_end uhc.data.setup
+scoreboard players operation #shrink_1_timer_end uhc.data.temp += #shrink_1_length uhc.data.setup
+scoreboard players operation #shrink_2_timer_end uhc.data.temp += #shrink_2_length uhc.data.setup
+scoreboard players operation #shrink_3_timer_end uhc.data.temp += #shrink_3_length uhc.data.setup
+scoreboard players operation #shrink_1_timer_end uhc.data.temp /= #60 uhc.data.numbers
+scoreboard players operation #shrink_2_timer_end uhc.data.temp /= #60 uhc.data.numbers
+scoreboard players operation #shrink_3_timer_end uhc.data.temp /= #60 uhc.data.numbers
+scoreboard players operation #shrink_1_timer_end uhc.data.temp += #shrink_1 uhc.data.temp
+scoreboard players operation #shrink_2_timer_end uhc.data.temp += #shrink_2 uhc.data.temp
+scoreboard players operation #shrink_3_timer_end uhc.data.temp += #shrink_3 uhc.data.temp
 
 ## Nombre de vies
 scoreboard players operation #lives_start uhc.players.lives = #lives uhc.players.lives

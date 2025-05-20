@@ -7,7 +7,7 @@
 # @description		Mort de l'enderdragon
 #
 
-tag @a[x=-128,dx=256,z=-128,dz=256,tag=uhc.player,nbt={Dimension:"minecraft:the_end"}] add aic.dragon_egg
+tag @a[x=-128,dx=256,z=-128,dz=256,tag=uhc.player,predicate=uhc:dimension/the_end] add aic.dragon_egg
 bossbar remove aic:ender_dragon
 
 scoreboard players operation #death aic.data.end_dragon = #minutes uhc.data.temp
