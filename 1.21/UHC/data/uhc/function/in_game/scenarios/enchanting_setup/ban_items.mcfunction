@@ -1,7 +1,7 @@
 
 #> uhc:in_game/scenarios/enchanting_setup/ban_items
 #
-# @within			uhc:in_game/inventory/ban_items
+# @within			uhc:in_game/inventory/ban_items/
 # @executed			default context
 #
 # @description		Suppression d'items interdits

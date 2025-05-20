@@ -8,7 +8,7 @@
 #
 
 
-scoreboard players operation #player_z uhc.data.setup -= #border_size uhc.data.display
+scoreboard players operation #player_z uhc.data.setup -= #border_size uhc.data.temp
 execute unless score #player_z uhc.data.setup matches 2.. run scoreboard players reset #player_z
 execute unless score #player_z uhc.data.setup matches 2.. run return fail
 

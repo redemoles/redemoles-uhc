@@ -1,13 +1,12 @@
 
 #> uhc:in_game/scenarios/cut_clean/tick
 #
-# @within			uhc:in_game/timer/tick
+# @within			uhc:in_game/entities/item/
 # @executed			default context
 #
 # @description		Donne un item cuit lors de l'obtention d'un item non cuit/fondu
 #
 
-tag @s add uhc.cut_clean
 execute store result score #random uhc.scenario.cut_clean.random run random value 1..100
 
 # Minerais

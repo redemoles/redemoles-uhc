@@ -8,18 +8,18 @@
 #
 
 # Nbr de vie
-execute if score @s uhc.menu.host.settings.lives matches 1 unless score #lives uhc.players.lives matches 1 run scoreboard players set #lives uhc.players.lives 1
+execute if score @s uhc.menu.host.settings.lives matches 1 unless score #lives uhc.data.setup matches 1 run scoreboard players set #lives uhc.data.setup 1
 
 
 
 
 # Descente à 2 vies
-execute if score @s uhc.menu.host.settings.lives matches 3 run scoreboard players remove #live_2 uhc.data.display 10
-execute if score @s uhc.menu.host.settings.lives matches 3.. if score #live_2 uhc.data.display < #live_3 uhc.data.display run scoreboard players operation #live_2 uhc.data.display = #live_3 uhc.data.display
+execute if score @s uhc.menu.host.settings.lives matches 3 run scoreboard players remove #live_2 uhc.data.setup 10
+execute if score @s uhc.menu.host.settings.lives matches 3.. if score #live_2 uhc.data.setup < #live_3 uhc.data.setup run scoreboard players operation #live_2 uhc.data.setup = #live_3 uhc.data.setup
 
 # Descente à 1 vie
-execute if score @s uhc.menu.host.settings.lives matches 2 run scoreboard players remove #live_1 uhc.data.display 10
-execute if score @s uhc.menu.host.settings.lives matches 2.. if score #live_1 uhc.data.display < #live_2 uhc.data.display run scoreboard players operation #live_1 uhc.data.display = #live_2 uhc.data.display
+execute if score @s uhc.menu.host.settings.lives matches 2 run scoreboard players remove #live_1 uhc.data.setup 10
+execute if score @s uhc.menu.host.settings.lives matches 2.. if score #live_1 uhc.data.setup < #live_2 uhc.data.setup run scoreboard players operation #live_1 uhc.data.setup = #live_2 uhc.data.setup
 
 # Point de réapparition au centre
 execute if score @s uhc.menu.host.settings.lives matches 8 run scoreboard players remove #respawn_2_timer uhc.data.setup 10
@@ -37,6 +37,10 @@ execute if score @s uhc.menu.host.settings.pvp matches 1 if score #pvp uhc.data.
 # Durabilité des boucliers
 execute if score @s uhc.menu.host.settings.pvp matches 2 run scoreboard players remove #shield_percent uhc.data.setup 10
 execute if score @s uhc.menu.host.settings.pvp matches 2 if score #shield_percent uhc.data.setup matches ..0 run scoreboard players set #shield_percent uhc.data.setup 0
+
+
+
+
 
 
 

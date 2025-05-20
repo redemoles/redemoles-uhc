@@ -27,5 +27,5 @@ scoreboard players set #team uhc.id.teams 0
 
 ## Nombre d'équipes en jeu
 scoreboard players set #team_size uhc.data.setup 1
-scoreboard players operation #Teams uhc.data.display = #Joueurs uhc.data.display
-scoreboard players operation #Teams uhc.data.setup = #Joueurs uhc.data.display
+scoreboard players operation #teams uhc.data.temp = #players uhc.data.temp
+scoreboard players operation #teams uhc.data.temp.inv = #players uhc.data.temp

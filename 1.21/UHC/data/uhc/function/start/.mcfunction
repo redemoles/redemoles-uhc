@@ -7,14 +7,13 @@
 # @description		Fonction de configuration de la partie
 #
 
-scoreboard players set #start_game uhc.data.setup 1
-scoreboard players set #tick_start uhc.data.setup 3
+scoreboard players set #start_game uhc.data.temp 1
+scoreboard players set #tick_start uhc.data.temp 3
 execute if score #aic uhc.gamemode matches 1 run scoreboard players set #aic uhc.gamemode 3
 
 ## Auto-set de la partie
-execute unless score #Minutes uhc.data.display matches 0.. run scoreboard players set #tick uhc.data.setup 0
-execute unless score #Minutes uhc.data.display matches 0.. run scoreboard players set #Secondes uhc.data.display 0
-execute unless score #Minutes uhc.data.display matches 0.. run function uhc:pre_game/config/timer
+execute unless score #minutes uhc.data.temp matches 0.. run scoreboard players set #tick uhc.data.temp 0
+execute unless score #minutes uhc.data.temp matches 0.. run scoreboard players set #seconds uhc.data.temp 0
 
 ## Mini-jeux lobby
 tag @a remove mgs.tc.player

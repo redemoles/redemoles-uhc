@@ -1,7 +1,7 @@
 
 #> uhc:in_game/scenarios/red_arrows/
 #
-# @within			uhc:in_game/inventory/item_additional
+# @within			uhc:in_game/players_settings/death/inventory/item_additional
 # @executed			default context
 #
 # @description		

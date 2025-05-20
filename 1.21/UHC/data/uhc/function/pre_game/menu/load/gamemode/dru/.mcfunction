@@ -45,7 +45,7 @@ scoreboard players set #shrink_2_size_end uhc.data.setup 3000
 scoreboard players set #shrink_3_size_end uhc.data.setup 3000
 
 ## Vies
-scoreboard players set #lives uhc.players.lives 2
-scoreboard players set #live_3 uhc.data.display 0
-scoreboard players set #live_2 uhc.data.display 0
-scoreboard players set #live_1 uhc.data.display 20
+scoreboard players set #lives uhc.data.setup 2
+scoreboard players set #live_3 uhc.data.setup 0
+scoreboard players set #live_2 uhc.data.setup 0
+scoreboard players set #live_1 uhc.data.setup 20

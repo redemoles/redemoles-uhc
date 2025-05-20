@@ -17,7 +17,7 @@ playsound minecraft:block.respawn_anchor.deplete master @a[predicate=fte:id_team
 # Give Team
 scoreboard players set @a[predicate=fte:id_teams] fte.id.teams 0
 # Changement d'équipe interne
-scoreboard players add #Teams uhc.data.setup 1
+scoreboard players add #teams uhc.data.temp.inv 1
 
 ## Remove Livre
 clear @s minecraft:written_book

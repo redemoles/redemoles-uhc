@@ -44,11 +44,11 @@ execute as @e[type=marker,tag=temp] run function uhc:start/game_teams/id_marker
 scoreboard players set #team uhc.id.teams 0
 
 ## Nombre d'équipes en jeu
-scoreboard players set #Teams uhc.data.display 0
+scoreboard players set #teams uhc.data.temp 0
 execute as @a[tag=uhc.player] run function uhc:start/game_teams/id_teams
 scoreboard players set #team_size uhc.data.setup 1
 scoreboard players operation #team_size uhc.data.setup > @e[type=marker,tag=UHC] uhc.data.setup
 scoreboard players operation @e[type=marker,tag=UHC] uhc.teams.ironman = #team_size uhc.data.setup
 
-scoreboard players operation #Teams uhc.data.setup = #Teams uhc.data.display
-scoreboard players operation #teams uhc.teams.ironman = #Teams uhc.data.display
+scoreboard players operation #teams uhc.data.temp.inv = #teams uhc.data.temp
+scoreboard players operation #teams uhc.teams.ironman = #teams uhc.data.temp

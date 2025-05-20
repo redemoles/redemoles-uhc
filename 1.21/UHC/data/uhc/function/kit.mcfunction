@@ -37,7 +37,7 @@ give @a diamond_shovel[enchantments={"minecraft:efficiency":2},unbreakable={}]
 give @a minecraft:shield
 
 ## Réduction Résistance
-execute if score #pve uhc.data.setup matches 1.. run scoreboard players set #pve uhc.data.setup 1
+execute if score #pve uhc.data.temp matches 1.. run scoreboard players set #pve uhc.data.temp 1
 
 ## TP style meet-up
 scoreboard players enable @s uhc.meetup.activate

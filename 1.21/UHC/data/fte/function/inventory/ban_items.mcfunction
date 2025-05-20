@@ -3,7 +3,7 @@
 # 
 # @within			fte:artefact/ruler/.../tick
 # @within			fte:artefact/servant/.../tick
-# @within			uhc:in_game/inventory/ban_items
+# @within			uhc:in_game/inventory/ban_items/
 # @description		Suppression d'un item d'Artéfact s'il est désactivé, ou si incompatibilité avec le rôle
 #
 

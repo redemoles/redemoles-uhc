@@ -25,10 +25,10 @@ execute if entity @s[scores={uhc.players.lang=2},tag=!mgs.tc.player,tag=!mgs.tc.
 execute unless entity @s[tag=!mgs.tc.player,tag=!mgs.tc.spec] run function lobby:mini_games/tc/hotbar/
 
 # Modification des items au démarrage et des items additionnels à la mort d'un joueur
-execute if score @s[tag=uhc.host,gamemode=adventure] uhc.menu.host.settings.inventory matches 2 run function uhc:pre_game/menu/load/settings/inventory/item_starter/validate
-execute if score @s[tag=uhc.host,gamemode=adventure] uhc.menu.host.settings.inventory matches 3 run function uhc:pre_game/menu/load/settings/inventory/item_ironman/validate
-execute if score @s[tag=uhc.host,gamemode=adventure] uhc.menu.host.settings.inventory matches 4 run function uhc:pre_game/menu/load/settings/inventory/item_notch_totem/validate
-execute if score @s[tag=uhc.host,gamemode=adventure] uhc.menu.host.settings.inventory matches 5 run function uhc:pre_game/menu/load/settings/inventory/item_additional/validate
+execute if score @s[tag=uhc.host,gamemode=adventure] uhc.menu.host.settings.inventory matches 2 run function uhc:pre_game/menu/load/settings/inventory/start_and_rewards/item_starter/validate
+execute if score @s[tag=uhc.host,gamemode=adventure] uhc.menu.host.settings.inventory matches 3 run function uhc:pre_game/menu/load/settings/inventory/start_and_rewards/item_ironman/validate
+execute if score @s[tag=uhc.host,gamemode=adventure] uhc.menu.host.settings.inventory matches 4 run function uhc:pre_game/menu/load/settings/inventory/start_and_rewards/item_notch_totem/validate
+execute if score @s[tag=uhc.host,gamemode=adventure] uhc.menu.host.settings.inventory matches 5 run function uhc:pre_game/menu/load/settings/inventory/start_and_rewards/item_additional/validate
 
 # Vie en pourcentage
 scoreboard players operation #team uhc.id.teams = @s uhc.id.teams

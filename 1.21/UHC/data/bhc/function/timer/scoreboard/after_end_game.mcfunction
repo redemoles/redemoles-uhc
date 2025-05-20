@@ -7,10 +7,10 @@
 # @description		Function toutes les secondes
 #
 
-execute if score #second uhc.game.end matches 30 run scoreboard players add #sb uhc.game.end 1
-execute unless score #second uhc.game.end matches 30 run return fail
-scoreboard players remove #second uhc.game.end 8
-execute if score #sb uhc.game.end matches 13 run scoreboard players set #second uhc.game.end 0
+execute if score #seconds uhc.game.end matches 30 run scoreboard players add #sb uhc.game.end 1
+execute unless score #seconds uhc.game.end matches 30 run return fail
+scoreboard players remove #seconds uhc.game.end 8
+execute if score #sb uhc.game.end matches 13 run scoreboard players set #seconds uhc.game.end 0
 execute if score #sb uhc.game.end matches 13 run scoreboard players set #sb uhc.game.end -1
 
 execute unless score #sb uhc.game.end matches 01.. run scoreboard objectives setdisplay sidebar bhc.total.score

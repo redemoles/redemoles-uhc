@@ -28,10 +28,10 @@ execute if score #bhc bhc.scenario matches 0 run tellraw @a [{"text":"Bingo","co
 ## UHC → Préparation Config pre-game
 scoreboard players set #pve uhc.data.setup 2
 scoreboard players set #pvp uhc.data.setup 40
-scoreboard players set #shrink_1 uhc.data.setup 80
+scoreboard players set #shrink_1 uhc.data.setup 75
 scoreboard players set #shrink_2 uhc.data.setup 110
 scoreboard players set #shrink_3 uhc.data.setup 120
-scoreboard players set #shrink_1_length uhc.data.setup 20
+scoreboard players set #shrink_1_length uhc.data.setup 30
 scoreboard players set #shrink_2_length uhc.data.setup 5
 scoreboard players set #shrink_3_length uhc.data.setup 5
 scoreboard players set #shrink_1_size_start uhc.data.setup 2000
@@ -44,7 +44,7 @@ execute if score #bhc uhc.gamemode matches 1 run data modify storage uhc:setting
 execute if score #bhc uhc.gamemode matches 1 run data modify storage uhc:settings Item_starter set value [{count: 1, Slot: 0b, id: "minecraft:oak_boat"}]
 
 ## Vies
-scoreboard players set #lives uhc.players.lives 3
-scoreboard players set #live_3 uhc.data.display 0
-scoreboard players set #live_2 uhc.data.display 60
-scoreboard players set #live_1 uhc.data.display 100
+scoreboard players set #lives uhc.data.setup 3
+scoreboard players set #live_3 uhc.data.setup 0
+scoreboard players set #live_2 uhc.data.setup 60
+scoreboard players set #live_1 uhc.data.setup 105

@@ -7,7 +7,6 @@
 # @description		Actualisation scores death 
 #
 
-## 
 execute if score #ironman uhc.data.setup matches 1.. as @e[type=marker,tag=UHC] run function bhc:scores_calculator/death/ironman/scores
 execute as @e[type=marker,tag=UHC] run function bhc:scores_calculator/death/scores
 execute as @e[type=marker,tag=UHC] run function bhc:scores_calculator/death/bonus_1

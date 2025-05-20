@@ -8,17 +8,17 @@
 #
 
 # Nbr de vie
-execute if score @s uhc.menu.host.settings.lives matches 1 unless score #lives uhc.players.lives matches 1 run scoreboard players remove #lives uhc.players.lives 1
-execute if score @s uhc.menu.host.settings.lives matches 1 if score #lives uhc.players.lives matches ..3 run scoreboard players set #live_3 uhc.data.display 0
-execute if score @s uhc.menu.host.settings.lives matches 1 if score #lives uhc.players.lives matches ..2 run scoreboard players set #live_2 uhc.data.display 0
-execute if score @s uhc.menu.host.settings.lives matches 1 if score #lives uhc.players.lives matches ..1 run scoreboard players set #live_1 uhc.data.display 0
+execute if score @s uhc.menu.host.settings.lives matches 1 unless score #lives uhc.data.setup matches 1 run scoreboard players remove #lives uhc.data.setup 1
+execute if score @s uhc.menu.host.settings.lives matches 1 if score #lives uhc.data.setup matches ..3 run scoreboard players set #live_3 uhc.data.setup 0
+execute if score @s uhc.menu.host.settings.lives matches 1 if score #lives uhc.data.setup matches ..2 run scoreboard players set #live_2 uhc.data.setup 0
+execute if score @s uhc.menu.host.settings.lives matches 1 if score #lives uhc.data.setup matches ..1 run scoreboard players set #live_1 uhc.data.setup 0
 
 # Descente à 2 vies
-execute if score @s uhc.menu.host.settings.lives matches 3 unless score #live_2 uhc.data.display matches 0 unless score #live_2 uhc.data.display <= #live_3 uhc.data.display run scoreboard players remove #live_2 uhc.data.display 1
+execute if score @s uhc.menu.host.settings.lives matches 3 unless score #live_2 uhc.data.setup matches 0 unless score #live_2 uhc.data.setup <= #live_3 uhc.data.setup run scoreboard players remove #live_2 uhc.data.setup 1
 
 
 # Descente à 1 vie
-execute if score @s uhc.menu.host.settings.lives matches 2 unless score #live_1 uhc.data.display matches 0 unless score #live_1 uhc.data.display <= #live_2 uhc.data.display run scoreboard players remove #live_1 uhc.data.display 1
+execute if score @s uhc.menu.host.settings.lives matches 2 unless score #live_1 uhc.data.setup matches 0 unless score #live_1 uhc.data.setup <= #live_2 uhc.data.setup run scoreboard players remove #live_1 uhc.data.setup 1
 
 
 # Point de réapparition au centre
@@ -97,3 +97,24 @@ execute if score @s uhc.menu.host.settings.border matches 1.. run scoreboard pla
 execute if score @s uhc.menu.host.settings.border matches 34 run scoreboard players remove #shrink_3_length uhc.data.setup 1
 execute if score @s uhc.menu.host.settings.border matches 1.. if score #shrink_3_length uhc.data.setup > #temp uhc.data.setup run scoreboard players operation #shrink_3_length uhc.data.setup = #temp uhc.data.setup
 execute if score @s uhc.menu.host.settings.border matches 1.. if score #shrink_3_length uhc.data.setup matches ..0 run scoreboard players set #shrink_3_length uhc.data.setup 0
+
+# Règles de stuff - Armures en diamants
+execute if score @s uhc.menu.host.settings.inventory matches 12 unless score #diamond_protection uhc.data.setup matches ..0 run scoreboard players remove #diamond_protection uhc.data.setup 1
+
+# Règles de stuff - Épées en diamants
+execute if score @s uhc.menu.host.settings.inventory matches 13 unless score #diamond_sharpness uhc.data.setup matches ..0 run scoreboard players remove #diamond_sharpness uhc.data.setup 1
+
+# Règles de stuff - Armures en fer
+execute if score @s uhc.menu.host.settings.inventory matches 14 unless score #iron_protection uhc.data.setup matches ..0 run scoreboard players remove #iron_protection uhc.data.setup 1
+
+# Règles de stuff - Épées en diamants
+execute if score @s uhc.menu.host.settings.inventory matches 15 unless score #iron_sharpness uhc.data.setup matches ..0 run scoreboard players remove #iron_sharpness uhc.data.setup 1
+
+# Règles de stuff - Haches
+execute if score @s uhc.menu.host.settings.inventory matches 16 unless score #axes_sharpness uhc.data.setup matches ..0 run scoreboard players remove #axes_sharpness uhc.data.setup 1
+
+# Règles de stuff - Arc
+execute if score @s uhc.menu.host.settings.inventory matches 17 unless score #bow_power uhc.data.setup matches ..0 run scoreboard players remove #bow_power uhc.data.setup 1
+
+# Règles de stuff - Arc
+execute if score @s uhc.menu.host.settings.inventory matches 22 unless score #depth_strider uhc.data.setup matches ..0 run scoreboard players remove #depth_strider uhc.data.setup 1

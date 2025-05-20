@@ -10,7 +10,7 @@
 ## Config UHC
 function dru:start/config
 
-scoreboard players operation #moles dru.moles.numbers = #Joueurs uhc.data.setup
+scoreboard players operation #moles dru.moles.numbers = #players uhc.data.temp.inv
 scoreboard players add #moles dru.moles.numbers 2
 scoreboard players operation #moles dru.moles.numbers /= #04 uhc.data.numbers
 

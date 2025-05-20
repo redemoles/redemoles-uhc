@@ -7,7 +7,7 @@
 # @description		Configuration du timer 
 #
 
-scoreboard players add #force_stepa uhc.data.setup 0
+scoreboard players add #force_stepa uhc.data.temp 0
 
 function bhc:timer/minute
 

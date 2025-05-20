@@ -9,5 +9,4 @@
 
 ## Bonus vie non utilisée
 scoreboard players operation @s bhc.death.score.inv /= #10 uhc.data.numbers
-function bhc:scores_calculator/total/score
-function bhc:timer/marker_tick
+function bhc:scores_calculator/kills/rank

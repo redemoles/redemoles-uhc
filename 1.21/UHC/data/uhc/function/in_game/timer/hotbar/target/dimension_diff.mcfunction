@@ -1,7 +1,7 @@
 
 #> uhc:in_game/timer/hotbar/target/dimension_diff
 #
-# @within			uhc:in_game/timer/hotbar/target/teams_check
+# @within			uhc:in_game/timer/hotbar/target/teams_coords
 #
 #
 # @description		Ajout des joueurs de l'équipe dans la Hotbar de Target 

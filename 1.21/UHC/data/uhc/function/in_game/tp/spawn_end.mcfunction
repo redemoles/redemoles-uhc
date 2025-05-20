@@ -7,9 +7,9 @@
 # @description		Configuration du timer 
 #
 
-scoreboard players set #can_respawn uhc.data.display 0
-execute if score #Minutes uhc.data.display matches 0.. unless score #bhc bhc.scenario matches 99 if data entity @s respawn run scoreboard players set #can_respawn uhc.data.display 1
-execute if score #can_respawn uhc.data.display matches 1.. run return fail
+scoreboard players set #can_respawn uhc.data.temp 0
+execute if score #minutes uhc.data.temp matches 0.. unless score #bhc bhc.scenario matches 99 if data entity @s respawn run scoreboard players set #can_respawn uhc.data.temp 1
+execute if score #can_respawn uhc.data.temp matches 1.. run return fail
 
 # Spawn 00
 tp @s[scores={uhc.id.spawns=00}] 0 300 0 0.0 0.0

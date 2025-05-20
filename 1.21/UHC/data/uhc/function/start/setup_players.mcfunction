@@ -59,19 +59,32 @@ execute if score #sound_paranoia uhc.scenario matches 1 as @a[tag=uhc.player] st
 
 ## Nombre de vie
 scoreboard players set @a[tag=uhc.spec] uhc.players.lives 0
-scoreboard players operation @a[tag=uhc.player] uhc.players.lives = #lives uhc.players.lives
+scoreboard players operation @a[tag=uhc.player] uhc.players.lives = #lives uhc.data.setup
 scoreboard players set @a uhc.players.death 0
 scoreboard players set @a uhc.timer.respawn 0
 
 ## Nombre de joueurs en jeu
-execute store result score #Joueurs uhc.data.display if entity @a[tag=uhc.player]
-execute store result score #Joueurs uhc.data.setup if entity @a[tag=uhc.player]
+execute store result score #players uhc.data.temp if entity @a[tag=uhc.player]
+execute store result score #players uhc.data.temp.inv if entity @a[tag=uhc.player]
 
 ## Dragon UHC
 execute if score #dru uhc.gamemode matches 1 run function dru:start/set_moles
 
+## Configuration Worldborder
+scoreboard players operation #shrink_1_length uhc.data.temp = #shrink_1_length uhc.data.setup
+scoreboard players operation #shrink_2_length uhc.data.temp = #shrink_2_length uhc.data.setup
+scoreboard players operation #shrink_3_length uhc.data.temp = #shrink_3_length uhc.data.setup
+scoreboard players operation #shrink_1_size_start uhc.data.temp = #shrink_1_size_start uhc.data.setup
+scoreboard players operation #shrink_1_size_end uhc.data.temp = #shrink_1_size_end uhc.data.setup
+scoreboard players operation #shrink_2_size_end uhc.data.temp = #shrink_2_size_end uhc.data.setup
+scoreboard players operation #shrink_3_size_end uhc.data.temp = #shrink_3_size_end uhc.data.setup
+scoreboard players operation #shrink_1_length uhc.data.temp = #shrink_1_length uhc.data.setup
+scoreboard players operation #shrink_2_length uhc.data.temp = #shrink_2_length uhc.data.setup
+scoreboard players operation #shrink_3_length uhc.data.temp = #shrink_3_length uhc.data.setup
+function uhc:pre_game/config/timer
+
 ## Id, Markers, Spawns et TP
-execute if score #ffa uhc.data.display matches 0 run function uhc:start/game_teams/
-execute if score #ffa uhc.data.display matches 1.. run function uhc:start/game_ffa/
+execute if score #ffa uhc.data.setup matches 0 run function uhc:start/game_teams/
+execute if score #ffa uhc.data.setup matches 1.. run function uhc:start/game_ffa/
 
 execute in minecraft:overworld positioned 0 200 0 positioned over motion_blocking run tp @a[tag=uhc.spec] ~ ~16 ~

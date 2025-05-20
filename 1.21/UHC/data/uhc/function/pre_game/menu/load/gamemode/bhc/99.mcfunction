@@ -44,9 +44,9 @@ execute if score #bhc uhc.gamemode matches 1 run data modify storage uhc:setting
 execute if score #bhc uhc.gamemode matches 1 run data modify storage uhc:settings Item_starter set value [{count: 1, Slot: 0b, id: "minecraft:oak_boat"}]
 
 ## Vies
-scoreboard players set #lives uhc.players.lives 3
-scoreboard players set #live_3 uhc.data.display 0
-scoreboard players set #live_2 uhc.data.display 30
-scoreboard players set #live_1 uhc.data.display 35
+scoreboard players set #lives uhc.data.setup 3
+scoreboard players set #live_3 uhc.data.setup 0
+scoreboard players set #live_2 uhc.data.setup 30
+scoreboard players set #live_1 uhc.data.setup 35
 
 scoreboard players set #respawn_2_timer uhc.data.setup 30

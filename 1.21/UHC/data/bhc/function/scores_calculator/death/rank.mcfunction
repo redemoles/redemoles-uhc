@@ -17,7 +17,7 @@ execute store result score #count bhc.data if entity @e[type=marker,tag=UHC,tag=
 tag @s remove bhc.count
 
 ## Classement
-scoreboard players operation @s bhc.death.rank.number = #Teams bhc.data
+scoreboard players operation @s bhc.death.rank.number = #teams bhc.data
 scoreboard players operation @s bhc.death.rank.number -= #count bhc.data
 
 ## Scores

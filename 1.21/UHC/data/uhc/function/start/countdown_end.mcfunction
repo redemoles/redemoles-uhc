@@ -15,7 +15,7 @@ effect clear @a
 effect give @a minecraft:instant_health 1 9 true
 execute as @a[tag=uhc.player] run attribute @s minecraft:jump_strength base set 0.42
 scoreboard players set @a[tag=uhc.player] uhc.effect.resistance -1
-effect give @a[tag=uhc.player.start_in_the_sky] minecraft:invisibility 15 0 true
+effect give @a[tag=uhc.player.start_in_the_sky] minecraft:invisibility 30 0 true
 effect give @a[tag=uhc.player.start_in_the_sky] minecraft:weakness infinite 0 true
 
 # Msg FRA
@@ -36,4 +36,4 @@ execute in minecraft:overworld run function uhc:all_dimension_commands/start
 execute in minecraft:the_nether run function uhc:all_dimension_commands/start
 execute in minecraft:the_end run function uhc:all_dimension_commands/start
 
-scoreboard players reset #start uhc.data.setup
+scoreboard players reset #start_delay uhc.data.setup

@@ -26,7 +26,7 @@ scoreboard players enable @s fte.sceau.tp
 scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
 scoreboard players operation @p[tag=fte.roles.servant,scores={fte.id.teams=6}] uhc.id.teams = @s uhc.id.teams
 execute store result score @e[type=marker,predicate=uhc:id_teams] uhc.data.setup if entity @a[predicate=uhc:id_teams]
-scoreboard players remove #Teams uhc.data.setup 1
+scoreboard players remove #teams uhc.data.temp.inv 1
 
 ## Clear Items
 clear @s minecraft:gold_block 1

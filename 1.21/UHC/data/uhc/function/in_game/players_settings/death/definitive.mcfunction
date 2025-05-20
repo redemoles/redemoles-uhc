@@ -10,8 +10,8 @@
 ## Paramètres internes
 
 # -1 Joueur
-execute if score #message uhc.data.setup matches 0..4 run scoreboard players remove #Joueurs uhc.data.display 1
-scoreboard players remove #Joueurs uhc.data.setup 1
+execute if score #message uhc.data.setup matches 0..4 run scoreboard players remove #players uhc.data.temp 1
+scoreboard players remove #players uhc.data.temp.inv 1
 
 # -1 Joueur dans l'équipe
 scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
@@ -22,8 +22,8 @@ scoreboard players set #team_out uhc.id.teams 1
 execute if score @e[type=marker,predicate=uhc:id_teams,limit=1] uhc.data.setup matches 1.. run scoreboard players set #team_out uhc.id.teams 0
 
 # -1 Team
-execute if score #team_out uhc.id.teams matches 1 if score #message uhc.data.setup matches 0..4 run scoreboard players remove #Teams uhc.data.display 1
-execute if score #team_out uhc.id.teams matches 1 run scoreboard players remove #Teams uhc.data.setup 1
+execute if score #team_out uhc.id.teams matches 1 if score #message uhc.data.setup matches 0..4 run scoreboard players remove #teams uhc.data.temp 1
+execute if score #team_out uhc.id.teams matches 1 run scoreboard players remove #teams uhc.data.temp.inv 1
 
 # Attribution des effets
 function uhc:in_game/players_settings/spec/
@@ -36,5 +36,5 @@ execute if score #vanilla uhc.gamemode matches 1 run tellraw @s[scores={uhc.play
 execute if score #vanilla uhc.gamemode matches 1 run tellraw @s[scores={uhc.players.lang=2}] [{"text":"\nYou died. Thank you for playing!\nIf a proximity voice chat is used, please mute yourself.","color":"#3FE7FF"}]
 
 # Détection victoire
-execute if score #Teams uhc.data.setup matches ..1 run scoreboard players add #end uhc.game.end 1
+execute if score #teams uhc.data.temp.inv matches ..1 run scoreboard players add #end uhc.game.end 1
 execute if score #end uhc.game.end matches 1 as @p[tag=uhc.player,tag=!uhc.spec] run function uhc:in_game/endgame

@@ -22,7 +22,7 @@ scoreboard players operation #bingo_b_end bhc.timer += #bingo_b_start bhc.timer
 # Start
  # 0 : Démarrage 30 secondes après tp
  # 1 : Démarrage immédiat
-scoreboard players set #start uhc.data.setup 0
+scoreboard players set #start_delay uhc.data.setup 0
 
 ## Configuration des messages de mort
 # 0 : Message par défaut

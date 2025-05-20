@@ -15,8 +15,6 @@ function pregen:load
 function uhc:pre_game/players_and_teams/teamcreate
 
 ## Reset des scores
-scoreboard objectives remove uhc.gamemode
-scoreboard objectives remove uhc.scenario
 scoreboard objectives remove uhc.scenario.bats
 scoreboard objectives remove uhc.scenario.best_pve.list
 scoreboard objectives remove uhc.scenario.best_pve.reward
@@ -26,10 +24,8 @@ scoreboard objectives remove uhc.scenario.blood_diamond.damage
 scoreboard objectives remove uhc.scenario.blood_diamond.deepslate
 scoreboard objectives remove uhc.scenario.blood_diamond.mined
 scoreboard objectives remove uhc.scenario.blood_diamond.temp
-scoreboard objectives remove uhc.scenario.blood_diamond.tier
 scoreboard objectives remove uhc.scenario.bookception
 scoreboard objectives remove uhc.scenario.cut_clean.random
-scoreboard objectives remove uhc.scenario.enchanting_setup
 scoreboard objectives remove uhc.scenario.go_to_hell.damage
 scoreboard objectives remove uhc.scenario.go_to_hell.tick
 scoreboard objectives remove uhc.scenario.team_health.player
@@ -76,8 +72,6 @@ scoreboard objectives remove uhc.players.mined.redstone_deepslate
 scoreboard objectives remove uhc.players.mined.diamond
 scoreboard objectives remove uhc.players.mined.diamond_deepslate
 scoreboard objectives remove uhc.players.mined.raw_copper_block
-scoreboard objectives remove bhc.scenario
-scoreboard objectives remove nzl.scenario
 
 scoreboard objectives add uhc.gamemode dummy
 scoreboard objectives add uhc.scenario dummy
@@ -136,10 +130,8 @@ scoreboard objectives remove uhc.id.random_teams.ban
 scoreboard objectives remove uhc.id.players
 scoreboard objectives remove uhc.id.spawns
 scoreboard objectives remove uhc.game.end
-scoreboard objectives remove uhc.data.arrow
-scoreboard objectives remove uhc.data.display
-scoreboard objectives remove uhc.data.setup
-scoreboard objectives remove uhc.data.setup.temp
+scoreboard objectives remove uhc.data.temp
+scoreboard objectives remove uhc.data.temp.inv
 scoreboard objectives remove uhc.menu.host.gamemode.mls
 scoreboard objectives remove uhc.menu.host.gamemode.mls.moles_per_team
 scoreboard objectives remove uhc.menu.host.gamemode.mls.moles_per_game
@@ -181,10 +173,9 @@ scoreboard objectives add uhc.id.random_teams.ban dummy
 scoreboard objectives add uhc.id.players dummy
 scoreboard objectives add uhc.id.spawns dummy
 scoreboard objectives add uhc.game.end trigger
-scoreboard objectives add uhc.data.arrow minecraft.used:minecraft.bow
-scoreboard objectives add uhc.data.display dummy
 scoreboard objectives add uhc.data.setup dummy
-scoreboard objectives add uhc.data.setup.temp dummy
+scoreboard objectives add uhc.data.temp dummy
+scoreboard objectives add uhc.data.temp.inv dummy
 scoreboard objectives add uhc.data.numbers dummy
 scoreboard objectives add uhc.menu.host.gamemode.mls dummy
 scoreboard objectives add uhc.menu.host.gamemode.mls.moles_per_team dummy
@@ -213,6 +204,9 @@ scoreboard objectives add uhc.players.timer dummy "Minutes jouées"
 scoreboard objectives add uhc.players.x dummy
 scoreboard objectives add uhc.players.y dummy
 scoreboard objectives add uhc.players.z dummy
+scoreboard objectives add uhc.players.rotation dummy
+scoreboard objectives add uhc.players.target.cos.a dummy
+scoreboard objectives add uhc.players.target.cos.h dummy
 scoreboard objectives add uhc.players.target.distance dummy
 scoreboard objectives add uhc.players.target.distance.x dummy
 scoreboard objectives add uhc.players.target.distance.z dummy
@@ -237,10 +231,10 @@ scoreboard objectives add uhc.id.spawns_check trigger
 execute unless score #new uhc.id.spawns_check matches 1 run function uhc:pre_game/world_check/create_spawns_id
 
 ## Timer pre-game
-scoreboard players set #Minutes uhc.data.display -1
-scoreboard players set #Secondes uhc.data.display -1
-scoreboard players set #Teams uhc.data.display -1
-scoreboard players set #Joueurs uhc.data.display -1
+scoreboard players set #minutes uhc.data.temp -1
+scoreboard players set #seconds uhc.data.temp -1
+scoreboard players set #teams uhc.data.temp -1
+scoreboard players set #players uhc.data.temp -1
 scoreboard players set #end uhc.game.end 0
 
 ## Commandes par défaut
@@ -253,125 +247,8 @@ weather clear 999999
 worldborder center 0.5 0.5
 worldborder set 301
 
-## Modes de jeu
-scoreboard players set #vanilla uhc.gamemode 1
-scoreboard players set #bhc uhc.gamemode 0
-scoreboard players set #bhc bhc.scenario -1
-scoreboard players set #dru uhc.gamemode 0
-scoreboard players set #fte uhc.gamemode 0
-scoreboard players set #mls uhc.gamemode 0
-scoreboard players set #mls mls.scenario 0
-scoreboard players set #nzl uhc.gamemode 0
-scoreboard players set #nzl nzl.scenario -1
-scoreboard players set #prv uhc.gamemode 0
-scoreboard players set #uau uhc.gamemode 0
-scoreboard players set #aic uhc.gamemode 0
-data modify storage uhc:settings gamemode set value [{"text":"Vanilla","color":"#E7E7E7","bold":true,"italic":false}]
-
-## Scénarios
-scoreboard players set #bats uhc.scenario 0
-scoreboard players set #best_pve uhc.scenario 0
-scoreboard players set #biome_paranoia uhc.scenario 0
-scoreboard players set #blood_cycle uhc.scenario 0
-scoreboard players set #blood_diamond uhc.scenario 0
-scoreboard players set #bookception uhc.scenario 0
-scoreboard players set #cut_clean uhc.scenario 0
-
-scoreboard players set #enchanting_setup uhc.scenario 0
-scoreboard players set #experienceless uhc.scenario 0
-scoreboard players set #go_to_hell uhc.scenario 0
-scoreboard players set #gone_fishing uhc.scenario 0
-scoreboard players set #no_fall uhc.scenario 0
-scoreboard players set #permakill uhc.scenario 0
-scoreboard players set #red_arrows uhc.scenario 0
-
-scoreboard players set #rewarding_longshots uhc.scenario 0
-scoreboard players set #shared_health uhc.scenario 0
-scoreboard players set #sky_high uhc.scenario 0
-scoreboard players set #sound_paranoia uhc.scenario 0
-scoreboard players set #team_health uhc.scenario 0
-scoreboard players set #time_bomb uhc.scenario 0
-scoreboard players set #trade_uhc uhc.scenario 0
-
-# Blood Diamond
-scoreboard players set #end_tier_1 uhc.scenario.blood_diamond.tier 8
-scoreboard players set #end_tier_2 uhc.scenario.blood_diamond.tier 20
-scoreboard players set #mined_tier_2 uhc.scenario.blood_diamond.tier 12
-execute store result storage uhc:settings blood_diamond.end_tier_1 int 1 run scoreboard players get #end_tier_1 uhc.scenario.blood_diamond.tier
-execute store result storage uhc:settings blood_diamond.end_tier_2 int 1 run scoreboard players get #end_tier_2 uhc.scenario.blood_diamond.tier
-scoreboard players add #end_tier_1 uhc.scenario.blood_diamond.tier 1
-scoreboard players add #end_tier_2 uhc.scenario.blood_diamond.tier 1
-execute store result storage uhc:settings blood_diamond.start_tier_2 int 1 run scoreboard players get #end_tier_1 uhc.scenario.blood_diamond.tier
-execute store result storage uhc:settings blood_diamond.start_tier_3 int 1 run scoreboard players get #end_tier_2 uhc.scenario.blood_diamond.tier
-scoreboard players remove #end_tier_1 uhc.scenario.blood_diamond.tier 1
-scoreboard players remove #end_tier_2 uhc.scenario.blood_diamond.tier 1
-execute store result storage uhc:settings blood_diamond.mined_tier_2 int 1 run scoreboard players get #mined_tier_2 uhc.scenario.blood_diamond.tier
-
-# Enchanting Setup
-scoreboard players set #100b uhc.scenario.enchanting_setup 0
-scoreboard players set #500b uhc.scenario.enchanting_setup 0
-scoreboard players set #1000b uhc.scenario.enchanting_setup 0
-
-## Configuration de la partie
-scoreboard players set #ffa uhc.data.display 0
-scoreboard players set #live_1 uhc.data.display 0
-scoreboard players set #live_2 uhc.data.display 0
-scoreboard players set #live_3 uhc.data.display 0
-scoreboard players set #lives uhc.players.lives 1
-scoreboard players set #start_in_sky uhc.data.setup 0
-scoreboard players set #respawn_2_enabled uhc.data.setup 1
-scoreboard players set #respawn_2_timer uhc.data.setup 60
-
-scoreboard players set #pve uhc.data.setup 2
-scoreboard players set #absorption uhc.data.setup 2
-scoreboard players set #hp_tab uhc.data.setup 3
-scoreboard players set #hp_name uhc.data.setup 0
-scoreboard players set #hp_100 uhc.data.setup 0
-
-scoreboard players set #pvp uhc.data.setup 40
-scoreboard players set #shield_percent uhc.data.setup 100
-scoreboard players set #shield uhc.data.setup 336
-scoreboard players set #version_pvp uhc.data.setup 0
-scoreboard players set #fire_flame uhc.data.setup 0
-scoreboard players set #reward_kill_health uhc.data.setup 0
-scoreboard players set #reward_kill_absorption uhc.data.setup 0
-execute store result storage uhc:settings reward_kill.health int 1 run scoreboard players get #reward_kill_health uhc.data.setup
-scoreboard players set #friendly_fire uhc.data.setup 1
-scoreboard players set #no_pvp_safety uhc.data.setup 1
-
-scoreboard players set #shrink_1_size_start uhc.data.setup 1000
-
-scoreboard players set #shrink_1 uhc.data.setup 60
-scoreboard players set #shrink_1_length uhc.data.setup 20
-scoreboard players set #shrink_1_size_end uhc.data.setup 200
-
-scoreboard players set #shrink_2 uhc.data.setup 80
-scoreboard players set #shrink_2_length uhc.data.setup 5
-scoreboard players set #shrink_2_size_end uhc.data.setup 64
-
-scoreboard players set #shrink_3 uhc.data.setup 100
-scoreboard players set #shrink_3_length uhc.data.setup 5
-scoreboard players set #shrink_3_size_end uhc.data.setup 32
-
-scoreboard players set #target_allies uhc.data.setup 0
-
-scoreboard players set #random_team uhc.data.setup 0
-scoreboard players set #random_team_players uhc.data.setup 0
-scoreboard players set #random_team_start uhc.data.setup 1
-scoreboard players set #random_team_tick uhc.data.setup -1
-scoreboard players set #anonyme_team uhc.data.setup 0
-scoreboard players set #team_size uhc.data.setup 4
-
-scoreboard players set #custom_arrow uhc.data.setup 0
-
-## Items additionels à la mort d'un joueur
-execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_starter set value [{count: 1, Slot: 0b, id: "minecraft:oak_boat"}]
-execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_starter set value [{count: 8, Slot: 1b, id: "minecraft:golden_carrot"}]
-execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_ironman set value [{count: 2, Slot: 0b, id: "minecraft:golden_apple"}]
-execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_additional set value [{count: 2, Slot: 0b, id: "minecraft:golden_apple"}]
-execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_notch_totem set value [{count: 4, Slot: 0b, id: "minecraft:gold_block"}]
-
-## Reload des fonctionnalités des modes de jeu
+## Configuration de la partie, réinitialisation des modes de jeu
+function uhc:pre_game/config/data_setup
 function aic:load
 function ass:load
 function bhc:load

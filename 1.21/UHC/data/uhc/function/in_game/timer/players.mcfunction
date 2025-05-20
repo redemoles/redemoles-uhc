@@ -17,22 +17,30 @@ execute if score @s uhc.players.disconnect matches 1.. run function uhc:in_game/
 
 ## Paramètres
 # Bouclier
-execute if score #shield uhc.data.setup matches 1..335 if items entity @s weapon.mainhand shield[max_damage=336] run function uhc:in_game/inventory/shield
-execute if score #shield uhc.data.setup matches 1..335 if items entity @s weapon.offhand shield[max_damage=336] run function uhc:in_game/inventory/shield
+execute if score #shield uhc.data.setup matches 1..335 run function uhc:in_game/inventory/equipments/shield_durability with storage uhc:settings shield
 execute if score #shield uhc.data.setup matches 0 run clear @s shield
 
+# Enchantements maximum
+execute if score #diamond_protection uhc.data.setup matches ..3 run function uhc:in_game/inventory/equipments/diamond_protection with storage uhc:settings enchantments.diamond_protection
+execute if score #diamond_sharpness uhc.data.setup matches ..4 run function uhc:in_game/inventory/equipments/diamond_sharpness with storage uhc:settings enchantments.diamond_sharpness
+execute if score #iron_protection uhc.data.setup matches ..3 run function uhc:in_game/inventory/equipments/iron_protection with storage uhc:settings enchantments.iron_protection
+execute if score #iron_sharpness uhc.data.setup matches ..4 run function uhc:in_game/inventory/equipments/iron_sharpness with storage uhc:settings enchantments.iron_sharpness
+execute if score #axes_sharpness uhc.data.setup matches ..4 run function uhc:in_game/inventory/equipments/axes_sharpness with storage uhc:settings enchantments.axes_sharpness
+execute if score #bow_power uhc.data.setup matches ..4 run function uhc:in_game/inventory/equipments/bow_power with storage uhc:settings enchantments.bow_power
+execute if score #depth_strider uhc.data.setup matches ..2 run function uhc:in_game/inventory/equipments/depth_strider with storage uhc:settings enchantments.depth_strider
+
 # Fire Aspect / Flame
-execute if score #fire_flame uhc.data.setup matches 0 unless score #aic uhc.gamemode matches 1 if items entity @s[tag=!uhc.fire_flame] weapon.mainhand *[enchantments~[{enchantments:"minecraft:fire_aspect"}]] run item modify entity @s weapon.mainhand {function:"minecraft:set_enchantments",enchantments:{"minecraft:fire_aspect":-255},add:true}
-execute if score #fire_flame uhc.data.setup matches 0 unless score #aic uhc.gamemode matches 1 if items entity @s[tag=!uhc.fire_flame] weapon.mainhand *[enchantments~[{enchantments:"minecraft:flame"}]] run item modify entity @s weapon.mainhand {function:"minecraft:set_enchantments",enchantments:{"minecraft:flame":-255},add:true}
-execute if score #fire_flame uhc.data.setup matches 0 unless score #aic uhc.gamemode matches 1 if items entity @s[tag=!uhc.fire_flame] weapon.offhand *[enchantments~[{enchantments:"minecraft:fire_aspect"}]] run item modify entity @s weapon.offhand {function:"minecraft:set_enchantments",enchantments:{"minecraft:fire_aspect":-255},add:true}
-execute if score #fire_flame uhc.data.setup matches 0 unless score #aic uhc.gamemode matches 1 if items entity @s[tag=!uhc.fire_flame] weapon.offhand *[enchantments~[{enchantments:"minecraft:flame"}]] run item modify entity @s weapon.offhand {function:"minecraft:set_enchantments",enchantments:{"minecraft:flame":-255},add:true}
+execute if score #fire_flame uhc.data.setup matches 0 unless score #aic uhc.gamemode matches 1 if items entity @s[tag=!uhc.fire_flame] weapon.mainhand *[minecraft:enchantments~[{"enchantments":"minecraft:fire_aspect"}]] run item modify entity @s weapon.mainhand {function:"minecraft:set_enchantments",enchantments:{"minecraft:fire_aspect":-255},add:true}
+execute if score #fire_flame uhc.data.setup matches 0 unless score #aic uhc.gamemode matches 1 if items entity @s[tag=!uhc.fire_flame] weapon.mainhand *[minecraft:enchantments~[{"enchantments":"minecraft:flame"}]] run item modify entity @s weapon.mainhand {function:"minecraft:set_enchantments",enchantments:{"minecraft:flame":-255},add:true}
+execute if score #fire_flame uhc.data.setup matches 0 unless score #aic uhc.gamemode matches 1 if items entity @s[tag=!uhc.fire_flame] weapon.offhand *[minecraft:enchantments~[{"enchantments":"minecraft:fire_aspect"}]] run item modify entity @s weapon.offhand {function:"minecraft:set_enchantments",enchantments:{"minecraft:fire_aspect":-255},add:true}
+execute if score #fire_flame uhc.data.setup matches 0 unless score #aic uhc.gamemode matches 1 if items entity @s[tag=!uhc.fire_flame] weapon.offhand *[minecraft:enchantments~[{"enchantments":"minecraft:flame"}]] run item modify entity @s weapon.offhand {function:"minecraft:set_enchantments",enchantments:{"minecraft:flame":-255},add:true}
 
 # PvP Version 1.8
 execute if score #version_pvp uhc.data.setup matches 1 run function uhc:in_game/players_settings/version_pvp/1_8
 execute if score #version_pvp uhc.data.setup matches 0 run function uhc:in_game/players_settings/version_pvp/1_21
 
 # Effets aux joueurs
-execute if score #pve uhc.data.setup matches ..0 run scoreboard players set @s[scores={uhc.effect.resistance=-1}] uhc.effect.resistance 0
+execute if score #pve uhc.data.temp matches ..0 run scoreboard players set @s[scores={uhc.effect.resistance=-1}] uhc.effect.resistance 0
 effect give @s[scores={uhc.effect.resistance=-1}] minecraft:resistance infinite 4 true
 execute unless score #annonce mls.players.team matches 1 run effect clear @s[scores={uhc.effect.resistance=0}] minecraft:resistance
 effect give @s[scores={uhc.effect.resistance=1}] minecraft:resistance infinite 0 true
@@ -41,7 +49,7 @@ effect give @s[scores={uhc.effect.resistance=3}] minecraft:resistance infinite 2
 execute unless score #nzl uhc.gamemode matches 1 run effect give @s[tag=uhc.player.night_vision] minecraft:night_vision infinite 0 true
 
 # Effets aux joueurs - Reset pour le prochain tick
-execute if score #pve uhc.data.setup matches ..0 run scoreboard players set @s uhc.effect.resistance 0
+execute if score #pve uhc.data.temp matches ..0 run scoreboard players set @s uhc.effect.resistance 0
 
 # Démarrage dans le ciel
 execute in minecraft:overworld positioned 0 160 0 as @s[tag=uhc.player.start_in_the_sky] if entity @s[predicate=uhc:on_ground,distance=25..] run function uhc:in_game/players_settings/start_in_the_sky/on_ground_with_elytra
@@ -65,7 +73,7 @@ execute if score #team_health uhc.scenario matches 1 unless score @s uhc.players
 execute if score #trade_uhc uhc.scenario matches 1 unless score #blood_cycle uhc.scenario matches 1 run function uhc:in_game/scenarios/trade_uhc/
 
 ## Border TP
-execute if score #shrink_1 uhc.data.setup matches ..0 as @s[tag=uhc.player] at @s unless dimension minecraft:the_nether run function uhc:in_game/tp/border/coords
+execute if score #shrink_1 uhc.data.temp matches ..0 as @s[tag=uhc.player] at @s unless dimension minecraft:the_nether run function uhc:in_game/tp/border/coords
 
 ## Joueur à respwan
 execute as @s[tag=uhc.revive] run function uhc:in_game/players_settings/spec/revive

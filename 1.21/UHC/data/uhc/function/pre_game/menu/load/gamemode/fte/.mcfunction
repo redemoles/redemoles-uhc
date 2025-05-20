@@ -30,8 +30,8 @@ function uhc:pre_game/menu/load/gamemode/
 execute if score #fte uhc.gamemode matches 0 run tellraw @a [{"text":"Fate","color":"#FFFFFF","bold":true},{"text":" UHC","color":"#E73F3F","bold":true},{"text":" désactivé","color":"#FF3F3F","bold":false}]
 execute if score #fte uhc.gamemode matches 1 run tellraw @a [{"text":"Fate","color":"#FFFFFF","bold":true},{"text":" UHC","color":"#E73F3F","bold":true},{"text":" activé","color":"#3FE7FF","bold":false}]
 
-execute if score #fte uhc.gamemode matches 0 run scoreboard players remove #ffa uhc.data.display 1
-execute if score #fte uhc.gamemode matches 1 run scoreboard players add #ffa uhc.data.display 1
+execute if score #fte uhc.gamemode matches 0 run scoreboard players remove #ffa uhc.data.setup 1
+execute if score #fte uhc.gamemode matches 1 run scoreboard players add #ffa uhc.data.setup 1
 
 ## Préparation Config pre-game
 scoreboard players set #pve uhc.data.setup 2
@@ -54,7 +54,7 @@ execute if score #fte uhc.gamemode matches 0 run data modify storage uhc:setting
 execute if score #fte uhc.gamemode matches 0 run data modify storage uhc:settings Item_starter set value [{count: 8, Slot: 1b, id: "minecraft:golden_carrot"}]
 
 ## Vies
-scoreboard players set #lives uhc.players.lives 1
-scoreboard players set #live_3 uhc.data.display 0
-scoreboard players set #live_2 uhc.data.display 0
-scoreboard players set #live_1 uhc.data.display 0
+scoreboard players set #lives uhc.data.setup 1
+scoreboard players set #live_3 uhc.data.setup 0
+scoreboard players set #live_2 uhc.data.setup 0
+scoreboard players set #live_1 uhc.data.setup 0

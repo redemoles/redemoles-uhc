@@ -8,7 +8,7 @@
 #
 
 # Nombre d'équipes en jeu
-scoreboard players operation #Teams bhc.data = #Teams uhc.data.setup
+scoreboard players operation #teams bhc.data = #teams uhc.data.temp.inv
 
 # Sélecteur de collections Mini-Bingos
 summon marker 1 0 1 {Tags:["Selector"]}
@@ -18,7 +18,6 @@ scoreboard players set @a[tag=uhc.player] bhc.stepa.score.inv 0
 scoreboard players set @a[tag=uhc.player] bhc.stepb.score.inv 0
 scoreboard players set @a[tag=uhc.player] bhc.kills.score.inv 0
 scoreboard players set @a[tag=uhc.player] bhc.death.score.inv 0
-scoreboard players operation @a[tag=uhc.player] uhc.players.lives = #lives uhc.players.lives
 execute as @e[type=marker,tag=UHC] run function bhc:start/team_config
 
 scoreboard players set #team uhc.id.teams 0

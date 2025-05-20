@@ -25,7 +25,7 @@ execute if score #permakill uhc.scenario matches 1 run time add 600s
 
 ## Récompenses au kill, changement paramètres du joueur mort
 function uhc:in_game/players_settings/death/reveal
-function uhc:in_game/inventory/drop
+function uhc:in_game/players_settings/death/inventory/location_set
 execute as @a[scores={uhc.players.kills.temp=1..}] run function uhc:in_game/players_settings/kill/ with storage uhc:settings reward_kill
 execute if score @s uhc.players.lives matches ..0 run function uhc:in_game/players_settings/death/definitive
 
@@ -39,8 +39,8 @@ scoreboard players set @s[scores={uhc.players.lives=1..}] uhc.players.death 0
 
 # Lieu de Respawn
 execute if score @s uhc.players.lives matches 1.. if score #respawn_2_enabled uhc.data.setup matches 0 in minecraft:overworld run function uhc:in_game/tp/spawn_start
-execute if score @s uhc.players.lives matches 1.. if score #respawn_2_enabled uhc.data.setup matches 1 if score #respawn_2_timer uhc.data.setup matches 1.. in minecraft:overworld run function uhc:in_game/tp/spawn_start
-execute if score @s uhc.players.lives matches 1.. if score #respawn_2_enabled uhc.data.setup matches 1 if score #respawn_2_timer uhc.data.setup matches ..0 in minecraft:overworld run function uhc:in_game/tp/spawn_end
+execute if score @s uhc.players.lives matches 1.. if score #respawn_2_enabled uhc.data.setup matches 1 if score #respawn_2_timer uhc.data.temp matches 1.. in minecraft:overworld run function uhc:in_game/tp/spawn_start
+execute if score @s uhc.players.lives matches 1.. if score #respawn_2_enabled uhc.data.setup matches 1 if score #respawn_2_timer uhc.data.temp matches ..0 in minecraft:overworld run function uhc:in_game/tp/spawn_end
 
 # Récupère les coordonnées du joueur mort
 data modify storage uhc:temp input.x set from entity @s LastDeathLocation.pos[0]

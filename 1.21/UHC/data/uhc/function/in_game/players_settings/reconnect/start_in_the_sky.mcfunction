@@ -7,7 +7,7 @@
 # @description		Vérifie si le joueur s'est déconnecté pendant la suppression de la plateforme en hauteur générée au démarrage de la partie
 #
 
-execute if score #Minutes uhc.data.display matches 0 if score #Secondes uhc.data.display matches ..14 run return fail
+execute if score #minutes uhc.data.temp matches 0 if score #seconds uhc.data.temp matches ..14 run return fail
 function uhc:in_game/players_settings/start_in_the_sky/on_ground_with_elytra
 function uhc:in_game/tp/spawn_end
 
