@@ -73,7 +73,7 @@ execute if score #team_health uhc.scenario matches 1 unless score @s uhc.players
 execute if score #trade_uhc uhc.scenario matches 1 unless score #blood_cycle uhc.scenario matches 1 run function uhc:in_game/scenarios/trade_uhc/
 
 ## Border TP
-execute if score #shrink_1 uhc.data.temp matches ..0 as @s[tag=uhc.player] at @s unless dimension minecraft:the_nether run function uhc:in_game/tp/border/coords
+execute if score #shrink_1 uhc.data.temp matches ..0 as @s[tag=uhc.player,predicate=!uhc:dimension/the_nether] at @s run function uhc:in_game/tp/border/coords
 
 ## Joueur à respwan
 execute as @s[tag=uhc.revive] run function uhc:in_game/players_settings/spec/revive

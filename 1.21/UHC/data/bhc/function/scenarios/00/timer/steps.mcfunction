@@ -8,13 +8,10 @@
 #
 
 ## Timer interne
+# Bingo Classique A
+execute if score #stepa_start bhc.data.temp matches 0 run function bhc:scenarios/00/bingo_stepa/start
+execute if score #stepa_end bhc.data.temp matches 0 run function bhc:scenarios/00/bingo_stepa/end
 
-# Bingo A
-scoreboard players add #start_stepa bhc.timer 1
-execute if score #start_stepa bhc.timer = #bingo_a_start bhc.timer run function bhc:scenarios/00/bingo_stepa/start
-execute if score #start_stepa bhc.timer = #bingo_a_end bhc.timer run function bhc:scenarios/00/bingo_stepa/end
-
-# Bingo B
-scoreboard players add #start_stepb bhc.timer 1
-execute if score #start_stepb bhc.timer = #bingo_b_start bhc.timer run function bhc:scenarios/00/bingo_stepb/start
-execute if score #start_stepb bhc.timer = #bingo_b_end bhc.timer run function bhc:scenarios/00/bingo_stepb/end
+# Bingo Classique B
+execute if score #stepb_start bhc.data.temp matches 0 run function bhc:scenarios/00/bingo_stepb/start
+execute if score #stepb_end bhc.data.temp matches 0 run function bhc:scenarios/00/bingo_stepb/end

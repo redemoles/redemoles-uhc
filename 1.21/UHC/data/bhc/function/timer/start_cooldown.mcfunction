@@ -7,12 +7,5 @@
 # @description		Configuration du timer 
 #
 
-scoreboard players add #force_stepa uhc.data.temp 0
-
+scoreboard players set #force_stepa uhc.data.temp 0
 function bhc:timer/minute
-
-# Retarde le bingo A sans faire 2x les functions de son démarrage
-scoreboard players add #bingo_a_end bhc.timer 1
-
-# Retarde le démarrage de bingo step B
-scoreboard players remove #start_stepb bhc.timer 1

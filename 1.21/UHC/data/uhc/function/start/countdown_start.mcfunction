@@ -23,14 +23,14 @@ execute if score #tick_start uhc.data.temp matches 4 run title @a[scores={uhc.pl
 execute if score #tick_start uhc.data.temp matches 4 run title @a[scores={uhc.players.lang=2}] subtitle [{"text":" Start in progress! ","color":"#FFFFFF","bold":false}]
 
 # Musique → auto-config de la partie → start
-execute if score #tick_start uhc.data.temp matches 4 run playsound minecraft:block.note_block.chime master @a ~ ~ ~ 100 1 1
+execute if score #tick_start uhc.data.temp matches 4 as @a at @s run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 100 1 1
 execute if score #tick_start uhc.data.temp matches 4 run function uhc:start/forceload
-execute if score #tick_start uhc.data.temp matches 81 run playsound minecraft:item.trident.riptide_3 master @a ~ ~ ~ 0.8 1 1
+execute if score #tick_start uhc.data.temp matches 81 as @a at @s run playsound minecraft:item.trident.riptide_3 master @s ~ ~ ~ 0.8 1 1
 execute if score #tick_start uhc.data.temp matches 80 run title @a clear
 execute if score #tick_start uhc.data.temp matches 80 run function uhc:start/setup_players
-execute if score #tick_start uhc.data.temp matches 100 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
-execute if score #tick_start uhc.data.temp matches 120 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
-execute if score #tick_start uhc.data.temp matches 140 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
+execute if score #tick_start uhc.data.temp matches 100 as @a at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ 0.5 1 0.5
+execute if score #tick_start uhc.data.temp matches 120 as @a at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ 0.5 1 0.5
+execute if score #tick_start uhc.data.temp matches 140 as @a at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ 0.5 1 0.5
 execute if score #tick_start uhc.data.temp matches 159 run function uhc:start/setup_uhc
 
 # TP sol si spawn [0;0]

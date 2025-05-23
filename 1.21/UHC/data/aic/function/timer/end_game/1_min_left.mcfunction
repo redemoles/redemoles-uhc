@@ -27,10 +27,10 @@ execute if score #seconds uhc.data.temp matches 57 run tellraw @a[scores={uhc.pl
 execute if score #seconds uhc.data.temp matches 58 run tellraw @a[scores={uhc.players.lang=2}] [{"text":"[","color":"#FFFFFF","bold":true},{"text":"All Items ","color":"#3FE7FF"},{"text":"Rush","color":"#FFE73F"},{"text":"]","color":"#FFFFFF"},{"text":" 2 seconds left!","color":"#FF3F3F","bold":true}]
 execute if score #seconds uhc.data.temp matches 59 run tellraw @a[scores={uhc.players.lang=2}] [{"text":"[","color":"#FFFFFF","bold":true},{"text":"All Items ","color":"#3FE7FF"},{"text":"Rush","color":"#FFE73F"},{"text":"]","color":"#FFFFFF"},{"text":" 1 second left!","color":"#FF3F3F","bold":true}]
 
-execute if score #seconds uhc.data.temp matches 0 run playsound minecraft:block.note_block.chime master @a ~ ~ ~ 100 1 1
-execute if score #seconds uhc.data.temp matches 50 run playsound minecraft:block.note_block.chime master @a ~ ~ ~ 100 1 1
-execute if score #seconds uhc.data.temp matches 55 run playsound minecraft:block.note_block.chime master @a ~ ~ ~ 100 1 1
-execute if score #seconds uhc.data.temp matches 56 run playsound minecraft:block.note_block.chime master @a ~ ~ ~ 100 1 1
-execute if score #seconds uhc.data.temp matches 57 run playsound minecraft:block.note_block.chime master @a ~ ~ ~ 100 1 1
-execute if score #seconds uhc.data.temp matches 58 run playsound minecraft:block.note_block.chime master @a ~ ~ ~ 100 1 1
-execute if score #seconds uhc.data.temp matches 59 run playsound minecraft:block.note_block.chime master @a ~ ~ ~ 100 1 1
+execute if score #seconds uhc.data.temp matches 0 as @a at @s run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 100 1 1
+execute if score #seconds uhc.data.temp matches 50 as @a at @s run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 100 1 1
+execute if score #seconds uhc.data.temp matches 55 as @a at @s run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 100 1 1
+execute if score #seconds uhc.data.temp matches 56 as @a at @s run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 100 1 1
+execute if score #seconds uhc.data.temp matches 57 as @a at @s run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 100 1 1
+execute if score #seconds uhc.data.temp matches 58 as @a at @s run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 100 1 1
+execute if score #seconds uhc.data.temp matches 59 as @a at @s run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 100 1 1

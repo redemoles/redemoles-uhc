@@ -87,4 +87,10 @@ function uhc:pre_game/config/timer
 execute if score #ffa uhc.data.setup matches 0 run function uhc:start/game_teams/
 execute if score #ffa uhc.data.setup matches 1.. run function uhc:start/game_ffa/
 
+execute if score #players uhc.data.temp matches ..1 run data modify storage uhc:temp hotbar.players set value ""
+execute if score #teams uhc.data.temp matches ..1 run data modify storage uhc:temp hotbar.teams set value ""
+
+execute if score #players uhc.data.temp matches 2.. run data modify storage uhc:temp hotbar.players set value "s"
+execute if score #teams uhc.data.temp matches 2.. run data modify storage uhc:temp hotbar.teams set value "s"
+
 execute in minecraft:overworld positioned 0 200 0 positioned over motion_blocking run tp @a[tag=uhc.spec] ~ ~16 ~

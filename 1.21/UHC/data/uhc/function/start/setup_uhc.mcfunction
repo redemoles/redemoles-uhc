@@ -7,7 +7,7 @@
 # @description		Dernières configurations et démarrage de la partie
 #
 
-scoreboard players set #start_delay uhc.data.setup 1
+scoreboard players set #start_delay uhc.data.setup 0
 
 ## Détection modes de jeu activés
 execute if score #bhc uhc.gamemode matches 1 run function bhc:start/
@@ -76,18 +76,12 @@ scoreboard players add #live_2 uhc.data.temp 1
 scoreboard players add #live_1 uhc.data.temp 1
 
 ## Border Alerte Sonore
-scoreboard players operation #shrink_1_timer_end uhc.data.temp = #shrink_1_timer_end uhc.data.setup
-scoreboard players operation #shrink_2_timer_end uhc.data.temp = #shrink_2_timer_end uhc.data.setup
-scoreboard players operation #shrink_3_timer_end uhc.data.temp = #shrink_3_timer_end uhc.data.setup
-scoreboard players operation #shrink_1_timer_end uhc.data.temp += #shrink_1_length uhc.data.setup
-scoreboard players operation #shrink_2_timer_end uhc.data.temp += #shrink_2_length uhc.data.setup
-scoreboard players operation #shrink_3_timer_end uhc.data.temp += #shrink_3_length uhc.data.setup
-scoreboard players operation #shrink_1_timer_end uhc.data.temp /= #60 uhc.data.numbers
-scoreboard players operation #shrink_2_timer_end uhc.data.temp /= #60 uhc.data.numbers
-scoreboard players operation #shrink_3_timer_end uhc.data.temp /= #60 uhc.data.numbers
-scoreboard players operation #shrink_1_timer_end uhc.data.temp += #shrink_1 uhc.data.temp
-scoreboard players operation #shrink_2_timer_end uhc.data.temp += #shrink_2 uhc.data.temp
-scoreboard players operation #shrink_3_timer_end uhc.data.temp += #shrink_3 uhc.data.temp
+scoreboard players operation #shrink_1_timer_end uhc.data.temp = #shrink_1_length uhc.data.setup
+scoreboard players operation #shrink_2_timer_end uhc.data.temp = #shrink_2_length uhc.data.setup
+scoreboard players operation #shrink_3_timer_end uhc.data.temp = #shrink_3_length uhc.data.setup
+scoreboard players operation #shrink_1_timer_end uhc.data.temp += #shrink_1 uhc.data.setup
+scoreboard players operation #shrink_2_timer_end uhc.data.temp += #shrink_2 uhc.data.setup
+scoreboard players operation #shrink_3_timer_end uhc.data.temp += #shrink_3 uhc.data.setup
 
 ## Nombre de vies
 scoreboard players operation #lives_start uhc.players.lives = #lives uhc.players.lives
@@ -98,7 +92,7 @@ execute store result storage uhc:settings reward_kill.health int 1 run scoreboar
 
 ## Start direct ou Start 30 secondes après le tp
 scoreboard players set #seconds uhc.data.temp 59
-execute if score #start_delay uhc.data.setup matches 0 run scoreboard players set #seconds uhc.data.temp 29
+execute if score #start_delay uhc.data.setup matches 1 run scoreboard players set #seconds uhc.data.temp 29
 
 ## Collision entre joueurs
 execute unless score #start_in_sky uhc.data.setup matches 1 run function uhc:in_game/players_settings/collision/always

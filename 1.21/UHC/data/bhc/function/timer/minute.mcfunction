@@ -7,6 +7,12 @@
 # @description		Fonction par minute
 #
 
+scoreboard players remove #stepa_start bhc.data.temp 1
+scoreboard players remove #stepa_end bhc.data.temp 1
+scoreboard players remove #stepb_start bhc.data.temp 1
+scoreboard players remove #stepb_exhaustion bhc.data.temp 1
+scoreboard players remove #stepb_end bhc.data.temp 1
+
 execute if score #bhc bhc.scenario matches 0 run function bhc:scenarios/00/timer/steps
 execute if score #bhc bhc.scenario matches 1 run function bhc:scenarios/01/timer/steps
 execute if score #bhc bhc.scenario matches 2 run function bhc:scenarios/02/timer/steps

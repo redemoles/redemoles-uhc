@@ -48,10 +48,8 @@ scoreboard players set #shrink_2_size_end uhc.data.setup 64
 scoreboard players set #shrink_3_size_end uhc.data.setup 16
 
 ## Configuration du starter give
-execute if score #fte uhc.gamemode matches 1 run function fte:start/give
-execute if score #fte uhc.gamemode matches 0 run data modify storage uhc:settings Item_starter set value [{}]
-execute if score #fte uhc.gamemode matches 0 run data modify storage uhc:settings Item_starter set value [{count: 1, Slot: 0b, id: "minecraft:oak_boat"}]
-execute if score #fte uhc.gamemode matches 0 run data modify storage uhc:settings Item_starter set value [{count: 8, Slot: 1b, id: "minecraft:golden_carrot"}]
+execute if score #fte uhc.gamemode matches 1 run data modify storage uhc:settings Item_starter set value [{count: 1, Slot: 0b, id: "minecraft:iron_pickaxe", components:{"minecraft:enchantments": {"minecraft:efficiency":2}, "minecraft:unbreakable": {}}},{count: 1, Slot: 1b, id: "minecraft:iron_axe", components:{"minecraft:enchantments": {"minecraft:efficiency":2}, "minecraft:unbreakable": {}}},{count: 1, Slot: 2b, id: "minecraft:iron_shovel", components:{"minecraft:enchantments": {"minecraft:efficiency":2}, "minecraft:unbreakable": {}}},{count: 64, Slot: 3b, id: "minecraft:golden_carrot"},{count: 1, Slot: 4b, id: "minecraft:water_bucket"},{count: 1, Slot: 5b, id: "minecraft:book"}]
+execute if score #fte uhc.gamemode matches 0 run data modify storage uhc:settings Item_starter set value [{count: 1, Slot: 0b, id: "minecraft:oak_boat"},{count: 8, Slot: 1b, id: "minecraft:golden_carrot"}]
 
 ## Vies
 scoreboard players set #lives uhc.data.setup 1

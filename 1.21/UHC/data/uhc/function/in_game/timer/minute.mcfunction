@@ -9,7 +9,6 @@
 
 ## Minuteur
 scoreboard players remove #seconds uhc.data.temp 60
-scoreboard players add #sec_cooldown uhc.data.temp 60
 scoreboard players add #minutes uhc.data.temp 1
 
 ## Minuteur interne
@@ -19,9 +18,9 @@ scoreboard players remove #respawn_2_timer uhc.data.temp 1
 scoreboard players remove #shrink_1 uhc.data.temp 1
 scoreboard players remove #shrink_2 uhc.data.temp 1
 scoreboard players remove #shrink_3 uhc.data.temp 1
-scoreboard players remove #shrink_1_timer_end uhc.data.setup 1
-scoreboard players remove #shrink_2_timer_end uhc.data.setup 1
-scoreboard players remove #shrink_3_timer_end uhc.data.setup 1
+scoreboard players remove #shrink_1_timer_end uhc.data.temp 1
+scoreboard players remove #shrink_2_timer_end uhc.data.temp 1
+scoreboard players remove #shrink_3_timer_end uhc.data.temp 1
 scoreboard players remove #live_3 uhc.data.temp 1
 scoreboard players remove #live_2 uhc.data.temp 1
 scoreboard players remove #live_1 uhc.data.temp 1
@@ -64,7 +63,7 @@ execute if score #shrink_1 uhc.data.temp matches 0 run scoreboard players add #s
 execute if score #shrink_2 uhc.data.temp matches 0 run scoreboard players add #shrink_2_size_end uhc.data.temp 1
 execute if score #shrink_3 uhc.data.temp matches 0 run scoreboard players add #shrink_3_size_end uhc.data.temp 1
 
-function uhc:in_game/timer/cooldown with storage uhc:settings
+function uhc:in_game/timer/hotbar/cooldown/text_tellraw with storage uhc:settings
 
 ## Minuteur de modes de jeu
 execute if score #bhc uhc.gamemode matches 1 run function bhc:timer/minute

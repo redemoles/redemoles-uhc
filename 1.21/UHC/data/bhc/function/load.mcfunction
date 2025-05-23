@@ -79,7 +79,8 @@ scoreboard objectives remove bhc.ironman.score
 scoreboard objectives remove bhc.ironman.score.inv
 scoreboard objectives remove bhc.ironman.timer
 scoreboard objectives remove bhc.ironman.timer.inv
-scoreboard objectives remove bhc.timer
+scoreboard objectives remove bhc.data.setup
+scoreboard objectives remove bhc.data.temp
 scoreboard objectives remove bhc.teams.livescount
 
 scoreboard objectives add bhc.stepa.score.personal dummy [{"text":"Bingo C. ","color":"#FFFFFF"},{"text":">","color":"#00C3DF","bold":true},{"text":" Individuel","color":"#FFFFFF"}]
@@ -150,7 +151,8 @@ scoreboard objectives add bhc.ironman.score dummy
 scoreboard objectives add bhc.ironman.score.inv dummy
 scoreboard objectives add bhc.ironman.timer dummy [{"text":"Ironman ","color":"#FFFFFF"},{"text":">","color":"#00C3DF","bold":true},{"text":" Minutes","color":"#FFFFFF"}]
 scoreboard objectives add bhc.ironman.timer.inv dummy
-scoreboard objectives add bhc.timer dummy
+scoreboard objectives add bhc.data.setup dummy
+scoreboard objectives add bhc.data.temp dummy
 scoreboard objectives add bhc.teams.livescount dummy
 
 # Roll Bingo 01-04

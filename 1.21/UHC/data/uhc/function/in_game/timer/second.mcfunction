@@ -8,12 +8,17 @@
 #
 
 scoreboard players set #tick uhc.data.temp 0
-execute if entity @p[tag=test] run scoreboard players set #tick uhc.data.temp 19
 scoreboard players add #seconds uhc.data.temp 1
 scoreboard players set #sec_cooldown uhc.data.temp 60
 scoreboard players operation #sec_cooldown uhc.data.temp -= #seconds uhc.data.temp
 execute if score #seconds uhc.data.temp matches 60 run function uhc:in_game/timer/minute
 execute if score #end uhc.game.end matches 1.. run scoreboard players add #seconds uhc.game.end 1
+
+execute if score #seconds uhc.data.temp matches 00 run data modify storage uhc:temp hotbar.seconds set value "0"
+execute if score #seconds uhc.data.temp matches 10 run data modify storage uhc:temp hotbar.seconds set value ""
+
+execute if score #sec_cooldown uhc.data.temp matches 00..09 run data modify storage uhc:temp hotbar.sec_cooldown set value "0"
+execute if score #sec_cooldown uhc.data.temp matches 10..59 run data modify storage uhc:temp hotbar.sec_cooldown set value ""
 
 ## Compteur avant kill items
 scoreboard players add @e[type=item] uhc.timer.entities 1
@@ -43,18 +48,6 @@ execute if score #minutes uhc.data.temp matches 0.. if score #nzl uhc.gamemode m
 execute if score #minutes uhc.data.temp matches 0.. if score #bhc uhc.gamemode matches 1 run function bhc:timer/second
 
 ## Alertes sonores
-execute if score #pve uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 59 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
-execute if score #pvp uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 59 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
-execute if score #shrink_1 uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 59 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
-execute if score #shrink_2 uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 59 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
-execute if score #shrink_3 uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 59 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
-
-execute if score #pve uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 5 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
-execute if score #pvp uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 5 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
-execute if score #shrink_1 uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 5 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
-execute if score #shrink_2 uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 5 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
-execute if score #shrink_3 uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 5 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1 0.5
-
 # Border en cours de réduction
 scoreboard players operation #border_alert_1 uhc.data.setup = #border_size uhc.data.temp
 scoreboard players operation #border_alert_2 uhc.data.setup = #border_size uhc.data.temp
@@ -63,36 +56,42 @@ scoreboard players remove #border_alert_1 uhc.data.setup 36
 scoreboard players remove #border_alert_2 uhc.data.setup 24
 scoreboard players remove #border_alert_3 uhc.data.setup 8
 
-execute if score #shrink_1 uhc.data.temp matches ..0 unless score #shrink_1_timer_end uhc.data.setup matches ..0 as @a[tag=uhc.player] at @s run function uhc:in_game/timer/border/alert
-execute if score #shrink_2 uhc.data.temp matches ..0 unless score #shrink_2_timer_end uhc.data.setup matches ..0 as @a[tag=uhc.player] at @s run function uhc:in_game/timer/border/alert
-execute if score #shrink_3 uhc.data.temp matches ..0 unless score #shrink_3_timer_end uhc.data.setup matches ..0 as @a[tag=uhc.player] at @s run function uhc:in_game/timer/border/alert
+execute if score #shrink_1 uhc.data.temp matches ..0 unless score #shrink_1_timer_end uhc.data.temp matches ..0 as @a[tag=uhc.player] at @s run function uhc:in_game/timer/border/alert
+execute if score #shrink_2 uhc.data.temp matches ..0 unless score #shrink_2_timer_end uhc.data.temp matches ..0 as @a[tag=uhc.player] at @s run function uhc:in_game/timer/border/alert
+execute if score #shrink_3 uhc.data.temp matches ..0 unless score #shrink_3_timer_end uhc.data.temp matches ..0 as @a[tag=uhc.player] at @s run function uhc:in_game/timer/border/alert
 
 ## Alertes Hotbar
 execute if score #hotbar_cooldown uhc.data.temp matches 0.. run scoreboard players remove #hotbar_cooldown uhc.data.temp 1
 
-execute if score #start_delay uhc.data.setup matches 0 if score #sec_cooldown uhc.data.temp matches 30 run scoreboard players set #hotbar_cooldown uhc.data.temp 32
+execute if score #start_delay uhc.data.setup matches 1 if score #sec_cooldown uhc.data.temp matches 30 run scoreboard players set #hotbar_cooldown uhc.data.temp 32
 
-execute if score #pve uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 59 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
-execute if score #pve uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 29 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
-execute if score #pve uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 5 run scoreboard players set #hotbar_cooldown uhc.data.temp 8
+execute if score #pve uhc.data.temp matches 5 if score #sec_cooldown uhc.data.temp matches 0 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
+execute if score #pve uhc.data.temp matches 2 if score #sec_cooldown uhc.data.temp matches 0 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
+execute if score #pve uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 0 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
+execute if score #pve uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 30 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
+execute if score #pve uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 10 run scoreboard players set #hotbar_cooldown uhc.data.temp 13
 
-execute unless score #bhc bhc.scenario matches 99 if score #pvp uhc.data.temp matches 5 if score #sec_cooldown uhc.data.temp matches 59 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
-execute if score #pvp uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 59 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
-execute if score #pvp uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 29 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
-execute if score #pvp uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 5 run scoreboard players set #hotbar_cooldown uhc.data.temp 8
+execute unless score #bhc bhc.scenario matches 99 if score #pvp uhc.data.temp matches 5 if score #sec_cooldown uhc.data.temp matches 0 run scoreboard players set #hotbar_cooldown uhc.data.temp 5
+execute if score #pvp uhc.data.temp matches 2 if score #sec_cooldown uhc.data.temp matches 0 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
+execute if score #pvp uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 0 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
+execute if score #pvp uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 30 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
+execute if score #pvp uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 10 run scoreboard players set #hotbar_cooldown uhc.data.temp 13
 
-execute if score #shrink_1 uhc.data.temp matches 5 if score #sec_cooldown uhc.data.temp matches 59 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
-execute if score #shrink_1 uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 59 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
-execute if score #shrink_1 uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 29 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
-execute unless score #bhc bhc.scenario matches 99 if score #shrink_1 uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 5 run scoreboard players set #hotbar_cooldown uhc.data.temp 8
+execute if score #shrink_1 uhc.data.temp matches 5 if score #sec_cooldown uhc.data.temp matches 0 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
+execute if score #shrink_1 uhc.data.temp matches 2 if score #sec_cooldown uhc.data.temp matches 0 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
+execute if score #shrink_1 uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 0 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
+execute if score #shrink_1 uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 30 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
+execute unless score #bhc bhc.scenario matches 99 if score #shrink_1 uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 10 run scoreboard players set #hotbar_cooldown uhc.data.temp 13
 execute if score #bhc bhc.scenario matches 99 if score #shrink_1 uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 10 run scoreboard players set #hotbar_cooldown uhc.data.temp 13
 
-execute if score #shrink_2 uhc.data.temp matches 5 if score #sec_cooldown uhc.data.temp matches 59 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
-execute if score #shrink_2 uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 59 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
-execute if score #shrink_2 uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 29 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
-execute if score #shrink_2 uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 5 run scoreboard players set #hotbar_cooldown uhc.data.temp 8
+execute if score #shrink_2 uhc.data.temp matches 5 if score #sec_cooldown uhc.data.temp matches 0 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
+execute if score #shrink_2 uhc.data.temp matches 2 if score #sec_cooldown uhc.data.temp matches 0 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
+execute if score #shrink_2 uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 0 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
+execute if score #shrink_2 uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 30 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
+execute if score #shrink_2 uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 10 run scoreboard players set #hotbar_cooldown uhc.data.temp 13
 
-execute if score #shrink_3 uhc.data.temp matches 5 if score #sec_cooldown uhc.data.temp matches 59 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
-execute if score #shrink_3 uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 59 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
+execute if score #shrink_3 uhc.data.temp matches 5 if score #sec_cooldown uhc.data.temp matches 0 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
+execute if score #shrink_3 uhc.data.temp matches 2 if score #sec_cooldown uhc.data.temp matches 0 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
+execute if score #shrink_3 uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 0 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
 execute if score #shrink_3 uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 30 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
-execute if score #shrink_3 uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 5 run scoreboard players set #hotbar_cooldown uhc.data.temp 8
+execute if score #shrink_3 uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 10 run scoreboard players set #hotbar_cooldown uhc.data.temp 13

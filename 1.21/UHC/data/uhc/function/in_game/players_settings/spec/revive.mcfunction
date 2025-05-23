@@ -7,7 +7,7 @@
 # @description		Resurrection d'un spectateur
 #
 
-scoreboard players set @s uhc.id.teams 0
+scoreboard players set @s[scores={uhc.id.teams=99}] uhc.id.teams 0
 scoreboard players set @s uhc.players.lives 1
 scoreboard players set @s uhc.players.death 0
 
@@ -16,6 +16,11 @@ tag @s add uhc.player
 tag @s remove uhc.revive
 tag @s remove uhc.player.dead
 tag @s remove uhc.scenario.sound_paranoia.on
+
+scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
+scoreboard players add #players uhc.data.temp 1
+scoreboard players add #players uhc.data.temp.inv 1
+execute as @e[type=marker,predicate=uhc:id_teams] run function uhc:in_game/players_settings/spec/revive_team
 
 gamemode survival @s
 effect clear @s

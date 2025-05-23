@@ -10,21 +10,21 @@
 ## BHC → Préparation Config pre-game
 
 # Étape A : Bingo Classique
-scoreboard players set #bingo_a_start bhc.timer 0
-scoreboard players set #bingo_a_end bhc.timer 30
-scoreboard players operation #bingo_a_end bhc.timer += #bingo_a_start bhc.timer
+scoreboard players set #stepa_start bhc.data.setup -1
+scoreboard players set #stepa_end bhc.data.setup 30
+scoreboard players operation #stepa_end bhc.data.setup += #stepa_start bhc.data.setup
 
 # Étape B : Ruée vers l'or
-scoreboard players set #bingo_b_start bhc.timer 40
-scoreboard players set #bingo_b_exhaustion bhc.timer 5
-scoreboard players set #bingo_b_end bhc.timer 20
-scoreboard players operation #bingo_b_exhaustion bhc.timer += #bingo_b_start bhc.timer
-scoreboard players operation #bingo_b_end bhc.timer += #bingo_b_start bhc.timer
+scoreboard players set #stepb_start bhc.data.setup 40
+scoreboard players set #stepb_exhaustion bhc.data.setup 5
+scoreboard players set #stepb_end bhc.data.setup 20
+scoreboard players operation #stepb_exhaustion bhc.data.setup += #stepb_start bhc.data.setup
+scoreboard players operation #stepb_end bhc.data.setup += #stepb_start bhc.data.setup
 
 # Start
  # 0 : Démarrage 30 secondes après tp
  # 1 : Démarrage immédiat
-scoreboard players set #start_delay uhc.data.setup 0
+scoreboard players set #start_delay uhc.data.setup 1
 
 ## Configuration des messages de mort
 # 0 : Message par défaut

@@ -8,6 +8,7 @@
 #
 
 # +1 tick
+execute unless score #tick_start uhc.data.temp matches 0..200 if entity @p[tag=test] run scoreboard players set #tick uhc.data.temp 19
 execute unless score #pause uhc.data.setup matches 1 run scoreboard players add #tick uhc.data.temp 1
 execute if score #minutes uhc.data.temp matches -1 run scoreboard players add #tick_start uhc.data.temp 1
 execute if score #tick uhc.data.temp matches 20 run function uhc:in_game/timer/second
@@ -19,7 +20,7 @@ scoreboard players set @a uhc.players.tp 0
 
 ## Start
 execute if score #tick_start uhc.data.temp matches 0..200 run function uhc:start/countdown_start
-execute if score #start_delay uhc.data.setup matches 1 run function uhc:start/countdown_end
+execute if score #start_delay uhc.data.setup matches 0 run function uhc:start/countdown_end
 execute if score #tick_start uhc.data.temp matches 0..200 run return fail
 
 ## Hotbar
@@ -34,16 +35,16 @@ execute if score #target_allies uhc.data.setup matches 1 unless score #tick uhc.
 execute as @a[predicate=uhc:target/tracker] run tag @s add uhc.target.targeter_done
 
 # Texte informations de base
-execute if score #hotbar_cooldown uhc.data.temp matches 1.. run function uhc:in_game/timer/hotbar/cooldown
-execute unless score #hotbar_cooldown uhc.data.temp matches 1.. if score #vanilla uhc.gamemode matches 1 if score #tick uhc.data.temp matches 0.. run function uhc:in_game/timer/hotbar/
-execute unless score #hotbar_cooldown uhc.data.temp matches 1.. if score #bhc uhc.gamemode matches 1 if score #tick uhc.data.temp matches 0.. run function bhc:timer/hotbar/
-execute unless score #hotbar_cooldown uhc.data.temp matches 1.. if score #dru uhc.gamemode matches 1 if score #tick uhc.data.temp matches 0.. run function uhc:in_game/timer/hotbar/
-execute unless score #hotbar_cooldown uhc.data.temp matches 1.. if score #fte uhc.gamemode matches 1 if score #tick uhc.data.temp matches 0.. run function fte:timer/hotbar/
-execute unless score #hotbar_cooldown uhc.data.temp matches 1.. if score #mls uhc.gamemode matches 1 if score #tick uhc.data.temp matches 0.. run function mls:timer/hotbar
-execute unless score #hotbar_cooldown uhc.data.temp matches 1.. if score #nzl uhc.gamemode matches 1 if score #tick uhc.data.temp matches 0.. run function nzl:timer/hotbar/
-execute unless score #hotbar_cooldown uhc.data.temp matches 1.. if score #prv uhc.gamemode matches 1 if score #tick uhc.data.temp matches 0.. run function prv:timer/hotbar/
-execute unless score #hotbar_cooldown uhc.data.temp matches 1.. if score #uau uhc.gamemode matches 1 if score #tick uhc.data.temp matches 0.. run function uau:timer/hotbar/
-execute unless score #hotbar_cooldown uhc.data.temp matches 1.. if score #aic uhc.gamemode matches 3 if score #tick uhc.data.temp matches 0.. run function aic:timer/hotbar
+execute if score #hotbar_cooldown uhc.data.temp matches 1.. if score #tick uhc.data.temp matches 0 run function uhc:in_game/timer/hotbar/cooldown/ with storage uhc:temp hotbar
+execute unless score #hotbar_cooldown uhc.data.temp matches 1.. if score #vanilla uhc.gamemode matches 1 if score #tick uhc.data.temp matches 0.. run function uhc:in_game/timer/hotbar/ with storage uhc:temp hotbar
+execute unless score #hotbar_cooldown uhc.data.temp matches 1.. if score #bhc uhc.gamemode matches 1 if score #tick uhc.data.temp matches 0.. run function bhc:timer/hotbar/ with storage uhc:temp hotbar
+execute unless score #hotbar_cooldown uhc.data.temp matches 1.. if score #dru uhc.gamemode matches 1 if score #tick uhc.data.temp matches 0.. run function uhc:in_game/timer/hotbar/ with storage uhc:temp hotbar
+execute unless score #hotbar_cooldown uhc.data.temp matches 1.. if score #fte uhc.gamemode matches 1 if score #tick uhc.data.temp matches 0.. run function fte:timer/hotbar/ with storage uhc:temp hotbar
+execute unless score #hotbar_cooldown uhc.data.temp matches 1.. if score #mls uhc.gamemode matches 1 if score #tick uhc.data.temp matches 0.. run function mls:timer/hotbar with storage uhc:temp hotbar
+execute unless score #hotbar_cooldown uhc.data.temp matches 1.. if score #nzl uhc.gamemode matches 1 if score #tick uhc.data.temp matches 0.. run function nzl:timer/hotbar/ with storage uhc:temp hotbar
+execute unless score #hotbar_cooldown uhc.data.temp matches 1.. if score #prv uhc.gamemode matches 1 if score #tick uhc.data.temp matches 0.. run function prv:timer/hotbar/ with storage uhc:temp hotbar
+execute unless score #hotbar_cooldown uhc.data.temp matches 1.. if score #uau uhc.gamemode matches 1 if score #tick uhc.data.temp matches 0.. run function uau:timer/hotbar/ with storage uhc:temp hotbar
+execute unless score #hotbar_cooldown uhc.data.temp matches 1.. if score #aic uhc.gamemode matches 3 if score #tick uhc.data.temp matches 0.. run function aic:timer/hotbar with storage uhc:temp hotbar
 tag @a[tag=uhc.target.targeter_done] remove uhc.target.targeter_done
 
 ## Modifications de données d'entités

@@ -40,7 +40,6 @@ scoreboard players set #shrink_2_size_end uhc.data.setup 64
 scoreboard players set #shrink_3_size_end uhc.data.setup 16
 
 ## Configuration du starter give
-execute if score #bhc uhc.gamemode matches 1 run data modify storage uhc:settings Item_starter set value [{}]
 execute if score #bhc uhc.gamemode matches 1 run data modify storage uhc:settings Item_starter set value [{count: 1, Slot: 0b, id: "minecraft:oak_boat"}]
 
 ## Vies
@@ -48,3 +47,5 @@ scoreboard players set #lives uhc.data.setup 3
 scoreboard players set #live_3 uhc.data.setup 0
 scoreboard players set #live_2 uhc.data.setup 60
 scoreboard players set #live_1 uhc.data.setup 105
+
+scoreboard players set #respawn_2_timer uhc.data.setup 60

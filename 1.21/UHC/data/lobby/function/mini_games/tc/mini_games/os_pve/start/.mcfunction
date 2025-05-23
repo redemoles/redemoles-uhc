@@ -4,7 +4,7 @@
 # @within			lobby:mini_games/tc/timer/start/
 # @executed			default context
 #
-# @description		Démarrage du mini-jeu One Shot PvE
+# @description		Démarrage du mini-jeu Parkour One Shot
 #
 
 # Timer pre-start
@@ -13,10 +13,10 @@ execute if score #timer_start_tick lobby.tc.data matches 300 run scoreboard play
 
 
 
-execute if score #timer_start_tick lobby.tc.data matches 120 as @a[tag=mgs.tc.player] run title @s title [{"text":"One Shot PvE","color":"#FFE73F"}]
+execute if score #timer_start_tick lobby.tc.data matches 120 as @a[tag=mgs.tc.player] run title @s title [{"text":"Parkour One Shot","color":"#FFE73F"}]
 execute if score #timer_start_tick lobby.tc.data matches 120 as @a[tag=mgs.tc.player] run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 0.5 2 0.5
 
-execute if score #timer_start_tick lobby.tc.data matches 90 as @a[tag=mgs.tc.player] run title @s title [{"text":"One Shot PvE","color":"#FFE73F"}]
+execute if score #timer_start_tick lobby.tc.data matches 90 as @a[tag=mgs.tc.player] run title @s title [{"text":"Parkour One Shot","color":"#FFE73F"}]
 execute if score #timer_start_tick lobby.tc.data matches 90 as @a[tag=mgs.tc.player,scores={uhc.players.lang=1}] run title @s subtitle [{"text":"Temps limite : 2:40.000","color":"#FFFFFF"}]
 execute if score #timer_start_tick lobby.tc.data matches 90 as @a[tag=mgs.tc.player,scores={uhc.players.lang=2}] run title @s subtitle [{"text":"Time limit : 2:40.000","color":"#FFFFFF"}]
 execute if score #timer_start_tick lobby.tc.data matches 90 as @a[tag=mgs.tc.player] run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 0.5 2 0.5
