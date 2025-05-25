@@ -1,5 +1,5 @@
 
-#> bhc:scenarios/01/bingo_stepb/team_reward/column
+#> bhc:scenarios/01/bingo_stepb/player_reward/column
 #
 # @within			bhc:scenarios/01/advancements/stepb
 #

@@ -9,7 +9,7 @@
 
 execute if score #minutes uhc.data.temp matches 0 if score #seconds uhc.data.temp matches ..14 run return fail
 function uhc:in_game/players_settings/start_in_the_sky/on_ground_with_elytra
-function uhc:in_game/tp/spawn_end
+function uhc:in_game/tp/spawn/text
 
 execute as @s[scores={uhc.players.lang=1}] run tellraw @s [{"text":"Tu t'es déconnecté en étant sur la plateforme de démarrage, tu as été téléporté à la surface de la carte"}]
 execute as @s[scores={uhc.players.lang=2}] run tellraw @s [{"text":"You disconnected while on the start platform and were teleported on the surface of the map."}]

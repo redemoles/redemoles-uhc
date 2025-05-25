@@ -1,0 +1,14 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "type": "minecraft:player",
+      "effects": {
+        "minecraft:speed": {
+          "amplifier": {
+            "min": 3
+          }
+        }
+      }
+    }
+  }

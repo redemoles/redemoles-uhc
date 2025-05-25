@@ -3,7 +3,7 @@
 ## AMONG US THEME
 
 execute if score #tick_start uhc.data.temp matches 4 if score #vanilla uhc.gamemode matches 1 run title @a title [{"text":"UHC","color":"#3FE7FF","bold":false}]
-execute if score #tick_start uhc.data.temp matches 4 if score #bhc uhc.gamemode matches 1 run title @a title [{"text":"","color":"#9F3FFF","bold":false},{"text":"UHC","color":"#FFE73F","bold":false}]
+execute if score #tick_start uhc.data.temp matches 4 if score #bhc uhc.gamemode matches 1 run title @a title [{"text":"","color":"#B73FFF","bold":false},{"text":"UHC","color":"#FFE73F","bold":false}]
 execute if score #tick_start uhc.data.temp matches 4 run title @a subtitle [{"text":" Démarrage en cours ! ","color":"#FFFFFF","bold":false}]
 execute if score #tick_start uhc.data.temp matches 4as @a at @s run playsound minecraft:block.note_block.bass @s ~ ~ ~ 100 0.707 1
 execute if score #tick_start uhc.data.temp matches 4as @a at @s run playsound minecraft:block.note_block.harp @s ~ ~ ~ 100 0.707 1
@@ -23,7 +23,7 @@ execute if score #tick_start uhc.data.temp matches 159 run function uhc:start/se
 ## WII THEME
 
 execute if score #tick_start uhc.data.temp matches 4 if score #vanilla uhc.gamemode matches 1 run title @a title [{"text":"UHC","color":"#3FE7FF","bold":false}]
-execute if score #tick_start uhc.data.temp matches 4 if score #bhc uhc.gamemode matches 1 run title @a title [{"text":"","color":"#9F3FFF","bold":false},{"text":"UHC","color":"#FFE73F","bold":false}]
+execute if score #tick_start uhc.data.temp matches 4 if score #bhc uhc.gamemode matches 1 run title @a title [{"text":"","color":"#B73FFF","bold":false},{"text":"UHC","color":"#FFE73F","bold":false}]
 execute if score #tick_start uhc.data.temp matches 4 run title @a subtitle [{"text":" Démarrage en cours ! ","color":"#FFFFFF","bold":false}]
 execute if score #tick_start uhc.data.temp matches 4as @a at @s run playsound minecraft:block.note_block.harp @s ~ ~ ~ 100 0.667 1
 execute if score #tick_start uhc.data.temp matches 4as @a at @s run playsound minecraft:block.note_block.harp @s ~ ~ ~ 100 0.794 1
@@ -51,7 +51,7 @@ execute if score #tick_start uhc.data.temp matches 159 run function uhc:start/se
 ## CHAPTER INTRO
 
 execute if score #tick_start uhc.data.temp matches 4 if score #vanilla uhc.gamemode matches 1 run title @a title [{"text":"UHC","color":"#3FE7FF","bold":false}]
-execute if score #tick_start uhc.data.temp matches 4 if score #bhc uhc.gamemode matches 1 run title @a title [{"text":"","color":"#9F3FFF","bold":false},{"text":"UHC","color":"#FFE73F","bold":false}]
+execute if score #tick_start uhc.data.temp matches 4 if score #bhc uhc.gamemode matches 1 run title @a title [{"text":"","color":"#B73FFF","bold":false},{"text":"UHC","color":"#FFE73F","bold":false}]
 execute if score #tick_start uhc.data.temp matches 4 run title @a subtitle [{"text":" Démarrage en cours ! ","color":"#FFFFFF","bold":false}]
 execute if score #tick_start uhc.data.temp matches 4as @a at @s run playsound minecraft:ambient.basalt_deltas.loop @s ~ ~ ~ 0.8 1 1
 execute if score #tick_start uhc.data.temp matches 4as @a at @s run playsound minecraft:block.note_block.harp @s ~ ~ ~ 100 0.707 1
@@ -91,7 +91,7 @@ playsound minecraft:ambient.underwater.loop.additions.ultra_rare @s ~ ~ ~ 100 1 
 ## NO THEME
 
 execute if score #tick_start uhc.data.temp matches 4 if score #vanilla uhc.gamemode matches 1 run title @a title [{"text":"UHC","color":"#3FE7FF","bold":false}]
-execute if score #tick_start uhc.data.temp matches 4 if score #bhc uhc.gamemode matches 1 run title @a title [{"text":"","color":"#9F3FFF","bold":false},{"text":"UHC","color":"#FFE73F","bold":false}]
+execute if score #tick_start uhc.data.temp matches 4 if score #bhc uhc.gamemode matches 1 run title @a title [{"text":"","color":"#B73FFF","bold":false},{"text":"UHC","color":"#FFE73F","bold":false}]
 execute if score #tick_start uhc.data.temp matches 4as @a at @s run playsound minecraft:block.note_block.chime @s ~ ~ ~ 100 1 1
 execute if score #tick_start uhc.data.temp matches 4 run title @a subtitle [{"text":" Démarrage en cours ! ","color":"#FFFFFF","bold":false}]
 execute if score #tick_start uhc.data.temp matches 80as @a at @s run playsound minecraft:item.trident.riptide_3 @s ~ ~ ~ 0.8 1 1

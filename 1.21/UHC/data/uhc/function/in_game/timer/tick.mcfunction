@@ -47,6 +47,9 @@ execute unless score #hotbar_cooldown uhc.data.temp matches 1.. if score #uau uh
 execute unless score #hotbar_cooldown uhc.data.temp matches 1.. if score #aic uhc.gamemode matches 3 if score #tick uhc.data.temp matches 0.. run function aic:timer/hotbar with storage uhc:temp hotbar
 tag @a[tag=uhc.target.targeter_done] remove uhc.target.targeter_done
 
+## Configuration des points de réapparition
+function uhc:in_game/tp/spawn/border_size/
+
 ## Modifications de données d'entités
 # Réduction des dégâts des flèches
 execute if score #custom_arrow uhc.data.setup matches 1.. as @e[type=arrow] run function uhc:in_game/entities/arrow/
@@ -81,7 +84,7 @@ execute as @e[type=player,scores={uhc.players.death=1}] run function uhc:in_game
 ## @a → Effets, Respawn, Connexion d'un joueur externe, Scenarios
 execute as @a run function uhc:in_game/timer/players
 execute if score #no_pvp_safety uhc.data.setup matches 1 run function uhc:in_game/players_settings/pvp/safety
-execute if score #absorption uhc.data.setup matches ..1 as @a[tag=uhc.player,predicate=uhc:effect_absorption] run function uhc:in_game/players_settings/absorption/
+execute if score #absorption uhc.data.setup matches ..1 as @a[tag=uhc.player,predicate=uhc:effect/absorption] run function uhc:in_game/players_settings/effect/absorption
 
 ## End
 # Détection entrée/sortie de l'end et respawn d'un joueur mort

@@ -13,7 +13,7 @@ execute in minecraft:overworld run spreadplayers 0 0 240 960 false @a[tag=uhc.pl
 scoreboard players set @a[tag=uhc.player] uhc.players.tp 1
 
 # Points d'apparition dans le ciel
-execute if score #start_in_sky uhc.data.setup matches 1 in minecraft:overworld run function uhc:in_game/tp/spawn_start_in_the_sky
+execute if score #start_in_sky uhc.data.setup matches 1 in minecraft:overworld run function uhc:in_game/tp/spawn/start_in_the_sky
 
 ## Id Joueurs et Markers
 # Id Joueurs + Summon d'un marker par joueur

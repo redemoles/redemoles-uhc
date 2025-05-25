@@ -7,4 +7,4 @@
 # @description		Modification des stacks de cobweb
 #
 
-data merge entity @s {Item:{components:{"minecraft:max_stack_size":4}}}
+data merge entity @s {Item:{components:{"minecraft:max_stack_size":8}}}

@@ -14,7 +14,6 @@ scoreboard players add #minutes uhc.data.temp 1
 ## Minuteur interne
 scoreboard players remove #pve uhc.data.temp 1
 scoreboard players remove #pvp uhc.data.temp 1
-scoreboard players remove #respawn_2_timer uhc.data.temp 1
 scoreboard players remove #shrink_1 uhc.data.temp 1
 scoreboard players remove #shrink_2 uhc.data.temp 1
 scoreboard players remove #shrink_3 uhc.data.temp 1
@@ -74,9 +73,9 @@ execute if score #aic uhc.gamemode matches 3 run function aic:timer/minute
 execute if score #blood_cycle uhc.scenario matches 1 run function uhc:in_game/scenarios/blood_cycle/cooldown
 
 ## Réduction de vie forcée
-execute if score #respawn_2_enabled uhc.data.setup matches 1 if score #respawn_2_timer uhc.data.temp matches 0 if score #live_1 uhc.data.temp matches 1.. run tellraw @a[scores={uhc.players.lang=1}] [{"text":"Changement des points de réapparition.","color":"#FFFFFF","bold":false}]
-execute if score #respawn_2_enabled uhc.data.setup matches 1 if score #respawn_2_timer uhc.data.temp matches 0 if score #live_1 uhc.data.temp matches 1.. run tellraw @a[scores={uhc.players.lang=2}] [{"text":"Change of respawns points.","color":"#FFFFFF","bold":false}]
-execute if score #respawn_2_enabled uhc.data.setup matches 1 if score #respawn_2_timer uhc.data.temp matches 0 if score #live_1 uhc.data.temp matches 1.. as @a[tag=uhc.player] run function uhc:in_game/tp/spawn_msg_2_solo
+#execute if score #respawn_2_enabled uhc.data.setup matches 1 if score #respawn_2_timer uhc.data.temp matches 0 if score #live_1 uhc.data.temp matches 1.. run tellraw @a[scores={uhc.players.lang=1}] [{"text":"Changement des points de réapparition.","color":"#FFFFFF","bold":false}]
+#execute if score #respawn_2_enabled uhc.data.setup matches 1 if score #respawn_2_timer uhc.data.temp matches 0 if score #live_1 uhc.data.temp matches 1.. run tellraw @a[scores={uhc.players.lang=2}] [{"text":"Change of respawns points.","color":"#FFFFFF","bold":false}]
+#execute if score #respawn_2_enabled uhc.data.setup matches 1 if score #respawn_2_timer uhc.data.temp matches 0 if score #live_1 uhc.data.temp matches 1.. as @a[tag=uhc.player] run function uhc:in_game/tp/spawn/text
 
 # Msg FRA
 execute if score #lives_start uhc.players.lives matches 3.. if score #live_2 uhc.data.temp matches 0 run tellraw @a[scores={uhc.players.lang=1}] [{"text":"Vies maximum ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" ❤❤❤ ","color":"#3FE7FF","bold":false},{"text":"→","color":"#FFFFFF","bold":false},{"text":" ❤❤","color":"#FFE73F","bold":false}]

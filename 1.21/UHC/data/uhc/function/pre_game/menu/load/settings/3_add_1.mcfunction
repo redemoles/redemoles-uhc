@@ -21,9 +21,6 @@ execute if score @s uhc.menu.host.settings.lives matches 3.. if score #live_2 uh
 execute if score @s uhc.menu.host.settings.lives matches 2 unless score #live_1 uhc.data.setup matches 300.. run scoreboard players add #live_1 uhc.data.setup 1
 execute if score @s uhc.menu.host.settings.lives matches 2.. if score #live_1 uhc.data.setup < #live_2 uhc.data.setup run scoreboard players operation #live_1 uhc.data.setup = #live_2 uhc.data.setup
 
-# Point de réapparition au centre
-execute if score @s uhc.menu.host.settings.lives matches 8 unless score #respawn_2_timer uhc.data.setup matches 300.. run scoreboard players add #respawn_2_timer uhc.data.setup 1
-
 
 
 # Période de Résistance
@@ -78,42 +75,22 @@ execute if score @s uhc.menu.host.settings.border matches 1.. if score #shrink_3
 
 
 # Meet-up - Temps de réduction
-execute if score @s uhc.menu.host.settings.border matches 1.. run scoreboard players operation #temp uhc.data.setup = #shrink_2 uhc.data.setup
-execute if score @s uhc.menu.host.settings.border matches 1.. run scoreboard players operation #temp uhc.data.setup -= #shrink_1 uhc.data.setup
-execute if score @s uhc.menu.host.settings.border matches 14 run scoreboard players add #shrink_1_length uhc.data.setup 1
-execute if score @s uhc.menu.host.settings.border matches 1.. if score #shrink_1_length uhc.data.setup > #temp uhc.data.setup run scoreboard players operation #shrink_1_length uhc.data.setup = #temp uhc.data.setup
+execute if score @s uhc.menu.host.settings.border matches 14 unless score #shrink_1_length uhc.data.setup matches 300.. run scoreboard players add #shrink_1_length uhc.data.setup 1
 
 
 # Shrink 1 - Temps de réduction
-execute if score @s uhc.menu.host.settings.border matches 1.. run scoreboard players operation #temp uhc.data.setup = #shrink_3 uhc.data.setup
-execute if score @s uhc.menu.host.settings.border matches 1.. run scoreboard players operation #temp uhc.data.setup -= #shrink_2 uhc.data.setup
-execute if score @s uhc.menu.host.settings.border matches 24 run scoreboard players add #shrink_2_length uhc.data.setup 1
-execute if score @s uhc.menu.host.settings.border matches 1.. if score #shrink_2_length uhc.data.setup > #temp uhc.data.setup run scoreboard players operation #shrink_2_length uhc.data.setup = #temp uhc.data.setup
+execute if score @s uhc.menu.host.settings.border matches 24 unless score #shrink_2_length uhc.data.setup matches 300.. run scoreboard players add #shrink_2_length uhc.data.setup 1
 
 
 # Shrink 2 - Temps de réduction
-execute if score @s uhc.menu.host.settings.border matches 1.. run scoreboard players set #temp uhc.data.setup 300
-execute if score @s uhc.menu.host.settings.border matches 1.. run scoreboard players operation #temp uhc.data.setup -= #shrink_3 uhc.data.setup
-execute if score @s uhc.menu.host.settings.border matches 34 run scoreboard players add #shrink_3_length uhc.data.setup 1
-execute if score @s uhc.menu.host.settings.border matches 1.. if score #shrink_3_length uhc.data.setup > #temp uhc.data.setup run scoreboard players operation #shrink_3_length uhc.data.setup = #temp uhc.data.setup
+execute if score @s uhc.menu.host.settings.border matches 34 unless score #shrink_3_length uhc.data.setup matches 300.. run scoreboard players add #shrink_3_length uhc.data.setup 1
 
-# Règles de stuff - Armures en diamants
+
+# Règles d'enchantements - Armures en diamants, Épées en diamants, Armures en fer, Épées en diamants, Haches, Arcs, Bottes
 execute if score @s uhc.menu.host.settings.inventory matches 12 unless score #diamond_protection uhc.data.setup matches 4.. run scoreboard players add #diamond_protection uhc.data.setup 1
-
-# Règles de stuff - Épées en diamants
 execute if score @s uhc.menu.host.settings.inventory matches 13 unless score #diamond_sharpness uhc.data.setup matches 5.. run scoreboard players add #diamond_sharpness uhc.data.setup 1
-
-# Règles de stuff - Armures en fer
 execute if score @s uhc.menu.host.settings.inventory matches 14 unless score #iron_protection uhc.data.setup matches 4.. run scoreboard players add #iron_protection uhc.data.setup 1
-
-# Règles de stuff - Épées en diamants
 execute if score @s uhc.menu.host.settings.inventory matches 15 unless score #iron_sharpness uhc.data.setup matches 5.. run scoreboard players add #iron_sharpness uhc.data.setup 1
-
-# Règles de stuff - Haches
 execute if score @s uhc.menu.host.settings.inventory matches 16 unless score #axes_sharpness uhc.data.setup matches 5.. run scoreboard players add #axes_sharpness uhc.data.setup 1
-
-# Règles de stuff - Arcs
 execute if score @s uhc.menu.host.settings.inventory matches 17 unless score #bow_power uhc.data.setup matches 5.. run scoreboard players add #bow_power uhc.data.setup 1
-
-# Règles de stuff - Arc
 execute if score @s uhc.menu.host.settings.inventory matches 22 unless score #depth_strider uhc.data.setup matches 3.. run scoreboard players add #depth_strider uhc.data.setup 1

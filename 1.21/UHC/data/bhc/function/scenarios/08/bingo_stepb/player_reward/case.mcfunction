@@ -1,11 +1,14 @@
 
-#> bhc:scenarios/08/bingo_stepb/team_reward/case
+#> bhc:scenarios/08/bingo_stepb/player_reward/case
 #
 # @within			bhc:scenarios/08/advancements/stepb
 #
 #
 # @description		Ajout de points
 #
+
+# Aléatoire
+execute store result score #reward bhc.random run random value 1..4
 
 # Récompenses
 $execute if score #total_first_$(namespace)_$(line)_$(column) bhc.data matches 1 run give @s minecraft:gold_ingot 4

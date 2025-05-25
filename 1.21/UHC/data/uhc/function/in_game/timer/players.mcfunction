@@ -36,28 +36,35 @@ execute if score #fire_flame uhc.data.setup matches 0 unless score #aic uhc.game
 execute if score #fire_flame uhc.data.setup matches 0 unless score #aic uhc.gamemode matches 1 if items entity @s[tag=!uhc.fire_flame] weapon.offhand *[minecraft:enchantments~[{"enchantments":"minecraft:flame"}]] run item modify entity @s weapon.offhand {function:"minecraft:set_enchantments",enchantments:{"minecraft:flame":-255},add:true}
 
 # PvP Version 1.8
-execute if score #version_pvp uhc.data.setup matches 1 run function uhc:in_game/players_settings/version_pvp/1_8
-execute if score #version_pvp uhc.data.setup matches 0 run function uhc:in_game/players_settings/version_pvp/1_21
+execute if score #version_pvp uhc.data.setup matches 1 run function uhc:in_game/players_settings/pvp/version_pvp/1_8
+execute if score #version_pvp uhc.data.setup matches 0 run function uhc:in_game/players_settings/pvp/version_pvp/1_21
 
-# Effets aux joueurs
+## Effets aux joueurs
+# Résistance
 execute if score #pve uhc.data.temp matches ..0 run scoreboard players set @s[scores={uhc.effect.resistance=-1}] uhc.effect.resistance 0
 effect give @s[scores={uhc.effect.resistance=-1}] minecraft:resistance infinite 4 true
 execute unless score #annonce mls.players.team matches 1 run effect clear @s[scores={uhc.effect.resistance=0}] minecraft:resistance
 effect give @s[scores={uhc.effect.resistance=1}] minecraft:resistance infinite 0 true
 effect give @s[scores={uhc.effect.resistance=2}] minecraft:resistance infinite 1 true
 effect give @s[scores={uhc.effect.resistance=3}] minecraft:resistance infinite 2 true
+
+# Night Vision
 execute unless score #nzl uhc.gamemode matches 1 run effect give @s[tag=uhc.player.night_vision] minecraft:night_vision infinite 0 true
 
-# Effets aux joueurs - Reset pour le prochain tick
+# Speed
+execute if score #speed_nerf uhc.data.setup matches 1 if entity @s[tag=uhc.player,tag=!uhc.effect.speed,predicate=uhc:effect/speed] run function uhc:in_game/players_settings/effect/speed
+execute if score #speed_nerf uhc.data.setup matches 1 if entity @s[tag=uhc.player,tag=uhc.effect.speed,predicate=!uhc:effect/speed] run function uhc:in_game/players_settings/effect/speed
+
+# Reset pour prochain tick
 execute if score #pve uhc.data.temp matches ..0 run scoreboard players set @s uhc.effect.resistance 0
 
+## Apparition / Réapparition
 # Démarrage dans le ciel
-execute in minecraft:overworld positioned 0 160 0 as @s[tag=uhc.player.start_in_the_sky] if entity @s[predicate=uhc:on_ground,distance=25..] run function uhc:in_game/players_settings/start_in_the_sky/on_ground_with_elytra
-
+execute in minecraft:overworld positioned 0 180 0 as @s[tag=uhc.player.start_in_the_sky] if entity @s[predicate=uhc:on_ground,distance=25..] run function uhc:in_game/players_settings/start_in_the_sky/on_ground_with_elytra
 # Réapparition
 execute as @s[scores={uhc.timer.respawn=1..}] run function uhc:in_game/players_settings/respawn/cooldown
 
-# Vie en pourcentage
+## Vie en pourcentage
 execute unless score #team_health uhc.scenario matches 1 if score #hp_100 uhc.data.setup matches 1.. store result score @s uhc.players.health.100 run data get entity @s Health 5
 
 ## Scenarios

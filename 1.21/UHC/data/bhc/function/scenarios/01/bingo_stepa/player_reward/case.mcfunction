@@ -1,5 +1,5 @@
 
-#> bhc:scenarios/01/bingo_stepa/team_reward/case
+#> bhc:scenarios/01/bingo_stepa/player_reward/case
 #
 # @within			bhc:scenarios/01/advancements/stepa
 #

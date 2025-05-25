@@ -23,10 +23,7 @@ execute if score #minutes uhc.data.temp matches 0.. as @s[tag=uhc.player,predica
 execute if score #no_pvp_safety uhc.data.setup matches 0 as @s[tag=uhc.player] run function uhc:in_game/players_settings/pvp/safety_remove
 
 # Coordonnées de respawn
-execute if score #respawn_2_enabled uhc.data.setup matches 0 if score #live_1 uhc.data.temp matches 1.. run function uhc:in_game/tp/spawn_msg_1_solo
-execute if score #respawn_2_enabled uhc.data.setup matches 1 if score #respawn_2_timer uhc.data.temp matches 1.. if score #live_1 uhc.data.temp matches 1.. run function uhc:in_game/tp/spawn_msg_1
-execute if score #respawn_2_enabled uhc.data.setup matches 1 if score #respawn_2_timer uhc.data.temp matches ..0 if score #live_1 uhc.data.temp matches 1.. run function uhc:in_game/tp/spawn_msg_2_solo
-execute if score #respawn_2_enabled uhc.data.setup matches 1 if score #minutes uhc.data.temp matches ..0 if score #live_1 uhc.data.temp matches 1.. run function uhc:in_game/tp/spawn_msg_2
+execute if score #live_1 uhc.data.temp matches 1.. run function uhc:in_game/tp/spawn/text with storage uhc:settings respawn_location
 
 # Message trigger Ironman
 execute if score #minutes uhc.data.temp matches 0.. if score #ironman uhc.data.setup matches 1.. run tellraw @s[scores={uhc.players.lang=1}] [{"text":"Ironman ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" Pour voir les joueurs dans la liste :","color":"#FFFFFF","bold":false},{"text":"\n/trigger ironman.list","color":"#FFE73F","bold":false}]

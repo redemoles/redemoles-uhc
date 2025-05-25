@@ -14,8 +14,8 @@ execute if score #distance_ac uhc.players.target.cos.a matches 0.. run scoreboar
 
 # Détermination de l'angle
 scoreboard players set #angle uhc.players.rotation 0
-execute if score @s uhc.players.target.cos.a matches -999989..1000010 run function uhc:in_game/timer/hotbar/target/cos_angle/0-180/
-execute if score @s uhc.players.target.cos.a matches ..-999990 run function uhc:in_game/timer/hotbar/target/cos_angle/180-360/
+execute if score #angle_abc uhc.players.target.cos.a matches -999989..1000010 run function uhc:in_game/timer/hotbar/target/cos_angle/0-180/
+execute if score #angle_abc uhc.players.target.cos.a matches ..-999990 run function uhc:in_game/timer/hotbar/target/cos_angle/180-360/
 scoreboard players operation #angle uhc.players.rotation += @s uhc.players.rotation
 scoreboard players remove #angle uhc.players.rotation 900
 

@@ -28,6 +28,7 @@ scoreboard players set @s uhc.menu.host.settings.lives 0
 scoreboard players set @s uhc.menu.host.settings.pve 0
 scoreboard players set @s uhc.menu.host.settings.pvp 0
 scoreboard players set @s uhc.menu.host.settings.border 0
+scoreboard players set @s uhc.menu.host.settings.inventory 0
 scoreboard players set @s uhc.menu.host.teams_settings 0
 tag @s remove host.menu.start
 tag @s remove host.menu.world_check

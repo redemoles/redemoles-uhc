@@ -1,5 +1,5 @@
 
-#> bhc:scenarios/08/bingo_stepb/team_reward/line
+#> bhc:scenarios/08/bingo_stepb/player_reward/line
 #
 # @within			bhc:scenarios/08/advancements/stepb
 #

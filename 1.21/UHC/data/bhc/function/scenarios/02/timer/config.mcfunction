@@ -11,12 +11,12 @@
 
 # Étape A : Bingo Classique
 scoreboard players set #stepa_start bhc.data.setup -1
-scoreboard players set #stepa_end bhc.data.setup 20
+scoreboard players set #stepa_end bhc.data.setup 30
 scoreboard players operation #stepa_end bhc.data.setup += #stepa_start bhc.data.setup
 
 # Étape B : Bingo ???
-scoreboard players set #stepb_start bhc.data.setup 30
-scoreboard players set #stepb_end bhc.data.setup 690
+scoreboard players set #stepb_start bhc.data.setup 45
+scoreboard players set #stepb_end bhc.data.setup 675
 scoreboard players operation #stepb_end bhc.data.setup += #stepb_start bhc.data.setup
 
 # Start

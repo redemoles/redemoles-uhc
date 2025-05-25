@@ -22,7 +22,6 @@ execute if score #aic uhc.gamemode matches 3 run function aic:start/
 # Minuteurs
 scoreboard players operation #pve uhc.data.temp = #pve uhc.data.setup
 scoreboard players operation #pvp uhc.data.temp = #pvp uhc.data.setup
-scoreboard players operation #respawn_2_timer uhc.data.temp = #respawn_2_timer uhc.data.setup
 scoreboard players operation #shrink_1 uhc.data.temp = #shrink_1 uhc.data.setup
 scoreboard players operation #shrink_2 uhc.data.temp = #shrink_2 uhc.data.setup
 scoreboard players operation #shrink_3 uhc.data.temp = #shrink_3 uhc.data.setup
@@ -67,7 +66,6 @@ execute store result storage uhc:settings shield.durability int 1 run scoreboard
 scoreboard players set #tick_start uhc.data.temp 201
 scoreboard players add #pve uhc.data.temp 1
 scoreboard players add #pvp uhc.data.temp 1
-scoreboard players add #respawn_2_timer uhc.data.temp 1
 scoreboard players add #shrink_1 uhc.data.temp 1
 scoreboard players add #shrink_2 uhc.data.temp 1
 scoreboard players add #shrink_3 uhc.data.temp 1
@@ -79,9 +77,9 @@ scoreboard players add #live_1 uhc.data.temp 1
 scoreboard players operation #shrink_1_timer_end uhc.data.temp = #shrink_1_length uhc.data.setup
 scoreboard players operation #shrink_2_timer_end uhc.data.temp = #shrink_2_length uhc.data.setup
 scoreboard players operation #shrink_3_timer_end uhc.data.temp = #shrink_3_length uhc.data.setup
-scoreboard players operation #shrink_1_timer_end uhc.data.temp += #shrink_1 uhc.data.setup
-scoreboard players operation #shrink_2_timer_end uhc.data.temp += #shrink_2 uhc.data.setup
-scoreboard players operation #shrink_3_timer_end uhc.data.temp += #shrink_3 uhc.data.setup
+scoreboard players operation #shrink_1_timer_end uhc.data.temp += #shrink_1 uhc.data.temp
+scoreboard players operation #shrink_2_timer_end uhc.data.temp += #shrink_2 uhc.data.temp
+scoreboard players operation #shrink_3_timer_end uhc.data.temp += #shrink_3 uhc.data.temp
 
 ## Nombre de vies
 scoreboard players operation #lives_start uhc.players.lives = #lives uhc.players.lives

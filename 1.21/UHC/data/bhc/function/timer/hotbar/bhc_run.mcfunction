@@ -30,4 +30,4 @@ execute if score #shrink_1 uhc.data.temp matches 1 if score #sec_cooldown uhc.da
 $execute if score #shrink_1 uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches ..59 run title @a[tag=!uhc.target.targeter_done,scores={uhc.players.lang=2}] actionbar [{"text":"0:$(sec_cooldown)","color":"#FF3F3F","bold":true}, {"score":{"name":"#sec_cooldown","objective":"uhc.data.temp"},"color":"#FF3F3F","bold":true}, {"text":" before the ","color":"#FFFFFF"}, {"text":"teleportation","color":"#FF3F3F"}, {"text":" !","color":"#FFFFFF"}]
 execute if score #shrink_1 uhc.data.temp matches 0 if score #sec_cooldown uhc.data.temp matches 0 run title @a[tag=!uhc.target.targeter_done,scores={uhc.players.lang=2}] actionbar [{"text":"Teleportation ! ","color":"#FFEF7F","bold":true}]
 
-execute if score #shrink_1 uhc.data.temp matches 0 if score #sec_cooldown uhc.data.temp matches 0 as @a[tag=!uhc.target.targeter_done,tag=uhc.player] run function uhc:in_game/tp/spawn_end
+execute if score #shrink_1 uhc.data.temp matches 0 if score #sec_cooldown uhc.data.temp matches 0 as @a[tag=!uhc.target.targeter_done,tag=uhc.player] run function uhc:in_game/tp/spawn/text

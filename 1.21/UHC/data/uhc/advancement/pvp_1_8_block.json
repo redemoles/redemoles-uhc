@@ -20,6 +20,6 @@
     }
   },
   "rewards": {
-    "function": "uhc:in_game/players_settings/version_pvp/block"
+    "function": "uhc:in_game/players_settings/pvp/version_pvp/block"
   }
 }

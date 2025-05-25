@@ -10,8 +10,7 @@
 execute unless items entity @s[scores={uhc.menu.host.settings=1..}] inventory.1 *[minecraft:custom_data={Tags:"settings_lives"}] run function uhc:pre_game/menu/load/settings/lives/
 execute if score #lives uhc.data.setup matches 2.. unless items entity @s[scores={uhc.menu.host.settings.lives=1..}] inventory.10 *[minecraft:custom_data={Tags:"settings_live_1"}] run function uhc:pre_game/menu/load/settings/lives/live_1/
 execute if score #lives uhc.data.setup matches 3.. unless items entity @s[scores={uhc.menu.host.settings.lives=1..}] inventory.11 *[minecraft:custom_data={Tags:"settings_live_2"}] run function uhc:pre_game/menu/load/settings/lives/live_2/
-execute unless items entity @s[scores={uhc.menu.host.settings.lives=1..}] inventory.15 *[minecraft:custom_data={Tags:"settings_live_start_in_sky"}] run function uhc:pre_game/menu/load/settings/lives/start_in_sky/
-execute unless items entity @s[scores={uhc.menu.host.settings.lives=1..}] inventory.16 *[minecraft:custom_data={Tags:"settings_live_respawn"}] run function uhc:pre_game/menu/load/settings/lives/respawn/
+execute unless items entity @s[scores={uhc.menu.host.settings.lives=1..}] inventory.16 *[minecraft:custom_data={Tags:"settings_live_start_in_sky"}] run function uhc:pre_game/menu/load/settings/lives/start_in_sky/
 
 execute unless items entity @s[scores={uhc.menu.host.settings=1..}] inventory.2 *[minecraft:custom_data={Tags:"settings_pve"}] run function uhc:pre_game/menu/load/settings/pve/
 execute unless items entity @s[scores={uhc.menu.host.settings.pve=1..}] inventory.10 *[minecraft:custom_data={Tags:"settings_hp_tab"}] run function uhc:pre_game/menu/load/settings/pve/hp_tab/

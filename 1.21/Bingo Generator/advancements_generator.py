@@ -116,7 +116,7 @@ unobtainable_blocks = [
 	"minecraft:tall_grass",
 	"minecraft:vault"
 ]
-block_should_not_contains = ["command_block", "test", "spawn", "infested", "banner_pattern", "template", "chainmail", "netherite", "frog", "turtle", "head", "sherd", "torchflower", "pitcher", "horse", "music_disc"]
+block_should_not_contains = ["command_block", "test", "spawn", "infested", "banner_pattern", "template", "chainmail", "netherite", "frog", "turtle", "head", "sherd", "torchflower", "pitcher", "n_horse", "d_horse", "music_disc"]
 unobtainable_blocks += [block for block in blocks if any(x in block for x in block_should_not_contains)]
 
 silk_touch_block = ["grass_block", "mushroom_stem", "mushroom_block", "beehive", "_ore", "nylium", "sculk"]
@@ -139,6 +139,10 @@ slime_block = ["slime", "lead", "sticky_piston", "tadpole"]
 slime = []
 slime = [block for block in blocks if any(x in block for x in slime_block)]
 
+trial_chamber_block = ["mace", "heavy_core", "trial", "breeze_rod", "wind_charge"]
+trial_chamber = []
+trial_chamber = [block for block in blocks if any(x in block for x in trial_chamber_block)]
+
 monument_block = ["prismarine", "sea_lantern", "sponge"]
 monument = []
 monument = [block for block in blocks if any(x in block for x in monument_block)]
@@ -148,15 +152,13 @@ the_end_block += ["dragon", "lingering", "tipped_arrow"]
 the_end = []
 the_end = [block for block in blocks if any(x in block for x in the_end_block)]
 
-trial_chamber_block = ["mace", "heavy_core", "trial", "breeze_rod", "wind_charge"]
-trial_chamber = []
-trial_chamber = [block for block in blocks if any(x in block for x in trial_chamber_block)]
-
+mangrove_block = ["mangrove"]
 mangrove = []
-#mangrove = [block for block in blocks if "mangrove" in block]
+#mangrove = [block for block in blocks if any(x in block for x in mangrove_block)]
 
+mesa_block = ["red_sand"]
 mesa = []
-#mesa = [block for block in blocks if "red_sand" in block]
+#mesa = [block for block in blocks if any(x in block for x in mesa_block)]
 
 pale_block = ["pale", "resin", "creaking", "eyeblossom"]
 pale = []
@@ -168,9 +170,9 @@ blocks = [block for block in blocks
 		  and block not in copper					# And, if the block is in the copper list
 		  and block not in honey					# And, if the block is in the honey list
 		  and block not in slime					# And, if the block is in the slime list
+		  and block not in trial_chamber			# And, if the block is in the trial chamber list
 		  and block not in monument					# And, if the block is in the monument list
 		  and block not in the_end					# And, if the block is in the end list
-		  and block not in trial_chamber			# And, if the block is in the trial chamber list
 		  and block not in mangrove					# And, if the block is in the mangrove list
 		  and block not in mesa						# And, if the block is in the mesa list
 		  and block not in pale						# And, if the block is in the pale list

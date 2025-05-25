@@ -17,18 +17,18 @@ execute if score #temp_z uhc.data.setup matches ..-1 run scoreboard players oper
 execute if score #temp_x uhc.data.setup matches ..16 if score #temp_z uhc.data.setup matches ..16 run return fail
 
 # Alerte 1
-execute if score #temp_x uhc.data.setup >= #border_alert_1 uhc.data.setup run tag @s add uhc.border.alert_1
-execute if score #temp_z uhc.data.setup >= #border_alert_1 uhc.data.setup run tag @s add uhc.border.alert_1
+execute if score #temp_x uhc.data.setup >= #border_alert_1 uhc.data.temp run tag @s add uhc.border.alert_1
+execute if score #temp_z uhc.data.setup >= #border_alert_1 uhc.data.temp run tag @s add uhc.border.alert_1
 execute unless entity @s[tag=uhc.border.alert_1] run return fail
 
 # Alerte 2
-execute if score #temp_x uhc.data.setup >= #border_alert_2 uhc.data.setup run tag @s add uhc.border.alert_2
-execute if score #temp_z uhc.data.setup >= #border_alert_2 uhc.data.setup run tag @s add uhc.border.alert_2
+execute if score #temp_x uhc.data.setup >= #border_alert_2 uhc.data.temp run tag @s add uhc.border.alert_2
+execute if score #temp_z uhc.data.setup >= #border_alert_2 uhc.data.temp run tag @s add uhc.border.alert_2
 execute if entity @s[tag=uhc.border.alert_2] run tag @s remove uhc.border.alert_1
 
 # Alerte 3
-execute if score #temp_x uhc.data.setup >= #border_alert_3 uhc.data.setup run tag @s add uhc.border.alert_3
-execute if score #temp_z uhc.data.setup >= #border_alert_3 uhc.data.setup run tag @s add uhc.border.alert_3
+execute if score #temp_x uhc.data.setup >= #border_alert_3 uhc.data.temp run tag @s add uhc.border.alert_3
+execute if score #temp_z uhc.data.setup >= #border_alert_3 uhc.data.temp run tag @s add uhc.border.alert_3
 execute if entity @s[tag=uhc.border.alert_3] run tag @s remove uhc.border.alert_2
 
 execute unless score @s uhc.players.border_alert matches 1.. run scoreboard players set @s uhc.players.border_alert 2

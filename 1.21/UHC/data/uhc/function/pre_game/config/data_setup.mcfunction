@@ -93,8 +93,6 @@ scoreboard players set #live_2 uhc.data.setup 0
 scoreboard players set #live_3 uhc.data.setup 0
 scoreboard players set #lives uhc.players.lives 1
 scoreboard players set #start_in_sky uhc.data.setup 0
-scoreboard players set #respawn_2_enabled uhc.data.setup 1
-scoreboard players set #respawn_2_timer uhc.data.setup 60
 
 scoreboard players set #pve uhc.data.setup 2
 scoreboard players set #absorption uhc.data.setup 2
@@ -144,6 +142,7 @@ scoreboard players set #random_team_tick uhc.data.setup -1
 scoreboard players set #anonyme_team uhc.data.setup 0
 scoreboard players set #team_size uhc.data.setup 4
 
+scoreboard players set #speed_nerf uhc.data.setup 1
 scoreboard players set #custom_arrow uhc.data.setup 0
 
 ## Items additionels à la mort d'un joueur
@@ -151,3 +150,15 @@ execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:
 execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_ironman set value [{count: 2, Slot: 0b, id: "minecraft:golden_apple"}]
 execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_additional set value [{count: 2, Slot: 0b, id: "minecraft:golden_apple"}]
 execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_notch_totem set value [{count: 4, Slot: 0b, id: "minecraft:gold_block"}]
+
+## Lieu de respawn
+data modify storage uhc:settings respawn_location.720 set value 720
+data modify storage uhc:settings respawn_location.840 set value 840
+data modify storage uhc:settings respawn_location.360 set value 360
+data modify storage uhc:settings respawn_location.960 set value 960
+data modify storage uhc:settings respawn_location.0 set value 960
+scoreboard players set #respawn_location_720 uhc.data.setup 720
+scoreboard players set #respawn_location_840 uhc.data.setup 840
+scoreboard players set #respawn_location_360 uhc.data.setup 360
+scoreboard players set #respawn_location_960 uhc.data.setup 960
+scoreboard players set #respawn_location_0 uhc.data.setup 0

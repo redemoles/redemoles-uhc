@@ -7,6 +7,8 @@
 # @description		Test de priorité 
 #
 
+execute if score #min_cooldown_temp uhc.data.temp matches 0 if score #sec_cooldown uhc.data.temp matches 1..50 run return fail
+
 ## Bingo Classique
 # Général
 execute if score #stepa_start bhc.data.temp = #min_cooldown_temp uhc.data.temp run scoreboard players add #min_cooldown_alert uhc.data.temp 1

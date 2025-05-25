@@ -47,3 +47,13 @@ $scoreboard players operation #max bhc.stepa.score > $(name) bhc.stepa.score
 $scoreboard players operation #max bhc.stepb.score > $(name) bhc.stepb.score
 $scoreboard players operation #max bhc.kills.score > $(name) bhc.kills.score
 $scoreboard players operation #max bhc.death.score > $(name) bhc.death.score
+
+$scoreboard players operation #max bhc.stepa.rank.score > $(name) bhc.stepa.rank.score
+$scoreboard players operation #max bhc.stepb.rank.score > $(name) bhc.stepb.rank.score
+$scoreboard players operation #max bhc.kills.rank.score > $(name) bhc.kills.rank.score
+$scoreboard players operation #max bhc.death.rank.score > $(name) bhc.death.rank.score
+
+scoreboard players operation #max bhc.total.score = #max bhc.stepa.rank.score
+scoreboard players operation #max bhc.total.score += #max bhc.stepb.rank.score
+scoreboard players operation #max bhc.total.score += #max bhc.kills.rank.score
+scoreboard players operation #max bhc.total.score += #max bhc.death.rank.score

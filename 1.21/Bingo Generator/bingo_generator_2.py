@@ -13,13 +13,13 @@ if not os.path.exists("bingo_generator_2.py"):
 
 # Define configuration
 bingo_size = {"lines": 5, "columns": 5}
-bingo_namespace = "bingo_0a"
-bingo_name = "Bingo Classique A"
+bingo_namespace = "bingo_2a"
+bingo_name = "Bingo Classique"
 step_number = "1"
 advancements_folder = "items_all"
 configuration_objective = "bhc.data"
 icon_item = "minecraft:paper"
-title_color = "#9F3FFF"
+title_color = "#B73FFF"
 description = ""
 description_color = "green"
 background = "minecraft:block/purple_concrete_powder"
@@ -173,17 +173,17 @@ if not os.path.exists("bingo_generator_0.py"):
 	exit()
 
 # Define configuration
-bingo_size = {"lines": 5, "columns": 5}
-bingo_namespace = "bingo_0b"
-bingo_name = "Bingo Classique B"
+bingo_size = {"lines": 6, "columns": 6}
+bingo_namespace = "bingo_2b"
+bingo_name = "Ère Viking"
 step_number = "2"
 advancements_folder = "items_all"
 configuration_objective = "bhc.data"
 icon_item = "minecraft:paper"
-title_color = "#9F3FFF"
+title_color = "#B73FFF"
 description = ""
 description_color = "green"
-background = "minecraft:block/purple_concrete_powder"
+background = "minecraft:block/stripped_spruce_wood"
 
 # Create the root advancement
 root_advancement = dict(json.loads(f"""

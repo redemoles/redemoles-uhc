@@ -36,7 +36,7 @@ execute as @a[scores={uhc.timer.absorption=1}] run attribute @s minecraft:max_ab
 scoreboard players remove @a[scores={uhc.timer.absorption=1..}] uhc.timer.absorption 1
 
 # Démarrage dans le ciel
-execute if score #start_in_sky uhc.data.setup matches 1 if score #minutes uhc.data.temp matches 0 if score #seconds uhc.data.temp matches 30 positioned 0 159 0 run fill ~-5 ~ ~-5 ~5 ~ ~5 minecraft:air
+execute if score #start_in_sky uhc.data.setup matches 1 if score #minutes uhc.data.temp matches 0 if score #seconds uhc.data.temp matches 30 positioned 0 179 0 run fill ~-5 ~ ~-5 ~5 ~ ~5 minecraft:air
 execute if score #start_in_sky uhc.data.setup matches 1 if score #minutes uhc.data.temp matches 0 if score #seconds uhc.data.temp matches 30 run function uhc:in_game/players_settings/collision/always
 
 ## Scénarios
@@ -49,12 +49,12 @@ execute if score #minutes uhc.data.temp matches 0.. if score #bhc uhc.gamemode m
 
 ## Alertes sonores
 # Border en cours de réduction
-scoreboard players operation #border_alert_1 uhc.data.setup = #border_size uhc.data.temp
-scoreboard players operation #border_alert_2 uhc.data.setup = #border_size uhc.data.temp
-scoreboard players operation #border_alert_3 uhc.data.setup = #border_size uhc.data.temp
-scoreboard players remove #border_alert_1 uhc.data.setup 36
-scoreboard players remove #border_alert_2 uhc.data.setup 24
-scoreboard players remove #border_alert_3 uhc.data.setup 8
+scoreboard players operation #border_alert_1 uhc.data.temp = #border_size uhc.data.temp
+scoreboard players operation #border_alert_2 uhc.data.temp = #border_size uhc.data.temp
+scoreboard players operation #border_alert_3 uhc.data.temp = #border_size uhc.data.temp
+scoreboard players remove #border_alert_1 uhc.data.temp 36
+scoreboard players remove #border_alert_2 uhc.data.temp 24
+scoreboard players remove #border_alert_3 uhc.data.temp 8
 
 execute if score #shrink_1 uhc.data.temp matches ..0 unless score #shrink_1_timer_end uhc.data.temp matches ..0 as @a[tag=uhc.player] at @s run function uhc:in_game/timer/border/alert
 execute if score #shrink_2 uhc.data.temp matches ..0 unless score #shrink_2_timer_end uhc.data.temp matches ..0 as @a[tag=uhc.player] at @s run function uhc:in_game/timer/border/alert

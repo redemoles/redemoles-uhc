@@ -18,7 +18,7 @@ scoreboard players set #team_first_case bhc.data 0
 $execute unless score #$(namespace)_$(line)_$(column) bhc.case matches ..0 unless score @s bhc.$(namespace)_$(line)_$(column) matches 1 run scoreboard players set #team_first_case bhc.data 1
 execute if score #team_first_case bhc.data matches 0 run return fail
 
-# Succès
+## Succès
 $scoreboard players set #total_first_$(namespace)_$(line)_$(column) bhc.data 0
 $execute unless score #$(namespace)_$(line)_$(column) bhc.case matches -1000.. run scoreboard players set #total_first_$(namespace)_$(line)_$(column) bhc.data 1
 #    Si première fois
@@ -28,7 +28,7 @@ $execute if score #total_first_$(namespace)_$(line)_$(column) bhc.data matches 1
 $execute if score #$(namespace)_$(line)_$(column) bhc.case matches ..0 run scoreboard players remove #$(namespace)_$(line)_$(column) bhc.case 1
 $scoreboard players remove #$(namespace)_$(line)_$(column) bhc.case 1
 
-# Ligne
+## Ligne
 $scoreboard players add @s bhc.line_$(line) 1
 $scoreboard players set #team_first_line_$(line) bhc.data 0
 $scoreboard players set #total_first_line_$(line) bhc.data 0
@@ -39,7 +39,7 @@ $execute if score @s bhc.line_$(line) = #line bhc.data run scoreboard players ad
 $scoreboard players operation @a[predicate=uhc:id_teams] bhc.line_$(line) = @s bhc.line_$(line)
 scoreboard players operation @a[predicate=uhc:id_teams] bhc.line = @s bhc.line
 
-# Colonne
+## Colonne
 $scoreboard players add @s bhc.column_$(column) 1
 $scoreboard players set #team_first_column_$(column) bhc.data 0
 $scoreboard players set #total_first_column_$(column) bhc.data 0
@@ -51,3 +51,7 @@ $scoreboard players operation @a[predicate=uhc:id_teams] bhc.column_$(column) = 
 scoreboard players operation @a[predicate=uhc:id_teams] bhc.column = @s bhc.column
 
 $scoreboard players set @s bhc.$(namespace)_$(line)_$(column) 1
+
+## Scores
+$execute if score #stepa_enabled bhc.data matches $(step) run function bhc:scenarios/01/bingo_stepa/team_reward/case with storage $(namespace) $(line)_$(column)
+$execute if score #stepb_enabled bhc.data matches $(step) run function bhc:scenarios/01/bingo_stepb/team_reward/case with storage $(namespace) $(line)_$(column)

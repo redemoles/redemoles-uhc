@@ -45,7 +45,7 @@ scoreboard players set #shrink_3_length uhc.data.setup 5
 scoreboard players set #shrink_1_size_start uhc.data.setup 1500
 scoreboard players set #shrink_1_size_end uhc.data.setup 200
 scoreboard players set #shrink_2_size_end uhc.data.setup 64
-scoreboard players set #shrink_3_size_end uhc.data.setup 16
+scoreboard players set #shrink_3_size_end uhc.data.setup 32
 
 ## Configuration du starter give
 execute if score #fte uhc.gamemode matches 1 run data modify storage uhc:settings Item_starter set value [{count: 1, Slot: 0b, id: "minecraft:iron_pickaxe", components:{"minecraft:enchantments": {"minecraft:efficiency":2}, "minecraft:unbreakable": {}}},{count: 1, Slot: 1b, id: "minecraft:iron_axe", components:{"minecraft:enchantments": {"minecraft:efficiency":2}, "minecraft:unbreakable": {}}},{count: 1, Slot: 2b, id: "minecraft:iron_shovel", components:{"minecraft:enchantments": {"minecraft:efficiency":2}, "minecraft:unbreakable": {}}},{count: 64, Slot: 3b, id: "minecraft:golden_carrot"},{count: 1, Slot: 4b, id: "minecraft:water_bucket"},{count: 1, Slot: 5b, id: "minecraft:book"}]

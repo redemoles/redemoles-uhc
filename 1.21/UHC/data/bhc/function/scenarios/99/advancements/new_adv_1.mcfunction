@@ -51,3 +51,7 @@ $scoreboard players operation @a[predicate=uhc:id_teams] bhc.column_$(column) = 
 scoreboard players operation @a[predicate=uhc:id_teams] bhc.column = @s bhc.column
 
 $scoreboard players set @s bhc.$(namespace)_$(line)_$(column) 1
+
+## Scores
+$execute if score #stepa_enabled bhc.data matches $(step) run function bhc:scenarios/99/bingo_stepa/team_reward/case with storage $(namespace) $(line)_$(column)
+
