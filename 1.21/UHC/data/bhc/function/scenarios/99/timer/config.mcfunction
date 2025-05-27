@@ -14,7 +14,9 @@ scoreboard players set #stepa_start bhc.data.setup -1
 scoreboard players set #stepa_end bhc.data.setup 20
 scoreboard players operation #stepa_end bhc.data.setup += #stepa_start bhc.data.setup
 
-
+# Scoreboard
+scoreboard players set #stepb_start bhc.data.setup -1
+scoreboard players set #stepb_end bhc.data.setup 20
 
 
 

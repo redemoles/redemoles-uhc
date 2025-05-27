@@ -7,6 +7,7 @@
 # @description		Téléportation aux points d'apparition des équipes
 #
 
+scoreboard players set #can_respawn uhc.data.temp 0
 execute if score #minutes uhc.data.temp matches 0.. if data entity @s respawn run scoreboard players set #can_respawn uhc.data.temp 1
 execute if score #can_respawn uhc.data.temp matches 1.. run return fail
 

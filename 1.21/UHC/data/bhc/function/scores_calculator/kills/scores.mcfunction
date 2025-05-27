@@ -14,7 +14,7 @@ execute if score #stepb_start bhc.data.temp matches ..0 unless score #stepb_end 
 scoreboard players operation @s bhc.kills.score.inv *= #10m uhc.data.numbers
 
 # Départage des équipes à 1 kill et plus
-execute as @e[type=marker,tag=UHC,scores={bhc.kills.score.inv=10000000..}] run scoreboard players add @s bhc.kills.score.inv 1
+execute as @e[type=marker,tag=UHC,distance=0..,scores={bhc.kills.score.inv=10000000..}] run scoreboard players add @s bhc.kills.score.inv 1
 
 # Départage des équipes à 0 kill
-execute as @e[type=marker,tag=UHC,scores={bhc.kills.score.inv=..10000000}] run function bhc:scores_calculator/kills/scores_1
+execute as @e[type=marker,tag=UHC,distance=0..,scores={bhc.kills.score.inv=..10000000}] run function bhc:scores_calculator/kills/scores_1

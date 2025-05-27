@@ -15,7 +15,7 @@ scoreboard players add #temp aic.data.score 1
 tag @s add aic.count
 
 ## Compte le nombre d'équipe avec un score supérieur à celle sélectionnée
-execute store result score #count aic.team.rank if entity @e[type=marker,tag=UHC,tag=!aic.count,predicate=aic:rank_score]
+execute store result score #count aic.team.rank if entity @e[type=marker,tag=UHC,distance=0..,tag=!aic.count,predicate=aic:rank_score]
 
 ## Classement d'équipe
 scoreboard players add #count aic.team.rank 1

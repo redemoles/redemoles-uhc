@@ -24,6 +24,8 @@ execute if score #stepa_end bhc.data.temp matches 1 if score #sec_cooldown uhc.d
 execute if score #stepa_end bhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 30 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
 execute if score #stepa_end bhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 10 run scoreboard players set #hotbar_cooldown uhc.data.temp 13
 
+execute if score #bhc bhc.scenario matches 99 run return fail
+
 execute if score #stepb_start bhc.data.temp matches 10 if score #sec_cooldown uhc.data.temp matches 0 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
 execute if score #stepb_start bhc.data.temp matches 5 if score #sec_cooldown uhc.data.temp matches 0 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
 execute if score #stepb_start bhc.data.temp matches 2 if score #sec_cooldown uhc.data.temp matches 0 run scoreboard players set #hotbar_cooldown uhc.data.temp 4

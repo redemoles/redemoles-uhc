@@ -13,7 +13,7 @@ bossbar remove aic:ender_dragon
 scoreboard players operation #death aic.data.end_dragon = #minutes uhc.data.temp
 scoreboard players add #death aic.data.end_dragon 45
 tellraw @a[tag=aic.dragon_egg] [{"text":"Vous recevez un oeuf de dragon pour votre présence sur l'île de l'Ender Dragon pendant sa mort !","bold":false,"color":"#FFE73F"}]
-give @a[tag=aic.dragon_egg] dragon_egg
+give @a[tag=aic.dragon_egg] minecraft:dragon_egg
 tellraw @a [{"text":"","color":"#FFE73F","bold":true},{"text":"Prochaine apparition d'Ender Dragon : ","bold":false},{"score":{"name":"#death","objective":"aic.data.end_dragon"}},{"text":"m"},{"score":{"name":"#seconds","objective":"uhc.data.temp"}}]
 scoreboard players operation #death aic.data.end_dragon *= #60 uhc.data.numbers
 scoreboard players add #death aic.data.end_dragon 1

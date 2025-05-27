@@ -20,7 +20,8 @@ execute if entity @p[scores={uhc.menu.update=9..}] unless entity @p[scores={uhc.
 execute if entity @p[scores={uhc.menu.update=9..}] unless entity @p[scores={uhc.menu.update=1..8}] run scoreboard players set @a uhc.menu.update 0
 
 ## Random team reveal
-execute if score #random_team_tick uhc.data.setup matches 0.. run function uhc:pre_game/players_and_teams/random_team/reveal/progressive
+execute if score #random_team_tick uhc.data.setup matches 0.. if score #random_team uhc.data.setup matches 1 run function uhc:pre_game/players_and_teams/random_team/1_group/reveal/progressive
+execute if score #random_team_tick uhc.data.setup matches 0.. if score #random_team uhc.data.setup matches 2 run function uhc:pre_game/players_and_teams/random_team/2_groups/reveal/progressive
 
 ## Kill item au sol
 execute as @e[type=minecraft:item,tag=!lobby.item.checked] run function uhc:pre_game/timer/tick_item

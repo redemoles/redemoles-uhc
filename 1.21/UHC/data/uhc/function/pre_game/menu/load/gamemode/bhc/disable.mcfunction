@@ -31,3 +31,7 @@ execute if score #bhc uhc.gamemode matches 0 run tellraw @a [{"text":"Bingo","co
 
 ## Configuration du starter give
 execute if score #bhc uhc.gamemode matches 0 run data modify storage uhc:settings Item_starter set value [{count: 1, Slot: 0b, id: "minecraft:oak_boat"},{count: 8, Slot: 1b, id: "minecraft:golden_carrot"}]
+
+## Scénario
+scoreboard players set #blood_diamond uhc.scenario 0
+scoreboard players set #biome_paranoia uhc.scenario 0

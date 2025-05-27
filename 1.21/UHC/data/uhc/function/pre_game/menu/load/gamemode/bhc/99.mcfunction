@@ -47,3 +47,7 @@ scoreboard players set #lives uhc.data.setup 3
 scoreboard players set #live_3 uhc.data.setup 0
 scoreboard players set #live_2 uhc.data.setup 30
 scoreboard players set #live_1 uhc.data.setup 35
+
+## Scénario
+scoreboard players set #blood_diamond uhc.scenario 1
+scoreboard players set #biome_paranoia uhc.scenario 0

@@ -14,13 +14,13 @@ scoreboard players set #stepa_enabled bhc.data 1
 
 
 tellraw @a[scores={uhc.players.lang=1}] [{"text":"[","color":"#FFFFFF","bold":true},{"text":"Bingo","color":"#B73FFF"},{"text":"UHC","color":"#FFE73F"},{"text":"]","color":"#FFFFFF"},{"text":" Début du ","color":"#FFFFFF","bold":false},{"text":"Bingo Classique","color":"#B73FFF","bold":true}]
-tellraw @a[scores={uhc.players.lang=2}] [{"text":"[","color":"#FFFFFF","bold":true},{"text":"Bingo","color":"#B73FFF"},{"text":"UHC","color":"#FFE73F"},{"text":"]","color":"#FFFFFF"},{"text":" Start of ","color":"#FFFFFF","bold":false},{"text":"Classic Bingo","color":"#B73FFF","bold":true}]
+tellraw @a[scores={uhc.players.lang=2}] [{"text":"[","color":"#FFFFFF","bold":true},{"text":"Bingo","color":"#B73FFF"},{"text":"UHC","color":"#FFE73F"},{"text":"]","color":"#FFFFFF"},{"text":" Start of the ","color":"#FFFFFF","bold":false},{"text":"Classic Bingo","color":"#B73FFF","bold":true}]
 
 # Scoreboard d'affichage
 scoreboard objectives setdisplay sidebar bhc.stepa.score
 
 # Reset des succès
-execute as @e[type=marker,tag=UHC] run function bhc:scenarios/01/timer/reset_scores
+execute as @e[type=marker,tag=UHC,distance=0..] run function bhc:scenarios/01/timer/reset_scores
 
 scoreboard players set #line_1 bhc.line 0
 scoreboard players set #line_2 bhc.line 0

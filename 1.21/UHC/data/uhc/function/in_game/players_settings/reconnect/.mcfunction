@@ -20,7 +20,7 @@ execute if score #team_health uhc.scenario matches 1 run function uhc:in_game/sc
 execute if score #minutes uhc.data.temp matches 0.. as @s[tag=uhc.player,predicate=uhc:effect_respawn] run function uhc:in_game/players_settings/reconnect/start
 
 # Supprimer de l'équipe PvP Safety
-execute if score #no_pvp_safety uhc.data.setup matches 0 as @s[tag=uhc.player] run function uhc:in_game/players_settings/pvp/safety_remove
+execute if score #no_pvp_safety uhc.data.temp matches 0 as @s[tag=uhc.player] run function uhc:in_game/players_settings/pvp/safety_remove
 
 # Coordonnées de respawn
 execute if score #live_1 uhc.data.temp matches 1.. run function uhc:in_game/tp/spawn/text with storage uhc:settings respawn_location

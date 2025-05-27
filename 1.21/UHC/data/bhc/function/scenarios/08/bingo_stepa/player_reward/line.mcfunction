@@ -1,16 +1,19 @@
 
 #> bhc:scenarios/08/bingo_stepa/player_reward/line
 #
-# @within			bhc:scenarios/08/advancements/stepa
+# @within			bhc:scenarios/08/bingo_stepa/player_reward/case
 #
 #
-# @description		Ajout de points
+# @description		Récompenses et points individuel
 #
 
-# Récompenses
+
+
+
+## Récompenses
 $execute if score #total_first_line_$(line) bhc.data matches 1 run give @s minecraft:diamond 3
 give @s minecraft:diamond 3
 experience add @s 1 levels
 
-# Score personnel
+## Score personnel
 scoreboard players add @s bhc.stepa.score.personal 2

@@ -8,7 +8,7 @@
 #
 
 clear @s
-tag @s remove players.menu.teams
+tag @s remove menu.player.teams
 execute unless score @s uhc.menu.host.settings matches 1.. run scoreboard players set @s uhc.menu.host.settings 1
 
 
@@ -30,9 +30,6 @@ execute if score @s uhc.menu.host.settings.lives matches 1.. run function uhc:pr
 
 
 execute if score @s uhc.menu.host.settings.lives matches 1.. run function uhc:pre_game/menu/load/settings/lives/start_in_sky/macro_text
-
-execute if score @s uhc.menu.host.settings.lives matches 1.. in uhc:lobby run function uhc:pre_game/menu/load/settings/lives/respawn/macro_set
-execute if score @s uhc.menu.host.settings.lives matches 1.. run function uhc:pre_game/menu/load/settings/lives/respawn/macro_text with storage uhc:settings
 
 execute in uhc:lobby run function uhc:pre_game/menu/load/settings/pve/macro_set
 function uhc:pre_game/menu/load/settings/pve/macro_text with storage uhc:settings

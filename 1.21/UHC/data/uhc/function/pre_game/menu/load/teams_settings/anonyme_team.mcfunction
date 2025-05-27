@@ -11,7 +11,7 @@ scoreboard players set @s uhc.menu.host.teams_settings 1
 scoreboard players add #anonyme_team uhc.data.setup 1
 execute if score #anonyme_team uhc.data.setup matches 2 run scoreboard players set #anonyme_team uhc.data.setup 0
 execute if score #anonyme_team uhc.data.setup matches 1 run scoreboard players set #random_team_start uhc.data.setup 1
-execute if score #anonyme_team uhc.data.setup matches 1 run team join 98 @a[tag=uhc.player]
+execute if score #anonyme_team uhc.data.setup matches 1 run team join 91 @a[tag=uhc.player]
 execute if score #anonyme_team uhc.data.setup matches 0 run team join 01 @a[scores={uhc.id.teams=01}]
 execute if score #anonyme_team uhc.data.setup matches 0 run team join 02 @a[scores={uhc.id.teams=02}]
 execute if score #anonyme_team uhc.data.setup matches 0 run team join 03 @a[scores={uhc.id.teams=03}]

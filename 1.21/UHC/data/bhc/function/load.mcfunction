@@ -44,6 +44,8 @@ scoreboard objectives remove bhc.kills.rank.number
 scoreboard objectives remove bhc.death.rank.number
 scoreboard objectives remove bhc.total.rank.number
 
+scoreboard objectives remove bhc.stepb.rank.temp
+
 scoreboard objectives remove bhc.tie_break.score
 scoreboard objectives remove bhc.tie_break.rank
 
@@ -115,6 +117,8 @@ scoreboard objectives add bhc.stepb.rank.number dummy
 scoreboard objectives add bhc.kills.rank.number dummy
 scoreboard objectives add bhc.death.rank.number dummy
 scoreboard objectives add bhc.total.rank.number dummy
+
+scoreboard objectives add bhc.stepb.rank.temp dummy
 
 scoreboard objectives add bhc.tie_break.score dummy [{"text":"Total ","color":"#FFFFFF"},{"text":">","color":"#C300DF","bold":true},{"text":" Départage","color":"#FFFFFF"}]
 scoreboard objectives add bhc.tie_break.rank dummy

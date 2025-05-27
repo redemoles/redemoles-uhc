@@ -15,12 +15,12 @@ scoreboard players remove #players uhc.data.temp.inv 1
 
 # -1 Joueur dans l'équipe
 scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
-scoreboard players remove @e[type=marker,predicate=uhc:id_teams] uhc.data.setup 1
+scoreboard players remove @e[type=marker,tag=UHC,distance=0..,predicate=uhc:id_teams] uhc.players.lives 1
 execute if score #players uhc.data.temp matches ..1 run data modify storage uhc:temp hotbar.players set value ""
 
 # Dernier joueur de l'équipe ?
 scoreboard players set #team_out uhc.id.teams 1
-execute if score @e[type=marker,predicate=uhc:id_teams,limit=1] uhc.data.setup matches 1.. run scoreboard players set #team_out uhc.id.teams 0
+execute if score @e[type=marker,tag=UHC,distance=0..,predicate=uhc:id_teams,limit=1] uhc.players.lives matches 1.. run scoreboard players set #team_out uhc.id.teams 0
 execute if score #teams uhc.data.temp matches ..1 run data modify storage uhc:temp hotbar.teams set value ""
 
 # -1 Team
@@ -29,7 +29,7 @@ execute if score #team_out uhc.id.teams matches 1 run scoreboard players remove 
 
 # Attribution des effets
 function uhc:in_game/players_settings/spec/
-execute if score #biome_paranoia uhc.scenario matches 1.. run function uhc:in_game/scenarios/biome_paranoia/death
+execute if score #biome_paranoia uhc.scenario matches 1.. unless score #bhc bhc.scenario matches 2 run function uhc:in_game/scenarios/biome_paranoia/death
 
 # Msg FRA
 execute if score #vanilla uhc.gamemode matches 1 run tellraw @s[scores={uhc.players.lang=1}] [{"text":"\nTu es mort. Merci d'avoir participé !\nSi un chat vocal de proximité est utilisé, merci de te rendre muet.","color":"#3FE7FF"}]

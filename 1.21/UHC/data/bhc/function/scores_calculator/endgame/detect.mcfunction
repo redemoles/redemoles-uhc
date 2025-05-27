@@ -15,7 +15,8 @@ function bhc:scores_calculator/death/bonus
 
 ## Calcul Classement Final
 
-execute as @e[type=marker,tag=UHC] run function bhc:scores_calculator/endgame/equality_1
-execute as @e[type=marker,tag=UHC] run function bhc:scores_calculator/endgame/equality_2
+execute as @e[type=marker,tag=UHC,distance=0..] run function bhc:scores_calculator/endgame/equality_1
+execute as @e[type=marker,tag=UHC,distance=0..] run function bhc:scores_calculator/endgame/equality_2
 scoreboard objectives setdisplay sidebar bhc.total.score
 function bhc:scores_calculator/endgame/message
+execute as @a run function uhc:in_game/scenarios/biome_paranoia/death

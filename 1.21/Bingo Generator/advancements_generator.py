@@ -62,12 +62,6 @@ blocks = r.content.decode("utf-8").split("\n")
 
 # Remove unobtainable blocks
 unobtainable_blocks = [
-	"minecraft:oak_boat",
-	"minecraft:apple",
-	"minecraft:iron_ingot",
-	"minecraft:gold_ingot",
-	"minecraft:diamond",
-	"minecraft:stick",
 	"minecraft:air",
 	"minecraft:cave_air",
 	"minecraft:void_air",
@@ -121,11 +115,17 @@ unobtainable_blocks += [block for block in blocks if any(x in block for x in blo
 
 silk_touch_block = ["grass_block", "mushroom_stem", "mushroom_block", "beehive", "_ore", "nylium", "sculk"]
 silk_touch_block += ["bud", "cluster"]
-silk_touch_block += ["coral"]
+coral_block = [
+	"minecraft:tube_coral_block","minecraft:tube_coral","minecraft:tube_coral_fan","minecraft:dead_tube_coral","minecraft:dead_tube_coral_fan",
+	"minecraft:brain_coral_block","minecraft:brain_coral","minecraft:brain_coral_fan","minecraft:dead_brain_coral","minecraft:dead_brain_coral_fan",
+	"minecraft:bubble_coral_block","minecraft:bubble_coral","minecraft:bubble_coral_fan","minecraft:dead_bubble_coral","minecraft:dead_bubble_coral_fan",
+	"minecraft:fire_coral_block","minecraft:fire_coral","minecraft:fire_coral_fan","minecraft:dead_fire_coral","minecraft:dead_fire_coral_fan",
+	"minecraft:horn_coral_block","minecraft:horn_coral","minecraft:horn_coral_fan","minecraft:dead_horn_coral","minecraft:dead_horn_coral_fan"]
 silk_touch_block += ["sea_lantern", "prismarine_shard"]
 silk_touch_block += ["ice"]
 silk_touch = []
 silk_touch = [block for block in blocks if any(x in block for x in silk_touch_block)]
+silk_touch += [block for block in coral_block]
 
 copper_block = ["exposed", "weathered", "oxidized"]
 copper = []
@@ -164,6 +164,55 @@ pale_block = ["pale", "resin", "creaking", "eyeblossom"]
 pale = []
 #pale = [block for block in blocks if any(x in block for x in pale_block)]
 
+too_easy_block = [
+	"minecraft:dirt",
+	"minecraft:sand",
+	"minecraft:red_sand",
+	"minecraft:gravel",
+	"minecraft:cobblestone",
+	"minecraft:andesite",
+	"minecraft:diorite",
+	"minecraft:granite",
+	"minecraft:cobbled_deepslate",
+	"minecraft:tuff",
+	"minecraft:netherrack",
+	"minecraft:wheat_seeds",
+	"minecraft:clay_ball",
+	"minecraft:bamboo",
+	"minecraft:raw_copper",
+	"minecraft:raw_iron",
+	"minecraft:crafting_table",
+	"minecraft:furnace",
+	"minecraft:bundle",
+	"minecraft:candle",
+	"minecraft:glass",
+	"minecraft:terracotta",
+	"minecraft:white_wool"]
+too_easy_block += [
+	"minecraft:oak_boat",
+	"minecraft:apple",
+	"minecraft:iron_ingot",
+	"minecraft:gold_ingot",
+	"minecraft:diamond",
+	"minecraft:stick"]
+too_easy_block += [
+	"minecraft:oak_log",
+	"minecraft:spruce_log",
+	"minecraft:birch_log",
+	"minecraft:jungle_log",
+	"minecraft:acacia_log",
+	"minecraft:dark_oak_log",
+	"minecraft:mangrove_log",
+	"minecraft:cherry_log",
+	"minecraft:pale_oak_log",
+	"minecraft:bamboo_block",
+	"minecraft:crimson_stem",
+	"minecraft:warped_stem"]
+too_easy_block_list = ["planks", "dye", "nugget"]
+too_easy = []
+too_easy += [block for block in too_easy_block]
+too_easy += [block for block in blocks if any(x in block for x in too_easy_block_list)]
+
 blocks = [block for block in blocks
 		  if block not in unobtainable_blocks		# If the block is not in the unobtainable list
 		  and block not in silk_touch				# And, if the block is in the silk touch list
@@ -176,6 +225,7 @@ blocks = [block for block in blocks
 		  and block not in mangrove					# And, if the block is in the mangrove list
 		  and block not in mesa						# And, if the block is in the mesa list
 		  and block not in pale						# And, if the block is in the pale list
+		  and block not in too_easy					# And, if the block is in the too_easy list
 ]
 
 if len(blocks) < number_of_advancements_to_generate:

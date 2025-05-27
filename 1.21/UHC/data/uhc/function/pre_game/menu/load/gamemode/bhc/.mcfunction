@@ -20,7 +20,7 @@ tag @s add host.menu.gamemode.bhc
 function uhc:pre_game/menu/load/background/
 
 execute unless score #bhc bhc.scenario matches 1 run item replace entity @s[scores={uhc.players.lang=1}] inventory.1 with minecraft:blue_concrete[minecraft:item_name=[{"text":"BHC I - Ruée Vers l'Or","color":"#5F5FFF","italic":false}],minecraft:custom_data={Tags:"gamemode_bhc_01"}]
-execute unless score #bhc bhc.scenario matches 2 run item replace entity @s[scores={uhc.players.lang=1}] inventory.2 with minecraft:black_concrete[minecraft:item_name=[{"text":"BHC II","color":"#5FAFFF","italic":false}],minecraft:custom_data={Tags:"gamemode_bhc_02"}]
+execute unless score #bhc bhc.scenario matches 2 run item replace entity @s[scores={uhc.players.lang=1}] inventory.2 with minecraft:cyan_concrete[minecraft:item_name=[{"text":"BHC II - Expérimental (désactivé)","color":"#5FAFFF","italic":false}],minecraft:custom_data={Tags:"gamemode_bhc_02"}]
 execute unless score #bhc bhc.scenario matches 3 run item replace entity @s[scores={uhc.players.lang=1}] inventory.3 with minecraft:black_concrete[minecraft:item_name=[{"text":"BHC III","color":"#5FFFFF","italic":false}],minecraft:custom_data={Tags:"gamemode_bhc_03"}]
 execute unless score #bhc bhc.scenario matches 4 run item replace entity @s[scores={uhc.players.lang=1}] inventory.4 with minecraft:black_concrete[minecraft:item_name=[{"text":"BHC IV","color":"#5FAF5F","italic":false}],minecraft:custom_data={Tags:"gamemode_bhc_04"}]
 execute unless score #bhc bhc.scenario matches 5 run item replace entity @s[scores={uhc.players.lang=1}] inventory.5 with minecraft:black_concrete[minecraft:item_name=[{"text":"BHC V","color":"#5FFF5F","italic":false}],minecraft:custom_data={Tags:"gamemode_bhc_05"}]

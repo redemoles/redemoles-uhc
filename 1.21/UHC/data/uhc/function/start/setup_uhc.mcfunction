@@ -10,7 +10,7 @@
 scoreboard players set #start_delay uhc.data.setup 0
 
 ## Détection modes de jeu activés
-execute if score #bhc uhc.gamemode matches 1 run function bhc:start/
+execute if score #bhc uhc.gamemode matches 1 in uhc:lobby run function bhc:start/
 execute if score #dru uhc.gamemode matches 1 run function dru:start/
 execute if score #fte uhc.gamemode matches 1 run function fte:start/
 execute if score #mls uhc.gamemode matches 1 run function mls:start/

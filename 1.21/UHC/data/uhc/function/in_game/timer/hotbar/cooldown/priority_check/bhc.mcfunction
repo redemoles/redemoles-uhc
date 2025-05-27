@@ -16,7 +16,7 @@ execute if score #stepa_end bhc.data.temp = #min_cooldown_temp uhc.data.temp run
 
 ## Bingo Spécial
 # Général
-execute if score #stepb_start bhc.data.temp = #min_cooldown_temp uhc.data.temp run scoreboard players add #min_cooldown_alert uhc.data.temp 1
-execute if score #stepb_end bhc.data.temp = #min_cooldown_temp uhc.data.temp run scoreboard players add #min_cooldown_alert uhc.data.temp 1
+execute unless score #bhc bhc.scenario matches 99 if score #stepb_start bhc.data.temp = #min_cooldown_temp uhc.data.temp run scoreboard players add #min_cooldown_alert uhc.data.temp 1
+execute unless score #bhc bhc.scenario matches 99 if score #stepb_end bhc.data.temp = #min_cooldown_temp uhc.data.temp run scoreboard players add #min_cooldown_alert uhc.data.temp 1
 # Ruée vers l'Or
-execute if score #stepb_exhaustion bhc.data.temp = #min_cooldown_temp uhc.data.temp run scoreboard players add #min_cooldown_alert uhc.data.temp 1
+execute if score #bhc bhc.scenario matches 1 if score #stepb_exhaustion bhc.data.temp = #min_cooldown_temp uhc.data.temp run scoreboard players add #min_cooldown_alert uhc.data.temp 1

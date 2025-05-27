@@ -27,8 +27,8 @@ execute unless entity @e[type=marker,tag=15] run summon marker 1 0 1 {Tags:["tem
 execute unless entity @e[type=marker,tag=16] run summon marker 1 0 1 {Tags:["temp","16","UHC"],CustomName:[{"text":"Équipe Noire"}],data:{name:"§f§0"}}
 
 scoreboard players set #team uhc.id.teams 0
-execute as @e[type=marker,tag=temp] run function bhc:test/scores/teams_1
+execute as @e[type=marker,tag=UHC,distance=0..,tag=temp] run function bhc:test/scores/teams_1
 scoreboard players set #team uhc.id.teams 0
 
 # Nombre d'équipes
-execute store result score #teams bhc.data if entity @e[type=marker,tag=UHC]
+execute store result score #teams bhc.data if entity @e[type=marker,tag=UHC,distance=0..]

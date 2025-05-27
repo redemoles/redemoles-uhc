@@ -83,13 +83,21 @@ scoreboard players operation #shrink_2_length uhc.data.temp = #shrink_2_length u
 scoreboard players operation #shrink_3_length uhc.data.temp = #shrink_3_length uhc.data.setup
 function uhc:pre_game/config/timer
 
-## Id, Markers, Spawns et TP
+## Équipe, Id, Markers, Spawns et TP
+# Random Team
+execute if score #random_team uhc.data.setup matches 2 run scoreboard players remove @a[scores={uhc.id.teams=101..}] uhc.id.teams 100
+execute if score #random_team uhc.data.setup matches 2 run function uhc:pre_game/players_and_teams/random_team/1_group/reveal/instant
+
+# Bingo UHC
+execute if score #bhc bhc.scenario matches 2 run function bhc:start/team_shuffle/
+
+# Id, Markers, Spawns et TP
 execute if score #ffa uhc.data.setup matches 0 run function uhc:start/game_teams/
 execute if score #ffa uhc.data.setup matches 1.. run function uhc:start/game_ffa/
 
+# Hotbar
 execute if score #players uhc.data.temp matches ..1 run data modify storage uhc:temp hotbar.players set value ""
 execute if score #teams uhc.data.temp matches ..1 run data modify storage uhc:temp hotbar.teams set value ""
-
 execute if score #players uhc.data.temp matches 2.. run data modify storage uhc:temp hotbar.players set value "s"
 execute if score #teams uhc.data.temp matches 2.. run data modify storage uhc:temp hotbar.teams set value "s"
 

@@ -13,7 +13,7 @@ scoreboard players remove #temp bhc.data 1
 
 ## Compte le nombre d'équipe avec un score supérieur à celle sélectionnée
 tag @s add bhc.count
-execute store result score #count bhc.data if entity @e[type=marker,tag=UHC,tag=!bhc.count,predicate=bhc:rank_invdeath]
+execute store result score #count bhc.data if entity @e[type=marker,tag=UHC,distance=0..,tag=!bhc.count,predicate=bhc:rank_invdeath]
 tag @s remove bhc.count
 
 ## Classement
@@ -29,3 +29,5 @@ execute if score @s bhc.death.rank.score.inv matches ..0 run scoreboard players 
 
 # Valeur de la catégorie pour le score total
 scoreboard players operation @s bhc.death.rank.score.inv *= #04 uhc.data.numbers
+
+execute unless score @s bhc.kills.score.inv matches 100.. run function bhc:scores_calculator/kills/scores_1

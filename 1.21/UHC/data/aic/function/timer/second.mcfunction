@@ -8,7 +8,7 @@
 #
 
 # Dragon (re)spawn
-execute if score #death aic.data.end_dragon matches -1 if entity @e[type=ender_dragon,limit=1] run function aic:timer/ender_dragon/first_spawn
+execute if score #death aic.data.end_dragon matches -1 in minecraft:the_end if entity @e[type=ender_dragon,limit=1,distance=0..] run function aic:timer/ender_dragon/first_spawn
 execute if score #death aic.data.end_dragon matches 1 run function aic:timer/ender_dragon/respawn with storage aic:temp dragon_respawn
 execute if score #death aic.data.end_dragon matches 1.. run scoreboard players remove #death aic.data.end_dragon 1
 

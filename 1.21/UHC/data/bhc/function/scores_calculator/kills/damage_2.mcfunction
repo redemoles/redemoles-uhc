@@ -9,4 +9,4 @@
 
 scoreboard players operation @s bhc.kills.damage_dealt += #temp bhc.kills.damage_taken
 execute if entity @s[scores={bhc.kills.score.inv=..10000000}] run function bhc:scores_calculator/kills/scores_1
-execute if entity @s[scores={bhc.kills.score.inv=..10000000}] as @e[type=marker,tag=UHC] run function bhc:scores_calculator/kills/rank
+execute if entity @s[scores={bhc.kills.score.inv=..10000000}] as @e[type=marker,tag=UHC,distance=0..] run function bhc:scores_calculator/kills/rank

@@ -40,14 +40,15 @@ summon marker 1 1 1 {Tags:["temp","UHC"]}
 summon marker 1 1 1 {Tags:["temp","UHC"]}
 
 scoreboard players set #team uhc.id.teams 0
-execute as @e[type=marker,tag=temp] run function uhc:start/game_teams/id_marker
+execute as @e[type=marker,tag=temp] in uhc:lobby run tp @s 0 0 0
+execute in uhc:lobby as @e[type=marker,tag=temp,distance=0..] run function uhc:start/game_teams/id_marker
 scoreboard players set #team uhc.id.teams 0
 
 ## Nombre d'équipes en jeu
 scoreboard players set #teams uhc.data.temp 0
 execute as @a[tag=uhc.player] run function uhc:start/game_teams/id_teams
 scoreboard players set #team_size uhc.data.setup 1
-scoreboard players operation #team_size uhc.data.setup > @e[type=marker,tag=UHC] uhc.data.setup
+scoreboard players operation #team_size uhc.data.setup > @e[type=marker,tag=UHC] uhc.players.lives
 scoreboard players operation @e[type=marker,tag=UHC] uhc.teams.ironman = #team_size uhc.data.setup
 
 scoreboard players operation #teams uhc.data.temp.inv = #teams uhc.data.temp

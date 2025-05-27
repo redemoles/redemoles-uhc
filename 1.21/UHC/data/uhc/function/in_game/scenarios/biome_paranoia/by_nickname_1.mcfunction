@@ -21,4 +21,4 @@ $execute if entity @s[predicate=uhc:biome_paranoia/purple] run team modify biome
 $execute if entity @s[predicate=uhc:biome_paranoia/pink] run team modify biome_paranoia.$(team) color light_purple
 $execute if entity @s[predicate=uhc:biome_paranoia/white] run team modify biome_paranoia.$(team) color white
 $execute if entity @s[predicate=uhc:biome_paranoia/gray] run team modify biome_paranoia.$(team) color gray
-$execute if entity @s[predicate=uhc:biome_paranoia/dark_gray,predicate=!uhc:biome_paranoia/dark_blue,predicate=!uhc:biome_paranoia/gray] run team modify biome_paranoia.$(team) color dark_gray
+$execute if entity @s[predicate=uhc:biome_paranoia/dark_gray] run team modify biome_paranoia.$(team) color dark_gray

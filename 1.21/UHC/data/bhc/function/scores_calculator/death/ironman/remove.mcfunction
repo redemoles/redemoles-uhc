@@ -7,7 +7,6 @@
 # @description		Retrait de la liste Ironman
 #
 
-execute if score #bhc uhc.gamemode matches 1 run function bhc:scores_calculator/death/ironman/bonus
 scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
 
 scoreboard players remove @s uhc.teams.ironman 1
@@ -19,3 +18,4 @@ execute as @a[predicate=uhc:id_teams,scores={uhc.players.lang=2}] run tellraw @s
 scoreboard players remove #teams uhc.teams.ironman 1
 scoreboard players add #score bhc.ironman.score.inv 2
 
+function bhc:scores_calculator/death/ironman/bonus

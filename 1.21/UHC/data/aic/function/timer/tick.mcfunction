@@ -8,7 +8,7 @@
 #
 
 # Marker tick
-execute as @e[type=marker,tag=UHC] run function aic:timer/marker_tick
+execute in uhc:lobby as @e[type=marker,tag=UHC,distance=0..] run function aic:timer/marker_tick
 
 # Ender Dragon fight
-execute store result bossbar aic:ender_dragon value run data get entity @e[type=ender_dragon,limit=1] Health
+execute in minecraft:the_end store result bossbar aic:ender_dragon value run data get entity @e[type=ender_dragon,limit=1] Health

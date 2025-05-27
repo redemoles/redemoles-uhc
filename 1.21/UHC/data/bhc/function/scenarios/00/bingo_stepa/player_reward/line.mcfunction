@@ -1,10 +1,10 @@
 
 #> bhc:scenarios/00/bingo_stepa/player_reward/line
 #
-# @within			bhc:scenarios/00/advancements/stepa
+# @within			bhc:scenarios/00/bingo_stepa/player_reward/case
 #
 #
-# @description		Ajout de points
+# @description		Récompenses et points individuel
 #
 
 # Récompenses

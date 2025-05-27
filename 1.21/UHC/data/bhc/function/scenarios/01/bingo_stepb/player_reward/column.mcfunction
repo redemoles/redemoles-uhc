@@ -1,14 +1,17 @@
 
 #> bhc:scenarios/01/bingo_stepb/player_reward/column
 #
-# @within			bhc:scenarios/01/advancements/stepb
+# @within			bhc:scenarios/01/bingo_stepb/player_reward/case
 #
 #
-# @description		Ajout de points
+# @description		Récompenses et points individuel
 #
 
-# Récompenses
+
+
+
+## Récompenses
 experience add @s 2 levels
 
-# Score personnel
+## Score personnel
 scoreboard players add @s bhc.stepb.score.personal 2

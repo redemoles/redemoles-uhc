@@ -18,7 +18,7 @@ tellraw @a[scores={uhc.players.lang=2}] [{"text":"[","color":"#FFFFFF","bold":tr
 scoreboard objectives setdisplay sidebar bhc.stepa.score
 
 # Reset des succès
-execute as @e[type=marker,tag=UHC] run function bhc:scenarios/08/timer/reset_scores
+execute as @e[type=marker,tag=UHC,distance=0..] run function bhc:scenarios/08/timer/reset_scores
 
 scoreboard players set #line_1 bhc.line 0
 scoreboard players set #line_2 bhc.line 0

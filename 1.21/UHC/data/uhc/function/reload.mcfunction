@@ -238,6 +238,9 @@ scoreboard players set #players uhc.data.temp -1
 scoreboard players set #end uhc.game.end 0
 scoreboard players set #pause uhc.data.setup 0
 
+scoreboard players set #no_pvp_safety uhc.data.temp 1
+execute if score #aic uhc.gamemode matches 1.. run scoreboard players set #aic uhc.gamemode 1
+
 ## Commandes par défaut
 execute in minecraft:overworld run function uhc:all_dimension_commands/reload
 execute in minecraft:the_nether run function uhc:all_dimension_commands/reload
@@ -308,3 +311,15 @@ execute store result storage uhc:temp tp.xp int 1 run scoreboard players get #00
 execute store result storage uhc:temp tp.xn int 1 run scoreboard players get #00 uhc.data.numbers
 execute store result storage uhc:temp tp.zp int 1 run scoreboard players get #00 uhc.data.numbers
 execute store result storage uhc:temp tp.zn int 1 run scoreboard players get #00 uhc.data.numbers
+
+## Lieu de respawn
+data modify storage uhc:settings respawn_location.720 set value 720
+data modify storage uhc:settings respawn_location.840 set value 840
+data modify storage uhc:settings respawn_location.360 set value 360
+data modify storage uhc:settings respawn_location.960 set value 960
+data modify storage uhc:settings respawn_location.0 set value 960
+scoreboard players set #respawn_location_720 uhc.data.setup 720
+scoreboard players set #respawn_location_840 uhc.data.setup 840
+scoreboard players set #respawn_location_360 uhc.data.setup 360
+scoreboard players set #respawn_location_960 uhc.data.setup 960
+scoreboard players set #respawn_location_0 uhc.data.setup 0

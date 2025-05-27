@@ -41,9 +41,43 @@ team remove 29
 team remove 30
 team remove 31
 team remove 32
-team remove 98
+team remove 91
+team remove 92
 team remove 99
 team remove uhc.pvp.safety
+team remove 101
+team remove 102
+team remove 103
+team remove 104
+team remove 105
+team remove 106
+team remove 107
+team remove 108
+team remove 109
+team remove 110
+team remove 111
+team remove 112
+team remove 113
+team remove 114
+team remove 115
+team remove 116
+team remove 117
+team remove 118
+team remove 119
+team remove 120
+team remove 121
+team remove 122
+team remove 123
+team remove 124
+team remove 125
+team remove 126
+team remove 127
+team remove 128
+team remove 129
+team remove 130
+team remove 131
+team remove 132
+team remove 192
 
 ## Suppression des équipes d'affichage
 team remove sb01
@@ -97,9 +131,43 @@ team add 29
 team add 30
 team add 31
 team add 32
-team add 98
+team add 91
+team add 92
 team add 99
 team add uhc.pvp.safety
+team add 101
+team add 102
+team add 103
+team add 104
+team add 105
+team add 106
+team add 107
+team add 108
+team add 109
+team add 110
+team add 111
+team add 112
+team add 113
+team add 114
+team add 115
+team add 116
+team add 117
+team add 118
+team add 119
+team add 120
+team add 121
+team add 122
+team add 123
+team add 124
+team add 125
+team add 126
+team add 127
+team add 128
+team add 129
+team add 130
+team add 131
+team add 132
+team add 192
 
 ## Couleurs des équipes
 team modify 00 color white
@@ -135,11 +203,45 @@ team modify 29 color white
 team modify 30 color gray
 team modify 31 color dark_gray
 team modify 32 color black
-team modify 98 color yellow
+team modify 91 color yellow
+team modify 92 color blue
 team modify 99 color white
 team modify uhc.pvp.safety color yellow
 team modify uhc.pvp.safety friendlyFire false
 team modify uhc.pvp.safety prefix [{"text":"PvP Off ","color":"#FF3F3F"}]
+team modify 101 color dark_blue
+team modify 102 color blue
+team modify 103 color dark_aqua
+team modify 104 color aqua
+team modify 105 color dark_green
+team modify 106 color green
+team modify 107 color yellow
+team modify 108 color gold
+team modify 109 color red
+team modify 110 color dark_red
+team modify 111 color dark_purple
+team modify 112 color light_purple
+team modify 113 color white
+team modify 114 color gray
+team modify 115 color dark_gray
+team modify 116 color black
+team modify 117 color dark_blue
+team modify 118 color blue
+team modify 119 color dark_aqua
+team modify 120 color aqua
+team modify 121 color dark_green
+team modify 122 color green
+team modify 123 color yellow
+team modify 124 color gold
+team modify 125 color red
+team modify 126 color dark_red
+team modify 127 color dark_purple
+team modify 128 color light_purple
+team modify 129 color white
+team modify 130 color gray
+team modify 131 color dark_gray
+team modify 132 color black
+team modify 192 color red
 
 ## Affichage scoreboard des équipes
 team add sb01
@@ -228,5 +330,55 @@ team modify 13 collisionRule never
 team modify 14 collisionRule never
 team modify 15 collisionRule never
 team modify 16 collisionRule never
-team modify 98 collisionRule never
+team modify 17 collisionRule never
+team modify 18 collisionRule never
+team modify 19 collisionRule never
+team modify 20 collisionRule never
+team modify 21 collisionRule never
+team modify 22 collisionRule never
+team modify 23 collisionRule never
+team modify 24 collisionRule never
+team modify 25 collisionRule never
+team modify 26 collisionRule never
+team modify 27 collisionRule never
+team modify 28 collisionRule never
+team modify 29 collisionRule never
+team modify 30 collisionRule never
+team modify 31 collisionRule never
+team modify 32 collisionRule never
+team modify 91 collisionRule never
+team modify 92 collisionRule never
 team modify 99 collisionRule never
+team modify 101 collisionRule never
+team modify 102 collisionRule never
+team modify 103 collisionRule never
+team modify 104 collisionRule never
+team modify 105 collisionRule never
+team modify 106 collisionRule never
+team modify 107 collisionRule never
+team modify 108 collisionRule never
+team modify 109 collisionRule never
+team modify 110 collisionRule never
+team modify 111 collisionRule never
+team modify 112 collisionRule never
+team modify 113 collisionRule never
+team modify 114 collisionRule never
+team modify 115 collisionRule never
+team modify 116 collisionRule never
+team modify 117 collisionRule never
+team modify 118 collisionRule never
+team modify 119 collisionRule never
+team modify 120 collisionRule never
+team modify 121 collisionRule never
+team modify 122 collisionRule never
+team modify 123 collisionRule never
+team modify 124 collisionRule never
+team modify 125 collisionRule never
+team modify 126 collisionRule never
+team modify 127 collisionRule never
+team modify 128 collisionRule never
+team modify 129 collisionRule never
+team modify 130 collisionRule never
+team modify 131 collisionRule never
+team modify 132 collisionRule never
+team modify 192 collisionRule never

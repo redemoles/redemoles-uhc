@@ -50,3 +50,4 @@ scoreboard players set #live_1 uhc.data.setup 105
 
 ## Scénario
 scoreboard players set #blood_diamond uhc.scenario 1
+scoreboard players set #biome_paranoia uhc.scenario 0

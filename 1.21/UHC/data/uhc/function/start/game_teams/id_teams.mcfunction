@@ -14,7 +14,7 @@ execute as @p[scores={uhc.id.players=1..},predicate=uhc:id_teams] run scoreboard
 
 # +1 Team et +1 Joueur dans la team
 execute if score #team_new uhc.id.teams matches 1 run scoreboard players add #teams uhc.data.temp 1
-scoreboard players add @e[type=marker,predicate=uhc:id_teams] uhc.data.setup 1
+scoreboard players add @e[type=marker,predicate=uhc:id_teams] uhc.players.lives 1
 
 # Id de joueur
 scoreboard players add #next_id uhc.id.players 1

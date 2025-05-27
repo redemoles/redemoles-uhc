@@ -9,8 +9,8 @@
 
 clear @s
 
-tag @s add menu.players
-tag @s[tag=!uhc.host] add players.menu.teams
+tag @s add menu.player
+tag @s[tag=!uhc.host] add menu.player.teams
 scoreboard players set @s uhc.menu.host.settings 0
 
 
@@ -19,9 +19,9 @@ scoreboard players set @s uhc.menu.host.settings 0
 
 function uhc:pre_game/menu/load/background/
 
-scoreboard players set #team uhc.id.teams 99
+scoreboard players set #team uhc.id.teams 91
 function uhc:pre_game/menu/load/teams/gamemode/dru/teams/
-function uhc:pre_game/menu/load/teams/gamemode/dru/teams/00 with storage uhc:team
+function uhc:pre_game/menu/load/teams/gamemode/dru/teams/91 with storage uhc:team
 
 function uhc:pre_game/menu/load/teams/gamemode/dru/spec/
 function uhc:pre_game/menu/load/teams/gamemode/dru/spec/players with storage uhc:team
@@ -35,4 +35,4 @@ item replace entity @s[tag=uhc.player.night_vision,scores={uhc.players.lang=2}] 
 item replace entity @s[scores={uhc.players.lang=1}] inventory.25 with minecraft:book[minecraft:item_name=[{"text":"Configuration de la partie","color":"#3FE7FF","bold":true,"italic":false}],minecraft:custom_data={Tags:"menu_settings"}]
 item replace entity @s[scores={uhc.players.lang=2}] inventory.25 with minecraft:book[minecraft:item_name=[{"text":"Game settings","color":"#3FE7FF","bold":true,"italic":false}],minecraft:custom_data={Tags:"menu_settings"}]
 
-tag @s remove menu.players
+tag @s remove menu.player

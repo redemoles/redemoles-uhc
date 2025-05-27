@@ -8,5 +8,5 @@
 #
 
 
-execute as @e[type=marker,tag=UHC,scores={uhc.teams.ironman=1..}] run function bhc:scores_calculator/death/ironman/scores
-execute as @e[type=marker,tag=UHC] run function bhc:scores_calculator/death/ironman/rank
+execute as @e[type=marker,tag=UHC,distance=0..,scores={uhc.teams.ironman=1..}] run function bhc:scores_calculator/death/ironman/scores
+execute as @e[type=marker,tag=UHC,distance=0..] run function bhc:scores_calculator/death/ironman/rank

@@ -12,7 +12,7 @@ scoreboard players operation @s bhc.kills.score.inv = @s uhc.players.kills
 
 # Ajout d'un kill à l'équipe du joueur qui a fait le kill
 scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
-execute as @e[type=marker,tag=UHC,predicate=uhc:id_teams] run function bhc:scores_calculator/kills/scores
+execute as @e[type=marker,tag=UHC,distance=0..,predicate=uhc:id_teams] run function bhc:scores_calculator/kills/scores
 
 ## Classement
-execute as @e[type=marker,tag=UHC] run function bhc:scores_calculator/kills/rank
+execute as @e[type=marker,tag=UHC,distance=0..] run function bhc:scores_calculator/kills/rank

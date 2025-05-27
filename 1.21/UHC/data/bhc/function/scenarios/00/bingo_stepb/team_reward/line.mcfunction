@@ -12,4 +12,4 @@ scoreboard players operation @s bhc.stepb.score.inv /= #1m uhc.data.numbers
 scoreboard players add @s bhc.stepb.score.inv 2
 scoreboard players operation @a[predicate=uhc:id_teams] bhc.stepb.score.inv = @s bhc.stepb.score.inv
 scoreboard players operation @s bhc.stepb.score.inv *= #1m uhc.data.numbers
-scoreboard players add @e[type=marker,tag=UHC] bhc.stepb.score.inv 1
+scoreboard players add @e[type=marker,tag=UHC,distance=0..] bhc.stepb.score.inv 1

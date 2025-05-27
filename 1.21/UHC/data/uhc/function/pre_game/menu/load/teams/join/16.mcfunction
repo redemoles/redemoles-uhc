@@ -15,7 +15,7 @@ execute if score #temp uhc.data.setup >= #team_size uhc.data.setup run return fa
 tag @s remove uhc.spec
 tag @s add uhc.player
 execute if score #anonyme_team uhc.data.setup matches 0 run team join 16 @s
-execute if score #anonyme_team uhc.data.setup matches 1 run team join 98 @s
+execute if score #anonyme_team uhc.data.setup matches 1 run team join 91 @s
 
 tellraw @s[scores={uhc.players.lang=1}] [{"text":"Tu viens de rejoindre l'","color":"#3FE7FF","bold":false},{"text":"Équipe Noire","color":"black","bold":false}]
 tellraw @s[scores={uhc.players.lang=2}] [{"text":"You joined the ","color":"#3FE7FF","bold":false},{"text":"Black Team","color":"black","bold":false}]

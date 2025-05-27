@@ -1,11 +1,16 @@
 
 #> uhc:in_game/tp/spawn/border_size/
 #
-# @within			uhc:in_game/players_settings/death/
-# @within			uhc:start/game_teams/
+# @within			uhc:in_game/timer/tick
+# 
 #
 # @description		Changement des points d'apparitions des équipes
 #
+
+# Données Worldborder
+execute store result score #border_size uhc.data.temp run worldborder get
+scoreboard players remove #border_size uhc.data.temp 1
+scoreboard players operation #border_size uhc.data.temp /= #02 uhc.data.numbers
 
 execute if score #border_size uhc.data.temp matches 1000.. unless score #border_size_tp uhc.data.temp matches 1000 run return run function uhc:in_game/tp/spawn/border_size/1000-1999
 execute if score #border_size uhc.data.temp matches 500..999 unless score #border_size_tp uhc.data.temp matches 500 run return run function uhc:in_game/tp/spawn/border_size/500-999

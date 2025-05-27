@@ -12,8 +12,11 @@
 ## Sélection du joueur et son équipe
 scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
 tag @s add bhc.new_adv
-$execute as @e[type=marker,predicate=uhc:id_teams] run function bhc:scenarios/08/advancements/new_adv_1 with storage $(namespace) $(line)_$(column)
+$execute in uhc:lobby as @e[type=marker,tag=UHC,distance=0..,predicate=uhc:id_teams] run function bhc:scenarios/08/advancements/new_adv_1 with storage $(namespace) $(line)_$(column)
 execute if score #team_first_case bhc.data matches 0 run return run tag @s remove bhc.new_adv
+
+## Resélection de l'équipe du joueur
+scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
 
 ## Messages
 # Msg FRA
@@ -35,9 +38,6 @@ $execute unless score #total_first_$(namespace)_$(line)_$(column) bhc.data match
 $execute if score #team_first_line_$(line) bhc.data matches 1 run function bhc:scenarios/08/advancements/message_line with storage $(namespace) $(line)_$(column)
 $execute if score #team_first_column_$(column) bhc.data matches 1 run function bhc:scenarios/08/advancements/message_column with storage $(namespace) $(line)_$(column)
 
-## Équipe du joueur
-scoreboard players operation #team uhc.id.teams = @s uhc.id.teams
-
 ## Don de l'advancements aux alliés
 $advancement grant @a[predicate=uhc:id_teams] only $(namespace):$(line)_$(column)
 
@@ -45,8 +45,8 @@ $advancement grant @a[predicate=uhc:id_teams] only $(namespace):$(line)_$(column
 
 
 ## Récompenses
-$execute if score #stepa_enabled bhc.data matches $(step) run function bhc:scenarios/08/advancements/stepa with storage $(namespace) $(line)_$(column)
-$execute if score #stepb_enabled bhc.data matches $(step) run function bhc:scenarios/08/advancements/stepb with storage $(namespace) $(line)_$(column)
+$execute if score #stepa_enabled bhc.data matches $(step) run function bhc:scenarios/08/bingo_stepa/player_reward/case with storage $(namespace) $(line)_$(column)
+$execute if score #stepb_enabled bhc.data matches $(step) run function bhc:scenarios/08/bingo_stepb/player_reward/case with storage $(namespace) $(line)_$(column)
 
 tag @s remove bhc.new_adv
 

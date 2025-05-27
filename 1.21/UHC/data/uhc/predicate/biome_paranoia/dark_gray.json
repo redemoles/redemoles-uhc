@@ -1,13 +1,32 @@
 [
   {
-    "condition": "minecraft:location_check",
-    "predicate": {
-      "position": {
+    "condition": "minecraft:all_of",
+    "terms": [
+      {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "position": {
         "y": {
           "min": -64,
           "max": 0
+          }
+        }
+      }    
+    },
+    {
+      "condition": "minecraft:inverted",
+      "term":
+        {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "biomes": [
+              "minecraft:deep_dark",
+              "minecraft:dripstone_caves",
+              "minecraft:lush_caves"
+            ]
+          }
         }
       }
-    }
+    ]
   }
 ]

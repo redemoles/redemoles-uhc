@@ -8,7 +8,7 @@
 #
 
 ## Ajout d'équipes
-function bhc:test/scores/teams
+execute in uhc:lobby run function bhc:test/scores/teams
 
 ## Ajout de points pour toutes les équipes
 # Mémorise l'équipe de base du testeur

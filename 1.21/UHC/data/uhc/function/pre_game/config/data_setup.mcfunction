@@ -109,7 +109,6 @@ scoreboard players set #reward_kill_health uhc.data.setup 0
 scoreboard players set #reward_kill_absorption uhc.data.setup 0
 execute store result storage uhc:settings reward_kill.health int 1 run scoreboard players get #reward_kill_health uhc.data.setup
 scoreboard players set #friendly_fire uhc.data.setup 1
-scoreboard players set #no_pvp_safety uhc.data.setup 1
 
 scoreboard players set #shrink_1_size_start uhc.data.setup 1000
 
@@ -150,15 +149,3 @@ execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:
 execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_ironman set value [{count: 2, Slot: 0b, id: "minecraft:golden_apple"}]
 execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_additional set value [{count: 2, Slot: 0b, id: "minecraft:golden_apple"}]
 execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_notch_totem set value [{count: 4, Slot: 0b, id: "minecraft:gold_block"}]
-
-## Lieu de respawn
-data modify storage uhc:settings respawn_location.720 set value 720
-data modify storage uhc:settings respawn_location.840 set value 840
-data modify storage uhc:settings respawn_location.360 set value 360
-data modify storage uhc:settings respawn_location.960 set value 960
-data modify storage uhc:settings respawn_location.0 set value 960
-scoreboard players set #respawn_location_720 uhc.data.setup 720
-scoreboard players set #respawn_location_840 uhc.data.setup 840
-scoreboard players set #respawn_location_360 uhc.data.setup 360
-scoreboard players set #respawn_location_960 uhc.data.setup 960
-scoreboard players set #respawn_location_0 uhc.data.setup 0

@@ -11,7 +11,7 @@ tellraw @a[scores={uhc.players.lang=1}] [{"text":"L'Ender Dragon vient de réapp
 tellraw @a[scores={uhc.players.lang=2}] [{"text":"The Ender Dragon just respawned!","bold":false,"color":"#FFE73F"}]
 
 #$execute in the_end run fill -2 $(y) -2 2 $(y) 2 air replace end_portal
-execute in the_end run summon ender_dragon 0 128 0 {DragonPhase:0}
+execute in minecraft:the_end run summon minecraft:ender_dragon 0 128 0 {DragonPhase:0}
 
 bossbar add aic:ender_dragon {"text":"Ender Dragon"}
 bossbar set aic:ender_dragon max 200

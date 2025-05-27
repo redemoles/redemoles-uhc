@@ -17,6 +17,7 @@ execute if score #start_delay uhc.data.setup matches 1 unless score #force_stepa
 execute if score #minutes uhc.data.temp matches ..-1 run return fail
 
 ## Priorité des annnoces à envoyer
+scoreboard players set #min_cooldown_alert uhc.data.temp 0
 scoreboard players set #min_cooldown_temp uhc.data.temp 0
 scoreboard players set #min_cooldown_temp_bhc uhc.data.temp 0
 function uhc:in_game/timer/hotbar/cooldown/priority_check/

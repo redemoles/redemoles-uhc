@@ -7,7 +7,10 @@
 # @description		Commandes in-game en tick
 #
 
-execute as @a in minecraft:overworld run function uhc:in_game/tp/spawn/text
-worldborder set 301
 scoreboard players set @a uhc.meetup.activate 2
+worldborder set 301
+
+function uhc:in_game/tp/spawn/border_size/
+
+execute as @a run function uhc:in_game/tp/spawn/default with storage uhc:settings respawn_location
 

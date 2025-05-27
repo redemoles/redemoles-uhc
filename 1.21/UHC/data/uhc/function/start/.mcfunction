@@ -24,5 +24,7 @@ tag @a remove mgs.tc.team.02
 execute as @s run function uhc:pre_game/players_and_teams/reset_effects
 
 ## Random team
-execute if score #random_team_start uhc.data.setup matches 1 if score #random_team uhc.data.setup matches 1 run function uhc:pre_game/players_and_teams/random_team/
-execute if score #random_team_start uhc.data.setup matches 1 if score #random_team uhc.data.setup matches 1 if score #anonyme_team uhc.data.setup matches 0 run function uhc:pre_game/players_and_teams/random_team/reveal/instant
+execute if score #random_team_start uhc.data.setup matches 1 if score #random_team uhc.data.setup matches 1 run function uhc:pre_game/players_and_teams/random_team/1_group/
+execute if score #random_team_start uhc.data.setup matches 1 if score #random_team uhc.data.setup matches 1 if score #anonyme_team uhc.data.setup matches 0 run function uhc:pre_game/players_and_teams/random_team/1_group/reveal/instant
+execute if score #random_team_start uhc.data.setup matches 1 if score #random_team uhc.data.setup matches 2 run function uhc:pre_game/players_and_teams/random_team/2_groups/
+execute if score #random_team_start uhc.data.setup matches 1 if score #random_team uhc.data.setup matches 2 if score #anonyme_team uhc.data.setup matches 0 run function uhc:pre_game/players_and_teams/random_team/2_groups/reveal/instant

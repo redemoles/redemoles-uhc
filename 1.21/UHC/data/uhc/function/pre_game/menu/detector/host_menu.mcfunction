@@ -15,6 +15,7 @@ execute if entity @s[tag=host.menu.lobby] run function uhc:pre_game/menu/selecti
 execute if entity @s[tag=host.menu.teams] if score #dru uhc.gamemode matches 1 run function uhc:pre_game/menu/selection/teams_gm_dru
 execute if entity @s[tag=host.menu.teams] if score #dru uhc.gamemode matches 0 if score #random_team uhc.data.setup matches 0 run function uhc:pre_game/menu/selection/teams_gm_vanilla
 execute if entity @s[tag=host.menu.teams] if score #dru uhc.gamemode matches 0 if score #random_team uhc.data.setup matches 1 run function uhc:pre_game/menu/selection/teams_gm_vanilla_random
+execute if entity @s[tag=host.menu.teams] if score #dru uhc.gamemode matches 0 if score #random_team uhc.data.setup matches 2 run function uhc:pre_game/menu/selection/teams_gm_vanilla_random_split
 execute if entity @s[tag=host.menu.scenarios.1] run function uhc:pre_game/menu/selection/scenarios/1
 execute if entity @s[tag=host.menu.scenarios.2] run function uhc:pre_game/menu/selection/scenarios/2
 execute if score @s uhc.menu.host.scenarios.blood_diamond matches 1.. run function uhc:pre_game/menu/selection/scenarios/blood_diamond

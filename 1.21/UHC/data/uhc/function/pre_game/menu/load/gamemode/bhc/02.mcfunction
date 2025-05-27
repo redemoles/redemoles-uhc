@@ -27,10 +27,10 @@ scoreboard players set #bhc bhc.scenario 2
 
 ## UHC → Préparation Config pre-game
 scoreboard players set #pve uhc.data.setup 2
-scoreboard players set #pvp uhc.data.setup 40
-scoreboard players set #shrink_1 uhc.data.setup 75
-scoreboard players set #shrink_2 uhc.data.setup 110
-scoreboard players set #shrink_3 uhc.data.setup 120
+scoreboard players set #pvp uhc.data.setup 45
+scoreboard players set #shrink_1 uhc.data.setup 725
+scoreboard players set #shrink_2 uhc.data.setup 760
+scoreboard players set #shrink_3 uhc.data.setup 770
 scoreboard players set #shrink_1_length uhc.data.setup 30
 scoreboard players set #shrink_2_length uhc.data.setup 5
 scoreboard players set #shrink_3_length uhc.data.setup 5
@@ -45,8 +45,8 @@ execute if score #bhc uhc.gamemode matches 1 run data modify storage uhc:setting
 ## Vies
 scoreboard players set #lives uhc.data.setup 3
 scoreboard players set #live_3 uhc.data.setup 0
-scoreboard players set #live_2 uhc.data.setup 60
-scoreboard players set #live_1 uhc.data.setup 105
+scoreboard players set #live_2 uhc.data.setup 45
+scoreboard players set #live_1 uhc.data.setup 725
 
 ## Scénario
 scoreboard players set #blood_diamond uhc.scenario 1

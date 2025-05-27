@@ -13,7 +13,7 @@ scoreboard players remove #temp bhc.data 1
 
 ## Compte le nombre d'équipe avec un score supérieur à celle sélectionnée
 tag @s add bhc.count
-execute store result score #count bhc.data if entity @e[type=marker,tag=UHC,tag=!bhc.count,predicate=bhc:rank_ironman]
+execute store result score #count bhc.data if entity @e[type=marker,tag=UHC,distance=0..,tag=!bhc.count,predicate=bhc:rank_ironman]
 tag @s remove bhc.count
 
 ## Classement

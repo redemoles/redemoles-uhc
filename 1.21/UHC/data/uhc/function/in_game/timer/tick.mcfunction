@@ -83,7 +83,7 @@ execute as @e[type=player,scores={uhc.players.death=1}] run function uhc:in_game
 
 ## @a → Effets, Respawn, Connexion d'un joueur externe, Scenarios
 execute as @a run function uhc:in_game/timer/players
-execute if score #no_pvp_safety uhc.data.setup matches 1 run function uhc:in_game/players_settings/pvp/safety
+execute if score #no_pvp_safety uhc.data.temp matches 1 run function uhc:in_game/players_settings/pvp/safety
 execute if score #absorption uhc.data.setup matches ..1 as @a[tag=uhc.player,predicate=uhc:effect/absorption] run function uhc:in_game/players_settings/effect/absorption
 
 ## End
@@ -93,10 +93,10 @@ execute in minecraft:overworld as @a[distance=0..,scores={uhc.world.end=1}] run 
 
 ## Force commands
 # Force Meet-up
-execute if entity @p[scores={uhc.meetup.activate=1}] run function uhc:in_game/force_commands/meetup
+execute if entity @p[scores={uhc.meetup.activate=1}] in minecraft:overworld run function uhc:in_game/force_commands/meetup
 
 # Force Endgame
-execute if entity @p[scores={uhc.game.end=1}] run function uhc:in_game/force_commands/end
+execute if entity @p[scores={uhc.game.end=1}] in uhc:lobby run function uhc:in_game/force_commands/end
 
 ## Autres modes de jeu
 execute if score #bhc uhc.gamemode matches 1 unless score #end uhc.game.end matches 1.. run function bhc:timer/tick

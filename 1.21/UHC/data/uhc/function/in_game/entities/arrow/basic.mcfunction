@@ -7,5 +7,5 @@
 # @description		Réduction des dégâts des flèches
 #
 
-execute store result entity @s damage double 0.60 run data get entity @s damage
+execute store result entity @s damage double 0.65 run data get entity @s damage
 tag @s add uhc.checked
