@@ -1,0 +1,38 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:polished_blackstone_stairs"
+		},
+		"title": {
+			"text": "Polished Blackstone Stairs",
+			"color": "#FFDF00"
+		},
+		"description": {
+			"text": "Obtenir un(e) Polished Blackstone Stairs",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:polished_blackstone_stairs"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"requirement"
+		]
+	]
+}

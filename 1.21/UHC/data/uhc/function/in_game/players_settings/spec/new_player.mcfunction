@@ -7,10 +7,11 @@
 # @description		Donne les effets / gamemode aux specs
 #
 
-team join 99 @s
+team join 99 @s[tag=!uhc.host]
+team join 99.host @s[tag=uhc.host]
 clear @s
 effect clear @s
-execute unless score @s uhc.players.lang matches 1.. run scoreboard players set @s uhc.players.lang 1
+execute unless score @s uhc.players.lang matches 1.. run scoreboard players set @s uhc.players.lang 061801
 tag @s remove uhc.player.dead
 title @s reset
 

@@ -16,6 +16,9 @@ scoreboard objectives remove bhc.stepb.score.personal
 scoreboard objectives remove bhc.bingo.score.inv
 scoreboard objectives remove bhc.bingo.score
 
+scoreboard objectives remove bhc.stepa.case
+scoreboard objectives remove bhc.stepb.case
+
 scoreboard objectives remove bhc.stepa.score.inv
 scoreboard objectives remove bhc.stepb.score.inv
 scoreboard objectives remove bhc.kills.score.inv
@@ -89,6 +92,9 @@ scoreboard objectives add bhc.stepa.score.personal dummy [{"text":"Bingo C. ","c
 scoreboard objectives add bhc.stepb.score.personal dummy [{"text":"Bingo Spé. ","color":"#FFFFFF"},{"text":">","color":"#00C3DF","bold":true},{"text":" Individuel","color":"#FFFFFF"}]
 scoreboard objectives add bhc.bingo.score.inv dummy
 scoreboard objectives add bhc.bingo.score dummy [{"text":"Bingos C.","color":"#FFFFFF"},{"text":" & ","color":"#FFE73F"},{"text":"Spé.","color":"#FFFFFF"}]
+
+scoreboard objectives add bhc.stepa.case dummy
+scoreboard objectives add bhc.stepb.case dummy
 
 scoreboard objectives add bhc.stepa.score.inv dummy
 scoreboard objectives add bhc.stepb.score.inv dummy

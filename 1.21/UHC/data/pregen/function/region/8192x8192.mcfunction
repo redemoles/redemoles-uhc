@@ -8302,5 +8302,5 @@ $execute if score #$(dimension)_chunk_pregen_$(area) pregen.world matches 5100 r
 $execute if score #$(dimension)_chunk_pregen_$(area) pregen.world matches 5100 run tellraw @a [{"text":"La zone de 8192x8192 a entièrement été générée"}]
 $execute if score #$(dimension)_chunk_pregen_$(area) pregen.world matches 5100 run scoreboard players set #$(dimension)_working pregen.world 0
 $execute if score #$(dimension)_chunk_pregen_$(area) pregen.world matches 5100 run scoreboard players set #$(dimension)_finished pregen.world 8
-$execute if score #$(dimension)_chunk_pregen_$(area) pregen.world matches 5100 as @a[tag=host.menu.world_generation] run advancement grant @s only uhc:inventory_menu
+$execute if score #$(dimension)_chunk_pregen_$(area) pregen.world matches 5100 as @a[tag=uhc.menu.world_generation] run advancement grant @s only uhc:inventory_menu
 $execute if score #$(dimension)_chunk_pregen_$(area) pregen.world matches 5100 run scoreboard players set #$(dimension)_chunk_pregen_$(area) pregen.world 0

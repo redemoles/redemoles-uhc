@@ -16,8 +16,8 @@ execute if entity @p[tag=fte.roles.servant] as @a run function fte:start/reset_t
 
 ## Attribution de rôles
 function fte:start/roles
-tellraw @a[scores={uhc.players.lang=1}] [{"text":"[","color":"#DFC300","bold":true},{"text":"Fate","color":"#FFFFFF"},{"text":" UHC","color":"#E73F3F"},{"text":"]","color":"#DFC300"},{"text":" La partie vient de démarrer !","color":"#FFE73F","bold":false}]
-tellraw @a[scores={uhc.players.lang=2}] [{"text":"[","color":"#DFC300","bold":true},{"text":"Fate","color":"#FFFFFF"},{"text":" UHC","color":"#E73F3F"},{"text":"]","color":"#DFC300"},{"text":" Game starting now!","color":"#FFE73F","bold":false}]
+tellraw @a[scores={uhc.players.lang=061801}] [{"text":"[","color":"#DFC300","bold":true},{"text":"Fate","color":"#FFFFFF"},{"text":" UHC","color":"#E73F3F"},{"text":"]","color":"#DFC300"},{"text":" La partie vient de démarrer !","color":"#FFE73F","bold":false}]
+tellraw @a[scores={uhc.players.lang=051407}] [{"text":"[","color":"#DFC300","bold":true},{"text":"Fate","color":"#FFFFFF"},{"text":" UHC","color":"#E73F3F"},{"text":"]","color":"#DFC300"},{"text":" Game starting now!","color":"#FFE73F","bold":false}]
 
 tellraw @a[tag=fte.roles.servant] ["",{"text":"Tu es un ","color":"yellow"},{"text":"Servant","bold":true,"color":"yellow"},{"text":".\nTu vas ultérieurement être invoqué par ton Master, ton objectif sera de l'aider à remporter la Guerre du Graal.","color":"yellow"}]
 tellraw @a[tag=fte.roles.master] ["",{"text":"Tu es un ","color":"yellow"},{"text":"Master","bold":true,"color":"yellow"},{"text":".\nTon objectif est d'invoquer au plus vite un servant afin de remporter la Guerre du Graal.","color":"yellow"}]

@@ -18,6 +18,7 @@ bingo_name = "Bingo Classique"
 step_number = "1"
 advancements_folder = "items_all"
 configuration_objective = "bhc.data"
+max_square_objective = "bhc.stepa.case"
 icon_item = "minecraft:paper"
 title_color = "#B73FFF"
 description = ""
@@ -149,6 +150,8 @@ scoreboard players set #line-1 {configuration_objective} {line}
 scoreboard players set #column-1 {configuration_objective} {column}
 scoreboard players remove #line-1 {configuration_objective} 1
 scoreboard players remove #column-1 {configuration_objective} 1
+scoreboard players set #max {max_square_objective} {line}
+scoreboard players operation #max {max_square_objective} *= #0{column} uhc.data.numbers
 """)
 
 	# Write the pack.mcmeta file
@@ -179,6 +182,7 @@ bingo_name = "Ruée vers l'or"
 step_number = "2"
 advancements_folder = "items_all"
 configuration_objective = "bhc.data"
+max_square_objective = "bhc.stepb.case"
 icon_item = "minecraft:gold_ingot"
 title_color = "#B73FFF"
 description = ""
@@ -310,6 +314,8 @@ scoreboard players set #line-1 {configuration_objective} {line}
 scoreboard players set #column-1 {configuration_objective} {column}
 scoreboard players remove #line-1 {configuration_objective} 1
 scoreboard players remove #column-1 {configuration_objective} 1
+scoreboard players set #max {max_square_objective} {line}
+scoreboard players operation #max {max_square_objective} *= #0{column} uhc.data.numbers
 """)
 	
 	# Write the pack.mcmeta file

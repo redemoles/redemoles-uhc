@@ -76,8 +76,11 @@ execute if score #blood_diamond uhc.scenario matches 1 as @s[scores={uhc.scenari
 execute if score #blood_diamond uhc.scenario matches 1 as @s[scores={uhc.scenario.blood_diamond.temp=1..}] run function uhc:in_game/scenarios/blood_diamond/reward with storage uhc:settings blood_diamond
 execute if score #go_to_hell uhc.scenario matches 1 run function uhc:in_game/scenarios/go_to_hell/tick
 execute if score #sky_high uhc.scenario matches 1 at @s run function uhc:in_game/scenarios/sky_high/tick
-execute if score #team_health uhc.scenario matches 1 unless score @s uhc.players.health = @s uhc.scenario.team_health.player run function uhc:in_game/scenarios/team_health/
+execute if score #team_health uhc.scenario matches 1 if entity @s[gamemode=!spectator] unless score @s uhc.players.health = @s uhc.scenario.team_health.player run function uhc:in_game/scenarios/team_health/
 execute if score #trade_uhc uhc.scenario matches 1 unless score #blood_cycle uhc.scenario matches 1 run function uhc:in_game/scenarios/trade_uhc/
+
+## Loups
+execute at @s if entity @n[type=minecraft:wolf,distance=..10] run function uhc:in_game/players_settings/pvp/wolf/
 
 ## Border TP
 execute if score #shrink_1 uhc.data.temp matches ..0 as @s[tag=uhc.player,predicate=!uhc:dimension/the_nether] at @s run function uhc:in_game/tp/border/coords

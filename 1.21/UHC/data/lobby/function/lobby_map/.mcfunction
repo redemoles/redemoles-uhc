@@ -8,8 +8,8 @@
 #
 
 # Message démarrage
-execute if score #loaded lobby.structure.data matches 0 if score #tick lobby.structure.data matches 0 run tellraw @a[scores={uhc.players.lang=1}] [{"text":"Chargement du lobby..."}]
-execute if score #loaded lobby.structure.data matches 0 if score #tick lobby.structure.data matches 0 run tellraw @a[scores={uhc.players.lang=2}] [{"text":"Lobby loading..."}]
+execute if score #loaded lobby.structure.data matches 0 if score #tick lobby.structure.data matches 0 run tellraw @a[scores={uhc.players.lang=061801}] [{"text":"Chargement du lobby..."}]
+execute if score #loaded lobby.structure.data matches 0 if score #tick lobby.structure.data matches 0 run tellraw @a[scores={uhc.players.lang=051407}] [{"text":"Lobby loading..."}]
 
 # Lobby 01 - Bingo UHC - Granite
 execute if score #lobby lobby.structure.data matches 01 if score #tick lobby.structure.data matches 01 positioned 0 65 0 run function lobby:lobby_map/01/1
@@ -26,6 +26,6 @@ execute if score #lobby lobby.structure.data matches 11 if score #tick lobby.str
 execute if score #lobby lobby.structure.data matches 11 if score #tick lobby.structure.data matches 11 positioned 0 65 0 run function lobby:lobby_map/11/2
 
 # Message fin
-execute if score #loaded lobby.structure.data matches 1 run tellraw @a[scores={uhc.players.lang=1}] [{"text":"Lobby chargé."}]
-execute if score #loaded lobby.structure.data matches 1 run tellraw @a[scores={uhc.players.lang=2}] [{"text":"Lobby loaded."}]
+execute if score #loaded lobby.structure.data matches 1 run tellraw @a[scores={uhc.players.lang=061801}] [{"text":"Lobby chargé."}]
+execute if score #loaded lobby.structure.data matches 1 run tellraw @a[scores={uhc.players.lang=051407}] [{"text":"Lobby loaded."}]
 scoreboard players add #tick lobby.structure.data 1

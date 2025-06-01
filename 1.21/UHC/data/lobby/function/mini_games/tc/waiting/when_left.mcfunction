@@ -11,11 +11,11 @@ scoreboard players enable @s lobby.tc.player.click_to_join
 scoreboard players set @s lobby.tc.player.click_to_join 0
 execute if entity @s[tag=!mgs.tc.player] run return fail
 
-execute if entity @s[scores={uhc.players.lang=1},tag=mgs.tc.spec,tag=mgs.tc.player] run tellraw @s [{"text":"Tu as quitté la liste d'attente.","color":"#FF3F3F"}]
-execute if entity @s[scores={uhc.players.lang=2},tag=mgs.tc.spec,tag=mgs.tc.player] run tellraw @s [{"text":"You left the waiting list.","color":"#FF3F3F"}]
+execute if entity @s[scores={uhc.players.lang=061801},tag=mgs.tc.spec,tag=mgs.tc.player] run tellraw @s [{"text":"Tu as quitté la liste d'attente.","color":"#FF3F3F"}]
+execute if entity @s[scores={uhc.players.lang=051407},tag=mgs.tc.spec,tag=mgs.tc.player] run tellraw @s [{"text":"You left the waiting list.","color":"#FF3F3F"}]
 
-execute if entity @s[scores={uhc.players.lang=1},tag=!mgs.tc.spec,tag=mgs.tc.player] run tellraw @s [{"text":"Tu as quitté la chambre.","color":"#FF3F3F"}]
-execute if entity @s[scores={uhc.players.lang=2},tag=!mgs.tc.spec,tag=mgs.tc.player] run tellraw @s [{"text":"You left the chamber.","color":"#FF3F3F"}]
+execute if entity @s[scores={uhc.players.lang=061801},tag=!mgs.tc.spec,tag=mgs.tc.player] run tellraw @s [{"text":"Tu as quitté la chambre.","color":"#FF3F3F"}]
+execute if entity @s[scores={uhc.players.lang=051407},tag=!mgs.tc.spec,tag=mgs.tc.player] run tellraw @s [{"text":"You left the chamber.","color":"#FF3F3F"}]
 
 execute if entity @s[tag=!mgs.tc.spec,tag=mgs.tc.player] run tp @s 0 49 -23 0 0
 

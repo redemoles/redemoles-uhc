@@ -7,5 +7,5 @@
 # @description		Menu
 #
 
-scoreboard players set @s uhc.menu.host.teams_settings 2
+scoreboard players set @s uhc.menu.teams_settings 2
 function uhc:pre_game/menu/load/teams_settings/

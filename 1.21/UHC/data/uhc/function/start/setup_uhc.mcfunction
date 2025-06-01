@@ -85,8 +85,9 @@ scoreboard players operation #shrink_3_timer_end uhc.data.temp += #shrink_3 uhc.
 scoreboard players operation #lives_start uhc.players.lives = #lives uhc.players.lives
 
 ## Points de vie par kill
-scoreboard players add #reward_kill_health uhc.data.setup 1
-execute store result storage uhc:settings reward_kill.health int 1 run scoreboard players get #reward_kill_health uhc.data.setup
+scoreboard players operation #reward_kill_health uhc.data.temp = #reward_kill_health uhc.data.setup
+scoreboard players add #reward_kill_health uhc.data.temp 1
+execute store result storage uhc:settings reward_kill.health int 1 run scoreboard players get #reward_kill_health uhc.data.temp
 
 ## Start direct ou Start 30 secondes après le tp
 scoreboard players set #seconds uhc.data.temp 59

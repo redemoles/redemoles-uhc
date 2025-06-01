@@ -8,8 +8,8 @@
 #
 
 clear @s
-tag @s remove host.menu.scenarios.1
-tag @s add host.menu.scenarios.enchanting_setup
+tag @s remove uhc.menu.scenarios.1
+tag @s add uhc.menu.scenarios.enchanting_setup
 
 
 
@@ -26,5 +26,5 @@ execute if score #500b uhc.scenario.enchanting_setup matches 1 run item replace 
 execute if score #1000b uhc.scenario.enchanting_setup matches 0 run item replace entity @s inventory.3 with minecraft:red_concrete[minecraft:item_name=[{"text":"Structures à 1000 blocs","color":"#FF3F3F","italic":false}],minecraft:lore=[[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"1000/1000","color":"#FF7F7F","italic":true}],[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"1000/-1000","color":"#FF7F7F","italic":true}],[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"-1000/1000","color":"#FF7F7F","italic":true}],[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"-1000/-1000","color":"#FF7F7F","italic":true}]]]
 execute if score #1000b uhc.scenario.enchanting_setup matches 1 run item replace entity @s inventory.3 with minecraft:light_blue_concrete[minecraft:item_name=[{"text":"Structures à 1000 blocs","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"• ","color":"#3FE7FF","italic":false},{"text":"1000/1000","color":"#7FEFFF","italic":false}],[{"text":"• ","color":"#3FE7FF","italic":false},{"text":"1000/-1000","color":"#7FEFFF","italic":false}],[{"text":"• ","color":"#3FE7FF","italic":false},{"text":"-1000/1000","color":"#7FEFFF","italic":false}],[{"text":"• ","color":"#3FE7FF","italic":false},{"text":"-1000/-1000","color":"#7FEFFF","italic":false}]]]
 
-item replace entity @s[scores={uhc.players.lang=1}] inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Fermer","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
-item replace entity @s[scores={uhc.players.lang=2}] inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Close","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
+item replace entity @s[scores={uhc.players.lang=061801}] inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Fermer","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
+item replace entity @s[scores={uhc.players.lang=051407}] inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Close","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]

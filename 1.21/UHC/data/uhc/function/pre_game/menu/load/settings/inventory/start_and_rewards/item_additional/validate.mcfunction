@@ -8,4 +8,4 @@
 #
 
 advancement grant @s only uhc:inventory_menu
-scoreboard players set @s uhc.menu.host.settings.inventory 1
+scoreboard players set @s uhc.menu.settings.inventory 1

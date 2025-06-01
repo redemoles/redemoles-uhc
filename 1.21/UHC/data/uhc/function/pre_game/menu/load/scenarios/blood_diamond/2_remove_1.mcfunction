@@ -8,10 +8,10 @@
 #
 
 # Fin Palier 1
-execute if score @s uhc.menu.host.scenarios.blood_diamond matches 2 unless score #end_tier_1 uhc.scenario.blood_diamond.tier matches 0 run scoreboard players remove #end_tier_1 uhc.scenario.blood_diamond.tier 1
+execute if score @s uhc.menu.scenarios.blood_diamond matches 2 unless score #end_tier_1 uhc.scenario.blood_diamond.tier matches 0 run scoreboard players remove #end_tier_1 uhc.scenario.blood_diamond.tier 1
 
 # Fin Palier 2
-execute if score @s uhc.menu.host.scenarios.blood_diamond matches 3 unless score #mined_tier_2 uhc.scenario.blood_diamond.tier matches 0 run scoreboard players remove #mined_tier_2 uhc.scenario.blood_diamond.tier 1
+execute if score @s uhc.menu.scenarios.blood_diamond matches 3 unless score #mined_tier_2 uhc.scenario.blood_diamond.tier matches 0 run scoreboard players remove #mined_tier_2 uhc.scenario.blood_diamond.tier 1
 
 scoreboard players operation #end_tier_2 uhc.scenario.blood_diamond.tier = #mined_tier_2 uhc.scenario.blood_diamond.tier
 scoreboard players operation #end_tier_2 uhc.scenario.blood_diamond.tier += #end_tier_1 uhc.scenario.blood_diamond.tier

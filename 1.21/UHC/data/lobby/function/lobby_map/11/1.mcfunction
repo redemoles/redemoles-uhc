@@ -20,12 +20,12 @@ place template lobby:lobby_map/11/222 ~-70 ~-65 ~-70
 place template lobby:lobby_map/11/010 ~24 ~-17 ~24
 place template lobby:lobby_map/11/110 ~-23 ~-17 ~24
 place template lobby:lobby_map/11/210 ~-70 ~-17 ~24
-place template lobby:lobby_map/11/011 ~24 ~-17 ~-23
-place template lobby:lobby_map/11/111 ~-23 ~-17 ~-23
-place template lobby:lobby_map/11/211 ~-70 ~-17 ~-23
 place template lobby:lobby_map/11/012 ~24 ~-17 ~-70
 place template lobby:lobby_map/11/112 ~-23 ~-17 ~-70
 place template lobby:lobby_map/11/212 ~-70 ~-17 ~-70
+place template lobby:lobby_map/11/011 ~24 ~-17 ~-23
+place template lobby:lobby_map/11/111 ~-23 ~-17 ~-23
+place template lobby:lobby_map/11/211 ~-70 ~-17 ~-23
 
 time set 1000
 tp @a ~ ~ ~ 0 0

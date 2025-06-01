@@ -22,4 +22,4 @@ function bhc:scores_calculator/death/bonus
 
 # Bingo UHC II
 execute if score #bingo_2b_enabled bhc.data matches 1 run scoreboard players remove #target_ennemies uhc.data.setup 1
-execute if score #bingo_2b_enabled bhc.data matches 1 unless score #target_ennemies uhc.data.setup matches 1.. run function bhc:scenarios/02/target/
+execute if score #bingo_2b_enabled bhc.data matches 1 unless score #target_ennemies uhc.data.setup matches 1.. in uhc:lobby run function bhc:scenarios/02/target/

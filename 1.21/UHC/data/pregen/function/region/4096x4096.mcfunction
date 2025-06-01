@@ -2110,5 +2110,5 @@ $execute if score #$(dimension)_chunk_pregen_$(area) pregen.world matches 2028 r
 $execute if score #$(dimension)_chunk_pregen_$(area) pregen.world matches 2029 run tellraw @a [{"text":"La zone de 4096x4096 a entièrement été générée"}]
 $execute if score #$(dimension)_chunk_pregen_$(area) pregen.world matches 2029 run scoreboard players set #$(dimension)_working pregen.world 0
 $execute if score #$(dimension)_chunk_pregen_$(area) pregen.world matches 2029 run scoreboard players set #$(dimension)_finished pregen.world 4
-$execute if score #$(dimension)_chunk_pregen_$(area) pregen.world matches 2029 as @a[tag=host.menu.world_generation] run advancement grant @s only uhc:inventory_menu
+$execute if score #$(dimension)_chunk_pregen_$(area) pregen.world matches 2029 as @a[tag=uhc.menu.world_generation] run advancement grant @s only uhc:inventory_menu
 $execute if score #$(dimension)_chunk_pregen_$(area) pregen.world matches 2029 run scoreboard players set #$(dimension)_chunk_pregen_$(area) pregen.world 0

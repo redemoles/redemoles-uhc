@@ -18,5 +18,5 @@ scoreboard players operation #moles dru.moles.numbers /= #04 uhc.data.numbers
 function dru:start/set_moles
 
 ## Message start
-tellraw @a[scores={uhc.players.lang=1}] [{"text":"[","color":"#DFC300","bold":true},{"text":"Dragon","color":"#5F2FBF"},{"text":" UHC","color":"#FFE73F"},{"text":"]","color":"#DFC300"},{"text":" La partie vient de démarrer !","color":"#FFE73F","bold":false}]
-tellraw @a[scores={uhc.players.lang=2}] [{"text":"[","color":"#DFC300","bold":true},{"text":"Dragon","color":"#5F2FBF"},{"text":" UHC","color":"#FFE73F"},{"text":"]","color":"#DFC300"},{"text":" Game starting now!","color":"#FFE73F","bold":false}]
+tellraw @a[scores={uhc.players.lang=061801}] [{"text":"[","color":"#DFC300","bold":true},{"text":"Dragon","color":"#5F2FBF"},{"text":" UHC","color":"#FFE73F"},{"text":"]","color":"#DFC300"},{"text":" La partie vient de démarrer !","color":"#FFE73F","bold":false}]
+tellraw @a[scores={uhc.players.lang=051407}] [{"text":"[","color":"#DFC300","bold":true},{"text":"Dragon","color":"#5F2FBF"},{"text":" UHC","color":"#FFE73F"},{"text":"]","color":"#DFC300"},{"text":" Game starting now!","color":"#FFE73F","bold":false}]

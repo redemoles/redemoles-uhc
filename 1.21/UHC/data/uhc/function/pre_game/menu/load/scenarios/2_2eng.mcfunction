@@ -8,9 +8,9 @@
 #
 
 clear @s
-tag @s remove host.menu.principal
-tag @s remove host.menu.scenarios.1
-tag @s add host.menu.scenarios.2
+tag @s remove uhc.menu.main.host
+tag @s remove uhc.menu.scenarios.1
+tag @s add uhc.menu.scenarios.2
 
 
 
@@ -31,9 +31,9 @@ execute if score #team_health uhc.scenario matches 0 run item replace entity @s 
 execute if score #team_health uhc.scenario matches 1 run item replace entity @s inventory.5 with minecraft:apple[minecraft:item_name=[{"text":"Team Health","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"The health points shown correspond to","color":"#FFFFFF","italic":false}],[{"text":"combined health of all players of the team.","color":"#FFFFFF","italic":false}]]]
 execute if score #time_bomb uhc.scenario matches 0 run item replace entity @s inventory.6 with minecraft:black_concrete[minecraft:item_name=[{"text":"Time Bomb","color":"#FF3F3F","italic":false}],minecraft:lore=[[{"text":"A chest appears at a player's death location,","color":"#FFFFFF","italic":false}],[{"text":"with his inventory inside.","color":"#FFFFFF","italic":false}],[{"text":"The chest explodes 30 seconds after the player's death.","color":"#FFFFFF","italic":false}]]]
 execute if score #time_bomb uhc.scenario matches 1 run item replace entity @s inventory.6 with minecraft:black_concrete[minecraft:item_name=[{"text":"Time Bomb","color":"#FF3F3F","italic":false}],minecraft:lore=[[{"text":"A chest appears at a player's death location,","color":"#FFFFFF","italic":false}],[{"text":"with his inventory inside.","color":"#FFFFFF","italic":false}],[{"text":"The chest explodes 30 seconds after the player's death.","color":"#FFFFFF","italic":false}]]]
-execute if score #trade_uhc uhc.scenario matches 0 run item replace entity @s inventory.7 with minecraft:red_concrete[minecraft:item_name=[{"text":"Trade UHC","color":"#FF3F3F","italic":false}],minecraft:lore=[[{"text":"All minerals, except gold, give emerald.","color":"#FFFFFF","italic":false}]]]
-execute if score #trade_uhc uhc.scenario matches 1 run item replace entity @s inventory.7 with minecraft:emerald[minecraft:item_name=[{"text":"Trade UHC","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"All minerals, except gold, give emerald.","color":"#FFFFFF","italic":false}]]]
+execute if score #trade_uhc uhc.scenario matches 0 run item replace entity @s inventory.7 with minecraft:red_concrete[minecraft:item_name=[{"text":"Trade UHC","color":"#FF3F3F","italic":false}],minecraft:lore=[[{"text":"All minerals, except gold and coal, give emerald.","color":"#FFFFFF","italic":false}]]]
+execute if score #trade_uhc uhc.scenario matches 1 run item replace entity @s inventory.7 with minecraft:emerald[minecraft:item_name=[{"text":"Trade UHC","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"All minerals, except gold and coal, give emerald.","color":"#FFFFFF","italic":false}]]]
 
 item replace entity @s inventory.24 with minecraft:arrow[minecraft:item_name=[{"text":"Page 1","color":"#3FE7FF","italic":false}]]
-item replace entity @s[scores={uhc.players.lang=1}] inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Fermer","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
-item replace entity @s[scores={uhc.players.lang=2}] inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Close","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
+item replace entity @s[scores={uhc.players.lang=061801}] inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Fermer","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
+item replace entity @s[scores={uhc.players.lang=051407}] inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Close","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]

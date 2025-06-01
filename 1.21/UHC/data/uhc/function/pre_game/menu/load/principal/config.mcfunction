@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/load/principal/config
 #
-# @within			uhc:pre_game/menu/selection/principal
+# @within			uhc:pre_game/menu/selection/principal/host
 #
 #
 # @description		Résumé de la configuration de la partie
@@ -9,8 +9,8 @@
 
 
 tellraw @s [{"text":"","color":"#FFFFFF"}]
-tellraw @s[scores={uhc.players.lang=1}] [{"text":"Génération du monde :","color":"#3F9FFF","bold":true}]
-tellraw @s[scores={uhc.players.lang=2}] [{"text":"World generation :","color":"#3F9FFF","bold":true}]
+tellraw @s[scores={uhc.players.lang=061801}] [{"text":"Génération du monde :","color":"#3F9FFF","bold":true}]
+tellraw @s[scores={uhc.players.lang=051407}] [{"text":"World generation :","color":"#3F9FFF","bold":true}]
 execute unless score #overworld_finished pregen.world matches 1.. run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Overworld : ","color":"#FFFFFF","bold":false},{"text":"1000/-1000","color":"#CF3F3F","bold":false}]
 execute if score #overworld_finished pregen.world matches 2 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Overworld : ","color":"#FFFFFF","bold":false},{"text":"1000/-1000","color":"#3FE7FF","bold":false}]
 execute if score #overworld_finished pregen.world matches 4 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Overworld : ","color":"#FFFFFF","bold":false},{"text":"2000/-2000","color":"#3FE7FF","bold":false}]
@@ -32,17 +32,17 @@ execute if score #the_end_finished pregen.world matches 6 run tellraw @s [{"text
 execute if score #the_end_finished pregen.world matches 8 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"End : ","color":"#E73FFF","bold":false},{"text":"4000/-4000","color":"#3FE7FF","bold":false}]
 execute if score #the_end_finished pregen.world matches 10 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"End : ","color":"#E73FFF","bold":false},{"text":"5000/-5000","color":"#3FE7FF","bold":false}]
 execute if score #the_end_finished pregen.world matches 20 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"End : ","color":"#E73FFF","bold":false},{"text":"10000/-10000","color":"#3FE7FF","bold":false}]
-tellraw @s[scores={uhc.players.lang=1}] [{"text":"Vérifications du monde :","color":"#3F9FFF","bold":true}]
-tellraw @s[scores={uhc.players.lang=2}] [{"text":"World check :","color":"#3F9FFF","bold":true}]
+tellraw @s[scores={uhc.players.lang=061801}] [{"text":"Vérifications du monde :","color":"#3F9FFF","bold":true}]
+tellraw @s[scores={uhc.players.lang=051407}] [{"text":"World check :","color":"#3F9FFF","bold":true}]
 tellraw @s[tag=!host.check_biomes] [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Biomes","color":"#FF3F3F","bold":false}]
 tellraw @s[tag=host.check_biomes] [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Biomes","color":"#3FE7FF","bold":false}]
 tellraw @s[tag=!host.check_spawns] [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Spawns","color":"#FF3F3F","bold":false}]
 tellraw @s[tag=host.check_spawns] [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Spawns","color":"#3FE7FF","bold":false}]
-tellraw @s[scores={uhc.players.lang=1}] [{"text":"Mode de jeu :","color":"#3F9FFF","bold":true}]
-tellraw @s[scores={uhc.players.lang=2}] [{"text":"Gamemode :","color":"#3F9FFF","bold":true}]
+tellraw @s[scores={uhc.players.lang=061801}] [{"text":"Mode de jeu :","color":"#3F9FFF","bold":true}]
+tellraw @s[scores={uhc.players.lang=051407}] [{"text":"Game mode :","color":"#3F9FFF","bold":true}]
 $tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},$(gamemode)]
-tellraw @s[scores={uhc.players.lang=1}] [{"text":"Scénarios :","color":"#3F9FFF","bold":true}]
-tellraw @s[scores={uhc.players.lang=2}] [{"text":"Scenarios :","color":"#3F9FFF","bold":true}]
+tellraw @s[scores={uhc.players.lang=061801}] [{"text":"Scénarios :","color":"#3F9FFF","bold":true}]
+tellraw @s[scores={uhc.players.lang=051407}] [{"text":"Scenarios :","color":"#3F9FFF","bold":true}]
 execute if score #bats uhc.scenario matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Bats","color":"#3FE7FF","bold":false}]
 execute if score #best_pve uhc.scenario matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Best PvE","color":"#3FE7FF","bold":false}]
 execute if score #biome_paranoia uhc.scenario matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Biome Paranoia","color":"#3FE7FF","bold":false}]
@@ -66,4 +66,4 @@ execute if score #time_bomb uhc.scenario matches 1 run tellraw @s [{"text":"• 
 execute if score #trade_uhc uhc.scenario matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Trade UHC","color":"#3FE7FF","bold":false}]
 tellraw @s [{"text":"","color":"#FFFFFF"}]
 
-function uhc:pre_game/menu/load/principal/
+function uhc:pre_game/menu/load/principal/host

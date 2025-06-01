@@ -43,7 +43,7 @@ execute in minecraft:overworld run function uhc:in_game/timer/border/shrinks wit
 execute in minecraft:the_nether run function uhc:in_game/timer/border/shrinks with storage uhc:settings
 execute in minecraft:the_end run function uhc:in_game/timer/border/shrinks with storage uhc:settings
 
-execute if score #shrink_1 uhc.data.temp matches 0 run gamerule doMobSpawning false
+execute if score #shrink_1_timer_end uhc.data.temp matches 0 run gamerule doMobSpawning false
 
 ## Annonces
 execute if score #shrink_1 uhc.data.temp matches 0 run scoreboard players remove #shrink_1_size_end uhc.data.temp 1
@@ -73,12 +73,12 @@ execute if score #aic uhc.gamemode matches 3 in uhc:lobby run function aic:timer
 execute if score #blood_cycle uhc.scenario matches 1 run function uhc:in_game/scenarios/blood_cycle/cooldown
 
 # Msg FRA
-execute if score #lives_start uhc.players.lives matches 3.. if score #live_2 uhc.data.temp matches 0 run tellraw @a[scores={uhc.players.lang=1}] [{"text":"Vies maximum ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" ❤❤❤ ","color":"#3FE7FF","bold":false},{"text":"→","color":"#FFFFFF","bold":false},{"text":" ❤❤","color":"#FFE73F","bold":false}]
-execute if score #lives_start uhc.players.lives matches 2.. if score #live_1 uhc.data.temp matches 0 run tellraw @a[scores={uhc.players.lang=1}] [{"text":"Vies maximum ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" ❤❤ ","color":"#FFE73F","bold":false},{"text":"→","color":"#FFFFFF","bold":false},{"text":" ❤","color":"#E73F3F","bold":false}]
+execute if score #lives_start uhc.players.lives matches 3.. if score #live_2 uhc.data.temp matches 0 run tellraw @a[scores={uhc.players.lang=061801}] [{"text":"Vies maximum ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" ❤❤❤ ","color":"#3FE7FF","bold":false},{"text":"→","color":"#FFFFFF","bold":false},{"text":" ❤❤","color":"#FFE73F","bold":false}]
+execute if score #lives_start uhc.players.lives matches 2.. if score #live_1 uhc.data.temp matches 0 run tellraw @a[scores={uhc.players.lang=061801}] [{"text":"Vies maximum ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" ❤❤ ","color":"#FFE73F","bold":false},{"text":"→","color":"#FFFFFF","bold":false},{"text":" ❤","color":"#E73F3F","bold":false}]
 
 # Msg ENG
-execute if score #lives_start uhc.players.lives matches 3.. if score #live_2 uhc.data.temp matches 0 run tellraw @a[scores={uhc.players.lang=2}] [{"text":"Maximum lives ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" ❤❤❤ ","color":"#3FE7FF","bold":false},{"text":"→","color":"#FFFFFF","bold":false},{"text":" ❤❤","color":"#FFE73F","bold":false}]
-execute if score #lives_start uhc.players.lives matches 2.. if score #live_1 uhc.data.temp matches 0 run tellraw @a[scores={uhc.players.lang=2}] [{"text":"Maximum lives ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" ❤❤ ","color":"#FFE73F","bold":false},{"text":"→","color":"#FFFFFF","bold":false},{"text":" ❤","color":"#E73F3F","bold":false}]
+execute if score #lives_start uhc.players.lives matches 3.. if score #live_2 uhc.data.temp matches 0 run tellraw @a[scores={uhc.players.lang=051407}] [{"text":"Maximum lives ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" ❤❤❤ ","color":"#3FE7FF","bold":false},{"text":"→","color":"#FFFFFF","bold":false},{"text":" ❤❤","color":"#FFE73F","bold":false}]
+execute if score #lives_start uhc.players.lives matches 2.. if score #live_1 uhc.data.temp matches 0 run tellraw @a[scores={uhc.players.lang=051407}] [{"text":"Maximum lives ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" ❤❤ ","color":"#FFE73F","bold":false},{"text":"→","color":"#FFFFFF","bold":false},{"text":" ❤","color":"#E73F3F","bold":false}]
 
 execute if score #live_2 uhc.data.temp matches 0 run scoreboard players set #lives uhc.players.lives 2
 execute if score #live_1 uhc.data.temp matches 0 run scoreboard players set #lives uhc.players.lives 1

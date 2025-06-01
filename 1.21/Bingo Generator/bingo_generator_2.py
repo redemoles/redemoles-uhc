@@ -18,6 +18,7 @@ bingo_name = "Bingo Classique"
 step_number = "1"
 advancements_folder = "items_all"
 configuration_objective = "bhc.data"
+max_square_objective = "bhc.stepa.case"
 icon_item = "minecraft:paper"
 title_color = "#B73FFF"
 description = ""
@@ -149,6 +150,8 @@ scoreboard players set #line-1 {configuration_objective} {line}
 scoreboard players set #column-1 {configuration_objective} {column}
 scoreboard players remove #line-1 {configuration_objective} 1
 scoreboard players remove #column-1 {configuration_objective} 1
+scoreboard players set #max {max_square_objective} {line}
+scoreboard players operation #max {max_square_objective} *= #0{column} uhc.data.numbers
 """)
 
 	# Write the pack.mcmeta file
@@ -168,7 +171,7 @@ import zipfile
 import os
 
 # Stop program if not executed from the root folder
-if not os.path.exists("bingo_generator_0.py"):
+if not os.path.exists("bingo_generator_2.py"):
 	print("Please execute this program from its folder.")
 	exit()
 
@@ -177,8 +180,9 @@ bingo_size = {"lines": 6, "columns": 6}
 bingo_namespace = "bingo_2b"
 bingo_name = "Ère Viking"
 step_number = "2"
-advancements_folder = "items_all"
+advancements_folder = "items_all_02"
 configuration_objective = "bhc.data"
+max_square_objective = "bhc.stepb.case"
 icon_item = "minecraft:iron_axe"
 title_color = "#CF6F3F"
 description = ""
@@ -310,6 +314,8 @@ scoreboard players set #line-1 {configuration_objective} {line}
 scoreboard players set #column-1 {configuration_objective} {column}
 scoreboard players remove #line-1 {configuration_objective} 1
 scoreboard players remove #column-1 {configuration_objective} 1
+scoreboard players set #max {max_square_objective} {line}
+scoreboard players operation #max {max_square_objective} *= #0{column} uhc.data.numbers
 """)
 	
 	# Write the pack.mcmeta file

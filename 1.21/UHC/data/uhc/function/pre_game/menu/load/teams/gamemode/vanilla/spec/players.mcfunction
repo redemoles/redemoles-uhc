@@ -7,6 +7,10 @@
 # @description		Menu
 #
 
-$item replace entity @s[tag=!uhc.spec] inventory.23 with minecraft:wither_skeleton_skull[minecraft:item_name=[{"text":"Spectateurs","color":"#BFBFBF","italic":false,"bold":true}],minecraft:custom_data={Tags:"spectator"},minecraft:lore=[$(interpreted_0)]]
-$item replace entity @s[tag=uhc.spec] inventory.23 with minecraft:wither_skeleton_skull[minecraft:item_name=[{"text":"Spectateurs","color":"#BFBFBF","italic":false,"bold":true}],minecraft:custom_data={Tags:"spectator"},minecraft:lore=[$(interpreted_1),$(interpreted_0)],minecraft:enchantment_glint_override=true]
-tag @a remove menu.teams
+$execute if entity @s[tag=!uhc.spec,scores={uhc.players.lang=061801}] run item replace entity @s inventory.24 with minecraft:wither_skeleton_skull[minecraft:item_name=[{"text":"Spectateurs","color":"#BFBFBF","italic":false}],minecraft:custom_data={Tags:"spectator"},minecraft:lore=[$(interpreted_0)]]
+$execute if entity @s[tag=uhc.spec,scores={uhc.players.lang=061801}] run item replace entity @s inventory.24 with minecraft:wither_skeleton_skull[minecraft:item_name=[{"text":"Spectateurs","color":"#BFBFBF","italic":false}],minecraft:custom_data={Tags:"spectator"},minecraft:lore=[$(interpreted_1),$(interpreted_0)],minecraft:enchantment_glint_override=true]
+
+$execute if entity @s[tag=!uhc.spec,scores={uhc.players.lang=051407}] run item replace entity @s inventory.24 with minecraft:wither_skeleton_skull[minecraft:item_name=[{"text":"Spectators","color":"#BFBFBF","italic":false}],minecraft:custom_data={Tags:"spectator"},minecraft:lore=[$(interpreted_0)]]
+$execute if entity @s[tag=uhc.spec,scores={uhc.players.lang=051407}] run item replace entity @s inventory.24 with minecraft:wither_skeleton_skull[minecraft:item_name=[{"text":"Spectators","color":"#BFBFBF","italic":false}],minecraft:custom_data={Tags:"spectator"},minecraft:lore=[$(interpreted_1),$(interpreted_0)],minecraft:enchantment_glint_override=true]
+
+tag @a remove uhc.temp.team

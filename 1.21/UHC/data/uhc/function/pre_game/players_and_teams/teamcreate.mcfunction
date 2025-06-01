@@ -44,6 +44,7 @@ team remove 32
 team remove 91
 team remove 92
 team remove 99
+team remove 99.host
 team remove uhc.pvp.safety
 team remove 101
 team remove 102
@@ -134,6 +135,7 @@ team add 32
 team add 91
 team add 92
 team add 99
+team add 99.host
 team add uhc.pvp.safety
 team add 101
 team add 102
@@ -206,9 +208,8 @@ team modify 32 color black
 team modify 91 color yellow
 team modify 92 color blue
 team modify 99 color white
-team modify uhc.pvp.safety color yellow
-team modify uhc.pvp.safety friendlyFire false
-team modify uhc.pvp.safety prefix [{"text":"PvP Off ","color":"#FF3F3F"}]
+team modify 99.host color white
+team modify 99.host prefix [{"text":"Host ","color":"#CFCFCF"}]
 team modify 101 color dark_blue
 team modify 102 color blue
 team modify 103 color dark_aqua
@@ -242,6 +243,9 @@ team modify 130 color gray
 team modify 131 color dark_gray
 team modify 132 color black
 team modify 192 color red
+team modify uhc.pvp.safety color yellow
+team modify uhc.pvp.safety friendlyFire false
+team modify uhc.pvp.safety prefix [{"text":"PvP Off ","color":"#FF3F3F"}]
 
 ## Affichage scoreboard des équipes
 team add sb01
@@ -349,6 +353,7 @@ team modify 32 collisionRule never
 team modify 91 collisionRule never
 team modify 92 collisionRule never
 team modify 99 collisionRule never
+team modify 99.host collisionRule never
 team modify 101 collisionRule never
 team modify 102 collisionRule never
 team modify 103 collisionRule never

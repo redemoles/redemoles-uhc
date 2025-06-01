@@ -7,5 +7,5 @@
 # @description		Menu
 #
 
-scoreboard players set @s uhc.menu.host.scenarios.blood_diamond 3
+scoreboard players set @s uhc.menu.scenarios.blood_diamond 3
 function uhc:pre_game/menu/load/scenarios/blood_diamond/

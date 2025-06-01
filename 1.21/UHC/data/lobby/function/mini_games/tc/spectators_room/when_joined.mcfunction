@@ -11,7 +11,7 @@ scoreboard players enable @s lobby.tc.player.click_to_join
 scoreboard players set @s lobby.tc.player.click_to_join 0
 tag @s add mgs.tc.spec
 
-tellraw @s[scores={uhc.players.lang=1}] [{"text":"Clique ici pour ","color":"#FFFFFF","underlined":true,"bold":true,"click_event":{"action":"run_command","command":"/trigger lobby.tc.player.click_to_join set 1"}},{"text":"entrer","color":"#3FE7FF"},{"text":" dans la chambre\n"}]
-tellraw @s[scores={uhc.players.lang=2}] [{"text":"Click here to ","color":"#FFFFFF","underlined":true,"bold":true,"click_event":{"action":"run_command","command":"/trigger lobby.tc.player.click_to_join set 1"}},{"text":"enter","color":"#3FE7FF"},{"text":" the chamber\n"}]
+tellraw @s[scores={uhc.players.lang=061801}] [{"text":"Clique ici pour ","color":"#FFFFFF","underlined":true,"bold":true,"click_event":{"action":"run_command","command":"/trigger lobby.tc.player.click_to_join set 1"}},{"text":"entrer","color":"#3FE7FF"},{"text":" dans la chambre\n"}]
+tellraw @s[scores={uhc.players.lang=051407}] [{"text":"Click here to ","color":"#FFFFFF","underlined":true,"bold":true,"click_event":{"action":"run_command","command":"/trigger lobby.tc.player.click_to_join set 1"}},{"text":"enter","color":"#3FE7FF"},{"text":" the chamber\n"}]
 scoreboard players set @s uhc.timer.respawn 0
 scoreboard players set @s uhc.players.death 0

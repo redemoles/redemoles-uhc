@@ -32,7 +32,6 @@ scoreboard players operation #border_size uhc.data.temp /= #02 uhc.data.numbers
 # Texte informations de positions de joueurs
 execute if score #target_allies uhc.data.setup matches 1 unless score #tick uhc.data.temp matches 1..9 unless score #tick uhc.data.temp matches 11..19 as @a[tag=uhc.player] run function uhc:in_game/timer/hotbar/target/
 execute if score #target_allies uhc.data.setup matches 1 unless score #tick uhc.data.temp matches 1..9 unless score #tick uhc.data.temp matches 11..19 run tag @a[tag=uhc.player.location_check] remove uhc.player.location_check
-execute as @a[predicate=uhc:target/tracker] run tag @s add uhc.target.targeter_done
 
 # Texte informations de base
 execute if score #hotbar_cooldown uhc.data.temp matches 1.. if score #tick uhc.data.temp matches 0 run function uhc:in_game/timer/hotbar/cooldown/ with storage uhc:temp hotbar
@@ -52,10 +51,10 @@ function uhc:in_game/tp/spawn/border_size/
 
 ## Modifications de données d'entités
 # Réduction des dégâts des flèches
-execute if score #custom_arrow uhc.data.setup matches 1.. as @e[type=arrow] run function uhc:in_game/entities/arrow/
-execute unless score #custom_arrow uhc.data.setup matches 1.. as @e[type=arrow,tag=!uhc.checked] run function uhc:in_game/entities/arrow/basic
+execute if score #custom_arrow uhc.data.setup matches 1.. as @e[type=minecraft:arrow] run function uhc:in_game/entities/arrow/
+execute unless score #custom_arrow uhc.data.setup matches 1.. as @e[type=minecraft:arrow,tag=!uhc.checked] run function uhc:in_game/entities/arrow/basic
 # Items
-execute as @e[type=item] run function uhc:in_game/entities/item/
+execute as @e[type=minecraft:item] run function uhc:in_game/entities/item/
 
 ## Scenarios
 # Ironman

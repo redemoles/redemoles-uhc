@@ -8,11 +8,11 @@
 #
 
 clear @s
-tag @s remove host.menu.principal
-tag @s add host.menu.scenarios.1
-tag @s remove host.menu.scenarios.2
-scoreboard players set @s uhc.menu.host.scenarios.blood_diamond 0
-tag @s remove host.menu.scenarios.enchanting_setup
+tag @s remove uhc.menu.main.host
+tag @s add uhc.menu.scenarios.1
+tag @s remove uhc.menu.scenarios.2
+scoreboard players set @s uhc.menu.scenarios.blood_diamond 0
+tag @s remove uhc.menu.scenarios.enchanting_setup
 
 
 
@@ -51,5 +51,5 @@ execute if score #red_arrows uhc.scenario matches 0 run item replace entity @s i
 execute if score #red_arrows uhc.scenario matches 1 run item replace entity @s inventory.16 with minecraft:magenta_glazed_terracotta[minecraft:item_name=[{"text":"Red Arrows","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"When a player dies, a red arrow appears at his position.","color":"#FFFFFF","italic":false}]]]
 
 item replace entity @s inventory.24 with minecraft:arrow[minecraft:item_name=[{"text":"Page 2","color":"#3FE7FF","italic":false}]]
-item replace entity @s[scores={uhc.players.lang=1}] inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Fermer","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
-item replace entity @s[scores={uhc.players.lang=2}] inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Close","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
+item replace entity @s[scores={uhc.players.lang=061801}] inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Fermer","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
+item replace entity @s[scores={uhc.players.lang=051407}] inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Close","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]

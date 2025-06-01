@@ -8,7 +8,8 @@
 #
 
 # Message au centre de l'écran
-execute if score #tick_start uhc.data.temp matches 4 run tellraw @a [{"text":"\nLancement de la partie...","color":"#CFCFCF"}]
+execute if score #tick_start uhc.data.temp matches 4 as @a[scores={uhc.players.lang=061801}] run tellraw @s [{"text":"\nLancement de la partie...","color":"#CFCFCF"}]
+execute if score #tick_start uhc.data.temp matches 4 as @a[scores={uhc.players.lang=051407}] run tellraw @s [{"text":"\nGame launch...","color":"#CFCFCF"}]
 execute if score #tick_start uhc.data.temp matches 4 run title @a reset
 execute if score #tick_start uhc.data.temp matches 4 if score #vanilla uhc.gamemode matches 1 run title @a title [{"text":"UHC","color":"#3FE7FF","bold":false}]
 execute if score #tick_start uhc.data.temp matches 4 if score #bhc uhc.gamemode matches 1 run title @a title [{"text":"Bingo","color":"#B73FFF","bold":false},{"text":" UHC","color":"#FFE73F","bold":false}]
@@ -19,8 +20,8 @@ execute if score #tick_start uhc.data.temp matches 4 if score #nzl uhc.gamemode 
 execute if score #tick_start uhc.data.temp matches 4 if score #prv uhc.gamemode matches 1 run title @a title [{"text":"P","color":"#3F3FFF","bold":false},{"text":"R","color":"#FF3F3F","bold":false},{"text":"V","color":"#3FCF3F","bold":false},{"text":" UHC","color":"#FFFFFF","bold":false}]
 execute if score #tick_start uhc.data.temp matches 4 if score #uau uhc.gamemode matches 1 run title @a title [{"text":"Ultra Arrow","color":"#E73FFF","bold":false},{"text":" UHC","color":"#FFE73F","bold":false}]
 execute if score #tick_start uhc.data.temp matches 4 if score #aic uhc.gamemode matches 3 run title @a title [{"text":"All Items","color":"#3FE7FF","bold":false},{"text":" Rush","color":"#FFE73F","bold":false}]
-execute if score #tick_start uhc.data.temp matches 4 run title @a[scores={uhc.players.lang=1}] subtitle [{"text":" Démarrage en cours ! ","color":"#FFFFFF","bold":false}]
-execute if score #tick_start uhc.data.temp matches 4 run title @a[scores={uhc.players.lang=2}] subtitle [{"text":" Start in progress! ","color":"#FFFFFF","bold":false}]
+execute if score #tick_start uhc.data.temp matches 4 as @a[scores={uhc.players.lang=061801}] run title @s subtitle [{"text":" Démarrage en cours ! ","color":"#FFFFFF","bold":false}]
+execute if score #tick_start uhc.data.temp matches 4 as @a[scores={uhc.players.lang=051407}] run title @s subtitle [{"text":" Start in progress! ","color":"#FFFFFF","bold":false}]
 
 # Musique → auto-config de la partie → start
 execute if score #tick_start uhc.data.temp matches 4 as @a at @s run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 100 1 1

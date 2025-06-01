@@ -1,7 +1,7 @@
 
 #> uhc:reload
 #
-# @within			uhc:load
+# @within			uhc:reload/full
 # @executed			default context
 #
 # @description		Function executed when the datapack is loaded
@@ -132,21 +132,22 @@ scoreboard objectives remove uhc.id.spawns
 scoreboard objectives remove uhc.game.end
 scoreboard objectives remove uhc.data.temp
 scoreboard objectives remove uhc.data.temp.inv
-scoreboard objectives remove uhc.menu.host.gamemode.mls
-scoreboard objectives remove uhc.menu.host.gamemode.mls.moles_per_team
-scoreboard objectives remove uhc.menu.host.gamemode.mls.moles_per_game
-scoreboard objectives remove uhc.menu.host.gamemode.mls.teams_of_moles
-scoreboard objectives remove uhc.menu.host.gamemode.mls.teams_of_supermoles
-scoreboard objectives remove uhc.menu.host.gamemode.mls.supermoles_per_team
-scoreboard objectives remove uhc.menu.host.scenarios.blood_diamond
-scoreboard objectives remove uhc.menu.host.settings.lives
-scoreboard objectives remove uhc.menu.host.settings.pve
-scoreboard objectives remove uhc.menu.host.settings.pvp
-scoreboard objectives remove uhc.menu.host.settings.border
-scoreboard objectives remove uhc.menu.host.settings.inventory
-scoreboard objectives remove uhc.menu.host.teams_settings
+scoreboard objectives remove uhc.menu.gamemode.mls
+scoreboard objectives remove uhc.menu.gamemode.mls.moles_per_team
+scoreboard objectives remove uhc.menu.gamemode.mls.moles_per_game
+scoreboard objectives remove uhc.menu.gamemode.mls.teams_of_moles
+scoreboard objectives remove uhc.menu.gamemode.mls.teams_of_supermoles
+scoreboard objectives remove uhc.menu.gamemode.mls.supermoles_per_team
+scoreboard objectives remove uhc.menu.scenarios.blood_diamond
+scoreboard objectives remove uhc.menu.settings.lives
+scoreboard objectives remove uhc.menu.settings.pve
+scoreboard objectives remove uhc.menu.settings.pvp
+scoreboard objectives remove uhc.menu.settings.border
+scoreboard objectives remove uhc.menu.settings.inventory
+scoreboard objectives remove uhc.menu.teams_settings
 scoreboard objectives remove uhc.menu.update
 scoreboard objectives remove uhc.meetup.activate
+scoreboard objectives remove uhc.players.wolf
 scoreboard objectives remove uhc.players.online
 scoreboard objectives remove uhc.players.disconnect
 scoreboard objectives remove uhc.players.tp
@@ -177,22 +178,23 @@ scoreboard objectives add uhc.data.setup dummy
 scoreboard objectives add uhc.data.temp dummy
 scoreboard objectives add uhc.data.temp.inv dummy
 scoreboard objectives add uhc.data.numbers dummy
-scoreboard objectives add uhc.menu.host.gamemode.mls dummy
-scoreboard objectives add uhc.menu.host.gamemode.mls.moles_per_team dummy
-scoreboard objectives add uhc.menu.host.gamemode.mls.moles_per_game dummy
-scoreboard objectives add uhc.menu.host.gamemode.mls.teams_of_moles dummy
-scoreboard objectives add uhc.menu.host.gamemode.mls.teams_of_supermoles dummy
-scoreboard objectives add uhc.menu.host.gamemode.mls.supermoles_per_team dummy
-scoreboard objectives add uhc.menu.host.scenarios.blood_diamond dummy
-scoreboard objectives add uhc.menu.host.settings dummy
-scoreboard objectives add uhc.menu.host.settings.lives dummy
-scoreboard objectives add uhc.menu.host.settings.pve dummy
-scoreboard objectives add uhc.menu.host.settings.pvp dummy
-scoreboard objectives add uhc.menu.host.settings.border dummy
-scoreboard objectives add uhc.menu.host.settings.inventory dummy
-scoreboard objectives add uhc.menu.host.teams_settings dummy
+scoreboard objectives add uhc.menu.gamemode.mls dummy
+scoreboard objectives add uhc.menu.gamemode.mls.moles_per_team dummy
+scoreboard objectives add uhc.menu.gamemode.mls.moles_per_game dummy
+scoreboard objectives add uhc.menu.gamemode.mls.teams_of_moles dummy
+scoreboard objectives add uhc.menu.gamemode.mls.teams_of_supermoles dummy
+scoreboard objectives add uhc.menu.gamemode.mls.supermoles_per_team dummy
+scoreboard objectives add uhc.menu.scenarios.blood_diamond dummy
+scoreboard objectives add uhc.menu.settings dummy
+scoreboard objectives add uhc.menu.settings.lives dummy
+scoreboard objectives add uhc.menu.settings.pve dummy
+scoreboard objectives add uhc.menu.settings.pvp dummy
+scoreboard objectives add uhc.menu.settings.border dummy
+scoreboard objectives add uhc.menu.settings.inventory dummy
+scoreboard objectives add uhc.menu.teams_settings dummy
 scoreboard objectives add uhc.menu.update dummy
 scoreboard objectives add uhc.meetup.activate trigger
+scoreboard objectives add uhc.players.wolf dummy
 scoreboard objectives add uhc.players.online dummy
 scoreboard objectives add uhc.players.disconnect minecraft.custom:minecraft.leave_game
 scoreboard objectives add uhc.players.tp dummy
@@ -263,6 +265,21 @@ function nzl:reload/sb
 function prv:load
 function uau:load
 
+# Team Health
+execute if score #hp_name uhc.data.setup matches 0 run scoreboard objectives setdisplay below_name
+execute if score #hp_name uhc.data.setup matches 1 run scoreboard objectives setdisplay below_name uhc.players.health
+execute if score #hp_name uhc.data.setup matches 2 run scoreboard objectives setdisplay below_name uhc.players.health.100
+
+execute if score #hp_tab uhc.data.setup matches 0 run scoreboard objectives setdisplay list
+execute if score #team_health uhc.scenario matches 0 unless score #hp_tab uhc.data.setup matches 0 unless score #hp_tab uhc.data.setup matches 2 run scoreboard objectives setdisplay list uhc.players.health
+execute if score #team_health uhc.scenario matches 1 unless score #hp_tab uhc.data.setup matches 0 unless score #hp_tab uhc.data.setup matches 2 run scoreboard objectives setdisplay list uhc.scenario.team_health.team
+execute if score #hp_tab uhc.data.setup matches 2 run scoreboard objectives setdisplay list uhc.players.health.100
+
+execute if score #hp_tab uhc.data.setup matches 0..2 run scoreboard objectives modify uhc.players.health rendertype integer
+execute if score #hp_tab uhc.data.setup matches 0..2 run scoreboard objectives modify uhc.scenario.team_health.team rendertype integer
+execute if score #hp_tab uhc.data.setup matches 3 run scoreboard objectives modify uhc.players.health rendertype hearts
+execute if score #hp_tab uhc.data.setup matches 3 run scoreboard objectives modify uhc.scenario.team_health.team rendertype hearts
+
 ## Multiplicateurs
 scoreboard players set #-1m uhc.data.numbers -1000000
 scoreboard players set #-1 uhc.data.numbers -1
@@ -306,7 +323,7 @@ execute in uhc:lobby run setblock 0 -61 0 minecraft:oak_sign
 ## Génération du Lobby
 function lobby:load
 
-# TP border define
+## Définition TP border
 execute store result storage uhc:temp tp.xp int 1 run scoreboard players get #00 uhc.data.numbers
 execute store result storage uhc:temp tp.xn int 1 run scoreboard players get #00 uhc.data.numbers
 execute store result storage uhc:temp tp.zp int 1 run scoreboard players get #00 uhc.data.numbers

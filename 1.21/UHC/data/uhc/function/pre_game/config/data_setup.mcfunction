@@ -91,7 +91,7 @@ scoreboard players set #ffa uhc.data.setup 0
 scoreboard players set #live_1 uhc.data.setup 0
 scoreboard players set #live_2 uhc.data.setup 0
 scoreboard players set #live_3 uhc.data.setup 0
-scoreboard players set #lives uhc.players.lives 1
+scoreboard players set #lives uhc.data.setup 1
 scoreboard players set #start_in_sky uhc.data.setup 0
 
 scoreboard players set #pve uhc.data.setup 2
@@ -133,6 +133,8 @@ scoreboard players set #bow_power uhc.data.setup 4
 scoreboard players set #depth_strider uhc.data.setup 3
 
 scoreboard players set #target_allies uhc.data.setup 0
+scoreboard players set #wolf_limit uhc.data.setup 1
+scoreboard players set #wolf_count uhc.data.setup 1
 
 scoreboard players set #random_team uhc.data.setup 0
 scoreboard players set #random_team_players uhc.data.setup 0

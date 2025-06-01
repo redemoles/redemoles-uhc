@@ -12,18 +12,17 @@ tag @s remove uhc.player
 tag @s remove uhc.player.dead
 tag @s remove uhc.player.start_in_the_sky
 tag @s remove test
-tag @s remove players.menu.settings
 tag @s remove uhc.random_team.in_a_team
-tag @s add players.menu.teams
 tag @s add uhc.spec
 tag @s remove uhc.scenario.sound_paranoia.on
 execute if score #lobby lobby.structure.data matches 00..09 in uhc:lobby run tp @s 0 65 0 0 0
 execute if score #lobby lobby.structure.data matches 10..19 in uhc:lobby run tp @s 0 65 0 0 0
-team join 99 @s
+team join 99 @s[tag=!uhc.host]
+team join 99.host @s[tag=uhc.host]
 gamemode adventure @s
 clear @s
 title @s reset
-scoreboard players set @s uhc.players.lang 1
+scoreboard players set @s uhc.players.lang 061801
 scoreboard players set @s uhc.id.random_teams 0
 
 # Réinitialisation des effets

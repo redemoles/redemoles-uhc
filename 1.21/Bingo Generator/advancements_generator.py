@@ -167,7 +167,6 @@ pale = []
 too_easy_block = [
 	"minecraft:dirt",
 	"minecraft:sand",
-	"minecraft:red_sand",
 	"minecraft:gravel",
 	"minecraft:cobblestone",
 	"minecraft:andesite",

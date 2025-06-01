@@ -1,22 +1,22 @@
 
 #> uhc:pre_game/menu/load/gamemode/
 #
-# @within			uhc:pre_game/menu/selection/
+# @within			uhc:pre_game/menu/selection/principal/host
 #
 #
 # @description		Menu
 #
 
 clear @s
-tag @s remove host.menu.principal
-tag @s add host.menu.gamemode
-tag @s remove host.menu.gamemode.bhc
-scoreboard players set @s uhc.menu.host.gamemode.mls 0
-scoreboard players set @s uhc.menu.host.gamemode.mls.moles_per_game 0
-scoreboard players set @s uhc.menu.host.gamemode.mls.moles_per_team 0
-scoreboard players set @s uhc.menu.host.gamemode.mls.supermoles_per_team 0
-scoreboard players set @s uhc.menu.host.gamemode.mls.teams_of_moles 0
-scoreboard players set @s uhc.menu.host.gamemode.mls.teams_of_supermoles 0
+tag @s remove uhc.menu.main.host
+tag @s add uhc.menu.gamemode
+tag @s remove uhc.menu.gamemode.bhc
+scoreboard players set @s uhc.menu.gamemode.mls 0
+scoreboard players set @s uhc.menu.gamemode.mls.moles_per_game 0
+scoreboard players set @s uhc.menu.gamemode.mls.moles_per_team 0
+scoreboard players set @s uhc.menu.gamemode.mls.supermoles_per_team 0
+scoreboard players set @s uhc.menu.gamemode.mls.teams_of_moles 0
+scoreboard players set @s uhc.menu.gamemode.mls.teams_of_supermoles 0
 function uhc:pre_game/menu/load/background/
 
 execute if score #bhc uhc.gamemode matches 0 run item replace entity @s inventory.1 with minecraft:red_concrete[minecraft:item_name=[{"text":"Bingo UHC","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"gamemode_bhc"}]
@@ -41,5 +41,5 @@ execute if score #aic uhc.gamemode matches 1 run item replace entity @s inventor
 execute if score #nzl uhc.gamemode matches 1 if score #type_start nzl.data matches 0 run item replace entity @s inventory.19 with minecraft:black_candle[minecraft:item_name=[{"text":"Évolution au choix","color":"#3FE7FF","italic":false}],minecraft:custom_data={Tags:"gamemode_nzl_evolution"}]
 execute if score #nzl uhc.gamemode matches 1 if score #type_start nzl.data matches 1 run item replace entity @s inventory.19 with minecraft:black_candle[minecraft:item_name=[{"text":"Random Évolution au Start","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"gamemode_nzl_evolution"}]
 
-item replace entity @s[scores={uhc.players.lang=1}] inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Fermer","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
-item replace entity @s[scores={uhc.players.lang=2}] inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Close","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
+item replace entity @s[scores={uhc.players.lang=061801}] inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Fermer","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
+item replace entity @s[scores={uhc.players.lang=051407}] inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Close","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
